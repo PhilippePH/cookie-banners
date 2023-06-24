@@ -1,1 +1,3 @@
-/venv
+./screenshots
+./node_modules
+./drivers

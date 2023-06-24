@@ -1,0 +1,30 @@
+{
+  "name": "cookie-banners",
+  "version": "1.0.0",
+  "description": " Crawling the web to identify the perseverance of cookie banners and respect for choice.",
+  "dependencies": {
+    "csv": "^6.3.1",
+    "fs": "^0.0.1-security",
+    "puppeteer": "^20.7.3",
+    "puppeteer-core": "^20.7.3",
+    "selenium-webdriver": "^4.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilippePH/cookie-banners.git"
+  },
+  "keywords": [
+    "cookie",
+    "cookie banners",
+    "privacy"
+  ],
+  "author": "Philippe Paquin-Hirtle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhilippePH/cookie-banners/issues"
+  },
+  "homepage": "https://github.com/PhilippePH/cookie-banners#readme"
+}
