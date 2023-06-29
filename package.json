@@ -6,6 +6,7 @@
     "csv": "^6.3.1",
     "fs": "^0.0.1-security",
     "mysql": "^2.18.1",
+    "mysql2": "^3.4.2",
     "puppeteer": "^20.7.3",
     "puppeteer-core": "^20.7.3",
     "puppeteer-extra": "^3.3.6",
