@@ -1,4 +1,5 @@
 const selectWebsites = require('./websiteSelection.cjs');
+const createBrowser = require('./browser');
 const puppeteer = require("puppeteer-extra");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 
@@ -8,22 +9,13 @@ puppeteer.use(StealthPlugin()) // allows to pass all tests on SannySoft, even if
 const NUM_URLS = 10;
 const browser_list = ['Chrome']
 
-async function setUpBrowser(TBD){
-    let browser = puppeteer.launch({
-        headless: false, // allows to pass most tests on SannySoft, except WebDrive
-        ignoreHTTPSErrors: true,
-        args: ['--start-maximized'] // browser takes whole screen
-    });
-    return browser;
-}
-
 async function crawl(browser_list){
     // set up URL List
     // URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
     URL_list = ["https://bot.sannysoft.com/"];
     
     for(let j = 0; j < browser_list.length; j++){
-        const browser = await setUpBrowser(browser_list[j]);
+        const browser = await createBrowser.setUpBrowser(browser_list[j]);
         const page = await browser.newPage();
 
         // loop through URLs
@@ -32,10 +24,10 @@ async function crawl(browser_list){
             console.log(URL);
             try{
                 await page.goto(URL,{
-                    waitUntil: "domcontentloaded", // need to double check docs here
+                    timeout: 30000, // 30 sec nav timeout
+                    waitUntil: "networkidle2", // either domcontentloaded,networkidle0, networkidle2 -- domcontentloaded seems to be too quick, not all banners appear
                 });
-
-
+                
                 await page.screenshot({path: "./screenshots/"+i+".png"});
             } catch(error){
                 console.log("Couldn't open" + URL);
