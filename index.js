@@ -15,8 +15,8 @@ async function crawl(browser_list){
     URL_list = ["https://bot.sannysoft.com/"];
     
     for(let j = 0; j < browser_list.length; j++){
-        const browser = await createBrowser.setUpBrowser(browser_list[j]);
-        const page = await browser.newPage();
+        const browserInstance = await createBrowser.browserObject(browser_list[j]);
+        const page = await browserInstance.newPage();
 
         // loop through URLs
         for(let i = 0; i < URL_list.length; i++){
@@ -35,7 +35,7 @@ async function crawl(browser_list){
             }
         }
 
-        await browser.close();
+        await browserInstance.close();
     }
 }
 
