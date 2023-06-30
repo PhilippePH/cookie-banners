@@ -11,7 +11,7 @@ puppeteer.use(StealthPlugin()); // allows to pass all tests on SannySoft, even i
 
 const crawlID = Date.now();
 const NUM_URLS = 5;
-const browser_list = ['chrome','firefox','brave','ghostery'] ;
+const browser_list = ['firefox','ghostery'] ;
 // const browser_list = ['ddg'] ;
 
 /* On every browser, multiple pages are being opened... I don't know why.
@@ -22,21 +22,28 @@ const browser_list = ['chrome','firefox','brave','ghostery'] ;
 You need to set/create a profile and point the userDataDir option to it because 
 Brave downloads the filter lists the first time it launches and stores those lists in the profile. */
 
-/* FOR CHROME:
+/* FOR CHROME + BRAVE:
 This always opens: file:///private/var/folders/3z/l10dbrvx2xgcw8nl2jtck1nc0000gn/T/puppeteer_dev_profile-L7zNFB/ 
 Half the time it actually opens the URL, but half the time it won't and only open the dev profile
-When I add a userDataDir, it opens that folder but not the URL... 
-
-Similar issue with Brave also..
-*/
+When I add a userDataDir, it opens that folder but not the URL... */
 
 /* If I use these exec path, I think we need to make sure they use a clean slate everytime..
     Since those are my apps, I think they remember some stuff (like not closing correctly + history) */
 
+/* Navingation timeout everytime on Friefox + Ghostery... Something tells me I need to exit differently
+    since they maybe don't send the same signal as Chrome / Brave???
+    
+    Also, the webdriver flag isn't hidden like it is for Chrome+Brave -- from Bot.SannySoft
+    
+    Actually, even the size of the webpage doesn't follow directions...
+    
+    Issue persists with Firefox Nightly (using product: firefox) & when using the exec path*/
+
+
 const executable_path = [
-    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    // '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     '/Applications/Firefox.app/Contents/MacOS/firefox',
-    '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
+    // '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
     '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
     // '/Applications/DuckDuckGo.app/Contents/MacOS/DuckDuckGo', // add it to browser list when ready
 ];
@@ -55,8 +62,6 @@ const connection = mysql.createConnection({
     database: 'CrawlData',
   });
 
-
-
 async function crawl(browser_list){
     // set up database connection
     connection.connect(function(err) {
@@ -69,20 +74,23 @@ async function crawl(browser_list){
 
     // set up URL List
     // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    const URL_list = ["https://edition.cnn.com/"];
+    const URL_list = ["https://bot.sannysoft.com/"];
     
     for(let j = 0; j < browser_list.length; j++){
         console.log(executable_path[j]);
         const browserInstance = await puppeteer.launch({
-            headless: false, //when false, allows to pass most tests on SannySoft, except WebDrive
-            // ignoreHTTPSErrors: true, // would this be desirable? -- allows you to visit websites that aren’t hosted over a secure HTTPS protocol and ignore any HTTPS-related errors.
+            headless: false,
             executablePath: executable_path[j],
+            
+            product: 'firefox',
+
+            // Chrome (Chromium?) specific settings
             // userDataDir: userDir[j],
             args: [
                 '--start-maximized', // browser takes whole screen. 
                 // '--user-data-dir = /Users/philippe/Documents/code/cookie-banners/userDataProfile',
                 // --proxy-server = x.x.x.x:xxxx // this can be used to specify the IP address
-            ] 
+            ]
         });
     
         const page = await browserInstance.newPage();
@@ -94,10 +102,10 @@ async function crawl(browser_list){
             try{
                 await page.goto(URL,{
                     timeout: 10000, // 5 sec nav timeout
-                    waitUntil: "networkidle2", // either domcontentloaded,networkidle0, networkidle2 -- domcontentloaded seems to be too quick, not all banners appear
+                    waitUntil: "load", // either domcontentloaded,networkidle0, networkidle2 -- domcontentloaded seems to be too quick, not all banners appear
                 });
                 
-                await page.screenshot({path: "./screenshots/"+i+".png"});
+                await page.screenshot({path: "./screenshots/"+i+"on"+j+".png"});
                 let pageCookies = await page.cookies();
                 // console.log(pageCookies);
 
@@ -108,8 +116,8 @@ async function crawl(browser_list){
                 for(let i = 0; i < pageCookies.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
                     const data = [
                         crawlID,
-                        URL,
                         browser_list[j],
+                        URL,
                         pageCookies[i].name,
                         pageCookies[i].value,
                         pageCookies[i].domain,
