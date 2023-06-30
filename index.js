@@ -11,7 +11,16 @@ puppeteer.use(StealthPlugin()) // allows to pass all tests on SannySoft, even if
 
 const crawlID = Date.now()
 const NUM_URLS = 5;
-const browser_list = ['Chrome']
+const browser_list = ['chrome', 'firefox', 'brave'] 
+/* Note for Brave: you need to set/create a profile and point the userDataDir option to it because Brave downloads the filter lists the first time it launches and stores those lists in the profile. */
+const executable_path = [
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    '/Applications/Firefox.app/Contents/MacOS/firefox',
+    '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
+    // '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
+    // '/Applications/DuckDuckGo.app/Contents/MacOS/DuckDuckGo', // add it to browser list when ready
+]
+
 
 const connection = mysql.createConnection({
     host: '127.0.0.1',
@@ -33,13 +42,14 @@ async function crawl(browser_list){
       });
 
     // set up URL List
-    const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    // const URL_list = ["https://edition.cnn.com/"];
+    // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
+    const URL_list = ["https://edition.cnn.com/"];
     
     for(let j = 0; j < browser_list.length; j++){
         const browserInstance = await puppeteer.launch({
             headless: false, //when false, allows to pass most tests on SannySoft, except WebDrive
             // ignoreHTTPSErrors: true, // would this be desirable? -- allows you to visit websites that aren’t hosted over a secure HTTPS protocol and ignore any HTTPS-related errors.
+            executablePath: executable_path[j],
             args: [
                 '--start-maximized'// browser takes whole screen. 
                 // --proxy-server = x.x.x.x:xxxx // this can be used to specify the IP address
@@ -54,7 +64,7 @@ async function crawl(browser_list){
             console.log(URL);
             try{
                 await page.goto(URL,{
-                    timeout: 30000, // 30 sec nav timeout
+                    timeout: 5000, // 5 sec nav timeout
                     waitUntil: "networkidle2", // either domcontentloaded,networkidle0, networkidle2 -- domcontentloaded seems to be too quick, not all banners appear
                 });
                 
@@ -64,12 +74,13 @@ async function crawl(browser_list){
 
                 // await databaseAPI.saveCookies(URL, pageCookies);
                 // find how to put this in the db.js file and transfer the connection
-                const insertDataQuery = 'INSERT INTO cookie_data (crawlID, URL, name, value, domain, path, expires, size, httpOnly, secure, session, sameSite, sameParty, sourceScheme, sourcePort) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+                const insertDataQuery = 'INSERT INTO cookie_data (crawlID, browser, URL, name, value, domain, path, expires, size, httpOnly, secure, session, sameSite, sameParty, sourceScheme, sourcePort) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
                   
                 for(let i = 0; i < pageCookies.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
                     const data = [
                         crawlID,
                         URL,
+                        browser_list[j],
                         pageCookies[i].name,
                         pageCookies[i].value,
                         pageCookies[i].domain,
