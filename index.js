@@ -1,6 +1,7 @@
 const selectWebsites = require('./websiteSelection');
 const createBrowser = require('./browser');
 const databaseAPI = require('./db');
+// const puppeteer = require("puppeteer");
 const puppeteer = require("puppeteer-extra");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 const mysql = require('mysql2');
@@ -11,26 +12,23 @@ puppeteer.use(StealthPlugin()); // allows to pass all tests on SannySoft, even i
 
 const crawlID = Date.now();
 const NUM_URLS = 5;
-const browser_list = ['firefox','ghostery'] ;
+const browser_list = ['Chrome', 'Brave', 'Firefox', 'Ghostery'] ;
 // const browser_list = ['ddg'] ;
 
-/* On every browser, multiple pages are being opened... I don't know why.
-    They are mostly AutomationControlled pages (Firefox/Ghostery) or the dev profile (see below)
-    but I think they're essentially due to the same cause.*/
-
-/* Note for Brave: (similar for Ghostery -- need to save the settings)
+/* NOTE: for Brave: (similar for Ghostery -- need to save the settings)
 You need to set/create a profile and point the userDataDir option to it because 
 Brave downloads the filter lists the first time it launches and stores those lists in the profile. */
 
-/* FOR CHROME + BRAVE:
-This always opens: file:///private/var/folders/3z/l10dbrvx2xgcw8nl2jtck1nc0000gn/T/puppeteer_dev_profile-L7zNFB/ 
-Half the time it actually opens the URL, but half the time it won't and only open the dev profile
-When I add a userDataDir, it opens that folder but not the URL... */
+/* NOTE: For Chrome and Brave: the browser app must NOT BE OPEN, otherwise it won't work */
 
-/* If I use these exec path, I think we need to make sure they use a clean slate everytime..
+/* TBD: If I use these exec path, I think we need to make sure they use a clean slate everytime..
     Since those are my apps, I think they remember some stuff (like not closing correctly + history) */
 
-/* Navingation timeout everytime on Friefox + Ghostery... Something tells me I need to exit differently
+/* ISSUE: On every browser, multiple pages are being opened -->> this is due to the stealth plugin (or the use of puppeteer extra), but doesn't do it on the "regular" one
+    They are mostly AutomationControlled pages (Firefox/Ghostery) or the dev profile (see below)
+    */
+
+/* *****ISSUE: Navigation timeout everytime on Friefox + Ghostery... Something tells me I need to exit differently
     since they maybe don't send the same signal as Chrome / Brave???
     
     Also, the webdriver flag isn't hidden like it is for Chrome+Brave -- from Bot.SannySoft
@@ -41,9 +39,9 @@ When I add a userDataDir, it opens that folder but not the URL... */
 
 
 const executable_path = [
-    // '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
     '/Applications/Firefox.app/Contents/MacOS/firefox',
-    // '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
     '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
     // '/Applications/DuckDuckGo.app/Contents/MacOS/DuckDuckGo', // add it to browser list when ready
 ];
@@ -78,20 +76,32 @@ async function crawl(browser_list){
     
     for(let j = 0; j < browser_list.length; j++){
         console.log(executable_path[j]);
-        const browserInstance = await puppeteer.launch({
-            headless: false,
-            executablePath: executable_path[j],
-            
-            product: 'firefox',
+        
+        let browserInstance;
 
-            // Chrome (Chromium?) specific settings
-            // userDataDir: userDir[j],
-            args: [
-                '--start-maximized', // browser takes whole screen. 
-                // '--user-data-dir = /Users/philippe/Documents/code/cookie-banners/userDataProfile',
-                // --proxy-server = x.x.x.x:xxxx // this can be used to specify the IP address
-            ]
-        });
+
+        if(browser_list[j] == 'Chrome' || browser_list[j] == 'Brave'){
+
+            browserInstance = await puppeteer.launch({
+                headless: false,
+                executablePath: executable_path[j],
+
+                // Chrome (Chromium?) specific settings
+                // userDataDir: userDir[j],
+                args: [
+                    '--start-maximized', // browser takes whole screen. 
+                    // '--user-data-dir = /Users/philippe/Documents/code/cookie-banners/userDataProfile',
+                    // --proxy-server = x.x.x.x:xxxx // this can be used to specify the IP address
+                ]
+            });
+        }
+
+        else{
+            browserInstance = await puppeteer.launch({
+                headless: false,
+                executablePath: executable_path[j],
+            });
+        }
     
         const page = await browserInstance.newPage();
 
@@ -101,8 +111,8 @@ async function crawl(browser_list){
             console.log(URL);
             try{
                 await page.goto(URL,{
-                    timeout: 10000, // 5 sec nav timeout
-                    waitUntil: "load", // either domcontentloaded,networkidle0, networkidle2 -- domcontentloaded seems to be too quick, not all banners appear
+                    timeout: 10000,
+                    waitUntil: "networkidle0", // either domcontentloaded,networkidle0, networkidle2 -- domcontentloaded seems to be too quick, not all banners appear
                 });
                 
                 await page.screenshot({path: "./screenshots/"+i+"on"+j+".png"});
