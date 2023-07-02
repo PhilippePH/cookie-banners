@@ -12,7 +12,7 @@ puppeteer.use(StealthPlugin()); // allows to pass all tests on SannySoft, even i
 
 const crawlID = Date.now();
 const NUM_URLS = 5;
-const browser_list = ['Chrome', 'Brave', 'Firefox', 'Ghostery'] ;
+const browser_list = ['Chrome'] ;
 // const browser_list = ['ddg'] ;
 
 /* NOTE: for Brave: (similar for Ghostery -- need to save the settings)
@@ -40,9 +40,9 @@ Brave downloads the filter lists the first time it launches and stores those lis
 
 const executable_path = [
     '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-    '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
-    '/Applications/Firefox.app/Contents/MacOS/firefox',
-    '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
+    // '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
+    // '/Applications/Firefox.app/Contents/MacOS/firefox',
+    // '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
     // '/Applications/DuckDuckGo.app/Contents/MacOS/DuckDuckGo', // add it to browser list when ready
 ];
 
@@ -77,12 +77,7 @@ async function crawl(browser_list){
     for(let j = 0; j < browser_list.length; j++){
         console.log(executable_path[j]);
         
-        let browserInstance;
-
-
-        if(browser_list[j] == 'Chrome' || browser_list[j] == 'Brave'){
-
-            browserInstance = await puppeteer.launch({
+        const browserInstance = await puppeteer.launch({
                 headless: false,
                 executablePath: executable_path[j],
 
@@ -94,14 +89,6 @@ async function crawl(browser_list){
                     // --proxy-server = x.x.x.x:xxxx // this can be used to specify the IP address
                 ]
             });
-        }
-
-        else{
-            browserInstance = await puppeteer.launch({
-                headless: false,
-                executablePath: executable_path[j],
-            });
-        }
     
         const page = await browserInstance.newPage();
 
@@ -114,17 +101,32 @@ async function crawl(browser_list){
                     timeout: 10000,
                     waitUntil: "networkidle0", // either domcontentloaded,networkidle0, networkidle2 -- domcontentloaded seems to be too quick, not all banners appear
                 });
-                
-                await page.screenshot({path: "./screenshots/"+i+"on"+j+".png"});
-                let pageCookies = await page.cookies();
-                // console.log(pageCookies);
+                // await page.screenshot({path: "./screenshots/"+i+"on"+j+".png"});
 
-                // await databaseAPI.saveCookies(URL, pageCookies);
-                // find how to put this in the db.js file and transfer the connection
-                const insertDataQuery = 'INSERT INTO cookie_data (crawlID, browser, URL, name, value, domain, path, expires, size, httpOnly, secure, session, sameSite, sameParty, sourceScheme, sourcePort) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+                // Downloads the HTML of the website
+                const html_contents = await page.content()
+                const HTMLDataQuery = 'INSERT INTO html_data (crawlID, browser, url, html) VALUES (?, ?, ?, ?)';
+                const htmlData = [
+                    crawlID,
+                    browser_list[j],
+                    URL,
+                    html_contents
+                ]
+                connection.query(HTMLDataQuery, htmlData, (error, results) => {
+                    if (error) {
+                        console.error('Error inserting data: ', error);
+                    } else {
+                        console.log('Data inserted successfully!');
+                    }
+                    });
+
+                // Downloads the cookies of the website --> eventually put that in a different function99
+                let pageCookies = await page.cookies();
+                
+                const cookieDataQuery = 'INSERT INTO cookie_data (crawlID, browser, URL, name, value, domain, path, expires, size, httpOnly, secure, session, sameSite, sameParty, sourceScheme, sourcePort) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
                   
                 for(let i = 0; i < pageCookies.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
-                    const data = [
+                    const cookieData = [
                         crawlID,
                         browser_list[j],
                         URL,
@@ -143,7 +145,7 @@ async function crawl(browser_list){
                         pageCookies[i].sourcePort
                         ];
                 
-                    connection.query(insertDataQuery, data, (error, results) => {
+                    connection.query(cookieDataQuery, cookieData, (error, results) => {
                     if (error) {
                         console.error('Error inserting data: ', error);
                     } else {
