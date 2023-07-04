@@ -15,8 +15,8 @@ const executablePaths = {
 
 const userProfiles = {
     'Google Chrome' : '',
-    'Brave' : '/Users/philippe/Library/Application Support/BraveSoftware/Brave-Browser',
-    'Firefox' : '/Users/philippe/Library/Application Support/Firefox/Profiles/sh5n5qfy.default',
+    'Brave' : '/Users/philippe/Library/Application Support/BraveSoftware/Brave-Browser', // Found at : brave://version/ (take parent directory)
+    'Firefox' : '/Users/philippe/Library/Application Support/Firefox/Profiles/sh5n5qfy.default', // found at about:profiles
     'Ghostery' : '',
     'DuckDuckGo' : ''
 };
@@ -30,11 +30,6 @@ async function createBrowserInstance(browser){
             headless: false,
             executablePath: executablePaths[browser],
             args: [ '--start-maximized' ]
-            // unsure what that would do:
-            //ignoreDefaultArgs: ['--enable-automation'],
-            // args: ['--disable-blink-features=AutomationControlled'
-            // '--user-data-dir = /Users/philippe/Documents/code/cookie-banners/userDataProfile',
-            // --proxy-server = x.x.x.x:xxxx] // this can be used to specify the IP address
         });
     }
     else if(browser == 'Brave'){
@@ -42,29 +37,29 @@ async function createBrowserInstance(browser){
         return await puppeteer_extra.launch({
             headless: false,
             executablePath: executablePaths[browser],
-            userDataDir: userProfiles[browser], // Found at : brave://version/ (take parent directory)
+            userDataDir: userProfiles[browser], 
+            /* User Profile Description: The EasyList Cookie found in 
+            brave://settings/shields/filters has been enabled. */
             args: [ '--start-maximized' ]
         });
     }
     else if(browser == 'Firefox'){ 
         // Does not use stealth plugin
+        // NOTE: Webdriver flag is still set to true.
         return await puppeteer.launch({
             headless: false,
             product: 'firefox',
             executablePath: executablePaths[browser],
-            userDataDir: userProfiles[browser], // found at about:profiles
-            // still need to make it larger also
-            // ** NOTE THAT STILL NEEDS TO ADD CORRECT SETTINGS IN THAT PROFILE
-            
-            // defaultViewport: null,
-            // args: ['--no-sandbox', '--start-maximized'],
-            // args: [
-            //     '--wait-for-browser' // https://github.com/puppeteer/puppeteer/issues/5958 -- unclear what it does though..
-            //     ],
-            // ignoreDefaultArgs: ['--enable-automation'],
-            // extraPrefsFirefox: {
-            //     'marionette': true,
-            // }
+            userDataDir: userProfiles[browser], 
+            /* User Profile Description: In about:config -->
+            "cookiebanners.service.mode" is set to 2
+            "dom.webdriver.enabled" is set to false 
+            "useAutomationExtension" is set to false
+            "enable-automation" is set to false
+            These last two are an attempt to avoid the webdriver detection (source: https://stackoverflow.com/questions/57122151/exclude-switches-in-firefox-webdriver-options)*/
+
+            defaultViewport: null, // makes window size take full browser size
+            // Browser window isn't maximised currently, but not priority
         });
     }
     else if(browser == 'Ghostery'){ 

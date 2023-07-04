@@ -29,7 +29,7 @@ async function crawl(browserList){
 
     // 2) Create URL List
     // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    const URL_list = ['https://facebook.com'];
+    const URL_list = ['https://bot.sannysoft.com/'];
     
     // 3) Loop through browsers
     for(let browser of browserList){
@@ -44,10 +44,7 @@ async function crawl(browserList){
             console.log(URL);
 
             try{
-                /* HTTP Requests Intercept -- the data (currently) gathered doesn't look very interesting (limited information).
-                Would probably need to collect more granular data. 
-
-                // Prepare intercepts
+                /* // Prepare intercepts
                 await page.setRequestInterception(true);
                 page.on('request', interceptedRequest => {
                 if (!interceptedRequest.isInterceptResolutionHandled()){
@@ -55,11 +52,10 @@ async function crawl(browserList){
                     saveRequests(crawlID, browser, URL, interceptedRequest, connection)
                     interceptedRequest.continue();
                   }
-                });
-                */
+                }); */
 
                 await page.goto(URL,{
-                    timeout: 10000,
+                    // timeout: 10000,
                     waitUntil: "load", // either domcontentloaded,networkidle0, networkidle2 -- domcontentloaded seems to be too quick, not all banners appear
                 });
 
