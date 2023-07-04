@@ -1,13 +1,6 @@
 const mysql = require('mysql2');
 
-// const connection = mysql.createConnection({
-//   host: '127.0.0.1',
-//   user: 'root',
-//   password: 'I@mastrongpsswd',
-//   database: 'CrawlData',
-// });
-
-async function establishConnection(connection){
+function establishConnection(connection){
   connection.connect(function(err) {
     if (err) {
       return console.error('error: ' + err.message);
@@ -17,7 +10,7 @@ async function establishConnection(connection){
   });
 }
 
-async function endConnection(connection){
+function endConnection(connection){
   connection.end(function(err) {
       if (err) {
         return console.log('error:' + err.message);
@@ -26,39 +19,79 @@ async function endConnection(connection){
     });
 }
 
-async function saveCookies(URL, cookies){
-  const insertDataQuery = 'INSERT INTO cookie_data (name, value, domain, path, expires, size, httpOnly, secure, session, sameSite, sameParty, sourceScheme, sourcePort) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
-
-  for(let i = 0; i < cookies.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
-    const data = [
+function saveHTML(crawlID, browser, url, html_contents, connection){
+  const HTMLDataQuery = 'INSERT INTO html_data (crawlID, browser, url, html) VALUES (?, ?, ?, ?)';
+  const htmlData = [
+      crawlID,
+      browser,
       URL,
-      cookies[i].name,
-      cookies[i].value,
-      cookies[i].domain,
-      cookies[i].path, 
-      cookies[i].expires, 
-      cookies[i].size, 
-      cookies[i].httpOnly, 
-      cookies[i].secure, 
-      cookies[i].session, 
-      cookies[i].sameSite, 
-      cookies[i].sameParty, 
-      cookies[i].sourceScheme, 
-      cookies[i].sourcePort
-    ];
-
-    connection.query(insertDataQuery, data, (error, results) => {
+      html_contents
+  ]
+  connection.query(HTMLDataQuery, htmlData, (error, results) => {
       if (error) {
-        console.error('Error inserting data: ', error);
+          console.error('Error inserting data: ', error);
       } else {
-        console.log('Data inserted successfully!');
+          console.log('HTML inserted successfully!');
       }
-    });
+      });
   }
+
+function saveCookies(URL, pageCookies, connection){
+  const cookieDataQuery = 'INSERT INTO cookie_data (crawlID, browser, URL, name, value, domain, path, expires, size, httpOnly, secure, session, sameSite, sameParty, sourceScheme, sourcePort) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+                  
+  for(let i = 0; i < pageCookies.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
+      const cookieData = [
+          crawlID,
+          browser,
+          URL,
+          pageCookies[i].name,
+          pageCookies[i].value,
+          pageCookies[i].domain,
+          pageCookies[i].path, 
+          pageCookies[i].expires, 
+          pageCookies[i].size, 
+          pageCookies[i].httpOnly, 
+          pageCookies[i].secure, 
+          pageCookies[i].session, 
+          pageCookies[i].sameSite, 
+          pageCookies[i].sameParty, 
+          pageCookies[i].sourceScheme, 
+          pageCookies[i].sourcePort
+          ];
+  
+      connection.query(cookieDataQuery, cookieData, (error, results) => {
+      if (error) {
+          console.error('Error inserting data: ', error);
+      } else {
+          console.log('Cookies inserted successfully!');
+      }
+      });
+  }
+}
+
+function saveRequests(crawlID, browser, URL, interceptedRequest, connection){
+  const requestDataQuery = 'INSERT INTO request_data (crawlID, browser, url, request) VALUES (?, ?, ?, ?)';
+  const requestData = [
+      crawlID,
+      browser,
+      URL,
+      interceptedRequest
+      ];
+
+      connection.query(requestDataQuery, requestData, (error, results) => {
+      if (error) {
+          console.error('Error inserting data: ', error);
+      } else {
+          console.log('Request headers inserted successfully!');
+      }
+      });
 }
 
 
 module.exports = {
-    establishConnection,
-    endConnection,
+  saveCookies,
+  saveHTML,
+  saveRequests,
+  endConnection,
+  establishConnection
   };
