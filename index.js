@@ -1,120 +1,98 @@
 const selectWebsites = require('./websiteSelection');
 const createBrowser = require('./browser');
 const databaseAPI = require('./db');
-const puppeteer = require("puppeteer-core"); // tbd if we use this one for non-Chrome?????????????????????????
+const puppeteer = require("puppeteer-core"); 
 const puppeteer_extra = require("puppeteer-extra");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 const mysql = require('mysql2');
 
+// register `puppeteer-extra` plugins (only for chromium)
+puppeteer_extra.use(StealthPlugin()); // allows to pass all tests on SannySoft, even if not in headfull mode
 
-// register `puppeteer-extra` plugins.
-puppeteer_extra.use(StealthPlugin()); // allows to pass all tests on SannySoft, even if not *actually* in headfull mode
+// Default values
+let browserList = ['Firefox'] ;
+let NUM_URLS = 1;
+
+/* // Treat input for browser list and num_url (if no input, use default values)
+var argv = require('minimist')(process.argv.slice(2));
+console.log(argv);
+
+// Create browser list
+const browser_list = argv ; */
 
 const crawlID = Date.now();
-const NUM_URLS = 5;
-// const browser_list = ['Brave'] ;
-const browser_list = ['Firefox'] ; // --> FOR FIREFOX, with my settings, it is possible some request never get answered (hence load failing) --> ex.: A request for a font never resolves, which leads to the load event never being fired. This leads to puppeteer throwing a timeout error.
 
-/* NOTE: for Brave: (similar for Ghostery -- need to save the settings)
-You need to set/create a profile and point the userDataDir option to it because 
-Brave downloads the filter lists the first time it launches and stores those lists in the profile. */
+const executablePaths = {
+    'Google Chrome' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    'Brave' : '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
+    'Firefox' : '/Applications/Firefox.app/Contents/MacOS/firefox',
+    'Ghostery' : '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
+    'DuckDuckGo' : '/Applications/DuckDuckGo.app/Contents/MacOS/DuckDuckGo'
+};
 
-/* NOTE: For Chrome and Brave: the browser app must NOT BE OPEN, otherwise it won't work */
+const userProfiles = {
+    'Google Chrome' : '',
+    'Brave' : '/Users/philippe/Library/Application Support/BraveSoftware/Brave-Browser',
+    'Firefox' : '/Users/philippe/Library/Application Support/Firefox/Profiles/sh5n5qfy.default',
+    'Ghostery' : '',
+    'DuckDuckGo' : ''
+};
 
-/* TBD: If I use these exec path, I think we need to make sure they use a clean slate everytime..
-    Since those are my apps, I think they remember some stuff (like not closing correctly + history) */
-
-/* ISSUE: On every browser, multiple pages are being opened -->> this is due to the stealth plugin (or the use of puppeteer extra), but doesn't do it on the "regular" one
-    They are mostly AutomationControlled pages (Firefox/Ghostery) or the dev profile (see below)
-    */
-
-/* *****ISSUE: Navigation timeout everytime on Friefox + Ghostery... Something tells me I need to exit differently
-    since they maybe don't send the same signal as Chrome / Brave???
-    
-    Also, the webdriver flag isn't hidden like it is for Chrome+Brave -- from Bot.SannySoft
-    
-    Actually, even the size of the webpage doesn't follow directions...
-    
-    Issue persists with Firefox Nightly (using product: firefox) & when using the exec path*/
-
-
-const executable_path = [
-    // '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-    // '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
-    '/Applications/Firefox.app/Contents/MacOS/firefox',
-    // '/Applications/Firefox Nightly.app/Contents/MacOS/firefox' // nightly
-    // '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
-    // '/Applications/DuckDuckGo.app/Contents/MacOS/DuckDuckGo', // add it to browser list when ready
-];
-
-const userDir = [
-    '/Users/philippe/Library/Application Support/BraveSoftware/Brave-Browser/Default' 
-//     '/Users/philippe/Documents/code/cookie-banners/userDataProfile',
-//     // '/Users/philippe/Library/Application Support/Google/Chrome/Profile 4', // Found at : chrome://version/
-//     // '/Library/Application Support/Google/Chrome',
-//     // '/Library/Application Support/Mozilla'
-];
-
-const connection = mysql.createConnection({
+// Connection to the database server
+const dbConnection = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
     password: 'I@mastrongpsswd',
     database: 'CrawlData',
   });
 
-async function crawl(browser_list){
-    // set up database connection
-    connection.connect(function(err) {
+async function crawl(browserList){
+    // 1) Set up database connection
+    dbConnection.connect(function(err) {
         if (err) {
           return console.error('error: ' + err.message);
         }
-      
         console.log('Connected to the MySQL server.');
       });
 
-    // set up URL List
+    // 2) Create URL List
     // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    const URL_list = ["https://www.facebook.com/"];
+    const URL_list = ['https://facebook.com'];
     
-    for(let j = 0; j < browser_list.length; j++){
-        console.log(executable_path[j]);
+    for(let browser of browserList){
+        console.log("Browser: " + browser + ". At path: " + executablePaths[browser]);
         let browserInstance;
         
-        if(browser_list[j] == 'Chrome'){ // Uses stealth plugin
-            browserInstance = await puppeteer_extra.launch({
+        if(browser == 'Google Chrome'){
+            // Uses puppeteer_extra (stealth plugin)
+            browserInstance = await puppeteer_extra.launch({ 
                 headless: false,
-                executablePath: executable_path[j],
-                // userDataDir: userDir[j],
-
-                args: [
-                    '--start-maximized', // browser takes whole screen. 
-                    // '--user-data-dir = /Users/philippe/Documents/code/cookie-banners/userDataProfile',
-                    // --proxy-server = x.x.x.x:xxxx // this can be used to specify the IP address
-                ]
-
+                executablePath: executablePaths[browser],
+                args: [ '--start-maximized' ]
                 // unsure what that would do:
                 //ignoreDefaultArgs: ['--enable-automation'],
-                // args: ['--disable-blink-features=AutomationControlled'],
+                // args: ['--disable-blink-features=AutomationControlled'
+                // '--user-data-dir = /Users/philippe/Documents/code/cookie-banners/userDataProfile',
+                // --proxy-server = x.x.x.x:xxxx] // this can be used to specify the IP address
             });
         }
-        /* THIS WORKS -- CRAWL + PROFILE */
-        else if(browser_list[j] == 'Brave'){ // Uses stealth plugin
-            console.log("Using brave settings");
+        else if(browser == 'Brave'){
+            // Uses puppeteer_extra (stealth plugin)
             browserInstance = await puppeteer_extra.launch({
                 headless: false,
-                executablePath: executable_path[j],
-                userDataDir: '/Users/philippe/Library/Application Support/BraveSoftware/Brave-Browser', // Found at : brave://version/ (take parent directory)
-                args: [ '--start-maximized' ] // browser takes whole screen. 
+                executablePath: executablePaths[browser],
+                userDataDir: userProfiles[browser], // Found at : brave://version/ (take parent directory)
+                args: [ '--start-maximized' ]
             });
         }
-        else if(browser_list[j] == 'Firefox'){ // Does not use stealth plugin
+        else if(browser == 'Firefox'){ 
+            // Does not use stealth plugin
             browserInstance = await puppeteer.launch({
                 headless: false,
                 product: 'firefox',
-                executablePath: executable_path[j],
-                userDataDir: '/Users/philippe/Library/Application Support/Firefox/Profiles/sh5n5qfy.default', // found at about:profiles
+                executablePath: executablePaths[browser],
+                userDataDir: userProfiles[browser], // found at about:profiles
                 // ** NOTE THAT STILL NEEDS TO ADD CORRECT SETTINGS IN THAT PROFILE
-
                 
                 // defaultViewport: null,
                 // args: ['--no-sandbox', '--start-maximized'],
@@ -127,11 +105,18 @@ async function crawl(browser_list){
                 // }
             });
         }
-        // else{
+        else if(browser == 'Ghostery'){ 
+            // Does not use stealth plugin
+            browserInstance = await puppeteer.launch({
+                headless: false,
+                executablePath: executablePaths[browser],
+                userDataDir: userProfiles[browser], // found at about:profiles
+                // ** NOTE THAT STILL NEEDS TO ADD CORRECT SETTINGS IN THAT PROFILE
+            });
+        }
+        else if(browser == 'DuckDuckGo'){}
 
-        // }
-        
-        // const page = await browserInstance.newPage();
+        // This gets rid of the about::blank page
         const pages = await browserInstance.pages();
         const page = pages[0];
 
@@ -139,6 +124,7 @@ async function crawl(browser_list){
         for(let i = 0; i < URL_list.length; i++){
             let URL = URL_list[i];
             console.log(URL);
+
             try{
                 
                 /* HTTP Requests Intercept -- the data (currently) gathered doesn't look very interesting (limited information).
@@ -185,11 +171,11 @@ async function crawl(browser_list){
                 const HTMLDataQuery = 'INSERT INTO html_data (crawlID, browser, url, html) VALUES (?, ?, ?, ?)';
                 const htmlData = [
                     crawlID,
-                    browser_list[j],
+                    browser,
                     URL,
                     html_contents
                 ]
-                connection.query(HTMLDataQuery, htmlData, (error, results) => {
+                dbConnection.query(HTMLDataQuery, htmlData, (error, results) => {
                     if (error) {
                         console.error('Error inserting data: ', error);
                     } else {
@@ -205,7 +191,7 @@ async function crawl(browser_list){
                 for(let i = 0; i < pageCookies.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
                     const cookieData = [
                         crawlID,
-                        browser_list[j],
+                        browser,
                         URL,
                         pageCookies[i].name,
                         pageCookies[i].value,
@@ -222,7 +208,7 @@ async function crawl(browser_list){
                         pageCookies[i].sourcePort
                         ];
                 
-                    connection.query(cookieDataQuery, cookieData, (error, results) => {
+                    dbConnection.query(cookieDataQuery, cookieData, (error, results) => {
                     if (error) {
                         console.error('Error inserting data: ', error);
                     } else {
@@ -237,7 +223,7 @@ async function crawl(browser_list){
     
     await browserInstance.close();
     }
-    connection.end(function(err) {
+    dbConnection.end(function(err) {
         if (err) {
           return console.log('error:' + err.message);
         }
@@ -245,4 +231,4 @@ async function crawl(browser_list){
       });
 }
 
-crawl(browser_list);
+crawl(browserList);
