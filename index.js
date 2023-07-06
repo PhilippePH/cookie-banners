@@ -4,7 +4,7 @@ const databaseAPI = require('./db');
 const mysql = require('mysql2');
 
 // Default values
-let browserList = ['Firefox'] ;
+let browserList = ['Google Chrome', 'Brave', 'Firefox', 'Ghostery'] ;
 let NUM_URLS = 1;
 
 /* // Treat input for browser list and num_url (if no input, use default values)
@@ -29,7 +29,7 @@ async function crawl(browserList){
 
     // 2) Create URL List
     // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    const URL_list = ['https://bot.sannysoft.com/'];
+    const URL_list = ['https://www.imperial.ac.uk/'];
     
     // 3) Loop through browsers
     for(let browser of browserList){
@@ -55,7 +55,7 @@ async function crawl(browserList){
                 }); */
 
                 await page.goto(URL,{
-                    // timeout: 10000,
+                    timeout: 10000,
                     waitUntil: "load", // either domcontentloaded,networkidle0, networkidle2 -- domcontentloaded seems to be too quick, not all banners appear
                 });
 

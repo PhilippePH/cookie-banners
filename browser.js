@@ -14,11 +14,11 @@ const executablePaths = {
 };
 
 const userProfiles = {
-    'Google Chrome' : '',
+    // No need for chrome profiles in this study
     'Brave' : '/Users/philippe/Library/Application Support/BraveSoftware/Brave-Browser', // Found at : brave://version/ (take parent directory)
     'Firefox' : '/Users/philippe/Library/Application Support/Firefox/Profiles/sh5n5qfy.default', // found at about:profiles
-    'Ghostery' : '',
-    'DuckDuckGo' : ''
+    'Ghostery' : '/Users/philippe/Library/Application Support/Ghostery Browser/Profiles/j4yasrx6.WebCrawler',
+    // DDG does not seem to have profiles
 };
 
 async function createBrowserInstance(browser){
@@ -64,14 +64,30 @@ async function createBrowserInstance(browser){
     }
     else if(browser == 'Ghostery'){ 
         // Does not use stealth plugin
+        // NOTE: Webdriver flag is still set to true.
+        return await puppeteer.launch({
+            headless: false,
+            product: 'firefox', // Ghostery is built off of firefox, and this helps puppeteer work. 
+            executablePath: executablePaths[browser],
+            userDataDir: userProfiles[browser], // found at about:profiles
+            /* Default settings, but when prompted upon first visit, Ghostery has been activated. */
+            defaultViewport: null, // makes window size take full browser size
+        });
+    }
+
+    // NO INTERACTION WITH SEARCH BAR
+    // ONLY INTERACTION EVER WITNESS IS GOING TO FETCH A FIREFOX USER PROFILE WHEN PRODUCT IS SET TO 'FIREFOX'
+    else if(browser == 'DuckDuckGo'){
+        // Does not use stealth plugin
         return await puppeteer.launch({
             headless: false,
             executablePath: executablePaths[browser],
-            userDataDir: userProfiles[browser], // found at about:profiles
-            // ** NOTE THAT STILL NEEDS TO ADD CORRECT SETTINGS IN THAT PROFILE
+            defaultViewport: null, // makes window size take full browser size
+            // userDataDir: userProfiles[browser], // found at about:profiles
+            // ignoreDefaultArgs: true
+            waitForInitialPage: false
         });
     }
-    else if(browser == 'DuckDuckGo'){}
 }
 
 module.exports = {
