@@ -1,4 +1,6 @@
-/screenshots
-/node_modules
+/webCrawler/screenshots
+/webCrawler/node_modules
 /drivers
 .DS_Store
+/bannerID/venv
+/.venv
