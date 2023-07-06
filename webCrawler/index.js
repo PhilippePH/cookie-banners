@@ -29,8 +29,8 @@ async function crawl(browserList){
 
     // 2) Create URL List
     // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    const URL_list = ['https://www.imperial.ac.uk/'];
-    
+    const URL_list = ['https://www.facebook.com/', 'https://www.nytimes.com/', 'https://edition.cnn.com/'];
+
     // 3) Loop through browsers
     for(let browser of browserList){
         const browserInstance = await createBrowserInstance.createBrowserInstance(browser);
@@ -55,12 +55,21 @@ async function crawl(browserList){
                 }); */
 
                 await page.goto(URL,{
-                    timeout: 10000,
-                    waitUntil: "load", // either domcontentloaded,networkidle0, networkidle2 -- domcontentloaded seems to be too quick, not all banners appear
+                    timeout: 15000,
+                    waitUntil: "load", 
+                    /* waitUntil: either load, domcontentloaded,networkidle0, networkidle2
+                    - domcontentloaded seems to be too quick, not all banners appear
+                    - newtworkidle2 creates multiple timeouts (i think some browsers might never send the message)
+                    */
                 });
 
                 // Screenshot
-                // await page.screenshot({path: "./screenshots/"+i+"on"+j+".png"});
+                const siteName = await selectWebsites.getSiteNames(URL);
+                await page.screenshot({
+                    path: './webCrawler/screenshots/'+browser+'_'+siteName+'.jpeg',
+                    type: "jpeg",
+                    quality: 50,
+                });
                 
                 // Downloads the HTML of the website
                 const html_contents = await page.content()

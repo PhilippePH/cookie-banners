@@ -62,10 +62,10 @@ function saveCookies(crawlID, browser, URL, pageCookies, connection){
       connection.query(cookieDataQuery, cookieData, (error, results) => {
       if (error) {
           console.error('Error inserting data: ', error);
-      } else {
-          console.log('Cookies inserted successfully!');
       }
+      
       });
+      console.log('Cookies inserted successfully!');
   }
 }
 

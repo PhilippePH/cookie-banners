@@ -8,7 +8,7 @@ async function CSVtoArray(){
       .pipe(parse({ delimiter: ","}))
       .on("data", function (row) {
         // console.log(row[1]);
-        myURLs.push("https://"+row[1]);
+        myURLs.push("https://www."+row[1]);
         // console.log(myURLs);
       })
       .on("end", function () {
@@ -29,4 +29,13 @@ async function getFirstURLs(number){
   return data.slice(0,number+1);
 }
 
-module.exports = {getFirstURLs};
+async function getSiteNames(url){
+  /* Takes a single input and returns the name of the site
+  Following the format of the (modified) top-1m tranco list 
+  https://www.SITENAME.com
+  */
+  const nameArray = await url.split(".");
+  return nameArray[1];
+}
+
+module.exports = {getFirstURLs, getSiteNames};
