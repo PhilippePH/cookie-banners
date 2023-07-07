@@ -10,15 +10,15 @@ const executablePaths = {
     'Brave' : '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
     'Firefox' : '/Applications/Firefox.app/Contents/MacOS/firefox',
     'Ghostery' : '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
-    'DuckDuckGo' : '/Applications/DuckDuckGo.app/Contents/MacOS/DuckDuckGo'
+    'DuckDuckGo' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 };
 
 const userProfiles = {
-    // No need for chrome profiles in this study
+    'Google Chrome' : '/Users/philippe/Library/Application Support/Google/Chrome/Profile 5',
     'Brave' : '/Users/philippe/Library/Application Support/BraveSoftware/Brave-Browser', // Found at : brave://version/ (take parent directory)
     'Firefox' : '/Users/philippe/Library/Application Support/Firefox/Profiles/sh5n5qfy.default', // found at about:profiles
     'Ghostery' : '/Users/philippe/Library/Application Support/Ghostery Browser/Profiles/j4yasrx6.WebCrawler',
-    // DDG does not seem to have profiles
+    'DuckDuckGo' : '/Users/philippe/Library/Application Support/Google/Chrome/Profile 6'
 };
 
 async function createBrowserInstance(browser){
@@ -29,13 +29,14 @@ async function createBrowserInstance(browser){
         return await puppeteer_extra.launch({ 
             headless: false,
             executablePath: executablePaths[browser],
+            userDataDir: userProfiles[browser], // User profile is the default Chrome
             args: [ '--start-maximized' ]
         });
     }
     else if(browser == 'Brave'){
         // Uses puppeteer_extra (stealth plugin)
         return await puppeteer_extra.launch({
-            headless: false,
+            // headless: false,
             executablePath: executablePaths[browser],
             userDataDir: userProfiles[browser], 
             /* User Profile Description: The EasyList Cookie found in 
@@ -47,7 +48,7 @@ async function createBrowserInstance(browser){
         // Does not use stealth plugin
         // NOTE: Webdriver flag is still set to true.
         return await puppeteer.launch({
-            headless: false,
+            headless: 'new',
             product: 'firefox',
             executablePath: executablePaths[browser],
             userDataDir: userProfiles[browser], 
@@ -66,7 +67,7 @@ async function createBrowserInstance(browser){
         // Does not use stealth plugin
         // NOTE: Webdriver flag is still set to true.
         return await puppeteer.launch({
-            headless: false,
+            headless: 'new',
             product: 'firefox', // Ghostery is built off of firefox, and this helps puppeteer work. 
             executablePath: executablePaths[browser],
             userDataDir: userProfiles[browser], // found at about:profiles
@@ -77,17 +78,15 @@ async function createBrowserInstance(browser){
 
     // NO INTERACTION WITH SEARCH BAR
     // ONLY INTERACTION EVER WITNESS IS GOING TO FETCH A FIREFOX USER PROFILE WHEN PRODUCT IS SET TO 'FIREFOX'
-    else if(browser == 'DuckDuckGo'){
-        // Does not use stealth plugin
-        return await puppeteer.launch({
-            headless: false,
-            executablePath: executablePaths[browser],
-            defaultViewport: null, // makes window size take full browser size
-            // userDataDir: userProfiles[browser], // found at about:profiles
-            // ignoreDefaultArgs: true
-            waitForInitialPage: false
-        });
-    }
+    // else if(browser == 'DuckDuckGo'){
+    //     // Does not use stealth plugin
+    //     return await puppeteer.launch({
+    //         headless: false,
+    //         executablePath: executablePaths[browser],
+    //         userDataDir: userProfiles[browser], // User profile is the default Chrome with the DDG extension added
+    //         args: [ '--start-maximized' ]
+    //     });
+    // }
 }
 
 module.exports = {

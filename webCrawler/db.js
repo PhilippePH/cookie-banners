@@ -19,6 +19,7 @@ function endConnection(connection){
     });
 }
 
+/* 
 function saveHTML(crawlID, browser, URL, html_contents, connection){
   const HTMLDataQuery = 'INSERT INTO html_data (crawlID, browser, url, html) VALUES (?, ?, ?, ?)';
   const htmlData = [
@@ -30,11 +31,11 @@ function saveHTML(crawlID, browser, URL, html_contents, connection){
   connection.query(HTMLDataQuery, htmlData, (error, results) => {
       if (error) {
           console.error('Error inserting data: ', error);
-      } else {
-          console.log('HTML inserted successfully!');
       }
       });
   }
+*/ 
+
 
 function saveCookies(crawlID, browser, URL, pageCookies, connection){
   const cookieDataQuery = 'INSERT INTO cookie_data (crawlID, browser, URL, name, value, domain, path, expires, size, httpOnly, secure, session, sameSite, sameParty, sourceScheme, sourcePort) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
@@ -65,24 +66,25 @@ function saveCookies(crawlID, browser, URL, pageCookies, connection){
       }
       
       });
-      console.log('Cookies inserted successfully!');
   }
 }
 
 function saveRequests(crawlID, browser, URL, interceptedRequest, connection){
-  const requestDataQuery = 'INSERT INTO request_data (crawlID, browser, url, request) VALUES (?, ?, ?, ?)';
+  const requestDataQuery = 'INSERT INTO request_data (crawlID, browser, url, specific_url, method, referer, cookie, postData) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
   const requestData = [
       crawlID,
       browser,
       URL,
-      interceptedRequest
+      interceptedRequest.url(),
+      interceptedRequest.method(),
+      interceptedRequest.headers()['referer'],
+      interceptedRequest.headers()['cookie'],
+      interceptedRequest.postData()
       ];
 
       connection.query(requestDataQuery, requestData, (error, results) => {
       if (error) {
           console.error('Error inserting data: ', error);
-      } else {
-          console.log('Request headers inserted successfully!');
       }
       });
 }

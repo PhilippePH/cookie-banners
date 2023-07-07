@@ -4,7 +4,7 @@ const databaseAPI = require('./db');
 const mysql = require('mysql2');
 
 // Default values
-let browserList = ['Google Chrome', 'Brave', 'Firefox', 'Ghostery'] ;
+let browserList = ['Google Chrome'] ;
 let NUM_URLS = 1;
 
 /* // Treat input for browser list and num_url (if no input, use default values)
@@ -29,7 +29,7 @@ async function crawl(browserList){
 
     // 2) Create URL List
     // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    const URL_list = ['https://www.facebook.com/', 'https://www.nytimes.com/', 'https://edition.cnn.com/'];
+    const URL_list = ['https://www.nytimes.com/'];
 
     // 3) Loop through browsers
     for(let browser of browserList){
@@ -44,15 +44,15 @@ async function crawl(browserList){
             console.log(URL);
 
             try{
-                /* // Prepare intercepts
+                // Prepare intercepts
                 await page.setRequestInterception(true);
                 page.on('request', interceptedRequest => {
                 if (!interceptedRequest.isInterceptResolutionHandled()){
-                    console.log("Intercepting request");
-                    saveRequests(crawlID, browser, URL, interceptedRequest, connection)
+                    // console.log('Request headers:', interceptedRequest.headers());
+                    databaseAPI.saveRequests(crawlID, browser, URL, interceptedRequest, connection)
                     interceptedRequest.continue();
                   }
-                }); */
+                });
 
                 await page.goto(URL,{
                     timeout: 15000,
@@ -73,7 +73,8 @@ async function crawl(browserList){
                 
                 // Downloads the HTML of the website
                 const html_contents = await page.content()
-                databaseAPI.saveHTML(crawlID, browser, URL, html_contents, connection)
+                // This was used to add the HTML to the database. Instead, now pivoting to HTML files.
+                // databaseAPI.saveHTML(crawlID, browser, URL, html_contents, connection)
 
                 // Downloads the cookies of the website --> eventually put that in a different function99
                 let pageCookies = await page.cookies();
