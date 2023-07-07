@@ -2,6 +2,8 @@ const selectWebsites = require('./websiteSelection');
 const createBrowserInstance = require('./browser');
 const databaseAPI = require('./db');
 const mysql = require('mysql2');
+const fs = require('fs');
+const { promisify } = require('util');
 
 // Default values
 let browserList = ['Google Chrome'] ;
@@ -71,8 +73,13 @@ async function crawl(browserList){
                     quality: 50,
                 });
                 
-                // Downloads the HTML of the website
-                const html_contents = await page.content()
+                // Downloads the HTML of the website and saves it to a file
+                const htmlContent = await page.content();
+                const fileName = `html_files/${browser}_${siteName}.html`;
+                const writeFileAsync = promisify(fs.writeFile);
+                await writeFileAsync(fileName, htmlContent);
+                
+
                 // This was used to add the HTML to the database. Instead, now pivoting to HTML files.
                 // databaseAPI.saveHTML(crawlID, browser, URL, html_contents, connection)
 

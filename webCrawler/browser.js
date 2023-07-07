@@ -27,10 +27,10 @@ async function createBrowserInstance(browser){
     if(browser == 'Google Chrome'){
         // Uses puppeteer_extra (stealth plugin)
         return await puppeteer_extra.launch({ 
-            headless: false,
+            headless: "new",
             executablePath: executablePaths[browser],
             userDataDir: userProfiles[browser], // User profile is the default Chrome
-            args: [ '--start-maximized' ]
+            args: ['--start-maximized' ]
         });
     }
     else if(browser == 'Brave'){

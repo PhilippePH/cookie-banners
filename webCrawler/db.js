@@ -92,7 +92,7 @@ function saveRequests(crawlID, browser, URL, interceptedRequest, connection){
 
 module.exports = {
   saveCookies,
-  saveHTML,
+  // saveHTML,
   saveRequests,
   endConnection,
   establishConnection
