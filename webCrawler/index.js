@@ -5,17 +5,8 @@ const mysql = require('mysql2');
 const fs = require('fs');
 const { promisify } = require('util');
 
-// Default values
-let browserList = ['Google Chrome'] ;
-let NUM_URLS = 1;
-
-/* // Treat input for browser list and num_url (if no input, use default values)
-var argv = require('minimist')(process.argv.slice(2));
-console.log(argv);
-
-// Create browser list
-const browser_list = argv ; */
-
+let browserList = ['Firefox', 'Ghostery'] ;
+let NUM_URLS = 100;
 const crawlID = Date.now();
 
 const connection = mysql.createConnection({
@@ -30,9 +21,8 @@ async function crawl(browserList){
     databaseAPI.establishConnection(connection); 
 
     // 2) Create URL List
-    // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    const URL_list = ['https://www.nytimes.com/'];
-
+    const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
+    // const URL_list = ["https://nytimes.com"]
     // 3) Loop through browsers
     for(let browser of browserList){
         const browserInstance = await createBrowserInstance.createBrowserInstance(browser);
@@ -46,16 +36,17 @@ async function crawl(browserList){
             console.log(URL);
 
             try{
-                // Prepare intercepts
-                await page.setRequestInterception(true);
-                page.on('request', interceptedRequest => {
-                if (!interceptedRequest.isInterceptResolutionHandled()){
-                    // console.log('Request headers:', interceptedRequest.headers());
-                    databaseAPI.saveRequests(crawlID, browser, URL, interceptedRequest, connection)
-                    interceptedRequest.continue();
-                  }
-                });
-
+                if(browser == 'Google Chrome' || browser == 'Brave'){
+                    // Prepare intercepts
+                    await page.setRequestInterception(true);
+                    page.on('request', interceptedRequest => {
+                    if (!interceptedRequest.isInterceptResolutionHandled()){
+                        // console.log('Request headers:', interceptedRequest.headers());
+                        databaseAPI.saveRequests(crawlID, browser, URL, interceptedRequest, connection)
+                        interceptedRequest.continue();
+                    }
+                    });
+                }   
                 await page.goto(URL,{
                     timeout: 15000,
                     waitUntil: "load", 
@@ -92,9 +83,7 @@ async function crawl(browserList){
             }
         }
     await browserInstance.close();
-
     }
     databaseAPI.endConnection(connection);
 }
-
 crawl(browserList);

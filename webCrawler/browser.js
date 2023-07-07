@@ -36,7 +36,7 @@ async function createBrowserInstance(browser){
     else if(browser == 'Brave'){
         // Uses puppeteer_extra (stealth plugin)
         return await puppeteer_extra.launch({
-            // headless: false,
+            headless: 'new',
             executablePath: executablePaths[browser],
             userDataDir: userProfiles[browser], 
             /* User Profile Description: The EasyList Cookie found in 
