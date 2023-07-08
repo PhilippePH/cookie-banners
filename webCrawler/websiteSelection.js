@@ -8,7 +8,7 @@ async function CSVtoArray(){
       .pipe(parse({ delimiter: ","}))
       .on("data", function (row) {
         // console.log(row[1]);
-        myURLs.push("https://"+row[1]);
+        myURLs.push("https://www."+row[1]);
         // console.log(myURLs);
       })
       .on("end", function () {
