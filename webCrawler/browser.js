@@ -23,70 +23,62 @@ const userProfiles = {
 
 async function createBrowserInstance(browser){
     console.log("Browser: " + browser + ". At path: " + executablePaths[browser]);
+    try{
+        if(browser == 'Google Chrome'){
+            // Uses puppeteer_extra (stealth plugin)
+            return await puppeteer_extra.launch({ 
+                headless: "new",
+                executablePath: executablePaths[browser],
+                userDataDir: userProfiles[browser], // User profile is the default Chrome
+                args: ['--start-maximized' ]
+            });
+        }
+        else if(browser == 'Brave'){
+            // Uses puppeteer_extra (stealth plugin)
+            return await puppeteer_extra.launch({
+                headless: 'new',
+                executablePath: executablePaths[browser],
+                userDataDir: userProfiles[browser], 
+                /* User Profile Description: The EasyList Cookie found in 
+                brave://settings/shields/filters has been enabled. */
+                args: [ '--start-maximized' ]
+            });
+        }
+        else if(browser == 'Firefox'){ 
+            // Does not use stealth plugin
+            // NOTE: Webdriver flag is still set to true.
+            return await puppeteer.launch({
+                headless: 'new',
+                product: 'firefox',
+                executablePath: executablePaths[browser],
+                userDataDir: userProfiles[browser], 
+                /* User Profile Description: In about:config -->
+                "cookiebanners.service.mode" is set to 2
+                "dom.webdriver.enabled" is set to false 
+                "useAutomationExtension" is set to false
+                "enable-automation" is set to false
+                These last two are an attempt to avoid the webdriver detection (source: https://stackoverflow.com/questions/57122151/exclude-switches-in-firefox-webdriver-options)*/
 
-    if(browser == 'Google Chrome'){
-        // Uses puppeteer_extra (stealth plugin)
-        return await puppeteer_extra.launch({ 
-            headless: "new",
-            executablePath: executablePaths[browser],
-            userDataDir: userProfiles[browser], // User profile is the default Chrome
-            args: ['--start-maximized' ]
-        });
+                defaultViewport: null, // makes window size take full browser size
+                // Browser window isn't maximised currently, but not priority
+            });
+        }
+        else if(browser == 'Ghostery'){ 
+            // Does not use stealth plugin
+            // NOTE: Webdriver flag is still set to true.
+            return await puppeteer.launch({
+                headless: 'new',
+                product: 'firefox', // Ghostery is built off of firefox, and this helps puppeteer work. 
+                executablePath: executablePaths[browser],
+                userDataDir: userProfiles[browser], // found at about:profiles
+                /* Default settings, but when prompted upon first visit, Ghostery has been activated. */
+                defaultViewport: null, // makes window size take full browser size
+            });
+        }
+    } catch(error){
+        console.log("Error launching the BrowserInstance")
+        console.log(error)
     }
-    else if(browser == 'Brave'){
-        // Uses puppeteer_extra (stealth plugin)
-        return await puppeteer_extra.launch({
-            headless: 'new',
-            executablePath: executablePaths[browser],
-            userDataDir: userProfiles[browser], 
-            /* User Profile Description: The EasyList Cookie found in 
-            brave://settings/shields/filters has been enabled. */
-            args: [ '--start-maximized' ]
-        });
-    }
-    else if(browser == 'Firefox'){ 
-        // Does not use stealth plugin
-        // NOTE: Webdriver flag is still set to true.
-        return await puppeteer.launch({
-            headless: 'new',
-            product: 'firefox',
-            executablePath: executablePaths[browser],
-            userDataDir: userProfiles[browser], 
-            /* User Profile Description: In about:config -->
-            "cookiebanners.service.mode" is set to 2
-            "dom.webdriver.enabled" is set to false 
-            "useAutomationExtension" is set to false
-            "enable-automation" is set to false
-            These last two are an attempt to avoid the webdriver detection (source: https://stackoverflow.com/questions/57122151/exclude-switches-in-firefox-webdriver-options)*/
-
-            defaultViewport: null, // makes window size take full browser size
-            // Browser window isn't maximised currently, but not priority
-        });
-    }
-    else if(browser == 'Ghostery'){ 
-        // Does not use stealth plugin
-        // NOTE: Webdriver flag is still set to true.
-        return await puppeteer.launch({
-            headless: 'new',
-            product: 'firefox', // Ghostery is built off of firefox, and this helps puppeteer work. 
-            executablePath: executablePaths[browser],
-            userDataDir: userProfiles[browser], // found at about:profiles
-            /* Default settings, but when prompted upon first visit, Ghostery has been activated. */
-            defaultViewport: null, // makes window size take full browser size
-        });
-    }
-
-    // NO INTERACTION WITH SEARCH BAR
-    // ONLY INTERACTION EVER WITNESS IS GOING TO FETCH A FIREFOX USER PROFILE WHEN PRODUCT IS SET TO 'FIREFOX'
-    // else if(browser == 'DuckDuckGo'){
-    //     // Does not use stealth plugin
-    //     return await puppeteer.launch({
-    //         headless: false,
-    //         executablePath: executablePaths[browser],
-    //         userDataDir: userProfiles[browser], // User profile is the default Chrome with the DDG extension added
-    //         args: [ '--start-maximized' ]
-    //     });
-    // }
 }
 
 module.exports = {
