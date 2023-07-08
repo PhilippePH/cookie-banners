@@ -6,7 +6,7 @@ const fs = require('fs');
 const { promisify } = require('util');
 const puppeteer = require('puppeteer');
 
-let browserList = ['Ghostery'] ;
+let browserList = ['Firefox'] ;
 let NUM_URLS = 100;
 const crawlID = Date.now();
 
@@ -31,7 +31,7 @@ async function crawl(browserList){
             const browserInstance = await createBrowserInstance.createBrowserInstance(browser);
             try{ // Here to ensure the BrowserInstance closes in case of an error
                 // This gets rid of the about::blank page
-                const pages = await browserInstance.pages();
+                let pages = await browserInstance.pages();
                 let page = pages[0];
 
                 // Loop through URLs
@@ -68,6 +68,7 @@ async function crawl(browserList){
                         if (error instanceof puppeteer.TimeoutError) {
                             console.log("TimeoutError:", URL);
                             // Resetting page?
+                            await page.close();
                             page = await browserInstance.newPage();
                         }
                         else{

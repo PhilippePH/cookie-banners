@@ -48,7 +48,7 @@ async function createBrowserInstance(browser){
             // Does not use stealth plugin
             // NOTE: Webdriver flag is still set to true.
             return await puppeteer.launch({
-                headless: 'new',
+                headless: false,
                 product: 'firefox',
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser], 
