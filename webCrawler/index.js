@@ -6,7 +6,7 @@ const fs = require('fs');
 const { promisify } = require('util');
 const puppeteer = require('puppeteer');
 
-let browserList = ['Firefox'] ;
+let browserList = ['Google Chome'] ;
 let NUM_URLS = 100;
 const crawlID = Date.now();
 
@@ -23,12 +23,18 @@ async function crawl(browserList){
         databaseAPI.establishConnection(connection); 
 
         // 2) Create URL List
-        const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-        // const URL_list = ["https://www.ebay.com", "https://nytimes.com"]
+        // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
+        const URL_list = ["https://www.ebay.com", "https://nytimes.com"]
         // const URL_list = ["https://www.google.com"];
         // 3) Loop through browsers
         for(let browser of browserList){
-            const browserInstance = await createBrowserInstance.createBrowserInstance(browser);
+            let browserInstance;
+            try{ 
+                browserInstance = await createBrowserInstance.createBrowserInstance(browser);
+            } catch{
+                databaseAPI.endConnection(connection);
+                process.exit(1);
+            }
             try{ // Here to ensure the BrowserInstance closes in case of an error
                 // This gets rid of the about::blank page
                 let pages = await browserInstance.pages();
@@ -78,7 +84,8 @@ async function crawl(browserList){
                     }
 
                     // Calculate page load time
-                    // To DO
+                    console.log(page.evaluate());
+                    
                     
                     try{
                         // Screenshot

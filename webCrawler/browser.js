@@ -1,6 +1,8 @@
 const puppeteer = require("puppeteer-core"); 
 const puppeteer_extra = require("puppeteer-extra");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
+const BrowserNameError = require('./customErrors')
+
 
 // register `puppeteer-extra` plugins (only for chromium)
 puppeteer_extra.use(StealthPlugin()); // allows to pass all tests on SannySoft, even if not in headfull mode
@@ -75,9 +77,18 @@ async function createBrowserInstance(browser){
                 defaultViewport: null, // makes window size take full browser size
             });
         }
+        else{
+            throw new BrowserNameError("Please ensure the browser name passed is one of: 'Google Chrome', 'Brave', 'Firefox', 'Ghostery'.");
+        }
     } catch(error){
-        console.log("Error launching the BrowserInstance")
-        console.log(error)
+        if(error instanceof BrowserNameError){
+            console.log(error.name + ": " + error.message);
+            throw new Error;
+        }
+        else{
+            console.log("Error launching the BrowserInstance")
+            console.log(error)
+        }
     }
 }
 
