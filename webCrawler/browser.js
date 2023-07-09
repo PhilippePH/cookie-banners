@@ -3,7 +3,6 @@ const puppeteer_extra = require("puppeteer-extra");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 const BrowserNameError = require('./customErrors')
 
-
 // register `puppeteer-extra` plugins (only for chromium)
 puppeteer_extra.use(StealthPlugin()); // allows to pass all tests on SannySoft, even if not in headfull mode
 
@@ -29,7 +28,7 @@ async function createBrowserInstance(browser){
         if(browser == 'Google Chrome'){
             // Uses puppeteer_extra (stealth plugin)
             return await puppeteer_extra.launch({ 
-                headless: "new",
+                headless: 'new',
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser], // User profile is the default Chrome
                 args: ['--start-maximized' ]
@@ -50,7 +49,7 @@ async function createBrowserInstance(browser){
             // Does not use stealth plugin
             // NOTE: Webdriver flag is still set to true.
             return await puppeteer.launch({
-                headless: false,
+                headless: 'new',
                 product: 'firefox',
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser], 
@@ -86,8 +85,9 @@ async function createBrowserInstance(browser){
             throw new Error;
         }
         else{
-            console.log("Error launching the BrowserInstance")
-            console.log(error)
+            console.log("Error launching the BrowserInstance");
+            console.log(error);
+            throw new Error;
         }
     }
 }

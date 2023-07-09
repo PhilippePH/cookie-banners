@@ -6,7 +6,7 @@ const fs = require('fs');
 const { promisify } = require('util');
 const puppeteer = require('puppeteer');
 
-let browserList = ['Google Chome'] ;
+let browserList = ['Google Chrome'] ;
 let NUM_URLS = 100;
 const crawlID = Date.now();
 
@@ -26,6 +26,7 @@ async function crawl(browserList){
         // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
         const URL_list = ["https://www.ebay.com", "https://nytimes.com"]
         // const URL_list = ["https://www.google.com"];
+
         // 3) Loop through browsers
         for(let browser of browserList){
             let browserInstance;
@@ -84,7 +85,8 @@ async function crawl(browserList){
                     }
 
                     // Calculate page load time
-                    console.log(page.evaluate());
+                    // page.evaluate();
+                    // console.log(page.evaluate());
                     
                     
                     try{
@@ -115,6 +117,8 @@ async function crawl(browserList){
                         console.log("Error with saving the cookies of the page to the database");
                     }
                 } // Loop for all URLs
+
+            console.log(browser + " instance closed.")
             await browserInstance.close();
             } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
                 console.log(error);
