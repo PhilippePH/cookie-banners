@@ -6,7 +6,7 @@ const fs = require('fs');
 const { promisify } = require('util');
 const puppeteer = require('puppeteer');
 
-let browserList = ['Google Chrome'] ;
+let browserList = ['Google Chrome', 'Brave', 'Firefox', 'Ghostery'] ;
 let NUM_URLS = 100;
 const crawlID = Date.now();
 
@@ -24,23 +24,25 @@ async function crawl(browserList){
 
         // 2) Create URL List
         // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-        const URL_list = ["https://www.ebay.com", "https://nytimes.com"]
+        const URL_list = ["https://bot.sannysoft.com/"]
         // const URL_list = ["https://www.google.com"];
 
         // 3) Loop through browsers
         for(let browser of browserList){
             let browserInstance;
+            let incognitoContext;
             try{ 
                 browserInstance = await createBrowserInstance.createBrowserInstance(browser);
+                incognitoContext = await browserInstance.createIncognitoBrowserContext();
             } catch{
                 databaseAPI.endConnection(connection);
                 process.exit(1);
             }
             try{ // Here to ensure the BrowserInstance closes in case of an error
                 // This gets rid of the about::blank page
-                let pages = await browserInstance.pages();
-                let page = pages[0];
-
+                // let pages = await incognitoContext.pages();
+                // let page = pages[0];
+                let page = await incognitoContext.newPage();
                 // Loop through URLs
                 for(let URL of URL_list){
                     console.log(URL);
@@ -76,7 +78,7 @@ async function crawl(browserList){
                             console.log("TimeoutError:", URL);
                             // Resetting page?
                             await page.close();
-                            page = await browserInstance.newPage();
+                            page = await incognitoContext.newPage();
                         }
                         else{
                             console.log("Error visiting webpage:", URL);
@@ -84,10 +86,20 @@ async function crawl(browserList){
                         continue;
                     }
 
-                    // Calculate page load time
-                    // page.evaluate();
-                    // console.log(page.evaluate());
-                    
+                    // // Calculate page load time
+                    // try{
+                    //     const metrics = await page.metrics(); 
+                    //     console.log(metrics);
+                    //     /* Task Duration is the time for the whole crawl (time the browser instance has been active)
+                    //         Would the number of frames metric be interesting to compare?
+                    //     */
+                    // } catch(error){
+                    //     console.log(error);
+                    //     await browserInstance.close();
+                    //     console.log("BrowserInstance closed in error handling.")
+                    //     databaseAPI.endConnection(connection);
+                    //     process.exit(1);
+                    // }                    
                     
                     try{
                         // Screenshot
@@ -120,10 +132,13 @@ async function crawl(browserList){
 
             console.log(browser + " instance closed.")
             await browserInstance.close();
+
             } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
                 console.log(error);
-                await browserInstance.close();
-                console.log("BrowserInstance closed in error handling.")
+                try{
+                    await browserInstance.close();
+                    console.log("BrowserInstance closed in error handling.")
+                } catch(error) {}
             }
         } // Loop for all browsers
         databaseAPI.endConnection(connection);

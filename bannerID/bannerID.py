@@ -1,7 +1,7 @@
-import mysql.connector
-
+from bs4 import BeautifulSoup
+import os
+import re
 # Question: Should we have something detecting the language and droping sites not in english?
-
 
 # Identifier word selection comes from "Exploring the Cookieverse: A Multi-Perspective Analysis of Web Cookies"
 # Capitalization does not matter
@@ -11,49 +11,44 @@ POSITIVE_CSS_WORDS = ["z-index", "position: fixed"]
 NEGATIVE_CSS_WORDS = ["display: none", "visibility: hidden"]
 OTHER_WORD_IDEAS = ["gdpr", "onetrust"]
 
-def connectDatabase():
-   """ Connects to database server on my machine """
-   return mysql.connector.connect(
-        host = '127.0.0.1',
-        user = 'root',
-        password ='I@mastrongpsswd',
-        database ='CrawlData',
-    )
+directory = os.fsencode("html_files/7_html_files")
 
-def getData(databaseConnection, query):
-    """ Connects to SQL Databases and returns the result of the query/
-    """
-    cursor = databaseConnection.cursor()
-    cursor.execute(query)
-    return cursor.fetchall()
-
-
-# Here, use BeautifulSoup, because we need to make our analysis more closely based on the place where we find certain terms
-def findCookieBanner(html):
-    for word in IDENTIFIER_WORDS:
-        if word in html:
-            for css_word in POSITIVE_CSS_WORDS:
-                if css_word in html:
-                    for hide_word in NEGATIVE_CSS_WORDS:
-                        if hide_word in html:
-                            return False
-                        return True
+# Function to check if an element has positive z-index or fixed position
+def has_positive_z_index_or_fixed_position(element):
+    style = element.get('style', '')
+    if 'z-index' in style and int(element['style'].split('z-index:')[1].split(';')[0].strip()) > 0:
+        return True
+    if 'position' in style and element['style'].split('position:')[1].split(';')[0].strip() == 'fixed':
+        return True
     return False
 
-def analyzeData(data):
-    values = []
-    for line in data:
-        values.append(findCookieBanner(line[3]))
-    return values
+def find_banner(element):
+    if isinstance(element, str):
+        # Handle NavigableString objects
+        element = element.parent
+    
+    if element is None:
+        return False
+    
+    if(has_positive_z_index_or_fixed_position(element)):
+        return True
+    
+    else:
+        return find_banner(element.parent)
 
-def main():
-    databaseConnection = connectDatabase()
 
-    # queries the data from the last crawl only
-    query = "SELECT * FROM HTML_data WHERE crawlID = (SELECT MAX(crawlID) FROM HTML_data)"
-    data = getData(databaseConnection, query)
-    hasACookieBanner = analyzeData(data)
-    for i in range(len(data)):
-        print(data[i][1], "    ", data[i][2], "    ", hasACookieBanner[i])
+for file in os.listdir(directory):
+    filename = os.fsdecode(file)
+    complete_filename = "html_files/7_html_files/"+filename
+    html_file = open(complete_filename,'r')
+    soup = BeautifulSoup(html_file, 'html.parser')
 
-main()
+    # STEP 1: FIND WHERE THE IDENTIFIER WORDS ARE, AND ACCESS ITS PARENT
+    for word in IDENTIFIER_WORDS:
+        pattern = r'\b' + re.escape(word) + r'\b'
+        element_with_keyword = soup.find_all(string=re.compile(pattern, re.IGNORECASE))
+
+        for elem in element_with_keyword:
+            # STEP 2: FIND THE FIRST ELEMENT (SELF, OR PARENT, ...) WITH A Z-INDEX OR FIXED POSITION
+            if(find_banner(elem)):
+                print("Found a cookie banner!")

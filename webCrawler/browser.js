@@ -11,7 +11,7 @@ const executablePaths = {
     'Brave' : '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
     'Firefox' : '/Applications/Firefox.app/Contents/MacOS/firefox',
     'Ghostery' : '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
-    'DuckDuckGo' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+    // 'DuckDuckGo' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 };
 
 const userProfiles = {
@@ -19,7 +19,7 @@ const userProfiles = {
     'Brave' : '/Users/philippe/Library/Application Support/BraveSoftware/Brave-Browser', // Found at : brave://version/ (take parent directory)
     'Firefox' : '/Users/philippe/Library/Application Support/Firefox/Profiles/sh5n5qfy.default', // found at about:profiles
     'Ghostery' : '/Users/philippe/Library/Application Support/Ghostery Browser/Profiles/j4yasrx6.WebCrawler',
-    'DuckDuckGo' : '/Users/philippe/Library/Application Support/Google/Chrome/Profile 6'
+    // 'DuckDuckGo' : '/Users/philippe/Library/Application Support/Google/Chrome/Profile 6'
 };
 
 async function createBrowserInstance(browser){
@@ -28,7 +28,7 @@ async function createBrowserInstance(browser){
         if(browser == 'Google Chrome'){
             // Uses puppeteer_extra (stealth plugin)
             return await puppeteer_extra.launch({ 
-                headless: 'new',
+                headless: false,
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser], // User profile is the default Chrome
                 args: ['--start-maximized' ]
@@ -37,7 +37,7 @@ async function createBrowserInstance(browser){
         else if(browser == 'Brave'){
             // Uses puppeteer_extra (stealth plugin)
             return await puppeteer_extra.launch({
-                headless: 'new',
+                headless: false,
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser], 
                 /* User Profile Description: The EasyList Cookie found in 
@@ -49,7 +49,7 @@ async function createBrowserInstance(browser){
             // Does not use stealth plugin
             // NOTE: Webdriver flag is still set to true.
             return await puppeteer.launch({
-                headless: 'new',
+                headless: false,
                 product: 'firefox',
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser], 
@@ -68,12 +68,12 @@ async function createBrowserInstance(browser){
             // Does not use stealth plugin
             // NOTE: Webdriver flag is still set to true.
             return await puppeteer.launch({
-                headless: 'new',
+                headless: false,
                 product: 'firefox', // Ghostery is built off of firefox, and this helps puppeteer work. 
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser], // found at about:profiles
                 /* Default settings, but when prompted upon first visit, Ghostery has been activated. */
-                defaultViewport: null, // makes window size take full browser size
+                defaultViewport: null, // makes window size take full browser size -- doesn't seem to work on ghsostery
             });
         }
         else{
