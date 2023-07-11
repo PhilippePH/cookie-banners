@@ -33,22 +33,22 @@ def find_banner(element):
     if(has_positive_z_index_or_fixed_position(element)):
         return True
     
-    else:
-        return find_banner(element.parent)
+    return find_banner(element.parent)
 
 
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
+    print(filename)
     complete_filename = "html_files/7_html_files/"+filename
     html_file = open(complete_filename,'r')
     soup = BeautifulSoup(html_file, 'html.parser')
 
     # STEP 1: FIND WHERE THE IDENTIFIER WORDS ARE, AND ACCESS ITS PARENT
     for word in IDENTIFIER_WORDS:
-        pattern = r'\b' + re.escape(word) + r'\b'
+        pattern = r'\w*' + re.escape(word) + r'\w*'
         element_with_keyword = soup.find_all(string=re.compile(pattern, re.IGNORECASE))
 
         for elem in element_with_keyword:
             # STEP 2: FIND THE FIRST ELEMENT (SELF, OR PARENT, ...) WITH A Z-INDEX OR FIXED POSITION
             if(find_banner(elem)):
-                print("Found a cookie banner!")
+                print(f"Found a cookie banner in file {file}!")
