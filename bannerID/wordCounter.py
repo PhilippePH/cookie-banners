@@ -3,6 +3,7 @@ Simple word counter to analyze the word frequency in top-20 cookie banners
 """
 import os
 import pandas as pd
+import random
 
 # https://nlp.stanford.edu/IR-book/html/htmledition/dropping-common-terms-stop-words-1.html
 # https://stackoverflow.com/questions/41011521/count-frequency-of-word-in-text-file-in-python
@@ -23,6 +24,17 @@ ALLOWED_EXPRESSIONS = ['learn more', 'accept all', 'reject all', 'cookie setting
 
 path = "bannerID/top20banners/train_files"
 directory = os.fsencode(path)
+
+def select_testing_files():
+    for file in os.listdir(directory):
+        if random.randint(0,100) < 20:
+            filename = os.fsdecode(file)
+            complete_filename = path+'/'+filename
+            new_path = "bannerID/top20banners/test_files"
+            new_filename = new_path+'/'+filename
+            os.rename(complete_filename, new_filename)
+# select_testing_files()
+
 
 def find_word_count():
     df = pd.DataFrame(columns=['word','numFiles','totalWordCount'])
@@ -101,7 +113,7 @@ def find_word_count():
 
     df.to_csv('bannerID/top20banners/results.csv')
 
-find_word_count()
+# find_word_count()
 
     
 
