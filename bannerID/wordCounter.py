@@ -3,7 +3,7 @@ Simple word counter to analyze the word frequency in top-20 cookie banners
 """
 import os
 import pandas as pd
-import random
+# import random
 
 # https://nlp.stanford.edu/IR-book/html/htmledition/dropping-common-terms-stop-words-1.html
 # https://stackoverflow.com/questions/41011521/count-frequency-of-word-in-text-file-in-python
@@ -23,30 +23,43 @@ IGNORE_WORDS = ['a', 'also', 'an', 'and', 'at','are','any', 'as',
 """ The following are categories of words often found in cookie banners. Two-words
 terms are shown first to maximize the number of precise search hits (should exit once found one)
 """
+
 CONSENT = ['agree', 'i agree',
            'accept', 'accept all', 'accept cookies', "i accept",
-            'allow all', 'allow cookies',
-            'enable all', 
-            'ok', 'got it',]
+            # 'ok','allow all', 'enable all',  #--> Found in 2 files or less
+            # 'got it', 'allow cookies', #--> Found in 3-5 files, and doesn't reduce covering in training
+            ]
 NON_CONSENT = ['rejet', 'reject all',
-               'disagree', 'not accept',
-               'decline all', 'decline', 'decline cookies',
-               'disable all',
-               'mandatory only', 'required only', 'essential only']
-TYPE_OF_COOKIES = ['essential cookies', 'non-essential cookies',
-                   'necessary cookies', 'strictly necessary',
-                   'optional cookies',
-                   'required', 'essential', 'non-essential', 'mandatory']
-SETTINGS = [ 'cookie preferences','manage preferences',
-            'cookie settings', 'manage settings', 'cookies settings',
-            'manage cookies', 'customize cookies',
-            'more options', 'cookie options', 'cookies options',
-            'preferences', 'consent manager']
-INFORMATION = ['learn more', 'more options', 'show purposes', 'more information',
-               'further information',]
+               'decline', 
+               # 'mandatory only', 'required only', 'not accept', 'disable all',#--> Found in 2 files or less
+               # 'disagree', #--> Found in 2 files or less
+               # 'decline cookies', #--> Found in 3-5 files, and doesn't reduce covering in training
+               # 'decline all', #--> Found in 6-10 files, and doesn't reduce covering in training
+               ]
+TYPE_OF_COOKIES = [ # 'mandatory', 'optional cookies', #--> Found in 2 files or less
+                    # 'essential cookies','non-essential cookies','strictly necessary',  #--> Found in 3-5 files, and doesn't reduce covering in training
+                    # 'necessary cookies', required',  #--> Found in 3-5 files, and doesn't reduce covering in training
+                    # 'essential', 'non-essential', #--> Found in 6-10 files, and doesn't reduce covering in training
+                    ]
+SETTINGS = [ 'cookie preferences',
+            'manage cookies', 'more options', 'preferences', 
+            # 'cookies options','consent manager', 'customize cookies', 'cookie options', #--> Found in 2 files or less
+            # 'cookies settings', 'manage settings', #--> Found in 3-5 files, and doesn't reduce covering in training
+            # 'manage preferences', #--> Found in 6-10 files, and doesn't reduce covering in training
+            ]
+INFORMATION = ['learn more',  'more information', 
+               #'show purposes' #--> Found in 2 files or less
+               # 'further information', #--> Found in 3-5 files, and doesn't reduce covering in training
+               # 'more options', #--> Found in 6-10 files, and doesn't reduce covering in training
+               ]
 POLICY = ['privacy policy', 'privacy statement', 'cookie policy','cookie notice',]
-THIRD_PARTY = ['our partners', 'partners', 'vendors', 'third-party', 'third party']
-OTHER = ['similar technologies', 'other technologies',]
+THIRD_PARTY = ['our partners', 'partners',  'third-party', 
+               #'third party' #--> Found in 3-5 files, and doesn't reduce covering in training
+               # 'vendors',#--> Found in 6-10 files, and doesn't reduce covering in training
+               ]
+OTHER = ['similar technologies', 
+         #'other technologies', #--> Found in 2 files or less
+         ]
 ALLOWED_EXPRESSIONS = { "consent": CONSENT,
                        "non-consent": NON_CONSENT,
                        "type of cookies":TYPE_OF_COOKIES, 
@@ -96,20 +109,24 @@ def increment_df(df, search_term, filename):
         df.at[row_index, 'totalWordCount'] += 1
 
     else:
-        df.at[row_index, filename] = 1
+        df.at[row_index, filename] += 1
         df.at[row_index, 'totalWordCount'] += 1
+    return df
                     
 def add_row_to_df(df, search_term, filename):
     new_row = pd.Series({'word': search_term, 'numFiles': 1, 'totalWordCount': 1, filename:1})
     df = pd.concat([df, new_row.to_frame().T], ignore_index=True)
+    return df
 
 def modify_df(df, search_term, filename):
     # Check if the term is found in the dataframe, if found increment
     if search_term in df['word'].values:      
-        increment_df(df, search_term, filename)
+        df = increment_df(df, search_term, filename)
     # If not found, add a row to df
     else: 
-        add_row_to_df(df, search_term, filename)
+        df = add_row_to_df(df, search_term, filename)
+
+    return df
 
 def get_word_count(category_name = None, category_words = None):
     df = pd.DataFrame(columns=['word','numFiles','totalWordCount'])
@@ -138,13 +155,13 @@ def get_word_count(category_name = None, category_words = None):
                     
                     if category_name:
                         if search_term in category_words: #Only count words in the list given
-                            modify_df(df, search_term, filename)
+                            df = modify_df(df, search_term, filename)
 
                             if file_first_hit:
                                 unique_file_counter += 1
                                 file_first_hit = False
                     else:  
-                        modify_df(df, search_term, filename)
+                        df = modify_df(df, search_term, filename)
 
                     previous_word = search_term
 
@@ -157,8 +174,21 @@ def get_word_count(category_name = None, category_words = None):
 
     df.to_csv(create_filename)
 
-for category_name, category_words in ALLOWED_EXPRESSIONS.items():
-    get_word_count(category_name, category_words)
+
+def get_category_ALL(ALLOWED_EXPRESSIONS):
+    all_words = []
+    for category_name, category_words in ALLOWED_EXPRESSIONS.items():
+        for word in category_words:
+            all_words.append(word)
+    get_word_count("All categories", all_words)
+
+get_category_ALL(ALLOWED_EXPRESSIONS)
+
+def get_category_detailed(ALLOWED_EXPRESSIONS):
+    for category_name, category_words in ALLOWED_EXPRESSIONS.items():
+        get_word_count(category_name, category_words)
+
+get_category_detailed(ALLOWED_EXPRESSIONS)
 
 
 """
