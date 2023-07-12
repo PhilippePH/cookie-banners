@@ -18,9 +18,37 @@ IGNORE_WORDS = ['a', 'also', 'an', 'and', 'at','are','any', 'as',
                 'the', 'them','then','their','to','too','that','these','this',
                 'us', 'use',
                 'we','when', 'was', 'were', 'will', 'with',
-                'you','your',
-                ]
-ALLOWED_EXPRESSIONS = ['learn more', 'accept all', 'reject all', 'cookie settings', 'cookie preferences', 'more options', 'cookie policy', 'privacy policy', 'manage cookies', 'privacy statement']
+                'you','your',]
+
+""" The following are categories of words often found in cookie banners. Two-words
+terms are shown first to maximize the number of precise search hits (should exit once found one)
+"""
+CONSENT = ['agree', 'i agree',
+           'accept', 'accept all', 'accept cookies', "i accept",
+            'allow all', 'allow cookies',
+            'enable all', 
+            'ok', 'got it',]
+NON_CONSENT = ['rejet', 'reject all',
+               'disagree', 'not accept',
+               'decline all', 'decline', 'decline cookies',
+               'disable all',
+               'mandatory only', 'required only', 'essential only']
+TYPE_OF_COOKIES = ['essential cookies', 'non-essential cookies',
+                   'necessary cookies', 'strictly necessary',
+                   'optional cookies',
+                   'required', 'essential', 'non-essential', 'mandatory']
+SETTINGS = [ 'cookie preferences','manage preferences',
+            'cookie settings', 'manage settings', 'cookies settings',
+            'manage cookies', 'customize cookies',
+            'more options', 'cookie options', 'cookies options',
+            'preferences', 'consent manager']
+INFORMATION = ['learn more', 'more options', 'show purposes', 'more information',
+               'further information',]
+POLICY = ['privacy policy', 'privacy statement', 'cookie policy','cookie notice',]
+THIRD_PARTY = ['our partners', 'partners', 'vendors', 'third-party', 'third party']
+OTHER = ['similar technologies', 'other technologies',]
+ALLOWED_EXPRESSIONS = [CONSENT, NON_CONSENT, TYPE_OF_COOKIES, SETTINGS, INFORMATION,
+                       POLICY,THIRD_PARTY, OTHER]
 
 path = "bannerID/top20banners/train_files"
 directory = os.fsencode(path)
@@ -33,7 +61,6 @@ def select_testing_files():
             new_path = "bannerID/top20banners/test_files"
             new_filename = new_path+'/'+filename
             os.rename(complete_filename, new_filename)
-# select_testing_files()
 
 
 def find_word_count():
