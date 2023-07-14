@@ -37,6 +37,44 @@ async function createResultFolder(vantagePoint, browserList){
     return path; // probably return "new path" once confirmed we only do 1 browser
 }
 
+async function getResponses(page, browser, URL){
+    try{
+        await page.on('response', interceptedResponse =>{
+            databaseAPI.saveResponses(crawlID, browser, URL, interceptedResponse, connection)
+        })
+    } catch(error){ console.log("Error collecting HTTP headers"); }
+}
+
+
+async function getScreenshot(page, resultPath, siteName){
+    try{ // Screenshot 
+        await page.screenshot({
+            path: resultPath + `/screenshots/${siteName}.jpeg`,
+            type: "jpeg",
+            quality: 50,
+        });
+    } catch(error){ console.log("Error with the screenshot"); }
+}
+
+
+async function getHTML(page, resultPath, siteName){
+    try{
+        // Downloads the HTML of the website and saves it to a file
+        const htmlContent = await page.content();
+        const fileName = resultPath+`/htmlFiles/${siteName}.html`;
+        const writeFileAsync = promisify(fs.writeFile);
+        writeFileAsync(fileName, htmlContent); // I REMOVED THE ASYNC HERE....
+    } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
+}
+
+
+async function getCookies(page, browser, URL){
+    try{
+        // Downloads the cookies of the website --> eventually put that in a different function99
+        let pageCookies = await page.cookies();
+        databaseAPI.saveCookies(crawlID, browser, URL, pageCookies, connection)
+    } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
+}
 
 
 async function crawl(browserList, resultPath){
@@ -54,10 +92,8 @@ async function crawl(browserList, resultPath){
             resultPath = resultPath+"/"+browser;
 
             let browserInstance;
-            // let incognitoContext;
             try{ 
                 browserInstance = await createBrowserInstance.createBrowserInstance(browser);
-                // incognitoContext = await browserInstance.createIncognitoBrowserContext();
             } catch{
                 databaseAPI.endConnection(connection);
                 process.exit(1);
@@ -76,15 +112,10 @@ async function crawl(browserList, resultPath){
                     console.log(URL);
                     const siteName = await selectWebsites.getSiteNames(URL);
                     
-                    try{
-                        if(browser == 'Google Chrome' || browser == 'Brave'){
-                            await page.on('response', interceptedResponse =>{
-                                databaseAPI.saveResponses(crawlID, browser, URL, interceptedResponse, connection)
-                            })
-                        }
-                    } catch(error){ console.log("Error collecting HTTP headers"); }
-
-                    
+                    if(browser == 'Google Chrome' || browser == 'Brave'){
+                        await getResponses(page, browser, URL);
+                    }
+                                    
                     try{   
                         await page.goto(URL,{
                             timeout: 10000,
@@ -103,27 +134,10 @@ async function crawl(browserList, resultPath){
                         else{ console.log("Error visiting webpage:", URL); }
                         continue;
                     }                
-                    try{ // Screenshot 
-                        await page.screenshot({
-                            path: resultPath + `/screenshots/${siteName}.jpeg`,
-                            type: "jpeg",
-                            quality: 50,
-                        });
-                    } catch(error){ console.log("Error with the screenshot"); }
-                    try{
-                        // Downloads the HTML of the website and saves it to a file
-                        const htmlContent = await page.content();
-                        const fileName = resultPath+`/htmlFiles/${siteName}.html`;
-                        const writeFileAsync = promisify(fs.writeFile);
-                        writeFileAsync(fileName, htmlContent); // I REMOVED THE ASYNC HERE....
-                    } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
-
-                    try{
-                        // Downloads the cookies of the website --> eventually put that in a different function99
-                        let pageCookies = await page.cookies();
-                        databaseAPI.saveCookies(crawlID, browser, URL, pageCookies, connection)
-                    } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
-
+                    
+                    await getScreenshot(page, resultPath, siteName);
+                    await getHTML(page, resultPath, siteName);
+                    await getCookies(page, browser, URL);
                 } // End-loop for all URLs
 
             await page.close();
@@ -149,10 +163,8 @@ async function crawl(browserList, resultPath){
 }
 
 
-
 async function main(){
     // Eventually get args passed into main
-
     let browserList = ['Google Chrome'] ;
     let vantagePoint = ['UK'];
     let NUM_URLS = 100;
