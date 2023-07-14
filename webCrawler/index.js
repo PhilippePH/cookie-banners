@@ -46,7 +46,7 @@ async function crawl(browserList, resultPath){
 
         // 2) Create URL List
         // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-        const URL_list = ["https://bot.sannysoft.com/"]
+        const URL_list = ["https://www.nytimes.com/"]
 
         // 3) Loop through browsers
         for(let browser of browserList){
@@ -63,8 +63,9 @@ async function crawl(browserList, resultPath){
                 process.exit(1);
             }
 
-            try{ // Here to ensure the BrowserInstance closes in case of an error
             
+            try{ // Here to ensure the BrowserInstance closes in case of an error
+                
                 // This gets rid of the about::blank page
                 let pages = await browserInstance.pages();
                 let page = pages[0];
@@ -74,19 +75,15 @@ async function crawl(browserList, resultPath){
                 for(let URL of URL_list){
                     console.log(URL);
                     const siteName = await selectWebsites.getSiteNames(URL);
-
+                    
                     try{
                         if(browser == 'Google Chrome' || browser == 'Brave'){
-                            // Prepare intercepts
-                            await page.setRequestInterception(true);
-                            await page.on('request', interceptedRequest => {
-                            if (!interceptedRequest.isInterceptResolutionHandled()){
-                                databaseAPI.saveRequests(crawlID, browser, URL, interceptedRequest, connection)
-                                interceptedRequest.continue();
-                            }
-                            });
+                            await page.on('response', interceptedResponse =>{
+                                databaseAPI.saveRequests(crawlID, browser, URL, interceptedResponse, connection)
+                            })
                         }
                     } catch(error){ console.log("Error collecting HTTP headers"); }
+
                     
                     try{   
                         await page.goto(URL,{
