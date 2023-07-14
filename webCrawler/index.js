@@ -81,7 +81,6 @@ async function crawl(browserList, resultPath){
                             await page.setRequestInterception(true);
                             await page.on('request', interceptedRequest => {
                             if (!interceptedRequest.isInterceptResolutionHandled()){
-                                // console.log('Request headers:', interceptedRequest.headers());
                                 databaseAPI.saveRequests(crawlID, browser, URL, interceptedRequest, connection)
                                 interceptedRequest.continue();
                             }
@@ -91,8 +90,8 @@ async function crawl(browserList, resultPath){
                     
                     try{   
                         await page.goto(URL,{
-                            timeout: 1000,
-                            waitUntil: "networkidle2", 
+                            timeout: 10000,
+                            waitUntil: "load", 
                             /* waitUntil: either load, domcontentloaded,networkidle0, networkidle2
                             - domcontentloaded seems to be too quick, not all banners appear
                             - newtworkidle2 creates multiple timeouts (i think some browsers might never send the message)
@@ -107,7 +106,6 @@ async function crawl(browserList, resultPath){
                         else{ console.log("Error visiting webpage:", URL); }
                         continue;
                     }                
-                    
                     try{ // Screenshot 
                         await page.screenshot({
                             path: resultPath + `/screenshots/${siteName}.jpeg`,
@@ -115,13 +113,12 @@ async function crawl(browserList, resultPath){
                             quality: 50,
                         });
                     } catch(error){ console.log("Error with the screenshot"); }
-
                     try{
                         // Downloads the HTML of the website and saves it to a file
                         const htmlContent = await page.content();
                         const fileName = resultPath+`/htmlFiles/${siteName}.html`;
                         const writeFileAsync = promisify(fs.writeFile);
-                        await writeFileAsync(fileName, htmlContent);
+                        writeFileAsync(fileName, htmlContent); // I REMOVED THE ASYNC HERE....
                     } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
 
                     try{
@@ -132,8 +129,9 @@ async function crawl(browserList, resultPath){
 
                 } // End-loop for all URLs
 
-            console.log(browser + " instance closed.")
+            await page.close();
             await browserInstance.close();
+            console.log(browser + " instance closed.")
 
             } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
                 console.log(error);
@@ -155,13 +153,10 @@ async function crawl(browserList, resultPath){
 
 
 
-
-
-
 async function main(){
     // Eventually get args passed into main
 
-    let browserList = ['Brave'] ;
+    let browserList = ['Google Chrome'] ;
     let vantagePoint = ['UK'];
     let NUM_URLS = 100;
     let resultsPath = await createResultFolder(vantagePoint, browserList);
