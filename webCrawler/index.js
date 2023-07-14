@@ -2,14 +2,12 @@ const selectWebsites = require('./websiteSelection');
 const createBrowserInstance = require('./browser');
 const databaseAPI = require('./db');
 const mysql = require('mysql2');
-const fs = require('fs');
+const fs = require('fs').promises;
 const { promisify } = require('util');
 const puppeteer = require('puppeteer');
+const path = require('path');
 
-let browserList = ['Google Chrome', 'Brave', 'Firefox', 'Ghostery'] ;
-let NUM_URLS = 100;
 const crawlID = Date.now();
-
 const connection = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
@@ -17,7 +15,31 @@ const connection = mysql.createConnection({
     database: 'CrawlData',
   });
 
-async function crawl(browserList){
+
+/* Note to self: I think we'll run this file for one browser at a time, so prob would be good to change the name of BrowserList and to remove the loops*/
+async function createResultFolder(vantagePoint, browserList){
+    let d = new Date();
+    let path = `results/${d}`; 
+    await fs.mkdir(path);
+    path = path+`/${vantagePoint}`; 
+    await fs.mkdir(path);
+    for(let browser of browserList){
+        let newPath = path+`/${browser}`;
+        await fs.mkdir(newPath)
+
+        // TBD
+        let screenshotPath = newPath + "/screenshots";
+        await fs.mkdir(screenshotPath)
+
+        let HTMLPath = newPath + "/htmlFiles";
+        await fs.mkdir(HTMLPath)
+    }
+    return path; // probably return "new path" once confirmed we only do 1 browser
+}
+
+
+
+async function crawl(browserList, resultPath){
     try{
         // 1) Set up database connection
         databaseAPI.establishConnection(connection); 
@@ -25,24 +47,29 @@ async function crawl(browserList){
         // 2) Create URL List
         // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
         const URL_list = ["https://bot.sannysoft.com/"]
-        // const URL_list = ["https://www.google.com"];
 
         // 3) Loop through browsers
         for(let browser of browserList){
+            // MAYBE REMOVE LATER
+            resultPath = resultPath+"/"+browser;
+
             let browserInstance;
-            let incognitoContext;
+            // let incognitoContext;
             try{ 
                 browserInstance = await createBrowserInstance.createBrowserInstance(browser);
-                incognitoContext = await browserInstance.createIncognitoBrowserContext();
+                // incognitoContext = await browserInstance.createIncognitoBrowserContext();
             } catch{
                 databaseAPI.endConnection(connection);
                 process.exit(1);
             }
+
             try{ // Here to ensure the BrowserInstance closes in case of an error
+            
                 // This gets rid of the about::blank page
-                // let pages = await incognitoContext.pages();
-                // let page = pages[0];
-                let page = await incognitoContext.newPage();
+                let pages = await browserInstance.pages();
+                let page = pages[0];
+                // let page = await incognitoContext.newPage();
+            
                 // Loop through URLs
                 for(let URL of URL_list){
                     console.log(URL);
@@ -60,14 +87,12 @@ async function crawl(browserList){
                             }
                             });
                         }
-                    } catch(error){
-                        console.log("Error collecting HTTP headers");
-                        // console.log(error);
-                    }
+                    } catch(error){ console.log("Error collecting HTTP headers"); }
+                    
                     try{   
                         await page.goto(URL,{
-                            timeout: 10000,
-                            waitUntil: "load", 
+                            timeout: 1000,
+                            waitUntil: "networkidle2", 
                             /* waitUntil: either load, domcontentloaded,networkidle0, networkidle2
                             - domcontentloaded seems to be too quick, not all banners appear
                             - newtworkidle2 creates multiple timeouts (i think some browsers might never send the message)
@@ -76,59 +101,36 @@ async function crawl(browserList){
                     } catch(error){
                         if (error instanceof puppeteer.TimeoutError) {
                             console.log("TimeoutError:", URL);
-                            // Resetting page?
                             await page.close();
-                            page = await incognitoContext.newPage();
+                            page = await browserInstance.newPage();
                         }
-                        else{
-                            console.log("Error visiting webpage:", URL);
-                        }
+                        else{ console.log("Error visiting webpage:", URL); }
                         continue;
-                    }
-
-                    // // Calculate page load time
-                    // try{
-                    //     const metrics = await page.metrics(); 
-                    //     console.log(metrics);
-                    //     /* Task Duration is the time for the whole crawl (time the browser instance has been active)
-                    //         Would the number of frames metric be interesting to compare?
-                    //     */
-                    // } catch(error){
-                    //     console.log(error);
-                    //     await browserInstance.close();
-                    //     console.log("BrowserInstance closed in error handling.")
-                    //     databaseAPI.endConnection(connection);
-                    //     process.exit(1);
-                    // }                    
+                    }                
                     
-                    try{
-                        // Screenshot
+                    try{ // Screenshot 
                         await page.screenshot({
-                            path: './webCrawler/screenshots/'+browser+'_'+siteName+'.jpeg',
+                            path: resultPath + `/screenshots/${siteName}.jpeg`,
                             type: "jpeg",
                             quality: 50,
                         });
-                    } catch(error){
-                        console.log("Error with the screenshot");
-                    }
+                    } catch(error){ console.log("Error with the screenshot"); }
+
                     try{
                         // Downloads the HTML of the website and saves it to a file
                         const htmlContent = await page.content();
-                        const fileName = `html_files/${browser}_${siteName}.html`;
+                        const fileName = resultPath+`/htmlFiles/${siteName}.html`;
                         const writeFileAsync = promisify(fs.writeFile);
                         await writeFileAsync(fileName, htmlContent);
-                    } catch(error){
-                        console.log(error);
-                        console.log("Error with saving the HTML of the page to a file");
-                    }
+                    } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
+
                     try{
                         // Downloads the cookies of the website --> eventually put that in a different function99
                         let pageCookies = await page.cookies();
                         databaseAPI.saveCookies(crawlID, browser, URL, pageCookies, connection)
-                    } catch(error){
-                        console.log("Error with saving the cookies of the page to the database");
-                    }
-                } // Loop for all URLs
+                    } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
+
+                } // End-loop for all URLs
 
             console.log(browser + " instance closed.")
             await browserInstance.close();
@@ -138,13 +140,33 @@ async function crawl(browserList){
                 try{
                     await browserInstance.close();
                     console.log("BrowserInstance closed in error handling.")
-                } catch(error) {}
+                } catch(error) { console.log("BrowserInstance has already been closed.") }
             }
-        } // Loop for all browsers
+
+        } // End-loop for all browsers
+    
         databaseAPI.endConnection(connection);
+    
     } catch(error){ // Here to ensure the DatabaseConnection closes in case of an error
         console.log(error);
         databaseAPI.endConnection(connection);
     }
 }
-crawl(browserList);
+
+
+
+
+
+
+async function main(){
+    // Eventually get args passed into main
+
+    let browserList = ['Brave'] ;
+    let vantagePoint = ['UK'];
+    let NUM_URLS = 100;
+    let resultsPath = await createResultFolder(vantagePoint, browserList);
+    // test(browserList, testPath); --> create this that queries SannyBot & checks for IP address and outputs the result in a folder to make sure everything is fine with the crawler.
+    await crawl(browserList, resultsPath);
+}
+
+main();
