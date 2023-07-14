@@ -79,7 +79,7 @@ async function crawl(browserList, resultPath){
                     try{
                         if(browser == 'Google Chrome' || browser == 'Brave'){
                             await page.on('response', interceptedResponse =>{
-                                databaseAPI.saveRequests(crawlID, browser, URL, interceptedResponse, connection)
+                                databaseAPI.saveResponses(crawlID, browser, URL, interceptedResponse, connection)
                             })
                         }
                     } catch(error){ console.log("Error collecting HTTP headers"); }

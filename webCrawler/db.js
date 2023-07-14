@@ -69,20 +69,18 @@ function saveCookies(crawlID, browser, URL, pageCookies, connection){
   }
 }
 
-function saveRequests(crawlID, browser, URL, interceptedRequest, connection){
-  const requestDataQuery = 'INSERT INTO request_data (crawlID, browser, url, specific_url, method, referer, cookie, postData) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
-  const requestData = [
+function saveResponses(crawlID, browser, URL, interceptedResponse, connection){
+  const responseDataQuery = 'INSERT INTO response_data (crawlID, browser, url, specific_url, content_type, content_length) VALUES (?, ?, ?, ?, ?, ?)';
+  const responseData = [
       crawlID,
       browser,
       URL,
-      interceptedRequest.url(),
-      interceptedRequest.method(),
-      interceptedRequest.headers()['referer'],
-      interceptedRequest.headers()['cookie'],
-      interceptedRequest.postData()
+      interceptedResponse.url(),
+      interceptedResponse.headers()['content-type'],
+      interceptedResponse.headers()['content-length']
       ];
 
-      connection.query(requestDataQuery, requestData, (error, results) => {
+      connection.query(responseDataQuery, responseData, (error, results) => {
       if (error) {
           console.error('Error inserting data: ', error);
       }
@@ -93,7 +91,7 @@ function saveRequests(crawlID, browser, URL, interceptedRequest, connection){
 module.exports = {
   saveCookies,
   // saveHTML,
-  saveRequests,
+  saveResponses,
   endConnection,
   establishConnection
   };
