@@ -75,6 +75,37 @@ async function getCookies(page, browser, URL){
     } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
 }
 
+async function getLocalStorageRecursive(page, browser, URL, frame){
+
+    // frame origin to add here (and double check cookies)
+    let localStorage;
+    try{ 
+        localStorage = await frame.evaluate(() => {
+        const localStorageData = {};
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          const value = localStorage.getItem(key);
+          localStorageData[key] = value;
+        }
+        return localStorageData;
+      });
+    } catch(error){ console.log("Error fetching the local storage of a frame"); }
+    console.log(localStorage);
+    
+    try{
+        // databaseAPI.saveCookies(crawlID, browser, URL, "cookies", cookies, connection)
+    } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
+
+    const childFrames = frame.childFrames();
+    for (const childFrame of childFrames) {
+      await getLocalStorageRecursive(page, browser, URL, childFrame);
+    }
+}
+
+async function getLocalStorage(page, browser, URL){
+    const mainFrame = await page.mainFrame();
+    await getLocalStorageRecursive(page, browser, URL, mainFrame)
+}
 
 async function crawl(browserList, resultPath){
     try{
@@ -83,7 +114,7 @@ async function crawl(browserList, resultPath){
 
         // 2) Create URL List
         // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-        const URL_list = ["https://www.tumblr.com/"]
+        const URL_list = ["https://www.pinterest.com/"]
 
         // 3) Loop through browsers
         for(let browser of browserList){
@@ -137,6 +168,7 @@ async function crawl(browserList, resultPath){
                     await getScreenshot(page, resultPath, siteName);
                     await getHTML(page, resultPath, siteName);
                     await getCookies(page, browser, URL);
+                    await getLocalStorage(page, browser, URL);
                 } // End-loop for all URLs
 
             await page.close();
