@@ -39,8 +39,8 @@ async function createResultFolder(vantagePoint, browserList){
 
 async function getResponses(page, browser, URL){
     try{
-        await page.on('response', interceptedResponse =>{
-            databaseAPI.saveResponses(crawlID, browser, URL, interceptedResponse, connection)
+        await page.on('response', async (interceptedResponse) => {
+            await databaseAPI.saveResponses(crawlID, browser, URL, interceptedResponse, connection)
         })
     } catch(error){ console.log("Error collecting HTTP headers"); }
 }
@@ -71,13 +71,11 @@ async function getCookies(page, browser, URL){
     const client = await page.target().createCDPSession();
     const cookies = (await client.send('Storage.getCookies'));
     try{
-        // databaseAPI.saveCookies(crawlID, browser, URL, "cookies", cookies, connection)
+        await databaseAPI.saveCookies(crawlID, browser, URL, "cookies", cookies, connection)
     } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
 }
 
 async function getLocalStorageRecursive(page, browser, URL, frame){
-
-    // frame origin to add here (and double check cookies)
     let localStorage;
     try{ 
         localStorage = await frame.evaluate(() => {
@@ -90,10 +88,9 @@ async function getLocalStorageRecursive(page, browser, URL, frame){
         return localStorageData;
       });
     } catch(error){ console.log("Error fetching the local storage of a frame"); }
-    console.log(localStorage);
     
     try{
-        // databaseAPI.saveCookies(crawlID, browser, URL, "cookies", cookies, connection)
+        await databaseAPI.saveLocalStorage(crawlID, browser, URL, "localStorage", frame.url(), localStorage, connection) // NOTE TO SELF: using frame.url() because frame.origin() does not seem to exist
     } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
 
     const childFrames = frame.childFrames();
@@ -110,7 +107,7 @@ async function getLocalStorage(page, browser, URL){
 async function crawl(browserList, resultPath){
     try{
         // 1) Set up database connection
-        databaseAPI.establishConnection(connection); 
+        await databaseAPI.establishConnection(connection); 
 
         // 2) Create URL List
         // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
@@ -125,7 +122,7 @@ async function crawl(browserList, resultPath){
             try{ 
                 browserInstance = await createBrowserInstance.createBrowserInstance(browser);
             } catch{
-                databaseAPI.endConnection(connection);
+                await databaseAPI.endConnection(connection);
                 process.exit(1);
             }
 
@@ -185,11 +182,11 @@ async function crawl(browserList, resultPath){
 
         } // End-loop for all browsers
     
-        databaseAPI.endConnection(connection);
+        await databaseAPI.endConnection(connection);
     
     } catch(error){ // Here to ensure the DatabaseConnection closes in case of an error
         console.log(error);
-        databaseAPI.endConnection(connection);
+        await databaseAPI.endConnection(connection);
     }
 }
 
