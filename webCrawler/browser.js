@@ -15,8 +15,8 @@ const executablePaths = {
 };
 
 const userProfiles = {
-    'Google Chrome' : '/Users/philippe/Library/Application Support/Google/Chrome/Profile 5',
-    'Brave' : '/Users/philippe/Library/Application Support/BraveSoftware/Brave-Browser', // Found at : brave://version/ (take parent directory)
+    'Google Chrome' : '/Users/philippe/Library/Application Support/Google/Chrome',
+    'Brave' : '/Users/philippe/Library/Application Support/BraveSoftware/Brave-Browser/', // Found at : brave://version/ (take parent directory)
     'Firefox' : '/Users/philippe/Library/Application Support/Firefox/Profiles/sh5n5qfy.default', // found at about:profiles
     'Ghostery' : '/Users/philippe/Library/Application Support/Ghostery Browser/Profiles/j4yasrx6.WebCrawler',
     // 'DuckDuckGo' : '/Users/philippe/Library/Application Support/Google/Chrome/Profile 6'
@@ -30,8 +30,9 @@ async function createBrowserInstance(browser){
             return await puppeteer_extra.launch({ 
                 headless: false,
                 executablePath: executablePaths[browser],
-                userDataDir: userProfiles[browser], // User profile is the default Chrome
-                args: ['--start-maximized' ]
+                userDataDir: userProfiles[browser],
+                args: [ '--start-maximized',
+                '--profile-directory=Profile 7']
             });
         }
         else if(browser == 'Brave'){
@@ -42,7 +43,8 @@ async function createBrowserInstance(browser){
                 userDataDir: userProfiles[browser], 
                 /* User Profile Description: The EasyList Cookie found in 
                 brave://settings/shields/filters has been enabled. */
-                args: [ '--start-maximized' ]
+                args: [ '--start-maximized',
+                        '--profile-directory=Profile 1' ]
             });
         }
         else if(browser == 'Firefox'){ 

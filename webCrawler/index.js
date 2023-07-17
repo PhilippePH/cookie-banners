@@ -67,13 +67,53 @@ async function getHTML(page, resultPath, siteName){
     } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
 }
 
+// Function to get frame cookies
+async function getFrameCookies(frame) {
+    const cookies = await frame.evaluate(() => {
+        console.log(document.cookie)
+        const allCookies = document.cookie.split(';');
+        return allCookies.map(cookie => cookie.trim());
+    });
+    return cookies;
+}
+
+// Function to recursively iterate through frames
+async function getFrameCookiesRecursive(frame, browser) {
+    let frameCookies, frameURL;
+
+    try{
+        frameCookies = await frame.page().cookies();
+        // frameCookies = await getFrameCookies(frame);
+        frameURL = frame.url();
+        console.log(frameURL);
+        
+        for(let i = 0; i < frameCookies.length; i++){
+            console.log(frameCookies[i].name);
+            console.log(frameCookies[i].value);
+            console.log(frameCookies[i].domain);
+        }
+    } catch(error){ console.log("Error getting frame cookie information"); }
+
+    try{
+        // databaseAPI.saveCookies(crawlID, browser, websiteURL, frameURL, frameCookies, connection)
+    } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
+
+    const childFrames = frame.childFrames();
+    for (const childFrame of childFrames) {
+        await getFrameCookiesRecursive(childFrame);
+    }
+}
 
 async function getCookies(page, browser, URL){
-    try{
-        // Downloads the cookies of the website --> eventually put that in a different function99
-        let pageCookies = await page.cookies();
-        databaseAPI.saveCookies(crawlID, browser, URL, pageCookies, connection)
-    } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
+    // try{
+    //     const topFrame = await page.mainFrame();
+    //     return getFrameCookiesRecursive(topFrame, browser);
+    // } catch(error){ 
+    //     console.log(error);
+    // }
+    const client = await page.target().createCDPSession();
+    const cookies = (await client.send('Storage.getCookies'));
+    console.log(cookies);
 }
 
 
@@ -84,7 +124,7 @@ async function crawl(browserList, resultPath){
 
         // 2) Create URL List
         // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-        const URL_list = ["https://www.nytimes.com/"]
+        const URL_list = ["https://www.tumblr.com/"]
 
         // 3) Loop through browsers
         for(let browser of browserList){
@@ -119,7 +159,7 @@ async function crawl(browserList, resultPath){
                     try{   
                         await page.goto(URL,{
                             timeout: 10000,
-                            waitUntil: "load", 
+                            waitUntil: "networkidle2", 
                             /* waitUntil: either load, domcontentloaded,networkidle0, networkidle2
                             - domcontentloaded seems to be too quick, not all banners appear
                             - newtworkidle2 creates multiple timeouts (i think some browsers might never send the message)
