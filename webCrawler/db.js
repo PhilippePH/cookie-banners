@@ -37,19 +37,19 @@ function saveHTML(crawlID, browser, URL, html_contents, connection){
 */ 
 
 
-function saveCookies(crawlID, browser, websiteURL, storageType, frameURL, cookieDomain, key, value, connection){
-  const cookieDataQuery = 'INSERT INTO cookie_data (crawlID, browser, websiteURL, storageType, frameURL, cookieDomain, key, value) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
+function saveCookies(crawlID, browser, URL, storageType, cookies, connection){
+  // frameURL????????????????????
+  const cookieDataQuery = 'INSERT INTO cookie_data (crawlID, browser, websiteURL, storageType, cookieDomain, key, value) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
                   
-  for(let i = 0; i < pageCookies.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
+  for(let i = 0; i < cookies.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
       const cookieData = [
           crawlID,
           browser,
-          websiteURL,
+          URL,
           storageType,
-          frameURL,
-          cookieDomain,
-          key,
-          value
+          cookies[i].domain,
+          cookies[i].name,
+          cookies[i].value,
           ];
   
       connection.query(cookieDataQuery, cookieData, (error, results) => {

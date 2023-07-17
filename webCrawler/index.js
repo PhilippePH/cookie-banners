@@ -67,53 +67,12 @@ async function getHTML(page, resultPath, siteName){
     } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
 }
 
-// Function to get frame cookies
-async function getFrameCookies(frame) {
-    const cookies = await frame.evaluate(() => {
-        console.log(document.cookie)
-        const allCookies = document.cookie.split(';');
-        return allCookies.map(cookie => cookie.trim());
-    });
-    return cookies;
-}
-
-// Function to recursively iterate through frames
-async function getFrameCookiesRecursive(frame, browser) {
-    let frameCookies, frameURL;
-
-    try{
-        frameCookies = await frame.page().cookies();
-        // frameCookies = await getFrameCookies(frame);
-        frameURL = frame.url();
-        console.log(frameURL);
-        
-        for(let i = 0; i < frameCookies.length; i++){
-            console.log(frameCookies[i].name);
-            console.log(frameCookies[i].value);
-            console.log(frameCookies[i].domain);
-        }
-    } catch(error){ console.log("Error getting frame cookie information"); }
-
-    try{
-        // databaseAPI.saveCookies(crawlID, browser, websiteURL, frameURL, frameCookies, connection)
-    } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
-
-    const childFrames = frame.childFrames();
-    for (const childFrame of childFrames) {
-        await getFrameCookiesRecursive(childFrame);
-    }
-}
-
 async function getCookies(page, browser, URL){
-    // try{
-    //     const topFrame = await page.mainFrame();
-    //     return getFrameCookiesRecursive(topFrame, browser);
-    // } catch(error){ 
-    //     console.log(error);
-    // }
     const client = await page.target().createCDPSession();
     const cookies = (await client.send('Storage.getCookies'));
-    console.log(cookies);
+    try{
+        // databaseAPI.saveCookies(crawlID, browser, URL, "cookies", cookies, connection)
+    } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
 }
 
 
