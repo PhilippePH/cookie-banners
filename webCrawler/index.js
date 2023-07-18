@@ -18,8 +18,25 @@ const connection = mysql.createConnection({
 
 /* Note to self: I think we'll run this file for one browser at a time, so prob would be good to change the name of BrowserList and to remove the loops*/
 async function createResultFolder(vantagePoint, browserList){
-    let d = new Date();
-    let path = `results/${d}`; 
+    let date= new Date();
+
+    // Saving the data to OneDrive, which doesn't allow some chars (":","/") in filename.
+    const options = {
+        weekday: 'short',
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        timeZoneName: 'short',
+        hour12: false,
+        hourCycle: 'h23'
+      };
+      const formattedDate = date.toLocaleString('en-GB', options);
+      const formattedDateWithoutColons = formattedDate.replace(/:/g, '-');
+      
+    let path = `/Users/philippe/Library/CloudStorage/OneDrive-Personal/cookie-banners-results/${formattedDateWithoutColons}`; 
     await fs.mkdir(path);
     path = path+`/${vantagePoint}`; 
     await fs.mkdir(path);
