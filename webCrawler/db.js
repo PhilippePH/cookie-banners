@@ -52,7 +52,7 @@ async function saveCookies(crawlID, browser, URL, storageType, cookies, connecti
         connection.query(cookieDataQuery, cookieData, (error, results) => {
         if (error) {
             console.error('Error inserting data: ', error);
-            reject();
+            // reject();
         } else{
           resolve();
         }
@@ -83,7 +83,7 @@ async function saveLocalStorage(crawlID, browser, URL, storageType, frameURL, lo
         connection.query(localStorageDataQuery, localStorageData, (error, results) => {
         if (error) {
             console.error('Error inserting data: ', error);
-            reject();
+            // reject();
         }
         else{
           resolve();
