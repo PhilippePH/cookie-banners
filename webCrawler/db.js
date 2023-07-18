@@ -108,8 +108,8 @@ async function saveResponses(crawlID, browser, URL, interceptedResponse, connect
       return new Promise((resolve, reject) => {
         connection.query(responseDataQuery, responseData, (error, results) => {
           if (error) {
-              console.error('Error inserting data: ', error);
-              reject();
+              console.error('Error inserting HTTP responses in the database. Error message: \n ', error);
+              // reject();
           }
           else{
             resolve();

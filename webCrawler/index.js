@@ -106,6 +106,7 @@ async function getCookies(page, browser, URL, connection){
     const client = await page.target().createCDPSession();
     const cookies = (await client.send('Storage.getCookies'));
     try{
+        console.log("\n\n\n\nCOOKIES ARE : " + cookies.cookies.length);
         await databaseAPI.saveCookies(crawlID, browser, URL, "cookies", cookies, connection)
     } catch(error){ console.log("Error with saving the cookies of the page to the database"); 
     console.log(error); }
@@ -133,14 +134,14 @@ async function getLocalStorageRecursive(page, browser, URL, frame, connection){
 
     const childFrames = frame.childFrames();
     for (const childFrame of childFrames) {
-      await getLocalStorageRecursive(page, browser, URL, childFrame);
+      await getLocalStorageRecursive(page, browser, URL, childFrame, connection);
     }
 }
 
 
-async function getLocalStorage(page, browser, URL){
+async function getLocalStorage(page, browser, URL, connection){
     const mainFrame = await page.mainFrame();
-    await getLocalStorageRecursive(page, browser, URL, mainFrame)
+    await getLocalStorageRecursive(page, browser, URL, mainFrame, connection)
 }
 
 
@@ -157,13 +158,17 @@ async function crawl(browserList, resultPath, URL_list, vantagePoint, connection
         }
 
         try{ // Closes BrowserInstance in case of an unhandled error
-            
-            // This gets rid of the about::blank page
+
+            /* This gets rid of the about::blank page at startup.
+            It is important to keep the number of tabs open at maximum 1, since 
+            we want cookies to be removed when last tab is closed (for Chrome + Brave for now) */
             pages = await browserInstance.pages();
             page = pages[0];
-        
-            // Loop through URLs
+            await page.close();
+
             for(let URL of URL_list){
+                page = await browserInstance.newPage();
+                
                 console.log(URL);
                 const siteName = await selectWebsites.getSiteNames(URL);
                 
@@ -186,7 +191,6 @@ async function crawl(browserList, resultPath, URL_list, vantagePoint, connection
                     if (error instanceof puppeteer.TimeoutError) {
                         console.log("TimeoutError:", URL);
                         await page.close();
-                        page = await browserInstance.newPage();
                     } else{ console.log("Error visiting webpage:", URL); }
                     continue;
                 }                
@@ -198,6 +202,8 @@ async function crawl(browserList, resultPath, URL_list, vantagePoint, connection
                     await getCookies(page, browser, URL, connection);
                     await getLocalStorage(page, browser, URL, connection);
                 }
+                
+                await page.close();
             }
         } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
             console.log(error);
@@ -207,7 +213,6 @@ async function crawl(browserList, resultPath, URL_list, vantagePoint, connection
             return;
         }
 
-        await page.close();
         await browserInstance.close();
         console.log(browser + " instance closed.")
     }
@@ -221,14 +226,14 @@ async function main(){
     let NUM_URLS = 100;
     
     // Test the parameters
-    await testCrawler(browserList, vantagePoint);
+    // await testCrawler(browserList, vantagePoint);
 
     // Set up result folder for crawl
     let resultPath = await createResultFolder(browserList, vantagePoint);
     
     // Get websites list
     // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    const URL_list = ['https://www.nytimes.com'];
+    const URL_list = ['https://www.nytimes.com', 'https://www.cnn.com'];
 
     // Set up Database connection
     await databaseAPI.establishConnection(connection); 
