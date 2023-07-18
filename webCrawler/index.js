@@ -16,8 +16,17 @@ const connection = mysql.createConnection({
   });
 
 
+async function testCrawler(browserList, vantagePoint){
+    resultPath = await createResultFolder(browserList, vantagePoint, true);
+
+    // Tests bot detection + proxy (IP)
+    await crawl(browserList, resultPath, ["https://bot.sannysoft.com", 
+                "https://www.whatismyipaddress.com"], vantagePoint, null, true);
+}
+
+
 /* Note to self: I think we'll run this file for one browser at a time, so prob would be good to change the name of BrowserList and to remove the loops*/
-async function createResultFolder(vantagePoint, browserList){
+async function createResultFolder(browserList, vantagePoint, test = false){
     let date= new Date();
 
     // Saving the data to OneDrive, which doesn't allow some chars (":","/") in filename.
@@ -35,11 +44,16 @@ async function createResultFolder(vantagePoint, browserList){
       };
       const formattedDate = date.toLocaleString('en-GB', options);
       const formattedDateWithoutColons = formattedDate.replace(/:/g, '-');
-      
+    
     let path = `/Users/philippe/Library/CloudStorage/OneDrive-Personal/cookie-banners-results/${formattedDateWithoutColons}`; 
+    if(test){
+        path = `/Users/philippe/Library/CloudStorage/OneDrive-Personal/cookie-banners-results/test/${formattedDateWithoutColons}`; 
+    }
     await fs.mkdir(path);
+    
     path = path+`/${vantagePoint}`; 
     await fs.mkdir(path);
+
     for(let browser of browserList){
         let newPath = path+`/${browser}`;
         await fs.mkdir(newPath)
@@ -48,13 +62,16 @@ async function createResultFolder(vantagePoint, browserList){
         let screenshotPath = newPath + "/screenshots";
         await fs.mkdir(screenshotPath)
 
-        let HTMLPath = newPath + "/htmlFiles";
-        await fs.mkdir(HTMLPath)
+        if(! test){
+            let HTMLPath = newPath + "/htmlFiles";
+            await fs.mkdir(HTMLPath)
+        }
     }
     return path; // probably return "new path" once confirmed we only do 1 browser
 }
 
-async function getResponses(page, browser, URL){
+
+async function getResponses(page, browser, URL, connection){
     try{
         await page.on('response', async (interceptedResponse) => {
             await databaseAPI.saveResponses(crawlID, browser, URL, interceptedResponse, connection)
@@ -70,7 +87,7 @@ async function getScreenshot(page, resultPath, siteName){
             type: "jpeg",
             quality: 50,
         });
-    } catch(error){ console.log("Error with the screenshot"); }
+    } catch(error){ console.log("Error with the screenshot"); console.log(error); }
 }
 
 
@@ -84,7 +101,8 @@ async function getHTML(page, resultPath, siteName){
     } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
 }
 
-async function getCookies(page, browser, URL){
+
+async function getCookies(page, browser, URL, connection){
     const client = await page.target().createCDPSession();
     const cookies = (await client.send('Storage.getCookies'));
     try{
@@ -93,7 +111,8 @@ async function getCookies(page, browser, URL){
     console.log(error); }
 }
 
-async function getLocalStorageRecursive(page, browser, URL, frame){
+
+async function getLocalStorageRecursive(page, browser, URL, frame, connection){
     let localStorage;
     try{ 
         localStorage = await frame.evaluate(() => {
@@ -118,94 +137,79 @@ async function getLocalStorageRecursive(page, browser, URL, frame){
     }
 }
 
+
 async function getLocalStorage(page, browser, URL){
     const mainFrame = await page.mainFrame();
     await getLocalStorageRecursive(page, browser, URL, mainFrame)
 }
 
-async function crawl(browserList, resultPath){
-    try{
-        // 1) Set up database connection
-        await databaseAPI.establishConnection(connection); 
 
-        // 2) Create URL List
-        // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-        const URL_list = ["https://www.pinterest.com/"]
+async function crawl(browserList, resultPath, URL_list, vantagePoint, connection = null, test = false){
+    for(let browser of browserList){
+        // MAYBE REMOVE LATER
+        resultPath = resultPath+"/"+browser;
 
-        // 3) Loop through browsers
-        for(let browser of browserList){
-            // MAYBE REMOVE LATER
-            resultPath = resultPath+"/"+browser;
+        let browserInstance, pages, page;
+        try{ 
+            browserInstance = await createBrowserInstance.createBrowserInstance(browser, vantagePoint);
+        } catch{
+            return; // Exit if fail to create browser instance
+        }
 
-            let browserInstance;
-            try{ 
-                browserInstance = await createBrowserInstance.createBrowserInstance(browser);
-            } catch{
-                await databaseAPI.endConnection(connection);
-                process.exit(1);
-            }
-
+        try{ // Closes BrowserInstance in case of an unhandled error
             
-            try{ // Here to ensure the BrowserInstance closes in case of an error
+            // This gets rid of the about::blank page
+            pages = await browserInstance.pages();
+            page = pages[0];
+        
+            // Loop through URLs
+            for(let URL of URL_list){
+                console.log(URL);
+                const siteName = await selectWebsites.getSiteNames(URL);
                 
-                // This gets rid of the about::blank page
-                let pages = await browserInstance.pages();
-                let page = pages[0];
-                // let page = await incognitoContext.newPage();
-            
-                // Loop through URLs
-                for(let URL of URL_list){
-                    console.log(URL);
-                    const siteName = await selectWebsites.getSiteNames(URL);
-                    
+                if(! test){
                     if(browser == 'Google Chrome' || browser == 'Brave'){
-                        await getResponses(page, browser, URL);
+                        await getResponses(page, browser, URL, connection);
                     }
-                                    
-                    try{   
-                        await page.goto(URL,{
-                            timeout: 10000,
-                            waitUntil: "networkidle2", 
-                            /* waitUntil: either load, domcontentloaded,networkidle0, networkidle2
-                            - domcontentloaded seems to be too quick, not all banners appear
-                            - newtworkidle2 creates multiple timeouts (i think some browsers might never send the message)
-                            */
-                        });
-                    } catch(error){
-                        if (error instanceof puppeteer.TimeoutError) {
-                            console.log("TimeoutError:", URL);
-                            await page.close();
-                            page = await browserInstance.newPage();
-                        }
-                        else{ console.log("Error visiting webpage:", URL); }
-                        continue;
-                    }                
-                    
-                    await getScreenshot(page, resultPath, siteName);
-                    await getHTML(page, resultPath, siteName);
-                    await getCookies(page, browser, URL);
-                    await getLocalStorage(page, browser, URL);
-                } // End-loop for all URLs
+                }
 
+                try{   
+                    await page.goto(URL,{
+                        timeout: 10000,
+                        waitUntil: "networkidle2", 
+                        /* waitUntil: either load, domcontentloaded,networkidle0, networkidle2
+                        - domcontentloaded seems to be too quick, not all banners appear
+                        - newtworkidle2 creates multiple timeouts (i think some browsers might never send the message)
+                        */
+                    });
+                } catch(error){
+                    if (error instanceof puppeteer.TimeoutError) {
+                        console.log("TimeoutError:", URL);
+                        await page.close();
+                        page = await browserInstance.newPage();
+                    } else{ console.log("Error visiting webpage:", URL); }
+                    continue;
+                }                
+                
+                await getScreenshot(page, resultPath, siteName);
+
+                if(! test){
+                    await getHTML(page, resultPath, siteName);
+                    await getCookies(page, browser, URL, connection);
+                    await getLocalStorage(page, browser, URL, connection);
+                }
+            }
+        } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
+            console.log(error);
             await page.close();
             await browserInstance.close();
-            console.log(browser + " instance closed.")
+            console.log("BrowserInstance closed in error handling.")
+            return;
+        }
 
-            } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
-                console.log(error);
-                try{
-                    await browserInstance.close();
-                    console.log("BrowserInstance closed in error handling.")
-                } catch(error) { console.log("BrowserInstance has already been closed.") }
-            }
-
-        } // End-loop for all browsers
-    
-        await databaseAPI.endConnection(connection);
-    
-    } catch(error){ // Here to ensure the DatabaseConnection closes in case of an error
-        console.log(error);
-        await databaseAPI.endConnection(connection);
+        await page.close();
+        await browserInstance.close();
+        console.log(browser + " instance closed.")
     }
 }
 
@@ -215,9 +219,25 @@ async function main(){
     let browserList = ['Google Chrome'] ;
     let vantagePoint = ['UK'];
     let NUM_URLS = 100;
-    let resultsPath = await createResultFolder(vantagePoint, browserList);
-    // test(browserList, testPath); --> create this that queries SannyBot & checks for IP address and outputs the result in a folder to make sure everything is fine with the crawler.
-    await crawl(browserList, resultsPath);
+    
+    // Test the parameters
+    await testCrawler(browserList, vantagePoint);
+
+    // Set up result folder for crawl
+    let resultPath = await createResultFolder(browserList, vantagePoint);
+    
+    // Get websites list
+    // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
+    const URL_list = ['https://www.nytimes.com'];
+
+    // Set up Database connection
+    await databaseAPI.establishConnection(connection); 
+    
+    // Crawl
+    await crawl(browserList, resultPath, URL_list, vantagePoint, connection);
+
+    // Close database connection
+    await databaseAPI.endConnection(connection);
 }
 
 main();

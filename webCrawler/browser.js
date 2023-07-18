@@ -31,8 +31,11 @@ async function createBrowserInstance(browser){
                 headless: false,
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser],
-                args: [ '--start-maximized',
-                '--profile-directory=Profile 7']
+                args: [ 
+                    '--start-maximized',
+                    '--profile-directory=Profile 7',
+                    // '--proxy-server='
+                ]
             });
         }
         else if(browser == 'Brave'){
@@ -44,7 +47,9 @@ async function createBrowserInstance(browser){
                 /* User Profile Description: The EasyList Cookie found in 
                 brave://settings/shields/filters has been enabled. */
                 args: [ '--start-maximized',
-                        '--profile-directory=Profile 1' ]
+                        '--profile-directory=Profile 1',
+                        // '--proxy-server='
+                ]
             });
         }
         else if(browser == 'Firefox'){ 
