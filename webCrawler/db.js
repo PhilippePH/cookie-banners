@@ -28,38 +28,46 @@ async function endConnection(connection){
 }
 
 async function saveCookies(crawlID, browser, URL, storageType, cookies, connection){
-  const cookieDataQuery = 'INSERT INTO storage_data (crawlID, browser, websiteURL, storageType, key, value, cookieDomain) VALUES (?, ?, ?, ?, ?, ?, ?)';
-                  
-  for(let i = 0; i < cookies.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
+  const cookieDataQuery = 'INSERT INTO storage_data (crawlID, browser, websiteURL, storageType, frameURL, name, value, cookieDomain) VALUES (?, ?, ?, ?, ?, ?, ?, ?)'; 
+  // for(let i = 0; i < cookies.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
+  
+  if (!Array.isArray(cookies.cookies)) {
+    console.error('Invalid cookies data:', cookies.cookies);
+    return; // or throw an error if desired
+  }
+
+  const promises = cookies.cookies.map((cookie) => {
       const cookieData = [
           crawlID,
           browser,
           URL,
           storageType,
-          cookies[i].domain,
-          cookies[i].name,
-          cookies[i].value,
+          null,
+          cookie.name,
+          cookie.value,
+          cookie.domain,
           ];
-  
-      return new Promise((resolve, reject) => {
+
+        return new Promise((resolve, reject) => {
         connection.query(cookieDataQuery, cookieData, (error, results) => {
         if (error) {
             console.error('Error inserting data: ', error);
+            reject();
         } else{
           resolve();
         }
         });
       });
-  }
+  });
+  await Promise.all(promises);
 }
 
 
 async function saveLocalStorage(crawlID, browser, URL, storageType, frameURL, localStorage, connection){
-  const localStorageDataQuery = 'INSERT INTO storage_data (crawlID, browser, websiteURL, storageType, frameURL, key, value) VALUES (?, ?, ?, ?, ?, ?, ?)';
-                  
-  for(let i = 0; i < localStorage.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
-    const key = localStorage.key(i);
-    const value = localStorage.getItem(key);
+  const localStorageDataQuery = 'INSERT INTO storage_data (crawlID, browser, websiteURL, storageType, frameURL, name, value, cookieDomain) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
+
+  const promises = Object.keys(localStorage).map((key) => {
+    const value = localStorage[key];
     const localStorageData = [
           crawlID,
           browser,
@@ -67,19 +75,23 @@ async function saveLocalStorage(crawlID, browser, URL, storageType, frameURL, lo
           storageType,
           frameURL,
           key,
-          value
+          value,
+          null,
           ];
+          
       return new Promise((resolve, reject) => {
         connection.query(localStorageDataQuery, localStorageData, (error, results) => {
         if (error) {
             console.error('Error inserting data: ', error);
+            reject();
         }
         else{
           resolve();
         }  
         });
       });
-  }
+  });
+  await Promise.all(promises);
 }
 
 async function saveResponses(crawlID, browser, URL, interceptedResponse, connection){
@@ -97,6 +109,7 @@ async function saveResponses(crawlID, browser, URL, interceptedResponse, connect
         connection.query(responseDataQuery, responseData, (error, results) => {
           if (error) {
               console.error('Error inserting data: ', error);
+              reject();
           }
           else{
             resolve();

@@ -72,7 +72,8 @@ async function getCookies(page, browser, URL){
     const cookies = (await client.send('Storage.getCookies'));
     try{
         await databaseAPI.saveCookies(crawlID, browser, URL, "cookies", cookies, connection)
-    } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
+    } catch(error){ console.log("Error with saving the cookies of the page to the database"); 
+    console.log(error); }
 }
 
 async function getLocalStorageRecursive(page, browser, URL, frame){
@@ -91,7 +92,8 @@ async function getLocalStorageRecursive(page, browser, URL, frame){
     
     try{
         await databaseAPI.saveLocalStorage(crawlID, browser, URL, "localStorage", frame.url(), localStorage, connection) // NOTE TO SELF: using frame.url() because frame.origin() does not seem to exist
-    } catch(error){ console.log("Error with saving the cookies of the page to the database"); }
+    } catch(error){ console.log("Error with saving the localStorage of the page to the database"); 
+    console.log(error); }
 
     const childFrames = frame.childFrames();
     for (const childFrame of childFrames) {
