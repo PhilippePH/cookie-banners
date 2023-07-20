@@ -27,25 +27,19 @@ async function endConnection(connection){
   });
 }
 
-async function saveCookies(crawlID, browser, URL, storageType, cookies, connection){
+async function saveCookies(crawlID, browser, URL, storageType, frameURL, cookies, connection){
   const cookieDataQuery = 'INSERT INTO storage_data (crawlID, browser, websiteURL, storageType, frameURL, name, value, cookieDomain) VALUES (?, ?, ?, ?, ?, ?, ?, ?)'; 
-  // for(let i = 0; i < cookies.length; i++){ // later on see if we can do a "batch add" and add all the lines at once (assuming its faster to do only 1 query)
   
-  if (!Array.isArray(cookies.cookies)) {
-    console.error('Invalid cookies data:', cookies.cookies);
-    return; // or throw an error if desired
-  }
-
-  const promises = cookies.cookies.map((cookie) => {
-      const cookieData = [
+  const promises = cookies.map((item) => {
+    const cookieData = [
           crawlID,
           browser,
           URL,
           storageType,
-          null,
-          cookie.name,
-          cookie.value,
-          cookie.domain,
+          frameURL,
+          item.name,
+          item.value,
+          item.domain,
           ];
 
         return new Promise((resolve, reject) => {
@@ -82,7 +76,8 @@ async function saveLocalStorage(crawlID, browser, URL, storageType, frameURL, lo
       return new Promise((resolve, reject) => {
         connection.query(localStorageDataQuery, localStorageData, (error, results) => {
         if (error) {
-            console.error('Error inserting data: ', error);
+            console.error('Error inserting LocalStorage data.');
+            return;
             // reject();
         }
         else{

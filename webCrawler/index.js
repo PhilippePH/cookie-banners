@@ -59,16 +59,34 @@ async function getHTML(page, resultPath, siteName){
     } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
 }
 
-
 async function getCookies(page, browser, URL, connection){
-    const client = await page.target().createCDPSession();
-    const cookies = (await client.send('Storage.getCookies'));
     try{
-        await databaseAPI.saveCookies(crawlID, browser, URL, "cookies", cookies, connection)
-    } catch(error){ console.log("Error with saving the cookies of the page to the database"); 
-    console.log(error); }
+        const topFrame = await page.mainFrame();
+        return getFrameCookiesRecursive(topFrame, browser, URL, connection);
+    } catch(error){ 
+        console.log("Error getting top frame. Cookies not saved.");
+    }
 }
 
+// Function to recursively iterate through frames and save the cookies
+async function getFrameCookiesRecursive(frame, browser, URL, connection) {
+    let frameCookies, frameURL;
+
+    try{
+        frameCookies = await frame.page().cookies();
+        frameURL = frame.url();
+        console.log(frameURL + " : " + frameCookies.length)
+    } catch(error){ console.log("Error getting frame cookie information"); }
+
+    try{
+        await databaseAPI.saveCookies(crawlID, browser, URL, "cookies", frameURL, frameCookies, connection);
+    } catch(error){ console.log("Error with saving the cookies of the page to the database"); console.log(error);} 
+
+    const childFrames = frame.childFrames();
+    for (const childFrame of childFrames) {
+        await getFrameCookiesRecursive(childFrame, browser, URL, connection);
+    }
+}
 
 async function getLocalStorageRecursive(page, browser, URL, frame, connection){
     let localStorage;
@@ -179,14 +197,14 @@ async function main(){
     const vantagePoint = args[1];
     const browser = args[2];
 
-    let NUM_URLS = 100;
+    let NUM_URLS = 5000;
     
     // Test the parameters
     // await testCrawler(path, browserList, vantagePoint);
     
     // Get websites list
     // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    const URL_list = ['https://www.nytimes.com'];
+    const URL_list = ['https://www.walmart.com/'];
 
     // Set up Database connection
     await databaseAPI.establishConnection(connection); 
@@ -196,6 +214,8 @@ async function main(){
 
     // Close database connection
     await databaseAPI.endConnection(connection);
+
+    return;
 }
 
 main();

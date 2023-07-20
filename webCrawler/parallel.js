@@ -1,7 +1,7 @@
 const { fork } = require('child_process');
 const fs = require('fs').promises;
 
-const BROWSER_LIST = ['Google Chrome', 'Brave'];
+const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
 
 // CREATING RESULTS FOLDER
