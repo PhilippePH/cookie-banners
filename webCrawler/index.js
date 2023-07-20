@@ -16,25 +16,25 @@ const connection = mysql.createConnection({
   });
 
 
-async function testCrawler(path, browser, vantagePoint){
-    path = path + "/test";
+async function testCrawler(path, browser, vantagePoint, processID){
+    path = path + '/test';
     await fs.mkdir(path);
-    path = path + "/vantagePoint";
-    await fs.mkdir(path);
-    path = path + "/browser";
-    await fs.mkdir(path);
+    newPath = path + '/screenshots';
+    await fs.mkdir(newPath);
 
     // Tests bot detection + proxy (IP)
     await crawl(browser, path, ["https://bot.sannysoft.com", 
-                "https://www.whatismyipaddress.com"], vantagePoint, null, true);
+                "https://www.whatismyipaddress.com"], vantagePoint, null, true, processID);
 }
 
 async function getResponses(page, browser, URL, connection){
     try{
         await page.on('response', async (interceptedResponse) => {
-            await databaseAPI.saveResponses(crawlID, browser, URL, interceptedResponse, connection)
+            try{
+                await databaseAPI.saveResponses(crawlID, browser, URL, interceptedResponse, connection)
+            } catch(error){ console.log("Error adding HTTP headers to the database."); }
         })
-    } catch(error){ console.log("Error collecting HTTP headers, or adding them to the database"); }
+    } catch(error){ console.log("Error collecting HTTP headers."); }
 }
 
 
@@ -43,7 +43,7 @@ async function getScreenshot(page, resultPath, siteName){
         await page.screenshot({
             path: resultPath + `/screenshots/${siteName}.jpeg`,
             type: "jpeg",
-            quality: 50,
+            quality: 25,
         });
     } catch(error){ console.log("Error with the screenshot"); console.log(error); }
 }
@@ -118,7 +118,9 @@ async function getLocalStorage(page, browser, URL, connection){
 }
 
 
-async function crawl(browser, resultPath, URL_list, vantagePoint, connection = null, test = false){
+async function crawl(browser, resultPath, URL_list, vantagePoint, 
+                    connection = null, test = false, processID = 1){
+    
     let browserInstance, pages, page;
 
     try{ 
@@ -137,7 +139,7 @@ async function crawl(browser, resultPath, URL_list, vantagePoint, connection = n
         for(let URL of URL_list){
             page = await browserInstance.newPage();
             
-            console.log(URL);
+            console.log(`${processID} (${browser}): ${URL}`);
             const siteName = await selectWebsites.getSiteNames(URL);
             
             if(! test){
@@ -146,9 +148,17 @@ async function crawl(browser, resultPath, URL_list, vantagePoint, connection = n
                 }
             }
 
-            try{   
+
+            // await page.setRequestInterception(true);
+            // page.on('request', (request) => {
+            //     console.log('URL:', request.url()); // Log the URLs being requested
+            //     request.continue(); // Continue handling the request
+            //   });
+
+            
+              try{   
                 await page.goto(URL,{
-                    timeout: 10000,
+                    timeout: 100000,
                     waitUntil: "networkidle2", 
                     /* waitUntil: either load, domcontentloaded,networkidle0, networkidle2
                     - domcontentloaded seems to be too quick, not all banners appear
@@ -157,9 +167,9 @@ async function crawl(browser, resultPath, URL_list, vantagePoint, connection = n
                 });
             } catch(error){
                 if (error instanceof puppeteer.TimeoutError) {
-                    console.log("TimeoutError:", URL);
+                    console.log(`${processID} (${browser}): TimeoutError -> ${URL}`);
                     await page.close();
-                } else{ console.log("Error visiting webpage:", URL); }
+                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${URL}`)}
                 continue;
             }                
             
@@ -177,12 +187,12 @@ async function crawl(browser, resultPath, URL_list, vantagePoint, connection = n
         console.log(error);
         await page.close();
         await browserInstance.close();
-        console.log("BrowserInstance closed in error handling.")
+        console.log(`${processID} (${browser}): BrowserInstance closed in error handling.`)
         return;
     }
 
     await browserInstance.close();
-    console.log(browser + " instance closed.")
+    console.log(`${processID} (${browser}) instance closed.`)
 }
 
 
@@ -191,24 +201,24 @@ async function main(){
     const args = process.argv.slice(2);
 
     // Accessing individual arguments
-    const path = args[0]
+    const path = args[0];
     const vantagePoint = args[1];
     const browser = args[2];
+    const NUM_URLS = args[3];
+    const processID = args[4];
 
-    let NUM_URLS = 5000;
-    
     // Test the parameters
-    // await testCrawler(path, browserList, vantagePoint);
-    
+    await testCrawler(path, browser, vantagePoint, processID);
+    console.log(processID);
     // Get websites list
-    // const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    const URL_list = ['https://www.walmart.com/'];
+    const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
+    // const URL_list = ['https://bot.sannysoft.com/'];
 
     // Set up Database connection
     await databaseAPI.establishConnection(connection); 
     
     // Crawl
-    await crawl(browser, path, URL_list, vantagePoint, connection);
+    await crawl(browser, path, URL_list, vantagePoint, connection, processID);
 
     // Close database connection
     await databaseAPI.endConnection(connection);

@@ -1,8 +1,9 @@
 const { fork } = require('child_process');
 const fs = require('fs').promises;
 
-const BROWSER_LIST = ['Google Chrome'];
+const BROWSER_LIST = ['Google Chrome', 'Brave'];
 const VANTAGE_POINTS = ['UK'];
+const NUM_URLS = 5;
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint){
@@ -10,8 +11,7 @@ async function createResultFolder(browserList, vantagePoint){
 
   // Saving the data to OneDrive, which doesn't allow some chars (":","/") in filename.
   const options = {
-      weekday: 'short',
-      month: 'short',
+      month: 'numeric',
       day: 'numeric',
       year: 'numeric',
       hour: '2-digit',
@@ -22,23 +22,24 @@ async function createResultFolder(browserList, vantagePoint){
       hourCycle: 'h23'
     };
     const formattedDate = date.toLocaleString('en-GB', options);
-    const formattedDateWithoutColons = formattedDate.replace(/:/g, '-');
+    let formattedDateWithoutColons = formattedDate.replace(/:/g, '-');
+    formattedDateWithoutColons = formattedDate.replace(/[/:]/g, '-');
 
   let path = `/Users/philippe/Library/CloudStorage/OneDrive-Personal/cookie-banners-results/${formattedDateWithoutColons}`; 
   await fs.mkdir(path);
   
   for(const location of vantagePoint){
-    let newPath = path+`/${location}`; 
-    await fs.mkdir(newPath);
+    let newPath1 = path+`/${location}`; 
+    await fs.mkdir(newPath1);
 
     for (const browser of browserList) {
-      newPath = newPath+`/${browser}`; 
-      await fs.mkdir(newPath);
+      let newPath2 = newPath1+`/${browser}`; 
+      await fs.mkdir(newPath2);
 
-      let screenshotPath = newPath + "/screenshots";
+      let screenshotPath = newPath2 + "/screenshots";
       await fs.mkdir(screenshotPath)
     
-      let HTMLPath = newPath + "/htmlFiles";
+      let HTMLPath = newPath2 + "/htmlFiles";
       await fs.mkdir(HTMLPath)
     }
   }
@@ -47,11 +48,12 @@ async function createResultFolder(browserList, vantagePoint){
 
 async function createArgumentArray(path, browserList, vantagePoint){
   let argArray = []
-
+  let i = 1;
   for(const location of vantagePoint){
     for (const browser of browserList) {
-      path = path + `/${location}/${browser}`;
-      argArray.push([path, location, browser])
+      let newPath = path + `/${location}/${browser}`;
+      argArray.push([newPath, location, browser, NUM_URLS, i]);
+      i++;
     }
   }
   return argArray;

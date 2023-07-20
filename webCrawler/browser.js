@@ -22,26 +22,33 @@ const userProfiles = {
     // 'DuckDuckGo' : '/Users/philippe/Library/Application Support/Google/Chrome/Profile 6'
 };
 
-async function createBrowserInstance(browser){
+async function createBrowserInstance(browser, vantagePoint){
     console.log("Browser: " + browser + ". At path: " + executablePaths[browser]);
+    let proxyAddress;
+    if(vantagePoint == 'UK'){
+        proxyAddress = '86.144.210.76:8080';
+    }
+    // else if(vantagePoint == 'US'){
+    //     proxyAddress = 'TBD';
+    // }
     try{
         if(browser == 'Google Chrome'){
             // Uses puppeteer_extra (stealth plugin)
             return await puppeteer_extra.launch({ 
-                headless: false,
+                headless: 'new',
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser],
                 args: [ 
                     '--start-maximized',
                     '--profile-directory=Profile 7',
-                    // '--proxy-server='
+                    // `--proxy-server=${proxyAddress}`,
                 ]
             });
         }
         else if(browser == 'Brave'){
             // Uses puppeteer_extra (stealth plugin)
             return await puppeteer_extra.launch({
-                headless: false,
+                headless: 'new',
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser], 
                 /* User Profile Description: The EasyList Cookie found in 
