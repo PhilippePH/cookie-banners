@@ -44,12 +44,8 @@ async function saveCookies(crawlID, browser, URL, storageType, frameURL, cookies
 
         return new Promise((resolve, reject) => {
         connection.query(cookieDataQuery, cookieData, (error, results) => {
-        if (error) {
-            console.error('Error inserting data: ', error);
-            // reject();
-        } else{
-          resolve();
-        }
+          if (error) { reject( new Error() ); }
+          else{ resolve(); }  
         });
       });
   });
@@ -75,14 +71,8 @@ async function saveLocalStorage(crawlID, browser, URL, storageType, frameURL, lo
           
       return new Promise((resolve, reject) => {
         connection.query(localStorageDataQuery, localStorageData, (error, results) => {
-        if (error) {
-            console.error('Error inserting LocalStorage data.');
-            return;
-            // reject();
-        }
-        else{
-          resolve();
-        }  
+        if (error) { reject( new Error() ); }
+        else{ resolve(); }  
         });
       });
   });
@@ -102,13 +92,8 @@ async function saveResponses(crawlID, browser, URL, interceptedResponse, connect
 
       return new Promise((resolve, reject) => {
         connection.query(responseDataQuery, responseData, (error, results) => {
-          if (error) {
-              console.error('Error inserting HTTP responses in the database. Error message: \n ', error);
-              // reject();
-          }
-          else{
-            resolve();
-          }
+          if (error) { reject( new Error() ); }
+          else{ resolve(); }  
         });
       });
 }

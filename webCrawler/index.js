@@ -34,7 +34,7 @@ async function getResponses(page, browser, URL, connection){
         await page.on('response', async (interceptedResponse) => {
             await databaseAPI.saveResponses(crawlID, browser, URL, interceptedResponse, connection)
         })
-    } catch(error){ console.log("Error collecting HTTP headers"); }
+    } catch(error){ console.log("Error collecting HTTP headers, or adding them to the database"); }
 }
 
 
@@ -75,12 +75,11 @@ async function getFrameCookiesRecursive(frame, browser, URL, connection) {
     try{
         frameCookies = await frame.page().cookies();
         frameURL = frame.url();
-        console.log(frameURL + " : " + frameCookies.length)
     } catch(error){ console.log("Error getting frame cookie information"); }
 
     try{
         await databaseAPI.saveCookies(crawlID, browser, URL, "cookies", frameURL, frameCookies, connection);
-    } catch(error){ console.log("Error with saving the cookies of the page to the database"); console.log(error);} 
+    } catch(error){ console.log("Error with saving the cookies of the page to the database");} 
 
     const childFrames = frame.childFrames();
     for (const childFrame of childFrames) {
@@ -100,12 +99,11 @@ async function getLocalStorageRecursive(page, browser, URL, frame, connection){
         }
         return localStorageData;
       });
-    } catch(error){ console.log("Error fetching the local storage of a frame"); }
+    } catch(error){ console.log("Error fetching the local storage of a frame. "); }
     
     try{
         await databaseAPI.saveLocalStorage(crawlID, browser, URL, "localStorage", frame.url(), localStorage, connection) // NOTE TO SELF: using frame.url() because frame.origin() does not seem to exist
-    } catch(error){ console.log("Error with saving the localStorage of the page to the database"); 
-    console.log(error); }
+    } catch(error){ console.log("Error with saving the localStorage of the page to the database"); }
 
     const childFrames = frame.childFrames();
     for (const childFrame of childFrames) {
