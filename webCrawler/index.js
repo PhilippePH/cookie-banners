@@ -211,26 +211,22 @@ async function main(){
     const path = args[0];
     const vantagePoint = args[1];
     const browser = args[2];
-    const NUM_URLS = args[3];
+    const websiteListString = args[3];
     const processID = args[4];
 
+    const websiteList = websiteListString.split(','); // Convert back to an array
+
     // Test the parameters
-    await testCrawler(path, browser, vantagePoint, processID);
-    
-    // Get websites list
-    const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
-    // const URL_list = ['https://bot.sannysoft.com/'];
+    // await testCrawler(path, browser, vantagePoint, processID);
 
     // Set up Database connection
     await databaseAPI.establishConnection(connection); 
     
     // Crawl
-    await crawl(browser, path, URL_list, vantagePoint, connection, processID);
+    await crawl(browser, path, websiteList, vantagePoint, connection, processID);
 
     // Close database connection
     await databaseAPI.endConnection(connection);
-
-    return;
 }
 
 main();

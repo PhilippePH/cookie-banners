@@ -1,9 +1,11 @@
 const { fork } = require('child_process');
 const fs = require('fs').promises;
+const selectWebsites = require('./websiteSelection');
+
 
 const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 1;
+const NUM_URLS = 2;
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint){
@@ -49,10 +51,12 @@ async function createResultFolder(browserList, vantagePoint){
 async function createArgumentArray(path, browserList, vantagePoint){
   let argArray = []
   let i = 1;
+  const websiteList = await selectWebsites.getFirstURLs(NUM_URLS);
+
   for(const location of vantagePoint){
     for (const browser of browserList) {
       let newPath = path + `/${location}/${browser}`;
-      argArray.push([newPath, location, browser, NUM_URLS, i]);
+      argArray.push([newPath, location, browser, websiteList, i]);
       i++;
     }
   }
