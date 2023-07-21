@@ -7,7 +7,23 @@ const { promisify } = require('util');
 const puppeteer = require('puppeteer');
 const path = require('path');
 
-const crawlID = Date.now();
+let crawlID = new Date();
+//   const options = {
+//     year: 'numeric',
+//     month: 'numeric',
+//     day: 'numeric',
+//     hour: '2-digit',
+//     minute: '2-digit',
+//     second: '2-digit',
+//     hour12: false,
+//     hourCycle: 'h23'
+//     };
+// crawlID = crawlID.toLocaleString('en-GB', options);
+// crawlID = crawlID.replace(/,/g, '');
+
+// console.log(crawlID);
+// return;
+
 const connection = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
@@ -175,8 +191,8 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
             } catch(error){
                 if (error instanceof puppeteer.TimeoutError) {
                     console.log(`${processID} (${browser}): TimeoutError -> ${URL}`);
-                    await page.close();
                 } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${URL}`); console.log(error);}
+                await page.close();
                 continue;
             }                
             
@@ -217,7 +233,7 @@ async function main(){
     const websiteList = websiteListString.split(','); // Convert back to an array
 
     // Test the parameters
-    // await testCrawler(path, browser, vantagePoint, processID);
+    await testCrawler(path, browser, vantagePoint, processID);
 
     // Set up Database connection
     await databaseAPI.establishConnection(connection); 

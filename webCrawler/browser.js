@@ -25,40 +25,37 @@ const userProfiles = {
 async function createBrowserInstance(browser, vantagePoint){
     console.log("Browser: " + browser + ". At path: " + executablePaths[browser]);
     let proxyAddress;
-    if(vantagePoint == 'UK'){
-        // proxyAddress = '86.144.210.76:8080';
-        proxyAddress == '127.0.0.1:8080'
-    }
-    // else if(vantagePoint == 'US'){
-    //     proxyAddress = 'TBD';
-    // }
     try{
         if(browser == 'Google Chrome'){
-            // Uses puppeteer_extra (stealth plugin)
-            return await puppeteer_extra.launch({ 
-                headless: false,
-                executablePath: executablePaths[browser],
-                userDataDir: userProfiles[browser],
-                args: [ 
-                    '--start-maximized',
-                    '--profile-directory=Profile 7',
-                    // `--proxy-server=${proxyAddress}`,
-                ]
-            });
+            if(vantagePoint == 'UK'){
+                // Uses puppeteer_extra (stealth plugin)
+                return await puppeteer_extra.launch({ 
+                    headless: false,
+                    executablePath: executablePaths[browser],
+                    userDataDir: userProfiles[browser],
+                    args: [ 
+                        '--start-maximized',
+                        '--profile-directory=Profile 7',
+                        '--proxy-server=socks5://127.0.0.1:8080',
+                    ]
+                });
+            }
         }
         else if(browser == 'Brave'){
-            // Uses puppeteer_extra (stealth plugin)
-            return await puppeteer_extra.launch({
-                headless: false,
-                executablePath: executablePaths[browser],
-                userDataDir: userProfiles[browser], 
-                /* User Profile Description: The EasyList Cookie found in 
-                brave://settings/shields/filters has been enabled. */
-                args: [ '--start-maximized',
-                        '--profile-directory=Profile 1',
-                        // '--proxy-server='
-                ]
-            });
+            if(vantagePoint == 'UK'){
+                // Uses puppeteer_extra (stealth plugin)
+                return await puppeteer_extra.launch({
+                    headless: false,
+                    executablePath: executablePaths[browser],
+                    userDataDir: userProfiles[browser], 
+                    /* User Profile Description: The EasyList Cookie found in 
+                    brave://settings/shields/filters has been enabled. */
+                    args: [ '--start-maximized',
+                            '--profile-directory=Profile 1',
+                            '--proxy-server=socks5://127.0.0.1:8080',
+                    ]
+                });
+            }
         }
         else if(browser == 'Firefox'){ 
             // Does not use stealth plugin

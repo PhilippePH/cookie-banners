@@ -3,9 +3,10 @@ const fs = require('fs').promises;
 const selectWebsites = require('./websiteSelection');
 
 
-const BROWSER_LIST = ['Google Chrome'];
+const BROWSER_LIST = ['Brave'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 2;
+const NUM_URLS = 5;
+const PATH_TO_CSV = "./webCrawler/top-1m.csv";
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint){
@@ -51,7 +52,7 @@ async function createResultFolder(browserList, vantagePoint){
 async function createArgumentArray(path, browserList, vantagePoint){
   let argArray = []
   let i = 1;
-  const websiteList = await selectWebsites.getFirstURLs(NUM_URLS);
+  const websiteList = await selectWebsites.getFirstURLs(NUM_URLS, PATH_TO_CSV);
 
   for(const location of vantagePoint){
     for (const browser of browserList) {

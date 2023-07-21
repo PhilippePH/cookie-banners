@@ -1,15 +1,38 @@
 const fs = require("fs");
 const { parse } = require("csv-parse");
 
-async function CSVtoArray(){
+async function randomiseURLs(path){
+  /* This function breaks down the input into three thirds.
+      The values within each thirds are shuffled.
+      They are then put back into one list, with a value from the first third,
+      second third and third third being added in order (and so on).
+    
+      This outputs a txt file with one URL on each line. */
+
+    let myURLs = await CSVtoArray(path);
+    
+    let thirdLength = myURLs.length / 3;
+    
+    let firstThird = myURLs.slice(0, thirdLength);
+    let secondThird = myURLs.slice(thirdLength + 1, thirdLength * 2);
+    let thirdThird = myURLs.slice(thirdLength * 2 + 1, myURLs.length);
+
+    
+}
+
+// randomiseURLs("./webCrawler/top-1m.csv");
+
+async function CSVtoArray(path){
+  /* Read in a CSV file at path path.
+    Modifies URL format to "https://www.sitename.tld"
+    Returns the array of URLs. */
+
   return new Promise((resolve, reject) => {
-    var myURLs = [];
-    fs.createReadStream("./webCrawler/top-1m.csv")
+    let myURLs = [];
+    fs.createReadStream(path)
       .pipe(parse({ delimiter: ","}))
       .on("data", function (row) {
-        // console.log(row[1]);
         myURLs.push("https://www."+row[1]);
-        // console.log(myURLs);
       })
       .on("end", function () {
         console.log("finished");
@@ -22,8 +45,8 @@ async function CSVtoArray(){
     });
   }
 
-async function getFirstURLs(number){
-  let data = await CSVtoArray();
+async function getFirstURLs(number, path){
+  let data = await CSVtoArray(path);
 
   return data.slice(0,Number(number));
 }
