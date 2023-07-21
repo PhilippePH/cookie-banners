@@ -1,11 +1,17 @@
+/*  Note to self:
+ssh -f -N -M -S /tmp/sshtunnel -D 8080 philippe@hamedhome.ddns.net -p22
+ssh -S /tmp/sshtunnel -O exit philippe@hamedhome.ddns.net -p22
+*/
+
+
 const { fork } = require('child_process');
 const fs = require('fs').promises;
 const selectWebsites = require('./websiteSelection');
 
 
-const BROWSER_LIST = ['Brave'];
+const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 5;
+const NUM_URLS = 2;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";
 
 // CREATING RESULTS FOLDER

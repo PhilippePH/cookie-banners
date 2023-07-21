@@ -36,7 +36,7 @@ async function createBrowserInstance(browser, vantagePoint){
                     args: [ 
                         '--start-maximized',
                         '--profile-directory=Profile 7',
-                        '--proxy-server=socks5://127.0.0.1:8080',
+                        // '--proxy-server=socks5://127.0.0.1:8080',
                     ]
                 });
             }

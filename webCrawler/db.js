@@ -44,7 +44,7 @@ async function saveCookies(crawlID, browser, URL, storageType, frameURL, cookies
 
         return new Promise((resolve, reject) => {
         connection.query(cookieDataQuery, cookieData, (error, results) => {
-          if (error) { reject( new Error() ); }
+          if (error) { console.log(error); reject( new Error() ); }
           else{ resolve(); }  
         });
       });

@@ -7,7 +7,7 @@ const { promisify } = require('util');
 const puppeteer = require('puppeteer');
 const path = require('path');
 
-let crawlID = new Date();
+let crawlID = Date.now();
 //   const options = {
 //     year: 'numeric',
 //     month: 'numeric',
@@ -40,7 +40,7 @@ async function testCrawler(path, browser, vantagePoint, processID){
 
     // Tests bot detection + proxy (IP)
     await crawl(browser, path, ["https://bot.sannysoft.com", 
-                "https://www.whatismyip.com/"], vantagePoint, null, true, processID);
+                "https://www.whatismyip.com/"], vantagePoint, null, processID, true);
 }
 
 async function getResponses(page, browser, URL, connection){
@@ -86,16 +86,18 @@ async function getCookies(page, browser, URL, connection){
 
 // Function to recursively iterate through frames and save the cookies
 async function getFrameCookiesRecursive(frame, browser, URL, connection) {
-    let frameCookies, frameURL;
+    let frameCookies, frameOrigin;
 
     try{
         frameCookies = await frame.page().cookies();
-        frameURL = frame.url();
+        frameOrigin = await frame.evaluate(() => {            
+            return window.origin;
+        });
     } catch(error){ console.log("Error getting frame cookie information"); }
-
+    console.log(frameOrigin);
     try{
-        await databaseAPI.saveCookies(crawlID, browser, URL, "cookies", frameURL, frameCookies, connection);
-    } catch(error){ console.log("Error with saving the cookies of the page to the database");} 
+        await databaseAPI.saveCookies(crawlID, browser, URL, "cookies", frameOrigin, frameCookies, connection);
+    } catch(error){ console.log("Error with saving the cookies of the page to the database"); console.log(error);} 
 
     const childFrames = frame.childFrames();
     for (const childFrame of childFrames) {
@@ -104,24 +106,28 @@ async function getFrameCookiesRecursive(frame, browser, URL, connection) {
 }
 
 async function getLocalStorageRecursive(page, browser, URL, frame, connection){
-    let localStorage;
+    let values;
     try{ 
-        localStorage = await frame.evaluate(() => {
-        const localStorageData = {};
-        for (let i = 0; i < localStorage.length; i++) {
-          const key = localStorage.key(i);
-          const value = localStorage.getItem(key);
-          localStorageData[key] = value;
-        }
-        return localStorageData;
-      });
+        values = await frame.evaluate(() => {            
+            const origin = window.origin;
+            const localStorageData = {};
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                const value = localStorage.getItem(key);
+                localStorageData[key] = value;
+            }
+            return [localStorageData, origin];
+        });
     } catch(error){ console.log("Error fetching the local storage of a frame. "); }
     
+    let localStorage = values[0];
+    let frameOrigin = values[1];
+
     try{
-        await databaseAPI.saveLocalStorage(crawlID, browser, URL, "localStorage", frame.url(), localStorage, connection) // NOTE TO SELF: using frame.url() because frame.origin() does not seem to exist
+        await databaseAPI.saveLocalStorage(crawlID, browser, URL, "localStorage", frameOrigin, localStorage, connection) // NOTE TO SELF: using frame.url() because frame.origin() does not seem to exist
     } catch(error){ console.log("Error with saving the localStorage of the page to the database"); }
 
-    const childFrames = frame.childFrames();
+    const childFrames = await frame.childFrames();
     for (const childFrame of childFrames) {
       await getLocalStorageRecursive(page, browser, URL, childFrame, connection);
     }
@@ -135,7 +141,7 @@ async function getLocalStorage(page, browser, URL, connection){
 
 
 async function crawl(browser, resultPath, URL_list, vantagePoint, 
-                    connection = null, test = false, processID = 1){
+                    connection = null, processID = 1, test = false){
     
     let browserInstance, pages, page;
 
@@ -145,9 +151,7 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
 
     try{ // Closes BrowserInstance in case of an unhandled error
 
-        /* This gets rid of the about::blank page at startup.
-        It is important to keep the number of tabs open at maximum 1, since 
-        we want cookies to be removed when last tab is closed (for Chrome + Brave for now) */
+        /* This gets rid of the about::blank page at startup. */
         pages = await browserInstance.pages();
         page = pages[0];
         await page.close();
@@ -164,34 +168,12 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
                 }
             }
 
-
-            // await page.setRequestInterception(true);
-            // page.on('request', (request) => {
-            //     console.log('URL:', request.url()); // Log the URLs being requested
-            //     request.continue(); // Continue handling the request
-            //   });
-
-            
               try{
-                // const username = 'philippe';
-                // const password = 'Crawler';
-                // await page.authenticate({
-                //     username,
-                //     password
-                //   });
-
-                await page.goto(URL,{
-                    timeout: 100000,
-                    waitUntil: "networkidle2", 
-                    /* waitUntil: either load, domcontentloaded,networkidle0, networkidle2
-                    - domcontentloaded seems to be too quick, not all banners appear
-                    - newtworkidle2 creates multiple timeouts (i think some browsers might never send the message)
-                    */ 
-                });
+                await page.goto(URL, { timeout: 30000, waitUntil: "load", } );
             } catch(error){
                 if (error instanceof puppeteer.TimeoutError) {
                     console.log(`${processID} (${browser}): TimeoutError -> ${URL}`);
-                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${URL}`); console.log(error);}
+                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${URL}`);}
                 await page.close();
                 continue;
             }                
@@ -233,13 +215,13 @@ async function main(){
     const websiteList = websiteListString.split(','); // Convert back to an array
 
     // Test the parameters
-    await testCrawler(path, browser, vantagePoint, processID);
+    // await testCrawler(path, browser, vantagePoint, processID);
 
     // Set up Database connection
     await databaseAPI.establishConnection(connection); 
     
     // Crawl
-    await crawl(browser, path, websiteList, vantagePoint, connection, processID);
+    await crawl(browser, path, websiteList, vantagePoint, connection, processID, false);
 
     // Close database connection
     await databaseAPI.endConnection(connection);
