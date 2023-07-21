@@ -24,7 +24,7 @@ async function testCrawler(path, browser, vantagePoint, processID){
 
     // Tests bot detection + proxy (IP)
     await crawl(browser, path, ["https://bot.sannysoft.com", 
-                "https://www.whatismyipaddress.com"], vantagePoint, null, true, processID);
+                "https://www.whatismyip.com/"], vantagePoint, null, true, processID);
 }
 
 async function getResponses(page, browser, URL, connection){
@@ -156,7 +156,14 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
             //   });
 
             
-              try{   
+              try{
+                // const username = 'philippe';
+                // const password = 'Crawler';
+                // await page.authenticate({
+                //     username,
+                //     password
+                //   });
+
                 await page.goto(URL,{
                     timeout: 100000,
                     waitUntil: "networkidle2", 
@@ -169,7 +176,7 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
                 if (error instanceof puppeteer.TimeoutError) {
                     console.log(`${processID} (${browser}): TimeoutError -> ${URL}`);
                     await page.close();
-                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${URL}`)}
+                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${URL}`); console.log(error);}
                 continue;
             }                
             
@@ -209,7 +216,7 @@ async function main(){
 
     // Test the parameters
     await testCrawler(path, browser, vantagePoint, processID);
-    console.log(processID);
+    
     // Get websites list
     const URL_list = await selectWebsites.getFirstURLs(NUM_URLS);
     // const URL_list = ['https://bot.sannysoft.com/'];

@@ -26,7 +26,8 @@ async function createBrowserInstance(browser, vantagePoint){
     console.log("Browser: " + browser + ". At path: " + executablePaths[browser]);
     let proxyAddress;
     if(vantagePoint == 'UK'){
-        proxyAddress = '86.144.210.76:8080';
+        // proxyAddress = '86.144.210.76:8080';
+        proxyAddress == '127.0.0.1:8080'
     }
     // else if(vantagePoint == 'US'){
     //     proxyAddress = 'TBD';
@@ -35,7 +36,7 @@ async function createBrowserInstance(browser, vantagePoint){
         if(browser == 'Google Chrome'){
             // Uses puppeteer_extra (stealth plugin)
             return await puppeteer_extra.launch({ 
-                headless: 'new',
+                headless: false,
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser],
                 args: [ 
@@ -48,7 +49,7 @@ async function createBrowserInstance(browser, vantagePoint){
         else if(browser == 'Brave'){
             // Uses puppeteer_extra (stealth plugin)
             return await puppeteer_extra.launch({
-                headless: 'new',
+                headless: false,
                 executablePath: executablePaths[browser],
                 userDataDir: userProfiles[browser], 
                 /* User Profile Description: The EasyList Cookie found in 

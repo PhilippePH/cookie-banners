@@ -25,7 +25,7 @@ async function CSVtoArray(){
 async function getFirstURLs(number){
   let data = await CSVtoArray();
 
-  return data.slice(0,Number(number)+1);
+  return data.slice(0,Number(number));
 }
 
 async function getSiteNames(url){

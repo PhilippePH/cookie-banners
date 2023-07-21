@@ -1,9 +1,9 @@
 const { fork } = require('child_process');
 const fs = require('fs').promises;
 
-const BROWSER_LIST = ['Google Chrome', 'Brave'];
+const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 5;
+const NUM_URLS = 1;
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint){
