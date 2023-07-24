@@ -25,13 +25,12 @@ let crawlID = Date.now();
 // console.log(crawlID);
 // return;
 
-const connection = 0;
-//  = mysql.createConnection({
-//     host: '127.0.0.1',
-//     user: 'root',
-//     password: 'I@mastrongpsswd',
-//     database: 'CrawlData',
-//   });
+const connection = mysql.createConnection({
+    host: '146.169.220.121',
+    user: 'root',
+    password: 'I@mastrongpsswd',
+    database: 'CrawlData',
+  });
 
 async function startXvfb(){
     const XVFB = new xvfb({

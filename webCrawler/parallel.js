@@ -1,5 +1,8 @@
 /*  Note to self:
-ssh -f -N -M -S /tmp/sshtunnel -D 8080 philippe@hamedhome.ddns.net -p22
+ssh -f -N -D 8080 -M -S /tmp/ssh_tunnel_%h.sock -o ExitOnForwardFailure=yes philippe@hamedhome.ddns.net && \
+echo "ssh tunnel started successfully" || \
+echo "ssh tunnel failed to start"
+
 ssh -S /tmp/sshtunnel -O exit philippe@hamedhome.ddns.net -p22
 
 export PATH=/vol/bitbucket/pp1722/nodeProject/node_modules/.bin:$PATH
