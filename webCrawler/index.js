@@ -1,7 +1,7 @@
 const selectWebsites = require('./websiteSelection');
 const createBrowserInstance = require('./browser');
 const databaseAPI = require('./db');
-// const mysql = require('mysql2');
+const mysql = require('mysql2');
 const fs = require('fs').promises;
 const { promisify } = require('util');
 const puppeteer = require('puppeteer');
@@ -27,9 +27,12 @@ let crawlID = Date.now();
 
 const connection = mysql.createConnection({
     host: '146.169.220.121',
-    user: 'root',
-    password: 'I@mastrongpsswd',
+    user: 'labLinux',
+    password: 'thisisMYlinuxMACHINE',
     database: 'CrawlData',
+	connectTimeout: 20000,
+	waitForConnections: true,
+	debug: true
   });
 
 async function startXvfb(){
@@ -244,16 +247,16 @@ async function main(){
         XVFB = await startXvfb();
     }
     // Test the parameters
-    await testCrawler(path, browser, vantagePoint, processID, device);
+    // await testCrawler(path, browser, vantagePoint, processID, device);
 
     // Set up Database connection
-    // await databaseAPI.establishConnection(connection); 
+    await databaseAPI.establishConnection(connection); 
     
     // Crawl
     await crawl(browser, path, websiteList, vantagePoint, connection, processID, false, device);
 
     // Close database connection
-    // await databaseAPI.endConnection(connection);
+    await databaseAPI.endConnection(connection);
 
     // Close XVFB
     if(XVFB) { await stopXvfb(XVFB); }
