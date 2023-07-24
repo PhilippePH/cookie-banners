@@ -21,11 +21,13 @@ const laptopUserProfiles = {
 };
 
 const linuxExecutablePaths = {
-    'Google Chrome' : '/opt/google/chrome/google-chrome'
+    'Google Chrome' : '/opt/google/chrome/google-chrome',
+    'Brave' : '/opt/brave.com/brave/brave'
 }
 
 const linuxUserProfiles = {
-    'Google Chrome' : '/homes/pp1722/.config/google-chrome/Default'
+    'Google Chrome' : '/homes/pp1722/.config/google-chrome/Default',
+    'Brave' : '/homes/pp1722/.config/BraveSoftware/Brave-Browser/Default'
 }
 
 async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
@@ -48,7 +50,7 @@ async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
                     args: [ 
                         '--start-maximized',
                         '--profile-directory=Profile 7',
-                        // '--proxy-server=socks5://127.0.0.1:8080',
+                        '--proxy-server=socks5://127.0.0.1:8080',
                     ]
                 });
             }

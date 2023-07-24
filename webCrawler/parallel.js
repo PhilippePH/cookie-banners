@@ -1,6 +1,8 @@
 /*  Note to self:
 ssh -f -N -M -S /tmp/sshtunnel -D 8080 philippe@hamedhome.ddns.net -p22
 ssh -S /tmp/sshtunnel -O exit philippe@hamedhome.ddns.net -p22
+
+export PATH=/vol/bitbucket/pp1722/nodeProject/node_modules/.bin:$PATH
 */
 
 
@@ -9,7 +11,7 @@ const fs = require('fs').promises;
 const selectWebsites = require('./websiteSelection');
 
 
-const BROWSER_LIST = ['Google Chrome'];
+const BROWSER_LIST = ['Brave'];
 const VANTAGE_POINTS = ['UK'];
 const NUM_URLS = 2;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";
@@ -35,7 +37,7 @@ async function createResultFolder(browserList, vantagePoint, device){
     let formattedDateWithoutColons = formattedDate.replace(/:/g, '-');
     formattedDateWithoutColons = formattedDate.replace(/[/:]/g, '-');
   
-  let path = `/homes/pp1722/Documents/cookie-banners/results${formattedDateWithoutColons}`;
+  let path = `/homes/pp1722/Documents/cookie-banners/results/${formattedDateWithoutColons}`;
   if(device == 'laptop'){
     path = `/Users/philippe/Library/CloudStorage/OneDrive-Personal/cookie-banners-results/${formattedDateWithoutColons}`; 
   }

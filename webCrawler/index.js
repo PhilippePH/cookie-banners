@@ -1,11 +1,12 @@
 const selectWebsites = require('./websiteSelection');
 const createBrowserInstance = require('./browser');
 const databaseAPI = require('./db');
-const mysql = require('mysql2');
+// const mysql = require('mysql2');
 const fs = require('fs').promises;
 const { promisify } = require('util');
 const puppeteer = require('puppeteer');
-const path = require('path');
+// const path = require('path');
+const xvfb = require('xvfb');
 
 let crawlID = Date.now();
 //   const options = {
@@ -24,13 +25,36 @@ let crawlID = Date.now();
 // console.log(crawlID);
 // return;
 
-const connection = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'I@mastrongpsswd',
-    database: 'CrawlData',
-  });
+const connection = 0;
+//  = mysql.createConnection({
+//     host: '127.0.0.1',
+//     user: 'root',
+//     password: 'I@mastrongpsswd',
+//     database: 'CrawlData',
+//   });
 
+async function startXvfb(){
+    const XVFB = new xvfb({
+        silent:true,
+        xvfb_args: ['-screen', '0', '1280x1024x24'],
+    });
+
+    return new Promise((resolve, reject) => {
+        XVFB.start((error) => {
+            if(error) {reject(error);}
+            resolve(XVFB);
+        });
+    });
+}
+
+async function stopXvfb(XVFB){
+    return new Promise((resolve, reject) => {
+        XVFB.stop((error) => {
+            if(error) {reject(error);}
+            resolve(error);
+        });
+    });
+}
 
 async function testCrawler(path, browser, vantagePoint, processID, device = 'linux'){
     path = path + '/test';
@@ -152,9 +176,9 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
     try{ // Closes BrowserInstance in case of an unhandled error
 
         /* This gets rid of the about::blank page at startup. */
-        pages = await browserInstance.pages();
-        page = pages[0];
-        await page.close();
+        // pages = await browserInstance.pages();
+        // page = pages[0];
+        // await page.close();
 
         for(let URL of URL_list){
             page = await browserInstance.newPage();
@@ -215,8 +239,13 @@ async function main(){
 
     const websiteList = websiteListString.split(','); // Convert back to an array
 
+    // Start XVFB
+    let XVFB = null;
+    if(device == 'linux'){
+        XVFB = await startXvfb();
+    }
     // Test the parameters
-    // await testCrawler(path, browser, vantagePoint, processID, device);
+    await testCrawler(path, browser, vantagePoint, processID, device);
 
     // Set up Database connection
     // await databaseAPI.establishConnection(connection); 
@@ -226,6 +255,9 @@ async function main(){
 
     // Close database connection
     // await databaseAPI.endConnection(connection);
+
+    // Close XVFB
+    if(XVFB) { await stopXvfb(XVFB); }
 }
 
 main();
