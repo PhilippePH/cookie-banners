@@ -6,25 +6,37 @@ const BrowserNameError = require('./customErrors')
 // register `puppeteer-extra` plugins (only for chromium)
 puppeteer_extra.use(StealthPlugin()); // allows to pass all tests on SannySoft, even if not in headfull mode
 
-const executablePaths = {
+const laptopExecutablePaths = {
     'Google Chrome' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     'Brave' : '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
     'Firefox' : '/Applications/Firefox.app/Contents/MacOS/firefox',
     'Ghostery' : '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
-    // 'DuckDuckGo' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 };
 
-const userProfiles = {
+const laptopUserProfiles = {
     'Google Chrome' : '/Users/philippe/Library/Application Support/Google/Chrome',
     'Brave' : '/Users/philippe/Library/Application Support/BraveSoftware/Brave-Browser/', // Found at : brave://version/ (take parent directory)
     'Firefox' : '/Users/philippe/Library/Application Support/Firefox/Profiles/sh5n5qfy.default', // found at about:profiles
     'Ghostery' : '/Users/philippe/Library/Application Support/Ghostery Browser/Profiles/j4yasrx6.WebCrawler',
-    // 'DuckDuckGo' : '/Users/philippe/Library/Application Support/Google/Chrome/Profile 6'
 };
 
-async function createBrowserInstance(browser, vantagePoint){
-    console.log("Browser: " + browser + ". At path: " + executablePaths[browser]);
-    let proxyAddress;
+const linuxExecutablePaths = {
+    'Google Chrome' : '/opt/google/chrome/google-chrome'
+}
+
+const linuxUserProfiles = {
+    'Google Chrome' : '/homes/pp1722/.config/google-chrome/Default'
+}
+
+async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
+    let executablePaths = linuxExecutablePaths;
+    let userProfiles = linuxUserProfiles;
+
+    if(device == 'laptop'){
+        executablePaths = laptopExecutablePaths;
+        userProfiles = laptopUserProfiles;
+    }
+
     try{
         if(browser == 'Google Chrome'){
             if(vantagePoint == 'UK'){

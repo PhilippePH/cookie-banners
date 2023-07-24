@@ -13,9 +13,10 @@ const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
 const NUM_URLS = 2;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";
+const DEVICE = 'linux';
 
 // CREATING RESULTS FOLDER
-async function createResultFolder(browserList, vantagePoint){
+async function createResultFolder(browserList, vantagePoint, device){
   let date = new Date();
 
   // Saving the data to OneDrive, which doesn't allow some chars (":","/") in filename.
@@ -33,8 +34,12 @@ async function createResultFolder(browserList, vantagePoint){
     const formattedDate = date.toLocaleString('en-GB', options);
     let formattedDateWithoutColons = formattedDate.replace(/:/g, '-');
     formattedDateWithoutColons = formattedDate.replace(/[/:]/g, '-');
+  
+  let path = `/homes/pp1722/Documents/cookie-banners/results${formattedDateWithoutColons}`;
+  if(device == 'laptop'){
+    path = `/Users/philippe/Library/CloudStorage/OneDrive-Personal/cookie-banners-results/${formattedDateWithoutColons}`; 
+  }
 
-  let path = `/Users/philippe/Library/CloudStorage/OneDrive-Personal/cookie-banners-results/${formattedDateWithoutColons}`; 
   await fs.mkdir(path);
   
   for(const location of vantagePoint){
@@ -55,7 +60,7 @@ async function createResultFolder(browserList, vantagePoint){
   return path;
 }
 
-async function createArgumentArray(path, browserList, vantagePoint){
+async function createArgumentArray(path, browserList, vantagePoint, device){
   let argArray = []
   let i = 1;
   const websiteList = await selectWebsites.getFirstURLs(NUM_URLS, PATH_TO_CSV);
@@ -63,18 +68,18 @@ async function createArgumentArray(path, browserList, vantagePoint){
   for(const location of vantagePoint){
     for (const browser of browserList) {
       let newPath = path + `/${location}/${browser}`;
-      argArray.push([newPath, location, browser, websiteList, i]);
+      argArray.push([newPath, location, browser, websiteList, i, device]);
       i++;
     }
   }
   return argArray;
 }
 
-async function main(browserList, vantagePoint){
-  const path = await createResultFolder(browserList, vantagePoint);
+async function main(browserList, vantagePoint, device){
+  const path = await createResultFolder(browserList, vantagePoint, device);
 
   // ARGUMENTS PER PROCESS
-  const argumentsArray = await createArgumentArray(path, browserList, vantagePoint);
+  const argumentsArray = await createArgumentArray(path, browserList, vantagePoint, device);
     
   // Launching child processes
   for (const args of argumentsArray) {
@@ -82,4 +87,4 @@ async function main(browserList, vantagePoint){
   }
 }
 
-main(BROWSER_LIST, VANTAGE_POINTS);
+main(BROWSER_LIST, VANTAGE_POINTS, DEVICE);

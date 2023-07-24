@@ -32,7 +32,7 @@ const connection = mysql.createConnection({
   });
 
 
-async function testCrawler(path, browser, vantagePoint, processID){
+async function testCrawler(path, browser, vantagePoint, processID, device = 'linux'){
     path = path + '/test';
     await fs.mkdir(path);
     newPath = path + '/screenshots';
@@ -40,7 +40,7 @@ async function testCrawler(path, browser, vantagePoint, processID){
 
     // Tests bot detection + proxy (IP)
     await crawl(browser, path, ["https://bot.sannysoft.com", 
-                "https://www.whatismyip.com/"], vantagePoint, null, processID, true);
+                "https://www.whatismyip.com/"], vantagePoint, null, processID, true, device);
 }
 
 async function getResponses(page, browser, URL, connection){
@@ -141,12 +141,12 @@ async function getLocalStorage(page, browser, URL, connection){
 
 
 async function crawl(browser, resultPath, URL_list, vantagePoint, 
-                    connection = null, processID = 1, test = false){
+                    connection = null, processID = 1, test = false, device = 'linux'){
     
     let browserInstance, pages, page;
 
     try{ 
-        browserInstance = await createBrowserInstance.createBrowserInstance(browser, vantagePoint);
+        browserInstance = await createBrowserInstance.createBrowserInstance(browser, vantagePoint, device);
     } catch{ return; } // Exit if fail to create browser instance
 
     try{ // Closes BrowserInstance in case of an unhandled error
@@ -164,7 +164,7 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
             
             if(! test){
                 if(browser == 'Google Chrome' || browser == 'Brave'){
-                    await getResponses(page, browser, URL, connection);
+                    // await getResponses(page, browser, URL, connection);
                 }
             }
 
@@ -182,8 +182,8 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
 
             if(! test){
                 await getHTML(page, resultPath, siteName);
-                await getCookies(page, browser, URL, connection);
-                await getLocalStorage(page, browser, URL, connection);
+                // await getCookies(page, browser, URL, connection);
+                // await getLocalStorage(page, browser, URL, connection);
             }
             
             await page.close();
@@ -211,20 +211,21 @@ async function main(){
     const browser = args[2];
     const websiteListString = args[3];
     const processID = args[4];
+    const device = args[5]
 
     const websiteList = websiteListString.split(','); // Convert back to an array
 
     // Test the parameters
-    // await testCrawler(path, browser, vantagePoint, processID);
+    // await testCrawler(path, browser, vantagePoint, processID, device);
 
     // Set up Database connection
-    await databaseAPI.establishConnection(connection); 
+    // await databaseAPI.establishConnection(connection); 
     
     // Crawl
-    await crawl(browser, path, websiteList, vantagePoint, connection, processID, false);
+    await crawl(browser, path, websiteList, vantagePoint, connection, processID, false, device);
 
     // Close database connection
-    await databaseAPI.endConnection(connection);
+    // await databaseAPI.endConnection(connection);
 }
 
 main();

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": " Crawling the web to identify the perseverance of cookie banners and respect for choice.",
   "dependencies": {
-    "node" : "^18.13.0",
+    "node" : "18.13.0",
+    "npm" : "8.19.3",
     "csv": "^6.3.1",
     "fs": "^0.0.1-security",
     "mysql2": "^3.4.2",
