@@ -41,11 +41,10 @@ TYPE_OF_COOKIES = [ # 'mandatory', 'optional cookies', #--> Found in 2 files or 
                     # 'necessary cookies', required',  #--> Found in 3-5 files, and doesn't reduce covering in training
                     # 'essential', 'non-essential', #--> Found in 6-10 files, and doesn't reduce covering in training
                     ]
-SETTINGS = [ 'cookie preferences',
-            'manage cookies', 'more options', 'preferences', 
+SETTINGS = [ 'cookie preferences', 'manage cookies',  'preferences', 
             # 'cookies options','consent manager', 'customize cookies', 'cookie options', #--> Found in 2 files or less
             # 'cookies settings', 'manage settings', #--> Found in 3-5 files, and doesn't reduce covering in training
-            # 'manage preferences', #--> Found in 6-10 files, and doesn't reduce covering in training
+            # 'manage preferences', 'more options', #--> Found in 6-10 files, and doesn't reduce covering in training
             ]
 INFORMATION = ['learn more',  'more information', 
                #'show purposes' #--> Found in 2 files or less
@@ -69,7 +68,7 @@ ALLOWED_EXPRESSIONS = { "consent": CONSENT,
                        "third_party":THIRD_PARTY, 
                        "other":OTHER }
 
-path = "bannerID/top20banners/train_files"
+path = "bannerID/top250banners/train_files"
 directory = os.fsencode(path)
 
 """ Now, the next interesting thing would be to
@@ -165,10 +164,10 @@ def get_word_count(category_name = None, category_words = None):
 
                     previous_word = search_term
 
-    create_filename = 'bannerID/top20banners/results.csv'
+    create_filename = 'bannerID/top250banners/results.csv'
 
     if category_name:
-        create_filename = f'bannerID/top20banners/output_categories/{category_name}.csv'
+        create_filename = f'bannerID/top250banners/output_categories/{category_name}.csv'
         success = round(unique_file_counter / 75 * 100, 2) # AS OF JULY 12, THERE ARE 75 TRAINING FILES
         print(f"At least one word of the category {category_name} has been found in {unique_file_counter} files. ({success} %)")
 

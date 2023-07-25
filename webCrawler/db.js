@@ -1,36 +1,7 @@
-const mysql = require('mysql2');
-
-async function establishConnection(connection){
-  return new Promise((resolve, reject) => {
-    connection.connect(function(err) {
-      if (err) {
-        return console.error('error: ' + err.message);
-      }
-      else{
-        console.log('Connected to the MySQL server.');
-        resolve();
-      }
-    });
-  });
-}
-
-async function endConnection(connection){
-  return new Promise((resolve, reject) => {
-    connection.end(function(err) {
-      if (err) {
-        return console.log('error:' + err.message);
-      } else{
-      console.log('Close the database connection.');
-      resolve();
-      }
-    });
-  });
-}
-
 async function saveCookies(crawlID, browser, URL, storageType, frameURL, cookies, connection){
-  const cookieDataQuery = 'INSERT INTO storage_data (crawlID, browser, websiteURL, storageType, frameURL, name, value, cookieDomain) VALUES (?, ?, ?, ?, ?, ?, ?, ?)'; 
-  
-  const promises = cookies.map((item) => {
+  const cookieDataQuery = 'INSERT INTO storageData (crawlID, browser, websiteURL, storageType, frameOrigin, name, value, cookieDomain) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)';
+
+  cookies.map(async (item)  => {
     const cookieData = [
           crawlID,
           browser,
@@ -41,22 +12,15 @@ async function saveCookies(crawlID, browser, URL, storageType, frameURL, cookies
           item.value,
           item.domain,
           ];
-
-        return new Promise((resolve, reject) => {
-        connection.query(cookieDataQuery, cookieData, (error, results) => {
-          if (error) { console.log(error); reject( new Error() ); }
-          else{ resolve(); }  
-        });
-      });
-  });
-  await Promise.all(promises);
+        await  connection.query(cookieDataQuery, cookieData); 
+  })
 }
 
 
 async function saveLocalStorage(crawlID, browser, URL, storageType, frameURL, localStorage, connection){
-  const localStorageDataQuery = 'INSERT INTO storage_data (crawlID, browser, websiteURL, storageType, frameURL, name, value, cookieDomain) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
+  const localStorageDataQuery = 'INSERT INTO storageData (crawlID, browser, websiteURL, storageType, frameOrigin, name, value, cookieDomain) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)';
 
-  const promises = Object.keys(localStorage).map((key) => {
+  Object.keys(localStorage).map(async (key) => {
     const value = localStorage[key];
     const localStorageData = [
           crawlID,
@@ -69,18 +33,12 @@ async function saveLocalStorage(crawlID, browser, URL, storageType, frameURL, lo
           null,
           ];
           
-      return new Promise((resolve, reject) => {
-        connection.query(localStorageDataQuery, localStorageData, (error, results) => {
-        if (error) { reject( new Error() ); }
-        else{ resolve(); }  
-        });
-      });
-  });
-  await Promise.all(promises);
+      await connection.query(localStorageDataQuery, localStorageData);
+  })
 }
 
 async function saveResponses(crawlID, browser, URL, interceptedResponse, connection){
-  const responseDataQuery = 'INSERT INTO response_data (crawlID, browser, url, specific_url, content_type, content_length) VALUES (?, ?, ?, ?, ?, ?)';
+  const responseDataQuery = 'INSERT INTO response_data (crawlID, browser, websiteURL, specificURL, contentType, contentLength) VALUES ($1, $2, $3, $4, $5, $6)';
   const responseData = [
       crawlID,
       browser,
@@ -90,19 +48,12 @@ async function saveResponses(crawlID, browser, URL, interceptedResponse, connect
       interceptedResponse.headers()['content-length']
       ];
 
-      return new Promise((resolve, reject) => {
-        connection.query(responseDataQuery, responseData, (error, results) => {
-          if (error) { reject( new Error() ); }
-          else{ resolve(); }  
-        });
-      });
+  await connection.query(responseDataQuery, responseData);
 }
 
 
 module.exports = {
   saveCookies,
   saveResponses,
-  endConnection,
-  establishConnection,
   saveLocalStorage
   };

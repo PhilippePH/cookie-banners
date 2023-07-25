@@ -1,39 +1,17 @@
 const selectWebsites = require('./websiteSelection');
 const createBrowserInstance = require('./browser');
 const databaseAPI = require('./db');
-const mysql = require('mysql2');
 const fs = require('fs').promises;
 const { promisify } = require('util');
 const puppeteer = require('puppeteer');
-// const path = require('path');
 const xvfb = require('xvfb');
+const { Client } = require('pg');
 
-let crawlID = Date.now();
-//   const options = {
-//     year: 'numeric',
-//     month: 'numeric',
-//     day: 'numeric',
-//     hour: '2-digit',
-//     minute: '2-digit',
-//     second: '2-digit',
-//     hour12: false,
-//     hourCycle: 'h23'
-//     };
-// crawlID = crawlID.toLocaleString('en-GB', options);
-// crawlID = crawlID.replace(/,/g, '');
+// CrawlID as a DATETIME (mysql) or TIMESTAMP (postgres)
+let crawlID = new Date(new Date().toString().split('GMT')+' UTC').toISOString().split('.')[0];
+crawlID = crawlID.replace(/T/g, ' ');
+console.log(crawlID);
 
-// console.log(crawlID);
-// return;
-
-const connection = mysql.createConnection({
-    host: '146.169.220.121',
-    user: 'labLinux',
-    password: 'thisisMYlinuxMACHINE',
-    database: 'CrawlData',
-	connectTimeout: 20000,
-	waitForConnections: true,
-	debug: true
-  });
 
 async function startXvfb(){
     const XVFB = new xvfb({
@@ -190,7 +168,7 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
             
             if(! test){
                 if(browser == 'Google Chrome' || browser == 'Brave'){
-                    // await getResponses(page, browser, URL, connection);
+                    await getResponses(page, browser, URL, connection);
                 }
             }
 
@@ -199,7 +177,7 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
             } catch(error){
                 if (error instanceof puppeteer.TimeoutError) {
                     console.log(`${processID} (${browser}): TimeoutError -> ${URL}`);
-                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${URL}`);}
+                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${URL}`); console.log(error);}
                 await page.close();
                 continue;
             }                
@@ -208,8 +186,8 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
 
             if(! test){
                 await getHTML(page, resultPath, siteName);
-                // await getCookies(page, browser, URL, connection);
-                // await getLocalStorage(page, browser, URL, connection);
+                await getCookies(page, browser, URL, connection);
+                await getLocalStorage(page, browser, URL, connection);
             }
             
             await page.close();
@@ -241,25 +219,40 @@ async function main(){
 
     const websiteList = websiteListString.split(','); // Convert back to an array
 
-    // Start XVFB
+    // Linux SetUp
     let XVFB = null;
     if(device == 'linux'){
         XVFB = await startXvfb();
+        console.log("XVFB connected");
     }
+
     // Test the parameters
     // await testCrawler(path, browser, vantagePoint, processID, device);
 
     // Set up Database connection
-    await databaseAPI.establishConnection(connection); 
+    const connection = new Client({
+        user: 'postgres',
+        password: 'root',
+        host: '146.169.40.178',
+        database: 'crawlData',
+        port: '5432'
+    });
     
+    await connection.connect();
+    console.log("Database connection established")
+
     // Crawl
     await crawl(browser, path, websiteList, vantagePoint, connection, processID, false, device);
 
     // Close database connection
-    await databaseAPI.endConnection(connection);
+    await connection.end();
+    console.log("Database connection disconnected")
 
     // Close XVFB
-    if(XVFB) { await stopXvfb(XVFB); }
+    if(XVFB) { 
+        await stopXvfb(XVFB); 
+        console.log("XVFB disconnected");
+    }
 }
 
 main();
