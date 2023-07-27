@@ -14,11 +14,11 @@ const fs = require('fs').promises;
 const selectWebsites = require('./websiteSelection');
 
 
-const BROWSER_LIST = ['Brave'];
+const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 2;
+const NUM_URLS = 1000;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";
-const DEVICE = 'laptop';
+const DEVICE = 'linux';
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint, device){

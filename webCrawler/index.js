@@ -10,8 +10,6 @@ const { Client } = require('pg');
 // CrawlID as a DATETIME (mysql) or TIMESTAMP (postgres)
 let crawlID = new Date(new Date().toString().split('GMT')+' UTC').toISOString().split('.')[0];
 crawlID = crawlID.replace(/T/g, ' ');
-console.log(crawlID);
-
 
 async function startXvfb(){
     const XVFB = new xvfb({

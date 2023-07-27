@@ -5,7 +5,6 @@
   "dependencies": {
     "csv": "^6.3.1",
     "fs": "^0.0.1-security",
-    "mysql2": "^3.4.2",
     "node": "^18.13.0",
     "pg": "^8.11.1",
     "puppeteer": "^20.7.4",
