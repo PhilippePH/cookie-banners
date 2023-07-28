@@ -91,40 +91,57 @@ async function getFrameCookiesRecursive(frame, browser, URL, connection) {
     let frameCookies, frameOrigin;
 
     try{
+        console.log("Trace 1: Getting the cookies");
         frameCookies = await frame.page().cookies();
-        frameOrigin = await frame.evaluate(() => {            
-            return window.origin;
-        });
+        console.log("Trace 2: Got the cookies");
+        if(frame){ 
+            if(!frame.isDetached()){
+            console.log("Trace 3: Passed the two verifications, about to evalute. (In cookies function)");
+            frameOrigin = await frame.evaluate(() => {     // THIS IS WHERE IT GETS STUCK...        
+                console.log("Trace 4: This doesn't print when I get stuck");
+                return window.origin;
+            });
+           } else { console.log("Trace 5: Cannot get frame origgin because of lazy frame ----------------------"); }
+        } else { console.log("Trace 6: Frame is null -----------------");}
+
+        console.log("Trace 7: Got the frameOrigin");
     } catch(error){ console.log("Error getting frame cookie information"); }
-    console.log(frameOrigin);
     try{
         await databaseAPI.saveCookies(crawlID, browser, URL, "cookies", frameOrigin, frameCookies, connection);
+        console.log("Trace 8: Added to DB");
     } catch(error){ console.log("Error with saving the cookies of the page to the database"); console.log(error);} 
 
     const childFrames = frame.childFrames();
     for (const childFrame of childFrames) {
+        console.log("Trace 9: About to do a recursive call");
         await getFrameCookiesRecursive(childFrame, browser, URL, connection);
     }
 }
 
 async function getLocalStorageRecursive(page, browser, URL, frame, connection){
-    let values;
+    let values, localStorage, frameOrigin;
     try{ 
-        values = await frame.evaluate(() => {            
-            const origin = window.origin;
-            const localStorageData = {};
-            for (let i = 0; i < localStorage.length; i++) {
-                const key = localStorage.key(i);
-                const value = localStorage.getItem(key);
-                localStorageData[key] = value;
-            }
-            return [localStorageData, origin];
-        });
-    } catch(error){ console.log("Error fetching the local storage of a frame. "); }
-    
-    let localStorage = values[0];
-    let frameOrigin = values[1];
+        if(frame){
+            if(!frame.isDetached()){
+                console.log("Trace 10: Passed the two verifications, about to evalute. (In localStorage function)");
+            values = await frame.evaluate(() => {            
+                console.log("Trace 11: This does not get printed when there is an issue.");
+                const origin = window.origin;
+                const localStorageData = {};
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    const value = localStorage.getItem(key);
+                    localStorageData[key] = value;
+                }
+                return [localStorageData, origin];
+            });
+            localStorage = values[0];
+            frameOrigin = values[1];
+        } else {console.log("Trace 12: Cannot get frame origgin because of lazy frame ----------------------");}
+    } else {console.log("Trace 13: Frame is null -----------------");}
 
+    } catch(error){ console.log("Error fetching the local storage of a frame. "); return; }
+    
     try{
         await databaseAPI.saveLocalStorage(crawlID, browser, URL, "localStorage", frameOrigin, localStorage, connection) // NOTE TO SELF: using frame.url() because frame.origin() does not seem to exist
     } catch(error){ console.log("Error with saving the localStorage of the page to the database"); }
@@ -171,11 +188,12 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
             }
 
               try{
-                await page.goto(URL, { timeout: 30000, waitUntil: "load", } );
+                await page.goto(URL, { waitUntil: "load", } );
+                console.log("Trace 14: Page loaded");
             } catch(error){
                 if (error instanceof puppeteer.TimeoutError) {
                     console.log(`${processID} (${browser}): TimeoutError -> ${URL}`);
-                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${URL}`); console.log(error);}
+                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${URL}`);}
                 await page.close();
                 continue;
             }                
@@ -183,9 +201,13 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
             await getScreenshot(page, resultPath, siteName);
 
             if(! test){
+                console.log("Trace 15: Waiting for HTML");
                 await getHTML(page, resultPath, siteName);
+                console.log("Trace 16: Waiting for cookies");
                 await getCookies(page, browser, URL, connection);
+                console.log("Trace 17: Waiting for localstorage");
                 await getLocalStorage(page, browser, URL, connection);
+                console.log("Trace 18: Everything worked, onto the next page!");
             }
             
             await page.close();
@@ -225,7 +247,7 @@ async function main(){
     }
 
     // Test the parameters
-    // await testCrawler(path, browser, vantagePoint, processID, device);
+    await testCrawler(path, browser, vantagePoint, processID, device);
 
     // Set up Database connection
     const connection = new Client({
