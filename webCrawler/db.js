@@ -1,4 +1,4 @@
-async function saveCookies(crawlID, browser, URL, storageType, frameURL, cookies, connection){
+async function saveCookies(crawlID, browser, websiteURL, storageType, frameURL, cookies, connection){
   console.log("Trace 19 (in db.js file): Entered the save cookie function");
   const cookieDataQuery = 'INSERT INTO storageData (crawlID, browser, websiteURL, storageType, frameOrigin, name, value, cookieDomain) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)';
 
@@ -6,7 +6,7 @@ async function saveCookies(crawlID, browser, URL, storageType, frameURL, cookies
     const cookieData = [
           crawlID,
           browser,
-          URL,
+          websiteURL,
           storageType,
           frameURL,
           item.name,
@@ -19,7 +19,7 @@ async function saveCookies(crawlID, browser, URL, storageType, frameURL, cookies
 }
 
 
-async function saveLocalStorage(crawlID, browser, URL, storageType, frameURL, localStorage, connection){
+async function saveLocalStorage(crawlID, browser, websiteURL, storageType, frameURL, localStorage, connection){
   console.log("Trace 21 (in db.js file): Entered the save cookie function");
   const localStorageDataQuery = 'INSERT INTO storageData (crawlID, browser, websiteURL, storageType, frameOrigin, name, value, cookieDomain) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)';
 
@@ -28,7 +28,7 @@ async function saveLocalStorage(crawlID, browser, URL, storageType, frameURL, lo
     const localStorageData = [
           crawlID,
           browser,
-          URL,
+          websiteURL,
           storageType,
           frameURL,
           key,
@@ -41,12 +41,12 @@ async function saveLocalStorage(crawlID, browser, URL, storageType, frameURL, lo
   console.log("Trace 20 (in db.js file): Exiting the save cookie function");
 }
 
-async function saveResponses(crawlID, browser, URL, interceptedResponse, connection){
+async function saveResponses(crawlID, browser, websiteURL, interceptedResponse, connection){
   const responseDataQuery = 'INSERT INTO response_data (crawlID, browser, websiteURL, specificURL, contentType, contentLength) VALUES ($1, $2, $3, $4, $5, $6)';
   const responseData = [
       crawlID,
       browser,
-      URL,
+      websiteURL,
       interceptedResponse.url(),
       interceptedResponse.headers()['content-type'],
       interceptedResponse.headers()['content-length']

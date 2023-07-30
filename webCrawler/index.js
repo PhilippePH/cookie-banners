@@ -45,11 +45,11 @@ async function testCrawler(path, browser, vantagePoint, processID, device = 'lin
                 "https://www.whatismyip.com/"], vantagePoint, null, processID, true, device);
 }
 
-async function getResponses(page, browser, URL, connection){
+async function getResponses(page, browser, websiteUrl, connection){
     try{
         await page.on('response', async (interceptedResponse) => {
             try{
-                await databaseAPI.saveResponses(crawlID, browser, URL, interceptedResponse, connection)
+                await databaseAPI.saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection)
             } catch(error){ console.log("Error adding HTTP headers to the database."); }
         })
     } catch(error){ console.log("Error collecting HTTP headers."); }
@@ -77,17 +77,17 @@ async function getHTML(page, resultPath, siteName){
     } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
 }
 
-async function getCookies(page, browser, URL, connection){
+async function getCookies(page, browser, websiteUrl, connection){
     try{
         const topFrame = await page.mainFrame();
-        return getFrameCookiesRecursive(topFrame, browser, URL, connection);
+        return getFrameCookiesRecursive(topFrame, browser, websiteUrl, connection);
     } catch(error){ 
         console.log("Error getting top frame. Cookies not saved.");
     }
 }
 
 // Function to recursively iterate through frames and save the cookies
-async function getFrameCookiesRecursive(frame, browser, URL, connection) {
+async function getFrameCookiesRecursive(frame, browser, websiteUrl, connection) {
     let frameCookies, frameOrigin;
 
     try{
@@ -107,18 +107,18 @@ async function getFrameCookiesRecursive(frame, browser, URL, connection) {
         console.log("Trace 7: Got the frameOrigin");
     } catch(error){ console.log("Error getting frame cookie information"); }
     try{
-        await databaseAPI.saveCookies(crawlID, browser, URL, "cookies", frameOrigin, frameCookies, connection);
+        await databaseAPI.saveCookies(crawlID, browser, websiteUrl, "cookies", frameOrigin, frameCookies, connection);
         console.log("Trace 8: Added to DB");
     } catch(error){ console.log("Error with saving the cookies of the page to the database"); console.log(error);} 
 
     const childFrames = frame.childFrames();
     for (const childFrame of childFrames) {
         console.log("Trace 9: About to do a recursive call");
-        await getFrameCookiesRecursive(childFrame, browser, URL, connection);
+        await getFrameCookiesRecursive(childFrame, browser, websiteUrl, connection);
     }
 }
 
-async function getLocalStorageRecursive(page, browser, URL, frame, connection){
+async function getLocalStorageRecursive(page, browser, websiteUrl, frame, connection){
     let values, localStorage, frameOrigin;
     try{ 
         if(frame){
@@ -143,23 +143,23 @@ async function getLocalStorageRecursive(page, browser, URL, frame, connection){
     } catch(error){ console.log("Error fetching the local storage of a frame. "); return; }
     
     try{
-        await databaseAPI.saveLocalStorage(crawlID, browser, URL, "localStorage", frameOrigin, localStorage, connection) // NOTE TO SELF: using frame.url() because frame.origin() does not seem to exist
+        await databaseAPI.saveLocalStorage(crawlID, browser, websiteUrl, "localStorage", frameOrigin, localStorage, connection) // NOTE TO SELF: using frame.url() because frame.origin() does not seem to exist
     } catch(error){ console.log("Error with saving the localStorage of the page to the database"); }
 
     const childFrames = await frame.childFrames();
     for (const childFrame of childFrames) {
-      await getLocalStorageRecursive(page, browser, URL, childFrame, connection);
+      await getLocalStorageRecursive(page, browser, websiteUrl, childFrame, connection);
     }
 }
 
 
-async function getLocalStorage(page, browser, URL, connection){
+async function getLocalStorage(page, browser, websiteUrl, connection){
     const mainFrame = await page.mainFrame();
-    await getLocalStorageRecursive(page, browser, URL, mainFrame, connection)
+    await getLocalStorageRecursive(page, browser, websiteUrl, mainFrame, connection)
 }
 
 
-async function crawl(browser, resultPath, URL_list, vantagePoint, 
+async function crawl(browser, resultPath, urlList, vantagePoint, 
                     connection = null, processID = 1, test = false, device = 'linux'){
     
     let browserInstance, pages, page;
@@ -175,25 +175,25 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
         // page = pages[0];
         // await page.close();
 
-        for(let URL of URL_list){
+        for(let websiteUrl of urlList){
             page = await browserInstance.newPage();
             
-            console.log(`${processID} (${browser}): ${URL}`);
-            const siteName = await selectWebsites.getSiteNames(URL);
+            console.log(`${processID} (${browser}): ${UwebsiteUrlRL}`);
+            const siteName = await selectWebsites.getSiteNames(websiteUrl);
             
             if(! test){
                 if(browser == 'Google Chrome' || browser == 'Brave'){
-                    await getResponses(page, browser, URL, connection);
+                    await getResponses(page, browser, websiteUrl, connection);
                 }
             }
 
               try{
-                await page.goto(URL, { waitUntil: "load", } );
+                await page.goto(websiteUrl, { waitUntil: "load", } );
                 console.log("Trace 14: Page loaded");
             } catch(error){
                 if (error instanceof puppeteer.TimeoutError) {
-                    console.log(`${processID} (${browser}): TimeoutError -> ${URL}`);
-                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${URL}`);}
+                    console.log(`${processID} (${browser}): TimeoutError -> ${websiteUrl}`);
+                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${websiteUrl}`);}
                 await page.close();
                 continue;
             }                
@@ -204,9 +204,9 @@ async function crawl(browser, resultPath, URL_list, vantagePoint,
                 console.log("Trace 15: Waiting for HTML");
                 await getHTML(page, resultPath, siteName);
                 console.log("Trace 16: Waiting for cookies");
-                await getCookies(page, browser, URL, connection);
+                await getCookies(page, browser, websiteUrl, connection);
                 console.log("Trace 17: Waiting for localstorage");
-                await getLocalStorage(page, browser, URL, connection);
+                await getLocalStorage(page, browser, websiteUrl, connection);
                 console.log("Trace 18: Everything worked, onto the next page!");
             }
             
