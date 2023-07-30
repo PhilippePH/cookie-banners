@@ -16,9 +16,9 @@ const selectWebsites = require('./websiteSelection');
 
 const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 100;
+const NUM_URLS = 500;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";
-const DEVICE = 'laptop';
+const DEVICE = 'linux';
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint, device){
