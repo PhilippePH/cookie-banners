@@ -13,7 +13,9 @@ async function saveCookies(crawlID, browser, websiteURL, storageType, frameURL, 
           item.value,
           item.domain,
           ];
-        await  connection.query(cookieDataQuery, cookieData); 
+    try{
+        await connection.query(cookieDataQuery, cookieData); 
+    } catch(error){console.log(error);}
   })
   console.log("Trace 20 (in db.js file): Exiting the save cookie function");
 }
@@ -35,8 +37,10 @@ async function saveLocalStorage(crawlID, browser, websiteURL, storageType, frame
           value,
           null,
           ];
-          
+      
+    try{
       await connection.query(localStorageDataQuery, localStorageData);
+    } catch(error) {console.log(error);}
   })
   console.log("Trace 20 (in db.js file): Exiting the save cookie function");
 }
@@ -52,7 +56,9 @@ async function saveResponses(crawlID, browser, websiteURL, interceptedResponse, 
       interceptedResponse.headers()['content-length']
       ];
 
-  await connection.query(responseDataQuery, responseData);
+  try{
+    await connection.query(responseDataQuery, responseData);
+  } catch(error){console.log(error);}
 }
 
 
