@@ -1,11 +1,13 @@
 /*  Note to self:
-ssh -f -N -D 8080 -M -S /tmp/ssh_tunnel_%h.sock -o ExitOnForwardFailure=yes philippe@hamedhome.ddns.net && \
+ssh -f -N -D 8080 -M -S /tmp/sshtunnelProxy -o ExitOnForwardFailure=yes philippe@hamedhome.ddns.net && \
 echo "ssh tunnel started successfully" || \
 echo "ssh tunnel failed to start"
 
-ssh -S /tmp/sshtunnel -O exit philippe@hamedhome.ddns.net -p22
+ssh -S /tmp/sshtunnelProxy -O exit philippe@hamedhome.ddns.net -p22
 
 export PATH=/vol/bitbucket/pp1722/nodeProject/node_modules/.bin:$PATH
+
+netstat -lntu
 */
 
 
@@ -13,12 +15,11 @@ const { fork } = require('child_process');
 const fs = require('fs').promises;
 const selectWebsites = require('./websiteSelection');
 
-
-const BROWSER_LIST = ['Google Chrome'];
+const BROWSER_LIST = ['Ghostery'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 500;
+const NUM_URLS = 10;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";
-const DEVICE = 'linux';
+const DEVICE = 'laptop';
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint, device){

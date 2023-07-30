@@ -82,6 +82,8 @@ async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
                 /* User Profile Description: In about:config -->
                 "cookiebanners.service.mode" is set to 2
                 "dom.webdriver.enabled" is set to false 
+                -->the proxy settings are set to 127.0.0.1:8080
+
                 "useAutomationExtension" is set to false
                 "enable-automation" is set to false
                 These last two are an attempt to avoid the webdriver detection (source: https://stackoverflow.com/questions/57122151/exclude-switches-in-firefox-webdriver-options)*/
@@ -100,6 +102,8 @@ async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
                 userDataDir: userProfiles[browser], // found at about:profiles
                 /* Default settings, but when prompted upon first visit, Ghostery has been activated. */
                 defaultViewport: null, // makes window size take full browser size -- doesn't seem to work on ghsostery
+
+                //the proxy settings are set to 127.0.0.1:8080
             });
         }
         else{

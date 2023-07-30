@@ -1,5 +1,5 @@
 async function saveCookies(crawlID, browser, websiteURL, storageType, frameURL, cookies, connection){
-  console.log("Trace 19 (in db.js file): Entered the save cookie function");
+  // console.log("Trace 19 (in db.js file): Entered the save cookie function");
   const cookieDataQuery = 'INSERT INTO storageData (crawlID, browser, websiteURL, storageType, frameOrigin, name, value, cookieDomain) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)';
 
   cookies.map(async (item)  => {
@@ -17,12 +17,12 @@ async function saveCookies(crawlID, browser, websiteURL, storageType, frameURL, 
         await connection.query(cookieDataQuery, cookieData); 
     } catch(error){console.log(error);}
   })
-  console.log("Trace 20 (in db.js file): Exiting the save cookie function");
+  // console.log("Trace 20 (in db.js file): Exiting the save cookie function");
 }
 
 
 async function saveLocalStorage(crawlID, browser, websiteURL, storageType, frameURL, localStorage, connection){
-  console.log("Trace 21 (in db.js file): Entered the save cookie function");
+  // console.log("Trace 21 (in db.js file): Entered the save cookie function");
   const localStorageDataQuery = 'INSERT INTO storageData (crawlID, browser, websiteURL, storageType, frameOrigin, name, value, cookieDomain) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)';
 
   Object.keys(localStorage).map(async (key) => {
@@ -42,7 +42,7 @@ async function saveLocalStorage(crawlID, browser, websiteURL, storageType, frame
       await connection.query(localStorageDataQuery, localStorageData);
     } catch(error) {console.log(error);}
   })
-  console.log("Trace 20 (in db.js file): Exiting the save cookie function");
+  // console.log("Trace 22 (in db.js file): Exiting the save cookie function");
 }
 
 async function saveResponses(crawlID, browser, websiteURL, interceptedResponse, connection){

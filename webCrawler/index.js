@@ -273,7 +273,7 @@ async function main(){
 
     // Test the parameters
     await testCrawler(path, browser, vantagePoint, processID, device);
-
+    
     // Set up Database connection
     const connection = new Client({
         user: 'postgres',
