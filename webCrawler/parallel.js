@@ -17,9 +17,9 @@ const selectWebsites = require('./websiteSelection');
 
 const BROWSER_LIST = ['Ghostery'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 10;
+const NUM_URLS = 3;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";
-const DEVICE = 'laptop';
+const DEVICE = 'linux';
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint, device){

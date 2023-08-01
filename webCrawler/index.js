@@ -7,6 +7,16 @@ const puppeteer = require('puppeteer');
 const xvfb = require('xvfb');
 const { Client } = require('pg');
 
+let LOADED_COUNTER = 0;
+let TIMEOUT_COUNTER = 0;
+let OTHER_ERROR_COUNTER = 0;
+let COOKIE_TIMEOUT_COUNTER = 0;
+let LOCALSTORAGE_TIMEOUT_COUNTER = 0;
+let FULLY_SUCESS_WEBSITES = [];
+let SUCCESS_BOOL = true;
+let STORAGE_BOOL = true;
+let COOKIE_BOOL  = true;
+
 // CrawlID as a DATETIME (mysql) or TIMESTAMP (postgres)
 let crawlID = new Date(new Date().toString().split('GMT')+' UTC').toISOString().split('.')[0];
 crawlID = crawlID.replace(/T/g, ' ');
@@ -14,7 +24,7 @@ crawlID = crawlID.replace(/T/g, ' ');
 async function startXvfb(){
     const XVFB = new xvfb({
         silent:true,
-        xvfb_args: ['-screen', '0', '1280x1024x24'],
+        xvfb_args: ['-screen', '0', '2800x1800x24'],
     });
 
     return new Promise((resolve, reject) => {
@@ -42,14 +52,14 @@ async function testCrawler(path, browser, vantagePoint, processID, device = 'lin
 
     // Tests bot detection + proxy (IP)
     await crawl(browser, path, ["https://bot.sannysoft.com", 
-                "https://www.whatismyip.com/"], vantagePoint, null, processID, true, device);
+                "https://www.whatismyip.com/","https://www.showmyip.com/"], vantagePoint, null, processID, true, device);
 }
 
 async function getResponses(page, browser, websiteUrl, connection){
     try{
         await page.on('response', async (interceptedResponse) => {
             try{
-                await databaseAPI.saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection)
+                await databaseAPI.saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection);
             } catch(error){ console.log("Error adding HTTP headers to the database."); }
         })
     } catch(error){ console.log("Error collecting HTTP headers."); }
@@ -78,20 +88,25 @@ async function getHTML(page, resultPath, siteName){
 }
 
 async function getCookies(page, browser, websiteUrl, connection){
+    COOKIE_BOOL = true; 
     try{
         const topFrame = await page.mainFrame();
-        return getFrameCookiesRecursive(topFrame, browser, websiteUrl, connection);
+        await getFrameCookiesRecursive(topFrame, browser, websiteUrl, connection);
+
+        if(! COOKIE_BOOL){
+            COOKIE_TIMEOUT_COUNTER++;
+        }
+
     } catch(error){ 
         console.log("Error getting top frame. Cookies not saved.");
     }
 }
 
 async function cookieFrameEvaluate(frame){
-    const FRAME_TIMEOUT = 5000;
+    const FRAME_TIMEOUT = 10000;
     return Promise.race([
         frame.evaluate(() => {
-          console.log("Trace 4: Printing in browser console");
-          return window.origin;
+            return window.origin;
         }),
         new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout occurred')), FRAME_TIMEOUT))
     ]);
@@ -102,21 +117,24 @@ async function getFrameCookiesRecursive(frame, browser, websiteUrl, connection) 
     let frameCookies, frameOrigin;
 
     try{
-        //console.log("Trace 1: Getting the cookies");
         frameCookies = await frame.page().cookies();
-        //console.log("Trace 2: Got the cookies");
         if(frame){ 
             if(!frame.isDetached()){
-                //console.log("Trace 3: Passed the two verifications, about to evalute. (In cookies function)");
                 try{
                     frameOrigin = await cookieFrameEvaluate(frame);
-                } catch(error){ console.log("Error in CookieFrameEvaluate: " + error); }
+                } catch(error){ 
+                    console.log("   **** Error in CookieFrameEvaluate: " + error); 
+                    throw new Error;
+                }
                 
-           } else { console.log("Trace 5: Cannot get frame origin because of lazy frame ----------------------"); }
-        } else { console.log("Trace 6: Frame is null -----------------");}
-
-        //console.log("Trace 7: Got the frameOrigin");
-    } catch(error){ console.log("Error getting frame cookie information"); }
+           } else { console.log("   **** Cannot get frame origin because of lazy frame in cookies"); throw new Error; }
+        } else { console.log("  **** Frame is null in cookies"); throw new Error;}
+    } catch(error){ 
+        COOKIE_BOOL = false;
+        SUCCESS_BOOL = false;
+        return; 
+    }
+    
     try{
         await databaseAPI.saveCookies(crawlID, browser, websiteUrl, "cookies", frameOrigin, frameCookies, connection);
         //console.log("Trace 8: Added to DB");
@@ -130,10 +148,9 @@ async function getFrameCookiesRecursive(frame, browser, websiteUrl, connection) 
 }
 
 async function LocalStorageFrameEvaluate(frame){
-    const FRAME_TIMEOUT = 5000;
+    const FRAME_TIMEOUT = 10000;
     return Promise.race([
         frame.evaluate(() => {            
-            //console.log("Trace 11: Printing in browser console");
             const origin = window.origin; // stuck here
             const localStorageData = {};
             for (let i = 0; i < localStorage.length; i++) {
@@ -155,15 +172,22 @@ async function getLocalStorageRecursive(page, browser, websiteUrl, frame, connec
                 //console.log("Trace 10: Passed the two verifications, about to evalute. (In localStorage function)");
                 try{
                     values = await LocalStorageFrameEvaluate(frame);
-                } catch(error){ console.log("Error in LocalStorageFrameEvaluate: " + error); }
+                } catch(error){ 
+                    console.log("   **** Error in LocalStorageFrameEvaluate: " + error); 
+                    throw new Error; 
+                }
 
                 localStorage = values[0];
                 frameOrigin = values[1];
 
-        } else {console.log("Trace 12: Cannot get frame origin because of lazy frame ----------------------");}
-    } else {console.log("Trace 13: Frame is null -----------------");}
+            } else {console.log("   **** Cannot get frame origin because of lazy frame in local storage"); throw new Error; }
+        } else {console.log("   **** Frame is null in localstorage"); throw new Error; }
 
-    } catch(error){ console.log("Error fetching the local storage of a frame. "); return; }
+    } catch(error){
+        STORAGE_BOOL = false;
+        SUCCESS_BOOL = false;
+        return; 
+    }
     
     try{
         await databaseAPI.saveLocalStorage(crawlID, browser, websiteUrl, "localStorage", frameOrigin, localStorage, connection);
@@ -177,8 +201,12 @@ async function getLocalStorageRecursive(page, browser, websiteUrl, frame, connec
 
 
 async function getLocalStorage(page, browser, websiteUrl, connection){
+    STORAGE_BOOL = true;
     const mainFrame = await page.mainFrame();
-    await getLocalStorageRecursive(page, browser, websiteUrl, mainFrame, connection)
+    await getLocalStorageRecursive(page, browser, websiteUrl, mainFrame, connection);
+    if(!STORAGE_BOOL){
+        LOCALSTORAGE_TIMEOUT_COUNTER++;
+    }
 }
 
 
@@ -197,28 +225,38 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         // pages = await browserInstance.pages();
         // page = pages[0];
         // await page.close();
-
+        let urlCounter = 0;
         for(let websiteUrl of urlList){
+            SUCCESS_BOOL = true;
+            urlCounter++;
+
             page = await browserInstance.newPage();
             
-            console.log(`${processID} (${browser}): ${websiteUrl}`);
+            console.log(`\n${processID} (${browser}): (${urlCounter}) ${websiteUrl}`);
             const siteName = await selectWebsites.getSiteNames(websiteUrl);
             
             if(! test){
-                if(browser == 'Google Chrome' || browser == 'Brave'){
+                // if(browser == 'Google Chrome' || browser == 'Brave'){
                     await getResponses(page, browser, websiteUrl, connection);
-                }
+                // }
             }
 
-            //page.on('console', msg => console.log('PAGE LOG:', msg.text()));
+            // page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
-              try{
+            try{
                 await page.goto(websiteUrl, { timeout: 10000, waitUntil: "load", } );
-                console.log("Trace 14: Page loaded");
+                console.log("   Page loaded");
+                LOADED_COUNTER++;
             } catch(error){
                 if (error instanceof puppeteer.TimeoutError) {
-                    console.log(`${processID} (${browser}): TimeoutError -> ${websiteUrl}`);
-                } else{ console.log(`${processID} (${browser}): Error visiting webpage -> ${websiteUrl}`);}
+                    console.log(`** ${processID} (${browser}): TimeoutError -> ${websiteUrl}`);
+                    TIMEOUT_COUNTER++;
+                    SUCCESS_BOOL = false;
+                } else{ 
+                    console.log(`** ${processID} (${browser}): Error visiting webpage -> ${websiteUrl}`);
+                    OTHER_ERROR_COUNTER++;
+                    SUCCESS_BOOL = false;
+                }
                 await page.close();
                 continue;
             }                
@@ -226,27 +264,28 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             await getScreenshot(page, resultPath, siteName);
 
             if(! test){
-                console.log("Trace 15: Waiting for HTML");
+                console.log("   Getting HTML");
                 await getHTML(page, resultPath, siteName);
-                console.log("Trace 16: Waiting for cookies");
+                console.log("   Getting cookies");
                 await getCookies(page, browser, websiteUrl, connection);
-                console.log("Trace 17: Waiting for localstorage");
+                console.log("   Getting localstorage");
                 await getLocalStorage(page, browser, websiteUrl, connection);
-                console.log("Trace 18: Everything worked, onto the next page!");
             }
             
             await page.close();
+
+            if(SUCCESS_BOOL) { FULLY_SUCESS_WEBSITES.push(websiteUrl) ; }
         }
     } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
         console.log(error);
         await page.close();
         await browserInstance.close();
-        console.log(`${processID} (${browser}): BrowserInstance closed in error handling.`)
+        console.log(`** ${processID} (${browser}): BrowserInstance closed in error handling.`)
         return;
     }
 
     await browserInstance.close();
-    console.log(`${processID} (${browser}) instance closed.`)
+    console.log(`   ${processID} (${browser}) instance closed.`)
 }
 
 
@@ -272,12 +311,17 @@ async function main(){
     }
 
     // Test the parameters
-    await testCrawler(path, browser, vantagePoint, processID, device);
-    
+    try{
+        await testCrawler(path, browser, vantagePoint, processID, device);
+    } catch(error){
+        console.log("Error in the testCrawler.");
+        console.log(error);
+    }
+
     // Set up Database connection
     const connection = new Client({
         user: 'postgres',
-        password: 'root',
+        password: 'I@mastrongpsswd',
         host: '146.169.40.178',
         database: 'crawlData',
         port: '5432'
@@ -287,7 +331,12 @@ async function main(){
     console.log("Database connection established")
 
     // Crawl
-    await crawl(browser, path, websiteList, vantagePoint, connection, processID, false, device);
+    try{
+        await crawl(browser, path, websiteList, vantagePoint, connection, processID, false, device);
+    } catch(error){
+        console.log("Error in the crawl function");
+        console.log(error);
+    }
 
     // Close database connection
     await connection.end();
@@ -298,6 +347,16 @@ async function main(){
         await stopXvfb(XVFB); 
         console.log("XVFB disconnected");
     }
+
+    console.log(
+        "LOADED COUNTER : " + LOADED_COUNTER + "\n" +
+        "TIMEOUT COUNTER : " + TIMEOUT_COUNTER + "\n" +
+        "OTHER ERROR COUNTER : " + OTHER_ERROR_COUNTER + "\n" +
+        "COOKIE TIMEOUT COUNTER : " + COOKIE_TIMEOUT_COUNTER + "\n" +
+        "LOCALSTORAGE TIMEOUT COUNTER : " + LOCALSTORAGE_TIMEOUT_COUNTER + "\n" + 
+        "NUMBER OF SUCCESSFUL WEBSITES : " + FULLY_SUCESS_WEBSITES.length +"\n" +
+        "SUCCESSFUL WEBSITES : " + FULLY_SUCESS_WEBSITES
+    )
 }
 
 main();

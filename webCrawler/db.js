@@ -46,7 +46,7 @@ async function saveLocalStorage(crawlID, browser, websiteURL, storageType, frame
 }
 
 async function saveResponses(crawlID, browser, websiteURL, interceptedResponse, connection){
-  const responseDataQuery = 'INSERT INTO response_data (crawlID, browser, websiteURL, specificURL, contentType, contentLength) VALUES ($1, $2, $3, $4, $5, $6)';
+  const responseDataQuery = 'INSERT INTO responseData (crawlID, browser, websiteURL, specificURL, contentType, contentLength) VALUES ($1, $2, $3, $4, $5, $6)';
   const responseData = [
       crawlID,
       browser,

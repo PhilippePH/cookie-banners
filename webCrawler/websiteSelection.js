@@ -35,7 +35,6 @@ async function CSVtoArray(path){
         myURLs.push("https://www."+row[1]);
       })
       .on("end", function () {
-        console.log("finished");
         resolve(myURLs);
       })
       .on("error", function (error) {

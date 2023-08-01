@@ -22,12 +22,14 @@ const laptopUserProfiles = {
 
 const linuxExecutablePaths = {
     'Google Chrome' : '/opt/google/chrome/google-chrome',
-    'Brave' : '/opt/brave.com/brave/brave'
+    'Brave' : '/opt/brave.com/brave/brave',
+    'Firefox' : '/usr/bin/firefox'
 }
 
 const linuxUserProfiles = {
     'Google Chrome' : '/homes/pp1722/.config/google-chrome/Default',
-    'Brave' : '/homes/pp1722/.config/BraveSoftware/Brave-Browser/Default'
+    'Brave' : '/homes/pp1722/.config/BraveSoftware/Brave-Browser/Default',
+    'Firefox' : '/homes/pp1722/.mozilla/firefox/bl49t284.webCrawler'
 }
 
 async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
@@ -72,25 +74,27 @@ async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
             }
         }
         else if(browser == 'Firefox'){ 
-            // Does not use stealth plugin
-            // NOTE: Webdriver flag is still set to true.
-            return await puppeteer.launch({
-                headless: false,
-                product: 'firefox',
-                executablePath: executablePaths[browser],
-                userDataDir: userProfiles[browser], 
-                /* User Profile Description: In about:config -->
-                "cookiebanners.service.mode" is set to 2
-                "dom.webdriver.enabled" is set to false 
-                -->the proxy settings are set to 127.0.0.1:8080
+            if(vantagePoint == 'UK'){
+                // Does not use stealth plugin
+                // NOTE: Webdriver flag is still set to true.
+                return await puppeteer.launch({
+                    headless: false,
+                    product: 'firefox',
+                    executablePath: executablePaths[browser],
+                    userDataDir: userProfiles[browser], 
+                    /* User Profile Description: In about:config -->
+                    "cookiebanners.service.mode" is set to 2
+                    "dom.webdriver.enabled" is set to false 
+                    -->the proxy settings are set to 127.0.0.1:8080
 
-                "useAutomationExtension" is set to false
-                "enable-automation" is set to false
-                These last two are an attempt to avoid the webdriver detection (source: https://stackoverflow.com/questions/57122151/exclude-switches-in-firefox-webdriver-options)*/
+                    "useAutomationExtension" is set to false
+                    "enable-automation" is set to false
+                    These last two are an attempt to avoid the webdriver detection (source: https://stackoverflow.com/questions/57122151/exclude-switches-in-firefox-webdriver-options)*/
 
-                defaultViewport: null, // makes window size take full browser size
-                // Browser window isn't maximised currently, but not priority
-            });
+                    defaultViewport: null, // makes window size take full browser size
+                    // Browser window isn't maximised currently, but not priority
+                });
+            }
         }
         else if(browser == 'Ghostery'){ 
             // Does not use stealth plugin
