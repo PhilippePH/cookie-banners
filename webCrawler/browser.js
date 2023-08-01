@@ -23,13 +23,15 @@ const laptopUserProfiles = {
 const linuxExecutablePaths = {
     'Google Chrome' : '/opt/google/chrome/google-chrome',
     'Brave' : '/opt/brave.com/brave/brave',
-    'Firefox' : '/usr/bin/firefox'
+    'Firefox' : '/usr/bin/firefox',
+    'Ghostery' : '/homes/pp1722/Desktop/Ghostery/Ghostery'
 }
 
 const linuxUserProfiles = {
     'Google Chrome' : '/homes/pp1722/.config/google-chrome/Default',
     'Brave' : '/homes/pp1722/.config/BraveSoftware/Brave-Browser/Default',
-    'Firefox' : '/homes/pp1722/.mozilla/firefox/bl49t284.webCrawler'
+    'Firefox' : '/homes/pp1722/.mozilla/firefox/bl49t284.webCrawler',
+    'Ghostery': '/homes/pp1722/.ghostery browser/kdq1f4o2.webCrawler'
 }
 
 async function createBrowserInstance(browser, vantagePoint, device = 'linux'){

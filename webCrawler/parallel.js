@@ -17,7 +17,7 @@ const selectWebsites = require('./websiteSelection');
 
 const BROWSER_LIST = ['Ghostery'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 3;
+const NUM_URLS = 200;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";
 const DEVICE = 'linux';
 
