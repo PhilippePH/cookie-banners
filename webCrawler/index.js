@@ -51,8 +51,9 @@ async function testCrawler(path, browser, vantagePoint, processID, device = 'lin
     await fs.mkdir(newPath);
 
     // Tests bot detection + proxy (IP)
-    await crawl(browser, path, ["https://bot.sannysoft.com", 
-                "https://www.whatismyip.com/","https://www.showmyip.com/"], vantagePoint, null, processID, true, device);
+    await crawl(browser, path, ["https://bot.sannysoft.com",
+                "https://www.whatismyip.com/","https://www.showmyip.com/"], 
+                vantagePoint, null, processID, true, device);
 }
 
 async function getResponses(page, browser, websiteUrl, connection){
@@ -60,9 +61,20 @@ async function getResponses(page, browser, websiteUrl, connection){
         await page.on('response', async (interceptedResponse) => {
             try{
                 await databaseAPI.saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection);
-            } catch(error){ console.log("Error adding HTTP headers to the database."); }
+            } catch(error){ console.log("Error adding responses to the database."); }
         })
-    } catch(error){ console.log("Error collecting HTTP headers."); }
+    } catch(error){ console.log("Error collecting responses."); }
+}
+
+async function getRequests(page, browser, websiteUrl, connection){
+    try{
+        await page.on('request', async (interceptedRequest) => {
+            try{
+                console.log( interceptedRequest.headers()['referer'] + "   " +  interceptedRequest.headers()['origin'])
+                await databaseAPI.saveRequests(crawlID, browser, websiteUrl, interceptedRequest, connection);
+            } catch(error){ console.log("Error adding requests to the database."); console.log(error); }
+        })
+    } catch(error){ console.log("Error collecting requests."); }
 }
 
 
@@ -225,26 +237,68 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         // pages = await browserInstance.pages();
         // page = pages[0];
         // await page.close();
+
         let urlCounter = 0;
+        
         for(let websiteUrl of urlList){
             SUCCESS_BOOL = true;
             urlCounter++;
 
+
+            // browserInstance.on('targetcreated', async (target) => {
+            // // async onPageCreated(page){
+            //     if(browser == 'Firefox' || browser == 'Ghostery'){
+            //         const page = await target.page();
+
+            //         let thing = Object.getPrototypeOf(navigator);
+            //         delete thing.webdriver;
+
+
+                    // await page.addScriptTag({content: "Object.defineProperty(navigator, 'webdriver', {get: () => false})"});
+                    // await page.evaluate(() => {
+                    //     Object.defineProperty(navigator, 'webdriver', {get: () => false});
+                    //     console.log(navigator);
+                    //     return;
+                    // });
+                    // let newValue = false;
+                    // await page.evaluateOnNewDocument(newValue => {
+                    //     // window.navigator.webdriver;
+                    //     // window.navigator.webdriver = newValue;
+                        
+                    //     // Object.defineProperty(navigator, 'webdriver', {get: () => newValue,});
+                        
+                    //     console.log("HEY");
+                    //     console.log(navigator);
+                    // }, newValue);
+            //     }
+            // })
+
             page = await browserInstance.newPage();
+
+            // await page.evaluate(() => {
+            //     Object.defineProperty(navigator, 'webdriver', {get: () => false});
+            //     console.log(navigator);
+            //     return;
+            // });
+            
             
             console.log(`\n${processID} (${browser}): (${urlCounter}) ${websiteUrl}`);
             const siteName = await selectWebsites.getSiteNames(websiteUrl);
             
             if(! test){
-                // if(browser == 'Google Chrome' || browser == 'Brave'){
-                    await getResponses(page, browser, websiteUrl, connection);
-                // }
+                await getRequests(page, browser, websiteUrl, connection);
+                await getResponses(page, browser, websiteUrl, connection);    
             }
 
             // page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
             try{
-                await page.goto(websiteUrl, { timeout: 10000, waitUntil: "load", } );
+                await page.goto(websiteUrl, { timeout: 10000, waitUntil: "load", });
+                await page.evaluate(() => {
+                    Object.defineProperty(navigator, 'webdriver', {get: () => false});
+                    console.log(navigator);
+                    return;
+                });
                 console.log("   Page loaded");
                 LOADED_COUNTER++;
             } catch(error){
@@ -272,7 +326,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 await getLocalStorage(page, browser, websiteUrl, connection);
             }
             
-            await page.close();
+            // await page.close();
 
             if(SUCCESS_BOOL) { FULLY_SUCESS_WEBSITES.push(websiteUrl) ; }
         }
@@ -284,7 +338,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         return;
     }
 
-    await browserInstance.close();
+    // await browserInstance.close();
     console.log(`   ${processID} (${browser}) instance closed.`)
 }
 
@@ -331,12 +385,12 @@ async function main(){
     console.log("Database connection established")
 
     // Crawl
-    try{
-        await crawl(browser, path, websiteList, vantagePoint, connection, processID, false, device);
-    } catch(error){
-        console.log("Error in the crawl function");
-        console.log(error);
-    }
+    // try{
+    //     await crawl(browser, path, websiteList, vantagePoint, connection, processID, false, device);
+    // } catch(error){
+    //     console.log("Error in the crawl function");
+    //     console.log(error);
+    // }
 
     // Close database connection
     await connection.end();

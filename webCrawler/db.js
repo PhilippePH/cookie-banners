@@ -61,9 +61,24 @@ async function saveResponses(crawlID, browser, websiteURL, interceptedResponse, 
   } catch(error){console.log(error);}
 }
 
+async function saveRequests(crawlID, browser, websiteURL, interceptedRequest, connection){
+  const requestDataQuery = 'INSERT INTO requestData (crawlID, browser, websiteURL, referer, specificURL) VALUES ($1, $2, $3, $4, $5)';
+  const requestData = [
+      crawlID,
+      browser,
+      websiteURL,
+      interceptedRequest.headers()['referer'],
+      interceptedRequest.url(),
+      ];
+
+  try{
+    await connection.query(requestDataQuery, requestData);
+  } catch(error){console.log(error);}
+}
 
 module.exports = {
   saveCookies,
   saveResponses,
+  saveRequests,
   saveLocalStorage
   };

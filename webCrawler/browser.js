@@ -79,14 +79,15 @@ async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
             if(vantagePoint == 'UK'){
                 // Does not use stealth plugin
                 // NOTE: Webdriver flag is still set to true.
-                return await puppeteer.launch({
+                return await puppeteer_extra.launch({
                     headless: false,
                     product: 'firefox',
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
+
                     /* User Profile Description: In about:config -->
                     "cookiebanners.service.mode" is set to 2
-                    "dom.webdriver.enabled" is set to false 
+                    "dom.webdriver.enabled" is set to false  ----> REMOVED
                     -->the proxy settings are set to 127.0.0.1:8080
 
                     "useAutomationExtension" is set to false
