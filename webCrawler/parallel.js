@@ -15,7 +15,7 @@ const { fork } = require('child_process');
 const fs = require('fs').promises;
 const selectWebsites = require('./websiteSelection');
 
-const BROWSER_LIST = ['Firefox'];
+const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
 const NUM_URLS = 5;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";

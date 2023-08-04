@@ -6,6 +6,7 @@ const { promisify } = require('util');
 const puppeteer = require('puppeteer');
 const xvfb = require('xvfb');
 const { Client } = require('pg');
+const { ConsoleMessage } = require('puppeteer-core');
 
 let LOADED_COUNTER = 0;
 let TIMEOUT_COUNTER = 0;
@@ -60,21 +61,46 @@ async function getResponses(page, browser, websiteUrl, connection){
     try{
         await page.on('response', async (interceptedResponse) => {
             try{
-                await databaseAPI.saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection);
+                await interceptedResponse;
+                // await databaseAPI.saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection);
             } catch(error){ console.log("Error adding responses to the database."); }
         })
     } catch(error){ console.log("Error collecting responses."); }
 }
 
 async function getRequests(page, browser, websiteUrl, connection){
+    let frames = [];
+    let requestedURL = [];
     try{
+        await page.setRequestInterception(true);
         await page.on('request', async (interceptedRequest) => {
-            try{
-                console.log( interceptedRequest.headers()['referer'] + "   " +  interceptedRequest.headers()['origin'])
-                await databaseAPI.saveRequests(crawlID, browser, websiteUrl, interceptedRequest, connection);
-            } catch(error){ console.log("Error adding requests to the database."); console.log(error); }
+
+            requestedURL.push(interceptedRequest.url());
+
+            if(interceptedRequest.frame() instanceof puppeteer.Frame) {
+                frames.push(interceptedRequest.frame());
+            }
+            
+            interceptedRequest.continue();
         })
     } catch(error){ console.log("Error collecting requests."); }
+
+    console.log("exiting");
+    return [frames, requestedURL];
+}
+
+async function addRequestToDb(requestData, browser, websiteUrl, connection){
+    console.log("I am here");
+
+    let framesObjects = requestData[0];
+    let requestedURL = requestData[1];
+    
+    for(let index = 0; index < framesObjects.length; index++){
+        if(! framesObjects[index].isDetached()){ // cannot evaluate a detached frame
+            let frameOrigin = await cookieFrameEvaluate(framesObjects[index]);            
+            await databaseAPI.saveRequests(crawlID, browser, websiteUrl, frameOrigin, requestedURL[index], connection);
+        }
+    }
 }
 
 
@@ -148,7 +174,7 @@ async function getFrameCookiesRecursive(frame, browser, websiteUrl, connection) 
     }
     
     try{
-        await databaseAPI.saveCookies(crawlID, browser, websiteUrl, "cookies", frameOrigin, frameCookies, connection);
+        // await databaseAPI.saveCookies(crawlID, browser, websiteUrl, "cookies", frameOrigin, frameCookies, connection);
         //console.log("Trace 8: Added to DB");
     } catch(error){ console.log("Error with saving the cookies of the page to the database"); console.log(error);} 
 
@@ -202,7 +228,7 @@ async function getLocalStorageRecursive(page, browser, websiteUrl, frame, connec
     }
     
     try{
-        await databaseAPI.saveLocalStorage(crawlID, browser, websiteUrl, "localStorage", frameOrigin, localStorage, connection);
+        // await databaseAPI.saveLocalStorage(crawlID, browser, websiteUrl, "localStorage", frameOrigin, localStorage, connection);
     } catch(error){ console.log("Error with saving the localStorage of the page to the database"); }
 
     const childFrames = await frame.childFrames();
@@ -244,49 +270,16 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             SUCCESS_BOOL = true;
             urlCounter++;
 
-
-            // browserInstance.on('targetcreated', async (target) => {
-            // // async onPageCreated(page){
-            //     if(browser == 'Firefox' || browser == 'Ghostery'){
-            //         const page = await target.page();
-
-            //         let thing = Object.getPrototypeOf(navigator);
-            //         delete thing.webdriver;
-
-
-                    // await page.addScriptTag({content: "Object.defineProperty(navigator, 'webdriver', {get: () => false})"});
-                    // await page.evaluate(() => {
-                    //     Object.defineProperty(navigator, 'webdriver', {get: () => false});
-                    //     console.log(navigator);
-                    //     return;
-                    // });
-                    // let newValue = false;
-                    // await page.evaluateOnNewDocument(newValue => {
-                    //     // window.navigator.webdriver;
-                    //     // window.navigator.webdriver = newValue;
-                        
-                    //     // Object.defineProperty(navigator, 'webdriver', {get: () => newValue,});
-                        
-                    //     console.log("HEY");
-                    //     console.log(navigator);
-                    // }, newValue);
-            //     }
-            // })
-
             page = await browserInstance.newPage();
-
-            // await page.evaluate(() => {
-            //     Object.defineProperty(navigator, 'webdriver', {get: () => false});
-            //     console.log(navigator);
-            //     return;
-            // });
-            
             
             console.log(`\n${processID} (${browser}): (${urlCounter}) ${websiteUrl}`);
             const siteName = await selectWebsites.getSiteNames(websiteUrl);
             
+            let requestData;
             if(! test){
-                await getRequests(page, browser, websiteUrl, connection);
+                console.log("gettting requests")
+                requestData = await getRequests(page, browser, websiteUrl, connection);
+                console.log("done gettign requests")
                 await getResponses(page, browser, websiteUrl, connection);    
             }
 
@@ -294,11 +287,6 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
 
             try{
                 await page.goto(websiteUrl, { timeout: 10000, waitUntil: "load", });
-                await page.evaluate(() => {
-                    Object.defineProperty(navigator, 'webdriver', {get: () => false});
-                    console.log(navigator);
-                    return;
-                });
                 console.log("   Page loaded");
                 LOADED_COUNTER++;
             } catch(error){
@@ -307,7 +295,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                     TIMEOUT_COUNTER++;
                     SUCCESS_BOOL = false;
                 } else{ 
-                    console.log(`** ${processID} (${browser}): Error visiting webpage -> ${websiteUrl}`);
+                    console.log(`** ${processID} (${browser}): Error visiting webpage -> ${websiteUrl}`); console.log(error);
                     OTHER_ERROR_COUNTER++;
                     SUCCESS_BOOL = false;
                 }
@@ -324,9 +312,11 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 await getCookies(page, browser, websiteUrl, connection);
                 console.log("   Getting localstorage");
                 await getLocalStorage(page, browser, websiteUrl, connection);
+                console.log("   Adding requests to DB");
+                await addRequestToDb(requestData, browser, websiteUrl, connection);
             }
             
-            // await page.close();
+            await page.close();
 
             if(SUCCESS_BOOL) { FULLY_SUCESS_WEBSITES.push(websiteUrl) ; }
         }
@@ -338,7 +328,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         return;
     }
 
-    // await browserInstance.close();
+    await browserInstance.close();
     console.log(`   ${processID} (${browser}) instance closed.`)
 }
 
@@ -355,7 +345,9 @@ async function main(){
     const processID = args[4];
     const device = args[5]
 
-    const websiteList = websiteListString.split(','); // Convert back to an array
+    // const websiteList = websiteListString.split(','); // Convert back to an array
+    const websiteList = ['https://www.iframetester.com/?url=https://bing.com'];
+
 
     // Linux SetUp
     let XVFB = null;
@@ -365,12 +357,12 @@ async function main(){
     }
 
     // Test the parameters
-    try{
-        await testCrawler(path, browser, vantagePoint, processID, device);
-    } catch(error){
-        console.log("Error in the testCrawler.");
-        console.log(error);
-    }
+    // try{
+    //     await testCrawler(path, browser, vantagePoint, processID, device);
+    // } catch(error){
+    //     console.log("Error in the testCrawler.");
+    //     console.log(error);
+    // }
 
     // Set up Database connection
     const connection = new Client({
@@ -385,15 +377,15 @@ async function main(){
     console.log("Database connection established")
 
     // Crawl
-    // try{
-    //     await crawl(browser, path, websiteList, vantagePoint, connection, processID, false, device);
-    // } catch(error){
-    //     console.log("Error in the crawl function");
-    //     console.log(error);
-    // }
+    try{
+        await crawl(browser, path, websiteList, vantagePoint, connection, processID, false, device);
+    } catch(error){
+        console.log("Error in the crawl function");
+        console.log(error);
+    }
 
     // Close database connection
-    await connection.end();
+    await connection.end();    // NOTE: SOMETIMES DATABASE DISCONNECTS BEFORE EVERY REQUEST HAS BEEN ADDED TO THE DB
     console.log("Database connection disconnected")
 
     // Close XVFB

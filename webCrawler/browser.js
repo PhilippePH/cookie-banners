@@ -79,7 +79,7 @@ async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
             if(vantagePoint == 'UK'){
                 // Does not use stealth plugin
                 // NOTE: Webdriver flag is still set to true.
-                return await puppeteer_extra.launch({
+                return await puppeteer.launch({
                     headless: false,
                     product: 'firefox',
                     executablePath: executablePaths[browser],
@@ -90,8 +90,8 @@ async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
                     "dom.webdriver.enabled" is set to false  ----> REMOVED
                     -->the proxy settings are set to 127.0.0.1:8080
 
-                    "useAutomationExtension" is set to false
-                    "enable-automation" is set to false
+                    "useAutomationExtension" is set to false  ----> REMOVED
+                    "enable-automation" is set to false  ----> REMOVED
                     These last two are an attempt to avoid the webdriver detection (source: https://stackoverflow.com/questions/57122151/exclude-switches-in-firefox-webdriver-options)*/
 
                     defaultViewport: null, // makes window size take full browser size
