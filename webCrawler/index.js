@@ -62,13 +62,13 @@ async function getResponses(page, browser, websiteUrl, connection){
         await page.on('response', async (interceptedResponse) => {
             try{
                 await interceptedResponse;
-                // await databaseAPI.saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection);
+                await databaseAPI.saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection);
             } catch(error){ console.log("Error adding responses to the database."); }
         })
     } catch(error){ console.log("Error collecting responses."); }
 }
 
-async function getRequests(page, browser, websiteUrl, connection){
+async function getRequests(page){
     let frames = [];
     let requestedURL = [];
     try{
@@ -83,15 +83,12 @@ async function getRequests(page, browser, websiteUrl, connection){
             
             interceptedRequest.continue();
         })
-    } catch(error){ console.log("Error collecting requests."); }
+    } catch(error){ console.log("Error collecting requests."); console.log(error);}
 
-    console.log("exiting");
     return [frames, requestedURL];
 }
 
 async function addRequestToDb(requestData, browser, websiteUrl, connection){
-    console.log("I am here");
-
     let framesObjects = requestData[0];
     let requestedURL = requestData[1];
     
@@ -174,13 +171,11 @@ async function getFrameCookiesRecursive(frame, browser, websiteUrl, connection) 
     }
     
     try{
-        // await databaseAPI.saveCookies(crawlID, browser, websiteUrl, "cookies", frameOrigin, frameCookies, connection);
-        //console.log("Trace 8: Added to DB");
-    } catch(error){ console.log("Error with saving the cookies of the page to the database"); console.log(error);} 
+        await databaseAPI.saveCookies(crawlID, browser, websiteUrl, "cookies", frameOrigin, frameCookies, connection);
+    } catch(error){ console.log("Error with saving the cookies of the page to the database");} 
 
     const childFrames = frame.childFrames();
     for (const childFrame of childFrames) {
-        //console.log("Trace 9: About to do a recursive call");
         await getFrameCookiesRecursive(childFrame, browser, websiteUrl, connection);
     }
 }
@@ -207,7 +202,6 @@ async function getLocalStorageRecursive(page, browser, websiteUrl, frame, connec
     try{ 
         if(frame){
             if(!frame.isDetached()){
-                //console.log("Trace 10: Passed the two verifications, about to evalute. (In localStorage function)");
                 try{
                     values = await LocalStorageFrameEvaluate(frame);
                 } catch(error){ 
@@ -228,7 +222,7 @@ async function getLocalStorageRecursive(page, browser, websiteUrl, frame, connec
     }
     
     try{
-        // await databaseAPI.saveLocalStorage(crawlID, browser, websiteUrl, "localStorage", frameOrigin, localStorage, connection);
+        await databaseAPI.saveLocalStorage(crawlID, browser, websiteUrl, "localStorage", frameOrigin, localStorage, connection);
     } catch(error){ console.log("Error with saving the localStorage of the page to the database"); }
 
     const childFrames = await frame.childFrames();
@@ -277,9 +271,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             
             let requestData;
             if(! test){
-                console.log("gettting requests")
-                requestData = await getRequests(page, browser, websiteUrl, connection);
-                console.log("done gettign requests")
+                requestData = await getRequests(page);
                 await getResponses(page, browser, websiteUrl, connection);    
             }
 

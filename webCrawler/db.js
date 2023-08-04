@@ -61,14 +61,14 @@ async function saveResponses(crawlID, browser, websiteURL, interceptedResponse, 
   } catch(error){console.log(error);}
 }
 
-async function saveRequests(crawlID, browser, websiteURL, frameOrigin, specificURL, connection){
-  const requestDataQuery = 'INSERT INTO requestData (crawlID, browser, websiteURL, referer, specificURL) VALUES ($1, $2, $3, $4, $5)';
+async function saveRequests(crawlID, browser, websiteURL, frameOrigin, requestedUrl, connection){
+  const requestDataQuery = 'INSERT INTO requestData (crawlID, browser, websiteURL, frameOrigin, requestedUrl) VALUES ($1, $2, $3, $4, $5)';
   const requestData = [
       crawlID,
       browser,
       websiteURL,
       frameOrigin,
-      specificURL
+      requestedUrl
       ];
 
   try{
