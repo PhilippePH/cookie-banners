@@ -72,7 +72,6 @@ async function getRequests(page){
     let frames = [];
     let requestedURL = [];
     try{
-        await page.setRequestInterception(true);
         await page.on('request', async (interceptedRequest) => {
 
             requestedURL.push(interceptedRequest.url());
@@ -80,8 +79,6 @@ async function getRequests(page){
             if(interceptedRequest.frame() instanceof puppeteer.Frame) {
                 frames.push(interceptedRequest.frame());
             }
-            
-            interceptedRequest.continue();
         })
     } catch(error){ console.log("Error collecting requests."); console.log(error);}
 
@@ -394,7 +391,7 @@ async function main(){
         "LOCALSTORAGE TIMEOUT COUNTER : " + LOCALSTORAGE_TIMEOUT_COUNTER + "\n" + 
         "NUMBER OF SUCCESSFUL WEBSITES : " + FULLY_SUCESS_WEBSITES.length +"\n" +
         "SUCCESSFUL WEBSITES : " + FULLY_SUCESS_WEBSITES
-    )
+    );
 }
 
 main();
