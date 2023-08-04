@@ -6,7 +6,7 @@ const { promisify } = require('util');
 const puppeteer = require('puppeteer');
 const xvfb = require('xvfb');
 const { Client } = require('pg');
-const { ConsoleMessage } = require('puppeteer-core');
+// const { ConsoleMessage } = require('puppeteer-core');
 
 let LOADED_COUNTER = 0;
 let TIMEOUT_COUNTER = 0;
