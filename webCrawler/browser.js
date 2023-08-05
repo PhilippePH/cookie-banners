@@ -4,6 +4,7 @@ const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 const BrowserNameError = require('./customErrors');
 const child_process = require('child_process');
 
+
 // register `puppeteer-extra` plugins (only for chromium)
 puppeteer_extra.use(StealthPlugin()); // allows to pass all tests on SannySoft, even if not in headfull mode
 
@@ -80,65 +81,61 @@ async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
         // Source for firefox launch code: https://github.com/puppeteer/puppeteer/issues/5532
         else if(browser == 'Firefox'){ 
             if(vantagePoint == 'UK'){
-                await (async () => {
-                    const webExt = (await import('web-ext')).default;
-                
-                    const args = ['--profilePath=/Users/philippe/Library/Application Support/Firefox/Profiles/sh5n5qfy.default']; // unsure if profile actually gets loaded
-                    
-                    const runner = await webExt.cmd.run(
-                        {
-                            sourceDir: '/Users/philippe/Documents/code/cookie-banners/webdriverFirefoxExtension',
-                            firefox: executablePaths[browser],
-                            args: args
-                        },
-                        {
-                            shouldExitProgram: false
-                        }
-                        );
+                // await (async () => {
+                //     const webExt = (await import('web-ext')).default;
+
+
+                //     // const runner = await webExt.cmd.run({
+                //     //     firefox: executablePaths[browser],
+                //     //     sourceDir:'/Users/philippe/Documents/code/cookie-banners/webdriverFirefoxExtension',
+                //     //     args: [ '--remote-debugging-port']
+                //     // }, { shouldExitProgram: false });
                         
-                    // Needed because `webExt.cmd.run` returns before the DevTools agent starts running.
-                    // Alternative would be to wrap the call to pptr.connect() with some custom retry logic
-                    console.log(runner);
-                    console.log("\n !!!!!!!!!!!!!!! \n")
-                    console.log(runner.extensionRunners);
-                    child_process.execSync('sleep 5');
-                
-                    const {debuggerPort} = runner.extensionRunners[0].runningInfo;
-                    console.log(debuggerPort);
-
-                    // const browserURL = `ws://localhost:${debuggerPort}/json/version`;
-                    // const webSocketDebuggerUrl = `http://localhost:${debuggerPort}/json/version`;
-
-                    const browserURL = `http://146.169.221.114:${debuggerPort}/devtools/browser/226`
+                //     // Needed because `webExt.cmd.run` returns before the DevTools agent starts running.
+                //     // Alternative would be to wrap the call to pptr.connect() with some custom retry logic
                     
-                    return await puppeteer.connect({
-                        browserURL
-                    });
-                })();
+                //     console.log(runner.extensionRunners);
+                //     child_process.execSync('sleep 5');
+                
+                //     const {debuggerPort} = runner.extensionRunners[0].runningInfo;
+                //     console.log(debuggerPort);
+
+                //     // const browserURL = `ws://localhost:${debuggerPort}/json/version`;
+                //     // const webSocketDebuggerUrl = `http://localhost:${debuggerPort}/json/version`;
+
+                //     // const browserURL = `http://146.169.221.114:${debuggerPort}/devtools/browser/226`; // NOTE:: I THINK I NEED TO OPEN THE PORT
+                    
+                //     return await puppeteer.connect({
+                //         browserWSEndpoint: `ws://127.0.0.1:${debuggerPort}/devtools/browser/227`,
+                //         // browserURL: `http://localhost:${debuggerPort}`,
+                //         product: 'firefox'
+                //     });
+                // })();
                 
 
 
                 // // Does not use stealth plugin
                 // // NOTE: Webdriver flag is still set to true.
-                // return await puppeteer.launch({
-                //     headless: false,
-                //     product: 'firefox',
-                //     executablePath: executablePaths[browser],
-                //     userDataDir: userProfiles[browser], 
+                return await puppeteer.launch({
+                    headless: false,
+                    product: 'firefox',
+                    executablePath: executablePaths[browser],
+                    userDataDir: userProfiles[browser], 
+                    args: ['--load-extension=/Users/philippe/Documents/code/cookie-banners/webdriverFirefoxExtension/manifest.json'],
 
-                //     /* User Profile Description: In about:config -->
-                //     "cookiebanners.service.mode" is set to 2
-                //     "dom.webdriver.enabled" is set to false  ----> REMOVED
-                //     -->the proxy settings are set to 127.0.0.1:8080
+                    /* User Profile Description: In about:config -->
+                    "cookiebanners.service.mode" is set to 2
+                    "dom.webdriver.enabled" is set to false  ----> REMOVED
+                    -->the proxy settings are set to 127.0.0.1:8080
 
-                //     "useAutomationExtension" is set to false  ----> REMOVED
-                //     "enable-automation" is set to false  ----> REMOVED
-                //     These last two are an attempt to avoid the webdriver detection (source: https://stackoverflow.com/questions/57122151/exclude-switches-in-firefox-webdriver-options)*/
+                    "useAutomationExtension" is set to false  ----> REMOVED
+                    "enable-automation" is set to false  ----> REMOVED
+                    These last two are an attempt to avoid the webdriver detection (source: https://stackoverflow.com/questions/57122151/exclude-switches-in-firefox-webdriver-options)*/
 
-                //     defaultViewport: null, // makes window size take full browser size
-                //     // Browser window isn't maximised currently, but not priority
+                    defaultViewport: null, // makes window size take full browser size
+                    // Browser window isn't maximised currently, but not priority
                     
-                // });
+                });
             }
         }
         else if(browser == 'Ghostery'){ 

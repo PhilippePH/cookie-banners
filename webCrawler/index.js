@@ -275,7 +275,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             // page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
             try{
-                await page.goto(websiteUrl, { timeout: 10000, waitUntil: "load", });
+                await page.goto(websiteUrl, { timeout: 1000000, waitUntil: "load", });
                 console.log("   Page loaded");
                 LOADED_COUNTER++;
             } catch(error){
@@ -305,7 +305,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 await addRequestToDb(requestData, browser, websiteUrl, connection);
             }
             
-            await page.close();
+            // await page.close();
 
             if(SUCCESS_BOOL) { FULLY_SUCESS_WEBSITES.push(websiteUrl) ; }
         }
@@ -317,7 +317,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         return;
     }
 
-    await browserInstance.close();
+    // await browserInstance.close();
     console.log(`   ${processID} (${browser}) instance closed.`)
 }
 
@@ -335,7 +335,7 @@ async function main(){
     const device = args[5]
 
     // const websiteList = websiteListString.split(','); // Convert back to an array
-    const websiteList = ['https://www.iframetester.com/?url=https://bing.com'];
+    const websiteList = ['https://www.mozilla.org/en-US/'];
 
 
     // Linux SetUp
