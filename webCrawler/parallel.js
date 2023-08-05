@@ -14,7 +14,7 @@ import {fork} from 'child_process';
 import * as fs from 'node:fs/promises';
 import {getFirstURLs} from './websiteSelection.js';
 
-const BROWSER_LIST = ['Google Chrome'];
+const BROWSER_LIST = ['Firefox'];
 const VANTAGE_POINTS = ['UK'];
 const NUM_URLS = 1;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";
