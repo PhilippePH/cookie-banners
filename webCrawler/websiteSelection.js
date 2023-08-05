@@ -1,5 +1,6 @@
-const fs = require("fs");
-const { parse } = require("csv-parse");
+import fs from 'fs';
+import {parse} from "csv-parse";
+
 
 async function randomiseURLs(path){
   /* This function breaks down the input into three thirds.
@@ -44,13 +45,13 @@ async function CSVtoArray(path){
     });
   }
 
-async function getFirstURLs(number, path){
+export async function getFirstURLs(number, path){
   let data = await CSVtoArray(path);
 
   return data.slice(0,Number(number));
 }
 
-async function getSiteNames(url){
+export async function getSiteNames(url){
   /* Takes a single input and returns the name of the site
   Following the format of the (modified) top-1m tranco list 
   https://www.SITENAME.com
@@ -59,4 +60,4 @@ async function getSiteNames(url){
   return nameArray[1];
 }
 
-module.exports = {getFirstURLs, getSiteNames};
+// module.exports = {getFirstURLs, getSiteNames};

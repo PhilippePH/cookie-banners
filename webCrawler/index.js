@@ -1,12 +1,10 @@
-const selectWebsites = require('./websiteSelection');
-const createBrowserInstance = require('./browser');
-const databaseAPI = require('./db');
-const fs = require('fs').promises;
-const { promisify } = require('util');
-const puppeteer = require('puppeteer');
-const xvfb = require('xvfb');
-const { Client } = require('pg');
-// const { ConsoleMessage } = require('puppeteer-core');
+import {getSiteNames} from './websiteSelection.js';
+import {createBrowserInstance} from "./browser.js";
+import {saveCookies, saveResponses, saveRequests, saveLocalStorage} from "./db.js";
+import * as fs from 'node:fs/promises';
+import * as puppeteer from 'puppeteer';
+import xvfb from 'xvfb';
+import pg from 'pg';
 
 let LOADED_COUNTER = 0;
 let TIMEOUT_COUNTER = 0;
@@ -62,7 +60,7 @@ async function getResponses(page, browser, websiteUrl, connection){
         await page.on('response', async (interceptedResponse) => {
             try{
                 await interceptedResponse;
-                await databaseAPI.saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection);
+                await saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection);
             } catch(error){ console.log("Error adding responses to the database."); }
         })
     } catch(error){ console.log("Error collecting responses."); }
@@ -92,7 +90,7 @@ async function addRequestToDb(requestData, browser, websiteUrl, connection){
     for(let index = 0; index < framesObjects.length; index++){
         if(! framesObjects[index].isDetached()){ // cannot evaluate a detached frame
             let frameOrigin = await cookieFrameEvaluate(framesObjects[index]);            
-            await databaseAPI.saveRequests(crawlID, browser, websiteUrl, frameOrigin, requestedURL[index], connection);
+            await saveRequests(crawlID, browser, websiteUrl, frameOrigin, requestedURL[index], connection);
         }
     }
 }
@@ -114,8 +112,9 @@ async function getHTML(page, resultPath, siteName){
         // Downloads the HTML of the website and saves it to a file
         const htmlContent = await page.content();
         const fileName = resultPath+`/htmlFiles/${siteName}.html`;
-        const writeFileAsync = promisify(fs.writeFile);
-        writeFileAsync(fileName, htmlContent); // I REMOVED THE ASYNC HERE....
+        fs.writeFile(fileName, htmlContent);
+        // const writeFileAsync = promisify(fs.writeFile);
+        // writeFileAsync(fileName, htmlContent); // I REMOVED THE ASYNC HERE....
     } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
 }
 
@@ -168,7 +167,7 @@ async function getFrameCookiesRecursive(frame, browser, websiteUrl, connection) 
     }
     
     try{
-        await databaseAPI.saveCookies(crawlID, browser, websiteUrl, "cookies", frameOrigin, frameCookies, connection);
+        await saveCookies(crawlID, browser, websiteUrl, "cookies", frameOrigin, frameCookies, connection);
     } catch(error){ console.log("Error with saving the cookies of the page to the database");} 
 
     const childFrames = frame.childFrames();
@@ -219,7 +218,7 @@ async function getLocalStorageRecursive(page, browser, websiteUrl, frame, connec
     }
     
     try{
-        await databaseAPI.saveLocalStorage(crawlID, browser, websiteUrl, "localStorage", frameOrigin, localStorage, connection);
+        await saveLocalStorage(crawlID, browser, websiteUrl, "localStorage", frameOrigin, localStorage, connection);
     } catch(error){ console.log("Error with saving the localStorage of the page to the database"); }
 
     const childFrames = await frame.childFrames();
@@ -245,7 +244,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
     let browserInstance, pages, page;
 
     try{ 
-        browserInstance = await createBrowserInstance.createBrowserInstance(browser, vantagePoint, device);
+        browserInstance = await createBrowserInstance(browser, vantagePoint, device);
     } catch{ return; } // Exit if fail to create browser instance
 
     try{ // Closes BrowserInstance in case of an unhandled error
@@ -264,7 +263,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             page = await browserInstance.newPage();
             
             console.log(`\n${processID} (${browser}): (${urlCounter}) ${websiteUrl}`);
-            const siteName = await selectWebsites.getSiteNames(websiteUrl);
+            const siteName = await getSiteNames(websiteUrl);
             
             let requestData;
             if(! test){
@@ -354,7 +353,7 @@ async function main(){
     // }
 
     // Set up Database connection
-    const connection = new Client({
+    const connection = new pg.Client({
         user: 'postgres',
         password: 'I@mastrongpsswd',
         host: '146.169.40.178',

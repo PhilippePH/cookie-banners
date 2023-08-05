@@ -1,9 +1,15 @@
-const puppeteer = require("puppeteer-core"); 
-const puppeteer_extra = require("puppeteer-extra");
-const StealthPlugin = require("puppeteer-extra-plugin-stealth");
-const BrowserNameError = require('./customErrors');
-const child_process = require('child_process');
+import puppeteer from 'puppeteer-core';
+import puppeteer_extra from "puppeteer-extra";
+import StealthPlugin from "puppeteer-extra-plugin-stealth";
+import child_process from "child_process";
+import webExt from 'web-ext';
 
+class BrowserNameError extends Error {
+    constructor(message) {
+      super(message);
+      this.name = 'BrowserNameError';
+    }
+  }
 
 // register `puppeteer-extra` plugins (only for chromium)
 puppeteer_extra.use(StealthPlugin()); // allows to pass all tests on SannySoft, even if not in headfull mode
@@ -36,7 +42,7 @@ const linuxUserProfiles = {
     'Ghostery': '/homes/pp1722/.ghostery browser/kdq1f4o2.webCrawler'
 }
 
-async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
+export async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
     let executablePaths = linuxExecutablePaths;
     let userProfiles = linuxUserProfiles;
 
@@ -168,6 +174,6 @@ async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
     }
 }
 
-module.exports = {
-    createBrowserInstance
-  };
+// module.exports = {
+//     createBrowserInstance
+//   };

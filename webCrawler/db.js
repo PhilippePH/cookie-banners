@@ -1,5 +1,4 @@
-async function saveCookies(crawlID, browser, websiteURL, storageType, frameURL, cookies, connection){
-  // console.log("Trace 19 (in db.js file): Entered the save cookie function");
+export async function saveCookies(crawlID, browser, websiteURL, storageType, frameURL, cookies, connection){
   const cookieDataQuery = 'INSERT INTO storageData (crawlID, browser, websiteURL, storageType, frameOrigin, name, value, cookieDomain) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)';
 
   cookies.map(async (item)  => {
@@ -17,12 +16,10 @@ async function saveCookies(crawlID, browser, websiteURL, storageType, frameURL, 
         await connection.query(cookieDataQuery, cookieData); 
     } catch(error){console.log(error);}
   })
-  // console.log("Trace 20 (in db.js file): Exiting the save cookie function");
 }
 
 
-async function saveLocalStorage(crawlID, browser, websiteURL, storageType, frameURL, localStorage, connection){
-  // console.log("Trace 21 (in db.js file): Entered the save cookie function");
+export async function saveLocalStorage(crawlID, browser, websiteURL, storageType, frameURL, localStorage, connection){
   const localStorageDataQuery = 'INSERT INTO storageData (crawlID, browser, websiteURL, storageType, frameOrigin, name, value, cookieDomain) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)';
 
   Object.keys(localStorage).map(async (key) => {
@@ -42,10 +39,9 @@ async function saveLocalStorage(crawlID, browser, websiteURL, storageType, frame
       await connection.query(localStorageDataQuery, localStorageData);
     } catch(error) {console.log(error);}
   })
-  // console.log("Trace 22 (in db.js file): Exiting the save cookie function");
 }
 
-async function saveResponses(crawlID, browser, websiteURL, interceptedResponse, connection){
+export async function saveResponses(crawlID, browser, websiteURL, interceptedResponse, connection){
   const responseDataQuery = 'INSERT INTO responseData (crawlID, browser, websiteURL, specificURL, contentType, contentLength) VALUES ($1, $2, $3, $4, $5, $6)';
   const responseData = [
       crawlID,
@@ -61,7 +57,7 @@ async function saveResponses(crawlID, browser, websiteURL, interceptedResponse, 
   } catch(error){console.log(error);}
 }
 
-async function saveRequests(crawlID, browser, websiteURL, frameOrigin, requestedUrl, connection){
+export async function saveRequests(crawlID, browser, websiteURL, frameOrigin, requestedUrl, connection){
   const requestDataQuery = 'INSERT INTO requestData (crawlID, browser, websiteURL, frameOrigin, requestedUrl) VALUES ($1, $2, $3, $4, $5)';
   const requestData = [
       crawlID,
@@ -76,9 +72,9 @@ async function saveRequests(crawlID, browser, websiteURL, frameOrigin, requested
   } catch(error){console.log(error);}
 }
 
-module.exports = {
-  saveCookies,
-  saveResponses,
-  saveRequests,
-  saveLocalStorage
-  };
+// module.exports = {
+//   saveCookies,
+//   saveResponses,
+//   saveRequests,
+//   saveLocalStorage
+//   };

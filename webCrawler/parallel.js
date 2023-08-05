@@ -10,12 +10,11 @@ export PATH=/vol/bitbucket/pp1722/nodeProject/node_modules/.bin:$PATH
 netstat -lntu
 */
 
+import {fork} from 'child_process';
+import * as fs from 'node:fs/promises';
+import {getFirstURLs} from './websiteSelection.js';
 
-const { fork } = require('child_process');
-const fs = require('fs').promises;
-const selectWebsites = require('./websiteSelection');
-
-const BROWSER_LIST = ['Firefox'];
+const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
 const NUM_URLS = 1;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";
@@ -69,7 +68,7 @@ async function createResultFolder(browserList, vantagePoint, device){
 async function createArgumentArray(path, browserList, vantagePoint, device){
   let argArray = []
   let i = 1;
-  const websiteList = await selectWebsites.getFirstURLs(NUM_URLS, PATH_TO_CSV);
+  const websiteList = await getFirstURLs(NUM_URLS, PATH_TO_CSV);
 
   for(const location of vantagePoint){
     for (const browser of browserList) {
