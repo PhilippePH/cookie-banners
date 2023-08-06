@@ -1,0 +1,10 @@
+{
+  "name": "web_ext_test",
+  "version": "1.0.0",
+  "dependencies": {
+    "web-ext": "^7.6.2"
+},
+  "scripts": {
+    "firefox": "web-ext run --verbose  --source-dir /Users/philippe/Documents/code/cookie-banners/webdriverFirefoxExtension --firefox /Applications/Firefox.app/Contents/MacOS/firefox"
+  }
+}

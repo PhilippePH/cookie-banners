@@ -3,7 +3,8 @@ import puppeteer_extra from "puppeteer-extra";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
 import child_process from "child_process";
 import webExt from 'web-ext';
-import getPort from 'get-port';
+// import getPort from 'get-port';
+import dns from 'node:dns'
 
 class BrowserNameError extends Error {
     constructor(message) {
@@ -91,20 +92,21 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                 await (async () => {
                     // const CDPPort = await getPort();
                     // console.log(CDPPort);
+                    dns.setDefaultResultOrder('ipv4first');
                     const runner = await webExt.cmd.run({
                         firefox: executablePaths[browser],
                         sourceDir:'/Users/philippe/Documents/code/cookie-banners/webdriverFirefoxExtension',
-                        // args: [ `--remote-debugging-port:${CDPPort}`]
+                        args: [ '--remote-debugging-port', '--browser-console', 'firefox-profile=/Users/philippe/Library/Application Support/Firefox/Profiles/sh5n5qfy.default', '--new-tab=https://duckduckgo.com', '--verbose']
                     }, { shouldExitProgram: false });
                     
                     console.log(runner.extensionRunners[0]);        
                     
                     // Needed because `webExt.cmd.run` returns before the DevTools agent starts running.
                     // Alternative would be to wrap the call to pptr.connect() with some custom retry logic
-                    child_process.execSync('sleep 3');
-                
-                    const {debuggerPort} = runner.extensionRunners[0].runningInfo;
-                    console.log(debuggerPort);
+                    child_process.execSync('sleep 5');
+
+                    // const {debuggerPort} = runner.extensionRunners[0].runningInfo;
+                    
 
                     // const browserURL = `ws://localhost:${debuggerPort}/json/version`;
                     // const webSocketDebuggerUrl = `http://localhost:${debuggerPort}/json/version`;
@@ -114,9 +116,10 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     return await puppeteer.connect({
                         // browserWSEndpoint: `ws://127.0.0.1:${debuggerPort}`,
                         // browserWSEndpoint: `ws://127.0.0.1:${debuggerPort}/devtools/browser/227`,
-                        browserURL: `http://127.0.0.1:${debuggerPort}`, // error: SocketError: other side closed
-                        product: 'firefox'
+                        browserURL: `http://127.0.0.1:${debuggerPort}/devtools/browser`, // error: SocketError: other side closed
+                        // product: 'firefox'
                     });
+                    console.log(debuggerPort);
                 })();
                 
 
@@ -146,18 +149,21 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
             }
         }
         else if(browser == 'Ghostery'){ 
+            return await puppeteer.connect({
+                browserWSEndpoint: `ws://127.0.0.1:9222/devtools/browser/cfa95523-5a7b-4ce2-86cb-440080866286`
+            });
             // Does not use stealth plugin
             // NOTE: Webdriver flag is still set to true.
-            return await puppeteer.launch({
-                headless: false,
-                product: 'firefox', // Ghostery is built off of firefox, and this helps puppeteer work. 
-                executablePath: executablePaths[browser],
-                userDataDir: userProfiles[browser], // found at about:profiles
-                /* Default settings, but when prompted upon first visit, Ghostery has been activated. */
-                defaultViewport: null, // makes window size take full browser size -- doesn't seem to work on ghsostery
+            // return await puppeteer.launch({
+            //     headless: false,
+            //     product: 'firefox', // Ghostery is built off of firefox, and this helps puppeteer work. 
+            //     executablePath: executablePaths[browser],
+            //     userDataDir: userProfiles[browser], // found at about:profiles
+            //     /* Default settings, but when prompted upon first visit, Ghostery has been activated. */
+            //     defaultViewport: null, // makes window size take full browser size -- doesn't seem to work on ghsostery
 
-                //the proxy settings are set to 127.0.0.1:8080
-            });
+            //     //the proxy settings are set to 127.0.0.1:8080
+            // });
         }
         else{
             throw new BrowserNameError("Please ensure the browser name passed is one of: 'Google Chrome', 'Brave', 'Firefox', 'Ghostery'.");
