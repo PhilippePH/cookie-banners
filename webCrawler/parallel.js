@@ -17,7 +17,7 @@ import {getFirstURLs} from './websiteSelection.js';
 const BROWSER_LIST = ['Firefox'];
 const VANTAGE_POINTS = ['UK'];
 const NUM_URLS = 5;
-const PATH_TO_CSV = "./webCrawler/top-1m.csv";
+const PATH_TO_CSV = "./webCrawler/shuffled.txt";
 const DEVICE = 'laptop';
 
 // CREATING RESULTS FOLDER

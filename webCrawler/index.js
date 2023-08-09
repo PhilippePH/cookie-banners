@@ -1,17 +1,18 @@
 import {getSiteNames} from './websiteSelection.js';
 import {createBrowserInstance} from "./browser.js";
 import {saveCookies, saveResponses, saveRequests, saveLocalStorage} from "./db.js";
-import * as puppeteer from 'puppeteer-core';
+import {createWriteStream} from 'fs';
+import * as puppeteer from 'puppeteer';
 import xvfb from 'xvfb';
 import pg from 'pg';
-import { resolve } from 'node:path';
+import fs from 'fs/promises';
 
 let LOADED_COUNTER = 0;
 let TIMEOUT_COUNTER = 0;
 let OTHER_ERROR_COUNTER = 0;
 let COOKIE_TIMEOUT_COUNTER = 0;
 let LOCALSTORAGE_TIMEOUT_COUNTER = 0;
-let FULLY_SUCESS_WEBSITES = [];
+let FULLY_SUCCESS_WEBSITES = [];
 let SUCCESS_BOOL = true;
 let STORAGE_BOOL = true;
 let COOKIE_BOOL  = true;
@@ -46,7 +47,7 @@ async function stopXvfb(XVFB){
 async function testCrawler(path, browser, vantagePoint, processID, device = 'linux'){
     path = path + '/test';
     await fs.mkdir(path);
-    newPath = path + '/screenshots';
+    let newPath = path + '/screenshots';
     await fs.mkdir(newPath);
 
     // Tests bot detection + proxy (IP)
@@ -273,10 +274,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             // page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
             try{
-                page.goto(websiteUrl, { timeout: 10000, waitUntil: 'load' });
-                
-                await new Promise((resolve, _) => setTimeout(() => resolve(), 5000));
-                
+                await page.goto(websiteUrl, { timeout: 10000, waitUntil: 'load' });
                 console.log("   Page loaded");
                 LOADED_COUNTER++;
             } catch(error){
@@ -285,7 +283,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                     TIMEOUT_COUNTER++;
                     SUCCESS_BOOL = false;
                 } else{ 
-                    console.log(`** ${processID} (${browser}): Error visiting webpage -> ${websiteUrl}`); console.log(error);
+                    console.log(`** ${processID} (${browser}): Error visiting webpage -> ${websiteUrl}`);
                     OTHER_ERROR_COUNTER++;
                     SUCCESS_BOOL = false;
                 }
@@ -294,7 +292,6 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             }           
                  
             if(test){await getScreenshot(page, resultPath, siteName);}
-            
 
             if(! test){
                 console.log("   Getting HTML");
@@ -309,7 +306,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             
             await page.close();
 
-            if(SUCCESS_BOOL) { FULLY_SUCESS_WEBSITES.push(websiteUrl) ; }
+            if(SUCCESS_BOOL) { FULLY_SUCCESS_WEBSITES.push(websiteUrl) ; }
         }
     } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
         console.log(error);
@@ -323,6 +320,16 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
     console.log(`   ${processID} (${browser}) instance closed.`)
 }
 
+
+async function saveSuccessfulWebsites(arr){
+    var file = createWriteStream('webCrawler/successfullWebsitesList.txt');
+  
+    file.on('error', function(err) { console.log(err); return; });
+    for(let i = 0; i < arr.length; i++){
+      await file.write(arr[i] + '\n');
+    }
+    file.end();
+}
 
 async function main(){
     // Unpacking command line arguments (and removing 'node', 'index.js')
@@ -353,6 +360,18 @@ async function main(){
         console.log("Error in the testCrawler.");
         console.log(error);
     }
+
+    //Reseting counters after the tests
+    LOADED_COUNTER = 0;
+    TIMEOUT_COUNTER = 0;
+    OTHER_ERROR_COUNTER = 0;
+    COOKIE_TIMEOUT_COUNTER = 0;
+    LOCALSTORAGE_TIMEOUT_COUNTER = 0;
+    FULLY_SUCCESS_WEBSITES = [];
+    SUCCESS_BOOL = true;
+    STORAGE_BOOL = true;
+    COOKIE_BOOL  = true;
+
 
     // Set up Database connection
     const connection = new pg.Client({
@@ -390,9 +409,11 @@ async function main(){
         "OTHER ERROR COUNTER : " + OTHER_ERROR_COUNTER + "\n" +
         "COOKIE TIMEOUT COUNTER : " + COOKIE_TIMEOUT_COUNTER + "\n" +
         "LOCALSTORAGE TIMEOUT COUNTER : " + LOCALSTORAGE_TIMEOUT_COUNTER + "\n" + 
-        "NUMBER OF SUCCESSFUL WEBSITES : " + FULLY_SUCESS_WEBSITES.length +"\n" +
-        "SUCCESSFUL WEBSITES : " + FULLY_SUCESS_WEBSITES
+        "NUMBER OF SUCCESSFUL WEBSITES : " + FULLY_SUCCESS_WEBSITES.length +"\n" +
+        "SUCCESSFUL WEBSITES : " + FULLY_SUCCESS_WEBSITES
     );
+
+    await saveSuccessfulWebsites(FULLY_SUCCESS_WEBSITES);
 }
 
 main();
