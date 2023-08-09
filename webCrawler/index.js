@@ -1,10 +1,11 @@
 import {getSiteNames} from './websiteSelection.js';
 import {createBrowserInstance} from "./browser.js";
 import {saveCookies, saveResponses, saveRequests, saveLocalStorage} from "./db.js";
-import * as fs from 'node:fs/promises';
+// import * as fs from 'node:fs/promises';
 import * as puppeteer from 'puppeteer';
 import xvfb from 'xvfb';
 import pg from 'pg';
+import { resolve } from 'node:path';
 
 let LOADED_COUNTER = 0;
 let TIMEOUT_COUNTER = 0;
@@ -245,7 +246,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
 
     try{ 
         browserInstance = await createBrowserInstance(browser, vantagePoint, device);
-    } catch{ return; } // Exit if fail to create browser instance
+    } catch(error){ console.log(error); return; } // Exit if fail to create browser instance
 
     try{ // Closes BrowserInstance in case of an unhandled error
 
@@ -261,20 +262,22 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             urlCounter++;
 
             page = await browserInstance.newPage();
-            
             console.log(`\n${processID} (${browser}): (${urlCounter}) ${websiteUrl}`);
             const siteName = await getSiteNames(websiteUrl);
             
-            let requestData;
-            if(! test){
-                requestData = await getRequests(page);
-                await getResponses(page, browser, websiteUrl, connection);    
-            }
+            // let requestData;
+            // if(! test){
+            //     requestData = await getRequests(page);
+            //     await getResponses(page, browser, websiteUrl, connection);    
+            // }
 
             // page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
             try{
-                await page.goto(websiteUrl, { timeout: 1000000, waitUntil: "load", });
+                page.goto(websiteUrl, { timeout: 0 });
+                
+                await new Promise((resolve, _) => setTimeout(() => resolve(), 5000));
+                
                 console.log("   Page loaded");
                 LOADED_COUNTER++;
             } catch(error){
@@ -304,7 +307,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 await addRequestToDb(requestData, browser, websiteUrl, connection);
             }
             
-            // await page.close();
+            await page.close();
 
             if(SUCCESS_BOOL) { FULLY_SUCESS_WEBSITES.push(websiteUrl) ; }
         }
@@ -316,7 +319,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         return;
     }
 
-    // await browserInstance.close();
+    await browserInstance.close();
     console.log(`   ${processID} (${browser}) instance closed.`)
 }
 
@@ -333,16 +336,16 @@ async function main(){
     const processID = args[4];
     const device = args[5]
 
-    // const websiteList = websiteListString.split(','); // Convert back to an array
-    const websiteList = ['https://www.mozilla.org/en-US/'];
+    const websiteList = websiteListString.split(','); // Convert back to an array
+    // const websiteList = ['https://www.mozilla.org/en-US/'];
 
 
     // Linux SetUp
-    let XVFB = null;
-    if(device == 'linux'){
-        XVFB = await startXvfb();
-        console.log("XVFB connected");
-    }
+    // let XVFB = null;
+    // if(device == 'linux'){
+    //     XVFB = await startXvfb();
+    //     console.log("XVFB connected");
+    // }
 
     // Test the parameters
     // try{
@@ -377,10 +380,10 @@ async function main(){
     console.log("Database connection disconnected")
 
     // Close XVFB
-    if(XVFB) { 
-        await stopXvfb(XVFB); 
-        console.log("XVFB disconnected");
-    }
+    // if(XVFB) { 
+    //     await stopXvfb(XVFB); 
+    //     console.log("XVFB disconnected");
+    // }
 
     console.log(
         "LOADED COUNTER : " + LOADED_COUNTER + "\n" +
