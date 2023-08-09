@@ -321,8 +321,8 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
 }
 
 
-async function saveSuccessfulWebsites(arr){
-    var file = createWriteStream('webCrawler/successfullWebsitesList.txt');
+async function saveSuccessfulWebsites(arr,path){
+    var file = createWriteStream(`${path}/successfulURLs.txt`);
   
     file.on('error', function(err) { console.log(err); return; });
     for(let i = 0; i < arr.length; i++){
@@ -413,7 +413,7 @@ async function main(){
         "SUCCESSFUL WEBSITES : " + FULLY_SUCCESS_WEBSITES
     );
 
-    await saveSuccessfulWebsites(FULLY_SUCCESS_WEBSITES);
+    await saveSuccessfulWebsites(FULLY_SUCCESS_WEBSITES, path);
 }
 
 main();

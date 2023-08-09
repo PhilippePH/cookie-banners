@@ -88,6 +88,7 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     product: 'firefox',
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
+                    defaultViewport: null, // makes window size take full browser size
                 });
             }
         }
@@ -98,6 +99,7 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     product: 'firefox',
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
+                    defaultViewport: null, // makes window size take full browser size
                 });
             }
         }
