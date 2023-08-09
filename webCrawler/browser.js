@@ -53,7 +53,7 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
         if(browser == 'Google Chrome'){
             if(vantagePoint == 'UK'){
                 // Uses puppeteer_extra (stealth plugin)
-                return await puppeteer_extra.launch({ 
+                return await puppeteer.launch({ 
                     headless: false,
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser],
@@ -89,6 +89,7 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
                     defaultViewport: null, // makes window size take full browser size
+                    extraPrefsFirefox: ['--disable-blink-features=AutomationControlled']
                 });
             }
         }

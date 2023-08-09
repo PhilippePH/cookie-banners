@@ -274,7 +274,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             // page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
             try{
-                await page.goto(websiteUrl, { timeout: 10000, waitUntil: 'load' });
+                await page.goto(websiteUrl, { timeout: 0});
                 console.log("   Page loaded");
                 LOADED_COUNTER++;
             } catch(error){
@@ -304,7 +304,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 await addRequestToDb(requestData, browser, websiteUrl, connection);
             }
             
-            await page.close();
+            // await page.close();
 
             if(SUCCESS_BOOL) { FULLY_SUCCESS_WEBSITES.push(websiteUrl) ; }
         }
@@ -316,7 +316,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         return;
     }
 
-    await browserInstance.close();
+    // await browserInstance.close();
     console.log(`   ${processID} (${browser}) instance closed.`)
 }
 
@@ -343,7 +343,8 @@ async function main(){
     const processID = args[4];
     const device = args[5]
 
-    const websiteList = websiteListString.split(','); // Convert back to an array
+    // const websiteList = websiteListString.split(','); // Convert back to an array
+    const websiteList = ['https://bot.sannysoft.com/']
 
 
     // Linux SetUp
@@ -354,12 +355,12 @@ async function main(){
     }
 
     // Test the parameters
-    try{
-        await testCrawler(path, browser, vantagePoint, processID, device);
-    } catch(error){
-        console.log("Error in the testCrawler.");
-        console.log(error);
-    }
+    // try{
+    //     await testCrawler(path, browser, vantagePoint, processID, device);
+    // } catch(error){
+    //     console.log("Error in the testCrawler.");
+    //     console.log(error);
+    // }
 
     //Reseting counters after the tests
     LOADED_COUNTER = 0;

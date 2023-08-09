@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "WebDriver Remover",
-    "version": "1.0",
+    "version": "1.1",
   
     "description": "Removes the webdriver flag when firefox is used by a bot",
   
@@ -11,7 +11,9 @@
   
     "content_scripts": [
       {
-        "matches": ["*://*.mozilla.org/*"],
+        "matches": ["*://*.sannysoft.com/*"],
+        "all_frames": true,
+        "run_at": "document_start",
         "js": ["borderify.js"]
       }
     ]
