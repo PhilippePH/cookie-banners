@@ -18,7 +18,7 @@ const BROWSER_LIST = ['Firefox'];
 const VANTAGE_POINTS = ['UK'];
 const NUM_URLS = 5;
 const PATH_TO_CSV = "./webCrawler/top-1m.csv";
-const DEVICE = 'linux';
+const DEVICE = 'laptop';
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint, device){

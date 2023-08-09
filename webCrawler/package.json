@@ -4,17 +4,12 @@
   "description": " Crawling the web to identify the perseverance of cookie banners and respect for choice.",
   "type": "module",
   "dependencies": {
-    "child_process": "^1.0.2",
     "csv": "^6.3.1",
-    "fs": "^0.0.1-security",
-    "get-port": "^7.0.0",
     "node": "^18.13.0",
     "pg": "^8.11.1",
-    "puppeteer": "^20.7.4",
     "puppeteer-core": "^20.7.4",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
-    "web-ext": "^7.6.2",
     "xvfb": "^0.4.0"
   },
   "scripts": {
