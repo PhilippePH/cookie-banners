@@ -328,7 +328,6 @@ async function saveSuccessfulWebsites(websiteUrl, resultPath){
 export async function callableMain(args){
     // Accessing individual arguments
     const path = args[0];
-    console.log(path)
     const vantagePoint = args[1];
     const browser = args[2];
     const websiteList = args[3];

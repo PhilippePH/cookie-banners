@@ -57,8 +57,9 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     headless: false,
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser],
+                    defaultViewport: null, // makes window size take full browser size
                     args: [ 
-                        '--start-maximized',
+                        '--start-maximised',
                         '--profile-directory=Profile 7',
                         '--proxy-server=socks5://127.0.0.1:8080',
                     ]
@@ -72,6 +73,7 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     headless: false,
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
+                    defaultViewport: null, // makes window size take full browser size
                     /* User Profile Description: The EasyList Cookie found in 
                     brave://settings/shields/filters has been enabled. */
                     args: [ '--start-maximized',
