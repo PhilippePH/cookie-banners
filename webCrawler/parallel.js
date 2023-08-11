@@ -13,6 +13,7 @@ netstat -lntu
 import {fork} from 'child_process';
 import * as fs from 'node:fs/promises';
 import {getFirstURLs} from './websiteSelection.js';
+import {main} from './index.js'
 
 const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
@@ -80,16 +81,18 @@ async function createArgumentArray(path, browserList, vantagePoint, device){
   return argArray;
 }
 
-async function main(browserList, vantagePoint, device){
+async function ParallelMain(browserList, vantagePoint, device){
   const path = await createResultFolder(browserList, vantagePoint, device);
 
   // ARGUMENTS PER PROCESS
   const argumentsArray = await createArgumentArray(path, browserList, vantagePoint, device);
     
-  // Launching child processes
-  for (const args of argumentsArray) {
-    const child = fork('webCrawler/index.js', args);
-  }
+  // // Launching child processes
+  // for (const args of argumentsArray) {
+  //   const child = fork('webCrawler/index.js', args);
+  // }
+
+  main(argumentsArray[0]);
 }
 
-main(BROWSER_LIST, VANTAGE_POINTS, DEVICE);
+ParallelMain(BROWSER_LIST, VANTAGE_POINTS, DEVICE);

@@ -405,5 +405,3 @@ async function main(){
         "NUMBER OF SUCCESSFUL WEBSITES : " + FULLY_SUCCESS_WEBSITES +"\n"
     );
 }
-
-main();
