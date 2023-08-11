@@ -347,12 +347,12 @@ async function main(){
     }
 
     // Test the parameters
-    // try{
-    //     await testCrawler(path, browser, vantagePoint, processID, device);
-    // } catch(error){
-    //     console.log("Error in the testCrawler.");
-    //     console.log(error);
-    // }
+    try{
+        await testCrawler(path, browser, vantagePoint, processID, device);
+    } catch(error){
+        console.log("Error in the testCrawler.");
+        console.log(error);
+    }
 
     //Reseting counters after the tests
     LOADED_COUNTER = 0;
