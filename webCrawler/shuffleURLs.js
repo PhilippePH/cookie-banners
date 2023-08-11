@@ -1,6 +1,5 @@
-import fs from 'fs/promises';
 import {createWriteStream} from 'fs';
-import { CSVtoArray } from './websiteSelection.js';
+import { TXTtoArray } from './websiteSelection.js';
 
 // shuffle code from: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 async function shuffle(array) {
@@ -30,13 +29,16 @@ async function randomiseURLs(path){
       
         This outputs a txt file with one URL on each line. */
   
-      let myURLs = await CSVtoArray(path);
-      
-      let thirdLength = myURLs.length / 3;
-      
-      let firstThird = myURLs.slice(0, thirdLength);
-      let secondThird = myURLs.slice(thirdLength, thirdLength * 2);
-      let thirdThird = myURLs.slice(thirdLength * 2, myURLs.length);
+      let myURLs = await TXTtoArray(path);
+          
+      let firstThousand = myURLs.slice(0, 1000);
+
+      let rest = myURLs.slice(1000);
+      let thirdLength = rest.length / 3;
+
+      let firstThird = rest.slice(0, thirdLength);
+      let secondThird = rest.slice(thirdLength, thirdLength * 2);
+      let thirdThird = rest.slice(thirdLength * 2);
   
       firstThird = await shuffle(firstThird);
       secondThird = await shuffle(secondThird);
@@ -45,10 +47,14 @@ async function randomiseURLs(path){
       var file = createWriteStream('webCrawler/shuffled.txt');
   
       file.on('error', function(err) { console.log(err); return; });
+      for(let i = 0; i < 1000; i++){
+        file.write(firstThousand[i] + '\n');
+      }
+
       for(let i = 0; i < thirdLength; i++){
-        await file.write(firstThird[i] + '\n');
-        await file.write(secondThird[i] + '\n');
-        await file.write(thirdThird[i] + '\n');
+        file.write(firstThird[i] + '\n');
+        file.write(secondThird[i] + '\n');
+        file.write(thirdThird[i] + '\n');
       }
       file.end();
   }
