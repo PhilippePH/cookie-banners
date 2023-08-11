@@ -300,7 +300,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             await page.close();
 
             if(SUCCESS_BOOL && !test) { 
-                await saveSuccessfulWebsites(websiteUrl, path);
+                await saveSuccessfulWebsites(websiteUrl, resultPath);
                 FULLY_SUCCESS_WEBSITES++;
             }
         }
@@ -317,8 +317,8 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
 }
 
 
-async function saveSuccessfulWebsites(websiteUrl, path){
-    var file = createWriteStream(`${path}/successfulURLs.txt`, {flags:'a'});
+async function saveSuccessfulWebsites(websiteUrl, resultPath){
+    var file = createWriteStream(`${resultPath}/successfulURLs.txt`, {flags:'a'});
   
     file.on('error', function(err) { console.log(err); return; });
     file.write(websiteUrl + '\n');
@@ -328,6 +328,7 @@ async function saveSuccessfulWebsites(websiteUrl, path){
 export async function callableMain(args){
     // Accessing individual arguments
     const path = args[0];
+    console.log(path)
     const vantagePoint = args[1];
     const browser = args[2];
     const websiteList = args[3];

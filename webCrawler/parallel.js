@@ -17,9 +17,9 @@ import {callableMain} from './index.js'
 
 const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 10000;
+const NUM_URLS = 5;
 const PATH_TO_CSV = "./webCrawler/shuffled.txt";
-const DEVICE = 'linux';
+const DEVICE = 'laptop';
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint, device){

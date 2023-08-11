@@ -89,7 +89,7 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
                     defaultViewport: null, // makes window size take full browser size
-                    extraPrefsFirefox: ['--disable-blink-features=AutomationControlled']
+                    // extraPrefsFirefox: ['--disable-blink-features=AutomationControlled']
                 });
             }
         }
