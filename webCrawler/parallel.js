@@ -7,10 +7,12 @@ ssh -S /tmp/sshtunnelProxy -O exit philippe@hamedhome.ddns.net -p22
 
 export PATH=/vol/bitbucket/pp1722/nodeProject/node_modules/.bin:$PATH
 
+node webCrawler/parallel.js > webCrawler/crawlLog.log 2>&1
+
 netstat -lntu
 */
 
-import {fork} from 'child_process';
+// import {fork} from 'child_process';
 import * as fs from 'node:fs/promises';
 import {getFirstURLs} from './websiteSelection.js';
 import {callableMain} from './index.js'
