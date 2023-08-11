@@ -325,19 +325,14 @@ async function saveSuccessfulWebsites(websiteUrl, path){
     file.end();
 }
 
-export async function main(){
-    // Unpacking command line arguments (and removing 'node', 'index.js')
-    const args = process.argv.slice(2);
-
+export async function callableMain(args){
     // Accessing individual arguments
     const path = args[0];
     const vantagePoint = args[1];
     const browser = args[2];
-    const websiteListString = args[3];
+    const websiteList = args[3];
     const processID = args[4];
     const device = args[5]
-
-    const websiteList = websiteListString.split(','); // Convert back to an array
 
     // Linux SetUp
     let XVFB = null;
@@ -405,3 +400,89 @@ export async function main(){
         "NUMBER OF SUCCESSFUL WEBSITES : " + FULLY_SUCCESS_WEBSITES +"\n"
     );
 }
+
+
+
+
+
+// async function CLImain(){
+//     // Unpacking command line arguments (and removing 'node', 'index.js')
+//     const args = process.argv.slice(2);
+//     console.log(args)
+
+//     // Accessing individual arguments
+//     const path = args[0];
+//     const vantagePoint = args[1];
+//     const browser = args[2];
+//     const websiteListString = args[3];
+//     const processID = args[4];
+//     const device = args[5]
+
+//     const websiteList = websiteListString.split(','); // Convert back to an array
+
+//     // Linux SetUp
+//     let XVFB = null;
+//     if(device == 'linux'){
+//         XVFB = await startXvfb();
+//         console.log("XVFB connected");
+//     }
+
+//     // Test the parameters
+//     try{
+//         await testCrawler(path, browser, vantagePoint, processID, device);
+//     } catch(error){
+//         console.log("Error in the testCrawler.");
+//         console.log(error);
+//     }
+
+//     //Reseting counters after the tests
+//     LOADED_COUNTER = 0;
+//     TIMEOUT_COUNTER = 0;
+//     OTHER_ERROR_COUNTER = 0;
+//     COOKIE_TIMEOUT_COUNTER = 0;
+//     LOCALSTORAGE_TIMEOUT_COUNTER = 0;
+//     FULLY_SUCCESS_WEBSITES = 0;
+//     SUCCESS_BOOL = true;
+//     STORAGE_BOOL = true;
+//     COOKIE_BOOL  = true;
+
+
+//     // Set up Database connection
+//     const connection = new pg.Client({
+//         user: 'postgres',
+//         password: 'I@mastrongpsswd',
+//         host: '146.169.40.178',
+//         database: 'crawlData',
+//         port: '5432'
+//     });
+    
+//     await connection.connect();
+//     console.log("Database connection established")
+
+//     // Crawl
+//     try{
+//         await crawl(browser, path, websiteList, vantagePoint, connection, processID, false, device);
+//     } catch(error){
+//         console.log("Error in the crawl function");
+//         console.log(error);
+//     }
+
+//     // Close database connection
+//     await connection.end();    // NOTE: SOMETIMES DATABASE DISCONNECTS BEFORE EVERY REQUEST HAS BEEN ADDED TO THE DB
+//     console.log("Database connection disconnected")
+
+//     // Close XVFB
+//     if(XVFB) { 
+//         await stopXvfb(XVFB); 
+//         console.log("XVFB disconnected");
+//     }
+
+//     console.log(
+//         "LOADED COUNTER : " + LOADED_COUNTER + "\n" +
+//         "TIMEOUT COUNTER : " + TIMEOUT_COUNTER + "\n" +
+//         "OTHER ERROR COUNTER : " + OTHER_ERROR_COUNTER + "\n" +
+//         "COOKIE TIMEOUT COUNTER : " + COOKIE_TIMEOUT_COUNTER + "\n" +
+//         "LOCALSTORAGE TIMEOUT COUNTER : " + LOCALSTORAGE_TIMEOUT_COUNTER + "\n" + 
+//         "NUMBER OF SUCCESSFUL WEBSITES : " + FULLY_SUCCESS_WEBSITES +"\n"
+//     );
+// }

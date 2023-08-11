@@ -13,13 +13,13 @@ netstat -lntu
 import {fork} from 'child_process';
 import * as fs from 'node:fs/promises';
 import {getFirstURLs} from './websiteSelection.js';
-import {main} from './index.js'
+import {callableMain} from './index.js'
 
 const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
 const NUM_URLS = 10000;
 const PATH_TO_CSV = "./webCrawler/shuffled.txt";
-const DEVICE = 'linux';
+const DEVICE = 'laptop';
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint, device){
@@ -92,7 +92,7 @@ async function ParallelMain(browserList, vantagePoint, device){
   //   const child = fork('webCrawler/index.js', args);
   // }
 
-  main(argumentsArray[0]);
+  callableMain(argumentsArray[0]);
 }
 
 ParallelMain(BROWSER_LIST, VANTAGE_POINTS, DEVICE);
