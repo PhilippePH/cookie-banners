@@ -14,11 +14,11 @@ import {fork} from 'child_process';
 import * as fs from 'node:fs/promises';
 import {getFirstURLs} from './websiteSelection.js';
 
-const BROWSER_LIST = ['Firefox'];
+const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 5;
+const NUM_URLS = 10000;
 const PATH_TO_CSV = "./webCrawler/shuffled.txt";
-const DEVICE = 'laptop';
+const DEVICE = 'linux';
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint, device){

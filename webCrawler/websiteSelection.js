@@ -8,13 +8,17 @@ export async function TXTtoArray(path){
 
     return new Promise((resolve, reject) => {
       let myURLs = [];
-      createReadStream(path, 'utf8') // Open the file in UTF-8 encoding
+      createReadStream(path, 'utf8')
         .on("data", function (chunk) {
           // Split the chunk into lines and process each line
           const lines = chunk.split('\n');
           lines.forEach(line => {
-            if (line.trim() !== "") { // Exclude empty lines
-              myURLs.push(line.trim());
+            const parts = line.split(',');
+            if (parts.length === 2) { // Ensure the line is of form ID, sitename
+              const siteName = parts[1].trim(); // Get sitename
+              if (siteName !== "") { // Exclude empty site names
+                myURLs.push("https://www." + siteName);
+              }
             }
           });
         })
@@ -26,7 +30,7 @@ export async function TXTtoArray(path){
           reject(error);
         });
     });
-  }  
+}  
 
 export async function getFirstURLs(number, path){
   let data = await TXTtoArray(path);

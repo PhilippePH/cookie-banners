@@ -6,13 +6,14 @@ import * as puppeteer from 'puppeteer';
 import xvfb from 'xvfb';
 import pg from 'pg';
 import fs from 'fs/promises';
+import path from 'path';
 
 let LOADED_COUNTER = 0;
 let TIMEOUT_COUNTER = 0;
 let OTHER_ERROR_COUNTER = 0;
 let COOKIE_TIMEOUT_COUNTER = 0;
 let LOCALSTORAGE_TIMEOUT_COUNTER = 0;
-let FULLY_SUCCESS_WEBSITES = [];
+let FULLY_SUCCESS_WEBSITES = 0;
 let SUCCESS_BOOL = true;
 let STORAGE_BOOL = true;
 let COOKIE_BOOL  = true;
@@ -104,7 +105,7 @@ async function getScreenshot(page, resultPath, siteName){
             type: "jpeg",
             quality: 25,
         });
-    } catch(error){ console.log("Error with the screenshot"); console.log(error); }
+    } catch(error){ console.log("Error with the screenshot"); }
 }
 
 
@@ -114,8 +115,6 @@ async function getHTML(page, resultPath, siteName){
         const htmlContent = await page.content();
         const fileName = resultPath+`/htmlFiles/${siteName}.html`;
         fs.writeFile(fileName, htmlContent);
-        // const writeFileAsync = promisify(fs.writeFile);
-        // writeFileAsync(fileName, htmlContent); // I REMOVED THE ASYNC HERE....
     } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
 }
 
@@ -155,12 +154,12 @@ async function getFrameCookiesRecursive(frame, browser, websiteUrl, connection) 
                 try{
                     frameOrigin = await cookieFrameEvaluate(frame);
                 } catch(error){ 
-                    console.log("   **** Error in CookieFrameEvaluate: " + error); 
+                    console.log("      **** Error in CookieFrameEvaluate" ); 
                     throw new Error;
                 }
                 
-           } else { console.log("   **** Cannot get frame origin because of lazy frame in cookies"); throw new Error; }
-        } else { console.log("  **** Frame is null in cookies"); throw new Error;}
+           } else { console.log("      **** Cannot get frame origin because of lazy frame in cookies"); throw new Error; }
+        } else { console.log("    **** Frame is null in cookies"); throw new Error;}
     } catch(error){ 
         COOKIE_BOOL = false;
         SUCCESS_BOOL = false;
@@ -202,15 +201,15 @@ async function getLocalStorageRecursive(page, browser, websiteUrl, frame, connec
                 try{
                     values = await LocalStorageFrameEvaluate(frame);
                 } catch(error){ 
-                    console.log("   **** Error in LocalStorageFrameEvaluate: " + error); 
+                    console.log("      **** Error in LocalStorageFrameEvaluate"); 
                     throw new Error; 
                 }
 
                 localStorage = values[0];
                 frameOrigin = values[1];
 
-            } else {console.log("   **** Cannot get frame origin because of lazy frame in local storage"); throw new Error; }
-        } else {console.log("   **** Frame is null in localstorage"); throw new Error; }
+            } else {console.log("      **** Cannot get frame origin because of lazy frame in local storage"); throw new Error; }
+        } else {console.log("      **** Frame is null in localstorage"); throw new Error; }
 
     } catch(error){
         STORAGE_BOOL = false;
@@ -242,7 +241,7 @@ async function getLocalStorage(page, browser, websiteUrl, connection){
 async function crawl(browser, resultPath, urlList, vantagePoint, 
                     connection = null, processID = 1, test = false, device = 'linux'){
     
-    let browserInstance, pages, page;
+    let browserInstance, page;
 
     try{ 
         browserInstance = await createBrowserInstance(browser, vantagePoint, device);
@@ -250,14 +249,10 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
 
     try{ // Closes BrowserInstance in case of an unhandled error
 
-        /* This gets rid of the about::blank page at startup. */
-        // pages = await browserInstance.pages();
-        // page = pages[0];
-        // await page.close();
-
         let urlCounter = 0;
         
         for(let websiteUrl of urlList){
+            console.log(websiteUrl);
             SUCCESS_BOOL = true;
             urlCounter++;
 
@@ -271,10 +266,8 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 await getResponses(page, browser, websiteUrl, connection);    
             }
 
-            // page.on('console', msg => console.log('PAGE LOG:', msg.text()));
-
             try{
-                await page.goto(websiteUrl, { timeout: 0});
+                await page.goto(websiteUrl, { timeout: 10000, waitUntil:'load'});
                 console.log("   Page loaded");
                 LOADED_COUNTER++;
             } catch(error){
@@ -304,9 +297,12 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 await addRequestToDb(requestData, browser, websiteUrl, connection);
             }
             
-            // await page.close();
+            await page.close();
 
-            if(SUCCESS_BOOL) { FULLY_SUCCESS_WEBSITES.push(websiteUrl) ; }
+            if(SUCCESS_BOOL && !test) { 
+                await saveSuccessfulWebsites(websiteUrl, path);
+                FULLY_SUCCESS_WEBSITES++;
+            }
         }
     } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
         console.log(error);
@@ -316,18 +312,16 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         return;
     }
 
-    // await browserInstance.close();
+    await browserInstance.close();
     console.log(`   ${processID} (${browser}) instance closed.`)
 }
 
 
-async function saveSuccessfulWebsites(arr,path){
-    var file = createWriteStream(`${path}/successfulURLs.txt`);
+async function saveSuccessfulWebsites(websiteUrl, path){
+    var file = createWriteStream(`${path}/successfulURLs.txt`, {flags:'a'});
   
     file.on('error', function(err) { console.log(err); return; });
-    for(let i = 0; i < arr.length; i++){
-      await file.write(arr[i] + '\n');
-    }
+    file.write(websiteUrl + '\n');
     file.end();
 }
 
@@ -343,9 +337,7 @@ async function main(){
     const processID = args[4];
     const device = args[5]
 
-    // const websiteList = websiteListString.split(','); // Convert back to an array
-    const websiteList = ['https://bot.sannysoft.com/']
-
+    const websiteList = websiteListString.split(','); // Convert back to an array
 
     // Linux SetUp
     let XVFB = null;
@@ -368,7 +360,7 @@ async function main(){
     OTHER_ERROR_COUNTER = 0;
     COOKIE_TIMEOUT_COUNTER = 0;
     LOCALSTORAGE_TIMEOUT_COUNTER = 0;
-    FULLY_SUCCESS_WEBSITES = [];
+    FULLY_SUCCESS_WEBSITES = 0;
     SUCCESS_BOOL = true;
     STORAGE_BOOL = true;
     COOKIE_BOOL  = true;
@@ -410,11 +402,8 @@ async function main(){
         "OTHER ERROR COUNTER : " + OTHER_ERROR_COUNTER + "\n" +
         "COOKIE TIMEOUT COUNTER : " + COOKIE_TIMEOUT_COUNTER + "\n" +
         "LOCALSTORAGE TIMEOUT COUNTER : " + LOCALSTORAGE_TIMEOUT_COUNTER + "\n" + 
-        "NUMBER OF SUCCESSFUL WEBSITES : " + FULLY_SUCCESS_WEBSITES.length +"\n" +
-        "SUCCESSFUL WEBSITES : " + FULLY_SUCCESS_WEBSITES
+        "NUMBER OF SUCCESSFUL WEBSITES : " + FULLY_SUCCESS_WEBSITES +"\n"
     );
-
-    await saveSuccessfulWebsites(FULLY_SUCCESS_WEBSITES, path);
 }
 
 main();
