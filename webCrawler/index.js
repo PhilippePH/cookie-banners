@@ -325,7 +325,7 @@ async function saveSuccessfulWebsites(websiteUrl, path){
     file.end();
 }
 
-async function main(){
+export async function main(){
     // Unpacking command line arguments (and removing 'node', 'index.js')
     const args = process.argv.slice(2);
 
