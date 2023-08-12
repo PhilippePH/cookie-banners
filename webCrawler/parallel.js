@@ -20,7 +20,7 @@ netstat -lntu
 import {fork} from 'child_process';
 import * as fs from 'node:fs/promises';
 import {getFirstURLs} from './websiteSelection.js';
-import {callableMain} from './index.js'
+// import {callableMain} from './index.js'
 
 const BROWSER_LIST = ['Google Chrome','Brave','Firefox','Ghostery'];
 const VANTAGE_POINTS = ['UK'];
