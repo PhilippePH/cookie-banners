@@ -482,4 +482,5 @@ async function CLImain(){
         "LOCALSTORAGE TIMEOUT COUNTER : " + LOCALSTORAGE_TIMEOUT_COUNTER + "\n" + 
         "NUMBER OF SUCCESSFUL WEBSITES : " + FULLY_SUCCESS_WEBSITES +"\n"
     );
-}()
+}
+CLImain()
