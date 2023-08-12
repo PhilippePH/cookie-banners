@@ -405,7 +405,6 @@ async function saveSuccessfulWebsites(websiteUrl, resultPath){
 async function CLImain(){
     // Unpacking command line arguments (and removing 'node', 'index.js')
     const args = process.argv.slice(2);
-    console.log(args)
 
     // Accessing individual arguments
     const path = args[0];
