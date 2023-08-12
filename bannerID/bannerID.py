@@ -1,54 +1,115 @@
 from bs4 import BeautifulSoup
 import os
 import re
-# Question: Should we have something detecting the language and droping sites not in english?
 
-# Identifier word selection comes from "Exploring the Cookieverse: A Multi-Perspective Analysis of Web Cookies"
-# Capitalization does not matter
-IDENTIFIER_WORDS = ["cookies", "privacy", "policy", "consent", "accept", 
-                    "agree", "personalized", "legitimate interest"]
-POSITIVE_CSS_WORDS = ["z-index", "position: fixed"]
-NEGATIVE_CSS_WORDS = ["display: none", "visibility: hidden"]
-OTHER_WORD_IDEAS = ["gdpr", "onetrust"]
+"""
+- we assume a cookie banner if there is an element / sub-tree on the page that contains less than 5% of the nodes on the page
+- that element/subtree contains at least X of the following phrases: cookie, accept all, reject, etc --> add translation in a couple of languages
+"""
 
-directory = os.fsencode("html_files/7_html_files")
+HTML_DIRECTORY_PATH = "./top100_htmlFiles/7_html_files/"
+THRESHOLD_TEST_VALUES = [0.01, 0.05, 0.1, 0.15, 0.2]
 
-# Function to check if an element has positive z-index or fixed position
-def has_positive_z_index_or_fixed_position(element):
-    style = element.get('style', '')
-    if 'z-index' in style and int(element['style'].split('z-index:')[1].split(';')[0].strip()) > 0:
-        return True
-    if 'position' in style and element['style'].split('position:')[1].split(';')[0].strip() == 'fixed':
-        return True
-    return False
+# Smallest corpus to find hits in all tests
+CORPUS_1 = ['agree', 'i agree', 'accept', 'accept all', 'accept cookies',
+            'i accept','reject', 'reject all', 'decline', 'cookie preferences',
+            'manage cookies',  'preferences', 'learn more',  'more information',
+            'privacy policy', 'privacy statement', 'cookie policy','cookie notice',
+            'our partners', 'partners',  'third-party', 'similar technologies']
 
-def find_banner(element):
-    if isinstance(element, str):
-        # Handle NavigableString objects
-        element = element.parent
-    
-    if element is None:
-        return False
-    
-    if(has_positive_z_index_or_fixed_position(element)):
-        return True
-    
-    return find_banner(element.parent)
+# All relevant words
+CORPUS_2 = ['agree', 'i agree','accept', 'accept all', 'accept cookies', 'i accept',
+            'ok','allow all', 'enable all', 'got it', 'allow cookies', 'reject',
+            'reject all', 'decline', 'mandatory only', 'required only', 'not accept',
+            'disable all', 'disagree', 'decline cookies', 'decline all',
+            'mandatory', 'optional cookies', 'essential cookies',
+            'non-essential cookies','strictly necessary', 'necessary cookies',
+            'required', 'essential', 'non-essential',  'cookie preferences',
+            'manage cookies',  'preferences', 'cookies options','consent manager',
+            'customize cookies', 'cookie options', 'cookies settings', 'manage settings',
+            'manage preferences', 'more options', 'learn more',  'more information',
+            'show purposes', 'further information', 'more options', 'privacy policy',
+            'privacy statement', 'cookie policy','cookie notice', 'our partners',
+            'partners', 'third party', 'vendors', 'similar technologies',
+            'other technologies']
+
+CORPUS_TEST_VALUES = [CORPUS_1, CORPUS_2]
+
+def parseHtmlDir(filename):
+        complete_filename = HTML_DIRECTORY_PATH+filename
+        html_file = open(complete_filename,'r')
+        return BeautifulSoup(html_file, 'html.parser')
+
+def countNodes(element, recordsArr):
+    childrenNodeCounter = 0
+
+    if hasattr(element, 'children'):
+        for child in element.children:
+            returnValues = countNodes(child, recordsArr)
+            recordsArr = returnValues[0]
+            childrenNodeCounter += returnValues[1]
+
+    recordsArr.append([element, childrenNodeCounter])
+    return (recordsArr, childrenNodeCounter)
+
+def keepSmallNodes(recordsArr, totNodes, threshold):
+    numberThreshold =  threshold * totNodes
+
+    for i in range(len(recordsArr)):
+        if recordsArr[i][1] > numberThreshold:
+            recordsArr.pop(i)
+            
+    return recordsArr     
 
 
-for file in os.listdir(directory):
-    filename = os.fsdecode(file)
-    print(filename)
-    complete_filename = "html_files/7_html_files/"+filename
-    html_file = open(complete_filename,'r')
-    soup = BeautifulSoup(html_file, 'html.parser')
+def findBanner(recordsArr):
+    bestMatch = []
+    maxLength = 0
+    for values in recordsArr:
+        element = values[0]
+        text = element.text
+        words_found = []
 
-    # STEP 1: FIND WHERE THE IDENTIFIER WORDS ARE, AND ACCESS ITS PARENT
-    for word in IDENTIFIER_WORDS:
-        pattern = r'\w*' + re.escape(word) + r'\w*'
-        element_with_keyword = soup.find_all(string=re.compile(pattern, re.IGNORECASE))
+        for word in SEARCH_TERMS:
+            if word in text:
+                words_found.append(word)
 
-        for elem in element_with_keyword:
-            # STEP 2: FIND THE FIRST ELEMENT (SELF, OR PARENT, ...) WITH A Z-INDEX OR FIXED POSITION
-            if(find_banner(elem)):
-                print(f"Found a cookie banner in file {file}!")
+        if len(words_found) > maxLength:
+            bestMatch = words_found
+
+    return bestMatch # return the best match
+
+
+def main():
+    iterableDir = os.fsencode(HTML_DIRECTORY_PATH)
+    for file in os.listdir(iterableDir):
+        # Parsing the current file
+        filename = os.fsdecode(file)
+        try:
+            soup = parseHtmlDir(filename)
+        except:
+            print("Could not parse file " + filename)
+
+        # Get the node count per element
+        returnValues = countNodes(soup.html, [])
+        recordsArr = returnValues[0]
+        totNodes = returnValues[1]
+
+        
+
+        for threshold in THRESHOLD_TEST_VALUES:
+            # Get small nodes
+            recordsArr = keepSmallNodes(recordsArr, totNodes, threshold)
+
+            # Search the small nodes until find the cookie banner
+            result = findBanner(recordsArr)
+            found = (len(result) > 0)
+            # Add the result to the result file --> write filename, true/false, the words that were found
+            filePath = 'bannerIdentificationResults.txt'
+            with open(filePath, 'a') as file:
+                result_str = '/'.join(result)  # Convert the list to a /-separated string (commas used to separate columns)
+                file.write(filename + "," + str(threshold) + "," + str(found) + "," + result_str + "\n")
+
+
+if __name__ == '__main__':
+    main()
