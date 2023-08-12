@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import os
-import re
 
 """
 - we assume a cookie banner if there is an element / sub-tree on the page that contains less than 5% of the nodes on the page
@@ -34,6 +33,7 @@ CORPUS_2 = ['agree', 'i agree','accept', 'accept all', 'accept cookies', 'i acce
             'other technologies']
 
 CORPUS_TEST_VALUES = [CORPUS_1, CORPUS_2]
+CORPUS_NAMES = ["shortCorpus","longCorpus"]
 
 def parseHtmlDir(filename):
         complete_filename = HTML_DIRECTORY_PATH+filename
@@ -62,7 +62,7 @@ def keepSmallNodes(recordsArr, totNodes, threshold):
     return recordsArr     
 
 
-def findBanner(recordsArr):
+def findBanner(recordsArr, corpus):
     bestMatch = []
     maxLength = 0
     for values in recordsArr:
@@ -70,7 +70,7 @@ def findBanner(recordsArr):
         text = element.text
         words_found = []
 
-        for word in SEARCH_TERMS:
+        for word in corpus:
             if word in text:
                 words_found.append(word)
 
@@ -96,19 +96,19 @@ def main():
         totNodes = returnValues[1]
 
         
+        for corpusIndex in range(len(CORPUS_TEST_VALUES)):
+            for threshold in THRESHOLD_TEST_VALUES:
+                # Get small nodes
+                recordsArr = keepSmallNodes(recordsArr, totNodes, threshold)
 
-        for threshold in THRESHOLD_TEST_VALUES:
-            # Get small nodes
-            recordsArr = keepSmallNodes(recordsArr, totNodes, threshold)
-
-            # Search the small nodes until find the cookie banner
-            result = findBanner(recordsArr)
-            found = (len(result) > 0)
-            # Add the result to the result file --> write filename, true/false, the words that were found
-            filePath = 'bannerIdentificationResults.txt'
-            with open(filePath, 'a') as file:
-                result_str = '/'.join(result)  # Convert the list to a /-separated string (commas used to separate columns)
-                file.write(filename + "," + str(threshold) + "," + str(found) + "," + result_str + "\n")
+                # Search the small nodes until find the cookie banner
+                result = findBanner(recordsArr, CORPUS_TEST_VALUES[corpusIndex])
+                found = (len(result) > 0)
+                # Add the result to the result file --> write filename, true/false, the words that were found
+                filePath = HTML_DIRECTORY_PATH+'bannerIdentificationResults.txt'
+                with open(filePath, 'a') as file:
+                    result_str = '/'.join(result)  # Convert the list to a /-separated string (commas used to separate columns)
+                    file.write(filename + "," + CORPUS_NAMES[corpusIndex] + "," + str(threshold) + "," + str(found) + "," + result_str + "\n")
 
 
 if __name__ == '__main__':

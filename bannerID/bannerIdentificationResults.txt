@@ -1,365 +1,730 @@
-Google Chrome_163.html,0.01,False,
-Google Chrome_163.html,0.05,False,
-Google Chrome_163.html,0.1,False,
-Google Chrome_163.html,0.15,False,
-Google Chrome_163.html,0.2,False,
-Google Chrome_skype.html,0.01,True,preferences
-Google Chrome_skype.html,0.05,True,preferences
-Google Chrome_skype.html,0.1,True,preferences
-Google Chrome_skype.html,0.15,True,preferences
-Google Chrome_skype.html,0.2,True,preferences
-Google Chrome_googletagmanager.html,0.01,False,
-Google Chrome_googletagmanager.html,0.05,False,
-Google Chrome_googletagmanager.html,0.1,False,
-Google Chrome_googletagmanager.html,0.15,False,
-Google Chrome_googletagmanager.html,0.2,False,
-Google Chrome_instagram.html,0.01,True,accept/preferences/partners
-Google Chrome_instagram.html,0.05,True,accept/preferences/partners
-Google Chrome_instagram.html,0.1,True,accept/preferences/partners
-Google Chrome_instagram.html,0.15,True,accept/preferences/partners
-Google Chrome_instagram.html,0.2,True,accept/preferences/partners
-Google Chrome_linkedin.html,0.01,False,
-Google Chrome_linkedin.html,0.05,False,
-Google Chrome_linkedin.html,0.1,False,
-Google Chrome_linkedin.html,0.15,False,
-Google Chrome_linkedin.html,0.2,False,
-Google Chrome_yandex.html,0.01,False,
-Google Chrome_yandex.html,0.05,False,
-Google Chrome_yandex.html,0.1,False,
-Google Chrome_yandex.html,0.15,False,
-Google Chrome_yandex.html,0.2,False,
-Google Chrome_vimeo.html,0.01,False,
-Google Chrome_vimeo.html,0.05,False,
-Google Chrome_vimeo.html,0.1,False,
-Google Chrome_vimeo.html,0.15,False,
-Google Chrome_vimeo.html,0.2,False,
-Google Chrome_msn.html,0.01,True,agree/preferences/learn more/our partners/partners/third-party
-Google Chrome_msn.html,0.05,True,agree/preferences/learn more/our partners/partners/third-party
-Google Chrome_msn.html,0.1,True,agree/preferences/learn more/our partners/partners/third-party
-Google Chrome_msn.html,0.15,True,agree/preferences/learn more/our partners/partners/third-party
-Google Chrome_msn.html,0.2,True,agree/preferences/learn more/our partners/partners/third-party
-Google Chrome_sannysoft.html,0.01,False,
-Google Chrome_sannysoft.html,0.05,False,
-Google Chrome_sannysoft.html,0.1,False,
-Google Chrome_sannysoft.html,0.15,False,
-Google Chrome_sannysoft.html,0.2,False,
-Google Chrome_vk.html,0.01,True,accept/decline
-Google Chrome_vk.html,0.05,True,accept/decline
-Google Chrome_vk.html,0.1,True,accept/decline
-Google Chrome_vk.html,0.15,True,accept/decline
-Google Chrome_vk.html,0.2,True,accept/decline
-Google Chrome_dropbox.html,0.01,True,agree/preferences/partners
-Google Chrome_dropbox.html,0.05,True,agree/preferences/partners
-Google Chrome_dropbox.html,0.1,True,agree/preferences/partners
-Google Chrome_dropbox.html,0.15,True,agree/preferences/partners
-Google Chrome_dropbox.html,0.2,True,agree/preferences/partners
-Google Chrome_googlevideo.html,0.01,False,
-Google Chrome_googlevideo.html,0.05,False,
-Google Chrome_googlevideo.html,0.1,False,
-Google Chrome_googlevideo.html,0.15,False,
-Google Chrome_googlevideo.html,0.2,False,
-Google Chrome_goo.html,0.01,False,
-Google Chrome_goo.html,0.05,False,
-Google Chrome_goo.html,0.1,False,
-Google Chrome_goo.html,0.15,False,
-Google Chrome_goo.html,0.2,False,
-Google Chrome_bit.html,0.01,False,
-Google Chrome_bit.html,0.05,False,
-Google Chrome_bit.html,0.1,False,
-Google Chrome_bit.html,0.15,False,
-Google Chrome_bit.html,0.2,False,
-Google Chrome_xvideos.html,0.01,True,agree/more information
-Google Chrome_xvideos.html,0.05,True,agree/more information
-Google Chrome_xvideos.html,0.1,True,agree/more information
-Google Chrome_xvideos.html,0.15,True,agree/more information
-Google Chrome_xvideos.html,0.2,True,agree/more information
-Google Chrome_apple.html,0.01,False,
-Google Chrome_apple.html,0.05,False,
-Google Chrome_apple.html,0.1,False,
-Google Chrome_apple.html,0.15,False,
-Google Chrome_apple.html,0.2,False,
-Google Chrome_bing.html,0.01,False,
-Google Chrome_bing.html,0.05,False,
-Google Chrome_bing.html,0.1,False,
-Google Chrome_bing.html,0.15,False,
-Google Chrome_bing.html,0.2,False,
-Google Chrome_github.html,0.01,False,
-Google Chrome_github.html,0.05,False,
-Google Chrome_github.html,0.1,False,
-Google Chrome_github.html,0.15,False,
-Google Chrome_github.html,0.2,False,
-Google Chrome_doubleclick.html,0.01,True,partners
-Google Chrome_doubleclick.html,0.05,True,partners
-Google Chrome_doubleclick.html,0.1,True,partners
-Google Chrome_doubleclick.html,0.15,True,partners
-Google Chrome_doubleclick.html,0.2,True,partners
-Google Chrome_whatsapp.html,0.01,True,accept
-Google Chrome_whatsapp.html,0.05,True,accept
-Google Chrome_whatsapp.html,0.1,True,accept
-Google Chrome_whatsapp.html,0.15,True,accept
-Google Chrome_whatsapp.html,0.2,True,accept
-Google Chrome_myfritz.html,0.01,False,
-Google Chrome_myfritz.html,0.05,False,
-Google Chrome_myfritz.html,0.1,False,
-Google Chrome_myfritz.html,0.15,False,
-Google Chrome_myfritz.html,0.2,False,
-Google Chrome_reddit.html,0.01,True,agree/accept/more information/partners/similar technologies
-Google Chrome_reddit.html,0.05,True,agree/accept/more information/partners/similar technologies
-Google Chrome_reddit.html,0.1,True,agree/accept/more information/partners/similar technologies
-Google Chrome_reddit.html,0.15,True,agree/accept/more information/partners/similar technologies
-Google Chrome_reddit.html,0.2,True,agree/accept/more information/partners/similar technologies
-Google Chrome_iairgroup.html,0.01,True,agree/cookie notice
-Google Chrome_iairgroup.html,0.05,True,agree/cookie notice
-Google Chrome_iairgroup.html,0.1,True,agree/cookie notice
-Google Chrome_iairgroup.html,0.15,True,agree/cookie notice
-Google Chrome_iairgroup.html,0.2,True,agree/cookie notice
-Google Chrome_live.html,0.01,True,agree
-Google Chrome_live.html,0.05,True,agree
-Google Chrome_live.html,0.1,True,agree
-Google Chrome_live.html,0.15,True,agree
-Google Chrome_live.html,0.2,True,agree
-Google Chrome_facebook.html,0.01,True,preferences/learn more/partners/third-party/similar technologies
-Google Chrome_facebook.html,0.05,True,preferences/learn more/partners/third-party/similar technologies
-Google Chrome_facebook.html,0.1,True,preferences/learn more/partners/third-party/similar technologies
-Google Chrome_facebook.html,0.15,True,preferences/learn more/partners/third-party/similar technologies
-Google Chrome_facebook.html,0.2,True,preferences/learn more/partners/third-party/similar technologies
-Google Chrome_adobe.html,0.01,True,preferences
-Google Chrome_adobe.html,0.05,True,preferences
-Google Chrome_adobe.html,0.1,True,preferences
-Google Chrome_adobe.html,0.15,True,preferences
-Google Chrome_adobe.html,0.2,True,preferences
-Google Chrome_sharepoint.html,0.01,True,learn more
-Google Chrome_sharepoint.html,0.05,True,learn more
-Google Chrome_sharepoint.html,0.1,True,learn more
-Google Chrome_sharepoint.html,0.15,True,learn more
-Google Chrome_sharepoint.html,0.2,True,learn more
-Google Chrome_gandi.html,0.01,True,accept
-Google Chrome_gandi.html,0.05,True,accept
-Google Chrome_gandi.html,0.1,True,accept
-Google Chrome_gandi.html,0.15,True,accept
-Google Chrome_gandi.html,0.2,True,accept
-Google Chrome_nytimes.html,0.01,True,accept/preferences/learn more/privacy policy
-Google Chrome_nytimes.html,0.05,True,accept/preferences/learn more/privacy policy
-Google Chrome_nytimes.html,0.1,True,accept/preferences/learn more/privacy policy
-Google Chrome_nytimes.html,0.15,True,accept/preferences/learn more/privacy policy
-Google Chrome_nytimes.html,0.2,True,accept/preferences/learn more/privacy policy
-Google Chrome_zhihu.html,0.01,False,
-Google Chrome_zhihu.html,0.05,False,
-Google Chrome_zhihu.html,0.1,False,
-Google Chrome_zhihu.html,0.15,False,
-Google Chrome_zhihu.html,0.2,False,
-Google Chrome_netflix.html,0.01,True,accept/accept cookies/cookie preferences/preferences/more information/partners/similar technologies
-Google Chrome_netflix.html,0.05,True,accept/accept cookies/cookie preferences/preferences/more information/partners/similar technologies
-Google Chrome_netflix.html,0.1,True,accept/accept cookies/cookie preferences/preferences/more information/partners/similar technologies
-Google Chrome_netflix.html,0.15,True,accept/accept cookies/cookie preferences/preferences/more information/partners/similar technologies
-Google Chrome_netflix.html,0.2,True,accept/accept cookies/cookie preferences/preferences/more information/partners/similar technologies
-Google Chrome_google.html,0.01,False,
-Google Chrome_google.html,0.05,False,
-Google Chrome_google.html,0.1,False,
-Google Chrome_google.html,0.15,False,
-Google Chrome_google.html,0.2,False,
-Google Chrome_warnerbros.html,0.01,True,agree
-Google Chrome_warnerbros.html,0.05,True,agree
-Google Chrome_warnerbros.html,0.1,True,agree
-Google Chrome_warnerbros.html,0.15,True,agree
-Google Chrome_warnerbros.html,0.2,True,agree
-Google Chrome_wordpress.html,0.01,True,accept/preferences/our partners/partners
-Google Chrome_wordpress.html,0.05,True,accept/preferences/our partners/partners
-Google Chrome_wordpress.html,0.1,True,accept/preferences/our partners/partners
-Google Chrome_wordpress.html,0.15,True,accept/preferences/our partners/partners
-Google Chrome_wordpress.html,0.2,True,accept/preferences/our partners/partners
-Google Chrome_digicert.html,0.01,True,agree/preferences/learn more/more information/partners
-Google Chrome_digicert.html,0.05,True,agree/preferences/learn more/more information/partners
-Google Chrome_digicert.html,0.1,True,agree/preferences/learn more/more information/partners
-Google Chrome_digicert.html,0.15,True,agree/preferences/learn more/more information/partners
-Google Chrome_digicert.html,0.2,True,agree/preferences/learn more/more information/partners
-Google Chrome_blogspot.html,0.01,False,
-Google Chrome_blogspot.html,0.05,False,
-Google Chrome_blogspot.html,0.1,False,
-Google Chrome_blogspot.html,0.15,False,
-Google Chrome_blogspot.html,0.2,False,
-Google Chrome_nih.html,0.01,True,partners
-Google Chrome_nih.html,0.05,True,partners
-Google Chrome_nih.html,0.1,True,partners
-Google Chrome_nih.html,0.15,True,partners
-Google Chrome_nih.html,0.2,True,partners
-Google Chrome_youtube.html,0.01,True,agree
-Google Chrome_youtube.html,0.05,True,agree
-Google Chrome_youtube.html,0.1,True,agree
-Google Chrome_youtube.html,0.15,True,agree
-Google Chrome_youtube.html,0.2,True,agree
-Google Chrome_office365.html,0.01,True,partners
-Google Chrome_office365.html,0.05,True,partners
-Google Chrome_office365.html,0.1,True,partners
-Google Chrome_office365.html,0.15,True,partners
-Google Chrome_office365.html,0.2,True,partners
-Google Chrome_intuit.html,0.01,True,agree
-Google Chrome_intuit.html,0.05,True,agree
-Google Chrome_intuit.html,0.1,True,agree
-Google Chrome_intuit.html,0.15,True,agree
-Google Chrome_intuit.html,0.2,True,agree
-Google Chrome_taobao.html,0.01,True,accept
-Google Chrome_taobao.html,0.05,True,accept
-Google Chrome_taobao.html,0.1,True,accept
-Google Chrome_taobao.html,0.15,True,accept
-Google Chrome_taobao.html,0.2,True,accept
-Google Chrome_microsoft.html,0.01,False,
-Google Chrome_microsoft.html,0.05,False,
-Google Chrome_microsoft.html,0.1,False,
-Google Chrome_microsoft.html,0.15,False,
-Google Chrome_microsoft.html,0.2,False,
-Google Chrome_fastly.html,0.01,True,agree/accept/cookie preferences/preferences
-Google Chrome_fastly.html,0.05,True,agree/accept/cookie preferences/preferences
-Google Chrome_fastly.html,0.1,True,agree/accept/cookie preferences/preferences
-Google Chrome_fastly.html,0.15,True,agree/accept/cookie preferences/preferences
-Google Chrome_fastly.html,0.2,True,agree/accept/cookie preferences/preferences
-Google Chrome_spotify.html,0.01,False,
-Google Chrome_spotify.html,0.05,False,
-Google Chrome_spotify.html,0.1,False,
-Google Chrome_spotify.html,0.15,False,
-Google Chrome_spotify.html,0.2,False,
-Google Chrome_azure.html,0.01,True,partners
-Google Chrome_azure.html,0.05,True,partners
-Google Chrome_azure.html,0.1,True,partners
-Google Chrome_azure.html,0.15,True,partners
-Google Chrome_azure.html,0.2,True,partners
-Google Chrome_com.html,0.01,True,accept/preferences/learn more/privacy policy
-Google Chrome_com.html,0.05,True,accept/preferences/learn more/privacy policy
-Google Chrome_com.html,0.1,True,accept/preferences/learn more/privacy policy
-Google Chrome_com.html,0.15,True,accept/preferences/learn more/privacy policy
-Google Chrome_com.html,0.2,True,accept/preferences/learn more/privacy policy
-Google Chrome_mail.html,0.01,True,accept
-Google Chrome_mail.html,0.05,True,accept
-Google Chrome_mail.html,0.1,True,accept
-Google Chrome_mail.html,0.15,True,accept
-Google Chrome_mail.html,0.2,True,accept
-Google Chrome_wikipedia.html,0.01,False,
-Google Chrome_wikipedia.html,0.05,False,
-Google Chrome_wikipedia.html,0.1,False,
-Google Chrome_wikipedia.html,0.15,False,
-Google Chrome_wikipedia.html,0.2,False,
-Google Chrome_tiktok.html,0.01,True,agree
-Google Chrome_tiktok.html,0.05,True,agree
-Google Chrome_tiktok.html,0.1,True,agree
-Google Chrome_tiktok.html,0.15,True,agree
-Google Chrome_tiktok.html,0.2,True,agree
-Google Chrome_canva.html,0.01,True,accept/cookie policy
-Google Chrome_canva.html,0.05,True,accept/cookie policy
-Google Chrome_canva.html,0.1,True,accept/cookie policy
-Google Chrome_canva.html,0.15,True,accept/cookie policy
-Google Chrome_canva.html,0.2,True,accept/cookie policy
-Google Chrome_outlook.html,0.01,True,agree
-Google Chrome_outlook.html,0.05,True,agree
-Google Chrome_outlook.html,0.1,True,agree
-Google Chrome_outlook.html,0.15,True,agree
-Google Chrome_outlook.html,0.2,True,agree
-Google Chrome_amazon.html,0.01,True,accept
-Google Chrome_amazon.html,0.05,True,accept
-Google Chrome_amazon.html,0.1,True,accept
-Google Chrome_amazon.html,0.15,True,accept
-Google Chrome_amazon.html,0.2,True,accept
-Google Chrome_fandom.html,0.01,True,accept/our partners/partners
-Google Chrome_fandom.html,0.05,True,accept/our partners/partners
-Google Chrome_fandom.html,0.1,True,accept/our partners/partners
-Google Chrome_fandom.html,0.15,True,accept/our partners/partners
-Google Chrome_fandom.html,0.2,True,accept/our partners/partners
-Google Chrome_openai.html,0.01,False,
-Google Chrome_openai.html,0.05,False,
-Google Chrome_openai.html,0.1,False,
-Google Chrome_openai.html,0.15,False,
-Google Chrome_openai.html,0.2,False,
-Google Chrome_europa.html,0.01,False,
-Google Chrome_europa.html,0.05,False,
-Google Chrome_europa.html,0.1,False,
-Google Chrome_europa.html,0.15,False,
-Google Chrome_europa.html,0.2,False,
-Google Chrome_qq.html,0.01,False,
-Google Chrome_qq.html,0.05,False,
-Google Chrome_qq.html,0.1,False,
-Google Chrome_qq.html,0.15,False,
-Google Chrome_qq.html,0.2,False,
-Google Chrome_office.html,0.01,False,
-Google Chrome_office.html,0.05,False,
-Google Chrome_office.html,0.1,False,
-Google Chrome_office.html,0.15,False,
-Google Chrome_office.html,0.2,False,
-Google Chrome_jd.html,0.01,False,
-Google Chrome_jd.html,0.05,False,
-Google Chrome_jd.html,0.1,False,
-Google Chrome_jd.html,0.15,False,
-Google Chrome_jd.html,0.2,False,
-Google Chrome_baidu.html,0.01,False,
-Google Chrome_baidu.html,0.05,False,
-Google Chrome_baidu.html,0.1,False,
-Google Chrome_baidu.html,0.15,False,
-Google Chrome_baidu.html,0.2,False,
-Google Chrome_fbcdn.html,0.01,True,preferences/learn more/partners/third-party/similar technologies
-Google Chrome_fbcdn.html,0.05,True,preferences/learn more/partners/third-party/similar technologies
-Google Chrome_fbcdn.html,0.1,True,preferences/learn more/partners/third-party/similar technologies
-Google Chrome_fbcdn.html,0.15,True,preferences/learn more/partners/third-party/similar technologies
-Google Chrome_fbcdn.html,0.2,True,preferences/learn more/partners/third-party/similar technologies
-Google Chrome_googledomains.html,0.01,True,agree/partners
-Google Chrome_googledomains.html,0.05,True,agree/partners
-Google Chrome_googledomains.html,0.1,True,agree/partners
-Google Chrome_googledomains.html,0.15,True,agree/partners
-Google Chrome_googledomains.html,0.2,True,agree/partners
-Google Chrome_bilibili.html,0.01,False,
-Google Chrome_bilibili.html,0.05,False,
-Google Chrome_bilibili.html,0.1,False,
-Google Chrome_bilibili.html,0.15,False,
-Google Chrome_bilibili.html,0.2,False,
-Google Chrome_yahoo.html,0.01,True,privacy policy/cookie policy/our partners/partners
-Google Chrome_yahoo.html,0.05,True,privacy policy/cookie policy/our partners/partners
-Google Chrome_yahoo.html,0.1,True,privacy policy/cookie policy/our partners/partners
-Google Chrome_yahoo.html,0.15,True,privacy policy/cookie policy/our partners/partners
-Google Chrome_yahoo.html,0.2,True,privacy policy/cookie policy/our partners/partners
-Google Chrome_zoom.html,0.01,True,accept/decline/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third-party/similar technologies
-Google Chrome_zoom.html,0.05,True,accept/decline/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third-party/similar technologies
-Google Chrome_zoom.html,0.1,True,accept/decline/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third-party/similar technologies
-Google Chrome_zoom.html,0.15,True,accept/decline/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third-party/similar technologies
-Google Chrome_zoom.html,0.2,True,accept/decline/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third-party/similar technologies
-Google Chrome_pinterest.html,0.01,True,partners
-Google Chrome_pinterest.html,0.05,True,partners
-Google Chrome_pinterest.html,0.1,True,partners
-Google Chrome_pinterest.html,0.15,True,partners
-Google Chrome_pinterest.html,0.2,True,partners
-Google Chrome_ebay.html,0.01,False,
-Google Chrome_ebay.html,0.05,False,
-Google Chrome_ebay.html,0.1,False,
-Google Chrome_ebay.html,0.15,False,
-Google Chrome_ebay.html,0.2,False,
-Google Chrome_paypal.html,0.01,True,accept/accept cookies/learn more/our partners/partners
-Google Chrome_paypal.html,0.05,True,accept/accept cookies/learn more/our partners/partners
-Google Chrome_paypal.html,0.1,True,accept/accept cookies/learn more/our partners/partners
-Google Chrome_paypal.html,0.15,True,accept/accept cookies/learn more/our partners/partners
-Google Chrome_paypal.html,0.2,True,accept/accept cookies/learn more/our partners/partners
-Google Chrome_tumblr.html,0.01,True,accept/decline/preferences/more information/our partners/partners
-Google Chrome_tumblr.html,0.05,True,accept/decline/preferences/more information/our partners/partners
-Google Chrome_tumblr.html,0.1,True,accept/decline/preferences/more information/our partners/partners
-Google Chrome_tumblr.html,0.15,True,accept/decline/preferences/more information/our partners/partners
-Google Chrome_tumblr.html,0.2,True,accept/decline/preferences/more information/our partners/partners
-Google Chrome_weibo.html,0.01,False,
-Google Chrome_weibo.html,0.05,False,
-Google Chrome_weibo.html,0.1,False,
-Google Chrome_weibo.html,0.15,False,
-Google Chrome_weibo.html,0.2,False,
-Google Chrome_t.html,0.01,False,
-Google Chrome_t.html,0.05,False,
-Google Chrome_t.html,0.1,False,
-Google Chrome_t.html,0.15,False,
-Google Chrome_t.html,0.2,False,
-Google Chrome_cloudflare.html,0.01,True,agree/privacy policy/cookie policy
-Google Chrome_cloudflare.html,0.05,True,agree/privacy policy/cookie policy
-Google Chrome_cloudflare.html,0.1,True,agree/privacy policy/cookie policy
-Google Chrome_cloudflare.html,0.15,True,agree/privacy policy/cookie policy
-Google Chrome_cloudflare.html,0.2,True,agree/privacy policy/cookie policy
-Google Chrome_macromedia.html,0.01,True,preferences
-Google Chrome_macromedia.html,0.05,True,preferences
-Google Chrome_macromedia.html,0.1,True,preferences
-Google Chrome_macromedia.html,0.15,True,preferences
-Google Chrome_macromedia.html,0.2,True,preferences
-Google Chrome_googleusercontent.html,0.01,False,
-Google Chrome_googleusercontent.html,0.05,False,
-Google Chrome_googleusercontent.html,0.1,False,
-Google Chrome_googleusercontent.html,0.15,False,
-Google Chrome_googleusercontent.html,0.2,False,
+Google Chrome_163.html,shortCorpus,0.01,False,
+Google Chrome_163.html,shortCorpus,0.05,False,
+Google Chrome_163.html,shortCorpus,0.1,False,
+Google Chrome_163.html,shortCorpus,0.15,False,
+Google Chrome_163.html,shortCorpus,0.2,False,
+Google Chrome_163.html,longCorpus,0.01,True,ok
+Google Chrome_163.html,longCorpus,0.05,True,ok
+Google Chrome_163.html,longCorpus,0.1,True,ok
+Google Chrome_163.html,longCorpus,0.15,True,ok
+Google Chrome_163.html,longCorpus,0.2,True,ok
+Google Chrome_skype.html,shortCorpus,0.01,True,reject
+Google Chrome_skype.html,shortCorpus,0.05,True,reject
+Google Chrome_skype.html,shortCorpus,0.1,True,reject
+Google Chrome_skype.html,shortCorpus,0.15,True,reject
+Google Chrome_skype.html,shortCorpus,0.2,True,reject
+Google Chrome_skype.html,longCorpus,0.01,True,ok/reject/optional cookies
+Google Chrome_skype.html,longCorpus,0.05,True,ok/reject/optional cookies
+Google Chrome_skype.html,longCorpus,0.1,True,ok/reject/optional cookies
+Google Chrome_skype.html,longCorpus,0.15,True,ok/reject/optional cookies
+Google Chrome_skype.html,longCorpus,0.2,True,ok/reject/optional cookies
+Google Chrome_googletagmanager.html,shortCorpus,0.01,False,
+Google Chrome_googletagmanager.html,shortCorpus,0.05,False,
+Google Chrome_googletagmanager.html,shortCorpus,0.1,False,
+Google Chrome_googletagmanager.html,shortCorpus,0.15,False,
+Google Chrome_googletagmanager.html,shortCorpus,0.2,False,
+Google Chrome_googletagmanager.html,longCorpus,0.01,False,
+Google Chrome_googletagmanager.html,longCorpus,0.05,False,
+Google Chrome_googletagmanager.html,longCorpus,0.1,False,
+Google Chrome_googletagmanager.html,longCorpus,0.15,False,
+Google Chrome_googletagmanager.html,longCorpus,0.2,False,
+Google Chrome_instagram.html,shortCorpus,0.01,True,accept/preferences/partners
+Google Chrome_instagram.html,shortCorpus,0.05,True,accept/preferences/partners
+Google Chrome_instagram.html,shortCorpus,0.1,True,accept/preferences/partners
+Google Chrome_instagram.html,shortCorpus,0.15,True,accept/preferences/partners
+Google Chrome_instagram.html,shortCorpus,0.2,True,accept/preferences/partners
+Google Chrome_instagram.html,longCorpus,0.01,True,ok
+Google Chrome_instagram.html,longCorpus,0.05,True,ok
+Google Chrome_instagram.html,longCorpus,0.1,True,ok
+Google Chrome_instagram.html,longCorpus,0.15,True,ok
+Google Chrome_instagram.html,longCorpus,0.2,True,ok
+Google Chrome_linkedin.html,shortCorpus,0.01,False,
+Google Chrome_linkedin.html,shortCorpus,0.05,False,
+Google Chrome_linkedin.html,shortCorpus,0.1,False,
+Google Chrome_linkedin.html,shortCorpus,0.15,False,
+Google Chrome_linkedin.html,shortCorpus,0.2,False,
+Google Chrome_linkedin.html,longCorpus,0.01,True,ok
+Google Chrome_linkedin.html,longCorpus,0.05,True,ok
+Google Chrome_linkedin.html,longCorpus,0.1,True,ok
+Google Chrome_linkedin.html,longCorpus,0.15,True,ok
+Google Chrome_linkedin.html,longCorpus,0.2,True,ok
+Google Chrome_yandex.html,shortCorpus,0.01,False,
+Google Chrome_yandex.html,shortCorpus,0.05,False,
+Google Chrome_yandex.html,shortCorpus,0.1,False,
+Google Chrome_yandex.html,shortCorpus,0.15,False,
+Google Chrome_yandex.html,shortCorpus,0.2,False,
+Google Chrome_yandex.html,longCorpus,0.01,True,ok
+Google Chrome_yandex.html,longCorpus,0.05,True,ok
+Google Chrome_yandex.html,longCorpus,0.1,True,ok
+Google Chrome_yandex.html,longCorpus,0.15,True,ok
+Google Chrome_yandex.html,longCorpus,0.2,True,ok
+Google Chrome_vimeo.html,shortCorpus,0.01,True,reject
+Google Chrome_vimeo.html,shortCorpus,0.05,True,reject
+Google Chrome_vimeo.html,shortCorpus,0.1,True,reject
+Google Chrome_vimeo.html,shortCorpus,0.15,True,reject
+Google Chrome_vimeo.html,shortCorpus,0.2,True,reject
+Google Chrome_vimeo.html,longCorpus,0.01,True,ok
+Google Chrome_vimeo.html,longCorpus,0.05,True,ok
+Google Chrome_vimeo.html,longCorpus,0.1,True,ok
+Google Chrome_vimeo.html,longCorpus,0.15,True,ok
+Google Chrome_vimeo.html,longCorpus,0.2,True,ok
+Google Chrome_msn.html,shortCorpus,0.01,True,agree/preferences/learn more/our partners/partners/third-party
+Google Chrome_msn.html,shortCorpus,0.05,True,agree/preferences/learn more/our partners/partners/third-party
+Google Chrome_msn.html,shortCorpus,0.1,True,agree/preferences/learn more/our partners/partners/third-party
+Google Chrome_msn.html,shortCorpus,0.15,True,agree/preferences/learn more/our partners/partners/third-party
+Google Chrome_msn.html,shortCorpus,0.2,True,agree/preferences/learn more/our partners/partners/third-party
+Google Chrome_msn.html,longCorpus,0.01,True,agree/ok/essential/preferences/learn more/our partners/partners/vendors
+Google Chrome_msn.html,longCorpus,0.05,True,agree/ok/essential/preferences/learn more/our partners/partners/vendors
+Google Chrome_msn.html,longCorpus,0.1,True,agree/ok/essential/preferences/learn more/our partners/partners/vendors
+Google Chrome_msn.html,longCorpus,0.15,True,agree/ok/essential/preferences/learn more/our partners/partners/vendors
+Google Chrome_msn.html,longCorpus,0.2,True,agree/ok/essential/preferences/learn more/our partners/partners/vendors
+Google Chrome_sannysoft.html,shortCorpus,0.01,False,
+Google Chrome_sannysoft.html,shortCorpus,0.05,False,
+Google Chrome_sannysoft.html,shortCorpus,0.1,False,
+Google Chrome_sannysoft.html,shortCorpus,0.15,False,
+Google Chrome_sannysoft.html,shortCorpus,0.2,False,
+Google Chrome_sannysoft.html,longCorpus,0.01,True,ok
+Google Chrome_sannysoft.html,longCorpus,0.05,True,ok
+Google Chrome_sannysoft.html,longCorpus,0.1,True,ok
+Google Chrome_sannysoft.html,longCorpus,0.15,True,ok
+Google Chrome_sannysoft.html,longCorpus,0.2,True,ok
+Google Chrome_vk.html,shortCorpus,0.01,True,accept/reject/decline
+Google Chrome_vk.html,shortCorpus,0.05,True,accept/reject/decline
+Google Chrome_vk.html,shortCorpus,0.1,True,accept/reject/decline
+Google Chrome_vk.html,shortCorpus,0.15,True,accept/reject/decline
+Google Chrome_vk.html,shortCorpus,0.2,True,accept/reject/decline
+Google Chrome_vk.html,longCorpus,0.01,True,required
+Google Chrome_vk.html,longCorpus,0.05,True,required
+Google Chrome_vk.html,longCorpus,0.1,True,required
+Google Chrome_vk.html,longCorpus,0.15,True,required
+Google Chrome_vk.html,longCorpus,0.2,True,required
+Google Chrome_dropbox.html,shortCorpus,0.01,True,agree/preferences/partners
+Google Chrome_dropbox.html,shortCorpus,0.05,True,agree/preferences/partners
+Google Chrome_dropbox.html,shortCorpus,0.1,True,agree/preferences/partners
+Google Chrome_dropbox.html,shortCorpus,0.15,True,agree/preferences/partners
+Google Chrome_dropbox.html,shortCorpus,0.2,True,agree/preferences/partners
+Google Chrome_dropbox.html,longCorpus,0.01,True,agree/ok/preferences/partners/vendors
+Google Chrome_dropbox.html,longCorpus,0.05,True,agree/ok/preferences/partners/vendors
+Google Chrome_dropbox.html,longCorpus,0.1,True,agree/ok/preferences/partners/vendors
+Google Chrome_dropbox.html,longCorpus,0.15,True,agree/ok/preferences/partners/vendors
+Google Chrome_dropbox.html,longCorpus,0.2,True,agree/ok/preferences/partners/vendors
+Google Chrome_googlevideo.html,shortCorpus,0.01,False,
+Google Chrome_googlevideo.html,shortCorpus,0.05,False,
+Google Chrome_googlevideo.html,shortCorpus,0.1,False,
+Google Chrome_googlevideo.html,shortCorpus,0.15,False,
+Google Chrome_googlevideo.html,shortCorpus,0.2,False,
+Google Chrome_googlevideo.html,longCorpus,0.01,False,
+Google Chrome_googlevideo.html,longCorpus,0.05,False,
+Google Chrome_googlevideo.html,longCorpus,0.1,False,
+Google Chrome_googlevideo.html,longCorpus,0.15,False,
+Google Chrome_googlevideo.html,longCorpus,0.2,False,
+Google Chrome_goo.html,shortCorpus,0.01,False,
+Google Chrome_goo.html,shortCorpus,0.05,False,
+Google Chrome_goo.html,shortCorpus,0.1,False,
+Google Chrome_goo.html,shortCorpus,0.15,False,
+Google Chrome_goo.html,shortCorpus,0.2,False,
+Google Chrome_goo.html,longCorpus,0.01,False,
+Google Chrome_goo.html,longCorpus,0.05,False,
+Google Chrome_goo.html,longCorpus,0.1,False,
+Google Chrome_goo.html,longCorpus,0.15,False,
+Google Chrome_goo.html,longCorpus,0.2,False,
+Google Chrome_bit.html,shortCorpus,0.01,False,
+Google Chrome_bit.html,shortCorpus,0.05,False,
+Google Chrome_bit.html,shortCorpus,0.1,False,
+Google Chrome_bit.html,shortCorpus,0.15,False,
+Google Chrome_bit.html,shortCorpus,0.2,False,
+Google Chrome_bit.html,longCorpus,0.01,True,ok/required
+Google Chrome_bit.html,longCorpus,0.05,True,ok/required
+Google Chrome_bit.html,longCorpus,0.1,True,ok/required
+Google Chrome_bit.html,longCorpus,0.15,True,ok/required
+Google Chrome_bit.html,longCorpus,0.2,True,ok/required
+Google Chrome_xvideos.html,shortCorpus,0.01,True,agree/more information
+Google Chrome_xvideos.html,shortCorpus,0.05,True,agree/more information
+Google Chrome_xvideos.html,shortCorpus,0.1,True,agree/more information
+Google Chrome_xvideos.html,shortCorpus,0.15,True,agree/more information
+Google Chrome_xvideos.html,shortCorpus,0.2,True,agree/more information
+Google Chrome_xvideos.html,longCorpus,0.01,True,agree/ok/more information
+Google Chrome_xvideos.html,longCorpus,0.05,True,agree/ok/more information
+Google Chrome_xvideos.html,longCorpus,0.1,True,agree/ok/more information
+Google Chrome_xvideos.html,longCorpus,0.15,True,agree/ok/more information
+Google Chrome_xvideos.html,longCorpus,0.2,True,agree/ok/more information
+Google Chrome_apple.html,shortCorpus,0.01,False,
+Google Chrome_apple.html,shortCorpus,0.05,False,
+Google Chrome_apple.html,shortCorpus,0.1,False,
+Google Chrome_apple.html,shortCorpus,0.15,False,
+Google Chrome_apple.html,shortCorpus,0.2,False,
+Google Chrome_apple.html,longCorpus,0.01,True,ok/required
+Google Chrome_apple.html,longCorpus,0.05,True,ok/required
+Google Chrome_apple.html,longCorpus,0.1,True,ok/required
+Google Chrome_apple.html,longCorpus,0.15,True,ok/required
+Google Chrome_apple.html,longCorpus,0.2,True,ok/required
+Google Chrome_bing.html,shortCorpus,0.01,False,
+Google Chrome_bing.html,shortCorpus,0.05,False,
+Google Chrome_bing.html,shortCorpus,0.1,False,
+Google Chrome_bing.html,shortCorpus,0.15,False,
+Google Chrome_bing.html,shortCorpus,0.2,False,
+Google Chrome_bing.html,longCorpus,0.01,True,ok
+Google Chrome_bing.html,longCorpus,0.05,True,ok
+Google Chrome_bing.html,longCorpus,0.1,True,ok
+Google Chrome_bing.html,longCorpus,0.15,True,ok
+Google Chrome_bing.html,longCorpus,0.2,True,ok
+Google Chrome_github.html,shortCorpus,0.01,False,
+Google Chrome_github.html,shortCorpus,0.05,False,
+Google Chrome_github.html,shortCorpus,0.1,False,
+Google Chrome_github.html,shortCorpus,0.15,False,
+Google Chrome_github.html,shortCorpus,0.2,False,
+Google Chrome_github.html,longCorpus,0.01,True,ok
+Google Chrome_github.html,longCorpus,0.05,True,ok
+Google Chrome_github.html,longCorpus,0.1,True,ok
+Google Chrome_github.html,longCorpus,0.15,True,ok
+Google Chrome_github.html,longCorpus,0.2,True,ok
+Google Chrome_doubleclick.html,shortCorpus,0.01,True,partners
+Google Chrome_doubleclick.html,shortCorpus,0.05,True,partners
+Google Chrome_doubleclick.html,shortCorpus,0.1,True,partners
+Google Chrome_doubleclick.html,shortCorpus,0.15,True,partners
+Google Chrome_doubleclick.html,shortCorpus,0.2,True,partners
+Google Chrome_doubleclick.html,longCorpus,0.01,True,ok/got it/partners
+Google Chrome_doubleclick.html,longCorpus,0.05,True,ok/got it/partners
+Google Chrome_doubleclick.html,longCorpus,0.1,True,ok/got it/partners
+Google Chrome_doubleclick.html,longCorpus,0.15,True,ok/got it/partners
+Google Chrome_doubleclick.html,longCorpus,0.2,True,ok/got it/partners
+Google Chrome_whatsapp.html,shortCorpus,0.01,True,accept
+Google Chrome_whatsapp.html,shortCorpus,0.05,True,accept
+Google Chrome_whatsapp.html,shortCorpus,0.1,True,accept
+Google Chrome_whatsapp.html,shortCorpus,0.15,True,accept
+Google Chrome_whatsapp.html,shortCorpus,0.2,True,accept
+Google Chrome_whatsapp.html,longCorpus,0.01,True,ok
+Google Chrome_whatsapp.html,longCorpus,0.05,True,ok
+Google Chrome_whatsapp.html,longCorpus,0.1,True,ok
+Google Chrome_whatsapp.html,longCorpus,0.15,True,ok
+Google Chrome_whatsapp.html,longCorpus,0.2,True,ok
+Google Chrome_myfritz.html,shortCorpus,0.01,False,
+Google Chrome_myfritz.html,shortCorpus,0.05,False,
+Google Chrome_myfritz.html,shortCorpus,0.1,False,
+Google Chrome_myfritz.html,shortCorpus,0.15,False,
+Google Chrome_myfritz.html,shortCorpus,0.2,False,
+Google Chrome_myfritz.html,longCorpus,0.01,False,
+Google Chrome_myfritz.html,longCorpus,0.05,False,
+Google Chrome_myfritz.html,longCorpus,0.1,False,
+Google Chrome_myfritz.html,longCorpus,0.15,False,
+Google Chrome_myfritz.html,longCorpus,0.2,False,
+Google Chrome_reddit.html,shortCorpus,0.01,True,agree/accept/reject/more information/partners/similar technologies
+Google Chrome_reddit.html,shortCorpus,0.05,True,agree/accept/reject/more information/partners/similar technologies
+Google Chrome_reddit.html,shortCorpus,0.1,True,agree/accept/reject/more information/partners/similar technologies
+Google Chrome_reddit.html,shortCorpus,0.15,True,agree/accept/reject/more information/partners/similar technologies
+Google Chrome_reddit.html,shortCorpus,0.2,True,agree/accept/reject/more information/partners/similar technologies
+Google Chrome_reddit.html,longCorpus,0.01,True,agree/accept/ok/reject/essential cookies/non-essential cookies/essential/non-essential/more information/partners/similar technologies
+Google Chrome_reddit.html,longCorpus,0.05,True,agree/accept/ok/reject/essential cookies/non-essential cookies/essential/non-essential/more information/partners/similar technologies
+Google Chrome_reddit.html,longCorpus,0.1,True,agree/accept/ok/reject/essential cookies/non-essential cookies/essential/non-essential/more information/partners/similar technologies
+Google Chrome_reddit.html,longCorpus,0.15,True,agree/accept/ok/reject/essential cookies/non-essential cookies/essential/non-essential/more information/partners/similar technologies
+Google Chrome_reddit.html,longCorpus,0.2,True,agree/accept/ok/reject/essential cookies/non-essential cookies/essential/non-essential/more information/partners/similar technologies
+Google Chrome_iairgroup.html,shortCorpus,0.01,True,agree/cookie notice
+Google Chrome_iairgroup.html,shortCorpus,0.05,True,agree/cookie notice
+Google Chrome_iairgroup.html,shortCorpus,0.1,True,agree/cookie notice
+Google Chrome_iairgroup.html,shortCorpus,0.15,True,agree/cookie notice
+Google Chrome_iairgroup.html,shortCorpus,0.2,True,agree/cookie notice
+Google Chrome_iairgroup.html,longCorpus,0.01,True,agree/ok/cookie notice
+Google Chrome_iairgroup.html,longCorpus,0.05,True,agree/ok/cookie notice
+Google Chrome_iairgroup.html,longCorpus,0.1,True,agree/ok/cookie notice
+Google Chrome_iairgroup.html,longCorpus,0.15,True,agree/ok/cookie notice
+Google Chrome_iairgroup.html,longCorpus,0.2,True,agree/ok/cookie notice
+Google Chrome_live.html,shortCorpus,0.01,True,agree
+Google Chrome_live.html,shortCorpus,0.05,True,agree
+Google Chrome_live.html,shortCorpus,0.1,True,agree
+Google Chrome_live.html,shortCorpus,0.15,True,agree
+Google Chrome_live.html,shortCorpus,0.2,True,agree
+Google Chrome_live.html,longCorpus,0.01,True,agree/ok
+Google Chrome_live.html,longCorpus,0.05,True,agree/ok
+Google Chrome_live.html,longCorpus,0.1,True,agree/ok
+Google Chrome_live.html,longCorpus,0.15,True,agree/ok
+Google Chrome_live.html,longCorpus,0.2,True,agree/ok
+Google Chrome_facebook.html,shortCorpus,0.01,True,preferences/learn more/partners/third-party/similar technologies
+Google Chrome_facebook.html,shortCorpus,0.05,True,preferences/learn more/partners/third-party/similar technologies
+Google Chrome_facebook.html,shortCorpus,0.1,True,preferences/learn more/partners/third-party/similar technologies
+Google Chrome_facebook.html,shortCorpus,0.15,True,preferences/learn more/partners/third-party/similar technologies
+Google Chrome_facebook.html,shortCorpus,0.2,True,preferences/learn more/partners/third-party/similar technologies
+Google Chrome_facebook.html,longCorpus,0.01,True,ok/optional cookies/required/preferences/cookies settings/learn more/partners/similar technologies
+Google Chrome_facebook.html,longCorpus,0.05,True,ok/optional cookies/required/preferences/cookies settings/learn more/partners/similar technologies
+Google Chrome_facebook.html,longCorpus,0.1,True,ok/optional cookies/required/preferences/cookies settings/learn more/partners/similar technologies
+Google Chrome_facebook.html,longCorpus,0.15,True,ok/optional cookies/required/preferences/cookies settings/learn more/partners/similar technologies
+Google Chrome_facebook.html,longCorpus,0.2,True,ok/optional cookies/required/preferences/cookies settings/learn more/partners/similar technologies
+Google Chrome_adobe.html,shortCorpus,0.01,True,preferences
+Google Chrome_adobe.html,shortCorpus,0.05,True,preferences
+Google Chrome_adobe.html,shortCorpus,0.1,True,preferences
+Google Chrome_adobe.html,shortCorpus,0.15,True,preferences
+Google Chrome_adobe.html,shortCorpus,0.2,True,preferences
+Google Chrome_adobe.html,longCorpus,0.01,True,ok/preferences
+Google Chrome_adobe.html,longCorpus,0.05,True,ok/preferences
+Google Chrome_adobe.html,longCorpus,0.1,True,ok/preferences
+Google Chrome_adobe.html,longCorpus,0.15,True,ok/preferences
+Google Chrome_adobe.html,longCorpus,0.2,True,ok/preferences
+Google Chrome_sharepoint.html,shortCorpus,0.01,True,reject/learn more
+Google Chrome_sharepoint.html,shortCorpus,0.05,True,reject/learn more
+Google Chrome_sharepoint.html,shortCorpus,0.1,True,reject/learn more
+Google Chrome_sharepoint.html,shortCorpus,0.15,True,reject/learn more
+Google Chrome_sharepoint.html,shortCorpus,0.2,True,reject/learn more
+Google Chrome_sharepoint.html,longCorpus,0.01,True,ok/reject/optional cookies/essential/learn more
+Google Chrome_sharepoint.html,longCorpus,0.05,True,ok/reject/optional cookies/essential/learn more
+Google Chrome_sharepoint.html,longCorpus,0.1,True,ok/reject/optional cookies/essential/learn more
+Google Chrome_sharepoint.html,longCorpus,0.15,True,ok/reject/optional cookies/essential/learn more
+Google Chrome_sharepoint.html,longCorpus,0.2,True,ok/reject/optional cookies/essential/learn more
+Google Chrome_gandi.html,shortCorpus,0.01,True,accept
+Google Chrome_gandi.html,shortCorpus,0.05,True,accept
+Google Chrome_gandi.html,shortCorpus,0.1,True,accept
+Google Chrome_gandi.html,shortCorpus,0.15,True,accept
+Google Chrome_gandi.html,shortCorpus,0.2,True,accept
+Google Chrome_gandi.html,longCorpus,0.01,True,accept/ok
+Google Chrome_gandi.html,longCorpus,0.05,True,accept/ok
+Google Chrome_gandi.html,longCorpus,0.1,True,accept/ok
+Google Chrome_gandi.html,longCorpus,0.15,True,accept/ok
+Google Chrome_gandi.html,longCorpus,0.2,True,accept/ok
+Google Chrome_nytimes.html,shortCorpus,0.01,True,accept/preferences/learn more/privacy policy
+Google Chrome_nytimes.html,shortCorpus,0.05,True,accept/preferences/learn more/privacy policy
+Google Chrome_nytimes.html,shortCorpus,0.1,True,accept/preferences/learn more/privacy policy
+Google Chrome_nytimes.html,shortCorpus,0.15,True,accept/preferences/learn more/privacy policy
+Google Chrome_nytimes.html,shortCorpus,0.2,True,accept/preferences/learn more/privacy policy
+Google Chrome_nytimes.html,longCorpus,0.01,True,accept/ok/preferences/learn more/privacy policy
+Google Chrome_nytimes.html,longCorpus,0.05,True,accept/ok/preferences/learn more/privacy policy
+Google Chrome_nytimes.html,longCorpus,0.1,True,accept/ok/preferences/learn more/privacy policy
+Google Chrome_nytimes.html,longCorpus,0.15,True,accept/ok/preferences/learn more/privacy policy
+Google Chrome_nytimes.html,longCorpus,0.2,True,accept/ok/preferences/learn more/privacy policy
+Google Chrome_zhihu.html,shortCorpus,0.01,True,reject
+Google Chrome_zhihu.html,shortCorpus,0.05,True,reject
+Google Chrome_zhihu.html,shortCorpus,0.1,True,reject
+Google Chrome_zhihu.html,shortCorpus,0.15,True,reject
+Google Chrome_zhihu.html,shortCorpus,0.2,True,reject
+Google Chrome_zhihu.html,longCorpus,0.01,True,ok
+Google Chrome_zhihu.html,longCorpus,0.05,True,ok
+Google Chrome_zhihu.html,longCorpus,0.1,True,ok
+Google Chrome_zhihu.html,longCorpus,0.15,True,ok
+Google Chrome_zhihu.html,longCorpus,0.2,True,ok
+Google Chrome_netflix.html,shortCorpus,0.01,True,accept/accept cookies/cookie preferences/preferences/more information/partners/similar technologies
+Google Chrome_netflix.html,shortCorpus,0.05,True,accept/accept cookies/cookie preferences/preferences/more information/partners/similar technologies
+Google Chrome_netflix.html,shortCorpus,0.1,True,accept/accept cookies/cookie preferences/preferences/more information/partners/similar technologies
+Google Chrome_netflix.html,shortCorpus,0.15,True,accept/accept cookies/cookie preferences/preferences/more information/partners/similar technologies
+Google Chrome_netflix.html,shortCorpus,0.2,True,accept/accept cookies/cookie preferences/preferences/more information/partners/similar technologies
+Google Chrome_netflix.html,longCorpus,0.01,True,accept/accept cookies/ok/not accept/strictly necessary/required/essential/non-essential/cookie preferences/preferences/more information/further information/partners/third party/similar technologies
+Google Chrome_netflix.html,longCorpus,0.05,True,accept/accept cookies/ok/not accept/strictly necessary/required/essential/non-essential/cookie preferences/preferences/more information/further information/partners/third party/similar technologies
+Google Chrome_netflix.html,longCorpus,0.1,True,accept/accept cookies/ok/not accept/strictly necessary/required/essential/non-essential/cookie preferences/preferences/more information/further information/partners/third party/similar technologies
+Google Chrome_netflix.html,longCorpus,0.15,True,accept/accept cookies/ok/not accept/strictly necessary/required/essential/non-essential/cookie preferences/preferences/more information/further information/partners/third party/similar technologies
+Google Chrome_netflix.html,longCorpus,0.2,True,accept/accept cookies/ok/not accept/strictly necessary/required/essential/non-essential/cookie preferences/preferences/more information/further information/partners/third party/similar technologies
+Google Chrome_google.html,shortCorpus,0.01,False,
+Google Chrome_google.html,shortCorpus,0.05,False,
+Google Chrome_google.html,shortCorpus,0.1,False,
+Google Chrome_google.html,shortCorpus,0.15,False,
+Google Chrome_google.html,shortCorpus,0.2,False,
+Google Chrome_google.html,longCorpus,0.01,True,ok
+Google Chrome_google.html,longCorpus,0.05,True,ok
+Google Chrome_google.html,longCorpus,0.1,True,ok
+Google Chrome_google.html,longCorpus,0.15,True,ok
+Google Chrome_google.html,longCorpus,0.2,True,ok
+Google Chrome_warnerbros.html,shortCorpus,0.01,True,agree
+Google Chrome_warnerbros.html,shortCorpus,0.05,True,agree
+Google Chrome_warnerbros.html,shortCorpus,0.1,True,agree
+Google Chrome_warnerbros.html,shortCorpus,0.15,True,agree
+Google Chrome_warnerbros.html,shortCorpus,0.2,True,agree
+Google Chrome_warnerbros.html,longCorpus,0.01,True,agree/ok
+Google Chrome_warnerbros.html,longCorpus,0.05,True,agree/ok
+Google Chrome_warnerbros.html,longCorpus,0.1,True,agree/ok
+Google Chrome_warnerbros.html,longCorpus,0.15,True,agree/ok
+Google Chrome_warnerbros.html,longCorpus,0.2,True,agree/ok
+Google Chrome_wordpress.html,shortCorpus,0.01,True,accept/preferences/our partners/partners
+Google Chrome_wordpress.html,shortCorpus,0.05,True,accept/preferences/our partners/partners
+Google Chrome_wordpress.html,shortCorpus,0.1,True,accept/preferences/our partners/partners
+Google Chrome_wordpress.html,shortCorpus,0.15,True,accept/preferences/our partners/partners
+Google Chrome_wordpress.html,shortCorpus,0.2,True,accept/preferences/our partners/partners
+Google Chrome_wordpress.html,longCorpus,0.01,True,accept/ok/essential/preferences/our partners/partners
+Google Chrome_wordpress.html,longCorpus,0.05,True,accept/ok/essential/preferences/our partners/partners
+Google Chrome_wordpress.html,longCorpus,0.1,True,accept/ok/essential/preferences/our partners/partners
+Google Chrome_wordpress.html,longCorpus,0.15,True,accept/ok/essential/preferences/our partners/partners
+Google Chrome_wordpress.html,longCorpus,0.2,True,accept/ok/essential/preferences/our partners/partners
+Google Chrome_digicert.html,shortCorpus,0.01,True,agree/preferences/learn more/more information/partners
+Google Chrome_digicert.html,shortCorpus,0.05,True,agree/preferences/learn more/more information/partners
+Google Chrome_digicert.html,shortCorpus,0.1,True,agree/preferences/learn more/more information/partners
+Google Chrome_digicert.html,shortCorpus,0.15,True,agree/preferences/learn more/more information/partners
+Google Chrome_digicert.html,shortCorpus,0.2,True,agree/preferences/learn more/more information/partners
+Google Chrome_digicert.html,longCorpus,0.01,True,agree/ok/essential/preferences/learn more/more information/partners/third party
+Google Chrome_digicert.html,longCorpus,0.05,True,agree/ok/essential/preferences/learn more/more information/partners/third party
+Google Chrome_digicert.html,longCorpus,0.1,True,agree/ok/essential/preferences/learn more/more information/partners/third party
+Google Chrome_digicert.html,longCorpus,0.15,True,agree/ok/essential/preferences/learn more/more information/partners/third party
+Google Chrome_digicert.html,longCorpus,0.2,True,agree/ok/essential/preferences/learn more/more information/partners/third party
+Google Chrome_blogspot.html,shortCorpus,0.01,False,
+Google Chrome_blogspot.html,shortCorpus,0.05,False,
+Google Chrome_blogspot.html,shortCorpus,0.1,False,
+Google Chrome_blogspot.html,shortCorpus,0.15,False,
+Google Chrome_blogspot.html,shortCorpus,0.2,False,
+Google Chrome_blogspot.html,longCorpus,0.01,True,ok
+Google Chrome_blogspot.html,longCorpus,0.05,True,ok
+Google Chrome_blogspot.html,longCorpus,0.1,True,ok
+Google Chrome_blogspot.html,longCorpus,0.15,True,ok
+Google Chrome_blogspot.html,longCorpus,0.2,True,ok
+Google Chrome_nih.html,shortCorpus,0.01,True,partners
+Google Chrome_nih.html,shortCorpus,0.05,True,partners
+Google Chrome_nih.html,shortCorpus,0.1,True,partners
+Google Chrome_nih.html,shortCorpus,0.15,True,partners
+Google Chrome_nih.html,shortCorpus,0.2,True,partners
+Google Chrome_nih.html,longCorpus,0.01,True,ok/partners
+Google Chrome_nih.html,longCorpus,0.05,True,ok/partners
+Google Chrome_nih.html,longCorpus,0.1,True,ok/partners
+Google Chrome_nih.html,longCorpus,0.15,True,ok/partners
+Google Chrome_nih.html,longCorpus,0.2,True,ok/partners
+Google Chrome_youtube.html,shortCorpus,0.01,True,agree
+Google Chrome_youtube.html,shortCorpus,0.05,True,agree
+Google Chrome_youtube.html,shortCorpus,0.1,True,agree
+Google Chrome_youtube.html,shortCorpus,0.15,True,agree
+Google Chrome_youtube.html,shortCorpus,0.2,True,agree
+Google Chrome_youtube.html,longCorpus,0.01,True,ok
+Google Chrome_youtube.html,longCorpus,0.05,True,ok
+Google Chrome_youtube.html,longCorpus,0.1,True,ok
+Google Chrome_youtube.html,longCorpus,0.15,True,ok
+Google Chrome_youtube.html,longCorpus,0.2,True,ok
+Google Chrome_office365.html,shortCorpus,0.01,True,reject/partners
+Google Chrome_office365.html,shortCorpus,0.05,True,reject/partners
+Google Chrome_office365.html,shortCorpus,0.1,True,reject/partners
+Google Chrome_office365.html,shortCorpus,0.15,True,reject/partners
+Google Chrome_office365.html,shortCorpus,0.2,True,reject/partners
+Google Chrome_office365.html,longCorpus,0.01,True,ok/reject/optional cookies/required/partners
+Google Chrome_office365.html,longCorpus,0.05,True,ok/reject/optional cookies/required/partners
+Google Chrome_office365.html,longCorpus,0.1,True,ok/reject/optional cookies/required/partners
+Google Chrome_office365.html,longCorpus,0.15,True,ok/reject/optional cookies/required/partners
+Google Chrome_office365.html,longCorpus,0.2,True,ok/reject/optional cookies/required/partners
+Google Chrome_intuit.html,shortCorpus,0.01,True,agree
+Google Chrome_intuit.html,shortCorpus,0.05,True,agree
+Google Chrome_intuit.html,shortCorpus,0.1,True,agree
+Google Chrome_intuit.html,shortCorpus,0.15,True,agree
+Google Chrome_intuit.html,shortCorpus,0.2,True,agree
+Google Chrome_intuit.html,longCorpus,0.01,True,agree/ok
+Google Chrome_intuit.html,longCorpus,0.05,True,agree/ok
+Google Chrome_intuit.html,longCorpus,0.1,True,agree/ok
+Google Chrome_intuit.html,longCorpus,0.15,True,agree/ok
+Google Chrome_intuit.html,longCorpus,0.2,True,agree/ok
+Google Chrome_taobao.html,shortCorpus,0.01,True,accept
+Google Chrome_taobao.html,shortCorpus,0.05,True,accept
+Google Chrome_taobao.html,shortCorpus,0.1,True,accept
+Google Chrome_taobao.html,shortCorpus,0.15,True,accept
+Google Chrome_taobao.html,shortCorpus,0.2,True,accept
+Google Chrome_taobao.html,longCorpus,0.01,True,required
+Google Chrome_taobao.html,longCorpus,0.05,True,required
+Google Chrome_taobao.html,longCorpus,0.1,True,required
+Google Chrome_taobao.html,longCorpus,0.15,True,required
+Google Chrome_taobao.html,longCorpus,0.2,True,required
+Google Chrome_microsoft.html,shortCorpus,0.01,True,reject
+Google Chrome_microsoft.html,shortCorpus,0.05,True,reject
+Google Chrome_microsoft.html,shortCorpus,0.1,True,reject
+Google Chrome_microsoft.html,shortCorpus,0.15,True,reject
+Google Chrome_microsoft.html,shortCorpus,0.2,True,reject
+Google Chrome_microsoft.html,longCorpus,0.01,True,ok/reject/optional cookies
+Google Chrome_microsoft.html,longCorpus,0.05,True,ok/reject/optional cookies
+Google Chrome_microsoft.html,longCorpus,0.1,True,ok/reject/optional cookies
+Google Chrome_microsoft.html,longCorpus,0.15,True,ok/reject/optional cookies
+Google Chrome_microsoft.html,longCorpus,0.2,True,ok/reject/optional cookies
+Google Chrome_fastly.html,shortCorpus,0.01,True,agree/accept/cookie preferences/preferences
+Google Chrome_fastly.html,shortCorpus,0.05,True,agree/accept/cookie preferences/preferences
+Google Chrome_fastly.html,shortCorpus,0.1,True,agree/accept/cookie preferences/preferences
+Google Chrome_fastly.html,shortCorpus,0.15,True,agree/accept/cookie preferences/preferences
+Google Chrome_fastly.html,shortCorpus,0.2,True,agree/accept/cookie preferences/preferences
+Google Chrome_fastly.html,longCorpus,0.01,True,agree/accept/ok/required/essential/cookie preferences/preferences
+Google Chrome_fastly.html,longCorpus,0.05,True,agree/accept/ok/required/essential/cookie preferences/preferences
+Google Chrome_fastly.html,longCorpus,0.1,True,agree/accept/ok/required/essential/cookie preferences/preferences
+Google Chrome_fastly.html,longCorpus,0.15,True,agree/accept/ok/required/essential/cookie preferences/preferences
+Google Chrome_fastly.html,longCorpus,0.2,True,agree/accept/ok/required/essential/cookie preferences/preferences
+Google Chrome_spotify.html,shortCorpus,0.01,False,
+Google Chrome_spotify.html,shortCorpus,0.05,False,
+Google Chrome_spotify.html,shortCorpus,0.1,False,
+Google Chrome_spotify.html,shortCorpus,0.15,False,
+Google Chrome_spotify.html,shortCorpus,0.2,False,
+Google Chrome_spotify.html,longCorpus,0.01,True,ok
+Google Chrome_spotify.html,longCorpus,0.05,True,ok
+Google Chrome_spotify.html,longCorpus,0.1,True,ok
+Google Chrome_spotify.html,longCorpus,0.15,True,ok
+Google Chrome_spotify.html,longCorpus,0.2,True,ok
+Google Chrome_azure.html,shortCorpus,0.01,True,reject/partners
+Google Chrome_azure.html,shortCorpus,0.05,True,reject/partners
+Google Chrome_azure.html,shortCorpus,0.1,True,reject/partners
+Google Chrome_azure.html,shortCorpus,0.15,True,reject/partners
+Google Chrome_azure.html,shortCorpus,0.2,True,reject/partners
+Google Chrome_azure.html,longCorpus,0.01,True,ok/reject/optional cookies/partners
+Google Chrome_azure.html,longCorpus,0.05,True,ok/reject/optional cookies/partners
+Google Chrome_azure.html,longCorpus,0.1,True,ok/reject/optional cookies/partners
+Google Chrome_azure.html,longCorpus,0.15,True,ok/reject/optional cookies/partners
+Google Chrome_azure.html,longCorpus,0.2,True,ok/reject/optional cookies/partners
+Google Chrome_com.html,shortCorpus,0.01,True,accept/preferences/learn more/privacy policy
+Google Chrome_com.html,shortCorpus,0.05,True,accept/preferences/learn more/privacy policy
+Google Chrome_com.html,shortCorpus,0.1,True,accept/preferences/learn more/privacy policy
+Google Chrome_com.html,shortCorpus,0.15,True,accept/preferences/learn more/privacy policy
+Google Chrome_com.html,shortCorpus,0.2,True,accept/preferences/learn more/privacy policy
+Google Chrome_com.html,longCorpus,0.01,True,accept/ok/preferences/learn more/privacy policy
+Google Chrome_com.html,longCorpus,0.05,True,accept/ok/preferences/learn more/privacy policy
+Google Chrome_com.html,longCorpus,0.1,True,accept/ok/preferences/learn more/privacy policy
+Google Chrome_com.html,longCorpus,0.15,True,accept/ok/preferences/learn more/privacy policy
+Google Chrome_com.html,longCorpus,0.2,True,accept/ok/preferences/learn more/privacy policy
+Google Chrome_mail.html,shortCorpus,0.01,True,accept/reject
+Google Chrome_mail.html,shortCorpus,0.05,True,accept/reject
+Google Chrome_mail.html,shortCorpus,0.1,True,accept/reject
+Google Chrome_mail.html,shortCorpus,0.15,True,accept/reject
+Google Chrome_mail.html,shortCorpus,0.2,True,accept/reject
+Google Chrome_mail.html,longCorpus,0.01,True,ok/required
+Google Chrome_mail.html,longCorpus,0.05,True,ok/required
+Google Chrome_mail.html,longCorpus,0.1,True,ok/required
+Google Chrome_mail.html,longCorpus,0.15,True,ok/required
+Google Chrome_mail.html,longCorpus,0.2,True,ok/required
+Google Chrome_wikipedia.html,shortCorpus,0.01,False,
+Google Chrome_wikipedia.html,shortCorpus,0.05,False,
+Google Chrome_wikipedia.html,shortCorpus,0.1,False,
+Google Chrome_wikipedia.html,shortCorpus,0.15,False,
+Google Chrome_wikipedia.html,shortCorpus,0.2,False,
+Google Chrome_wikipedia.html,longCorpus,0.01,True,ok
+Google Chrome_wikipedia.html,longCorpus,0.05,True,ok
+Google Chrome_wikipedia.html,longCorpus,0.1,True,ok
+Google Chrome_wikipedia.html,longCorpus,0.15,True,ok
+Google Chrome_wikipedia.html,longCorpus,0.2,True,ok
+Google Chrome_tiktok.html,shortCorpus,0.01,True,agree
+Google Chrome_tiktok.html,shortCorpus,0.05,True,agree
+Google Chrome_tiktok.html,shortCorpus,0.1,True,agree
+Google Chrome_tiktok.html,shortCorpus,0.15,True,agree
+Google Chrome_tiktok.html,shortCorpus,0.2,True,agree
+Google Chrome_tiktok.html,longCorpus,0.01,True,agree/ok
+Google Chrome_tiktok.html,longCorpus,0.05,True,agree/ok
+Google Chrome_tiktok.html,longCorpus,0.1,True,agree/ok
+Google Chrome_tiktok.html,longCorpus,0.15,True,agree/ok
+Google Chrome_tiktok.html,longCorpus,0.2,True,agree/ok
+Google Chrome_canva.html,shortCorpus,0.01,True,accept/cookie policy
+Google Chrome_canva.html,shortCorpus,0.05,True,accept/cookie policy
+Google Chrome_canva.html,shortCorpus,0.1,True,accept/cookie policy
+Google Chrome_canva.html,shortCorpus,0.15,True,accept/cookie policy
+Google Chrome_canva.html,shortCorpus,0.2,True,accept/cookie policy
+Google Chrome_canva.html,longCorpus,0.01,True,accept/ok/essential cookies/required/essential/cookie policy
+Google Chrome_canva.html,longCorpus,0.05,True,accept/ok/essential cookies/required/essential/cookie policy
+Google Chrome_canva.html,longCorpus,0.1,True,accept/ok/essential cookies/required/essential/cookie policy
+Google Chrome_canva.html,longCorpus,0.15,True,accept/ok/essential cookies/required/essential/cookie policy
+Google Chrome_canva.html,longCorpus,0.2,True,accept/ok/essential cookies/required/essential/cookie policy
+Google Chrome_outlook.html,shortCorpus,0.01,True,agree
+Google Chrome_outlook.html,shortCorpus,0.05,True,agree
+Google Chrome_outlook.html,shortCorpus,0.1,True,agree
+Google Chrome_outlook.html,shortCorpus,0.15,True,agree
+Google Chrome_outlook.html,shortCorpus,0.2,True,agree
+Google Chrome_outlook.html,longCorpus,0.01,True,agree/ok
+Google Chrome_outlook.html,longCorpus,0.05,True,agree/ok
+Google Chrome_outlook.html,longCorpus,0.1,True,agree/ok
+Google Chrome_outlook.html,longCorpus,0.15,True,agree/ok
+Google Chrome_outlook.html,longCorpus,0.2,True,agree/ok
+Google Chrome_amazon.html,shortCorpus,0.01,True,reject
+Google Chrome_amazon.html,shortCorpus,0.05,True,reject
+Google Chrome_amazon.html,shortCorpus,0.1,True,reject
+Google Chrome_amazon.html,shortCorpus,0.15,True,reject
+Google Chrome_amazon.html,shortCorpus,0.2,True,reject
+Google Chrome_amazon.html,longCorpus,0.01,True,ok/reject
+Google Chrome_amazon.html,longCorpus,0.05,True,ok/reject
+Google Chrome_amazon.html,longCorpus,0.1,True,ok/reject
+Google Chrome_amazon.html,longCorpus,0.15,True,ok/reject
+Google Chrome_amazon.html,longCorpus,0.2,True,ok/reject
+Google Chrome_fandom.html,shortCorpus,0.01,True,accept/our partners/partners
+Google Chrome_fandom.html,shortCorpus,0.05,True,accept/our partners/partners
+Google Chrome_fandom.html,shortCorpus,0.1,True,accept/our partners/partners
+Google Chrome_fandom.html,shortCorpus,0.15,True,accept/our partners/partners
+Google Chrome_fandom.html,shortCorpus,0.2,True,accept/our partners/partners
+Google Chrome_fandom.html,longCorpus,0.01,True,accept/ok/not accept/our partners/partners
+Google Chrome_fandom.html,longCorpus,0.05,True,accept/ok/not accept/our partners/partners
+Google Chrome_fandom.html,longCorpus,0.1,True,accept/ok/not accept/our partners/partners
+Google Chrome_fandom.html,longCorpus,0.15,True,accept/ok/not accept/our partners/partners
+Google Chrome_fandom.html,longCorpus,0.2,True,accept/ok/not accept/our partners/partners
+Google Chrome_openai.html,shortCorpus,0.01,False,
+Google Chrome_openai.html,shortCorpus,0.05,False,
+Google Chrome_openai.html,shortCorpus,0.1,False,
+Google Chrome_openai.html,shortCorpus,0.15,False,
+Google Chrome_openai.html,shortCorpus,0.2,False,
+Google Chrome_openai.html,longCorpus,0.01,True,ok
+Google Chrome_openai.html,longCorpus,0.05,True,ok
+Google Chrome_openai.html,longCorpus,0.1,True,ok
+Google Chrome_openai.html,longCorpus,0.15,True,ok
+Google Chrome_openai.html,longCorpus,0.2,True,ok
+Google Chrome_europa.html,shortCorpus,0.01,False,
+Google Chrome_europa.html,shortCorpus,0.05,False,
+Google Chrome_europa.html,shortCorpus,0.1,False,
+Google Chrome_europa.html,shortCorpus,0.15,False,
+Google Chrome_europa.html,shortCorpus,0.2,False,
+Google Chrome_europa.html,longCorpus,0.01,False,
+Google Chrome_europa.html,longCorpus,0.05,False,
+Google Chrome_europa.html,longCorpus,0.1,False,
+Google Chrome_europa.html,longCorpus,0.15,False,
+Google Chrome_europa.html,longCorpus,0.2,False,
+Google Chrome_qq.html,shortCorpus,0.01,False,
+Google Chrome_qq.html,shortCorpus,0.05,False,
+Google Chrome_qq.html,shortCorpus,0.1,False,
+Google Chrome_qq.html,shortCorpus,0.15,False,
+Google Chrome_qq.html,shortCorpus,0.2,False,
+Google Chrome_qq.html,longCorpus,0.01,True,ok
+Google Chrome_qq.html,longCorpus,0.05,True,ok
+Google Chrome_qq.html,longCorpus,0.1,True,ok
+Google Chrome_qq.html,longCorpus,0.15,True,ok
+Google Chrome_qq.html,longCorpus,0.2,True,ok
+Google Chrome_office.html,shortCorpus,0.01,True,reject
+Google Chrome_office.html,shortCorpus,0.05,True,reject
+Google Chrome_office.html,shortCorpus,0.1,True,reject
+Google Chrome_office.html,shortCorpus,0.15,True,reject
+Google Chrome_office.html,shortCorpus,0.2,True,reject
+Google Chrome_office.html,longCorpus,0.01,True,ok/reject/optional cookies/essential
+Google Chrome_office.html,longCorpus,0.05,True,ok/reject/optional cookies/essential
+Google Chrome_office.html,longCorpus,0.1,True,ok/reject/optional cookies/essential
+Google Chrome_office.html,longCorpus,0.15,True,ok/reject/optional cookies/essential
+Google Chrome_office.html,longCorpus,0.2,True,ok/reject/optional cookies/essential
+Google Chrome_jd.html,shortCorpus,0.01,False,
+Google Chrome_jd.html,shortCorpus,0.05,False,
+Google Chrome_jd.html,shortCorpus,0.1,False,
+Google Chrome_jd.html,shortCorpus,0.15,False,
+Google Chrome_jd.html,shortCorpus,0.2,False,
+Google Chrome_jd.html,longCorpus,0.01,True,ok
+Google Chrome_jd.html,longCorpus,0.05,True,ok
+Google Chrome_jd.html,longCorpus,0.1,True,ok
+Google Chrome_jd.html,longCorpus,0.15,True,ok
+Google Chrome_jd.html,longCorpus,0.2,True,ok
+Google Chrome_baidu.html,shortCorpus,0.01,False,
+Google Chrome_baidu.html,shortCorpus,0.05,False,
+Google Chrome_baidu.html,shortCorpus,0.1,False,
+Google Chrome_baidu.html,shortCorpus,0.15,False,
+Google Chrome_baidu.html,shortCorpus,0.2,False,
+Google Chrome_baidu.html,longCorpus,0.01,True,ok
+Google Chrome_baidu.html,longCorpus,0.05,True,ok
+Google Chrome_baidu.html,longCorpus,0.1,True,ok
+Google Chrome_baidu.html,longCorpus,0.15,True,ok
+Google Chrome_baidu.html,longCorpus,0.2,True,ok
+Google Chrome_fbcdn.html,shortCorpus,0.01,True,preferences/learn more/partners/third-party/similar technologies
+Google Chrome_fbcdn.html,shortCorpus,0.05,True,preferences/learn more/partners/third-party/similar technologies
+Google Chrome_fbcdn.html,shortCorpus,0.1,True,preferences/learn more/partners/third-party/similar technologies
+Google Chrome_fbcdn.html,shortCorpus,0.15,True,preferences/learn more/partners/third-party/similar technologies
+Google Chrome_fbcdn.html,shortCorpus,0.2,True,preferences/learn more/partners/third-party/similar technologies
+Google Chrome_fbcdn.html,longCorpus,0.01,True,ok/optional cookies/required/preferences/cookies settings/learn more/partners/similar technologies
+Google Chrome_fbcdn.html,longCorpus,0.05,True,ok/optional cookies/required/preferences/cookies settings/learn more/partners/similar technologies
+Google Chrome_fbcdn.html,longCorpus,0.1,True,ok/optional cookies/required/preferences/cookies settings/learn more/partners/similar technologies
+Google Chrome_fbcdn.html,longCorpus,0.15,True,ok/optional cookies/required/preferences/cookies settings/learn more/partners/similar technologies
+Google Chrome_fbcdn.html,longCorpus,0.2,True,ok/optional cookies/required/preferences/cookies settings/learn more/partners/similar technologies
+Google Chrome_googledomains.html,shortCorpus,0.01,True,agree/partners
+Google Chrome_googledomains.html,shortCorpus,0.05,True,agree/partners
+Google Chrome_googledomains.html,shortCorpus,0.1,True,agree/partners
+Google Chrome_googledomains.html,shortCorpus,0.15,True,agree/partners
+Google Chrome_googledomains.html,shortCorpus,0.2,True,agree/partners
+Google Chrome_googledomains.html,longCorpus,0.01,True,agree/ok/got it/required/partners
+Google Chrome_googledomains.html,longCorpus,0.05,True,agree/ok/got it/required/partners
+Google Chrome_googledomains.html,longCorpus,0.1,True,agree/ok/got it/required/partners
+Google Chrome_googledomains.html,longCorpus,0.15,True,agree/ok/got it/required/partners
+Google Chrome_googledomains.html,longCorpus,0.2,True,agree/ok/got it/required/partners
+Google Chrome_bilibili.html,shortCorpus,0.01,False,
+Google Chrome_bilibili.html,shortCorpus,0.05,False,
+Google Chrome_bilibili.html,shortCorpus,0.1,False,
+Google Chrome_bilibili.html,shortCorpus,0.15,False,
+Google Chrome_bilibili.html,shortCorpus,0.2,False,
+Google Chrome_bilibili.html,longCorpus,0.01,True,ok
+Google Chrome_bilibili.html,longCorpus,0.05,True,ok
+Google Chrome_bilibili.html,longCorpus,0.1,True,ok
+Google Chrome_bilibili.html,longCorpus,0.15,True,ok
+Google Chrome_bilibili.html,longCorpus,0.2,True,ok
+Google Chrome_yahoo.html,shortCorpus,0.01,True,privacy policy/cookie policy/our partners/partners
+Google Chrome_yahoo.html,shortCorpus,0.05,True,privacy policy/cookie policy/our partners/partners
+Google Chrome_yahoo.html,shortCorpus,0.1,True,privacy policy/cookie policy/our partners/partners
+Google Chrome_yahoo.html,shortCorpus,0.15,True,privacy policy/cookie policy/our partners/partners
+Google Chrome_yahoo.html,shortCorpus,0.2,True,privacy policy/cookie policy/our partners/partners
+Google Chrome_yahoo.html,longCorpus,0.01,True,ok/privacy policy/cookie policy/our partners/partners
+Google Chrome_yahoo.html,longCorpus,0.05,True,ok/privacy policy/cookie policy/our partners/partners
+Google Chrome_yahoo.html,longCorpus,0.1,True,ok/privacy policy/cookie policy/our partners/partners
+Google Chrome_yahoo.html,longCorpus,0.15,True,ok/privacy policy/cookie policy/our partners/partners
+Google Chrome_yahoo.html,longCorpus,0.2,True,ok/privacy policy/cookie policy/our partners/partners
+Google Chrome_zoom.html,shortCorpus,0.01,True,accept/decline/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third-party/similar technologies
+Google Chrome_zoom.html,shortCorpus,0.05,True,accept/decline/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third-party/similar technologies
+Google Chrome_zoom.html,shortCorpus,0.1,True,accept/decline/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third-party/similar technologies
+Google Chrome_zoom.html,shortCorpus,0.15,True,accept/decline/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third-party/similar technologies
+Google Chrome_zoom.html,shortCorpus,0.2,True,accept/decline/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third-party/similar technologies
+Google Chrome_zoom.html,longCorpus,0.01,True,accept/ok/decline/decline all/strictly necessary/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third party/similar technologies
+Google Chrome_zoom.html,longCorpus,0.05,True,accept/ok/decline/decline all/strictly necessary/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third party/similar technologies
+Google Chrome_zoom.html,longCorpus,0.1,True,accept/ok/decline/decline all/strictly necessary/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third party/similar technologies
+Google Chrome_zoom.html,longCorpus,0.15,True,accept/ok/decline/decline all/strictly necessary/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third party/similar technologies
+Google Chrome_zoom.html,longCorpus,0.2,True,accept/ok/decline/decline all/strictly necessary/cookie preferences/preferences/learn more/more information/privacy statement/our partners/partners/third party/similar technologies
+Google Chrome_pinterest.html,shortCorpus,0.01,True,partners
+Google Chrome_pinterest.html,shortCorpus,0.05,True,partners
+Google Chrome_pinterest.html,shortCorpus,0.1,True,partners
+Google Chrome_pinterest.html,shortCorpus,0.15,True,partners
+Google Chrome_pinterest.html,shortCorpus,0.2,True,partners
+Google Chrome_pinterest.html,longCorpus,0.01,True,ok/partners
+Google Chrome_pinterest.html,longCorpus,0.05,True,ok/partners
+Google Chrome_pinterest.html,longCorpus,0.1,True,ok/partners
+Google Chrome_pinterest.html,longCorpus,0.15,True,ok/partners
+Google Chrome_pinterest.html,longCorpus,0.2,True,ok/partners
+Google Chrome_ebay.html,shortCorpus,0.01,False,
+Google Chrome_ebay.html,shortCorpus,0.05,False,
+Google Chrome_ebay.html,shortCorpus,0.1,False,
+Google Chrome_ebay.html,shortCorpus,0.15,False,
+Google Chrome_ebay.html,shortCorpus,0.2,False,
+Google Chrome_ebay.html,longCorpus,0.01,True,ok
+Google Chrome_ebay.html,longCorpus,0.05,True,ok
+Google Chrome_ebay.html,longCorpus,0.1,True,ok
+Google Chrome_ebay.html,longCorpus,0.15,True,ok
+Google Chrome_ebay.html,longCorpus,0.2,True,ok
+Google Chrome_paypal.html,shortCorpus,0.01,True,accept/accept cookies/learn more/our partners/partners
+Google Chrome_paypal.html,shortCorpus,0.05,True,accept/accept cookies/learn more/our partners/partners
+Google Chrome_paypal.html,shortCorpus,0.1,True,accept/accept cookies/learn more/our partners/partners
+Google Chrome_paypal.html,shortCorpus,0.15,True,accept/accept cookies/learn more/our partners/partners
+Google Chrome_paypal.html,shortCorpus,0.2,True,accept/accept cookies/learn more/our partners/partners
+Google Chrome_paypal.html,longCorpus,0.01,True,accept/accept cookies/ok/learn more/our partners/partners
+Google Chrome_paypal.html,longCorpus,0.05,True,accept/accept cookies/ok/learn more/our partners/partners
+Google Chrome_paypal.html,longCorpus,0.1,True,accept/accept cookies/ok/learn more/our partners/partners
+Google Chrome_paypal.html,longCorpus,0.15,True,accept/accept cookies/ok/learn more/our partners/partners
+Google Chrome_paypal.html,longCorpus,0.2,True,accept/accept cookies/ok/learn more/our partners/partners
+Google Chrome_tumblr.html,shortCorpus,0.01,True,accept/decline/preferences/more information/our partners/partners
+Google Chrome_tumblr.html,shortCorpus,0.05,True,accept/decline/preferences/more information/our partners/partners
+Google Chrome_tumblr.html,shortCorpus,0.1,True,accept/decline/preferences/more information/our partners/partners
+Google Chrome_tumblr.html,shortCorpus,0.15,True,accept/decline/preferences/more information/our partners/partners
+Google Chrome_tumblr.html,shortCorpus,0.2,True,accept/decline/preferences/more information/our partners/partners
+Google Chrome_tumblr.html,longCorpus,0.01,True,ok
+Google Chrome_tumblr.html,longCorpus,0.05,True,ok
+Google Chrome_tumblr.html,longCorpus,0.1,True,ok
+Google Chrome_tumblr.html,longCorpus,0.15,True,ok
+Google Chrome_tumblr.html,longCorpus,0.2,True,ok
+Google Chrome_weibo.html,shortCorpus,0.01,False,
+Google Chrome_weibo.html,shortCorpus,0.05,False,
+Google Chrome_weibo.html,shortCorpus,0.1,False,
+Google Chrome_weibo.html,shortCorpus,0.15,False,
+Google Chrome_weibo.html,shortCorpus,0.2,False,
+Google Chrome_weibo.html,longCorpus,0.01,True,ok
+Google Chrome_weibo.html,longCorpus,0.05,True,ok
+Google Chrome_weibo.html,longCorpus,0.1,True,ok
+Google Chrome_weibo.html,longCorpus,0.15,True,ok
+Google Chrome_weibo.html,longCorpus,0.2,True,ok
+Google Chrome_t.html,shortCorpus,0.01,False,
+Google Chrome_t.html,shortCorpus,0.05,False,
+Google Chrome_t.html,shortCorpus,0.1,False,
+Google Chrome_t.html,shortCorpus,0.15,False,
+Google Chrome_t.html,shortCorpus,0.2,False,
+Google Chrome_t.html,longCorpus,0.01,True,ok
+Google Chrome_t.html,longCorpus,0.05,True,ok
+Google Chrome_t.html,longCorpus,0.1,True,ok
+Google Chrome_t.html,longCorpus,0.15,True,ok
+Google Chrome_t.html,longCorpus,0.2,True,ok
+Google Chrome_cloudflare.html,shortCorpus,0.01,True,agree/privacy policy/cookie policy
+Google Chrome_cloudflare.html,shortCorpus,0.05,True,agree/privacy policy/cookie policy
+Google Chrome_cloudflare.html,shortCorpus,0.1,True,agree/privacy policy/cookie policy
+Google Chrome_cloudflare.html,shortCorpus,0.15,True,agree/privacy policy/cookie policy
+Google Chrome_cloudflare.html,shortCorpus,0.2,True,agree/privacy policy/cookie policy
+Google Chrome_cloudflare.html,longCorpus,0.01,True,agree/ok/privacy policy/cookie policy/third party
+Google Chrome_cloudflare.html,longCorpus,0.05,True,agree/ok/privacy policy/cookie policy/third party
+Google Chrome_cloudflare.html,longCorpus,0.1,True,agree/ok/privacy policy/cookie policy/third party
+Google Chrome_cloudflare.html,longCorpus,0.15,True,agree/ok/privacy policy/cookie policy/third party
+Google Chrome_cloudflare.html,longCorpus,0.2,True,agree/ok/privacy policy/cookie policy/third party
+Google Chrome_macromedia.html,shortCorpus,0.01,True,preferences
+Google Chrome_macromedia.html,shortCorpus,0.05,True,preferences
+Google Chrome_macromedia.html,shortCorpus,0.1,True,preferences
+Google Chrome_macromedia.html,shortCorpus,0.15,True,preferences
+Google Chrome_macromedia.html,shortCorpus,0.2,True,preferences
+Google Chrome_macromedia.html,longCorpus,0.01,True,ok/preferences
+Google Chrome_macromedia.html,longCorpus,0.05,True,ok/preferences
+Google Chrome_macromedia.html,longCorpus,0.1,True,ok/preferences
+Google Chrome_macromedia.html,longCorpus,0.15,True,ok/preferences
+Google Chrome_macromedia.html,longCorpus,0.2,True,ok/preferences
+Google Chrome_googleusercontent.html,shortCorpus,0.01,False,
+Google Chrome_googleusercontent.html,shortCorpus,0.05,False,
+Google Chrome_googleusercontent.html,shortCorpus,0.1,False,
+Google Chrome_googleusercontent.html,shortCorpus,0.15,False,
+Google Chrome_googleusercontent.html,shortCorpus,0.2,False,
+Google Chrome_googleusercontent.html,longCorpus,0.01,False,
+Google Chrome_googleusercontent.html,longCorpus,0.05,False,
+Google Chrome_googleusercontent.html,longCorpus,0.1,False,
+Google Chrome_googleusercontent.html,longCorpus,0.15,False,
+Google Chrome_googleusercontent.html,longCorpus,0.2,False,
