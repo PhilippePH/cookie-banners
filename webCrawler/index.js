@@ -402,9 +402,6 @@ async function saveSuccessfulWebsites(websiteUrl, resultPath){
 // }
 
 
-
-
-
 async function CLImain(){
     // Unpacking command line arguments (and removing 'node', 'index.js')
     const args = process.argv.slice(2);
@@ -485,4 +482,4 @@ async function CLImain(){
         "LOCALSTORAGE TIMEOUT COUNTER : " + LOCALSTORAGE_TIMEOUT_COUNTER + "\n" + 
         "NUMBER OF SUCCESSFUL WEBSITES : " + FULLY_SUCCESS_WEBSITES +"\n"
     );
-}
+}()
