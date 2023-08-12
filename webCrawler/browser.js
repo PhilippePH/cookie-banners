@@ -53,11 +53,12 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
         if(browser == 'Google Chrome'){
             if(vantagePoint == 'UK'){
                 // Uses puppeteer_extra (stealth plugin)
-                return await puppeteer.launch({ 
+                return await puppeteer_extra.launch({ 
                     headless: false,
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser],
                     defaultViewport: null, // makes window size take full browser size
+                    ignoreHTTPSErrors: true,
                     args: [ 
                         '--start-maximised',
                         '--profile-directory=Profile 7',
@@ -74,6 +75,7 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
                     defaultViewport: null, // makes window size take full browser size
+                    ignoreHTTPSErrors: true,
                     /* User Profile Description: The EasyList Cookie found in 
                     brave://settings/shields/filters has been enabled. */
                     args: [ '--start-maximized',
@@ -90,6 +92,7 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     product: 'firefox',
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
+                    ignoreHTTPSErrors: true,
                     defaultViewport: null, // makes window size take full browser size
                     // extraPrefsFirefox: ['--disable-blink-features=AutomationControlled']
                 });
@@ -102,6 +105,7 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     product: 'firefox',
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
+                    ignoreHTTPSErrors: true,
                     defaultViewport: null, // makes window size take full browser size
                 });
             }
@@ -120,7 +124,3 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
         }
     }
 }
-
-// module.exports = {
-//     createBrowserInstance
-//   };

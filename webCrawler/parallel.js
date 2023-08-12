@@ -9,17 +9,22 @@ export PATH=/vol/bitbucket/pp1722/nodeProject/node_modules/.bin:$PATH
 
 node webCrawler/parallel.js > webCrawler/crawlLog.log 2>&1
 
+scp pp1722@shell1.doc.ic.ac.uk:"/homes/pp1722/Documents/cookie-banners/results/11-08-2023,\ 22-24-04\ BST/UK/Google\ Chrome/test/screenshots/sannysoft.jpeg" /Users/philippe/Downloads
+sannysoft.jpeg  
+
+/vol/linux/bin/nfiles
+
 netstat -lntu
 */
 
-// import {fork} from 'child_process';
+import {fork} from 'child_process';
 import * as fs from 'node:fs/promises';
 import {getFirstURLs} from './websiteSelection.js';
 import {callableMain} from './index.js'
 
-const BROWSER_LIST = ['Google Chrome'];
+const BROWSER_LIST = ['Google Chrome','Brave','Firefox','Ghostery'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 10000;
+const NUM_URLS = 2500;
 const PATH_TO_CSV = "./webCrawler/shuffled.txt";
 const DEVICE = 'linux';
 
@@ -89,12 +94,12 @@ async function ParallelMain(browserList, vantagePoint, device){
   // ARGUMENTS PER PROCESS
   const argumentsArray = await createArgumentArray(path, browserList, vantagePoint, device);
     
-  // // Launching child processes
-  // for (const args of argumentsArray) {
-  //   const child = fork('webCrawler/index.js', args);
-  // }
+  // Launching child processes
+  for (const args of argumentsArray) {
+    const child = fork('webCrawler/index.js', args);
+  }
 
-  callableMain(argumentsArray[0]);
+  // callableMain(argumentsArray[0]);
 }
 
 ParallelMain(BROWSER_LIST, VANTAGE_POINTS, DEVICE);
