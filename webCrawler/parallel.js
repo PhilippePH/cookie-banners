@@ -24,7 +24,7 @@ import {getFirstURLs} from './websiteSelection.js';
 
 const BROWSER_LIST = ['Google Chrome','Brave','Firefox','Ghostery'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 2500;
+const NUM_URLS = 10000;
 const PATH_TO_CSV = "./webCrawler/shuffled.txt";
 const DEVICE = 'linux';
 

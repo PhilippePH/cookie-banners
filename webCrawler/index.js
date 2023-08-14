@@ -474,6 +474,7 @@ async function CLImain(){
     }
 
     console.log(
+        "BROWSER : " + browser + "\n" +
         "LOADED COUNTER : " + LOADED_COUNTER + "\n" +
         "TIMEOUT COUNTER : " + TIMEOUT_COUNTER + "\n" +
         "OTHER ERROR COUNTER : " + OTHER_ERROR_COUNTER + "\n" +
