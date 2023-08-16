@@ -1,7 +1,7 @@
 import csv
 
 pathGroundValues = "top250websites.csv"
-pathResults = "bannerIdentificationResults.txt"
+pathResults = "./top250banners/top250html/bannerIdentificationResults.txt"
 
 
 def getGroundTruth():
@@ -30,18 +30,26 @@ def compareValues(trueData, results):
     for resultRow in results:
         # Get the right row with sitename
         sitename = (resultRow[0].split("."))[0] #removing .html
+        # sitename = (sitename.split("_"))[1] #removing browser_
+
         for trueDataRow in trueData:
             if sitename == (trueDataRow[0].split("."))[0]:
+                boolValue = (resultRow[3]=="True")
 
                 # Append if the result was correct
-                resultRow.append((resultRow[3]==trueDataRow[1]))
-
+                resultRow.append(boolValue==trueDataRow[1])
     return results
 
 def evaluatePerformance(appendedResults):
     performance = {}  # key = hyperparamValues, values = [correctlyPredicted, uncorrectlyPredicted, falsePositive, falseNegative]
-
+    count = 0 
     for row in appendedResults:
+
+        # For websites which don't have a match
+        if len(row) != 6:
+            print(row)
+            continue
+        count += 1
         dictKey = row[1] + "--" + row[2]
         prediction = row[3]
         accuracyOfPrediction = row[5]
@@ -72,8 +80,9 @@ def evaluatePerformance(appendedResults):
     for dictKey in performance.keys():
         res = performance[dictKey]
         percentageCorrect = res[0]/(res[0]+res[1])
-        print(f"{dictKey}: {percentageCorrect} % correct predictions ({res[0]} well predicted out of {res[0]+res[1]}). {res[2]} false positives, and {res[3]} false negatives")
+        print(f"{dictKey}: {round(percentageCorrect * 100, 2)} % correct predictions ({res[0]} well predicted out of {res[0]+res[1]}). {res[2]} false positives, and {res[3]} false negatives")
 
+    print(count)
 
 def main():
     # Open ground truth. Get list of [url:bannerPresent] (bannerPresent: t/f)

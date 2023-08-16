@@ -44,5 +44,8 @@ export async function getSiteNames(url){
   https://www.SITENAME.com
   */
   const nameArray = await url.split(".");
-  return nameArray[1];
+  const excludeFirstTerm = nameArray.slice(1);
+  const nameValue = excludeFirstTerm.join("_");
+
+  return nameValue;
 }

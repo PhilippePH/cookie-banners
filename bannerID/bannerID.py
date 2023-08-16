@@ -6,7 +6,7 @@ import os
 - that element/subtree contains at least X of the following phrases: cookie, accept all, reject, etc --> add translation in a couple of languages
 """
 
-HTML_DIRECTORY_PATH = "./top100_htmlFiles/7_html_files/"
+HTML_DIRECTORY_PATH = "./top250banners/top250html/"
 THRESHOLD_TEST_VALUES = [0.01, 0.05, 0.1, 0.15, 0.2]
 
 # Smallest corpus to find hits in all tests
