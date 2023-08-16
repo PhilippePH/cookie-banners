@@ -7,7 +7,8 @@ import os
 """
 
 HTML_DIRECTORY_PATH = "./top250banners/top250html/"
-THRESHOLD_TEST_VALUES = [0.01, 0.05, 0.1, 0.15, 0.2]
+# Must be in descending values because no copies of array are being made. 
+THRESHOLD_TEST_VALUES = [1, 0.5, 0.25, 0.10, 0.05, 0.01]
 
 # Smallest corpus to find hits in all tests
 CORPUS_1 = ['agree', 'i agree', 'accept', 'accept all', 'accept cookies',
@@ -41,7 +42,7 @@ def parseHtmlDir(filename):
         return BeautifulSoup(html_file, 'html.parser')
 
 def countNodes(element, recordsArr):
-    childrenNodeCounter = 0
+    childrenNodeCounter = 1 #counting self
 
     if hasattr(element, 'children'):
         for child in element.children:
@@ -53,13 +54,16 @@ def countNodes(element, recordsArr):
     return (recordsArr, childrenNodeCounter)
 
 def keepSmallNodes(recordsArr, totNodes, threshold):
-    numberThreshold =  threshold * totNodes
+    numberThreshold =  max(1, threshold * totNodes)
+    i = 0 
 
-    for i in range(len(recordsArr)):
-        if recordsArr[i][1] > numberThreshold:
+    while i < len(recordsArr):
+        if recordsArr[i][1] > numberThreshold: #if more child nodes than threshold, remove it
             recordsArr.pop(i)
-            
-    return recordsArr     
+            continue
+        i += 1
+
+    return recordsArr #return only the elements that are lower than the threshold 
 
 
 def findBanner(recordsArr, corpus):
@@ -67,8 +71,11 @@ def findBanner(recordsArr, corpus):
     maxLength = 0
     for values in recordsArr:
         element = values[0]
-        text = element.text
         words_found = []
+
+        if not hasattr(element, 'text'):
+            continue
+        text = element.text
 
         for word in corpus:
             if word in text:
@@ -81,6 +88,11 @@ def findBanner(recordsArr, corpus):
 
 
 def main():
+    #Clear results of previous run
+    filePath = HTML_DIRECTORY_PATH+'bannerIdentificationResults.txt'
+    with open(filePath, 'w') as file:
+        file.write("")
+
     iterableDir = os.fsencode(HTML_DIRECTORY_PATH)
     for file in os.listdir(iterableDir):
         # Parsing the current file
@@ -94,21 +106,25 @@ def main():
         returnValues = countNodes(soup.html, [])
         recordsArr = returnValues[0]
         totNodes = returnValues[1]
-
         
         for corpusIndex in range(len(CORPUS_TEST_VALUES)):
             for threshold in THRESHOLD_TEST_VALUES:
+
                 # Get small nodes
+                # RecordsArr gets modified in the function (the = is just to make it clear)
+                # Ensure that the threshold loops from largest to smallest values
                 recordsArr = keepSmallNodes(recordsArr, totNodes, threshold)
 
                 # Search the small nodes until find the cookie banner
                 result = findBanner(recordsArr, CORPUS_TEST_VALUES[corpusIndex])
                 found = (len(result) > 0)
+
                 # Add the result to the result file --> write filename, true/false, the words that were found
                 filePath = HTML_DIRECTORY_PATH+'bannerIdentificationResults.txt'
                 with open(filePath, 'a') as file:
                     result_str = '/'.join(result)  # Convert the list to a /-separated string (commas used to separate columns)
                     file.write(filename + "," + CORPUS_NAMES[corpusIndex] + "," + str(threshold) + "," + str(found) + "," + result_str + "\n")
+
 
 
 if __name__ == '__main__':

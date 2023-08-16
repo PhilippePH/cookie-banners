@@ -42,14 +42,12 @@ def compareValues(trueData, results):
 
 def evaluatePerformance(appendedResults):
     performance = {}  # key = hyperparamValues, values = [correctlyPredicted, uncorrectlyPredicted, falsePositive, falseNegative]
-    count = 0 
     for row in appendedResults:
 
         # For websites which don't have a match
         if len(row) != 6:
             print(row)
             continue
-        count += 1
         dictKey = row[1] + "--" + row[2]
         prediction = row[3]
         accuracyOfPrediction = row[5]
@@ -82,7 +80,6 @@ def evaluatePerformance(appendedResults):
         percentageCorrect = res[0]/(res[0]+res[1])
         print(f"{dictKey}: {round(percentageCorrect * 100, 2)} % correct predictions ({res[0]} well predicted out of {res[0]+res[1]}). {res[2]} false positives, and {res[3]} false negatives")
 
-    print(count)
 
 def main():
     # Open ground truth. Get list of [url:bannerPresent] (bannerPresent: t/f)
