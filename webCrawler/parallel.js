@@ -26,7 +26,7 @@ const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
 const NUM_URLS = 5;
 const PATH_TO_CSV = "./webCrawler/shuffled.txt";
-const DEVICE = 'laptop';
+const DEVICE = 'macserver';
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint, device){
@@ -52,7 +52,9 @@ async function createResultFolder(browserList, vantagePoint, device){
   if(device == 'laptop'){
     path = `/Users/philippe/Library/CloudStorage/OneDrive-Personal/cookie-banners-results/${formattedDateWithoutColons}`; 
   }
-
+  if(device == 'macserver'){
+    path = `/Users/crawler/OneDrive/cookie-banners-results/${formattedDateWithoutColons}`;
+  }
   await fs.mkdir(path);
   
   for(const location of vantagePoint){

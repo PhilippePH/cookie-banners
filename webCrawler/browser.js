@@ -40,6 +40,13 @@ const linuxUserProfiles = {
     'Ghostery': '/homes/pp1722/.ghostery browser/kdq1f4o2.webCrawler'
 }
 
+const macserverExecutablePaths = {
+
+}
+const macserverUserProfiles = {
+    
+}
+
 export async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
     let executablePaths = linuxExecutablePaths;
     let userProfiles = linuxUserProfiles;
@@ -47,6 +54,11 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
     if(device == 'laptop'){
         executablePaths = laptopExecutablePaths;
         userProfiles = laptopUserProfiles;
+    }
+
+    if(device == 'macserver'){
+        executablePaths = macserverExecutablePaths;
+        userProfiles = macserverUserProfiles;
     }
 
     try{
