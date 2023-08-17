@@ -79,8 +79,6 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     ignoreHTTPSErrors: true,
                     args: [ 
                         '--start-maximised',
-                        '--profile-directory=Profile 7',
-                        '--proxy-server=socks5://127.0.0.1:8080',
                     ]
                 });
             }
@@ -97,8 +95,6 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     /* User Profile Description: The EasyList Cookie found in 
                     brave://settings/shields/filters has been enabled. */
                     args: [ '--start-maximized',
-                            '--profile-directory=Profile 1',
-                            '--proxy-server=socks5://127.0.0.1:8080',
                     ]
                 });
             }

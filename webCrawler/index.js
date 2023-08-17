@@ -447,8 +447,8 @@ async function CLImain(){
     const connection = new pg.Client({
         user: 'postgres',
         password: 'I@mastrongpsswd',
-        host: '146.169.40.178',
-        database: 'crawlData',
+        host: '127.0.0.1',
+        database: 'crawlingData',
         port: '5432'
     });
     
