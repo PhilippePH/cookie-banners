@@ -41,10 +41,16 @@ const linuxUserProfiles = {
 }
 
 const macserverExecutablePaths = {
-
+    'Google Chrome' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    'Brave': '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
+    'Firefox' : '/Applications/Firefox.app/Contents/MacOS/firefox',
+    'Ghostery' : '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery'
 }
 const macserverUserProfiles = {
-    
+    'Google Chrome' : '/Users/crawler/Library/Application Support/Google/Chrome/Default',
+    'Brave' : '/Users/crawler/Library/Application Support/BraveSoftware/Brave-Browser/Default',
+    'Firefox' : '/Users/crawler/Library/Application Support/Firefox/Profiles/5rv5rl49.default-release',
+    'Ghostery' : '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release'
 }
 
 export async function createBrowserInstance(browser, vantagePoint, device = 'linux'){
