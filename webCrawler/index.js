@@ -267,7 +267,7 @@ async function saveSuccessfulWebsites(websiteUrl, resultPath, browser){
     file.end();
 }
 
-async function saveUnsuccessfulWebsites(websiteUrl, resultPath, browser){
+async function saveTimedoutWebsites(websiteUrl, resultPath, browser){
     var file = createWriteStream(`${resultPath}/${browser}_timedoutURLs.txt`, {flags:'a'});
   
     file.on('error', function(err) { console.log(err); return; });
