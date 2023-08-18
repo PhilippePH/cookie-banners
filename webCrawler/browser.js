@@ -48,7 +48,7 @@ const macserverExecutablePaths = {
 }
 const macserverUserProfiles = {
     'Google Chrome' : '/Users/crawler/Library/Application Support/Google/Chrome/Default',
-    'Brave' : '/Users/crawler/Library/Application Support/BraveSoftware/Brave-Browser/Default',
+    'Brave' : '/Users/crawler/Library/Application Support/BraveSoftware/Brave-Browser/Profile 1',
     'Firefox' : '/Users/crawler/Library/Application Support/Firefox/Profiles/5rv5rl49.default-release',
     'Ghostery' : '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release'
 }
@@ -90,7 +90,9 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     defaultViewport: null, // makes window size take full browser size
                     /* User Profile Description: The EasyList Cookie found in 
                     brave://settings/shields/filters has been enabled. */
-                    args: [ '--start-maximized' ]
+                    args: [ '--start-maximized',
+                            '--profile-directory=Profile 1'
+                 ]
                 });
             }
         }

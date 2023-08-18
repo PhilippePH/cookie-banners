@@ -2,7 +2,7 @@ import {getSiteNames} from './websiteSelection.js';
 import {createBrowserInstance} from "./browser.js";
 import {saveCookies, saveResponses, saveRequests, saveLocalStorage} from "./db.js";
 import {createWriteStream} from 'fs';
-import * as puppeteer from 'puppeteer';
+import { Frame } from 'puppeteer-core';
 import xvfb from 'xvfb';
 import pg from 'pg';
 import fs from 'fs/promises';
@@ -77,7 +77,7 @@ async function getRequests(page){
 
             requestedURL.push(interceptedRequest.url());
 
-            if(interceptedRequest.frame() instanceof puppeteer.Frame) {
+            if(interceptedRequest.frame() instanceof Frame) {
                 frames.push(interceptedRequest.frame());
             }
         })
@@ -87,8 +87,9 @@ async function getRequests(page){
 }
 
 async function addRequestToDb(requestData, browser, websiteUrl, connection){
-    let framesObjects = requestData[0];
+    let framesObjects = requestData[0]; // THIS IS EMPTY
     let requestedURL = requestData[1];
+    console.log(requestData[0]);
     
     for(let index = 0; index < framesObjects.length; index++){
         if(! framesObjects[index].isDetached()){ // cannot evaluate a detached frame
@@ -243,13 +244,15 @@ async function getLocalStorage(page, browser, websiteUrl, connection){
 }
 
 async function startBrowserInstance(browser, vantagePoint, device){
+    let BI;
     try{ 
-        return await createBrowserInstance(browser, vantagePoint, device);
+        BI =  await createBrowserInstance(browser, vantagePoint, device);
     } catch(error){ 
         console.log("Error starting browser " + browser);
         console.log(error); 
         exit; 
     } // Exit if fail to create browser instance
+    return BI;
 }
 
 async function saveSuccessfulWebsites(websiteUrl, resultPath, browser){
@@ -261,11 +264,11 @@ async function saveSuccessfulWebsites(websiteUrl, resultPath, browser){
 }
 
 async function saveUnsuccessfulWebsites(unsucessfullWebsites, resultPath, browser){
-    var file = fs.createWriteStream(`${resultPath}/${browser}_unsuccessfulURLs.txt`);
+    var file = createWriteStream(`${resultPath}/${browser}_unsuccessfulURLs.txt`);
   
     file.on('error', function(err) { console.log(err); return; });
     for(let i = 0; i < unsucessfullWebsites.length; i++){
-        await file.write(unsucessfullWebsites[i] + '\n');
+        file.write(unsucessfullWebsites[i] + '\n');
     }
     file.end();
 }
@@ -276,7 +279,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
     
     let unsucessfullWebsites = [];
     let browserInstance, page;
-    browserInstance = startBrowserInstance(browser, vantagePoint, device);
+    browserInstance = await startBrowserInstance(browser, vantagePoint, device);
 
     try{ // Closes BrowserInstance in case of an unhandled error
 
@@ -291,13 +294,10 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             try{
                 page = await browserInstance.newPage();
             } catch(error){
-                if(error instanceof Errors_js_1.TargetCloseError){
-                    console.log("Browser instance was closed somehow. Starting a new one.")
-                    browserInstance = startBrowserInstance(browser, vantagePoint, device);
-                    page = await browserInstance.newPage();
-                }
-                console.log("I AM HERE")
-                console.log(error)
+                console.log(error)                
+                console.log("Browser instance was closed somehow. Starting a new one.")
+                browserInstance = startBrowserInstance(browser, vantagePoint, device);
+                page = await browserInstance.newPage();
             }
 
             console.log(`\n${processID} (${browser}): (${urlCounter}) ${websiteUrl}`);
@@ -322,22 +322,30 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 console.log(`   ${processID} (${browser}) ${websiteUrl}: Page loaded`);
                 LOADED_COUNTER++;
             } catch(error){
-                if (error instanceof puppeteer.TimeoutError) {
+                // if (error instanceof TimeoutError) { // for some reason, this stopped working at one point.. I tried fixing the imports, but can't find the issue
+                if (error.name == "TimeoutError"){
                     console.log(`** ${processID} (${browser}): TimeoutError -> ${websiteUrl}`);
                     TIMEOUT_COUNTER++;
                     SUCCESS_BOOL = false;
                 } else{ 
                     console.log(`** ${processID} (${browser}): Error visiting webpage -> ${websiteUrl}`);
+                    console.log("Double check none are timeouts");
+                    console.log(error.name);
+                    console.log(error.message);
                     OTHER_ERROR_COUNTER++;
                     SUCCESS_BOOL = false;
                 }
                 try{
+                    console.log(`** ${processID} (${browser}) closing webpage.`)
                     await page.close();
                 } catch(error) {console.log(` ** ${processID} (${browser}): Error trying to close the page after error with webpage ${websiteUrl}`)}
                 continue;
             }           
 
-            if(! test){
+            if (test){
+                await getScreenshot(page, resultPath, siteName); //screenshot for top 250
+            }
+            else{
                 console.log(`   ${processID} (${browser}) ${websiteUrl}: Getting HTML`);
                 await getHTML(page, resultPath, siteName);
                 console.log(`   ${processID} (${browser}) ${websiteUrl}: Getting Cookies`);
@@ -347,10 +355,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 console.log(`   ${processID} (${browser}) ${websiteUrl}: Adding requests to DB`);
                 await addRequestToDb(requestData, browser, websiteUrl, connection);
             } 
-            // else { 
-                await getScreenshot(page, resultPath, siteName); //screenshot for top 250
-            // }
-            
+ 
             console.log(`   ${processID} (${browser}) ${websiteUrl}: Page closed`);
             await page.close();
 
@@ -358,7 +363,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 console.log(`   ${processID} (${browser}) ${websiteUrl}: Adding to successful website`);
                 await saveSuccessfulWebsites(websiteUrl, resultPath, browser);
                 FULLY_SUCCESS_WEBSITES++;
-                unsucessfullWebsites.pop();
+                unsucessfullWebsites.pop(); // Removing from that array since this website was successful. 
             }
         }
     } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
@@ -369,7 +374,9 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         return;
     }
 
-    await saveUnsuccessfulWebsites(unsucessfullWebsites, resultPath, browser);
+    if(!test){
+        saveUnsuccessfulWebsites(unsucessfullWebsites, resultPath, browser);
+    }
     await browserInstance.close();
     console.log(`   ${processID} (${browser}) instance closed.`)
 }
