@@ -267,13 +267,11 @@ async function saveSuccessfulWebsites(websiteUrl, resultPath, browser){
     file.end();
 }
 
-async function saveUnsuccessfulWebsites(unsucessfullWebsites, resultPath, browser){
-    var file = createWriteStream(`${resultPath}/${browser}_unsuccessfulURLs.txt`);
+async function saveUnsuccessfulWebsites(websiteUrl, resultPath, browser){
+    var file = createWriteStream(`${resultPath}/${browser}_timedoutURLs.txt`, {flags:'a'});
   
     file.on('error', function(err) { console.log(err); return; });
-    for(let i = 0; i < unsucessfullWebsites.length; i++){
-        file.write(unsucessfullWebsites[i] + '\n');
-    }
+    file.write(websiteUrl + '\n');
     file.end();
 }
 
@@ -281,7 +279,6 @@ async function saveUnsuccessfulWebsites(unsucessfullWebsites, resultPath, browse
 async function crawl(browser, resultPath, urlList, vantagePoint, 
                     connection = null, processID = 1, test = false, device = 'linux'){
     
-    let unsucessfullWebsites = [];
     let browserInstance, page;
     browserInstance = await startBrowserInstance(browser, vantagePoint, device);
 
@@ -292,7 +289,6 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         for(let websiteUrl of urlList){
             SUCCESS_BOOL = true;
             urlCounter++;
-            unsucessfullWebsites.push(websiteUrl);
 
             // Test that browser instance is still active
             try{
@@ -329,6 +325,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 // if (error instanceof TimeoutError) { // for some reason, this stopped working at one point.. I tried fixing the imports, but can't find the issue
                 if (error.name == "TimeoutError"){
                     console.log(`** ${processID} (${browser}): TimeoutError -> ${websiteUrl}`);
+                    await saveTimedoutWebsites(websiteUrl, resultPath, browser);
                     TIMEOUT_COUNTER++;
                     SUCCESS_BOOL = false;
                 } else{ 
@@ -364,7 +361,6 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 console.log(`   ${processID} (${browser}) ${websiteUrl}: Adding to successful website`);
                 await saveSuccessfulWebsites(websiteUrl, resultPath, browser);
                 FULLY_SUCCESS_WEBSITES++;
-                unsucessfullWebsites.pop(); // Removing from that array since this website was successful. 
             }
         }
     } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
@@ -375,9 +371,6 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         return;
     }
 
-    if(!test){
-        saveUnsuccessfulWebsites(unsucessfullWebsites, resultPath, browser);
-    }
     await browserInstance.close();
     console.log(`   ${processID} (${browser}) instance closed.`)
 }
