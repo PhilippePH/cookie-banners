@@ -76,11 +76,15 @@ async function getRequests(page){
         await page.on('request', async (interceptedRequest) => {
 
             requestedURL.push(interceptedRequest.url());
-
+            
             // if(interceptedRequest.frame() instanceof Frame) { // Same issue as timeouterror.......
-            if( interceptedRequest.frame().constructor.name == "Frame"){ // again, a quickfix..
-                frames.push(interceptedRequest.frame());
-            }
+            try{
+                if(Object.hasOwn(interceptedRequest.frame(), 'constructor')){
+                    if( interceptedRequest.frame().constructor.name == "Frame"){ // again, a quickfix..
+                        frames.push(interceptedRequest.frame());
+                    }     
+                }
+            } catch(error){}
         })
     } catch(error){ console.log("Error collecting requests."); console.log(error);}
 
@@ -318,7 +322,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
 
             try{
                 console.log(`   ${processID} (${browser}) : Loading new page ${websiteUrl}`);
-                await page.goto(websiteUrl, { timeout: 5000, waitUntil:'load'});
+                await page.goto( websiteUrl, { timeout: 10000, waitUntil:'load'} );
                 console.log(`   ${processID} (${browser}) ${websiteUrl}: Page loaded`);
                 LOADED_COUNTER++;
             } catch(error){
