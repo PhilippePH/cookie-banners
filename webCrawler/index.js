@@ -88,9 +88,8 @@ async function getRequests(page){
 }
 
 async function addRequestToDb(requestData, browser, websiteUrl, connection){
-    let framesObjects = requestData[0]; // THIS IS EMPTY
+    let framesObjects = requestData[0]; 
     let requestedURL = requestData[1];
-    console.log(requestData[0]);
     
     for(let index = 0; index < framesObjects.length; index++){
         if(! framesObjects[index].isDetached()){ // cannot evaluate a detached frame
