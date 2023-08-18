@@ -1,4 +1,4 @@
-import {getSiteNames} from './websiteSelection.js';
+import {getSiteNames} from './websiteSelection/websiteSelection.js';
 import {createBrowserInstance} from "./browser.js";
 import {saveCookies, saveResponses, saveRequests, saveLocalStorage} from "./db.js";
 import {createWriteStream} from 'fs';
@@ -297,6 +297,13 @@ async function saveTimedoutWebsites(websiteUrl, resultPath, browser){
     file.on('error', function(err) { console.log(err); return; });
     file.write(websiteUrl + '\n');
     file.end();
+
+    
+    var file2 = createWriteStream(`webCrawler/websiteSelection/timeouts/${browser}Timeout.txt`, {flags:'a'});
+  
+    file2.on('error', function(err) { console.log(err); return; });
+    file2.write(websiteUrl + '\n');
+    file2.end();
 }
 
 

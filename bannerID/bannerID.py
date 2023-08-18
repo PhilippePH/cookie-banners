@@ -68,7 +68,9 @@ def keepSmallNodes(recordsArr, totNodes, threshold):
 
 def findBanner(recordsArr, corpus):
     bestMatch = []
+    elem = None
     maxLength = 0
+
     for values in recordsArr:
         element = values[0]
         words_found = []
@@ -82,9 +84,19 @@ def findBanner(recordsArr, corpus):
                 words_found.append(word)
 
         if len(words_found) > maxLength:
+            elem = element
             bestMatch = words_found
 
-    return bestMatch # return the best match
+    return (elem, bestMatch) # return the best match
+
+def isBannerHidden(element):
+    print(element)
+    # Check element characteristic, though might need to move around.
+    # Check children
+    # Check 1 or 2 above?
+    # If a hidden if found return True
+    return False
+
 
 
 def main():
@@ -116,8 +128,12 @@ def main():
                 recordsArr = keepSmallNodes(recordsArr, totNodes, threshold)
 
                 # Search the small nodes until find the cookie banner
-                result = findBanner(recordsArr, CORPUS_TEST_VALUES[corpusIndex])
+                element, result = findBanner(recordsArr, CORPUS_TEST_VALUES[corpusIndex])
                 found = (len(result) > 0)
+
+                # Check if the banner has been hidden
+                if found:
+                    hidden = isBannerHidden(element) 
 
                 # Add the result to the result file --> write filename, true/false, the words that were found
                 filePath = HTML_DIRECTORY_PATH+'bannerIdentificationResults.txt'

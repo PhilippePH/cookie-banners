@@ -19,13 +19,14 @@ netstat -lntu
 
 import {fork} from 'child_process';
 import * as fs from 'node:fs/promises';
-import {getFirstURLs} from './websiteSelection.js';
+import {getURLs} from './websiteSelection/websiteSelection.js';
 // import {callableMain} from './index.js'
 
 const BROWSER_LIST = ['Google Chrome', 'Brave', 'Firefox', 'Ghostery'];
 const VANTAGE_POINTS = ['UK'];
+const START_NUMBER = 0;
 const NUM_URLS = 2500;
-const PATH_TO_CSV = "./webCrawler/shuffled.txt";
+const PATH_TO_CSV = "./webCrawler/websiteSelection/shuffled.txt";
 const DEVICE = 'macserver';
 
 // CREATING RESULTS FOLDER
@@ -78,10 +79,10 @@ async function createResultFolder(browserList, vantagePoint, device){
 async function createArgumentArray(path, browserList, vantagePoint, device){
   let argArray = []
   let i = 1;
-  const websiteList = await getFirstURLs(NUM_URLS, PATH_TO_CSV);
 
   for(const location of vantagePoint){
     for (const browser of browserList) {
+      let websiteList = await getURLs(NUM_URLS, START_NUMBER, browser, PATH_TO_CSV);
       let newPath = path + `/${location}/${browser}`;
       argArray.push([newPath, location, browser, websiteList, i, device]);
       i++;
