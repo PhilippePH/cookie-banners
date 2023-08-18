@@ -60,8 +60,18 @@ async function testCrawler(path, browser, vantagePoint, processID, device = 'lin
 
 async function getResponses(page, browser, websiteUrl, connection){
     try{
+        if(page.isClosed()) {
+            console.log("page closed, returning.");
+            return;
+        }
+
         await page.on('response', async (interceptedResponse) => {
             try{
+                if(page.isClosed()) {
+                    console.log("page closed, returning from page.on('response').");
+                    return;
+                }
+
                 await interceptedResponse;
                 await saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection);
             } catch(error){ console.log("Error adding responses to the database."); }
@@ -73,12 +83,26 @@ async function getRequests(page){
     let frames = [];
     let requestedURL = [];
     try{
+        if(page.isClosed()) {
+            console.log("page closed, returning.");
+            return;
+        }
+
         await page.on('request', async (interceptedRequest) => {
+            if(page.isClosed()) {
+                console.log("page closed, returning from page.on('request').");
+                return;
+            }
 
             requestedURL.push(interceptedRequest.url());
             
             // if(interceptedRequest.frame() instanceof Frame) { // Same issue as timeouterror.......
             try{
+                if(page.isClosed()) {
+                    console.log("page closed, returning from page.on('request').");
+                    return;
+                }
+
                 if(Object.hasOwn(interceptedRequest.frame(), 'constructor')){
                     if( interceptedRequest.frame().constructor.name == "Frame"){ // again, a quickfix..
                         frames.push(interceptedRequest.frame());
@@ -296,7 +320,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             } catch(error){
                 console.log(error)                
                 console.log("Browser instance was closed somehow. Starting a new one.")
-                browserInstance = startBrowserInstance(browser, vantagePoint, device);
+                browserInstance = await startBrowserInstance(browser, vantagePoint, device);
                 page = await browserInstance.newPage();
             }
 
@@ -343,11 +367,14 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                     OTHER_ERROR_COUNTER++;
                     SUCCESS_BOOL = false;
                 }
+                console.log(`** ${processID} (${browser}) restarting browser.`)
                 try{
-                    console.log(`** ${processID} (${browser}) closing webpage.`)
                     await page.close();
-                } catch(error) {console.log(` ** ${processID} (${browser}): Error trying to close the page after error with webpage ${websiteUrl}`)}
+                    // also tried restarting the browser, but that didn't fix the issue etiher....
+                } catch(error) {console.log(` THIS NEVER CATCHES ANYTHING..... ** ${processID} (${browser}): Error trying to close the page after error with webpage ${websiteUrl}`)}
+                console.log(`** ${processID} (${browser}) Webpage closed.`);
                 continue;
+                console.log(`Never print me`)
             }           
 
             if (test){
