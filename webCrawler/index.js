@@ -366,7 +366,9 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 // if (error instanceof TimeoutError) { // for some reason, this stopped working at one point.. I tried fixing the imports, but can't find the issue
                 if (error.name == "TimeoutError"){
                     console.log(`** ${processID} (${browser}): TimeoutError -> ${websiteUrl}`);
-                    await saveTimedoutWebsites(websiteUrl, resultPath, browser);
+                    if(!test){
+                        await saveTimedoutWebsites(websiteUrl, resultPath, browser);
+                    }
                     TIMEOUT_COUNTER++;
                     SUCCESS_BOOL = false;
                 } else{ 
