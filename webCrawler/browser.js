@@ -76,10 +76,7 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser],
                     defaultViewport: null, // makes window size take full browser size
-                    ignoreHTTPSErrors: true,
-                    args: [ 
-                        '--start-maximised',
-                    ]
+                    args: [ '--start-maximised' ]
                 });
             }
         }
@@ -91,22 +88,19 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
                     defaultViewport: null, // makes window size take full browser size
-                    ignoreHTTPSErrors: true,
                     /* User Profile Description: The EasyList Cookie found in 
                     brave://settings/shields/filters has been enabled. */
-                    args: [ '--start-maximized',
-                    ]
+                    args: [ '--start-maximized' ]
                 });
             }
         }
         else if(browser == 'Firefox'){
             if(vantagePoint == 'UK'){
-                return await puppeteer.launch({
+                return await puppeteer_extra.launch({
                     headless: false,
                     product: 'firefox',
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
-                    ignoreHTTPSErrors: true,
                     defaultViewport: null, // makes window size take full browser size
                     // extraPrefsFirefox: ['--disable-blink-features=AutomationControlled']
                 });
@@ -119,7 +113,6 @@ export async function createBrowserInstance(browser, vantagePoint, device = 'lin
                     product: 'firefox',
                     executablePath: executablePaths[browser],
                     userDataDir: userProfiles[browser], 
-                    ignoreHTTPSErrors: true,
                     defaultViewport: null, // makes window size take full browser size
                 });
             }

@@ -7,6 +7,7 @@ import xvfb from 'xvfb';
 import pg from 'pg';
 import fs from 'fs/promises';
 import path from 'path';
+import { exit } from 'process';
 
 let LOADED_COUNTER = 0;
 let TIMEOUT_COUNTER = 0;
@@ -53,7 +54,7 @@ async function testCrawler(path, browser, vantagePoint, processID, device = 'lin
 
     // Tests bot detection + proxy (IP)
     await crawl(browser, path, ["https://bot.sannysoft.com",
-                "https://www.whatismyip.com/","https://www.showmyip.com/"], 
+                "https://www.whatismyip.com","https://www.showmyip.com", "https://whatismyipaddress.com"], 
                 vantagePoint, null, processID, true, device);
 }
 
@@ -105,14 +106,18 @@ async function getScreenshot(page, resultPath, siteName){
             type: "jpeg",
             quality: 25,
         });
-    } catch(error){ console.log("Error with the screenshot"); }
+    } catch(error){ console.log("Error with the screenshot"); console.log(error); }
 }
 
 
 async function getHTML(page, resultPath, siteName){
+    // Downloads the HTML of the website and saves it to a file
     try{
-        // Downloads the HTML of the website and saves it to a file
-        const htmlContent = await page.content();
+        const HTML_TIMEOUT = 5000;
+        const htmlContent =  await Promise.race([        
+                await page.content(),
+                new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout occurred')), HTML_TIMEOUT))
+        ]);
         const fileName = resultPath+`/htmlFiles/${siteName}.html`;
         fs.writeFile(fileName, htmlContent);
     } catch(error){ console.log("Error with saving the HTML of the page to a file"); }
@@ -134,7 +139,7 @@ async function getCookies(page, browser, websiteUrl, connection){
 }
 
 async function cookieFrameEvaluate(frame){
-    const FRAME_TIMEOUT = 10000;
+    const FRAME_TIMEOUT = 5000;
     return Promise.race([
         frame.evaluate(() => {
             return window.origin;
@@ -177,7 +182,7 @@ async function getFrameCookiesRecursive(frame, browser, websiteUrl, connection) 
 }
 
 async function LocalStorageFrameEvaluate(frame){
-    const FRAME_TIMEOUT = 10000;
+    const FRAME_TIMEOUT = 5000;
     return Promise.race([
         frame.evaluate(() => {            
             const origin = window.origin; // stuck here
@@ -237,38 +242,84 @@ async function getLocalStorage(page, browser, websiteUrl, connection){
     }
 }
 
+async function startBrowserInstance(browser, vantagePoint, device){
+    try{ 
+        return await createBrowserInstance(browser, vantagePoint, device);
+    } catch(error){ 
+        console.log("Error starting browser " + browser);
+        console.log(error); 
+        exit; 
+    } // Exit if fail to create browser instance
+}
+
+async function saveSuccessfulWebsites(websiteUrl, resultPath, browser){
+    var file = createWriteStream(`${resultPath}/${browser}_successfulURLs.txt`, {flags:'a'});
+  
+    file.on('error', function(err) { console.log(err); return; });
+    file.write(websiteUrl + '\n');
+    file.end();
+}
+
+async function saveUnsuccessfulWebsites(unsucessfullWebsites, resultPath, browser){
+    var file = fs.createWriteStream(`${resultPath}/${browser}_unsuccessfulURLs.txt`);
+  
+    file.on('error', function(err) { console.log(err); return; });
+    for(let i = 0; i < unsucessfullWebsites.length; i++){
+        await file.write(unsucessfullWebsites[i] + '\n');
+    }
+    file.end();
+}
+
 
 async function crawl(browser, resultPath, urlList, vantagePoint, 
                     connection = null, processID = 1, test = false, device = 'linux'){
     
+    let unsucessfullWebsites = [];
     let browserInstance, page;
-
-    try{ 
-        browserInstance = await createBrowserInstance(browser, vantagePoint, device);
-    } catch(error){ console.log(error); return; } // Exit if fail to create browser instance
+    browserInstance = startBrowserInstance(browser, vantagePoint, device);
 
     try{ // Closes BrowserInstance in case of an unhandled error
 
         let urlCounter = 0;
         
         for(let websiteUrl of urlList){
-            console.log(websiteUrl);
             SUCCESS_BOOL = true;
             urlCounter++;
+            unsucessfullWebsites.push(websiteUrl);
 
-            page = await browserInstance.newPage();
+            // Test that browser instance is still active
+            try{
+                page = await browserInstance.newPage();
+            } catch(error){
+                if(error instanceof Errors_js_1.TargetCloseError){
+                    console.log("Browser instance was closed somehow. Starting a new one.")
+                    browserInstance = startBrowserInstance(browser, vantagePoint, device);
+                    page = await browserInstance.newPage();
+                }
+                console.log("I AM HERE")
+                console.log(error)
+            }
+
             console.log(`\n${processID} (${browser}): (${urlCounter}) ${websiteUrl}`);
             const siteName = await getSiteNames(websiteUrl);
             
             let requestData;
             if(! test){
-                requestData = await getRequests(page);
-                await getResponses(page, browser, websiteUrl, connection);    
+                try{
+                    console.log(`   ${processID} (${browser}) ${websiteUrl}: Getting Requests`);
+                    requestData = await getRequests(page);
+                    console.log(`   ${processID} (${browser}) ${websiteUrl}: Getting Responses`);
+                    await getResponses(page, browser, websiteUrl, connection);    
+                } catch(error){
+                    console.log(`${processID} (${browser}) ${websiteUrl}: An error happened when getting responses and requests.`);
+                    console.log(error)
+                }
             }
 
             try{
-                await page.goto(websiteUrl, { timeout: 10000, waitUntil:'load'});
-                console.log("   Page loaded");
+                console.log(`   ${processID} (${browser}) : Loading new page ${websiteUrl}`);
+                await page.goto(websiteUrl, { timeout: 5000, waitUntil:'load'});
+                console.log(`   ${processID} (${browser}) ${websiteUrl}: Page loaded`);
                 LOADED_COUNTER++;
             } catch(error){
                 if (error instanceof puppeteer.TimeoutError) {
@@ -280,28 +331,34 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                     OTHER_ERROR_COUNTER++;
                     SUCCESS_BOOL = false;
                 }
-                await page.close();
+                try{
+                    await page.close();
+                } catch(error) {console.log(` ** ${processID} (${browser}): Error trying to close the page after error with webpage ${websiteUrl}`)}
                 continue;
             }           
-                 
-            if(test){await getScreenshot(page, resultPath, siteName);}
 
             if(! test){
-                console.log("   Getting HTML");
+                console.log(`   ${processID} (${browser}) ${websiteUrl}: Getting HTML`);
                 await getHTML(page, resultPath, siteName);
-                console.log("   Getting cookies");
+                console.log(`   ${processID} (${browser}) ${websiteUrl}: Getting Cookies`);
                 await getCookies(page, browser, websiteUrl, connection);
-                console.log("   Getting localstorage");
+                console.log(`   ${processID} (${browser}) ${websiteUrl}: Getting Localstorage`);
                 await getLocalStorage(page, browser, websiteUrl, connection);
-                console.log("   Adding requests to DB");
+                console.log(`   ${processID} (${browser}) ${websiteUrl}: Adding requests to DB`);
                 await addRequestToDb(requestData, browser, websiteUrl, connection);
-            }
+            } 
+            // else { 
+                await getScreenshot(page, resultPath, siteName); //screenshot for top 250
+            // }
             
+            console.log(`   ${processID} (${browser}) ${websiteUrl}: Page closed`);
             await page.close();
 
             if(SUCCESS_BOOL && !test) { 
-                await saveSuccessfulWebsites(websiteUrl, resultPath);
+                console.log(`   ${processID} (${browser}) ${websiteUrl}: Adding to successful website`);
+                await saveSuccessfulWebsites(websiteUrl, resultPath, browser);
                 FULLY_SUCCESS_WEBSITES++;
+                unsucessfullWebsites.pop();
             }
         }
     } catch(error){ // Here to ensure the BrowserInstance closes in case of an error
@@ -312,17 +369,9 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
         return;
     }
 
+    await saveUnsuccessfulWebsites(unsucessfullWebsites, resultPath, browser);
     await browserInstance.close();
     console.log(`   ${processID} (${browser}) instance closed.`)
-}
-
-
-async function saveSuccessfulWebsites(websiteUrl, resultPath){
-    var file = createWriteStream(`${resultPath}/successfulURLs.txt`, {flags:'a'});
-  
-    file.on('error', function(err) { console.log(err); return; });
-    file.write(websiteUrl + '\n');
-    file.end();
 }
 
 // export async function callableMain(args){
@@ -464,7 +513,7 @@ async function CLImain(){
     }
 
     // Close database connection
-    await connection.end();    // NOTE: SOMETIMES DATABASE DISCONNECTS BEFORE EVERY REQUEST HAS BEEN ADDED TO THE DB
+    await connection.end();
     console.log("Database connection disconnected")
 
     // Close XVFB
@@ -474,7 +523,7 @@ async function CLImain(){
     }
 
     console.log(
-        "BROWSER : " + browser + "\n" +
+        "BROWSER : " + browser + " IS DONE \n" +
         "LOADED COUNTER : " + LOADED_COUNTER + "\n" +
         "TIMEOUT COUNTER : " + TIMEOUT_COUNTER + "\n" +
         "OTHER ERROR COUNTER : " + OTHER_ERROR_COUNTER + "\n" +
