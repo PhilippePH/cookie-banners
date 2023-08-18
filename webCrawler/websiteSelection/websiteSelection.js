@@ -45,11 +45,14 @@ async function getTimedOutUrls(browser){
     createReadStream(path, 'utf8')
       .on("data", function (chunk) {
         // Split the chunk into lines and process each line
-        const lines = chunk.split('\n');
-        lines.forEach(line => {
+        const siteName = chunk.split('\n');
+        siteName.forEach(siteName => {
             if (siteName !== "") { // Exclude empty site names
-              let value = myURLs[siteName];
-              myURLs[siteName] = value + 1;
+              if(siteName in myURLs){
+                let value = myURLs[siteName];
+                myURLs[siteName] =  value + 1; // increment
+              }
+              else {myURLs[siteName] =  1; } // initialise
           }
         });
       })
@@ -73,7 +76,9 @@ export async function getURLs(totalNumber, startNumber, browser, path){
 
   let newUrls = data.slice(Number(startNumber),Number(totalNumber));
   let timeouts = await getTimedOutUrls(browser);
-  newUrls.push(timeouts);
+  for(let i = 0; i < timeouts.length; i++){
+    newUrls.push(timeouts[i]);
+  }
   return newUrls
 }
 

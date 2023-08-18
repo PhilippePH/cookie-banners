@@ -359,7 +359,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
 
             try{
                 console.log(`   ${processID} (${browser}) : Loading new page ${websiteUrl}`);
-                await page.goto( websiteUrl, { timeout: 10000, waitUntil:'load'} );
+                await page.goto( websiteUrl, { timeout: 5000, waitUntil:'load'} );
                 console.log(`   ${processID} (${browser}) ${websiteUrl}: Page loaded`);
                 LOADED_COUNTER++;
             } catch(error){
