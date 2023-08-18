@@ -77,7 +77,8 @@ async function getRequests(page){
 
             requestedURL.push(interceptedRequest.url());
 
-            if(interceptedRequest.frame() instanceof Frame) {
+            // if(interceptedRequest.frame() instanceof Frame) { // Same issue as timeouterror.......
+            if( interceptedRequest.frame().constructor.name == "Frame"){ // again, a quickfix..
                 frames.push(interceptedRequest.frame());
             }
         })
@@ -328,10 +329,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                     TIMEOUT_COUNTER++;
                     SUCCESS_BOOL = false;
                 } else{ 
-                    console.log(`** ${processID} (${browser}): Error visiting webpage -> ${websiteUrl}`);
-                    console.log("Double check none are timeouts");
-                    console.log(error.name);
-                    console.log(error.message);
+                    console.log(`** ${processID} (${browser}): ${error.name} visiting webpage -> ${websiteUrl} (${error.message})`);
                     OTHER_ERROR_COUNTER++;
                     SUCCESS_BOOL = false;
                 }
