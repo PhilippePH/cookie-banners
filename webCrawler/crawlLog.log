@@ -1,402 +1,277 @@
 
-1 (Firefox): (1) https://bot.sannysoft.com
-   1 (Firefox) : Loading new page https://bot.sannysoft.com
-** 1 (Firefox): TimeoutError -> https://bot.sannysoft.com
-** 1 (Firefox) closing webpage.
+1 (Google Chrome): (1) https://bot.sannysoft.com
+   1 (Google Chrome) : Loading new page https://bot.sannysoft.com
+   1 (Google Chrome) https://bot.sannysoft.com: Page loaded
+   1 (Google Chrome) https://bot.sannysoft.com: Page closed
 
-1 (Firefox): (2) https://www.whatismyip.com
-   1 (Firefox) : Loading new page https://www.whatismyip.com
-   1 (Firefox) https://www.whatismyip.com: Page loaded
-   1 (Firefox) https://www.whatismyip.com: Page closed
+1 (Google Chrome): (2) https://www.whatismyip.com
+   1 (Google Chrome) : Loading new page https://www.whatismyip.com
+   1 (Google Chrome) https://www.whatismyip.com: Page loaded
+   1 (Google Chrome) https://www.whatismyip.com: Page closed
 
-1 (Firefox): (3) https://www.showmyip.com
-   1 (Firefox) : Loading new page https://www.showmyip.com
-   1 (Firefox) https://www.showmyip.com: Page loaded
-   1 (Firefox) https://www.showmyip.com: Page closed
+1 (Google Chrome): (3) https://www.showmyip.com
+   1 (Google Chrome) : Loading new page https://www.showmyip.com
 
-1 (Firefox): (4) https://whatismyipaddress.com
-   1 (Firefox) : Loading new page https://whatismyipaddress.com
-   1 (Firefox) https://whatismyipaddress.com: Page loaded
-   1 (Firefox) https://whatismyipaddress.com: Page closed
-   1 (Firefox) instance closed.
+3 (Firefox): (1) https://bot.sannysoft.com
+   3 (Firefox) : Loading new page https://bot.sannysoft.com
+
+4 (Ghostery): (1) https://bot.sannysoft.com
+   4 (Ghostery) : Loading new page https://bot.sannysoft.com
+** 1 (Google Chrome): TimeoutError -> https://www.showmyip.com
+ReferenceError: saveTimedoutWebsites is not defined
+    at crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:338:21)
+    at async testCrawler (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:56:5)
+    at async CLImain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:488:9)
+** 3 (Firefox): TimeoutError -> https://bot.sannysoft.com
+ReferenceError: saveTimedoutWebsites is not defined
+    at crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:338:21)
+    at async testCrawler (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:56:5)
+    at async CLImain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:488:9)
+
+2 (Brave): (1) https://bot.sannysoft.com
+   2 (Brave) : Loading new page https://bot.sannysoft.com
+** 3 (Firefox): BrowserInstance closed in error handling.
+** 1 (Google Chrome): BrowserInstance closed in error handling.
 Database connection established
+Database connection established
+** 4 (Ghostery): TimeoutError -> https://bot.sannysoft.com
+ReferenceError: saveTimedoutWebsites is not defined
+    at crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:338:21)
+    at async testCrawler (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:56:5)
+    at async CLImain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:488:9)
 
-1 (Firefox): (1) https://www.google.com
-   1 (Firefox) https://www.google.com: Getting Requests
-   1 (Firefox) https://www.google.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.google.com
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-** 1 (Firefox): TimeoutError -> https://www.google.com
-** 1 (Firefox) closing webpage.
-not a frame, caught error
+1 (Google Chrome): (1) https://www.google.com
+   1 (Google Chrome) https://www.google.com: Getting Requests
+   1 (Google Chrome) https://www.google.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.google.com
+   2 (Brave) https://bot.sannysoft.com: Page loaded
+   2 (Brave) https://bot.sannysoft.com: Page closed
 
-1 (Firefox): (2) https://www.a-msedge.net
-   1 (Firefox) https://www.a-msedge.net: Getting Requests
-   1 (Firefox) https://www.a-msedge.net: Getting Responses
-   1 (Firefox) : Loading new page https://www.a-msedge.net
-** 1 (Firefox): Error visiting webpage -> https://www.a-msedge.net (NS_ERROR_UNKNOWN_HOST at https://www.a-msedge.net)
-** 1 (Firefox) closing webpage.
+2 (Brave): (2) https://www.whatismyip.com
+   2 (Brave) : Loading new page https://www.whatismyip.com
+** 4 (Ghostery): BrowserInstance closed in error handling.
+Database connection established
+   2 (Brave) https://www.whatismyip.com: Page loaded
+   2 (Brave) https://www.whatismyip.com: Page closed
 
-1 (Firefox): (3) https://www.facebook.com
-   1 (Firefox) https://www.facebook.com: Getting Requests
-   1 (Firefox) https://www.facebook.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.facebook.com
-   1 (Firefox) https://www.facebook.com: Page loaded
-   1 (Firefox) https://www.facebook.com: Getting HTML
-   1 (Firefox) https://www.facebook.com: Getting Cookies
-   1 (Firefox) https://www.facebook.com: Getting Localstorage
-   1 (Firefox) https://www.facebook.com: Adding requests to DB
-   1 (Firefox) https://www.facebook.com: Page closed
-   1 (Firefox) https://www.facebook.com: Adding to successful website
+2 (Brave): (3) https://www.showmyip.com
+   2 (Brave) : Loading new page https://www.showmyip.com
+   1 (Google Chrome) https://www.google.com: Page loaded
+   1 (Google Chrome) https://www.google.com: Getting HTML
+   1 (Google Chrome) https://www.google.com: Getting Cookies
+   1 (Google Chrome) https://www.google.com: Getting Localstorage
+   1 (Google Chrome) https://www.google.com: Adding requests to DB
+   1 (Google Chrome) https://www.google.com: Page closed
+   1 (Google Chrome) https://www.google.com: Adding to successful website
 
-1 (Firefox): (4) https://www.microsoft.com
-   1 (Firefox) https://www.microsoft.com: Getting Requests
-   1 (Firefox) https://www.microsoft.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.microsoft.com
-   1 (Firefox) https://www.microsoft.com: Page loaded
-   1 (Firefox) https://www.microsoft.com: Getting HTML
-   1 (Firefox) https://www.microsoft.com: Getting Cookies
-   1 (Firefox) https://www.microsoft.com: Getting Localstorage
-      **** Error in LocalStorageFrameEvaluate
-   1 (Firefox) https://www.microsoft.com: Adding requests to DB
-   1 (Firefox) https://www.microsoft.com: Page closed
+1 (Google Chrome): (2) https://www.a-msedge.net
+   1 (Google Chrome) https://www.a-msedge.net: Getting Requests
+   1 (Google Chrome) https://www.a-msedge.net: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.a-msedge.net
+** 1 (Google Chrome): Error visiting webpage -> https://www.a-msedge.net (net::ERR_NAME_NOT_RESOLVED at https://www.a-msedge.net)
+** 1 (Google Chrome) closing webpage.
 
-1 (Firefox): (5) https://www.amazonaws.com
-   1 (Firefox) https://www.amazonaws.com: Getting Requests
-   1 (Firefox) https://www.amazonaws.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.amazonaws.com
-** 1 (Firefox): Error visiting webpage -> https://www.amazonaws.com (NS_ERROR_NET_RESET at https://www.amazonaws.com)
-** 1 (Firefox) closing webpage.
+1 (Google Chrome): (3) https://www.facebook.com
+   1 (Google Chrome) https://www.facebook.com: Getting Requests
+   1 (Google Chrome) https://www.facebook.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.facebook.com
+   2 (Brave) https://www.showmyip.com: Page loaded
+   2 (Brave) https://www.showmyip.com: Page closed
 
-1 (Firefox): (6) https://www.googleapis.com
-   1 (Firefox) https://www.googleapis.com: Getting Requests
-   1 (Firefox) https://www.googleapis.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.googleapis.com
-   1 (Firefox) https://www.googleapis.com: Page loaded
-   1 (Firefox) https://www.googleapis.com: Getting HTML
-   1 (Firefox) https://www.googleapis.com: Getting Cookies
-   1 (Firefox) https://www.googleapis.com: Getting Localstorage
-   1 (Firefox) https://www.googleapis.com: Adding requests to DB
-   1 (Firefox) https://www.googleapis.com: Page closed
-   1 (Firefox) https://www.googleapis.com: Adding to successful website
+2 (Brave): (4) https://whatismyipaddress.com
+   2 (Brave) : Loading new page https://whatismyipaddress.com
 
-1 (Firefox): (7) https://www.apple.com
-   1 (Firefox) https://www.apple.com: Getting Requests
-   1 (Firefox) https://www.apple.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.apple.com
-   1 (Firefox) https://www.apple.com: Page loaded
-   1 (Firefox) https://www.apple.com: Getting HTML
-   1 (Firefox) https://www.apple.com: Getting Cookies
-   1 (Firefox) https://www.apple.com: Getting Localstorage
-   1 (Firefox) https://www.apple.com: Adding requests to DB
-   1 (Firefox) https://www.apple.com: Page closed
-   1 (Firefox) https://www.apple.com: Adding to successful website
+3 (Firefox): (1) https://www.google.com
+   3 (Firefox) https://www.google.com: Getting Requests
+   3 (Firefox) https://www.google.com: Getting Responses
+   3 (Firefox) : Loading new page https://www.google.com
+   1 (Google Chrome) https://www.facebook.com: Page loaded
+   1 (Google Chrome) https://www.facebook.com: Getting HTML
+   1 (Google Chrome) https://www.facebook.com: Getting Cookies
+   1 (Google Chrome) https://www.facebook.com: Getting Localstorage
+   1 (Google Chrome) https://www.facebook.com: Adding requests to DB
+   1 (Google Chrome) https://www.facebook.com: Page closed
+   1 (Google Chrome) https://www.facebook.com: Adding to successful website
 
-1 (Firefox): (8) https://www.youtube.com
-   1 (Firefox) https://www.youtube.com: Getting Requests
-   1 (Firefox) https://www.youtube.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.youtube.com
-   1 (Firefox) https://www.youtube.com: Page loaded
-   1 (Firefox) https://www.youtube.com: Getting HTML
-   1 (Firefox) https://www.youtube.com: Getting Cookies
-   1 (Firefox) https://www.youtube.com: Getting Localstorage
-   1 (Firefox) https://www.youtube.com: Adding requests to DB
-   1 (Firefox) https://www.youtube.com: Page closed
-   1 (Firefox) https://www.youtube.com: Adding to successful website
+1 (Google Chrome): (4) https://www.microsoft.com
+   1 (Google Chrome) https://www.microsoft.com: Getting Requests
+   1 (Google Chrome) https://www.microsoft.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.microsoft.com
+   2 (Brave) https://whatismyipaddress.com: Page loaded
+   2 (Brave) https://whatismyipaddress.com: Page closed
 
-1 (Firefox): (9) https://www.akamaiedge.net
-   1 (Firefox) https://www.akamaiedge.net: Getting Requests
-   1 (Firefox) https://www.akamaiedge.net: Getting Responses
-   1 (Firefox) : Loading new page https://www.akamaiedge.net
-** 1 (Firefox): Error visiting webpage -> https://www.akamaiedge.net (NS_ERROR_UNKNOWN_HOST at https://www.akamaiedge.net)
-** 1 (Firefox) closing webpage.
+4 (Ghostery): (1) https://www.google.com
+   4 (Ghostery) https://www.google.com: Getting Requests
+   4 (Ghostery) https://www.google.com: Getting Responses
+   4 (Ghostery) : Loading new page https://www.google.com
+   2 (Brave) instance closed.
+Database connection established
+   1 (Google Chrome) https://www.microsoft.com: Page loaded
+   1 (Google Chrome) https://www.microsoft.com: Getting HTML
+   1 (Google Chrome) https://www.microsoft.com: Getting Cookies
+   1 (Google Chrome) https://www.microsoft.com: Getting Localstorage
+   1 (Google Chrome) https://www.microsoft.com: Adding requests to DB
+   1 (Google Chrome) https://www.microsoft.com: Page closed
+   1 (Google Chrome) https://www.microsoft.com: Adding to successful website
 
-1 (Firefox): (10) https://www.twitter.com
-   1 (Firefox) https://www.twitter.com: Getting Requests
-   1 (Firefox) https://www.twitter.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.twitter.com
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-** 1 (Firefox): TimeoutError -> https://www.twitter.com
-** 1 (Firefox) closing webpage.
-not a frame, caught error
+1 (Google Chrome): (5) https://www.amazonaws.com
+   1 (Google Chrome) https://www.amazonaws.com: Getting Requests
+   1 (Google Chrome) https://www.amazonaws.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.amazonaws.com
+** 1 (Google Chrome): Error visiting webpage -> https://www.amazonaws.com (net::ERR_CONNECTION_RESET at https://www.amazonaws.com)
+** 1 (Google Chrome) closing webpage.
 
-1 (Firefox): (11) https://www.netflix.com
-   1 (Firefox) https://www.netflix.com: Getting Requests
-   1 (Firefox) https://www.netflix.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.netflix.com
-** 1 (Firefox): TimeoutError -> https://www.netflix.com
-** 1 (Firefox) closing webpage.
+1 (Google Chrome): (6) https://www.googleapis.com
+   1 (Google Chrome) https://www.googleapis.com: Getting Requests
+   1 (Google Chrome) https://www.googleapis.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.googleapis.com
+   1 (Google Chrome) https://www.googleapis.com: Page loaded
+   1 (Google Chrome) https://www.googleapis.com: Getting HTML
+   1 (Google Chrome) https://www.googleapis.com: Getting Cookies
+   1 (Google Chrome) https://www.googleapis.com: Getting Localstorage
+   1 (Google Chrome) https://www.googleapis.com: Adding requests to DB
+   1 (Google Chrome) https://www.googleapis.com: Page closed
+   1 (Google Chrome) https://www.googleapis.com: Adding to successful website
 
-1 (Firefox): (12) https://www.instagram.com
-   1 (Firefox) https://www.instagram.com: Getting Requests
-   1 (Firefox) https://www.instagram.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.instagram.com
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-not a frame, caught error
-** 1 (Firefox): TimeoutError -> https://www.instagram.com
-** 1 (Firefox) closing webpage.
-not a frame, caught error
+1 (Google Chrome): (7) https://www.apple.com
+   1 (Google Chrome) https://www.apple.com: Getting Requests
+   1 (Google Chrome) https://www.apple.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.apple.com
 
-1 (Firefox): (13) https://www.googlevideo.com
-   1 (Firefox) https://www.googlevideo.com: Getting Requests
-   1 (Firefox) https://www.googlevideo.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.googlevideo.com
-   1 (Firefox) https://www.googlevideo.com: Page loaded
-   1 (Firefox) https://www.googlevideo.com: Getting HTML
-   1 (Firefox) https://www.googlevideo.com: Getting Cookies
-   1 (Firefox) https://www.googlevideo.com: Getting Localstorage
-   1 (Firefox) https://www.googlevideo.com: Adding requests to DB
-   1 (Firefox) https://www.googlevideo.com: Page closed
-   1 (Firefox) https://www.googlevideo.com: Adding to successful website
-
-1 (Firefox): (14) https://www.cloudflare.com
-   1 (Firefox) https://www.cloudflare.com: Getting Requests
-   1 (Firefox) https://www.cloudflare.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.cloudflare.com
-** 1 (Firefox): Error visiting webpage -> https://www.cloudflare.com (NS_BINDING_ABORTED at https://www.cloudflare.com)
-** 1 (Firefox) closing webpage.
-
-1 (Firefox): (15) https://www.gtld-servers.net
-   1 (Firefox) https://www.gtld-servers.net: Getting Requests
-   1 (Firefox) https://www.gtld-servers.net: Getting Responses
-   1 (Firefox) : Loading new page https://www.gtld-servers.net
-** 1 (Firefox): Error visiting webpage -> https://www.gtld-servers.net (NS_ERROR_UNKNOWN_HOST at https://www.gtld-servers.net)
-** 1 (Firefox) closing webpage.
-
-1 (Firefox): (16) https://www.gstatic.com
-   1 (Firefox) https://www.gstatic.com: Getting Requests
-   1 (Firefox) https://www.gstatic.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.gstatic.com
-   1 (Firefox) https://www.gstatic.com: Page loaded
-   1 (Firefox) https://www.gstatic.com: Getting HTML
-   1 (Firefox) https://www.gstatic.com: Getting Cookies
-   1 (Firefox) https://www.gstatic.com: Getting Localstorage
-   1 (Firefox) https://www.gstatic.com: Adding requests to DB
-   1 (Firefox) https://www.gstatic.com: Page closed
-   1 (Firefox) https://www.gstatic.com: Adding to successful website
-
-1 (Firefox): (17) https://www.akamai.net
-   1 (Firefox) https://www.akamai.net: Getting Requests
-   1 (Firefox) https://www.akamai.net: Getting Responses
-   1 (Firefox) : Loading new page https://www.akamai.net
-** 1 (Firefox): Error visiting webpage -> https://www.akamai.net (NS_ERROR_UNKNOWN_HOST at https://www.akamai.net)
-** 1 (Firefox) closing webpage.
-
-1 (Firefox): (18) https://www.linkedin.com
-   1 (Firefox) https://www.linkedin.com: Getting Requests
-   1 (Firefox) https://www.linkedin.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.linkedin.com
-   1 (Firefox) https://www.linkedin.com: Page loaded
-   1 (Firefox) https://www.linkedin.com: Getting HTML
-   1 (Firefox) https://www.linkedin.com: Getting Cookies
-   1 (Firefox) https://www.linkedin.com: Getting Localstorage
-   1 (Firefox) https://www.linkedin.com: Adding requests to DB
-   1 (Firefox) https://www.linkedin.com: Page closed
-   1 (Firefox) https://www.linkedin.com: Adding to successful website
-
-1 (Firefox): (19) https://www.live.com
-   1 (Firefox) https://www.live.com: Getting Requests
-   1 (Firefox) https://www.live.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.live.com
-   1 (Firefox) https://www.live.com: Page loaded
-   1 (Firefox) https://www.live.com: Getting HTML
-   1 (Firefox) https://www.live.com: Getting Cookies
-   1 (Firefox) https://www.live.com: Getting Localstorage
-   1 (Firefox) https://www.live.com: Adding requests to DB
-   1 (Firefox) https://www.live.com: Page closed
-   1 (Firefox) https://www.live.com: Adding to successful website
-
-1 (Firefox): (20) https://www.tiktokcdn.com
-   1 (Firefox) https://www.tiktokcdn.com: Getting Requests
-   1 (Firefox) https://www.tiktokcdn.com: Getting Responses
-   1 (Firefox) : Loading new page https://www.tiktokcdn.com
-** 1 (Firefox): Error visiting webpage -> https://www.tiktokcdn.com (NS_ERROR_UNKNOWN_HOST at https://www.tiktokcdn.com)
-** 1 (Firefox) closing webpage.
-   1 (Firefox) instance closed.
+2 (Brave): (1) https://www.google.com
+   2 (Brave) https://www.google.com: Getting Requests
+   2 (Brave) https://www.google.com: Getting Responses
+   2 (Brave) : Loading new page https://www.google.com
+** 3 (Firefox): TimeoutError -> https://www.google.com
+ReferenceError: saveTimedoutWebsites is not defined
+    at crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:338:21)
+    at async CLImain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:520:9)
+** 3 (Firefox): BrowserInstance closed in error handling.
 Database connection disconnected
 BROWSER : Firefox IS DONE 
-LOADED COUNTER : 9
-TIMEOUT COUNTER : 4
-OTHER ERROR COUNTER : 7
+LOADED COUNTER : 0
+TIMEOUT COUNTER : 0
+OTHER ERROR COUNTER : 0
 COOKIE TIMEOUT COUNTER : 0
-LOCALSTORAGE TIMEOUT COUNTER : 1
-NUMBER OF SUCCESSFUL WEBSITES : 8
+LOCALSTORAGE TIMEOUT COUNTER : 0
+NUMBER OF SUCCESSFUL WEBSITES : 0
 
+   1 (Google Chrome) https://www.apple.com: Page loaded
+   1 (Google Chrome) https://www.apple.com: Getting HTML
+   1 (Google Chrome) https://www.apple.com: Getting Cookies
+   1 (Google Chrome) https://www.apple.com: Getting Localstorage
+   1 (Google Chrome) https://www.apple.com: Adding requests to DB
+   1 (Google Chrome) https://www.apple.com: Page closed
+   1 (Google Chrome) https://www.apple.com: Adding to successful website
+
+1 (Google Chrome): (8) https://www.youtube.com
+   1 (Google Chrome) https://www.youtube.com: Getting Requests
+   1 (Google Chrome) https://www.youtube.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.youtube.com
+   2 (Brave) https://www.google.com: Page loaded
+   2 (Brave) https://www.google.com: Getting HTML
+   2 (Brave) https://www.google.com: Getting Cookies
+   2 (Brave) https://www.google.com: Getting Localstorage
+   2 (Brave) https://www.google.com: Adding requests to DB
+   2 (Brave) https://www.google.com: Page closed
+   2 (Brave) https://www.google.com: Adding to successful website
+
+2 (Brave): (2) https://www.a-msedge.net
+   2 (Brave) https://www.a-msedge.net: Getting Requests
+   2 (Brave) https://www.a-msedge.net: Getting Responses
+   2 (Brave) : Loading new page https://www.a-msedge.net
+** 2 (Brave): Error visiting webpage -> https://www.a-msedge.net (net::ERR_NAME_NOT_RESOLVED at https://www.a-msedge.net)
+** 2 (Brave) closing webpage.
+** 4 (Ghostery): TimeoutError -> https://www.google.com
+ReferenceError: saveTimedoutWebsites is not defined
+    at crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:338:21)
+    at async CLImain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:520:9)
+
+2 (Brave): (3) https://www.facebook.com
+   2 (Brave) https://www.facebook.com: Getting Requests
+   2 (Brave) https://www.facebook.com: Getting Responses
+   2 (Brave) : Loading new page https://www.facebook.com
+** 4 (Ghostery): BrowserInstance closed in error handling.
+Database connection disconnected
+BROWSER : Ghostery IS DONE 
+LOADED COUNTER : 0
+TIMEOUT COUNTER : 0
+OTHER ERROR COUNTER : 0
+COOKIE TIMEOUT COUNTER : 0
+LOCALSTORAGE TIMEOUT COUNTER : 0
+NUMBER OF SUCCESSFUL WEBSITES : 0
+
+   2 (Brave) https://www.facebook.com: Page loaded
+   2 (Brave) https://www.facebook.com: Getting HTML
+   2 (Brave) https://www.facebook.com: Getting Cookies
+   2 (Brave) https://www.facebook.com: Getting Localstorage
+   2 (Brave) https://www.facebook.com: Adding requests to DB
+   2 (Brave) https://www.facebook.com: Page closed
+   2 (Brave) https://www.facebook.com: Adding to successful website
+
+2 (Brave): (4) https://www.microsoft.com
+   2 (Brave) https://www.microsoft.com: Getting Requests
+   2 (Brave) https://www.microsoft.com: Getting Responses
+   2 (Brave) : Loading new page https://www.microsoft.com
+   1 (Google Chrome) https://www.youtube.com: Page loaded
+   1 (Google Chrome) https://www.youtube.com: Getting HTML
+   1 (Google Chrome) https://www.youtube.com: Getting Cookies
+   1 (Google Chrome) https://www.youtube.com: Getting Localstorage
+   1 (Google Chrome) https://www.youtube.com: Adding requests to DB
+   1 (Google Chrome) https://www.youtube.com: Page closed
+   1 (Google Chrome) https://www.youtube.com: Adding to successful website
+
+1 (Google Chrome): (9) https://www.akamaiedge.net
+   1 (Google Chrome) https://www.akamaiedge.net: Getting Requests
+   1 (Google Chrome) https://www.akamaiedge.net: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.akamaiedge.net
+** 1 (Google Chrome): Error visiting webpage -> https://www.akamaiedge.net (net::ERR_NAME_NOT_RESOLVED at https://www.akamaiedge.net)
+** 1 (Google Chrome) closing webpage.
+
+1 (Google Chrome): (10) https://www.twitter.com
+   1 (Google Chrome) https://www.twitter.com: Getting Requests
+   1 (Google Chrome) https://www.twitter.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.twitter.com
+   2 (Brave) https://www.microsoft.com: Page loaded
+   2 (Brave) https://www.microsoft.com: Getting HTML
+   2 (Brave) https://www.microsoft.com: Getting Cookies
+      **** Cannot get frame origin because of lazy frame in cookies
+   2 (Brave) https://www.microsoft.com: Getting Localstorage
+   2 (Brave) https://www.microsoft.com: Adding requests to DB
+   2 (Brave) https://www.microsoft.com: Page closed
+
+2 (Brave): (5) https://www.amazonaws.com
+   2 (Brave) https://www.amazonaws.com: Getting Requests
+   2 (Brave) https://www.amazonaws.com: Getting Responses
+   2 (Brave) : Loading new page https://www.amazonaws.com
+   1 (Google Chrome) https://www.twitter.com: Page loaded
+   1 (Google Chrome) https://www.twitter.com: Getting HTML
+   1 (Google Chrome) https://www.twitter.com: Getting Cookies
+** 2 (Brave): Error visiting webpage -> https://www.amazonaws.com (net::ERR_CONNECTION_RESET at https://www.amazonaws.com)
+** 2 (Brave) closing webpage.
+
+2 (Brave): (6) https://www.googleapis.com
+   2 (Brave) https://www.googleapis.com: Getting Requests
+   2 (Brave) https://www.googleapis.com: Getting Responses
+   2 (Brave) : Loading new page https://www.googleapis.com
+   1 (Google Chrome) https://www.twitter.com: Getting Localstorage
+   1 (Google Chrome) https://www.twitter.com: Adding requests to DB
+   1 (Google Chrome) https://www.twitter.com: Page closed
+   1 (Google Chrome) https://www.twitter.com: Adding to successful website
+
+1 (Google Chrome): (11) https://www.netflix.com
+   1 (Google Chrome) https://www.netflix.com: Getting Requests
+   1 (Google Chrome) https://www.netflix.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.netflix.com
+   2 (Brave) https://www.googleapis.com: Page loaded
+   2 (Brave) https://www.googleapis.com: Getting HTML
+   2 (Brave) https://www.googleapis.com: Getting Cookies
+   2 (Brave) https://www.googleapis.com: Getting Localstorage
+   2 (Brave) https://www.googleapis.com: Adding requests to DB
+   2 (Brave) https://www.googleapis.com: Page closed
+   2 (Brave) https://www.googleapis.com: Adding to successful website
+
+2 (Brave): (7) https://www.apple.com
+   2 (Brave) https://www.apple.com: Getting Requests
+   2 (Brave) https://www.apple.com: Getting Responses
+   2 (Brave) : Loading new page https://www.apple.com

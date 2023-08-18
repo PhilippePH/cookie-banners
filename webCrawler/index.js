@@ -305,14 +305,24 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             
             let requestData;
             if(! test){
+                console.log(`   ${processID} (${browser}) ${websiteUrl}: Getting Requests`);
+                
                 try{
-                    console.log(`   ${processID} (${browser}) ${websiteUrl}: Getting Requests`);
                     requestData = await getRequests(page);
-                    console.log(`   ${processID} (${browser}) ${websiteUrl}: Getting Responses`);
+                } catch(error) {
+                    console.log(`${processID} (${browser}) ${websiteUrl}: An error happened when getting requests.`);
+                    console.log(error.name)
+                    console.log(error.message)
+                }
+                
+                console.log(`   ${processID} (${browser}) ${websiteUrl}: Getting Responses`);
+                    
+                try{
                     await getResponses(page, browser, websiteUrl, connection);    
                 } catch(error){
-                    console.log(`${processID} (${browser}) ${websiteUrl}: An error happened when getting responses and requests.`);
-                    console.log(error)
+                    console.log(`${processID} (${browser}) ${websiteUrl}: An error happened when getting responses.`);
+                    console.log(error.name)
+                    console.log(error.message)
                 }
             }
 

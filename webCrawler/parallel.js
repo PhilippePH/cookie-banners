@@ -22,9 +22,9 @@ import * as fs from 'node:fs/promises';
 import {getFirstURLs} from './websiteSelection.js';
 // import {callableMain} from './index.js'
 
-const BROWSER_LIST = ['Firefox'];
+const BROWSER_LIST = ['Google Chrome', 'Brave', 'Firefox', 'Ghostery'];
 const VANTAGE_POINTS = ['UK'];
-const NUM_URLS = 20;
+const NUM_URLS = 2500;
 const PATH_TO_CSV = "./webCrawler/shuffled.txt";
 const DEVICE = 'macserver';
 
