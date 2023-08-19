@@ -1,4 +1,5 @@
-import {createReadStream} from 'fs';
+import {createReadStream, promises as fsPromises} from 'fs';
+import readline from 'readline'
 // import {parse} from "csv-parse";
 
 export async function TXTtoArray(path){
@@ -32,7 +33,43 @@ export async function TXTtoArray(path){
     });
 }  
 
+async function cleanTimedOutUrls(browser) {
+  const timeoutsFilePath = `./webCrawler/websiteSelection/timeouts/${browser}Timeout.txt`;
+  const successfulFilePath = `./webCrawler/websiteSelection/successfulWebsites/${browser}Successful.txt`;
+
+  const successfulSet = new Set();
+
+  const successfulStream = readline.createInterface({
+    input: createReadStream(successfulFilePath, 'utf-8'),
+    output: process.stdout,
+    terminal: false
+  });
+
+  // Read successful URLs and store them in a Set
+  successfulStream.on('line', (line) => {
+    successfulSet.add(line.trim());
+  });
+
+  successfulStream.on('close', async () => {
+    const timeoutsContent = await fsPromises.readFile(timeoutsFilePath, 'utf-8');
+    const timeoutLines = timeoutsContent.split('\n');
+
+    const filteredTimeouts = timeoutLines.filter((url) => {
+      const trimmedUrl = url.trim();
+      return !successfulSet.has(trimmedUrl);
+    });
+
+    const newTimeoutsContent = filteredTimeouts.join('\n');
+
+    await fsPromises.writeFile(timeoutsFilePath, newTimeoutsContent);
+  });
+}
+
+
 async function getTimedOutUrls(browser){
+  // Remove from the timeout list those websites that have sucessfully loaded since
+  await cleanTimedOutUrls(browser);
+  
   // Exclude websites that have timed out more than 3 times.
   let path;
   if(browser == 'Firefox'){ path = 'webCrawler/websiteSelection/timeouts/FirefoxTimeout.txt';}
