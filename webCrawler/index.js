@@ -285,10 +285,15 @@ async function startBrowserInstance(browser, vantagePoint, device){
 
 async function saveSuccessfulWebsites(websiteUrl, resultPath, browser){
     var file = createWriteStream(`${resultPath}/${browser}_successfulURLs.txt`, {flags:'a'});
-  
+    var file2 = createWriteStream(`./webCrawler/websiteSelection/successfulWebsites/${browser}Successful.txt`, {flags:'a'});
+
     file.on('error', function(err) { console.log(err); return; });
     file.write(websiteUrl + '\n');
     file.end();
+
+    file2.on('error', function(err) { console.log(err); return; });
+    file2.write(websiteUrl + '\n');
+    file2.end();
 }
 
 async function saveTimedoutWebsites(websiteUrl, resultPath, browser){
@@ -376,7 +381,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                     OTHER_ERROR_COUNTER++;
                     SUCCESS_BOOL = false;
                 }
-                console.log(`** ${processID} (${browser}) restarting browser.`)
+                console.log(`** ${processID} (${browser}) closing page.`)
                 try{
                     await page.close();
                     // also tried restarting the browser, but that didn't fix the issue etiher....
