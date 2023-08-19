@@ -6,15 +6,15 @@ import csv
 pathGroundValues = "top250banners/top250(50)banners_allBrowsers.csv"
 Ground_Domain = 0
 Ground_BannerPresent = 1
+browserColumns = {"Brave": 2, "Firefox": 3, "Ghostery": 4, "Google Chrome": 5}
 
-
-def getGroundTruth():
+def getGroundTruth(browser):
     data = []
 
     with open(pathGroundValues, 'r', newline='\n') as csvfile:
         csv_reader = csv.reader(csvfile)
         for row in csv_reader:
-            data.append([row[Ground_Domain], (row[Ground_BannerPresent]=="Yes")])
+            data.append([row[Ground_Domain], (row[browserColumns[browser]]=="Yes")]) # selecting the correct browser column to assess the accuracy of the tools for said browser
     
     return data
 
@@ -96,8 +96,8 @@ def evaluatePerformance(appendedResults):
         print(f"{dictKey}: {round(percentageCorrect * 100, 2)} % correct predictions ({res[0]} well predicted out of {res[0]+res[1]}). {res[2]} false positives, and {res[3]} false negatives")
 
 
-def main(results_path):
-    trueData = getGroundTruth() # Open ground truth. Get list of [url:bannerPresent] (bannerPresent: t/f)
+def main(results_path, browser):
+    trueData = getGroundTruth(browser) # Open ground truth. Get list of [url:bannerPresent] (bannerPresent: t/f)
     results = getResults(results_path) # Open results
 
     # Compare ground truth to results. Append to the results a column to say if correct or not.

@@ -20,7 +20,7 @@ def main():
         results_path = bannerID.main(directory)
         path = results_path
     
-    calculateAccuracy.main(path)
+    calculateAccuracy.main(path, browser)
 
 if __name__ == '__main__':
     main()
