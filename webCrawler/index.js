@@ -89,7 +89,6 @@ async function getRequests(page){
            
             if(interceptedRequest.frame() != null){
                 if( interceptedRequest.frame().constructor.name == "Frame"){ // again, a quickfix..
-                    console.log("Adding a frame")
                     frames.push(interceptedRequest.frame());
                 }     
             }
