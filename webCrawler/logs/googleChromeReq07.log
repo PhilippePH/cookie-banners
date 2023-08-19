@@ -1,0 +1,4303 @@
+
+1 (Google Chrome): (1) https://bot.sannysoft.com
+   1 (Google Chrome) : Loading new page https://bot.sannysoft.com
+PAGE LOG: JSHandle@regexp
+PAGE LOG: Failed to load resource: the server responded with a status of 404 (Not Found)
+   1 (Google Chrome) https://bot.sannysoft.com: Page loaded
+PAGE LOG: Failed to load resource: the server responded with a status of 404 ()
+   1 (Google Chrome) https://bot.sannysoft.com: Page closed
+
+1 (Google Chrome): (2) https://www.whatismyip.com
+   1 (Google Chrome) : Loading new page https://www.whatismyip.com
+   1 (Google Chrome) https://www.whatismyip.com: Page loaded
+   1 (Google Chrome) https://www.whatismyip.com: Page closed
+
+1 (Google Chrome): (3) https://www.showmyip.com
+   1 (Google Chrome) : Loading new page https://www.showmyip.com
+PAGE LOG: gBrowserWidth =1200
+PAGE LOG: %cAMP Loader v1.4.2 - © AdMetricsPro background-color:#0f641f;border:solid 1px #31ae48;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:8px;
+PAGE LOG: %cAMP Loader%cConfigured 5 ad units for browser width of 1200px background-color:#0f641f;border:solid 1px #31ae48;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:8px; font-weight:500;
+PAGE LOG: %cAMP Loader%cAmazon publisher ID cb8cfc89-e83e-44aa-a3a2-ff78eda781ef background-color:#0f641f;border:solid 1px #31ae48;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:8px; font-weight:500;
+PAGE LOG: %cAMP Loader%cLocation data found in cookie data background-color:#0f641f;border:solid 1px #31ae48;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:8px; font-weight:500;
+PAGE LOG: %cAMP Loader%cConsidering 9 scripts for head. background-color:#0f641f;border:solid 1px #31ae48;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:8px; font-weight:500;
+PAGE LOG: %cAMP Loader [ Startup Ends ] background-color:#0f641f;border:solid 1px #31ae48;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:8px;
+PAGE LOG: Connatix in-content script found.
+PAGE LOG: %cGDPR CMP%cAdMetricsPro GDPR CMP v353 background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: %cCCPA CMP%cAdMetricsPro CCPA CMP Stub v1.0 (Non-California Traffic Only) background-color:#798C00;border:solid 1px #9FB800;padding:2px 8px;border-radius:2px;font-weight:900;color:#ffd;margin-right:6px; font-weight:500;
+PAGE LOG: %cCCPA CMP%c__uspapi: install_uspapi() installing... background-color:#798C00;border:solid 1px #9FB800;padding:2px 8px;border-radius:2px;font-weight:900;color:#ffd;margin-right:6px; font-weight:500;
+PAGE LOG: %cAMP Engine v2.0-230724-9 - � AdMetricsPro background-color:#0F2364;border:solid 1px #314EAE;padding:2px 8px;border-radius:2px;font-weight:900;color:#dde;margin-right:6px;
+PAGE LOG: %cAMP Engine%cAmazon initialized with publisher ID cb8cfc89-e83e-44aa-a3a2-ff78eda781ef background-color:#0F2364;border:solid 1px #314EAE;padding:2px 8px;border-radius:2px;font-weight:900;color:#dde;margin-right:6px; font-weight:500;
+PAGE LOG: %cGDPR CMP%cGVL version is 189 background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: %cGDPR CMP%cCPwwDwAPwwDwABNADBENC9CgAAAAAAAAACiQAAAAAAAA.YAAAAAAAAAAA background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: %cGDPR CMP%c__uspLaunch begin background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: %cGDPR CMP%cexisting consent found in cookie, local or session storage background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: %cGDPR CMP%cchecking non TCF vendor cookie background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: %cGDPR CMP%cNo existing non-TCF consent found in cookie, local or session storage background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: %cGDPR CMP%cLocation data found in cookie data background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: %cGDPR CMP%cgeo IP found country GB; GDPR applies. background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: %cGDPR CMP%cGDPR applies and no existing consent background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: Listener added for a synchronous 'DOMNodeRemoved' DOM Mutation Event. This event type is deprecated (https://w3c.github.io/uievents/#legacy-event-types) and work is underway to remove it from this browser. Usage of this event listener will cause performance issues today, and represents a risk of future incompatibility. Consider using MutationObserver instead.
+PAGE LOG: %cCCPA CMP%cError: __uspapi: command 'registerDeletion' not supported background-color:#798C00;border:solid 1px #9FB800;padding:2px 8px;border-radius:2px;font-weight:900;color:#ffd;margin-right:6px; width:100%;background-color:#7b2222;padding:2px 4px;border-radius:2px;font-weight:500;color:#EEF;margin-right:4px;
+PAGE LOG: %cCCPA CMP%cError: __uspapi: command 'registerDeletion' not supported background-color:#798C00;border:solid 1px #9FB800;padding:2px 8px;border-radius:2px;font-weight:900;color:#ffd;margin-right:6px; width:100%;background-color:#7b2222;padding:2px 4px;border-radius:2px;font-weight:500;color:#EEF;margin-right:4px;
+PAGE LOG: %cGDPR CMP%c__cmpOpenUI() background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: %cGDPR CMP%cApp: mounted() view=layerOne background-color:#0F6423;border:solid 1px #31AE4E;padding:2px 8px;border-radius:2px;font-weight:900;color:#ded;margin-right:6px; font-weight:500;
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://cds.connatix.com/p/plugins/connatix.omsdk.service-web.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://cds.connatix.com/p/plugins/connatix.omsdk.service-web.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://cds.connatix.com/p/plugins/connatix.omsdk.session.client-1.4.2.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://cds.connatix.com/p/plugins/connatix.omsdk.session.client-1.4.2.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+PAGE LOG: Failed to load resource: the server responded with a status of 404 ()
+PAGE LOG: [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
+PAGE LOG: [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
+PAGE LOG: [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
+PAGE LOG: [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
+PAGE LOG: [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
+PAGE LOG: SYNC.JS: Aborting because TCF string was expected but not present.
+PAGE LOG: SYNC.JS: Aborting because no consent was present on the request or stored server-side
+PAGE LOG: SYNC.JS: Aborting due to above errors.
+PAGE LOG: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+** 1 (Google Chrome): TimeoutError -> https://www.showmyip.com
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (4) https://whatismyipaddress.com
+   1 (Google Chrome) : Loading new page https://whatismyipaddress.com
+PAGE LOG: JQMIGRATE: Migrate is installed, version 3.4.1
+PAGE LOG: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+PAGE LOG: Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+   1 (Google Chrome) https://whatismyipaddress.com: Page loaded
+   1 (Google Chrome) https://whatismyipaddress.com: Page closed
+   1 (Google Chrome) instance closed.
+Database connection established
+
+1 (Google Chrome): (1) https://www.moonreading.com
+   1 (Google Chrome) https://www.moonreading.com: Getting Requests
+   1 (Google Chrome) https://www.moonreading.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.moonreading.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Failed to load resource: the server responded with a status of 404 ()
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.moonreading.com: Page loaded
+   1 (Google Chrome) https://www.moonreading.com: Getting HTML
+Adding a frame
+   1 (Google Chrome) https://www.moonreading.com: Getting Cookies
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.moonreading.com: Getting Localstorage
+   1 (Google Chrome) https://www.moonreading.com: Adding requests to DB
+   1 (Google Chrome) https://www.moonreading.com: Page closed
+   1 (Google Chrome) https://www.moonreading.com: Adding to successful website
+
+1 (Google Chrome): (2) https://www.pdftoimage.com
+   1 (Google Chrome) https://www.pdftoimage.com: Getting Requests
+   1 (Google Chrome) https://www.pdftoimage.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.pdftoimage.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.pdftoimage.com: Page loaded
+   1 (Google Chrome) https://www.pdftoimage.com: Getting HTML
+   1 (Google Chrome) https://www.pdftoimage.com: Getting Cookies
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.pdftoimage.com: Getting Localstorage
+   1 (Google Chrome) https://www.pdftoimage.com: Adding requests to DB
+   1 (Google Chrome) https://www.pdftoimage.com: Page closed
+   1 (Google Chrome) https://www.pdftoimage.com: Adding to successful website
+
+1 (Google Chrome): (3) https://www.winbet.bg
+   1 (Google Chrome) https://www.winbet.bg: Getting Requests
+   1 (Google Chrome) https://www.winbet.bg: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.winbet.bg
+Adding a frame
+Adding a frame
+PAGE LOG: Failed to load resource: the server responded with a status of 403 ()
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.winbet.bg: Page loaded
+   1 (Google Chrome) https://www.winbet.bg: Getting HTML
+   1 (Google Chrome) https://www.winbet.bg: Getting Cookies
+Adding a frame
+   1 (Google Chrome) https://www.winbet.bg: Getting Localstorage
+   1 (Google Chrome) https://www.winbet.bg: Adding requests to DB
+PAGE LOG: Failed to load resource: the server responded with a status of 403 ()
+   1 (Google Chrome) https://www.winbet.bg: Page closed
+   1 (Google Chrome) https://www.winbet.bg: Adding to successful website
+
+1 (Google Chrome): (4) https://www.betterhelporg.com
+   1 (Google Chrome) https://www.betterhelporg.com: Getting Requests
+   1 (Google Chrome) https://www.betterhelporg.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.betterhelporg.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.betterhelporg.com: Page loaded
+   1 (Google Chrome) https://www.betterhelporg.com: Getting HTML
+Adding a frame
+   1 (Google Chrome) https://www.betterhelporg.com: Getting Cookies
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.betterhelporg.com: Getting Localstorage
+Adding a frame
+   1 (Google Chrome) https://www.betterhelporg.com: Adding requests to DB
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.betterhelporg.com: Page closed
+   1 (Google Chrome) https://www.betterhelporg.com: Adding to successful website
+
+1 (Google Chrome): (5) https://www.bloodmallet.com
+   1 (Google Chrome) https://www.bloodmallet.com: Getting Requests
+   1 (Google Chrome) https://www.bloodmallet.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.bloodmallet.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.bloodmallet.com: Page loaded
+   1 (Google Chrome) https://www.bloodmallet.com: Getting HTML
+   1 (Google Chrome) https://www.bloodmallet.com: Getting Cookies
+   1 (Google Chrome) https://www.bloodmallet.com: Getting Localstorage
+   1 (Google Chrome) https://www.bloodmallet.com: Adding requests to DB
+   1 (Google Chrome) https://www.bloodmallet.com: Page closed
+   1 (Google Chrome) https://www.bloodmallet.com: Adding to successful website
+
+1 (Google Chrome): (6) https://www.ngenix-dns.ru
+   1 (Google Chrome) https://www.ngenix-dns.ru: Getting Requests
+   1 (Google Chrome) https://www.ngenix-dns.ru: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.ngenix-dns.ru
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.ngenix-dns.ru (net::ERR_NAME_NOT_RESOLVED at https://www.ngenix-dns.ru)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (7) https://www.vietnix.vn
+   1 (Google Chrome) https://www.vietnix.vn: Getting Requests
+   1 (Google Chrome) https://www.vietnix.vn: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.vietnix.vn
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: PixelYourSite PRO version 9.7.1
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: JQMIGRATE: Migrate is installed with logging active, version 3.4.1
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: You haven’t finished setting up your site with PushEngage. Please connect your account!!
+Adding a frame
+PAGE LOG: JQMIGRATE: jQuery.fn.click() event shorthand is deprecated
+PAGE LOG: console.trace
+Adding a frame
+PAGE LOG: JQMIGRATE: jQuery.fn.scroll() event shorthand is deprecated
+PAGE LOG: console.trace
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [Meta Pixel] - Unable to parse JSON-LD tag. Malformed JSON found: '{ "@context": "https://schema.org/", "@graph": [{ "@type": "webPage", "@id": "https://vietnix.vn/#webPage", "name": "Vietnix", "url": "https://vietnix.vn", "description": "Website vietnix.vn là website thuộc sở hữu của công ty Cổ Phần giải pháp và công nghệ Vietnix, nơi chia sẻ những kiến thức hay và bổ ích về công nghệ thông tin và kiến thức về Digital Marketing. Vietnix cung cấp các dịch vụ lưu trữ web như: Hosting, Cloud VPS, Máy chủ (Server), Thuê chỗ đặt máy chủ, SSL, Tên miền (Domain) và dịch vụ Firewall Anti DDoS, chống tấn công DDoS", "disambiguatingDescription": "Vietnix được thành lập từ năm 2012, chuyên cấp dịch vụ: hosting, máy chủ ảo VPS, Cloud Server, máy chủ, đăng ký tên miền, Firewall chống DDoS hàng đầu Việt Nam.", "publisher": { "@id": "https://vietnix.vn/#Organization" }, "author": { "@id": "https://vietnix.vn/#Organization" }, "copyrightHolder": { "@id": "https://vietnix.vn/#Organization" }, "about": [{ "@id": "kg:/m/014pz4", "name": "Hosting", "url": "https://vietnix.vn/hosting-la-gi/" }, { "@id": "kg:/m/02phxk", "name": "VPS", "url": "https://vietnix.vn/vps-la-gi/" }, { "@id": "kg:/g/120x72xh", "name": "Máy chủ", "url": "https://vietnix.vn/server-la-gi/" }, { "@id": "kg:/g/120x0vzy", "name": "Firewall Anti DDoS", "url": "https://vietnix.vn/ddos-la-gi/" }, { "@id": "kg:/m/0gxj8", "name": "Domain", "url": "https://vietnix.vn/domain-la-gi/" }, { "@id": "kg:/g/121h83n6", "name": "SSL", "url": "https://vietnix.vn/ssl-la-gi/" }], "primaryImageOfPage": { "@type": "ImageObject", "@id": "https://vietnix.vn/#primaryimage", "inLanguage": "vi", "url": "https://vietnix.vn/wp-content/uploads/2021/11/Banner-thumbnail-trangchu1.png", "contentUrl": "https://vietnix.vn/wp-content/uploads/2021/11/Banner-thumbnail-trangchu1.png", "width": 1200, "height": 630 }, "inLanguage": "Vi-VN", "isPartOf": { "@type": "website", "@id": "https://vietnix.vn/#website" } },{ "@type": "LocalBusiness", "@id": "https://vietnix.vn/#Organization", "name": "Vietnix", "legalName": "Công ty Cổ Phần Giải Pháp và Công Nghệ Vietnix", "additionalType": ["Công ty Vietnix", "Vietnix"], "description": "Vietnix được thành lập từ năm 2012, chuyên cấp dịch vụ: hosting, máy chủ ảo VPS, Cloud Server, máy chủ, đăng ký tên miền, Firewall chống DDoS hàng đầu Việt Nam.", "url": "https://vietnix.vn", "mainEntityOfPage": "https://vietnix.vn", "sameAs": [ "https://www.google.com/search?kgmid=/g/11t7b77gj7", "https://www.google.com/search?kgmid=/g/11g9v_j1yp", "https://www.facebook.com/VietnixHosting/", "https://twitter.com/vietnix", "https://www.pinterest.com/vietnixhosting/", "https://www.linkedin.com/company/vietnix-hosting", "https://www.youtube.com/channel/UCkacE1oyd3uBX24W2sxPutA/about", "https://vietnix.weebly.com/", "https://www.instagram.com/vietnixhosting/", "https://dantri.com.vn/doi-song/vietnix-di-dau-trong-cong-nghe-anti-ddos-o-thi-truong-viet-nam-20210917144520163.htm", "https://www.24h.com.vn/kham-pha-cong-nghe/vietnix-10-nam-xay-dung-thuong-hieu-may-chu-chuyen-nghiep-c675a1289741.html", "https://tienphong.vn/vps-vietnix-giai-phap-cong-nghe-hien-dai-va-uy-tin-cho-doanh-nghiep-post1377093.tpo", "https://thanhnien.vn/ban-can-biet/hosting-vietnix-dich-vu-nvme-hosting-toc-do-cao-top-dau-viet-nam-1455556.html", "https://vtc.vn/vietnix-nha-cung-cap-web-hosting-manh-me-va-an-toan-cho-doanh-nghiep-ar638498.html", "https://soha.vn/tiet-kiem-toi-da-chi-phi-voi-hosting-gia-re-5000-dong-thang-tai-vietnix-20210927200520154.htm", "https://cafef.vn/cloud-vps-vietnix-may-chu-ao-cong-nghe-cao-cho-doanh-nghiep-thoi-40-20210918134846687.chn", "https://aptech.fpt.edu.vn/lap-trinh-vien-nen-hieu-gi-ve-hosting.html", "https://vn.bignox.com/blog/cloud-vps-la-gi-loi-ich-khi-su-dung-cloud-vps/", "https://careerbuilder.vn/vi/nha-tuyen-dung/cong-ty-co-phan-giai-phap-va-cong-nghe-vietnix.35A71C83.html", "https://itviec.com/nha-tuyen-dung/vietnix", "https://topdev.vn/nha-tuyen-dung/cong-ty-co-phan-giai-phap-va-cong-nghe-vietnix-2-92276", "https://vieclam.tuoitre.vn/vi/nha-tuyen-dung/cong-ty-co-phan-giai-phap-va-cong-nghe-vietnix.35A71C83.html", "https://vietcv.io/jobs/discover/orgs/Vietnix", "https://timviec365.vn/cong-ty-co-phan-giai-phap-va-cong-nghe-vietnix-co46264" ], "currenciesAccepted": "VND", "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday, Saturday, Sunday"], "opens": "00:00", "closes": "24:00:00" }, "paymentAccepted": ["Cash", "Credit Card"], "priceRange": "60000-10000000", "logo": { "@type": "ImageObject", "@id": "https://vietnix.vn/#logo", "url": "https://vietnix.vn/wp-content/uploads/2021/12/logo-vietnix-320x92-1.png", "width": 321, "height": 93 }, "image": { "@id": "https://vietnix.vn/#logo" }, "location": { "@type": "PostalAddress", "@id": "https://vietnix.vn/#address", "name": "Văn phòng công ty", "streetAddress": "265 Hồng Lạc, Phường 10, Quận Tân Bình, Thành Phố Hồ Chí Minh", "addressLocality": "Tân Bình", "addressRegion": "Hồ Chí Minh", "addressCountry": "Việt Nam" }, "geo": { "@type": "GeoCoordinates", "latitude": 10.78763, "longitude": 106.64538 }, "address": { "@id": "https://vietnix.vn/#address" }, "hasMap": ["https://www.google.com/maps?cid=10293129025704652201", "https://www.google.com/maps/place/Công+ty+cổ+phần+giải+pháp+và+công+nghệ+Vietnix/data=!3m1!4b1!4m6!3m5!1s0x3175293b45e42659:0x8ed88a5044636da9!8m2!3d10.7876023!4d106.6453803!16s%2Fg%2F1pzvc14xx?authuser=0&entry=ttu", "https://www.google.com/maps/d/viewer?mid=1xihFtw4nsJ5GIxNqDQjbRlCnQjSetmFX&ll=10.927085290687542%2C106.60746310000003&z=10"], "areaServed": { "@type": "AdministrativeArea", "name": "Việt Nam", "@id": "kg:/m/01crd5", "url": "https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam", "hasMap": "https://www.google.com/maps?cid=12698937955444482750" }, "contactPoint": { "@type": "contactPoint", "email": "sales@vietnix.com.vn", "telephone": "07-088-44444", "areaServed": { "@id": "kg:/m/01crd5" } }, "telephone": "07-088-44444", "employees": { "@type": "person", "name": "Nguyễn Hưng", "url": ["https://vietnix.vn/author/hung-nguyen/"], "image": "https://vietnix.vn/wp-content/uploads/2021/12/gioi-thieu-tac-gia-Nguyen-Hung.jpg", "jobTitle": { "@type": "DefinedTerm", "name": "Co-Fouder", "description": "Mình là Bo - admin của Quản Trị Linux. Mình đã có 10 năm làm việc trong mảng System, Network, Security và đã trải nghiệm qua các chứng chỉ như CCNP, CISSP, CISA, đặc biệt là chống tấn công DDoS. Gần đây mình trải nghiệm thêm Digital Marketing và đã hòan thành chứng chỉ CDMP của PersonVUE. Mình rất thích được chia sẻ và hỗ trợ cho mọi người, nhất là các bạn sinh viên. Hãy kết nối với mình nhé!", "url": "https://www.linkedin.com/pulse/what-co-founder-does-mean-why-important-dean-irwin/" } }, "founder": { "@type": "Person", "alternateName": ["Nguyễn Hưng", "Nguyen Hung"], "sameAs": [ "https://www.linkedin.com/in/hung-vietnix/", "https://www.facebook.com/hung.vietnix", "https://twitter.com/hung_vietnix", "https://about.me/nguyen-hung/", "https://hungvietnix.tumblr.com/", "https://www.mixcloud.com/hungvietnix/", "https://myspace.com/hungvietnix", "https://www.pinterest.com/hungvietnix/_saved/", "https://soundcloud.com/hungvietnix", "https://issuu.com/nguyenhungvietnix", "https://www.vingle.net/hungvietnix", "https://gab.com/hungvietnix", "https://justpaste.it/u/hungvietnix", "https://www.slideserve.com/hungvietnix", "https://ybox.vn/profile/nguyen-hung91g4oon/posts", "https://www.slideshare.net/Nguynhng55737", "https://www.spreaker.com/user/16470727"], "address": { "@type": "PostalAddress", "addressLocality": "Hồ Chí Minh, Việt Nam", "addressRegion": "Việt Nam" }, "knowsAbout": [{ "@type": "Specialty", "additionalType": ["https://www.google.com/search?q=seo&kponly=&kgmid=/m/03ytc"], "sameAs": ["https://vi.wikipedia.org/wiki/C%C3%B4ng_ngh%E1%BB%87_th%C3%B4ng_tin"], "name": "Công nghệ thông tin", "description": "Công nghệ thông tin, viết tắt CNTT, là một nhánh ngành kỹ thuật sử dụng máy tính và phần mềm máy tính để chuyển đổi, lưu trữ, bảo vệ, xử lý, truyền tải và thu thập thông tin.", "url": "https://vietnix.vn/", "@id": "kg:/m/03ytc" }], "url": "https://vietnix.vn/author/hung-nguyen/", "mainEntityOfPage": "https://vietnix.vn/author/hung-nguyen/", "@id": "https://vietnix.vn/nguyen-hung/#person", "familyName": "Nguyễn", "givenName": "Hưng", "name": "Nguyễn Hưng", "height": "1m72", "description": "Mình là Bo - admin của Quản Trị Linux. Mình đã có 10 năm làm việc trong mảng System, Network, Security và đã trải nghiệm qua các chứng chỉ như CCNP, CISSP, CISA, đặc biệt là chống tấn công DDoS. Gần đây mình trải nghiệm thêm Digital Marketing và đã hòan thành chứng chỉ CDMP của PersonVUE. Mình rất thích được chia sẻ và hỗ trợ cho mọi người, nhất là các bạn sinh viên. Hãy kết nối với mình nhé!.", "jobTitle": { "@type": "DefinedTerm", "name": "Co-Founder", "description": "Co-Founder là người đồng sáng lập, liên quan đến việc hỗ trợ thành lập doanh nghiệp, công ty hay tổ chức.  ", "url": "https://www.linkedin.com/pulse/what-co-founder-does-mean-why-important-dean-irwin/" }, "gender": "https://schema.org/Male", "email": "vietnix.net@gmail.com", "image": "https://vietnix.vn/wp-content/uploads/2021/12/gioi-thieu-tac-gia-Nguyen-Hung.jpg", "birthDate": "1990-10-28", "worksFor": { "@type": "Organization", "@id": "kg:/g/11t7b77gj7" }, "nationality": { "@type": "Country", "@id": "kg:/m/0jg24", "url": "https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam", "name": "Việt Nam", "sameAs": "https://en.wikipedia.org/wiki/Vietnam", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/2560px-Flag_of_Vietnam.svg.png", "hasMap": "https://goo.gl/maps/fUNktBNf9XEkzPtbA" }, "alumniOf": [{ "@type": "EducationalOrganization", "name": "Trường Đại học Khoa học Tự nhiên, Đại học Quốc gia Thành phố Hồ Chí Minh (tiếng Anh: VNUHCM-University Of Science, viết tắt: VNUHCM-US | HCMUS) là một trong những trường đại học đào tạo và nghiên cứu khoa học cơ bản & ứng dụng hàng đầu Việt Nam, trực thuộc Đại học Quốc gia Thành phố Hồ Chí Minh, được xếp vào nhóm trường đại học trọng điểm quốc gia Việt Nam.", "url": "https://www.hcmus.edu.vn/", "logo": "https://commons.wikimedia.org/wiki/File:Logo-dai-hoc-khoa-hoc-tu-nhien.png" }] }, "foundingDate": "2012-06-25", "foundingLocation": { "@type": "place", "@id": "kg:/m/0hn4h", "name": "Hồ Chí Minh", "URL": "https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh", "hasmap": "https://www.google.com/maps?cid=17392719987004412203" }, "hasOfferCatalog": { "@type": "OfferCatalog", "itemListElement": [{ "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/hosting-gia-re/#service", "name": "Hosting giá rẻ", "url": "https://vietnix.vn/hosting-gia-re/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/web-hosting/#service", "name": "Hosting Cao Cấp", "url": "https://vietnix.vn/web-hosting/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/business-hosting/#service", "name": "Business Hosting", "url": "https://vietnix.vn/business-hosting/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/email-hosting/#service", "name": "Email Hosting", "url": "https://vietnix.vn/email-hosting/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/seo-hosting/#service", "name": "SEO Hosting", "url": "https://vietnix.vn/seo-hosting/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/cloud-vps-gia-re/#service", "name": "Cloud VPS giá rẻ", "url": "https://vietnix.vn/cloud-vps-gia-re/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/cloud-server/#service", "name": "Cloud Server - VPS Phổ Thông", "url": "https://vietnix.vn/cloud-server/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/vps-cao-cap/#service", "name": "VPS Server - VPS Cao Cấp", "url": "https://vietnix.vn/vps-cao-cap/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/vps-gpu/#service", "name": "VPS GPU", "url": "https://vietnix.vn/vps-gpu/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/vps-nvme/#service", "name": "VPS NVMe", "url": "https://vietnix.vn/vps-nvme/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/thue-may-chu/#service", "name": "Thuê máy chủ", "url": "https://vietnix.vn/thue-may-chu/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/firewall-anti-ddos/#service", "name": "Firewall Anti DDoS", "url": "https://vietnix.vn/firewall-anti-ddos/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/thue-cho-dat-may-chu/#service", "name": "Thuê chỗ đặt máy chủ", "url": "https://vietnix.vn/thue-cho-dat-may-chu/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/dang-ky-ten-mien/#service", "name": "Đăng ký tên miền", "url": "https://vietnix.vn/dang-ky-ten-mien/" } }, { "@type": "ListItem", "item": { "@type": "service", "@id": "https://vietnix.vn/mua-ssl/#service", "name": "Mua SSL", "url": "https://vietnix.vn/mua-ssl/" } }] }, "interactionStatistic": "1000000", "knowsLanguage": ["vi", "en"], "numberOfEmployees": "50", "taxID": "0311850627" }] },{ "@type": "Organization", "name": "Vietnix", "@id": ["https://vietnix.vn/#Organization","kg:/g/11t7b77gj7"], "alternateName": "Vietnix - Dịch vụ Hosting, VPS tốc độ cao hàng đầu tại Việt Nam", "url": "https://vietnix.vn/", "logo": "https://vietnix.vn/wp-content/uploads/2021/12/logo-vietnix-320x92-1.png", "contactPoint": { "@type": "ContactPoint", "telephone": "0708844444", "contactType": "customer service", "contactOption": "Free", "areaServed": "VN", "availableLanguage": "Vietnamese" }, "sameAs": [ "https://www.facebook.com/VietnixHosting/", "https://twitter.com/vietnix", "https://www.pinterest.com/vietnixhosting/", "https://www.linkedin.com/company/vietnix-hosting", "https://vietnix.tumblr.com/", "https://www.youtube.com/channel/UCkacE1oyd3uBX24W2sxPutA/about", "https://vietnix.weebly.com/", "https://about.me/vietnix", "https://www.behance.net/vietnix", "https://www.instagram.com/vietnixhosting/", "https://vietnix-vn.blogspot.com/", "https://vietnixhostingvps.wordpress.com/", "https://vietnix.quora.com/", "zalo.me/845440937180545181", "https://sites.google.com/view/vietnix", "https://500px.com/p/vietnix", "https://github.com/vietnix-vn", "https://www.reddit.com/user/vietnixjsc", "https://www.diigo.com/user/vietnix", "https://ello.co/vietnix", "https://www.instapaper.com/p/vietnix", "https://gab.com/vietnix", "https://www.vingle.net/vietnix", "https://gitlab.com/vietnix", "https://myspace.com/vietnix", "https://www.scoop.it/topic/vietnix" ] }, { "@context": "http://schema.org", "@type": "WebSite", "@id":"https://vietnix.vn/#website", "name": "Vietnix", "headline": "Vietnix - Dịch vụ Hosting, VPS tốc độ cao", "alternateName": "Vietnix - Dịch vụ Hosting, VPS tốc độ cao. Uy tín chất lượng hàng đầu Việt Nam", "url": "https://vietnix.vn", "potentialAction": { "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://vietnix.vn/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": "http://schema.org/True", "valueName": "search_term_string" } } } }}'.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.vietnix.vn: Page loaded
+   1 (Google Chrome) https://www.vietnix.vn: Getting HTML
+   1 (Google Chrome) https://www.vietnix.vn: Getting Cookies
+PAGE LOG: [Meta Pixel] - Duplicate Pixel ID: 1323574861352076.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.vietnix.vn: Getting Localstorage
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.vietnix.vn: Adding requests to DB
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.vietnix.vn: Page closed
+   1 (Google Chrome) https://www.vietnix.vn: Adding to successful website
+
+1 (Google Chrome): (8) https://www.sakata-tsushin.com
+   1 (Google Chrome) https://www.sakata-tsushin.com: Getting Requests
+   1 (Google Chrome) https://www.sakata-tsushin.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.sakata-tsushin.com
+Adding a frame
+PAGE LOG: Failed to load resource: the server responded with a status of 403 (Forbidden)
+   1 (Google Chrome) https://www.sakata-tsushin.com: Page loaded
+   1 (Google Chrome) https://www.sakata-tsushin.com: Getting HTML
+   1 (Google Chrome) https://www.sakata-tsushin.com: Getting Cookies
+Adding a frame
+   1 (Google Chrome) https://www.sakata-tsushin.com: Getting Localstorage
+   1 (Google Chrome) https://www.sakata-tsushin.com: Adding requests to DB
+   1 (Google Chrome) https://www.sakata-tsushin.com: Page closed
+   1 (Google Chrome) https://www.sakata-tsushin.com: Adding to successful website
+
+1 (Google Chrome): (9) https://www.disquscdn.com
+   1 (Google Chrome) https://www.disquscdn.com: Getting Requests
+   1 (Google Chrome) https://www.disquscdn.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.disquscdn.com
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.disquscdn.com (net::ERR_NAME_NOT_RESOLVED at https://www.disquscdn.com)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (10) https://www.baua.de
+   1 (Google Chrome) https://www.baua.de: Getting Requests
+   1 (Google Chrome) https://www.baua.de: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.baua.de
+Adding a frame
+Adding a frame
+PAGE LOG: The Content-Security-Policy directive 'frame-ancestors' does not support the source expression ''self'.de'
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Matomo loaded
+Adding a frame
+PAGE LOG: Listener added for a synchronous 'DOMNodeRemoved' DOM Mutation Event. This event type is deprecated (https://w3c.github.io/uievents/#legacy-event-types) and work is underway to remove it from this browser. Usage of this event listener will cause performance issues today, and represents a risk of future incompatibility. Consider using MutationObserver instead.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.baua.de: Page loaded
+   1 (Google Chrome) https://www.baua.de: Getting HTML
+Adding a frame
+   1 (Google Chrome) https://www.baua.de: Getting Cookies
+   1 (Google Chrome) https://www.baua.de: Getting Localstorage
+   1 (Google Chrome) https://www.baua.de: Adding requests to DB
+   1 (Google Chrome) https://www.baua.de: Page closed
+   1 (Google Chrome) https://www.baua.de: Adding to successful website
+
+1 (Google Chrome): (11) https://www.readlightnovel.me
+   1 (Google Chrome) https://www.readlightnovel.me: Getting Requests
+   1 (Google Chrome) https://www.readlightnovel.me: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.readlightnovel.me
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Deleting cookie: _ga Matched pattern: JSHandle@regexp Path: / Domain: 
+PAGE LOG: [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o
+Adding a frame
+Adding a frame
+PAGE LOG: [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o
+PAGE LOG: [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.readlightnovel.me: Page loaded
+   1 (Google Chrome) https://www.readlightnovel.me: Getting HTML
+   1 (Google Chrome) https://www.readlightnovel.me: Getting Cookies
+   1 (Google Chrome) https://www.readlightnovel.me: Getting Localstorage
+   1 (Google Chrome) https://www.readlightnovel.me: Adding requests to DB
+   1 (Google Chrome) https://www.readlightnovel.me: Page closed
+   1 (Google Chrome) https://www.readlightnovel.me: Adding to successful website
+
+1 (Google Chrome): (12) https://www.jpg.church
+   1 (Google Chrome) https://www.jpg.church: Getting Requests
+   1 (Google Chrome) https://www.jpg.church: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.jpg.church
+Adding a frame
+Adding a frame
+PAGE LOG: Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Not logged-in
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.jpg.church: Page loaded
+   1 (Google Chrome) https://www.jpg.church: Getting HTML
+   1 (Google Chrome) https://www.jpg.church: Getting Cookies
+   1 (Google Chrome) https://www.jpg.church: Getting Localstorage
+Adding a frame
+   1 (Google Chrome) https://www.jpg.church: Adding requests to DB
+Adding a frame
+   1 (Google Chrome) https://www.jpg.church: Page closed
+   1 (Google Chrome) https://www.jpg.church: Adding to successful website
+
+1 (Google Chrome): (13) https://www.neoncrm.com
+   1 (Google Chrome) https://www.neoncrm.com: Getting Requests
+   1 (Google Chrome) https://www.neoncrm.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.neoncrm.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: JSHandle@error
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.neoncrm.com: Page loaded
+   1 (Google Chrome) https://www.neoncrm.com: Getting HTML
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.neoncrm.com: Getting Cookies
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.neoncrm.com: Getting Localstorage
+   1 (Google Chrome) https://www.neoncrm.com: Adding requests to DB
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.neoncrm.com: Page closed
+   1 (Google Chrome) https://www.neoncrm.com: Adding to successful website
+
+1 (Google Chrome): (14) https://www.firstwefeast.com
+   1 (Google Chrome) https://www.firstwefeast.com: Getting Requests
+   1 (Google Chrome) https://www.firstwefeast.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.firstwefeast.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Manifest: property 'related_applications' ignored, type array expected.
+PAGE LOG: Manifest: property 'prefer_related_applications' ignored, type boolean expected.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [ABD] start beginTest
+PAGE LOG: [ABD] adding bait node to DOM
+Adding a frame
+   1 (Google Chrome) https://www.firstwefeast.com: Page loaded
+   1 (Google Chrome) https://www.firstwefeast.com: Getting HTML
+Adding a frame
+   1 (Google Chrome) https://www.firstwefeast.com: Getting Cookies
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.firstwefeast.com: Getting Localstorage
+   1 (Google Chrome) https://www.firstwefeast.com: Adding requests to DB
+PAGE LOG: [ABD] exiting test loop - value: false
+   1 (Google Chrome) https://www.firstwefeast.com: Page closed
+   1 (Google Chrome) https://www.firstwefeast.com: Adding to successful website
+
+1 (Google Chrome): (15) https://www.myket.ir
+   1 (Google Chrome) https://www.myket.ir: Getting Requests
+   1 (Google Chrome) https://www.myket.ir: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.myket.ir
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.myket.ir: Page loaded
+   1 (Google Chrome) https://www.myket.ir: Getting HTML
+Adding a frame
+   1 (Google Chrome) https://www.myket.ir: Getting Cookies
+Adding a frame
+   1 (Google Chrome) https://www.myket.ir: Getting Localstorage
+   1 (Google Chrome) https://www.myket.ir: Adding requests to DB
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.myket.ir: Page closed
+   1 (Google Chrome) https://www.myket.ir: Adding to successful website
+
+1 (Google Chrome): (16) https://www.roi.ru
+   1 (Google Chrome) https://www.roi.ru: Getting Requests
+   1 (Google Chrome) https://www.roi.ru: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.roi.ru
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.roi.ru: Page loaded
+   1 (Google Chrome) https://www.roi.ru: Getting HTML
+Adding a frame
+   1 (Google Chrome) https://www.roi.ru: Getting Cookies
+   1 (Google Chrome) https://www.roi.ru: Getting Localstorage
+   1 (Google Chrome) https://www.roi.ru: Adding requests to DB
+Adding a frame
+   1 (Google Chrome) https://www.roi.ru: Page closed
+   1 (Google Chrome) https://www.roi.ru: Adding to successful website
+
+1 (Google Chrome): (17) https://www.rentascordoba.gob.ar
+   1 (Google Chrome) https://www.rentascordoba.gob.ar: Getting Requests
+   1 (Google Chrome) https://www.rentascordoba.gob.ar: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.rentascordoba.gob.ar
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.rentascordoba.gob.ar: Page loaded
+   1 (Google Chrome) https://www.rentascordoba.gob.ar: Getting HTML
+   1 (Google Chrome) https://www.rentascordoba.gob.ar: Getting Cookies
+   1 (Google Chrome) https://www.rentascordoba.gob.ar: Getting Localstorage
+   1 (Google Chrome) https://www.rentascordoba.gob.ar: Adding requests to DB
+Adding a frame
+   1 (Google Chrome) https://www.rentascordoba.gob.ar: Page closed
+   1 (Google Chrome) https://www.rentascordoba.gob.ar: Adding to successful website
+
+1 (Google Chrome): (18) https://www.librivox.org
+   1 (Google Chrome) https://www.librivox.org: Getting Requests
+   1 (Google Chrome) https://www.librivox.org: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.librivox.org
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.librivox.org (net::ERR_ABORTED at https://www.librivox.org)
+** 1 (Google Chrome) closing page.
+Adding a frame
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (19) https://www.theblogfairy.com
+   1 (Google Chrome) https://www.theblogfairy.com: Getting Requests
+   1 (Google Chrome) https://www.theblogfairy.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.theblogfairy.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.theblogfairy.com: Page loaded
+   1 (Google Chrome) https://www.theblogfairy.com: Getting HTML
+   1 (Google Chrome) https://www.theblogfairy.com: Getting Cookies
+Adding a frame
+   1 (Google Chrome) https://www.theblogfairy.com: Getting Localstorage
+   1 (Google Chrome) https://www.theblogfairy.com: Adding requests to DB
+   1 (Google Chrome) https://www.theblogfairy.com: Page closed
+   1 (Google Chrome) https://www.theblogfairy.com: Adding to successful website
+
+1 (Google Chrome): (20) https://www.parts-soft.ru
+   1 (Google Chrome) https://www.parts-soft.ru: Getting Requests
+   1 (Google Chrome) https://www.parts-soft.ru: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.parts-soft.ru
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.parts-soft.ru: Page loaded
+   1 (Google Chrome) https://www.parts-soft.ru: Getting HTML
+   1 (Google Chrome) https://www.parts-soft.ru: Getting Cookies
+Adding a frame
+   1 (Google Chrome) https://www.parts-soft.ru: Getting Localstorage
+   1 (Google Chrome) https://www.parts-soft.ru: Adding requests to DB
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.parts-soft.ru: Page closed
+   1 (Google Chrome) https://www.parts-soft.ru: Adding to successful website
+
+1 (Google Chrome): (21) https://www.reblaze.com
+   1 (Google Chrome) https://www.reblaze.com: Getting Requests
+   1 (Google Chrome) https://www.reblaze.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.reblaze.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.reblaze.com: Page loaded
+   1 (Google Chrome) https://www.reblaze.com: Getting HTML
+   1 (Google Chrome) https://www.reblaze.com: Getting Cookies
+   1 (Google Chrome) https://www.reblaze.com: Getting Localstorage
+   1 (Google Chrome) https://www.reblaze.com: Adding requests to DB
+   1 (Google Chrome) https://www.reblaze.com: Page closed
+   1 (Google Chrome) https://www.reblaze.com: Adding to successful website
+
+1 (Google Chrome): (22) https://www.aurasvc.io
+   1 (Google Chrome) https://www.aurasvc.io: Getting Requests
+   1 (Google Chrome) https://www.aurasvc.io: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.aurasvc.io
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.aurasvc.io (net::ERR_NAME_NOT_RESOLVED at https://www.aurasvc.io)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (23) https://www.burdanet.pl
+   1 (Google Chrome) https://www.burdanet.pl: Getting Requests
+   1 (Google Chrome) https://www.burdanet.pl: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.burdanet.pl
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.burdanet.pl (net::ERR_CONNECTION_REFUSED at https://www.burdanet.pl)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (24) https://www.santillanacompartir.com
+   1 (Google Chrome) https://www.santillanacompartir.com: Getting Requests
+   1 (Google Chrome) https://www.santillanacompartir.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.santillanacompartir.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.santillanacompartir.com: Page loaded
+   1 (Google Chrome) https://www.santillanacompartir.com: Getting HTML
+   1 (Google Chrome) https://www.santillanacompartir.com: Getting Cookies
+Adding a frame
+   1 (Google Chrome) https://www.santillanacompartir.com: Getting Localstorage
+   1 (Google Chrome) https://www.santillanacompartir.com: Adding requests to DB
+   1 (Google Chrome) https://www.santillanacompartir.com: Page closed
+   1 (Google Chrome) https://www.santillanacompartir.com: Adding to successful website
+
+1 (Google Chrome): (25) https://www.opencmp.net
+   1 (Google Chrome) https://www.opencmp.net: Getting Requests
+   1 (Google Chrome) https://www.opencmp.net: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.opencmp.net
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.opencmp.net (net::ERR_INVALID_AUTH_CREDENTIALS at https://www.opencmp.net)
+** 1 (Google Chrome) closing page.
+PAGE LOG: Failed to load resource: the server responded with a status of 401 ()
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (26) https://www.holdings.panasonic
+   1 (Google Chrome) https://www.holdings.panasonic: Getting Requests
+   1 (Google Chrome) https://www.holdings.panasonic: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.holdings.panasonic
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.holdings.panasonic (net::ERR_NAME_NOT_RESOLVED at https://www.holdings.panasonic)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (27) https://www.azlyrics.com
+   1 (Google Chrome) https://www.azlyrics.com: Getting Requests
+   1 (Google Chrome) https://www.azlyrics.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.azlyrics.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://srv.tunefindforfans.com/fruits/apricots.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://srv.tunefindforfans.com/fruits/apricots.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+Adding a frame
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://srv.tunefindforfans.com/showads/adunit.php?id=39381789&di=&subtag=&search=&artist=&song=&tvt=&alb=&alb_is=false&dvid=&vpw=1200&abf=0&d=&pid=&cs=1&bl=false&ro=&uc=&uf=&position=0&ctr=&bp_abf=false&cf=&cc=&kv=&ps=1&af=&if=0&ii=0&pe=div.main-page&ph=nav.navbar-fixed-top%2C%20nav.navbar-static-top&pf=%23fake-footer&fh=&mo=true&cm=&url=https%3A%2F%2Fwww.azlyrics.com%2F&t=1692479954183, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://srv.tunefindforfans.com/showads/adunit.php?id=39381789&di=&subtag=&search=&artist=&song=&tvt=&alb=&alb_is=false&dvid=&vpw=1200&abf=0&d=&pid=&cs=1&bl=false&ro=&uc=&uf=&position=0&ctr=&bp_abf=false&cf=&cc=&kv=&ps=1&af=&if=0&ii=0&pe=div.main-page&ph=nav.navbar-fixed-top%2C%20nav.navbar-static-top&pf=%23fake-footer&fh=&mo=true&cm=&url=https%3A%2F%2Fwww.azlyrics.com%2F&t=1692479954183, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://srv.tunefindforfans.com/showads/adunit.php?id=100004759&di=&subtag=&search=&artist=&song=&tvt=&alb=&alb_is=false&dvid=&vpw=1200&abf=0&d=&pid=&cs=1&bl=false&ro=&uc=&uf=&position=0&ctr=&bp_abf=false&cf=&cc=&kv=&ps=1&af=&if=0&ii=0&pe=div.main-page&ph=nav.navbar-fixed-top%2C%20nav.navbar-static-top&pf=%23fake-footer&fh=&mo=true&cm=&url=https%3A%2F%2Fwww.azlyrics.com%2F&t=1692479954268, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+Adding a frame
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://srv.tunefindforfans.com/showads/adunit.php?id=100004759&di=&subtag=&search=&artist=&song=&tvt=&alb=&alb_is=false&dvid=&vpw=1200&abf=0&d=&pid=&cs=1&bl=false&ro=&uc=&uf=&position=0&ctr=&bp_abf=false&cf=&cc=&kv=&ps=1&af=&if=0&ii=0&pe=div.main-page&ph=nav.navbar-fixed-top%2C%20nav.navbar-static-top&pf=%23fake-footer&fh=&mo=true&cm=&url=https%3A%2F%2Fwww.azlyrics.com%2F&t=1692479954268, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://live.primis.tech/live/liveView.php?s=97786&schain=1.0,1!bandsintown.com,103,1&cbuster=16924799542876, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+PAGE LOG: A parser-blocking, cross site (i.e. different eTLD+1) script, https://live.primis.tech/live/liveView.php?s=97786&schain=1.0,1!bandsintown.com,103,1&cbuster=16924799542876, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.azlyrics.com: Page loaded
+   1 (Google Chrome) https://www.azlyrics.com: Getting HTML
+Adding a frame
+   1 (Google Chrome) https://www.azlyrics.com: Getting Cookies
+   1 (Google Chrome) https://www.azlyrics.com: Getting Localstorage
+   1 (Google Chrome) https://www.azlyrics.com: Adding requests to DB
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.azlyrics.com: Page closed
+   1 (Google Chrome) https://www.azlyrics.com: Adding to successful website
+
+1 (Google Chrome): (28) https://www.p5w.net
+   1 (Google Chrome) https://www.p5w.net: Getting Requests
+   1 (Google Chrome) https://www.p5w.net: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.p5w.net
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: JSHandle@object
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: JSHandle@object
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.p5w.net
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (29) https://www.garmin.cn
+   1 (Google Chrome) https://www.garmin.cn: Getting Requests
+   1 (Google Chrome) https://www.garmin.cn: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.garmin.cn
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.garmin.cn: Page loaded
+   1 (Google Chrome) https://www.garmin.cn: Getting HTML
+   1 (Google Chrome) https://www.garmin.cn: Getting Cookies
+Adding a frame
+   1 (Google Chrome) https://www.garmin.cn: Getting Localstorage
+   1 (Google Chrome) https://www.garmin.cn: Adding requests to DB
+   1 (Google Chrome) https://www.garmin.cn: Page closed
+   1 (Google Chrome) https://www.garmin.cn: Adding to successful website
+
+1 (Google Chrome): (30) https://www.imperva.com
+   1 (Google Chrome) https://www.imperva.com: Getting Requests
+   1 (Google Chrome) https://www.imperva.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.imperva.com
+Adding a frame
+Adding a frame
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-8B1cMdkKYI23k1plJeQ1JSIwodkGGX8vj28vddkToow='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-w+zOvEt4kas/ir/s+5k4QzKdPr58tyXYWBS7glUWp8c='), or a nonce ('nonce-...') is required to enable inline execution.
+
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-t/QQIYvdiiG8r2oXRPb50x60vByPeeMZCnsR1CMiVGQ='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Adding a frame
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-CTfXZE/ULtNdD3Sr51q2/PwSXQRQR5eeY6CRNcSG66s='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-6ePN+9BmKvxSsMxNkpnoBB5v9MOEBE/entRGIfFMjcc='), or a nonce ('nonce-...') is required to enable inline execution.
+
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-/KacDXWi06+zWSs1nIH0Qt0esujpZuri95Xy/rMoaRM='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Adding a frame
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-g0+D4O+vERCyQmNkM+FO14VzdN/4tG4qPixZ8VgP46E='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-h8gl222Ia4aFHrUJQFFcjpfrA12AEt4EFfIQKal3jTY='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-BeL/aMfDQW8tLE9mVVXGajmqgYtj2pfH/iO6hMjgfZ0='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Adding a frame
+Adding a frame
+PAGE LOG: Failed to load resource: the server responded with a status of 403 ()
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-yly5GBmxCfVyCMIvv7XBXepDc7f2Q2wWvQYNfAHLhAU='), or a nonce ('nonce-...') is required to enable inline execution.
+
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-/qih2xB9SI1L2pxV3ok4buAwxtcyCyvPFuavWP+jCVs='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.imperva.com: Page loaded
+   1 (Google Chrome) https://www.imperva.com: Getting HTML
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-d+XiDBXqrAQI7R8KVX9uRAtkHJWNmURyG9QF6TM0bz8='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Adding a frame
+PAGE LOG: [Report Only] Refused to execute inline script because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-d+XiDBXqrAQI7R8KVX9uRAtkHJWNmURyG9QF6TM0bz8='), or a nonce ('nonce-...') is required to enable inline execution.
+
+Adding a frame
+   1 (Google Chrome) https://www.imperva.com: Getting Cookies
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.imperva.com: Getting Localstorage
+   1 (Google Chrome) https://www.imperva.com: Adding requests to DB
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [Report Only] Refused to run the JavaScript URL because it violates the following Content Security Policy directive: "script-src 'unsafe-eval' 'unsafe-hashes' 'report-sample' www.youtube.com www.google.com www.google-analytics.com jscloud.net *.gstatic.com *.adroll.com www.brighttalk.com j.6sc.co *.googleapis.com www.googletagmanager.com js.driftt.com imperva.containers.piwik.pro go.imperva.com js-agent.newrelic.com www.imperva.com bam.nr-data.net *.vimeo.com cdn.bizible.com munchkin.marketo.net imperva.piwik.pro edge.fullstory.com cdn.cookielaw.org *.optimizely.com *.doubleclick.net". Either the 'unsafe-inline' keyword, a hash ('sha256-...'), or a nonce ('nonce-...') is required to enable inline execution.
+
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.imperva.com: Page closed
+   1 (Google Chrome) https://www.imperva.com: Adding to successful website
+
+1 (Google Chrome): (31) https://www.42web.io
+   1 (Google Chrome) https://www.42web.io: Getting Requests
+   1 (Google Chrome) https://www.42web.io: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.42web.io
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.42web.io (net::ERR_SSL_PROTOCOL_ERROR at https://www.42web.io)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (32) https://www.app-ads-txt.com
+   1 (Google Chrome) https://www.app-ads-txt.com: Getting Requests
+   1 (Google Chrome) https://www.app-ads-txt.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.app-ads-txt.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o
+PAGE LOG: [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o
+PAGE LOG: Download the Vue Devtools extension for a better development experience:
+https://github.com/vuejs/vue-devtools
+PAGE LOG: You are running Vue in development mode.
+Make sure to turn on production mode when deploying for production.
+See more tips at https://vuejs.org/guide/deployment.html
+   1 (Google Chrome) https://www.app-ads-txt.com: Page loaded
+   1 (Google Chrome) https://www.app-ads-txt.com: Getting HTML
+   1 (Google Chrome) https://www.app-ads-txt.com: Getting Cookies
+Adding a frame
+   1 (Google Chrome) https://www.app-ads-txt.com: Getting Localstorage
+   1 (Google Chrome) https://www.app-ads-txt.com: Adding requests to DB
+   1 (Google Chrome) https://www.app-ads-txt.com: Page closed
+   1 (Google Chrome) https://www.app-ads-txt.com: Adding to successful website
+
+1 (Google Chrome): (33) https://www.deltekenterprise.com
+   1 (Google Chrome) https://www.deltekenterprise.com: Getting Requests
+   1 (Google Chrome) https://www.deltekenterprise.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.deltekenterprise.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.deltekenterprise.com: Page loaded
+   1 (Google Chrome) https://www.deltekenterprise.com: Getting HTML
+   1 (Google Chrome) https://www.deltekenterprise.com: Getting Cookies
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.deltekenterprise.com: Getting Localstorage
+   1 (Google Chrome) https://www.deltekenterprise.com: Adding requests to DB
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.deltekenterprise.com: Page closed
+   1 (Google Chrome) https://www.deltekenterprise.com: Adding to successful website
+
+1 (Google Chrome): (34) https://www.euro-football.ru
+   1 (Google Chrome) https://www.euro-football.ru: Getting Requests
+   1 (Google Chrome) https://www.euro-football.ru: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.euro-football.ru
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: getDomain for: 
+PAGE LOG: getDomain for: www.euro-football.ru
+PAGE LOG: Domain is: euro-football
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: CONTAINER_IS_HIDDEN Container with id "adfox_158187876499557925" is hidden
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: CONTAINER_IS_HIDDEN Container with id "adfox_158" is hidden
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.euro-football.ru: Page loaded
+   1 (Google Chrome) https://www.euro-football.ru: Getting HTML
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.euro-football.ru: Getting Cookies
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.euro-football.ru: Getting Localstorage
+   1 (Google Chrome) https://www.euro-football.ru: Adding requests to DB
+PAGE LOG: Failed to load resource: the server responded with a status of 404 ()
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.euro-football.ru: Page closed
+   1 (Google Chrome) https://www.euro-football.ru: Adding to successful website
+
+1 (Google Chrome): (35) https://www.qs.com
+   1 (Google Chrome) https://www.qs.com: Getting Requests
+   1 (Google Chrome) https://www.qs.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.qs.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: JQMIGRATE: Migrate is installed, version 3.3.2
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: WARNING: Cookiebot script is included twice - please remove one instance to avoid unexpected results.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [Meta Pixel] - You are sending a non-standard event 'qs_insights_5_reader_registration'. The preferred way to send these events is using trackCustom. See 'https://developers.facebook.com/docs/ads-for-websites/pixel-events/#events' for more information.
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.qs.com: Page loaded
+   1 (Google Chrome) https://www.qs.com: Getting HTML
+   1 (Google Chrome) https://www.qs.com: Getting Cookies
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.qs.com: Getting Localstorage
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.qs.com: Adding requests to DB
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [Meta Pixel] - Duplicate Pixel ID: 1819520968075904.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.qs.com: Page closed
+   1 (Google Chrome) https://www.qs.com: Adding to successful website
+
+1 (Google Chrome): (36) https://www.me-qr.com
+   1 (Google Chrome) https://www.me-qr.com: Getting Requests
+   1 (Google Chrome) https://www.me-qr.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.me-qr.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.me-qr.com: Page loaded
+   1 (Google Chrome) https://www.me-qr.com: Getting HTML
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.me-qr.com: Getting Cookies
+Adding a frame
+   1 (Google Chrome) https://www.me-qr.com: Getting Localstorage
+   1 (Google Chrome) https://www.me-qr.com: Adding requests to DB
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.me-qr.com: Page closed
+   1 (Google Chrome) https://www.me-qr.com: Adding to successful website
+
+1 (Google Chrome): (37) https://www.ylc.edu.tw
+   1 (Google Chrome) https://www.ylc.edu.tw: Getting Requests
+   1 (Google Chrome) https://www.ylc.edu.tw: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.ylc.edu.tw
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.ylc.edu.tw
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (38) https://www.banki24.by
+   1 (Google Chrome) https://www.banki24.by: Getting Requests
+   1 (Google Chrome) https://www.banki24.by: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.banki24.by
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.banki24.by
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (39) https://www.media-imdb.com
+   1 (Google Chrome) https://www.media-imdb.com: Getting Requests
+   1 (Google Chrome) https://www.media-imdb.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.media-imdb.com
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.media-imdb.com (net::ERR_NAME_NOT_RESOLVED at https://www.media-imdb.com)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (40) https://www.sfmc-einstein.com
+   1 (Google Chrome) https://www.sfmc-einstein.com: Getting Requests
+   1 (Google Chrome) https://www.sfmc-einstein.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.sfmc-einstein.com
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.sfmc-einstein.com (net::ERR_NAME_NOT_RESOLVED at https://www.sfmc-einstein.com)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (41) https://www.skydemonorder.com
+   1 (Google Chrome) https://www.skydemonorder.com: Getting Requests
+   1 (Google Chrome) https://www.skydemonorder.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.skydemonorder.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.skydemonorder.com: Page loaded
+   1 (Google Chrome) https://www.skydemonorder.com: Getting HTML
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.skydemonorder.com: Getting Cookies
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: jsTag.parentNode JSHandle@node
+PAGE LOG: els JSHandle@array
+PAGE LOG: abT 0
+Adding a frame
+   1 (Google Chrome) https://www.skydemonorder.com: Getting Localstorage
+   1 (Google Chrome) https://www.skydemonorder.com: Adding requests to DB
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.skydemonorder.com: Page closed
+   1 (Google Chrome) https://www.skydemonorder.com: Adding to successful website
+
+1 (Google Chrome): (42) https://www.imghst-de.com
+   1 (Google Chrome) https://www.imghst-de.com: Getting Requests
+   1 (Google Chrome) https://www.imghst-de.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.imghst-de.com
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.imghst-de.com (net::ERR_CONNECTION_CLOSED at https://www.imghst-de.com)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (43) https://www.seatwowave.com
+   1 (Google Chrome) https://www.seatwowave.com: Getting Requests
+   1 (Google Chrome) https://www.seatwowave.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.seatwowave.com
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.seatwowave.com
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (44) https://www.praktiker.bg
+   1 (Google Chrome) https://www.praktiker.bg: Getting Requests
+   1 (Google Chrome) https://www.praktiker.bg: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.praktiker.bg
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.praktiker.bg: Page loaded
+   1 (Google Chrome) https://www.praktiker.bg: Getting HTML
+   1 (Google Chrome) https://www.praktiker.bg: Getting Cookies
+   1 (Google Chrome) https://www.praktiker.bg: Getting Localstorage
+   1 (Google Chrome) https://www.praktiker.bg: Adding requests to DB
+Adding a frame
+   1 (Google Chrome) https://www.praktiker.bg: Page closed
+   1 (Google Chrome) https://www.praktiker.bg: Adding to successful website
+
+1 (Google Chrome): (45) https://www.ambito.com
+   1 (Google Chrome) https://www.ambito.com: Getting Requests
+   1 (Google Chrome) https://www.ambito.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.ambito.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: A preload for 'https://media.ambito.com/p/d4a4c62ece2e509bcefabbd213c7f717/adjuntos/239/imagenes/040/115/0040115281/dolar-inversiones-finanzas-dolar-bluejpg.jpg' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin attribute.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Process LazyLoad Src
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Proces Index => 0 in entriesIndex => 0 => total script => 1
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Add script => https://www.ambito.com/js-custom/239/v3/x-scroll-min-version-1673893845.js
+PAGE LOG: Next index => 1
+PAGE LOG: Proces Index => 0 in entriesIndex => 1 => total script => 9
+PAGE LOG: Add script => https://www.ambito.com/js-custom/vendor/jquery-3.6.0.min-min-version-1675964335.js
+PAGE LOG: Next index => 1
+PAGE LOG: Proces Index => 0 in entriesIndex => 2 => total script => 3
+PAGE LOG: Add script => https://www.ambito.com/js-custom/239/v3/vendor/jquery/jquery-3.6.0.min-min-version-1672829425.js
+PAGE LOG: Next index => 1
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Proces Index => 1 in entriesIndex => 2 => total script => 3
+PAGE LOG: Add script => https://www.ambito.com/js-custom/239/v3/indicadores-min-version-1683128732.js
+PAGE LOG: Next index => 2
+Adding a frame
+PAGE LOG: Proces Index => 1 in entriesIndex => 0 => total script => 1
+PAGE LOG: end load script observer
+PAGE LOG: Proces Index => 1 in entriesIndex => 1 => total script => 9
+PAGE LOG: Add script => 
+    https://www.ambito.com/js-custom/239/jquery.cookie.min-min-version-1583246170.js
+PAGE LOG: Next index => 2
+Adding a frame
+PAGE LOG: Proces Index => 2 in entriesIndex => 2 => total script => 3
+PAGE LOG: Add script => https://www.ambito.com/js-custom/239/v3/x-scroll-min-version-1673893845.js
+PAGE LOG: Next index => 3
+PAGE LOG: Exist, script already exists
+PAGE LOG: Proces Index => 3 in entriesIndex => 2 => total script => 3
+PAGE LOG: end load script observer
+PAGE LOG: Proces Index => 2 in entriesIndex => 1 => total script => 9
+PAGE LOG: Add script => 
+    https://usuarios.ambito.com/js/TDUser-version-42.js
+PAGE LOG: Next index => 3
+Adding a frame
+Adding a frame
+PAGE LOG: Proces Index => 3 in entriesIndex => 1 => total script => 9
+PAGE LOG: Add script => 
+    https://www.ambito.com/js-custom/239/suscription-2023-min-version-1678288017.js
+PAGE LOG: Next index => 4
+Adding a frame
+PAGE LOG: Proces Index => 4 in entriesIndex => 1 => total script => 9
+PAGE LOG: Add script => 
+    https://www.ambito.com/js-custom/239/bootstrap.min-min-version-1583246170.js
+PAGE LOG: Next index => 5
+Adding a frame
+Adding a frame
+PAGE LOG: Validamos si el usuario esta logueado
+PAGE LOG: User Not Logged
+PAGE LOG: Proces Index => 5 in entriesIndex => 1 => total script => 9
+PAGE LOG: Add script => 
+    https://www.ambito.com/js-custom/239/bootstrap-datepicker.min-min-version-1583246170.js
+PAGE LOG: Next index => 6
+Adding a frame
+PAGE LOG: Proces Index => 6 in entriesIndex => 1 => total script => 9
+PAGE LOG: Add script => 
+    https://www.ambito.com/js-custom/239/bootstrap-datepicker.es.min-min-version-1583246170.js
+PAGE LOG: Next index => 7
+Adding a frame
+PAGE LOG: Proces Index => 7 in entriesIndex => 1 => total script => 9
+PAGE LOG: Add script => 
+    https://www.ambito.com/js-custom/239/validateUser-min-version-1615229854.js
+PAGE LOG: Next index => 8
+Adding a frame
+Adding a frame
+PAGE LOG: 239
+PAGE LOG: Proces Index => 8 in entriesIndex => 1 => total script => 9
+PAGE LOG: Add script => 
+    https://www.ambito.com/js-custom/239/suscripcion-digital-min-version-1676644869.js
+PAGE LOG: Next index => 9
+Adding a frame
+PAGE LOG: JSHandle@array
+PAGE LOG: Proces Index => 9 in entriesIndex => 1 => total script => 9
+PAGE LOG: end load script observer
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [GPT] Attempted to load GPT multiple times.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: ADZONE callback itt JSHandle@object
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.ambito.com
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (46) https://www.wgt.com
+   1 (Google Chrome) https://www.wgt.com: Getting Requests
+   1 (Google Chrome) https://www.wgt.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.wgt.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.wgt.com
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (47) https://www.dholic.co.jp
+   1 (Google Chrome) https://www.dholic.co.jp: Getting Requests
+   1 (Google Chrome) https://www.dholic.co.jp: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.dholic.co.jp
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: 1
+PAGE LOG: 
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [INFO] there is not a8 parameter
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.dholic.co.jp
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (48) https://www.lootedpinay.com
+   1 (Google Chrome) https://www.lootedpinay.com: Getting Requests
+   1 (Google Chrome) https://www.lootedpinay.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.lootedpinay.com
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.lootedpinay.com (net::ERR_NAME_NOT_RESOLVED at https://www.lootedpinay.com)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (49) https://www.cnca.gov.cn
+   1 (Google Chrome) https://www.cnca.gov.cn: Getting Requests
+   1 (Google Chrome) https://www.cnca.gov.cn: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.cnca.gov.cn
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.cnca.gov.cn
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (50) https://www.safetyandhealthmagazine.com
+   1 (Google Chrome) https://www.safetyandhealthmagazine.com: Getting Requests
+   1 (Google Chrome) https://www.safetyandhealthmagazine.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.safetyandhealthmagazine.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: JQMIGRATE: Migrate is installed, version 1.4.1
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: slots JSHandle@array
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: [GPT] Div ID passed to googletag.display() does not match any defined slots: div-gpt-ad-1363873651496-0.
+PAGE LOG: googletag.pubads().setCookieOptions() has been removed, and no longer has any effect. Consider migrating to Limited Ads.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.safetyandhealthmagazine.com
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (51) https://www.copperpoint.com
+   1 (Google Chrome) https://www.copperpoint.com: Getting Requests
+   1 (Google Chrome) https://www.copperpoint.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.copperpoint.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Allow attribute will take precedence over 'allowfullscreen'.
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: JQMIGRATE: Migrate is installed, version 1.4.1
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: 
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.copperpoint.com
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (52) https://www.rollernet.us
+   1 (Google Chrome) https://www.rollernet.us: Getting Requests
+   1 (Google Chrome) https://www.rollernet.us: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.rollernet.us
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.rollernet.us: Page loaded
+   1 (Google Chrome) https://www.rollernet.us: Getting HTML
+   1 (Google Chrome) https://www.rollernet.us: Getting Cookies
+   1 (Google Chrome) https://www.rollernet.us: Getting Localstorage
+   1 (Google Chrome) https://www.rollernet.us: Adding requests to DB
+Adding a frame
+   1 (Google Chrome) https://www.rollernet.us: Page closed
+   1 (Google Chrome) https://www.rollernet.us: Adding to successful website
+
+1 (Google Chrome): (53) https://www.pornizlevideos.com
+   1 (Google Chrome) https://www.pornizlevideos.com: Getting Requests
+   1 (Google Chrome) https://www.pornizlevideos.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.pornizlevideos.com
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.pornizlevideos.com (net::ERR_ABORTED at https://www.pornizlevideos.com)
+** 1 (Google Chrome) closing page.
+Adding a frame
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (54) https://www.dimenoc.com
+   1 (Google Chrome) https://www.dimenoc.com: Getting Requests
+   1 (Google Chrome) https://www.dimenoc.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.dimenoc.com
+Adding a frame
+** 1 (Google Chrome): Error visiting webpage -> https://www.dimenoc.com (net::ERR_SSL_PROTOCOL_ERROR at https://www.dimenoc.com)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (55) https://www.prospectmagazine.co.uk
+   1 (Google Chrome) https://www.prospectmagazine.co.uk: Getting Requests
+   1 (Google Chrome) https://www.prospectmagazine.co.uk: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.prospectmagazine.co.uk
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.prospectmagazine.co.uk
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (56) https://www.lifecare-news.com
+   1 (Google Chrome) https://www.lifecare-news.com: Getting Requests
+   1 (Google Chrome) https://www.lifecare-news.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.lifecare-news.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: JQMIGRATE: Migrate is installed, version 3.4.0
+PAGE LOG: Allow attribute will take precedence over 'allowfullscreen'.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.lifecare-news.com: Page loaded
+   1 (Google Chrome) https://www.lifecare-news.com: Getting HTML
+   1 (Google Chrome) https://www.lifecare-news.com: Getting Cookies
+   1 (Google Chrome) https://www.lifecare-news.com: Getting Localstorage
+   1 (Google Chrome) https://www.lifecare-news.com: Adding requests to DB
+   1 (Google Chrome) https://www.lifecare-news.com: Page closed
+   1 (Google Chrome) https://www.lifecare-news.com: Adding to successful website
+
+1 (Google Chrome): (57) https://www.holidayinn.com
+   1 (Google Chrome) https://www.holidayinn.com: Getting Requests
+   1 (Google Chrome) https://www.holidayinn.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.holidayinn.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: large
+PAGE LOG: landscape
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: 🚀 container.buildInfo.environment is deprecated.Please use `container.environment.stage` instead
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: This Env: www is not accounted to set endpoint URLs. Assignment has been skipped. Be sure to assign if necessary.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Failed to load resource: net::ERR_CONNECTION_REFUSED
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: ADDED NONDISRUPTIVE OFFER REGISTRATION
+PAGE LOG: Here to set Z-index for applicationWrapper. Checking if isPageServedFromAEM: true
+PAGE LOG: Setting Z-index
+PAGE LOG: not present
+PAGE LOG: document ready of popup container
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Google Chrome) https://www.holidayinn.com: Page loaded
+   1 (Google Chrome) https://www.holidayinn.com: Getting HTML
+Adding a frame
+   1 (Google Chrome) https://www.holidayinn.com: Getting Cookies
+Adding a frame
+   1 (Google Chrome) https://www.holidayinn.com: Getting Localstorage
+   1 (Google Chrome) https://www.holidayinn.com: Adding requests to DB
+   1 (Google Chrome) https://www.holidayinn.com: Page closed
+   1 (Google Chrome) https://www.holidayinn.com: Adding to successful website
+
+1 (Google Chrome): (58) https://www.awd.ru
+   1 (Google Chrome) https://www.awd.ru: Getting Requests
+   1 (Google Chrome) https://www.awd.ru: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.awd.ru
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.awd.ru
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (59) https://www.erokan.net
+   1 (Google Chrome) https://www.erokan.net: Getting Requests
+   1 (Google Chrome) https://www.erokan.net: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.erokan.net
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.erokan.net
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (60) https://www.americanprogress.org
+   1 (Google Chrome) https://www.americanprogress.org: Getting Requests
+   1 (Google Chrome) https://www.americanprogress.org: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.americanprogress.org
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.americanprogress.org
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (61) https://www.guicheweb.com.br
+   1 (Google Chrome) https://www.guicheweb.com.br: Getting Requests
+   1 (Google Chrome) https://www.guicheweb.com.br: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.guicheweb.com.br
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Google Chrome): TimeoutError -> https://www.guicheweb.com.br
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (62) https://www.soapoperadigest.com
+   1 (Google Chrome) https://www.soapoperadigest.com: Getting Requests
+   1 (Google Chrome) https://www.soapoperadigest.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.soapoperadigest.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: JQMIGRATE: Migrate is installed, version 3.3.2
+PAGE LOG: AMI jwp Amazon not loaded 
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: AMI jwp Amazon not loaded 
+PAGE LOG: AMI jwp Amazon not loaded 
+PAGE LOG: ami_gpt is not defined
+PAGE LOG: AMI jwp Amazon not loaded 
+PAGE LOG: AMI jwp Amazon not loaded 
+Adding a frame
+PAGE LOG: AMI jwp Amazon not loaded 
+PAGE LOG: AMI jwp Amazon not loaded 
+PAGE LOG: AMI jwp Amazon not loaded 
+PAGE LOG: AMI jwp Amazon not loaded 
+PAGE LOG: AMI jwp Amazon not loaded 
+PAGE LOG: AMI jwp Amazon not loaded 
+** 1 (Google Chrome): TimeoutError -> https://www.soapoperadigest.com
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (63) https://www.silveregg.net
+   1 (Google Chrome) https://www.silveregg.net: Getting Requests
+   1 (Google Chrome) https://www.silveregg.net: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.silveregg.net
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame

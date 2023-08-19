@@ -24,8 +24,8 @@ import {callableMain} from './index.js'
 
 const BROWSER_LIST = ['Ghostery'];
 const VANTAGE_POINTS = ['UK'];
-const START_NUMBER = 4552;
-const NUM_URLS = 5000;
+const START_NUMBER = 5001;
+const NUM_URLS = 10000;
 const PATH_TO_CSV = "./webCrawler/websiteSelection/shuffled.txt";
 const DEVICE = 'macserver';
 

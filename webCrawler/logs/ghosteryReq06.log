@@ -1,0 +1,691 @@
+
+1 (Ghostery): (1) https://bot.sannysoft.com
+   1 (Ghostery) : Loading new page https://bot.sannysoft.com
+PAGE LOG: Layout was forced before the page was fully loaded. If stylesheets are not yet loaded this may cause a flash of unstyled content.
+PAGE LOG: [object Object]
+PAGE LOG: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+PAGE LOG: Use of the motion sensor is deprecated.
+PAGE LOG: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+PAGE LOG: Request to access cookie or storage on “https://mc.yandex.ru/metrika/tag.js” was blocked because it came from a tracker and content blocking is enabled.
+PAGE LOG: InstallTrigger is deprecated and will be removed in the future.
+PAGE LOG: Cookie “metrika_enabled” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “metrika_enabled” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Ignoring unsupported entryTypes: longtask.
+PAGE LOG: Request to access cookie or storage on “https://mc.yandex.ru/watch/86860295?wmode=7&page-url=https%3A%2F%2Fbot.sannysoft.com%2F&charset=utf-8&uah=che%0A0&browser-info=pv%3A1%3Avf%3Aeygqx1x5pg6sxmgllphq8d7%3Afp%3A769%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A1093%3Acn%3A1%3Adp%3A0%3Als%3A317999249359%3Ahid%3A717405864%3Az%3A60%3Ai%3A20230819222028%3Aet%3A1692480028%3Ac%3A1%3Arn%3A669556500%3Arqn%3A24%3Au%3A1692297394712196246%3Aw%3A901x563%3As%3A1440x900x30%3Ask%3A2%3Awv%3A2%3Ads%3A0%2C31%2C48%2C0%2C-3%2C0%2C%2C1388%2C35%2C%2C%2C%2C1533%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Antf%3A1%3Ans%3A1692480026175%3Arqnl%3A1%3Ast%3A1692480028%3At%3AAntibot&t=gdpr(14)clc(0-0-0)rqnt(1)aw(1)ti(1)” was blocked because it came from a tracker and content blocking is enabled.
+PAGE LOG: Cookie “_ym_isad” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Request to access cookie or storage on “https://mc.yandex.ru/metrika/advert.gif” was blocked because it came from a tracker and content blocking is enabled.
+PAGE LOG: Request to access cookie or storage on “https://mc.yandex.ru/watch/86860295?wmode=7&page-url=https%3A%2F%2Fbot.sannysoft.com%2F&charset=utf-8&uah=che%0A0&browser-info=pv%3A1%3Avf%3Aeygqx1x5pg6sxmgllphq8d7%3Afp%3A769%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A1093%3Acn%3A1%3Adp%3A0%3Als%3A317999249359%3Ahid%3A717405864%3Az%3A60%3Ai%3A20230819222028%3Aet%3A1692480028%3Ac%3A1%3Arn%3A669556500%3Arqn%3A24%3Au%3A1692297394712196246%3Aw%3A901x563%3As%3A1440x900x30%3Ask%3A2%3Awv%3A2%3Ads%3A0%2C31%2C48%2C0%2C-3%2C0%2C%2C1388%2C35%2C%2C%2C%2C1533%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Antf%3A1%3Ans%3A1692480026175%3Arqnl%3A1%3Ast%3A1692480028%3At%3AAntibot&t=gdpr(14)clc(0-0-0)rqnt(1)aw(1)ti(1)” was blocked because it came from a tracker and content blocking is enabled.
+PAGE LOG: TypeError: i.app is undefined
+PAGE LOG: Request to access cookie or storage on “https://mc.yandex.ru/watch/86860295/1?wmode=7&page-url=https%3A%2F%2Fbot.sannysoft.com%2F&charset=utf-8&uah=che%0A0&browser-info=pv%3A1%3Avf%3Aeygqx1x5pg6sxmgllphq8d7%3Afp%3A769%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A1093%3Acn%3A1%3Adp%3A0%3Als%3A317999249359%3Ahid%3A717405864%3Az%3A60%3Ai%3A20230819222028%3Aet%3A1692480028%3Ac%3A1%3Arn%3A669556500%3Arqn%3A24%3Au%3A1692297394712196246%3Aw%3A901x563%3As%3A1440x900x30%3Ask%3A2%3Awv%3A2%3Ads%3A0%2C31%2C48%2C0%2C-3%2C0%2C%2C1388%2C35%2C%2C%2C%2C1533%3Aco%3A0%3Ahdl%3A1%3Acpf%3A1%3Antf%3A1%3Ans%3A1692480026175%3Arqnl%3A1%3Ast%3A1692480028%3At%3AAntibot&t=gdpr%2814%29clc%280-0-0%29rqnt%281%29aw%281%29ti%281%29&redirnss=1” was blocked because it came from a tracker and content blocking is enabled.
+** 1 (Ghostery): TimeoutError -> https://bot.sannysoft.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (2) https://www.whatismyip.com
+   1 (Ghostery) : Loading new page https://www.whatismyip.com
+   1 (Ghostery) https://www.whatismyip.com: Page loaded
+PAGE LOG: creating ad whatismyip_medrec
+PAGE LOG: creating ad whatismyip_leaderboard_atf
+PAGE LOG: Show Ads
+PAGE LOG: Track Freestar view
+PAGE LOG: Loading failed for the <script> with source “https://a.pub.network/whatismyip-com/pubfig.min.js”.
+PAGE LOG: Loading failed for the <script> with source “https://widget.sellwild.com/whatismyip/whatismyip-what-is-my-ip-homepage.js”.
+PAGE LOG: Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://apiv6.whatismyip.com/wimi.php. (Reason: CORS request did not succeed). Status code: (null).
+PAGE LOG: Loading failed for the <script> with source “https://www.clarity.ms/tag/g1wh4yb6pk?ref=gtm2”.
+   1 (Ghostery) https://www.whatismyip.com: Page closed
+PAGE LOG: Cookie “_ga_4T6GFV4RYJ” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga_4T6GFV4RYJ” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+
+1 (Ghostery): (3) https://www.showmyip.com
+   1 (Ghostery) : Loading new page https://www.showmyip.com
+PAGE LOG: Loading failed for the <script> with source “https://qd.admetricspro.com/js/showmyip/layout-loader.js”.
+PAGE LOG: This page uses the non standard property “zoom”. Consider using calc() in the relevant property values, or using “transform” along with “transform-origin: 0 0”.
+PAGE LOG: Loading failed for the <script> with source “https://www.google-analytics.com/analytics.js”.
+PAGE LOG: Cookie “_ga_NTP2WL6LEF” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga_NTP2WL6LEF” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Connatix in-content script found.
+   1 (Ghostery) https://www.showmyip.com: Page loaded
+   1 (Ghostery) https://www.showmyip.com: Page closed
+
+1 (Ghostery): (4) https://whatismyipaddress.com
+   1 (Ghostery) : Loading new page https://whatismyipaddress.com
+PAGE LOG: This page uses the non standard property “zoom”. Consider using calc() in the relevant property values, or using “transform” along with “transform-origin: 0 0”.
+PAGE LOG: JQMIGRATE: Migrate is installed, version 3.4.1
+PAGE LOG: Loading failed for the <script> with source “https://cmp.quantcast.com/choice/28l20uinHn9Wc/whatismyipaddress.com/choice.js?tag_version=V2”.
+PAGE LOG: Loading failed for the <script> with source “https://a.pub.network/whatismyipaddress-com/pubfig.min.js”.
+PAGE LOG: Loading failed for the <script> with source “https://a.omappapi.com/app/js/api.min.js”.
+PAGE LOG: downloadable font: font-display timeout, webfont not used (font-family: "Open Sans" style:normal weight:400 stretch:100 src index:0) source: https://whatismyipaddress.com/wp-content/themes/wipa-bb-child/dist/google-open-sans.6940f83e.woff2
+PAGE LOG: Loading failed for the <script> with source “https://www.google-analytics.com/analytics.js”.
+** 1 (Ghostery): TimeoutError -> https://whatismyipaddress.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+   1 (Ghostery) instance closed.
+Database connection established
+
+1 (Ghostery): (1) https://www.mangaraw.to
+   1 (Ghostery) https://www.mangaraw.to: Getting Requests
+   1 (Ghostery) https://www.mangaraw.to: Getting Responses
+   1 (Ghostery) : Loading new page https://www.mangaraw.to
+Adding a frame
+** 1 (Ghostery): TimeoutError -> https://www.mangaraw.to
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (2) https://www.revlifter.com
+   1 (Ghostery) https://www.revlifter.com: Getting Requests
+   1 (Ghostery) https://www.revlifter.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.revlifter.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “CookieConsent” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “CookieConsent” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Partitioned cookie or storage access was provided to “https://consentcdn.cookiebot.com/sdk/bc-v4.min.html” because it is loaded in the third-party context and dynamic state partitioning is enabled.
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “CookieConsent” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+PAGE LOG: Cookie “_gcl_au” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Loading failed for the <script> with source “https://www.google-analytics.com/analytics.js”.
+PAGE LOG: Loading failed for the <script> with source “https://googleads.g.doubleclick.net/pagead/viewthroughconversion/343675357/?random=1692480080346&cv=11&fst=1692480080346&bg=ffffff&guid=ON&async=1&gtm=45He38g0&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.revlifter.com%2F&hn=www.googleadservices.com&frm=0&tiba=RevLifter%20-%20Intelligent%20Offer%20Platform&us_privacy=1---&auid=1063489909.1692480080&rfmt=3&fmt=4”.
+PAGE LOG: Loading failed for the <script> with source “https://snap.licdn.com/li.lms-analytics/insight.min.js”.
+PAGE LOG: Loading failed for the <script> with source “https://js.hs-scripts.com/3997354.js”.
+PAGE LOG: Loading failed for the <script> with source “https://plausible.io/js/script.tagged-events.js”.
+Adding a frame
+** 1 (Ghostery): TimeoutError -> https://www.revlifter.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (3) https://www.piccollage.com
+   1 (Ghostery) https://www.piccollage.com: Getting Requests
+   1 (Ghostery) https://www.piccollage.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.piccollage.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “_cbauthenticator_session” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “_ga_HBJVN9ZR8Z” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga_HBJVN9ZR8Z” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+PAGE LOG: Layout was forced before the page was fully loaded. If stylesheets are not yet loaded this may cause a flash of unstyled content.
+PAGE LOG: Cookie “_ga_HBJVN9ZR8Z” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga_HBJVN9ZR8Z” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+Adding a frame
+** 1 (Ghostery): TimeoutError -> https://www.piccollage.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+Adding a frame
+
+1 (Ghostery): (4) https://www.memuplay.com
+   1 (Ghostery) https://www.memuplay.com: Getting Requests
+   1 (Ghostery) https://www.memuplay.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.memuplay.com
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Loading failed for the <script> with source “https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”.
+   1 (Ghostery) https://www.memuplay.com: Page loaded
+   1 (Ghostery) https://www.memuplay.com: Getting HTML
+Adding a frame
+Adding a frame
+Adding a frame
+   1 (Ghostery) https://www.memuplay.com: Getting Cookies
+   1 (Ghostery) https://www.memuplay.com: Getting Localstorage
+PAGE LOG: Loading failed for the <script> with source “https://www.google-analytics.com/analytics.js”.
+   1 (Ghostery) https://www.memuplay.com: Adding requests to DB
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “_ga_6KCTLXS5JE” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga_6KCTLXS5JE” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+   1 (Ghostery) https://www.memuplay.com: Page closed
+   1 (Ghostery) https://www.memuplay.com: Adding to successful website
+
+1 (Ghostery): (5) https://www.click-sec.com
+   1 (Ghostery) https://www.click-sec.com: Getting Requests
+   1 (Ghostery) https://www.click-sec.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.click-sec.com
+Adding a frame
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Loading failed for the <script> with source “https://s.yjtag.jp/tag.js#site=Zm58mBE”.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “_gcl_au” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “BIGipServerPools_WEB” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Loading failed for the <script> with source “https://www.google-analytics.com/gtm/optimize.js?id=GTM-NRTDZPX”.
+PAGE LOG: Loading failed for the <script> with source “https://googleads.g.doubleclick.net/pagead/viewthroughconversion/749487506/?random=1692480104962&cv=11&fst=1692480104962&bg=ffffff&guid=ON&async=1&gtm=45He38g0&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.click-sec.com%2F&hn=www.googleadservices.com&frm=0&tiba=GMO%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E8%A8%BC%E5%88%B8%20-%20%E3%83%8D%E3%83%83%E3%83%88%E8%A8%BC%E5%88%B8%EF%BC%88FX%E3%83%BBCFD%E3%83%BB%E6%A0%AA%E3%83%BB%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%83%BC%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3&auid=407787041.1692480105&rfmt=3&fmt=4”.
+PAGE LOG: Loading failed for the <script> with source “https://static.ads-twitter.com/uwt.js”.
+PAGE LOG: Loading failed for the <script> with source “https://googleads.g.doubleclick.net/pagead/viewthroughconversion/740655740/?random=1692480104972&cv=11&fst=1692480104972&bg=ffffff&guid=ON&async=1&gtm=45He38g0&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.click-sec.com%2F&hn=www.googleadservices.com&frm=0&tiba=GMO%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E8%A8%BC%E5%88%B8%20-%20%E3%83%8D%E3%83%83%E3%83%88%E8%A8%BC%E5%88%B8%EF%BC%88FX%E3%83%BBCFD%E3%83%BB%E6%A0%AA%E3%83%BB%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%83%BC%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3&auid=407787041.1692480105&rfmt=3&fmt=4”.
+PAGE LOG: Loading failed for the <script> with source “https://googleads.g.doubleclick.net/pagead/viewthroughconversion/693709970/?random=1692480104974&cv=11&fst=1692480104974&bg=ffffff&guid=ON&async=1&gtm=45He38g0&u_w=1440&u_h=900&url=https%3A%2F%2Fwww.click-sec.com%2F&hn=www.googleadservices.com&frm=0&tiba=GMO%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E8%A8%BC%E5%88%B8%20-%20%E3%83%8D%E3%83%83%E3%83%88%E8%A8%BC%E5%88%B8%EF%BC%88FX%E3%83%BBCFD%E3%83%BB%E6%A0%AA%E3%83%BB%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%83%BC%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3&auid=407787041.1692480105&rfmt=3&fmt=4”.
+PAGE LOG: Loading failed for the <script> with source “https://www.googleadservices.com/pagead/conversion.js”.
+PAGE LOG: Loading failed for the <script> with source “https://connect.facebook.net/en_US/fbevents.js”.
+PAGE LOG: Loading failed for the <script> with source “https://amplify.outbrain.com/cp/obtp.js”.
+PAGE LOG: Loading failed for the <script> with source “https://intljs.rmtag.com/115867.ct.js”.
+PAGE LOG: Loading failed for the <script> with source “https://cd.ladsp.com/script/pixel2.js”.
+PAGE LOG: Loading failed for the <script> with source “https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C2SSDT4AJ6IC584G7VIG&lib=ttq”.
+PAGE LOG: Request to access cookie or storage on “https://amplify.outbrain.com/cp/obtp.js” was blocked because it came from a tracker and content blocking is enabled.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+** 1 (Ghostery): TimeoutError -> https://www.click-sec.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+page closed, returning from page.on('response').
+
+1 (Ghostery): (6) https://www.berekebank.kz
+   1 (Ghostery) https://www.berekebank.kz: Getting Requests
+   1 (Ghostery) https://www.berekebank.kz: Getting Responses
+   1 (Ghostery) : Loading new page https://www.berekebank.kz
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Generated OneLink parameters &af_js_web=true&af_ss_ver=2_6_0&pid=top_popup_organic&c=top_popup_organic&af_channel=top_popup_organic&af_ad=top_popup_organic&af_adset=top_popup_organic&af_ss_ui=true
+PAGE LOG: Generated OneLink URL https://berekebank.onelink.me/lyyx?af_js_web=true&af_ss_ver=2_6_0&pid=top_popup_organic&c=top_popup_organic&af_channel=top_popup_organic&af_ad=top_popup_organic&af_adset=top_popup_organic&af_ss_ui=true
+PAGE LOG: Generated OneLink parameters &af_js_web=true&af_ss_ver=2_6_0&pid=web_site_bottom_organic&c=web_site_bottom_organic&af_channel=web_site_bottom_organic&af_ad=web_site_bottom_organic&af_adset=web_site_bottom_organic&af_ss_ui=true
+PAGE LOG: Generated OneLink URL https://berekebank.onelink.me/lyyx?af_js_web=true&af_ss_ver=2_6_0&pid=web_site_bottom_organic&c=web_site_bottom_organic&af_channel=web_site_bottom_organic&af_ad=web_site_bottom_organic&af_adset=web_site_bottom_organic&af_ss_ui=true
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “_ym_debug” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ym_debug” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ym_debug” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_gcl_au” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Loading failed for the <script> with source “https://top-fwz1.mail.ru/js/code.js”.
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+PAGE LOG: Loading failed for the <script> with source “https://connect.facebook.net/en_US/fbevents.js”.
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+PAGE LOG: Loading failed for the <script> with source “https://mc.yandex.ru/metrika/tag.js”.
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at https://top-fwz1.mail.ru/js/code.js (“script-src”).
+PAGE LOG: Request to access cookie or storage on “https://mc.yandex.ru/metrika/tag.js” was blocked because it came from a tracker and content blocking is enabled.
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+Source: window.__cmp && typeof __cmp("getCMPData…
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+Source: typeof window.utag !== 'undefined' && ty…
+PAGE LOG: Cookie “_ga_1YZYH9KZ7Y” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga_1YZYH9KZ7Y” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+Source: window.__cmp && typeof __cmp("getCMPData…
+   1 (Ghostery) https://www.berekebank.kz: Page loaded
+   1 (Ghostery) https://www.berekebank.kz: Getting HTML
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+Source: typeof window.utag !== 'undefined' && ty…
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+PAGE LOG: Content Security Policy: The page’s settings blocked the loading of a resource at eval (“script-src”).
+   1 (Ghostery) https://www.berekebank.kz: Getting Cookies
+   1 (Ghostery) https://www.berekebank.kz: Getting Localstorage
+   1 (Ghostery) https://www.berekebank.kz: Adding requests to DB
+   1 (Ghostery) https://www.berekebank.kz: Page closed
+   1 (Ghostery) https://www.berekebank.kz: Adding to successful website
+
+1 (Ghostery): (7) https://www.appclicking.com
+   1 (Ghostery) https://www.appclicking.com: Getting Requests
+   1 (Ghostery) https://www.appclicking.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.appclicking.com
+Adding a frame
+** 1 (Ghostery): Error visiting webpage -> https://www.appclicking.com (SSL_ERROR_BAD_CERT_DOMAIN at https://www.appclicking.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (8) https://www.backchina.com
+   1 (Ghostery) https://www.backchina.com: Getting Requests
+   1 (Ghostery) https://www.backchina.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.backchina.com
+Adding a frame
+PAGE LOG: This page is in Almost Standards Mode. Page layout may be impacted. For Standards Mode use “<!DOCTYPE html>”.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “jfXL_2132_saltkey” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “jfXL_2132_lastvisit” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “jfXL_2132_sid” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “jfXL_2132_lastact” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: This page uses the non standard property “zoom”. Consider using calc() in the relevant property values, or using “transform” along with “transform-origin: 0 0”.
+Adding a frame
+PAGE LOG: Loading failed for the <script> with source “https://cmp.quantcast.com/choice/MFfXMXXEv-1pe/backchina.com/choice.js?tag_version=V2”.
+PAGE LOG: Cookie “_ga_PSQ60VQ0SN” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga_PSQ60VQ0SN” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “_ga” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Loading failed for the <script> with source “https://a.pub.network/backchina-com/pubfig.min.js”.
+PAGE LOG: Cookie “jfXL_2132_lastact” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: XML Parsing Error: not well-formed
+Location: https://www.backchina.com/misc.php?mod=userstatus&r=1692480121525&type=&typeid=0&ajaxdata=json
+Line Number 1, Column 1:
+PAGE LOG: Cookie “jfXL_2132_lastact” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “jfXL_2132_sid” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “jfXL_2132_lastact” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “jfXL_2132_lcountry” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: USP is not accessible
+PAGE LOG: This page is in Almost Standards Mode. Page layout may be impacted. For Standards Mode use “<!DOCTYPE html>”.
+PAGE LOG: This page uses the non standard property “zoom”. Consider using calc() in the relevant property values, or using “transform” along with “transform-origin: 0 0”.
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+Adding a frame
+PAGE LOG: Cookie “_ga_PSQ60VQ0SN” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga_PSQ60VQ0SN” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+Adding a frame
+PAGE LOG: Cookie “_ga_PSQ60VQ0SN” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Cookie “_ga_PSQ60VQ0SN” does not have a proper “SameSite” attribute value. Soon, cookies without the “SameSite” attribute or with an invalid value will be treated as “Lax”. This means that the cookie will no longer be sent in third-party contexts. If your application depends on this cookie being available in such contexts, please add the “SameSite=None“ attribute to it. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+PAGE LOG: Loading failed for the <script> with source “https://cmp.quantcast.com/choice/MFfXMXXEv-1pe/backchina.com/choice.js?tag_version=V2”.
+   1 (Ghostery) https://www.backchina.com: Page loaded
+   1 (Ghostery) https://www.backchina.com: Getting HTML
+   1 (Ghostery) https://www.backchina.com: Getting Cookies
+PAGE LOG: USP is not accessible
+Adding a frame
+PAGE LOG: USP is not accessible
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.backchina.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.backchina.com: Adding requests to DB
+PAGE LOG: USP is not accessible
+Error: Timeout occurred
+    at Timeout._onTimeout (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:162:60)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+** 1 (Ghostery): BrowserInstance closed in error handling.
+Database connection disconnected
+LOADED COUNTER : 3
+TIMEOUT COUNTER : 4
+OTHER ERROR COUNTER : 1
+COOKIE TIMEOUT COUNTER : 1
+LOCALSTORAGE TIMEOUT COUNTER : 1
+NUMBER OF SUCCESSFUL WEBSITES : 2
+

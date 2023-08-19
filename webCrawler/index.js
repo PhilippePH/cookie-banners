@@ -348,8 +348,6 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 }
             }
             
-            page.on('console', msg => console.log('PAGE LOG:', msg.text()));
-
             try{
                 console.log(`   ${processID} (${browser}) : Loading new page ${websiteUrl}`);
                 await page.goto( websiteUrl, { timeout: 10000, waitUntil:'load'} );
