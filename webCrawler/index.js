@@ -106,8 +106,11 @@ async function addRequestToDb(requestData, browser, websiteUrl, connection){
 
     for(let index = 0; index < framesObjects.length; index++){
         if(! framesObjects[index].isDetached()){ // cannot evaluate a detached frame
-            let frameOrigin = await cookieFrameEvaluate(framesObjects[index]);            
-            await saveRequests(crawlID, browser, websiteUrl, frameOrigin, requestedURL[index], connection);
+            let frameOrigin;
+            try{
+                frameOrigin = await cookieFrameEvaluate(framesObjects[index]);
+                await saveRequests(crawlID, browser, websiteUrl, frameOrigin, requestedURL[index], connection);
+            } catch(error) { }
         }
     }
 }
