@@ -15,7 +15,7 @@ def main():
     trainFlag = args[2]
     path = args[3]
 
-    if not path:
+    if path == '0':
         directory = getDirectory(browser, trainFlag)
         results_path = bannerID.main(directory)
         path = results_path
