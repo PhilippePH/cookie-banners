@@ -20,9 +20,9 @@ netstat -lntu
 import {fork} from 'child_process';
 import * as fs from 'node:fs/promises';
 import {getURLs} from './websiteSelection/websiteSelection.js';
-// import {callableMain} from './index.js'
+import {callableMain} from './index.js'
 
-const BROWSER_LIST = ['Google Chrome', 'Brave'];
+const BROWSER_LIST = ['Firefox'];
 const VANTAGE_POINTS = ['UK'];
 const START_NUMBER = 0;
 const NUM_URLS = 1000;
@@ -98,11 +98,11 @@ async function ParallelMain(browserList, vantagePoint, device){
   const argumentsArray = await createArgumentArray(path, browserList, vantagePoint, device);
     
   // Launching child processes
-  for (const args of argumentsArray) {
-    const child = fork('webCrawler/index.js', args);
-  }
+  // for (const args of argumentsArray) {
+  //   const child = fork('webCrawler/index.js', args);
+  // }
 
-  // callableMain(argumentsArray[0]);
+  callableMain(argumentsArray[0]);
 }
 
 ParallelMain(BROWSER_LIST, VANTAGE_POINTS, DEVICE);
