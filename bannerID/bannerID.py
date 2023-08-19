@@ -6,7 +6,6 @@ import os
 - that element/subtree contains at least X of the following phrases: cookie, accept all, reject, etc --> add translation in a couple of languages
 """
 
-HTML_DIRECTORY_PATH = "./top250banners/top250html/"
 # Must be in descending values because no copies of array are being made. 
 THRESHOLD_TEST_VALUES = [1, 0.5, 0.25, 0.10, 0.05, 0.01]
 
@@ -36,8 +35,8 @@ CORPUS_2 = ['agree', 'i agree','accept', 'accept all', 'accept cookies', 'i acce
 CORPUS_TEST_VALUES = [CORPUS_1, CORPUS_2]
 CORPUS_NAMES = ["shortCorpus","longCorpus"]
 
-def parseHtmlDir(filename):
-        complete_filename = HTML_DIRECTORY_PATH+filename
+def parseHtmlDir(html_directory_path, filename):
+        complete_filename = html_directory_path+filename
         html_file = open(complete_filename,'r')
         return BeautifulSoup(html_file, 'html.parser')
 
@@ -90,7 +89,7 @@ def findBanner(recordsArr, corpus):
     return (elem, bestMatch) # return the best match
 
 def isBannerHidden(element):
-    print(element)
+    # print(element)
     # Check element characteristic, though might need to move around.
     # Check children
     # Check 1 or 2 above?
@@ -99,18 +98,20 @@ def isBannerHidden(element):
 
 
 
-def main():
+def main(directory_path):
+    html_directory_path = directory_path + "htmlFiles/"
+    filePath = directory_path+'bannerIdentificationResults.txt'
+    
     #Clear results of previous run
-    filePath = HTML_DIRECTORY_PATH+'bannerIdentificationResults.txt'
     with open(filePath, 'w') as file:
         file.write("")
 
-    iterableDir = os.fsencode(HTML_DIRECTORY_PATH)
+    iterableDir = os.fsencode(html_directory_path)
     for file in os.listdir(iterableDir):
         # Parsing the current file
         filename = os.fsdecode(file)
         try:
-            soup = parseHtmlDir(filename)
+            soup = parseHtmlDir(html_directory_path, filename)
         except:
             print("Could not parse file " + filename)
 
@@ -136,10 +137,10 @@ def main():
                     hidden = isBannerHidden(element) 
 
                 # Add the result to the result file --> write filename, true/false, the words that were found
-                filePath = HTML_DIRECTORY_PATH+'bannerIdentificationResults.txt'
                 with open(filePath, 'a') as file:
                     result_str = '/'.join(result)  # Convert the list to a /-separated string (commas used to separate columns)
                     file.write(filename + "," + CORPUS_NAMES[corpusIndex] + "," + str(threshold) + "," + str(found) + "," + result_str + "\n")
+    return filePath
 
 
 
