@@ -83,32 +83,16 @@ async function getRequests(page){
     let frames = [];
     let requestedURL = [];
     try{
-        if(page.isClosed()) {
-            console.log("page closed, returning.");
-            return;
-        }
-
         await page.on('request', async (interceptedRequest) => {
-            if(page.isClosed()) {
-                console.log("page closed, returning from page.on('request').");
-                return;
-            }
-
             requestedURL.push(interceptedRequest.url());
             
-            // if(interceptedRequest.frame() instanceof Frame) { // Same issue as timeouterror.......
-            try{
-                if(page.isClosed()) {
-                    console.log("page closed, returning from page.on('request').");
-                    return;
-                }
-
-                if(Object.hasOwn(interceptedRequest.frame(), 'constructor')){
-                    if( interceptedRequest.frame().constructor.name == "Frame"){ // again, a quickfix..
-                        frames.push(interceptedRequest.frame());
-                    }     
-                }
-            } catch(error){}
+           
+            if(interceptedRequest.frame() != null){
+                if( interceptedRequest.frame().constructor.name == "Frame"){ // again, a quickfix..
+                    console.log("Adding a frame")
+                    frames.push(interceptedRequest.frame());
+                }     
+            }
         })
     } catch(error){ console.log("Error collecting requests."); console.log(error);}
 
@@ -119,6 +103,8 @@ async function addRequestToDb(requestData, browser, websiteUrl, connection){
     let framesObjects = requestData[0]; 
     let requestedURL = requestData[1];
     
+    if(framesObjects.length == 0) { console.log(`${browser}, ${websiteUrl}, NO REQUEST ADDED`); }
+
     for(let index = 0; index < framesObjects.length; index++){
         if(! framesObjects[index].isDetached()){ // cannot evaluate a detached frame
             let frameOrigin = await cookieFrameEvaluate(framesObjects[index]);            
@@ -361,6 +347,8 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                     console.log(error.message)
                 }
             }
+            
+            page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
             try{
                 console.log(`   ${processID} (${browser}) : Loading new page ${websiteUrl}`);
@@ -385,10 +373,9 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 try{
                     await page.close();
                     // also tried restarting the browser, but that didn't fix the issue etiher....
-                } catch(error) {console.log(` THIS NEVER CATCHES ANYTHING..... ** ${processID} (${browser}): Error trying to close the page after error with webpage ${websiteUrl}`)}
+                } catch(error) {console.log(` ** ${processID} (${browser}): Error trying to close the page after error with webpage ${websiteUrl}`)}
                 console.log(`** ${processID} (${browser}) Webpage closed.`);
                 continue;
-                console.log(`Never print me`)
             }           
 
             if (test){

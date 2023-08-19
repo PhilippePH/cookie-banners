@@ -25,7 +25,7 @@ import {callableMain} from './index.js'
 const BROWSER_LIST = ['Brave'];
 const VANTAGE_POINTS = ['UK'];
 const START_NUMBER = 0;
-const NUM_URLS = 250;
+const NUM_URLS = 50;
 const PATH_TO_CSV = "./webCrawler/websiteSelection/shuffled.txt";
 const DEVICE = 'macserver';
 
