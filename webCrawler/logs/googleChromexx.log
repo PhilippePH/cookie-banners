@@ -1,0 +1,80 @@
+
+1 (Google Chrome): (1) https://bot.sannysoft.com
+   1 (Google Chrome) : Loading new page https://bot.sannysoft.com
+   1 (Google Chrome) https://bot.sannysoft.com: Page loaded
+   1 (Google Chrome) https://bot.sannysoft.com: Page closed
+
+1 (Google Chrome): (2) https://www.whatismyip.com
+   1 (Google Chrome) : Loading new page https://www.whatismyip.com
+   1 (Google Chrome) https://www.whatismyip.com: Page loaded
+   1 (Google Chrome) https://www.whatismyip.com: Page closed
+
+1 (Google Chrome): (3) https://www.showmyip.com
+   1 (Google Chrome) : Loading new page https://www.showmyip.com
+** 1 (Google Chrome): TimeoutError -> https://www.showmyip.com
+** 1 (Google Chrome) restarting browser.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (4) https://whatismyipaddress.com
+   1 (Google Chrome) : Loading new page https://whatismyipaddress.com
+   1 (Google Chrome) https://whatismyipaddress.com: Page loaded
+   1 (Google Chrome) https://whatismyipaddress.com: Page closed
+   1 (Google Chrome) instance closed.
+Database connection established
+
+1 (Google Chrome): (1) https://www.google.com
+   1 (Google Chrome) https://www.google.com: Getting Requests
+   1 (Google Chrome) https://www.google.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.google.com
+   1 (Google Chrome) https://www.google.com: Page loaded
+   1 (Google Chrome) https://www.google.com: Getting HTML
+   1 (Google Chrome) https://www.google.com: Getting Cookies
+   1 (Google Chrome) https://www.google.com: Getting Localstorage
+   1 (Google Chrome) https://www.google.com: Adding requests to DB
+   1 (Google Chrome) https://www.google.com: Page closed
+   1 (Google Chrome) https://www.google.com: Adding to successful website
+
+1 (Google Chrome): (2) https://www.msedge.net
+   1 (Google Chrome) https://www.msedge.net: Getting Requests
+   1 (Google Chrome) https://www.msedge.net: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.msedge.net
+** 1 (Google Chrome): TimeoutError -> https://www.msedge.net
+** 1 (Google Chrome) restarting browser.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (3) https://www.sberdevices.ru
+   1 (Google Chrome) https://www.sberdevices.ru: Getting Requests
+   1 (Google Chrome) https://www.sberdevices.ru: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.sberdevices.ru
+   1 (Google Chrome) https://www.sberdevices.ru: Page loaded
+   1 (Google Chrome) https://www.sberdevices.ru: Getting HTML
+   1 (Google Chrome) https://www.sberdevices.ru: Getting Cookies
+   1 (Google Chrome) https://www.sberdevices.ru: Getting Localstorage
+   1 (Google Chrome) https://www.sberdevices.ru: Adding requests to DB
+   1 (Google Chrome) https://www.sberdevices.ru: Page closed
+   1 (Google Chrome) https://www.sberdevices.ru: Adding to successful website
+
+1 (Google Chrome): (4) https://www.miit.gov.cn
+   1 (Google Chrome) https://www.miit.gov.cn: Getting Requests
+   1 (Google Chrome) https://www.miit.gov.cn: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.miit.gov.cn
+   1 (Google Chrome) https://www.miit.gov.cn: Page loaded
+   1 (Google Chrome) https://www.miit.gov.cn: Getting HTML
+   1 (Google Chrome) https://www.miit.gov.cn: Getting Cookies
+   1 (Google Chrome) https://www.miit.gov.cn: Getting Localstorage
+   1 (Google Chrome) https://www.miit.gov.cn: Adding requests to DB
+   1 (Google Chrome) https://www.miit.gov.cn: Page closed
+   1 (Google Chrome) https://www.miit.gov.cn: Adding to successful website
+
+1 (Google Chrome): (5) https://www.mangosip.ru
+   1 (Google Chrome) https://www.mangosip.ru: Getting Requests
+   1 (Google Chrome) https://www.mangosip.ru: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.mangosip.ru
+** 1 (Google Chrome): TimeoutError -> https://www.mangosip.ru
+** 1 (Google Chrome) restarting browser.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (6) https://www.adsafeprotected.com
+   1 (Google Chrome) https://www.adsafeprotected.com: Getting Requests
+   1 (Google Chrome) https://www.adsafeprotected.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.adsafeprotected.com

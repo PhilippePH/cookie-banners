@@ -1,0 +1,461 @@
+
+1 (Brave): (1) https://bot.sannysoft.com
+   1 (Brave) : Loading new page https://bot.sannysoft.com
+** 1 (Brave): TimeoutError -> https://bot.sannysoft.com
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (2) https://www.whatismyip.com
+   1 (Brave) : Loading new page https://www.whatismyip.com
+   1 (Brave) https://www.whatismyip.com: Page loaded
+   1 (Brave) https://www.whatismyip.com: Page closed
+
+1 (Brave): (3) https://www.showmyip.com
+   1 (Brave) : Loading new page https://www.showmyip.com
+   1 (Brave) https://www.showmyip.com: Page loaded
+   1 (Brave) https://www.showmyip.com: Page closed
+
+1 (Brave): (4) https://whatismyipaddress.com
+   1 (Brave) : Loading new page https://whatismyipaddress.com
+   1 (Brave) https://whatismyipaddress.com: Page loaded
+   1 (Brave) https://whatismyipaddress.com: Page closed
+   1 (Brave) instance closed.
+Database connection established
+
+1 (Brave): (1) https://www.silvergloria.com
+   1 (Brave) https://www.silvergloria.com: Getting Requests
+   1 (Brave) https://www.silvergloria.com: Getting Responses
+   1 (Brave) : Loading new page https://www.silvergloria.com
+** 1 (Brave): TimeoutError -> https://www.silvergloria.com
+** 1 (Brave) restarting browser.
+ THIS NEVER CATCHES ANYTHING..... ** 1 (Brave): Error trying to close the page after error with webpage https://www.silvergloria.com
+** 1 (Brave) Webpage closed.
+ProtocolError: Target.createTarget timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+    at <instance_members_initializer> (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:49:14)
+    at new Callback (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:53:16)
+    at CallbackRegistry.create (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:93:26)
+    at Connection._rawSend (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:207:26)
+    at Connection.send (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:201:21)
+    at CDPBrowser._createPageInContext (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Browser.js:271:53)
+    at CDPBrowser._createPageInContext (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-extra/dist/index.cjs.js:210:51)
+    at CDPBrowserContext.newPage (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Browser.js:475:30)
+    at CDPBrowser.newPage (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Browser.js:265:37)
+    at crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:326:46)
+Browser instance was closed somehow. Starting a new one.
+
+1 (Brave): (2) https://www.acmepackingcompany.com
+   1 (Brave) https://www.acmepackingcompany.com: Getting Requests
+   1 (Brave) https://www.acmepackingcompany.com: Getting Responses
+   1 (Brave) : Loading new page https://www.acmepackingcompany.com
+** 1 (Brave): TimeoutError -> https://www.acmepackingcompany.com
+** 1 (Brave) restarting browser.
+ THIS NEVER CATCHES ANYTHING..... ** 1 (Brave): Error trying to close the page after error with webpage https://www.acmepackingcompany.com
+** 1 (Brave) Webpage closed.
+ProtocolError: Target.createTarget timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+    at <instance_members_initializer> (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:49:14)
+    at new Callback (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:53:16)
+    at CallbackRegistry.create (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:93:26)
+    at Connection._rawSend (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:207:26)
+    at Connection.send (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:201:21)
+    at CDPBrowser._createPageInContext (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Browser.js:271:53)
+    at CDPBrowser._createPageInContext (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-extra/dist/index.cjs.js:210:51)
+    at CDPBrowserContext.newPage (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Browser.js:475:30)
+    at CDPBrowser.newPage (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Browser.js:265:37)
+    at crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:326:46)
+Browser instance was closed somehow. Starting a new one.
+
+1 (Brave): (3) https://www.martinfowler.com
+   1 (Brave) https://www.martinfowler.com: Getting Requests
+   1 (Brave) https://www.martinfowler.com: Getting Responses
+   1 (Brave) : Loading new page https://www.martinfowler.com
+** 1 (Brave): TimeoutError -> https://www.martinfowler.com
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (4) https://www.metatime.com
+   1 (Brave) https://www.metatime.com: Getting Requests
+   1 (Brave) https://www.metatime.com: Getting Responses
+   1 (Brave) : Loading new page https://www.metatime.com
+** 1 (Brave): TimeoutError -> https://www.metatime.com
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (5) https://www.chelseagreen.com
+   1 (Brave) https://www.chelseagreen.com: Getting Requests
+   1 (Brave) https://www.chelseagreen.com: Getting Responses
+   1 (Brave) : Loading new page https://www.chelseagreen.com
+   1 (Brave) https://www.chelseagreen.com: Page loaded
+   1 (Brave) https://www.chelseagreen.com: Getting HTML
+   1 (Brave) https://www.chelseagreen.com: Getting Cookies
+   1 (Brave) https://www.chelseagreen.com: Getting Localstorage
+   1 (Brave) https://www.chelseagreen.com: Adding requests to DB
+   1 (Brave) https://www.chelseagreen.com: Page closed
+   1 (Brave) https://www.chelseagreen.com: Adding to successful website
+
+1 (Brave): (6) https://www.portal6.com.br
+   1 (Brave) https://www.portal6.com.br: Getting Requests
+   1 (Brave) https://www.portal6.com.br: Getting Responses
+   1 (Brave) : Loading new page https://www.portal6.com.br
+   1 (Brave) https://www.portal6.com.br: Page loaded
+   1 (Brave) https://www.portal6.com.br: Getting HTML
+   1 (Brave) https://www.portal6.com.br: Getting Cookies
+   1 (Brave) https://www.portal6.com.br: Getting Localstorage
+   1 (Brave) https://www.portal6.com.br: Adding requests to DB
+   1 (Brave) https://www.portal6.com.br: Page closed
+   1 (Brave) https://www.portal6.com.br: Adding to successful website
+
+1 (Brave): (7) https://www.mfmnow.com
+   1 (Brave) https://www.mfmnow.com: Getting Requests
+   1 (Brave) https://www.mfmnow.com: Getting Responses
+   1 (Brave) : Loading new page https://www.mfmnow.com
+   1 (Brave) https://www.mfmnow.com: Page loaded
+   1 (Brave) https://www.mfmnow.com: Getting HTML
+   1 (Brave) https://www.mfmnow.com: Getting Cookies
+   1 (Brave) https://www.mfmnow.com: Getting Localstorage
+   1 (Brave) https://www.mfmnow.com: Adding requests to DB
+   1 (Brave) https://www.mfmnow.com: Page closed
+   1 (Brave) https://www.mfmnow.com: Adding to successful website
+
+1 (Brave): (8) https://www.noahapps.jp
+   1 (Brave) https://www.noahapps.jp: Getting Requests
+   1 (Brave) https://www.noahapps.jp: Getting Responses
+   1 (Brave) : Loading new page https://www.noahapps.jp
+** 1 (Brave): Error visiting webpage -> https://www.noahapps.jp (net::ERR_NAME_NOT_RESOLVED at https://www.noahapps.jp)
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (9) https://www.becassubes.com
+   1 (Brave) https://www.becassubes.com: Getting Requests
+   1 (Brave) https://www.becassubes.com: Getting Responses
+   1 (Brave) : Loading new page https://www.becassubes.com
+** 1 (Brave): TimeoutError -> https://www.becassubes.com
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (10) https://www.ssru.ac.th
+   1 (Brave) https://www.ssru.ac.th: Getting Requests
+   1 (Brave) https://www.ssru.ac.th: Getting Responses
+   1 (Brave) : Loading new page https://www.ssru.ac.th
+** 1 (Brave): TimeoutError -> https://www.ssru.ac.th
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (11) https://www.gencon.com
+   1 (Brave) https://www.gencon.com: Getting Requests
+   1 (Brave) https://www.gencon.com: Getting Responses
+   1 (Brave) : Loading new page https://www.gencon.com
+** 1 (Brave): TimeoutError -> https://www.gencon.com
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (12) https://www.renweb.com
+   1 (Brave) https://www.renweb.com: Getting Requests
+   1 (Brave) https://www.renweb.com: Getting Responses
+   1 (Brave) : Loading new page https://www.renweb.com
+   1 (Brave) https://www.renweb.com: Page loaded
+   1 (Brave) https://www.renweb.com: Getting HTML
+   1 (Brave) https://www.renweb.com: Getting Cookies
+   1 (Brave) https://www.renweb.com: Getting Localstorage
+   1 (Brave) https://www.renweb.com: Adding requests to DB
+   1 (Brave) https://www.renweb.com: Page closed
+   1 (Brave) https://www.renweb.com: Adding to successful website
+
+1 (Brave): (13) https://www.rec1.com
+   1 (Brave) https://www.rec1.com: Getting Requests
+   1 (Brave) https://www.rec1.com: Getting Responses
+   1 (Brave) : Loading new page https://www.rec1.com
+** 1 (Brave): Error visiting webpage -> https://www.rec1.com (net::ERR_NAME_NOT_RESOLVED at https://www.rec1.com)
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (14) https://www.sorenfilm.ir
+   1 (Brave) https://www.sorenfilm.ir: Getting Requests
+   1 (Brave) https://www.sorenfilm.ir: Getting Responses
+   1 (Brave) : Loading new page https://www.sorenfilm.ir
+   1 (Brave) https://www.sorenfilm.ir: Page loaded
+   1 (Brave) https://www.sorenfilm.ir: Getting HTML
+Error with saving the HTML of the page to a file
+   1 (Brave) https://www.sorenfilm.ir: Getting Cookies
+   1 (Brave) https://www.sorenfilm.ir: Getting Localstorage
+   1 (Brave) https://www.sorenfilm.ir: Adding requests to DB
+   1 (Brave) https://www.sorenfilm.ir: Page closed
+   1 (Brave) https://www.sorenfilm.ir: Adding to successful website
+
+1 (Brave): (15) https://www.comixology.com
+   1 (Brave) https://www.comixology.com: Getting Requests
+   1 (Brave) https://www.comixology.com: Getting Responses
+   1 (Brave) : Loading new page https://www.comixology.com
+** 1 (Brave): TimeoutError -> https://www.comixology.com
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (16) https://www.cubadebate.cu
+   1 (Brave) https://www.cubadebate.cu: Getting Requests
+   1 (Brave) https://www.cubadebate.cu: Getting Responses
+   1 (Brave) : Loading new page https://www.cubadebate.cu
+** 1 (Brave): TimeoutError -> https://www.cubadebate.cu
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (17) https://www.tnstateparks.com
+   1 (Brave) https://www.tnstateparks.com: Getting Requests
+   1 (Brave) https://www.tnstateparks.com: Getting Responses
+   1 (Brave) : Loading new page https://www.tnstateparks.com
+** 1 (Brave): Error visiting webpage -> https://www.tnstateparks.com (net::ERR_CERT_AUTHORITY_INVALID at https://www.tnstateparks.com)
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (18) https://www.awsdns-37.co.uk
+   1 (Brave) https://www.awsdns-37.co.uk: Getting Requests
+   1 (Brave) https://www.awsdns-37.co.uk: Getting Responses
+   1 (Brave) : Loading new page https://www.awsdns-37.co.uk
+** 1 (Brave): Error visiting webpage -> https://www.awsdns-37.co.uk (net::ERR_NAME_NOT_RESOLVED at https://www.awsdns-37.co.uk)
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (19) https://www.blogvivi.com
+   1 (Brave) https://www.blogvivi.com: Getting Requests
+   1 (Brave) https://www.blogvivi.com: Getting Responses
+   1 (Brave) : Loading new page https://www.blogvivi.com
+   1 (Brave) https://www.blogvivi.com: Page loaded
+   1 (Brave) https://www.blogvivi.com: Getting HTML
+   1 (Brave) https://www.blogvivi.com: Getting Cookies
+   1 (Brave) https://www.blogvivi.com: Getting Localstorage
+   1 (Brave) https://www.blogvivi.com: Adding requests to DB
+   1 (Brave) https://www.blogvivi.com: Page closed
+   1 (Brave) https://www.blogvivi.com: Adding to successful website
+
+1 (Brave): (20) https://www.d2h.com
+   1 (Brave) https://www.d2h.com: Getting Requests
+   1 (Brave) https://www.d2h.com: Getting Responses
+   1 (Brave) : Loading new page https://www.d2h.com
+** 1 (Brave): TimeoutError -> https://www.d2h.com
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (21) https://www.banglahunt.com
+   1 (Brave) https://www.banglahunt.com: Getting Requests
+   1 (Brave) https://www.banglahunt.com: Getting Responses
+   1 (Brave) : Loading new page https://www.banglahunt.com
+   1 (Brave) https://www.banglahunt.com: Page loaded
+   1 (Brave) https://www.banglahunt.com: Getting HTML
+   1 (Brave) https://www.banglahunt.com: Getting Cookies
+   1 (Brave) https://www.banglahunt.com: Getting Localstorage
+   1 (Brave) https://www.banglahunt.com: Adding requests to DB
+   1 (Brave) https://www.banglahunt.com: Page closed
+   1 (Brave) https://www.banglahunt.com: Adding to successful website
+
+1 (Brave): (22) https://www.virginia.org
+   1 (Brave) https://www.virginia.org: Getting Requests
+   1 (Brave) https://www.virginia.org: Getting Responses
+   1 (Brave) : Loading new page https://www.virginia.org
+   1 (Brave) https://www.virginia.org: Page loaded
+   1 (Brave) https://www.virginia.org: Getting HTML
+   1 (Brave) https://www.virginia.org: Getting Cookies
+   1 (Brave) https://www.virginia.org: Getting Localstorage
+   1 (Brave) https://www.virginia.org: Adding requests to DB
+   1 (Brave) https://www.virginia.org: Page closed
+   1 (Brave) https://www.virginia.org: Adding to successful website
+
+1 (Brave): (23) https://www.watchseriesstream.com
+   1 (Brave) https://www.watchseriesstream.com: Getting Requests
+   1 (Brave) https://www.watchseriesstream.com: Getting Responses
+   1 (Brave) : Loading new page https://www.watchseriesstream.com
+   1 (Brave) https://www.watchseriesstream.com: Page loaded
+   1 (Brave) https://www.watchseriesstream.com: Getting HTML
+   1 (Brave) https://www.watchseriesstream.com: Getting Cookies
+   1 (Brave) https://www.watchseriesstream.com: Getting Localstorage
+   1 (Brave) https://www.watchseriesstream.com: Adding requests to DB
+   1 (Brave) https://www.watchseriesstream.com: Page closed
+   1 (Brave) https://www.watchseriesstream.com: Adding to successful website
+
+1 (Brave): (24) https://www.npd.com
+   1 (Brave) https://www.npd.com: Getting Requests
+   1 (Brave) https://www.npd.com: Getting Responses
+   1 (Brave) : Loading new page https://www.npd.com
+   1 (Brave) https://www.npd.com: Page loaded
+   1 (Brave) https://www.npd.com: Getting HTML
+   1 (Brave) https://www.npd.com: Getting Cookies
+   1 (Brave) https://www.npd.com: Getting Localstorage
+   1 (Brave) https://www.npd.com: Adding requests to DB
+   1 (Brave) https://www.npd.com: Page closed
+   1 (Brave) https://www.npd.com: Adding to successful website
+
+1 (Brave): (25) https://www.nrp.co
+   1 (Brave) https://www.nrp.co: Getting Requests
+   1 (Brave) https://www.nrp.co: Getting Responses
+   1 (Brave) : Loading new page https://www.nrp.co
+   1 (Brave) https://www.nrp.co: Page loaded
+   1 (Brave) https://www.nrp.co: Getting HTML
+   1 (Brave) https://www.nrp.co: Getting Cookies
+   1 (Brave) https://www.nrp.co: Getting Localstorage
+   1 (Brave) https://www.nrp.co: Adding requests to DB
+   1 (Brave) https://www.nrp.co: Page closed
+   1 (Brave) https://www.nrp.co: Adding to successful website
+
+1 (Brave): (26) https://www.thechalkboardmag.com
+   1 (Brave) https://www.thechalkboardmag.com: Getting Requests
+   1 (Brave) https://www.thechalkboardmag.com: Getting Responses
+   1 (Brave) : Loading new page https://www.thechalkboardmag.com
+   1 (Brave) https://www.thechalkboardmag.com: Page loaded
+   1 (Brave) https://www.thechalkboardmag.com: Getting HTML
+   1 (Brave) https://www.thechalkboardmag.com: Getting Cookies
+   1 (Brave) https://www.thechalkboardmag.com: Getting Localstorage
+   1 (Brave) https://www.thechalkboardmag.com: Adding requests to DB
+   1 (Brave) https://www.thechalkboardmag.com: Page closed
+   1 (Brave) https://www.thechalkboardmag.com: Adding to successful website
+
+1 (Brave): (27) https://www.qvc.it
+   1 (Brave) https://www.qvc.it: Getting Requests
+   1 (Brave) https://www.qvc.it: Getting Responses
+   1 (Brave) : Loading new page https://www.qvc.it
+** 1 (Brave): TimeoutError -> https://www.qvc.it
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (28) https://www.sinema.top
+   1 (Brave) https://www.sinema.top: Getting Requests
+   1 (Brave) https://www.sinema.top: Getting Responses
+   1 (Brave) : Loading new page https://www.sinema.top
+** 1 (Brave): Error visiting webpage -> https://www.sinema.top (net::ERR_CONNECTION_CLOSED at https://www.sinema.top)
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (29) https://www.singlegrain.com
+   1 (Brave) https://www.singlegrain.com: Getting Requests
+   1 (Brave) https://www.singlegrain.com: Getting Responses
+   1 (Brave) : Loading new page https://www.singlegrain.com
+   1 (Brave) https://www.singlegrain.com: Page loaded
+   1 (Brave) https://www.singlegrain.com: Getting HTML
+   1 (Brave) https://www.singlegrain.com: Getting Cookies
+   1 (Brave) https://www.singlegrain.com: Getting Localstorage
+   1 (Brave) https://www.singlegrain.com: Adding requests to DB
+   1 (Brave) https://www.singlegrain.com: Page closed
+   1 (Brave) https://www.singlegrain.com: Adding to successful website
+
+1 (Brave): (30) https://www.warriorplus.com
+   1 (Brave) https://www.warriorplus.com: Getting Requests
+   1 (Brave) https://www.warriorplus.com: Getting Responses
+   1 (Brave) : Loading new page https://www.warriorplus.com
+   1 (Brave) https://www.warriorplus.com: Page loaded
+   1 (Brave) https://www.warriorplus.com: Getting HTML
+   1 (Brave) https://www.warriorplus.com: Getting Cookies
+   1 (Brave) https://www.warriorplus.com: Getting Localstorage
+   1 (Brave) https://www.warriorplus.com: Adding requests to DB
+   1 (Brave) https://www.warriorplus.com: Page closed
+   1 (Brave) https://www.warriorplus.com: Adding to successful website
+
+1 (Brave): (31) https://www.goldliond.top
+   1 (Brave) https://www.goldliond.top: Getting Requests
+   1 (Brave) https://www.goldliond.top: Getting Responses
+   1 (Brave) : Loading new page https://www.goldliond.top
+** 1 (Brave): Error visiting webpage -> https://www.goldliond.top (net::ERR_NAME_NOT_RESOLVED at https://www.goldliond.top)
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (32) https://www.angelogordon.com
+   1 (Brave) https://www.angelogordon.com: Getting Requests
+   1 (Brave) https://www.angelogordon.com: Getting Responses
+   1 (Brave) : Loading new page https://www.angelogordon.com
+   1 (Brave) https://www.angelogordon.com: Page loaded
+   1 (Brave) https://www.angelogordon.com: Getting HTML
+   1 (Brave) https://www.angelogordon.com: Getting Cookies
+   1 (Brave) https://www.angelogordon.com: Getting Localstorage
+   1 (Brave) https://www.angelogordon.com: Adding requests to DB
+   1 (Brave) https://www.angelogordon.com: Page closed
+   1 (Brave) https://www.angelogordon.com: Adding to successful website
+
+1 (Brave): (33) https://www.trib.com
+   1 (Brave) https://www.trib.com: Getting Requests
+   1 (Brave) https://www.trib.com: Getting Responses
+   1 (Brave) : Loading new page https://www.trib.com
+   1 (Brave) https://www.trib.com: Page loaded
+   1 (Brave) https://www.trib.com: Getting HTML
+   1 (Brave) https://www.trib.com: Getting Cookies
+   1 (Brave) https://www.trib.com: Getting Localstorage
+   1 (Brave) https://www.trib.com: Adding requests to DB
+   1 (Brave) https://www.trib.com: Page closed
+   1 (Brave) https://www.trib.com: Adding to successful website
+
+1 (Brave): (34) https://www.onmanorama.com
+   1 (Brave) https://www.onmanorama.com: Getting Requests
+   1 (Brave) https://www.onmanorama.com: Getting Responses
+   1 (Brave) : Loading new page https://www.onmanorama.com
+   1 (Brave) https://www.onmanorama.com: Page loaded
+   1 (Brave) https://www.onmanorama.com: Getting HTML
+   1 (Brave) https://www.onmanorama.com: Getting Cookies
+   1 (Brave) https://www.onmanorama.com: Getting Localstorage
+   1 (Brave) https://www.onmanorama.com: Adding requests to DB
+   1 (Brave) https://www.onmanorama.com: Page closed
+   1 (Brave) https://www.onmanorama.com: Adding to successful website
+
+1 (Brave): (35) https://www.feepayr.com
+   1 (Brave) https://www.feepayr.com: Getting Requests
+   1 (Brave) https://www.feepayr.com: Getting Responses
+   1 (Brave) : Loading new page https://www.feepayr.com
+   1 (Brave) https://www.feepayr.com: Page loaded
+   1 (Brave) https://www.feepayr.com: Getting HTML
+   1 (Brave) https://www.feepayr.com: Getting Cookies
+   1 (Brave) https://www.feepayr.com: Getting Localstorage
+   1 (Brave) https://www.feepayr.com: Adding requests to DB
+   1 (Brave) https://www.feepayr.com: Page closed
+   1 (Brave) https://www.feepayr.com: Adding to successful website
+
+1 (Brave): (36) https://www.overwolf.com
+   1 (Brave) https://www.overwolf.com: Getting Requests
+   1 (Brave) https://www.overwolf.com: Getting Responses
+   1 (Brave) : Loading new page https://www.overwolf.com
+   1 (Brave) https://www.overwolf.com: Page loaded
+   1 (Brave) https://www.overwolf.com: Getting HTML
+   1 (Brave) https://www.overwolf.com: Getting Cookies
+   1 (Brave) https://www.overwolf.com: Getting Localstorage
+   1 (Brave) https://www.overwolf.com: Adding requests to DB
+   1 (Brave) https://www.overwolf.com: Page closed
+   1 (Brave) https://www.overwolf.com: Adding to successful website
+
+1 (Brave): (37) https://www.wowktv.com
+   1 (Brave) https://www.wowktv.com: Getting Requests
+   1 (Brave) https://www.wowktv.com: Getting Responses
+   1 (Brave) : Loading new page https://www.wowktv.com
+   1 (Brave) https://www.wowktv.com: Page loaded
+   1 (Brave) https://www.wowktv.com: Getting HTML
+   1 (Brave) https://www.wowktv.com: Getting Cookies
+   1 (Brave) https://www.wowktv.com: Getting Localstorage
+   1 (Brave) https://www.wowktv.com: Adding requests to DB
+   1 (Brave) https://www.wowktv.com: Page closed
+   1 (Brave) https://www.wowktv.com: Adding to successful website
+
+1 (Brave): (38) https://www.tocnoto.si
+   1 (Brave) https://www.tocnoto.si: Getting Requests
+   1 (Brave) https://www.tocnoto.si: Getting Responses
+   1 (Brave) : Loading new page https://www.tocnoto.si
+** 1 (Brave): TimeoutError -> https://www.tocnoto.si
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (39) https://www.awsdns-cn-47.cn
+   1 (Brave) https://www.awsdns-cn-47.cn: Getting Requests
+   1 (Brave) https://www.awsdns-cn-47.cn: Getting Responses
+   1 (Brave) : Loading new page https://www.awsdns-cn-47.cn
+** 1 (Brave): Error visiting webpage -> https://www.awsdns-cn-47.cn (net::ERR_NAME_NOT_RESOLVED at https://www.awsdns-cn-47.cn)
+** 1 (Brave) restarting browser.
+** 1 (Brave) Webpage closed.
+TargetCloseError: Protocol error (Target.createTarget): Target closed
+    at CallbackRegistry.clear (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:138:36)
+    at #onClose (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/Connection.js:282:25)
+    at WebSocket.<anonymous> (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/NodeWebSocketTransport.js:57:30)
+    at callListener (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/ws/lib/event-target.js:290:14)
+    at WebSocket.onClose (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/ws/lib/event-target.js:220:9)
+    at WebSocket.emit (node:events:513:28)
+    at WebSocket.emitClose (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/ws/lib/websocket.js:258:10)
+    at Socket.socketOnClose (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/ws/lib/websocket.js:1264:15)
+    at Socket.emit (node:events:513:28)
+    at TCP.<anonymous> (node:net:320:12)
+Browser instance was closed somehow. Starting a new one.
+
+1 (Brave): (40) https://www.torrentday.com
+   1 (Brave) https://www.torrentday.com: Getting Requests
+   1 (Brave) https://www.torrentday.com: Getting Responses
+   1 (Brave) : Loading new page https://www.torrentday.com
+** 1 (Brave): TimeoutError -> https://www.torrentday.com
+** 1 (Brave) restarting browser.

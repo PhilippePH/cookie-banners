@@ -24,8 +24,8 @@ import {callableMain} from './index.js'
 
 const BROWSER_LIST = ['Firefox'];
 const VANTAGE_POINTS = ['UK'];
-const START_NUMBER = 0;
-const NUM_URLS = 1000;
+const START_NUMBER = 4552;
+const NUM_URLS = 5000;
 const PATH_TO_CSV = "./webCrawler/websiteSelection/shuffled.txt";
 const DEVICE = 'macserver';
 
