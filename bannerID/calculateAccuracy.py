@@ -52,6 +52,7 @@ def compareValues(trueData, results):
     return results
 
 def evaluatePerformance(appendedResults):
+    
     appendedResults_Domain= 0
     appendedResults_Corpus = 1
     appendedResults_Threshold = 2
@@ -69,7 +70,8 @@ def evaluatePerformance(appendedResults):
             continue
 
         dictKey = row[appendedResults_Corpus] + "--" + row[appendedResults_Threshold]
-        prediction = row[appendedResults_BannerFound]
+        
+        prediction = (row[appendedResults_BannerFound] == "True")
         CorrectnessOfPrediction = row[appendedResults_CorrectnessOfPrediction]
 
         # If predictions were correct
@@ -82,22 +84,36 @@ def evaluatePerformance(appendedResults):
         # If predicitions were wrong
         else:
             # Check if false negative or false positive (check the prediction, if it is labelled "True" then false positive)
+            # FALSE POSITIVE
             if prediction:
                 if performance.get(dictKey):
                     performance[dictKey][1] += 1 # Adding to existant key
                     performance[dictKey][2] += 1 # Add to false positive
                 else:
                     performance[dictKey] = [0,1,1,0] # Initialising dict
+            # FALSE NEGATIVE
             else:
                 if performance.get(dictKey):
                     performance[dictKey][1] += 1 # Adding to existant key
                     performance[dictKey][3] += 1 # Add to false negative
                 else:
+                    print("HEY")
                     performance[dictKey] = [0,1,0,1] # Initialising dict
         
         # Print the line result
-        bannerPresence = "HAS" if prediction and CorrectnessOfPrediction else "HAS NOT"
-        print(f"[{CorrectnessOfPrediction} prediction] : {row[appendedResults_Domain]} {bannerPresence} a banner. Words found: {row[appendedResults_WordsFound]} \n")
+        bannerPresence = "HAS"
+        printCorrectness = "accurate"
+        if CorrectnessOfPrediction:
+            if not prediction:
+                bannerPresence = "HAS NOT"
+        else:
+            printCorrectness = "NOT accurate"
+            if prediction:
+                bannerPresence = "HAS NOT"
+
+        # if not Correctness: # printing only incorrect predictions
+        if not CorrectnessOfPrediction:
+            print(f"[The prediction was {printCorrectness}. Algorithm {dictKey} predicted {prediction}.] : {row[appendedResults_Domain]} {bannerPresence} a banner. Words found: {row[appendedResults_WordsFound]}")
 
     for dictKey in performance.keys():
         res = performance[dictKey]

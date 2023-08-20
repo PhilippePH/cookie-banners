@@ -11,14 +11,16 @@ import os
 THRESHOLD_TEST_VALUES = [0.05]
 
 # Smallest corpus to find hits in all tests
-CORPUS_1 = ['agree', 'i agree', 'accept', 'accept all', 'accept cookies',
+# ADDED COOKIE AND COOKIES AS WORDS.. THEY SHOULD'VE BEEN THERE ALREADY
+CORPUS_1 = [ 'cookie', 'cookies', 'agree', 'i agree', 'accept', 'accept all', 'accept cookies',
             'i accept','reject', 'reject all', 'decline', 'cookie preferences',
             'manage cookies',  'preferences', 'learn more',  'more information',
             'privacy policy', 'privacy statement', 'cookie policy','cookie notice',
-            'our partners', 'partners',  'third-party', 'similar technologies']
+            'our partners', 'partners',  'third-party']
 
 # All relevant words
-CORPUS_2 = ['agree', 'i agree','accept', 'accept all', 'accept cookies', 'i accept',
+# After doing some tests, "Ok" leads to way too many false positives
+CORPUS_2 = ['cookie', 'cookies','agree', 'i agree','accept', 'accept all', 'accept cookies', 'i accept',
             'ok','allow all', 'enable all', 'got it', 'allow cookies', 'reject',
             'reject all', 'decline', 'mandatory only', 'required only', 'not accept',
             'disable all', 'disagree', 'decline cookies', 'decline all',
@@ -33,12 +35,31 @@ CORPUS_2 = ['agree', 'i agree','accept', 'accept all', 'accept cookies', 'i acce
             'partners', 'third party', 'vendors', 'similar technologies',
             'other technologies']
 
-# CORPUS_TEST_VALUES = [CORPUS_1, CORPUS_2]
-# CORPUS_NAMES = ["shortCorpus","longCorpus"]
+CORPUS_3 = ['cookie', 'cookies', 'accept', 'reject', 'policy']
+CORPUS_4 = ['accept', 'reject', 'policy']
+CORPUS_5 = [ 'agree', 'i agree', 'accept', 'accept all', 'accept cookies',
+            'i accept','reject', 'reject all', 'decline', 'cookie preferences',
+            'manage cookies',  'preferences', 'learn more',  'more information',
+            'privacy policy', 'privacy statement', 'cookie policy','cookie notice',
+            'our partners', 'partners',  'third-party']
+CORPUS_6 = ['agree', 'i agree','accept', 'accept all', 'accept cookies', 'i accept',
+            'ok','allow all', 'enable all', 'got it', 'allow cookies', 'reject',
+            'reject all', 'decline', 'mandatory only', 'required only', 'not accept',
+            'disable all', 'disagree', 'decline cookies', 'decline all',
+            'mandatory', 'optional cookies', 'essential cookies',
+            'non-essential cookies','strictly necessary', 'necessary cookies',
+            'required', 'essential', 'non-essential',  'cookie preferences',
+            'manage cookies',  'preferences', 'cookies options','consent manager',
+            'customize cookies', 'cookie options', 'cookies settings', 'manage settings',
+            'manage preferences', 'more options', 'learn more',  'more information',
+            'show purposes', 'further information', 'more options', 'privacy policy',
+            'privacy statement', 'cookie policy','cookie notice', 'our partners',
+            'partners', 'third party', 'vendors', 'similar technologies',
+            'other technologies']
+CORPUS_7 = ['cookies', 'privacy', 'policy', 'consent', 'accept', 'agree', 'personalized', 'legitimate interest']
 
-CORPUS_TEST_VALUES = [CORPUS_1]
-CORPUS_NAMES = ["shortCorpus"]
-
+CORPUS_TEST_VALUES = [CORPUS_1,CORPUS_4, CORPUS_2, CORPUS_5, CORPUS_3, CORPUS_4,CORPUS_7]
+CORPUS_NAMES = ["shortCorpus","shortCorpus_nocookie","longCorpus","longCorpus_nocookie","shortestCorpus","shortestCorpus_nocookie","exploringTheCookieVerseCorpus"]
 
 
 def parseHtmlDir(html_directory_path, filename):
