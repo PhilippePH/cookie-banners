@@ -14,7 +14,10 @@ def getGroundTruth(browser):
     with open(pathGroundValues, 'r', newline='\n') as csvfile:
         csv_reader = csv.reader(csvfile)
         for row in csv_reader:
-            data.append([row[Ground_Domain], (row[browserColumns[browser]]=="Yes")]) # selecting the correct browser column to assess the accuracy of the tools for said browser
+            # Skipping rows for which there are no predictions
+            if row[browserColumns[browser]]=="Yes" or row[browserColumns[browser]]=="No":
+                # Keeping domain, and the prediction (saves True if prediction is Yes, false if it is No)
+                data.append([row[Ground_Domain], (row[browserColumns[browser]]=="Yes")]) # selecting the correct browser column to assess the accuracy of the tools for said browser
     
     return data
 
@@ -49,9 +52,11 @@ def compareValues(trueData, results):
     return results
 
 def evaluatePerformance(appendedResults):
+    appendedResults_Domain= 0
     appendedResults_Corpus = 1
     appendedResults_Threshold = 2
     appendedResults_BannerFound = 3
+    appendedResults_WordsFound = 4
     appendedResults_CorrectnessOfPrediction = 5
     
 
@@ -61,8 +66,8 @@ def evaluatePerformance(appendedResults):
     for row in appendedResults:
         # For websites which don't have a match
         if len(row) != 6:
-            print(row)
             continue
+
         dictKey = row[appendedResults_Corpus] + "--" + row[appendedResults_Threshold]
         prediction = row[appendedResults_BannerFound]
         CorrectnessOfPrediction = row[appendedResults_CorrectnessOfPrediction]
@@ -89,6 +94,10 @@ def evaluatePerformance(appendedResults):
                     performance[dictKey][3] += 1 # Add to false negative
                 else:
                     performance[dictKey] = [0,1,0,1] # Initialising dict
+        
+        # Print the line result
+        bannerPresence = "HAS" if prediction and CorrectnessOfPrediction else "HAS NOT"
+        print(f"[{CorrectnessOfPrediction} prediction] : {row[appendedResults_Domain]} {bannerPresence} a banner. Words found: {row[appendedResults_WordsFound]} \n")
 
     for dictKey in performance.keys():
         res = performance[dictKey]

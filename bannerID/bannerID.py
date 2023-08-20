@@ -7,7 +7,8 @@ import os
 """
 
 # Must be in descending values because no copies of array are being made. 
-THRESHOLD_TEST_VALUES = [1, 0.5, 0.25, 0.10, 0.05, 0.01]
+# THRESHOLD_TEST_VALUES = [1, 0.5, 0.25, 0.10, 0.05, 0.01]
+THRESHOLD_TEST_VALUES = [0.05]
 
 # Smallest corpus to find hits in all tests
 CORPUS_1 = ['agree', 'i agree', 'accept', 'accept all', 'accept cookies',
@@ -32,8 +33,13 @@ CORPUS_2 = ['agree', 'i agree','accept', 'accept all', 'accept cookies', 'i acce
             'partners', 'third party', 'vendors', 'similar technologies',
             'other technologies']
 
-CORPUS_TEST_VALUES = [CORPUS_1, CORPUS_2]
-CORPUS_NAMES = ["shortCorpus","longCorpus"]
+# CORPUS_TEST_VALUES = [CORPUS_1, CORPUS_2]
+# CORPUS_NAMES = ["shortCorpus","longCorpus"]
+
+CORPUS_TEST_VALUES = [CORPUS_1]
+CORPUS_NAMES = ["shortCorpus"]
+
+
 
 def parseHtmlDir(html_directory_path, filename):
         complete_filename = html_directory_path+filename
