@@ -20,14 +20,14 @@ netstat -lntu
 import {fork} from 'child_process';
 import * as fs from 'node:fs/promises';
 import {getURLs} from './websiteSelection/websiteSelection.js';
-// import {callableMain} from './index.js'
+// import {callableMain} from './screenshotIndex.js'
 
-const BROWSER_LIST = ['Google Chrome', 'Brave'];
+const BROWSER_LIST = ['Google Chrome', 'Brave', 'Firefox', 'Ghostery'];
 const VANTAGE_POINTS = ['UK'];
 const START_NUMBER = 0;
-const NUM_URLS = 1000;
+const NUM_URLS = 250;
 const PATH_TO_CSV = "./webCrawler/websiteSelection/shuffled.txt";
-const DEVICE = 'macserver';
+const DEVICE = 'laptop';
 
 // CREATING RESULTS FOLDER
 async function createResultFolder(browserList, vantagePoint, device){
@@ -99,7 +99,7 @@ async function ParallelMain(browserList, vantagePoint, device){
     
   // Launching child processes
   for (const args of argumentsArray) {
-    const child = fork('webCrawler/index.js', args);
+    const child = fork('webCrawler/screenshotIndex.js', args);
   }
 
   // callableMain(argumentsArray[0]);
