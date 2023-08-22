@@ -43,7 +43,7 @@ async function startBrowserInstance(browser, vantagePoint, device){
 async function crawl(browser, resultPath, urlList, vantagePoint,
                     connection = null, processID = 1, test = false, device = 'linux',
                     wordCorpus, parentCutoff, childrenCutoff){
-    
+    let bannerFoundArr = [];
     let browserInstance, page;
     browserInstance = await startBrowserInstance(browser, vantagePoint, device);
 
@@ -95,9 +95,9 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
                 continue;
             }           
 
-                await getScreenshot(page, resultPath, siteName); //screenshot for top 250
-                await ALLINONE(page, wordCorpus, parentCutoff, childrenCutoff);
-
+            await getScreenshot(page, resultPath, siteName); //screenshot for top 250
+            let bannerFound = await ALLINONE(page, wordCorpus, parentCutoff, childrenCutoff);
+            bannerFoundArr.push({siteName, bannerFound});
 
             console.log(`   ${processID} (${browser}) ${websiteUrl}: Page closed`);
             await page.close();
@@ -117,6 +117,8 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
 
     await browserInstance.close();
     console.log(`   ${processID} (${browser}) instance closed.`)
+
+    console.log(bannerFoundArr);
 }
 
 async function CLImain(){

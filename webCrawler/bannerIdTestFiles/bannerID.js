@@ -68,6 +68,7 @@ export async function ALLINONE(page, wordCorpus, maxNumParents, maxNumChildren){
         for (const parent of subTreesParents){
             // STEP 4.1: Get the list of parent and all children
             let loopThroughSubTree = [parent];
+            
             // THIS USED TO BE RECURSIVE, BUT I DON'T THINK I CAN DO THIS HERE??????????????????????????????????????????
             for(const child of parent.children){
                 loopThroughSubTree.push(child);
@@ -107,6 +108,12 @@ export async function ALLINONE(page, wordCorpus, maxNumParents, maxNumChildren){
                         // Set, so only unique values will be added.
                         // This is to encourage matching different words, rather than the same over and over again (like a script setting 500 "cookies")
                         matchingWords.forEach(wordHits.add, wordHits)
+                    }
+                    else{ // if the element in the subTree has NO matches, remove it from the subTree being considered as a banner. this will help removing "random" elements that are included in the subtree
+                        const index = loopThroughSubTree.indexOf(nodeElement);
+                        if (index > -1) { // only splice array when item is found
+                            loopThroughSubTree.splice(index, 1); // 2nd parameter means remove one item only
+                        }
                     }
                 }
             }
