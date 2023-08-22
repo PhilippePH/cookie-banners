@@ -19,14 +19,16 @@ netstat -lntu
 
 import {fork} from 'child_process';
 import * as fs from 'node:fs/promises';
-import {getURLs} from './websiteSelection/websiteSelection.js';
-// import {callableMain} from './screenshotIndex.js'
+import {getURLs} from './bannerIdWebsiteSelection.js';
 
-const BROWSER_LIST = ['Google Chrome', 'Brave', 'Firefox', 'Ghostery'];
+const BROWSER_LIST = ['Google Chrome'];
 const VANTAGE_POINTS = ['UK'];
 const START_NUMBER = 0;
-const NUM_URLS = 250;
-const PATH_TO_CSV = "./webCrawler/websiteSelection/shuffled.txt";
+const NUM_URLS = 25;
+const CORPUS = ['cookies', 'privacy', 'policy', 'consent', 'accept', 'agree', 'personalized'];
+const PARENTS_THRESHOLD = 5;
+const CHILDREN_THRESHOLD = 20;
+const PATH_TO_CSV = "./shuffled.txt";
 const DEVICE = 'laptop';
 
 // CREATING RESULTS FOLDER
@@ -84,7 +86,7 @@ async function createArgumentArray(path, browserList, vantagePoint, device){
     for (const browser of browserList) {
       let websiteList = await getURLs(NUM_URLS, START_NUMBER, browser, PATH_TO_CSV);
       let newPath = path + `/${location}/${browser}`;
-      argArray.push([newPath, location, browser, websiteList, i, device]);
+      argArray.push([newPath, location, browser, websiteList, i, device, CORPUS, PARENTS_THRESHOLD, CHILDREN_THRESHOLD]);
       i++;
     }
   }
@@ -99,7 +101,7 @@ async function ParallelMain(browserList, vantagePoint, device){
     
   // Launching child processes
   for (const args of argumentsArray) {
-    const child = fork('webCrawler/screenshotIndex.js', args);
+    const child = fork('./bannerIdIndex.js', args);
   }
 
   // callableMain(argumentsArray[0]);
