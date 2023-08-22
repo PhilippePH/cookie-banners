@@ -68,6 +68,8 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             console.log(`\n${processID} (${browser}): (${urlCounter}) ${websiteUrl}`);
             const siteName = await getSiteNames(websiteUrl);
             
+            page.on('console', msg => console.log('PAGE LOG:', msg.text()));
+            
             try{
                 console.log(`   ${processID} (${browser}) : Loading new page ${websiteUrl}`);
                 await page.goto( websiteUrl, { timeout: 10000, waitUntil:'load'} );

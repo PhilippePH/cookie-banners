@@ -10,18 +10,23 @@ Step 6. Call isVisible on the most prolific child (as well as the others in the 
 async function getTerminalNodes(page){
     let terminalNodes = await page.evaluate(() => {
         const allElements = document.querySelectorAll('*');
+        console.log(allElements);
         let terminalNodes = [];
     
         // Filter out elements with children
         for (const element of allElements) {
-          if (element.children.length === 0) {
-            terminalNodes.push(element);
-          }
+            console.log(element)
+            if (element.children.length === 0) {
+                console.log("TRUE")
+                terminalNodes.push(element);
+            }
         }
     
+        console.log("terminal nodesinside ", terminalNodes);
         return terminalNodes;
       });
-      console.log("Terminal nodes:", terminalNodes);
+    
+    console.log("Terminal nodes:", terminalNodes);
     return terminalNodes;
 }
 
