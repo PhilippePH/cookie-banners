@@ -7,146 +7,168 @@ Step 5. Choose the sub-tree that has the maximum number of hits
 Step 6. Call isVisible on the most prolific child (as well as the others in the tree)
 */
 
-async function getTerminalNodes(page){
-    let terminalNodes = await page.evaluate(() => {
+export async function ALLINONE(page, wordCorpus, maxNumParents, maxNumChildren){
+    let returnValue = await page.evaluate((wordCorpus, maxNumParents) => {
+        const wordCopursArray = wordCorpus.split(','); 
+
+        // STEP 1. GET ALL THE TERMINAL NODES
         const allElements = document.querySelectorAll('*');
-        console.log(allElements);
         let terminalNodes = [];
     
         // Filter out elements with children
         for (const element of allElements) {
-            console.log(element)
             if (element.children.length === 0) {
-                console.log("TRUE")
                 terminalNodes.push(element);
             }
         }
-    
-        console.log("terminal nodesinside ", terminalNodes);
-        return terminalNodes;
-      });
-    
-    console.log("Terminal nodes:", terminalNodes);
-    return terminalNodes;
-}
 
-// Checks if a node has at least 1 word match. Returns candidates {node, numMatch, the matched words}
-async function assessCorpus(page, element, wordCorpus){
+        // STEP 2. FILTER THE TERMINAL NODES
+        let counter = 0;
+        let filteredNodes = [];
 
-    // Get the text of the Node (if any)
-    let text = await page.evaluate(function(nodeElement) {
-        return nodeElement.textContent.trim(); // this should return an empty string if no text is found. it should not throw an error
-    }, element);
-    
-    if(text.length > 0){
-        const wordsArray = text.split(/\s+/); 
+        for (const nodeElement of terminalNodes) {
+            counter ++;
 
-        // Check if any word from the corpus is in the text
-        const matchingWords = wordCorpus.filter(corpusWord =>
-            wordsArray.some(nodeWord => nodeWord.toLowerCase() === corpusWord) // THIS ONLY CHECK 1-WORD SEARCH TERMS
-        );
+            // STEP 2.1: COMPARE THE VALUES TO THE WORD CORPUS
+            // Get the text of the Node (if any)
+            let text = nodeElement.textContent.trim(); // this should return an empty string if no text is found. it should not throw an error
+            
+            if(text.length > 0){
+                const wordsArray = text.split(/\s+/); 
 
-        return matchingWords;
-    }
-    return []; // is returning an empty array the thing to do here?
-}
+                // Check if any word from the corpus is in the text
+                const matchingWords = wordCopursArray.filter(corpusWord =>
+                    wordsArray.some(nodeWord => nodeWord.toLowerCase() === corpusWord) // THIS ONLY CHECK 1-WORD SEARCH TERMS
+                );
 
-async function filterTerminalNodes(page, wordCorpus){
-    let counter = 0;
-    let shortlist = [];
-
-    const terminalNodes = await getTerminalNodes(page);
-    for (const node of terminalNodes) {
-        counter ++;
-        let matches = await assessCorpus(page, node, wordCorpus);
-        if(matches.length > 0){
-            shortlist.push(node);
-        }
-    }
-    console.log(`There are ${counter} terminal nodes.`);
-    console.log(`They have been filtered down to a shortlist of ${shortlist.length} nodes.`);
-    return shortlist;
-}
-
-
-// HERE ADD A LIMIT ON NUMBER OF CHILDREN
-async function getsubTrees(page, wordCorpus, maxNumParents, maxNumChildren){
-    let parents = [];
-    const filteredNodes = await filterTerminalNodes(page, wordCorpus); 
-    for (const node of filteredNodes) {
-        // Get the subTree parents
-        let parent = await page.evaluate(function(nodeElement) {
-                let parent;
-                for(let i = 0; i < maxNumParents; i++){
-                    parent = nodeElement.parentElement;
+                if(matchingWords.length > 0){
+                    filteredNodes.push(nodeElement);
                 }
-                return parent;
-          }, node);
-        parents.push(parent)
-    }
-    return parents;
-}
-
-
-// This is to rercusively loop through all the children of the parent
-async function getBannerElement(page, element, wordCorpus){
-    let results = await assessCorpus(page, element, wordCorpus);
-    for(const child of element.children){
-        let newResults = await getBannerElement(page, child, wordCorpus); // this recursive call ensures we visit all the children in the sub-tree
-        results.push(...newResults); // adds each value of new result as a value in result (rather than adding it as an array)
-    }
-    return results;
-}
-
-// This is to launch the recursive search for all parents in the shortlist
-async function selectBannerElement(page, wordCorpus, maxNumParents, maxNumChildren){
-    let maxNumHits = 0;
-    let maxWordHits;
-    let bannerElement;
-
-    // Select the best banner candidate based on word hits, (ADD: and minimising children)
-    let subTreesParents = await getsubTrees(page, wordCorpus, maxNumParents, maxNumChildren);
-    for (const parent of subTreesParents){
-       let wordHits = await getBannerElement(page, parent, wordCorpus);
-        if(wordHits.length > maxNumHits){
-            maxNumHits = wordHits.length;
-            maxWordHits = wordHits;
-            bannerElement = parent;
+            }
         }
-    }
-    console.log(`Best candidate has ${maxNumHits} matches: ${maxWordHits}`);
-    return bannerElement;
-}
+        // console.log(`There are ${counter} terminal nodes.`);
+        // console.log(`They have been filtered down to a shortlist of ${filteredNodes.length} nodes.`);
 
-async function recursiveIsBannerVisible(page, wordCorpus, parentCutoff, childrenCutoff){
+        // STEP 3. GET THE PARENTS
+        let subTreesParents = [];
+        for (const nodeElement of filteredNodes) {
+            let parent;
+            for(let i = 0; i < maxNumParents; i++){ // getting the i-th parent
+                parent = nodeElement.parentElement;
+            }
+            subTreesParents.push(parent)
+        }
+
+        // STEP 4. ANALYSE THE SUBTREES
+        let maxNumHits = 0;
+        let maxWordHits;
+        // let bannerElement;
+        let subTree;
+
+        for (const parent of subTreesParents){
+            // STEP 4.1: Get the list of parent and all children
+            let loopThroughSubTree = [parent];
+            // THIS USED TO BE RECURSIVE, BUT I DON'T THINK I CAN DO THIS HERE??????????????????????????????????????????
+            for(const child of parent.children){
+                loopThroughSubTree.push(child);
+
+                for(const child2 of child.children){
+                    loopThroughSubTree.push(child2);
+    
+                    for(const child3 of child2.children){
+                        loopThroughSubTree.push(child3);
+
+                        for(const child4 of child3.children){
+                            loopThroughSubTree.push(child4);
+                        
+                            for(const child5 of child4.children){
+                                loopThroughSubTree.push(child5);
+                            }
+                        }
+                    }
+                }
+            }
+
+            let wordHits = new Set();
+            for(nodeElement of loopThroughSubTree){
+                // STEP 4.2: COMPARE THE VALUES TO THE WORD CORPUS
+                // Get the text of the Node (if any)
+                let text = nodeElement.textContent.trim(); // this should return an empty string if no text is found. it should not throw an error
+                
+                if(text.length > 0){
+                    const wordsArray = text.split(/\s+/); 
+
+                    // Check if any word from the corpus is in the text
+                    const matchingWords = wordCopursArray.filter(corpusWord =>
+                        wordsArray.some(nodeWord => nodeWord.toLowerCase() === corpusWord) // THIS ONLY CHECK 1-WORD SEARCH TERMS
+                    );
+
+                    if(matchingWords.length > 0){
+                        // Set, so only unique values will be added.
+                        // This is to encourage matching different words, rather than the same over and over again (like a script setting 500 "cookies")
+                        matchingWords.forEach(wordHits.add, wordHits)
+                    }
+                }
+            }
+            console.log(wordHits.size);
+            // STEP 4.3: UPDATE THE BEST CANDIDATE IF FOUND
+            if(wordHits.size > maxNumHits){
+                maxNumHits = wordHits.size;
+                maxWordHits = [...wordHits];
+                //  bannerElement = parent;
+                subTree = loopThroughSubTree;
+            }
+        }
+
+        // console.log(`Best candidate has ${maxNumHits} matches: ${maxWordHits}`);
+
+        if(Number(maxNumHits) > 0){
+            let subTreeInfo = subTree.map(nodeElement => {
+                const classAttribute =  nodeElement.getAttribute('class');
+                return classAttribute ? { class: classAttribute.split(' ').join('.') } : null; // joins multi word class names with . to form a valid one for puppeteer to search with
+                })
+                .filter(Boolean); //remove null values
+
+            console.log(subTreeInfo)
+            return [subTreeInfo, maxWordHits];
+        }
+        else{
+            console.log("There are not banners on the page.")
+            return null;
+        }
+    }, wordCorpus, maxNumParents);
+
+
+
+    // BACK IN BROWSER CONTEXT
+    // STEP 5. SEE IF THE BEST CANDIDATE IS VISIBLE
+    if(returnValue == null){
+        console.log("No banners were found on the page.")
+        return null;
+    }
+
+    // Unpack non-null return values
+    let subTree = returnValue[0];
+    let wordMatches = returnValue[1];
+    console.log("The following words were found:", wordMatches);
+
+    // Get the visibility of elements.
     let visibleArray = [];
-    let element = await selectBannerElement(page, wordCorpus, parentCutoff, childrenCutoff);
-    for (const child of element.children){
-        let results = await recursiveIsBannerVisible(child);
-        visibleArray.push(...results);
+    for (const nodeInfo of subTree){
+        if(nodeInfo.class == null){continue}
+
+        try{
+            const elementHandle = await page.$(`.${nodeInfo.class}`); 
+            const isVisible = await elementHandle.isVisible();
+            visibleArray.push(isVisible);
+        } catch(error) {};
     } 
 
-    const elementHandle = await page.evaluateHandle(function(element){
-        return element
-    }, element);
-
-    // Check if the element is visible
-    const isVisible = await elementHandle.isVisible();
-    visibleArray.push(isVisible);
-
-    return visibleArray;
-}
-
-
-// HERE I SHOULD ACTUALLY LOOP THROUGH ALL THE CHILDREN TO SEE IF THE RESULTS DIFFER
-export async function isBannerVisible(page, wordCorpus, parentCutoff = 5, childrenCutoff=20){
-    const visibleArray = await recursiveIsBannerVisible(page, wordCorpus, parentCutoff, childrenCutoff);
-    
     console.log('Is element visible?', visibleArray);
 
     const trueCount = visibleArray.filter(value => value === true).length;
     const falseCount = visibleArray.length - trueCount;
-  
+
     console.log("Final decision: ", trueCount > falseCount ? true : false);
 
     return trueCount > falseCount ? true : false;

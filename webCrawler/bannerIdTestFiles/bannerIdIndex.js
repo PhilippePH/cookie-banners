@@ -1,6 +1,6 @@
 import {getSiteNames} from './bannerIdWebsiteSelection.js';
 import {createBrowserInstance} from "./bannerIdBrowser.js";
-import {isBannerVisible} from "./bannerID.js"
+import {ALLINONE} from "./bannerID.js"
 import { exit } from 'process';
 import puppeteer from 'puppeteer-core';
 
@@ -68,7 +68,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             console.log(`\n${processID} (${browser}): (${urlCounter}) ${websiteUrl}`);
             const siteName = await getSiteNames(websiteUrl);
             
-            page.on('console', msg => console.log('PAGE LOG:', msg.text()));
+            // page.on('console', msg => console.log('PAGE LOG:', msg.text()));
             
             try{
                 console.log(`   ${processID} (${browser}) : Loading new page ${websiteUrl}`);
@@ -96,7 +96,7 @@ async function crawl(browser, resultPath, urlList, vantagePoint,
             }           
 
                 await getScreenshot(page, resultPath, siteName); //screenshot for top 250
-                await isBannerVisible(page, wordCorpus, parentCutoff, childrenCutoff);
+                await ALLINONE(page, wordCorpus, parentCutoff, childrenCutoff);
 
 
             console.log(`   ${processID} (${browser}) ${websiteUrl}: Page closed`);
