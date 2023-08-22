@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/PhilippePH/cookie-banners/issues"
   },
-  "homepage": "https://github.com/PhilippePH/cookie-banners#readme"
+  "homepage": "https://github.com/PhilippePH/cookie-banners#readme",
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
 }
