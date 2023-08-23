@@ -139,10 +139,15 @@ export async function closeBrowserInstance (browserInstance) {
 
 export async function closePage (page, browserInstance) {
   try {
-    await Promise.race([
-      await page.close(),
-      new Promise((_, reject) => setTimeout(() => reject(new Error()), 1000))
-    ])
+    // Here, the goal is to close all the pages that are opened, apart from the about:blank. This should remove pop-ups, etc. 
+    let pages = await browserInstance.pages()
+    pages.splice(0, 1) // removing the about:blank from the pages to close
+    for (const page of pages) {
+      await Promise.race([
+        await page.close(),
+        new Promise((_, reject) => setTimeout(() => reject(new Error()), 1000))
+      ])
+    }
   } catch (error) {
     console.log('Timeout occurred trying to close the page. Closing browserInstance.')
     await closeBrowserInstance(browserInstance)

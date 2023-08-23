@@ -8,6 +8,20 @@
 //   await determineCookieBannerState(page, wordCorpus, parentCutoff, childrenCutoff)
 // }
 
+// export async function getScreenshot (page, resultPath, siteName) {
+//   // Screenshot
+//   try {
+//     await page.screenshot({
+//       path: resultPath + `/screenshots/${siteName}.jpeg`,
+//       type: 'jpeg',
+//       quality: 25
+//     })
+//   } catch (error) {
+//     console.log('Error with the screenshot')
+//     console.log(error)
+//   }
+// }
+
 // async function CLImain () {
 //   // Unpacking command line arguments (and removing 'node', 'index.js')
 //   const args = process.argv.slice(2)
