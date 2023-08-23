@@ -55,11 +55,17 @@ async function filterTerminalNodes (terminalNodes, wordCorpus) {
 async function getParents (filteredNodes, maxNumParents, maxNumChildren) {
   let parents
   for (const nodeElement of filteredNodes) {
-    let parent
+    let element = nodeElement
     for (let i = 0; i < maxNumParents; i++) { // getting the i-th parent
-      parent = nodeElement.parentElement
+      const subTree = await createSubTree(element)
+
+        // Ensure the total size of the subTree being created does not become too big
+      if (subTree.length > maxNumChildren) {
+        break
+      }
+      element = element.parentElement
     }
-    subTreesParents.push(parent)
+    subTreesParents.push(element)
   }
   return parents
 }
