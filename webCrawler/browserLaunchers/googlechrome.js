@@ -19,6 +19,7 @@ netstat -lntu
 import { ParallelMain } from '../runtimeSetUp'
 
 const BROWSER_LIST = ['Google Chrome']
+const VERSION = 0
 const START_NUMBER = 0
 const NUM_URLS = 1
 const PATH_TO_CSV = './webCrawler/websiteSelection/shuffled.txt'
@@ -27,4 +28,4 @@ const CORPUS = []
 const PARENTS_THRESHOLD = 5
 const CHILDREN_THRESHOLD = 20
 
-ParallelMain(BROWSER_LIST, START_NUMBER, NUM_URLS, CORPUS, PARENTS_THRESHOLD, CHILDREN_THRESHOLD, PATH_TO_CSV, DEVICE)
+ParallelMain(BROWSER_LIST, VERSION, START_NUMBER, NUM_URLS, CORPUS, PARENTS_THRESHOLD, CHILDREN_THRESHOLD, PATH_TO_CSV, DEVICE)

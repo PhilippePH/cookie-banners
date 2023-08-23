@@ -49,11 +49,12 @@ const macserverExecutablePaths = {
 const macserverUserProfiles = {
   'Google Chrome': '/Users/crawler/Library/Application Support/Google/Chrome/Default',
   Brave: '/Users/crawler/Library/Application Support/BraveSoftware/Brave-Browser/',
-  Firefox: '/Users/crawler/Library/Application Support/Firefox/Profiles/5rv5rl49.default-release',
-  Ghostery: '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release'
+  Ghostery: '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release',
+  'Firefox 1': '/Users/crawler/Library/Application Support/Firefox/Profiles/5rv5rl49.default-release',
+  'Firefox 2': 'TBD'
 }
 
-async function puppeteerLaunchBrowser (browser, device) {
+async function puppeteerLaunchBrowser (browser, device, version) {
   let executablePaths = linuxExecutablePaths
   let userProfiles = linuxUserProfiles
 
@@ -85,13 +86,23 @@ async function puppeteerLaunchBrowser (browser, device) {
         args: ['--start-maximized', '--profile-directory=Profile 1']
       })
     } else if (browser === 'Firefox') {
-      return await puppeteer.launch({
-        headless: false,
-        product: 'firefox',
-        executablePath: executablePaths[browser],
-        userDataDir: userProfiles[browser],
-        defaultViewport: null
-      })
+      if (version === 1) {
+        return await puppeteer.launch({
+          headless: false,
+          product: 'firefox',
+          executablePath: executablePaths[browser],
+          userDataDir: userProfiles['Firefox 1'],
+          defaultViewport: null
+        })
+      } else if (version === 2) {
+        return await puppeteer.launch({
+          headless: false,
+          product: 'firefox',
+          executablePath: executablePaths[browser],
+          userDataDir: userProfiles['Firefox 2'],
+          defaultViewport: null
+        })
+      }
     } else if (browser === 'Ghostery') {
       return await puppeteer.launch({
         headless: false,
@@ -113,7 +124,7 @@ async function puppeteerLaunchBrowser (browser, device) {
   }
 }
 
-export async function createBrowserInstance (browser, device) {
+export async function createBrowserInstance (browser, device, version) {
   let BI
   try {
     BI = await puppeteerLaunchBrowser(browser, device)

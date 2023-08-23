@@ -73,7 +73,7 @@ async function evaluateWebsite (page, browser, websiteUrl, connection, wordCorpu
   return successBool
 }
 
-export async function crawlMain (browser, resultPath, urlList, connection, device, wordCorpus, parentCutoff, childrenCutoff) {
+export async function crawlMain (browser, version, resultPath, urlList, connection, device, wordCorpus, parentCutoff, childrenCutoff) {
   let browserInstance, page
   let urlCounter = 0
 
@@ -82,7 +82,7 @@ export async function crawlMain (browser, resultPath, urlList, connection, devic
   crawlID = crawlID.replace(/T/g, ' ')
 
   // NEED TO ADAPT THIS TO RESACE browserinstance if re-created elsewhere
-  browserInstance = await createBrowserInstance(browser, device)
+  browserInstance = await createBrowserInstance(browser, device, version)
 
   for (const websiteUrl of urlList) {
     urlCounter++
@@ -105,7 +105,7 @@ export async function crawlMain (browser, resultPath, urlList, connection, devic
 
       // 1.2 Now trying to launch a new browser instance
       try {
-        browserInstance = await createBrowserInstance(browser, device)
+        browserInstance = await createBrowserInstance(browser, device, version)
         page = await browserInstance.newPage()
       } catch (error) {
         process.exit(1)
@@ -139,8 +139,9 @@ export async function callableMain (args) {
   // Accessing individual arguments
   const path = args[0]
   const browser = args[1]
-  const websiteList = args[2]
-  const device = args[3]
+  const version = args[2]
+  const websiteList = args[3]
+  const device = args[4]
   const wordCorpus = args[5]
   const parentCutoff = args[6]
   const childrenCutoff = args[7]
@@ -174,7 +175,7 @@ export async function callableMain (args) {
 
   // Crawl
   try {
-    await crawlMain(browser, path, websiteList, connection, device, wordCorpus, parentCutoff, childrenCutoff)
+    await crawlMain(browser, version, path, websiteList, connection, device, wordCorpus, parentCutoff, childrenCutoff)
   } catch (error) {
     console.log('Error in the crawl function')
     console.log(error)
