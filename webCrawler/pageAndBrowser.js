@@ -47,12 +47,12 @@ const macserverExecutablePaths = {
   Ghostery: '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery'
 }
 const macserverUserProfiles = {
-  'Google Chrome': '/Users/crawler/Library/Application Support/Google/Chrome/Default',
+  'Google Chrome': '/Users/crawler/Library/Application Support/Google/Chrome/Profile 2',
   Brave: '/Users/crawler/Library/Application Support/BraveSoftware/Brave-Browser/',
   Ghostery: '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release',
-  'Google Chrome with Ghostery extension': 'TBD',
-  'Firefox 1': '/Users/crawler/Library/Application Support/Firefox/Profiles/5rv5rl49.default-release',
-  'Firefox 2': 'TBD'
+  'Google Chrome with Ghostery extension': '/Users/crawler/Library/Application Support/Google/Chrome/Profile 1',
+  'Firefox 1': '/Users/crawler/Library/Application Support/Firefox/Profiles/i5wm7jfj.profile1',
+  'Firefox 2': '/Users/crawler/Library/Application Support/Firefox/Profiles/pl2a1t2n.profile2'
 }
 
 async function puppeteerLaunchBrowser (browser, device, version) {
