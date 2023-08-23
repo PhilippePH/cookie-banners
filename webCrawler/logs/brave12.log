@@ -1,0 +1,522 @@
+[
+  'https://bot.sannysoft.com',
+  'https://www.whatismyip.com',
+  'https://www.showmyip.com',
+  'https://whatismyipaddress.com'
+]
+
+1 (Brave): (1) https://bot.sannysoft.com
+   1 (Brave) : Loading new page https://bot.sannysoft.com
+** 1 (Brave): TimeoutError -> https://bot.sannysoft.com
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (2) https://www.whatismyip.com
+   1 (Brave) : Loading new page https://www.whatismyip.com
+   1 (Brave) https://www.whatismyip.com: Page loaded
+   1 (Brave) https://www.whatismyip.com: Page closed
+
+1 (Brave): (3) https://www.showmyip.com
+   1 (Brave) : Loading new page https://www.showmyip.com
+   1 (Brave) https://www.showmyip.com: Page loaded
+   1 (Brave) https://www.showmyip.com: Page closed
+
+1 (Brave): (4) https://whatismyipaddress.com
+   1 (Brave) : Loading new page https://whatismyipaddress.com
+   1 (Brave) https://whatismyipaddress.com: Page loaded
+   1 (Brave) https://whatismyipaddress.com: Page closed
+   1 (Brave) instance closed.
+Database connection established
+[
+  'https://www.google.com',
+  'https://www.amazon.com',
+  'https://www.trbcdn.net',
+  'https://www.amazon.co.uk',
+  'https://www.amazon.de',
+  'https://www.inner-active.mobi',
+  'https://www.cnet.com',
+  'https://www.myspace.com',
+  'https://www.kaspersky-labs.com',
+  'https://www.box.com',
+  'https://www.nflxvideo.net',
+  'https://www.spaceweb.pro',
+  'https://www.sectigo.com',
+  'https://www.xiaomi.net',
+  'https://www.me.com',
+  'https://www.discordapp.com',
+  'https://www.segment.io',
+  'https://www.amazon.com.br',
+  'https://www.bizon365.ru',
+  'https://www.hentai-time.com',
+  'https://www.kaluga.su',
+  'https://www.kaduvatv.cam',
+  'https://www.barenecessities.com',
+  'https://www.alphabroder.com',
+  'https://www.lenmit.com',
+  'https://www.barbie.com',
+  'https://www.vlan.be',
+  'https://www.moo.jp',
+  'https://www.monro24.ru',
+  'https://www.serebii.net',
+  'https://www.justpaste.it',
+  'https://www.elisa.net',
+  'https://www.dishboxes.com',
+  'https://www.bitpin.ir',
+  'https://www.noi.md',
+  'https://www.zippo.com',
+  'https://www.airproducts.com',
+  'https://www.superdeporte.es',
+  'https://www.ecollege.com',
+  'https://www.paygateway.com',
+  'https://www.google.com',
+  'https://www.otenki.com'
+]
+
+1 (Brave): (1) https://www.google.com
+   1 (Brave) https://www.google.com: Getting Requests
+   1 (Brave) https://www.google.com: Getting Responses
+   1 (Brave) : Loading new page https://www.google.com
+** 1 (Brave): TimeoutError -> https://www.google.com
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (2) https://www.amazon.com
+   1 (Brave) https://www.amazon.com: Getting Requests
+   1 (Brave) https://www.amazon.com: Getting Responses
+   1 (Brave) : Loading new page https://www.amazon.com
+   1 (Brave) https://www.amazon.com: Page loaded
+   1 (Brave) https://www.amazon.com: Getting HTML
+   1 (Brave) https://www.amazon.com: Getting Cookies
+   1 (Brave) https://www.amazon.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.amazon.com: Adding requests to DB
+   1 (Brave) https://www.amazon.com: Page closed
+
+1 (Brave): (3) https://www.trbcdn.net
+   1 (Brave) https://www.trbcdn.net: Getting Requests
+   1 (Brave) https://www.trbcdn.net: Getting Responses
+   1 (Brave) : Loading new page https://www.trbcdn.net
+** 1 (Brave): Error visiting webpage -> https://www.trbcdn.net (net::ERR_CERT_COMMON_NAME_INVALID at https://www.trbcdn.net)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (4) https://www.amazon.co.uk
+   1 (Brave) https://www.amazon.co.uk: Getting Requests
+   1 (Brave) https://www.amazon.co.uk: Getting Responses
+   1 (Brave) : Loading new page https://www.amazon.co.uk
+   1 (Brave) https://www.amazon.co.uk: Page loaded
+   1 (Brave) https://www.amazon.co.uk: Getting HTML
+   1 (Brave) https://www.amazon.co.uk: Getting Cookies
+   1 (Brave) https://www.amazon.co.uk: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.amazon.co.uk: Adding requests to DB
+   1 (Brave) https://www.amazon.co.uk: Page closed
+
+1 (Brave): (5) https://www.amazon.de
+   1 (Brave) https://www.amazon.de: Getting Requests
+   1 (Brave) https://www.amazon.de: Getting Responses
+   1 (Brave) : Loading new page https://www.amazon.de
+   1 (Brave) https://www.amazon.de: Page loaded
+   1 (Brave) https://www.amazon.de: Getting HTML
+   1 (Brave) https://www.amazon.de: Getting Cookies
+   1 (Brave) https://www.amazon.de: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.amazon.de: Adding requests to DB
+   1 (Brave) https://www.amazon.de: Page closed
+
+1 (Brave): (6) https://www.inner-active.mobi
+   1 (Brave) https://www.inner-active.mobi: Getting Requests
+   1 (Brave) https://www.inner-active.mobi: Getting Responses
+   1 (Brave) : Loading new page https://www.inner-active.mobi
+** 1 (Brave): Error visiting webpage -> https://www.inner-active.mobi (net::ERR_CONNECTION_RESET at https://www.inner-active.mobi)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (7) https://www.cnet.com
+   1 (Brave) https://www.cnet.com: Getting Requests
+   1 (Brave) https://www.cnet.com: Getting Responses
+   1 (Brave) : Loading new page https://www.cnet.com
+   1 (Brave) https://www.cnet.com: Page loaded
+   1 (Brave) https://www.cnet.com: Getting HTML
+   1 (Brave) https://www.cnet.com: Getting Cookies
+   1 (Brave) https://www.cnet.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.cnet.com: Adding requests to DB
+   1 (Brave) https://www.cnet.com: Page closed
+
+1 (Brave): (8) https://www.myspace.com
+   1 (Brave) https://www.myspace.com: Getting Requests
+   1 (Brave) https://www.myspace.com: Getting Responses
+   1 (Brave) : Loading new page https://www.myspace.com
+   1 (Brave) https://www.myspace.com: Page loaded
+   1 (Brave) https://www.myspace.com: Getting HTML
+   1 (Brave) https://www.myspace.com: Getting Cookies
+   1 (Brave) https://www.myspace.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.myspace.com: Adding requests to DB
+   1 (Brave) https://www.myspace.com: Page closed
+
+1 (Brave): (9) https://www.kaspersky-labs.com
+   1 (Brave) https://www.kaspersky-labs.com: Getting Requests
+   1 (Brave) https://www.kaspersky-labs.com: Getting Responses
+   1 (Brave) : Loading new page https://www.kaspersky-labs.com
+** 1 (Brave): Error visiting webpage -> https://www.kaspersky-labs.com (net::ERR_CERT_AUTHORITY_INVALID at https://www.kaspersky-labs.com)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (10) https://www.box.com
+   1 (Brave) https://www.box.com: Getting Requests
+   1 (Brave) https://www.box.com: Getting Responses
+   1 (Brave) : Loading new page https://www.box.com
+   1 (Brave) https://www.box.com: Page loaded
+   1 (Brave) https://www.box.com: Getting HTML
+   1 (Brave) https://www.box.com: Getting Cookies
+   1 (Brave) https://www.box.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.box.com: Adding requests to DB
+   1 (Brave) https://www.box.com: Page closed
+
+1 (Brave): (11) https://www.nflxvideo.net
+   1 (Brave) https://www.nflxvideo.net: Getting Requests
+   1 (Brave) https://www.nflxvideo.net: Getting Responses
+   1 (Brave) : Loading new page https://www.nflxvideo.net
+** 1 (Brave): Error visiting webpage -> https://www.nflxvideo.net (net::ERR_SSL_PROTOCOL_ERROR at https://www.nflxvideo.net)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (12) https://www.spaceweb.pro
+   1 (Brave) https://www.spaceweb.pro: Getting Requests
+   1 (Brave) https://www.spaceweb.pro: Getting Responses
+   1 (Brave) : Loading new page https://www.spaceweb.pro
+** 1 (Brave): Error visiting webpage -> https://www.spaceweb.pro (net::ERR_CONNECTION_REFUSED at https://www.spaceweb.pro)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (13) https://www.sectigo.com
+   1 (Brave) https://www.sectigo.com: Getting Requests
+   1 (Brave) https://www.sectigo.com: Getting Responses
+   1 (Brave) : Loading new page https://www.sectigo.com
+   1 (Brave) https://www.sectigo.com: Page loaded
+   1 (Brave) https://www.sectigo.com: Getting HTML
+   1 (Brave) https://www.sectigo.com: Getting Cookies
+   1 (Brave) https://www.sectigo.com: Getting Localstorage
+   1 (Brave) https://www.sectigo.com: Adding requests to DB
+   1 (Brave) https://www.sectigo.com: Page closed
+   1 (Brave) https://www.sectigo.com: Adding to successful website
+
+1 (Brave): (14) https://www.xiaomi.net
+   1 (Brave) https://www.xiaomi.net: Getting Requests
+   1 (Brave) https://www.xiaomi.net: Getting Responses
+   1 (Brave) : Loading new page https://www.xiaomi.net
+** 1 (Brave): Error visiting webpage -> https://www.xiaomi.net (net::ERR_CERT_COMMON_NAME_INVALID at https://www.xiaomi.net)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (15) https://www.me.com
+   1 (Brave) https://www.me.com: Getting Requests
+   1 (Brave) https://www.me.com: Getting Responses
+   1 (Brave) : Loading new page https://www.me.com
+** 1 (Brave): Error visiting webpage -> https://www.me.com (net::ERR_CERT_AUTHORITY_INVALID at https://www.me.com)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (16) https://www.discordapp.com
+   1 (Brave) https://www.discordapp.com: Getting Requests
+   1 (Brave) https://www.discordapp.com: Getting Responses
+   1 (Brave) : Loading new page https://www.discordapp.com
+   1 (Brave) https://www.discordapp.com: Page loaded
+   1 (Brave) https://www.discordapp.com: Getting HTML
+   1 (Brave) https://www.discordapp.com: Getting Cookies
+   1 (Brave) https://www.discordapp.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.discordapp.com: Adding requests to DB
+   1 (Brave) https://www.discordapp.com: Page closed
+
+1 (Brave): (17) https://www.segment.io
+   1 (Brave) https://www.segment.io: Getting Requests
+   1 (Brave) https://www.segment.io: Getting Responses
+   1 (Brave) : Loading new page https://www.segment.io
+** 1 (Brave): TimeoutError -> https://www.segment.io
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (18) https://www.amazon.com.br
+   1 (Brave) https://www.amazon.com.br: Getting Requests
+   1 (Brave) https://www.amazon.com.br: Getting Responses
+   1 (Brave) : Loading new page https://www.amazon.com.br
+   1 (Brave) https://www.amazon.com.br: Page loaded
+   1 (Brave) https://www.amazon.com.br: Getting HTML
+   1 (Brave) https://www.amazon.com.br: Getting Cookies
+   1 (Brave) https://www.amazon.com.br: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.amazon.com.br: Adding requests to DB
+   1 (Brave) https://www.amazon.com.br: Page closed
+
+1 (Brave): (19) https://www.bizon365.ru
+   1 (Brave) https://www.bizon365.ru: Getting Requests
+   1 (Brave) https://www.bizon365.ru: Getting Responses
+   1 (Brave) : Loading new page https://www.bizon365.ru
+** 1 (Brave): Error visiting webpage -> https://www.bizon365.ru (net::ERR_ABORTED at https://www.bizon365.ru)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (20) https://www.hentai-time.com
+   1 (Brave) https://www.hentai-time.com: Getting Requests
+   1 (Brave) https://www.hentai-time.com: Getting Responses
+   1 (Brave) : Loading new page https://www.hentai-time.com
+   1 (Brave) https://www.hentai-time.com: Page loaded
+   1 (Brave) https://www.hentai-time.com: Getting HTML
+   1 (Brave) https://www.hentai-time.com: Getting Cookies
+   1 (Brave) https://www.hentai-time.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.hentai-time.com: Adding requests to DB
+   1 (Brave) https://www.hentai-time.com: Page closed
+
+1 (Brave): (21) https://www.kaluga.su
+   1 (Brave) https://www.kaluga.su: Getting Requests
+   1 (Brave) https://www.kaluga.su: Getting Responses
+   1 (Brave) : Loading new page https://www.kaluga.su
+** 1 (Brave): Error visiting webpage -> https://www.kaluga.su (net::ERR_CONNECTION_REFUSED at https://www.kaluga.su)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (22) https://www.kaduvatv.cam
+   1 (Brave) https://www.kaduvatv.cam: Getting Requests
+   1 (Brave) https://www.kaduvatv.cam: Getting Responses
+   1 (Brave) : Loading new page https://www.kaduvatv.cam
+   1 (Brave) https://www.kaduvatv.cam: Page loaded
+   1 (Brave) https://www.kaduvatv.cam: Getting HTML
+   1 (Brave) https://www.kaduvatv.cam: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Brave) https://www.kaduvatv.cam: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.kaduvatv.cam: Adding requests to DB
+   1 (Brave) https://www.kaduvatv.cam: Page closed
+
+1 (Brave): (23) https://www.barenecessities.com
+   1 (Brave) https://www.barenecessities.com: Getting Requests
+   1 (Brave) https://www.barenecessities.com: Getting Responses
+   1 (Brave) : Loading new page https://www.barenecessities.com
+   1 (Brave) https://www.barenecessities.com: Page loaded
+   1 (Brave) https://www.barenecessities.com: Getting HTML
+   1 (Brave) https://www.barenecessities.com: Getting Cookies
+   1 (Brave) https://www.barenecessities.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.barenecessities.com: Adding requests to DB
+   1 (Brave) https://www.barenecessities.com: Page closed
+
+1 (Brave): (24) https://www.alphabroder.com
+   1 (Brave) https://www.alphabroder.com: Getting Requests
+   1 (Brave) https://www.alphabroder.com: Getting Responses
+   1 (Brave) : Loading new page https://www.alphabroder.com
+   1 (Brave) https://www.alphabroder.com: Page loaded
+   1 (Brave) https://www.alphabroder.com: Getting HTML
+   1 (Brave) https://www.alphabroder.com: Getting Cookies
+   1 (Brave) https://www.alphabroder.com: Getting Localstorage
+   1 (Brave) https://www.alphabroder.com: Adding requests to DB
+   1 (Brave) https://www.alphabroder.com: Page closed
+   1 (Brave) https://www.alphabroder.com: Adding to successful website
+
+1 (Brave): (25) https://www.lenmit.com
+   1 (Brave) https://www.lenmit.com: Getting Requests
+   1 (Brave) https://www.lenmit.com: Getting Responses
+   1 (Brave) : Loading new page https://www.lenmit.com
+** 1 (Brave): Error visiting webpage -> https://www.lenmit.com (net::ERR_CERT_COMMON_NAME_INVALID at https://www.lenmit.com)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (26) https://www.barbie.com
+   1 (Brave) https://www.barbie.com: Getting Requests
+   1 (Brave) https://www.barbie.com: Getting Responses
+   1 (Brave) : Loading new page https://www.barbie.com
+   1 (Brave) https://www.barbie.com: Page loaded
+   1 (Brave) https://www.barbie.com: Getting HTML
+   1 (Brave) https://www.barbie.com: Getting Cookies
+   1 (Brave) https://www.barbie.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.barbie.com: Adding requests to DB
+   1 (Brave) https://www.barbie.com: Page closed
+
+1 (Brave): (27) https://www.vlan.be
+   1 (Brave) https://www.vlan.be: Getting Requests
+   1 (Brave) https://www.vlan.be: Getting Responses
+   1 (Brave) : Loading new page https://www.vlan.be
+   1 (Brave) https://www.vlan.be: Page loaded
+   1 (Brave) https://www.vlan.be: Getting HTML
+   1 (Brave) https://www.vlan.be: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Brave) https://www.vlan.be: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.vlan.be: Adding requests to DB
+   1 (Brave) https://www.vlan.be: Page closed
+
+1 (Brave): (28) https://www.moo.jp
+   1 (Brave) https://www.moo.jp: Getting Requests
+   1 (Brave) https://www.moo.jp: Getting Responses
+   1 (Brave) : Loading new page https://www.moo.jp
+** 1 (Brave): Error visiting webpage -> https://www.moo.jp (net::ERR_CERT_COMMON_NAME_INVALID at https://www.moo.jp)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (29) https://www.monro24.ru
+   1 (Brave) https://www.monro24.ru: Getting Requests
+   1 (Brave) https://www.monro24.ru: Getting Responses
+   1 (Brave) : Loading new page https://www.monro24.ru
+** 1 (Brave): Error visiting webpage -> https://www.monro24.ru (net::ERR_CERT_COMMON_NAME_INVALID at https://www.monro24.ru)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (30) https://www.serebii.net
+   1 (Brave) https://www.serebii.net: Getting Requests
+   1 (Brave) https://www.serebii.net: Getting Responses
+   1 (Brave) : Loading new page https://www.serebii.net
+   1 (Brave) https://www.serebii.net: Page loaded
+   1 (Brave) https://www.serebii.net: Getting HTML
+   1 (Brave) https://www.serebii.net: Getting Cookies
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+   1 (Brave) https://www.serebii.net: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.serebii.net: Adding requests to DB
+   1 (Brave) https://www.serebii.net: Page closed
+
+1 (Brave): (31) https://www.justpaste.it
+   1 (Brave) https://www.justpaste.it: Getting Requests
+   1 (Brave) https://www.justpaste.it: Getting Responses
+   1 (Brave) : Loading new page https://www.justpaste.it
+** 1 (Brave): Error visiting webpage -> https://www.justpaste.it (net::ERR_CERT_COMMON_NAME_INVALID at https://www.justpaste.it)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (32) https://www.elisa.net
+   1 (Brave) https://www.elisa.net: Getting Requests
+   1 (Brave) https://www.elisa.net: Getting Responses
+   1 (Brave) : Loading new page https://www.elisa.net
+** 1 (Brave): Error visiting webpage -> https://www.elisa.net (net::ERR_CERT_COMMON_NAME_INVALID at https://www.elisa.net)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (33) https://www.dishboxes.com
+   1 (Brave) https://www.dishboxes.com: Getting Requests
+   1 (Brave) https://www.dishboxes.com: Getting Responses
+   1 (Brave) : Loading new page https://www.dishboxes.com
+** 1 (Brave): Error visiting webpage -> https://www.dishboxes.com (net::ERR_NAME_NOT_RESOLVED at https://www.dishboxes.com)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (34) https://www.bitpin.ir
+   1 (Brave) https://www.bitpin.ir: Getting Requests
+   1 (Brave) https://www.bitpin.ir: Getting Responses
+   1 (Brave) : Loading new page https://www.bitpin.ir
+** 1 (Brave): TimeoutError -> https://www.bitpin.ir
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (35) https://www.noi.md
+   1 (Brave) https://www.noi.md: Getting Requests
+   1 (Brave) https://www.noi.md: Getting Responses
+   1 (Brave) : Loading new page https://www.noi.md
+   1 (Brave) https://www.noi.md: Page loaded
+   1 (Brave) https://www.noi.md: Getting HTML
+   1 (Brave) https://www.noi.md: Getting Cookies
+   1 (Brave) https://www.noi.md: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.noi.md: Adding requests to DB
+   1 (Brave) https://www.noi.md: Page closed
+
+1 (Brave): (36) https://www.zippo.com
+   1 (Brave) https://www.zippo.com: Getting Requests
+   1 (Brave) https://www.zippo.com: Getting Responses
+   1 (Brave) : Loading new page https://www.zippo.com
+   1 (Brave) https://www.zippo.com: Page loaded
+   1 (Brave) https://www.zippo.com: Getting HTML
+   1 (Brave) https://www.zippo.com: Getting Cookies
+   1 (Brave) https://www.zippo.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.zippo.com: Adding requests to DB
+   1 (Brave) https://www.zippo.com: Page closed
+
+1 (Brave): (37) https://www.airproducts.com
+   1 (Brave) https://www.airproducts.com: Getting Requests
+   1 (Brave) https://www.airproducts.com: Getting Responses
+   1 (Brave) : Loading new page https://www.airproducts.com
+   1 (Brave) https://www.airproducts.com: Page loaded
+   1 (Brave) https://www.airproducts.com: Getting HTML
+   1 (Brave) https://www.airproducts.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Brave) https://www.airproducts.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Brave) https://www.airproducts.com: Adding requests to DB
+   1 (Brave) https://www.airproducts.com: Page closed
+
+1 (Brave): (38) https://www.superdeporte.es
+   1 (Brave) https://www.superdeporte.es: Getting Requests
+   1 (Brave) https://www.superdeporte.es: Getting Responses
+   1 (Brave) : Loading new page https://www.superdeporte.es
+** 1 (Brave): TimeoutError -> https://www.superdeporte.es
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (39) https://www.ecollege.com
+   1 (Brave) https://www.ecollege.com: Getting Requests
+   1 (Brave) https://www.ecollege.com: Getting Responses
+   1 (Brave) : Loading new page https://www.ecollege.com
+** 1 (Brave): Error visiting webpage -> https://www.ecollege.com (net::ERR_CONNECTION_RESET at https://www.ecollege.com)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (40) https://www.paygateway.com
+   1 (Brave) https://www.paygateway.com: Getting Requests
+   1 (Brave) https://www.paygateway.com: Getting Responses
+   1 (Brave) : Loading new page https://www.paygateway.com
+** 1 (Brave): Error visiting webpage -> https://www.paygateway.com (net::ERR_ADDRESS_UNREACHABLE at https://www.paygateway.com)
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+
+1 (Brave): (41) https://www.google.com
+   1 (Brave) https://www.google.com: Getting Requests
+   1 (Brave) https://www.google.com: Getting Responses
+   1 (Brave) : Loading new page https://www.google.com
+   1 (Brave) https://www.google.com: Page loaded
+   1 (Brave) https://www.google.com: Getting HTML
+   1 (Brave) https://www.google.com: Getting Cookies
+   1 (Brave) https://www.google.com: Getting Localstorage
+   1 (Brave) https://www.google.com: Adding requests to DB
+   1 (Brave) https://www.google.com: Page closed
+   1 (Brave) https://www.google.com: Adding to successful website
+
+1 (Brave): (42) https://www.otenki.com
+   1 (Brave) https://www.otenki.com: Getting Requests
+   1 (Brave) https://www.otenki.com: Getting Responses
+   1 (Brave) : Loading new page https://www.otenki.com
+** 1 (Brave): TimeoutError -> https://www.otenki.com
+** 1 (Brave) closing page.
+** 1 (Brave) Webpage closed.
+   1 (Brave) instance closed.
+Database connection disconnected
+LOADED COUNTER : 20
+TIMEOUT COUNTER : 5
+OTHER ERROR COUNTER : 17
+COOKIE TIMEOUT COUNTER : 4
+LOCALSTORAGE TIMEOUT COUNTER : 17
+NUMBER OF SUCCESSFUL WEBSITES : 3
+

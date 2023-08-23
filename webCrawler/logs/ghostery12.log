@@ -1,0 +1,3057 @@
+CRAWLING THIS MANY WEBSITES:  4
+[
+  'https://bot.sannysoft.com',
+  'https://www.whatismyip.com',
+  'https://www.showmyip.com',
+  'https://whatismyipaddress.com'
+]
+
+1 (Ghostery): (1) https://bot.sannysoft.com
+   1 (Ghostery) : Loading new page https://bot.sannysoft.com
+** 1 (Ghostery): TimeoutError -> https://bot.sannysoft.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (2) https://www.whatismyip.com
+   1 (Ghostery) : Loading new page https://www.whatismyip.com
+   1 (Ghostery) https://www.whatismyip.com: Page loaded
+   1 (Ghostery) https://www.whatismyip.com: Page closed
+
+1 (Ghostery): (3) https://www.showmyip.com
+   1 (Ghostery) : Loading new page https://www.showmyip.com
+   1 (Ghostery) https://www.showmyip.com: Page loaded
+   1 (Ghostery) https://www.showmyip.com: Page closed
+
+1 (Ghostery): (4) https://whatismyipaddress.com
+   1 (Ghostery) : Loading new page https://whatismyipaddress.com
+   1 (Ghostery) https://whatismyipaddress.com: Page loaded
+   1 (Ghostery) https://whatismyipaddress.com: Page closed
+   1 (Ghostery) instance closed.
+Database connection established
+CRAWLING THIS MANY WEBSITES:  6862
+[
+  'https://www.hubstack.net',
+  'https://www.cloverlearning.com',
+  'https://www.ul.ie',
+  'https://www.online-pedigrees.com',
+  'https://www.vdns.at',
+  'https://www.sexdeptv.pro',
+  'https://www.ssmb.com',
+  'https://www.octopia.com',
+  'https://www.hometogo.com',
+  'https://www.proteste.pt',
+  'https://www.theaccessgroup.com',
+  'https://www.torob.com',
+  'https://www.querobolsa.com.br',
+  'https://www.workingnotworking.com',
+  'https://www.mangatoon.mobi',
+  'https://www.clearchannel.com',
+  'https://www.rommanel.com.br',
+  'https://www.scopus.com',
+  'https://www.flighthub.com',
+  'https://www.kivra.com',
+  'https://www.zonatelecom.ru',
+  'https://www.rusagrogroup.ru',
+  'https://www.stellarcyber.cloud',
+  'https://www.stream-io-api.com',
+  'https://www.rapolok.com',
+  'https://www.nnm.ru',
+  'https://www.fresha.com',
+  'https://www.yiluzhuanqian.com',
+  'https://www.hkvitals.com',
+  'https://www.blablacar.ru',
+  'https://www.altapress.ru',
+  'https://www.retrododo.com',
+  'https://www.blogsys.jp',
+  'https://www.borwap.vip',
+  'https://www.nyrabets.com',
+  'https://www.nordaccount.com',
+  'https://www.garlandcheese.com',
+  'https://www.agrarszektor.hu',
+  'https://www.proofpoint.us',
+  'https://www.jpnumber.com',
+  'https://www.cgebet3.com',
+  'https://www.aurevoir143.com',
+  'https://www.apilayer.net',
+  'https://www.zeitworld.com',
+  'https://www.engeniusnetworks.com',
+  'https://www.oo-software.com',
+  'https://www.bigosext9s.com',
+  'https://www.anime-hit.com',
+  'https://www.altrosky.be',
+  'https://www.pageroonline.com',
+  'https://www.cnblogs.com',
+  'https://www.pei.de',
+  'https://www.sicat.com',
+  'https://www.fortinet.com',
+  'https://www.mangapill.com',
+  'https://www.gbpro.info',
+  'https://www.foxtel.com.au',
+  'https://www.alfaconcursos.com.br',
+  'https://www.xxxpakistanimovies.com',
+  'https://www.raiffeisen.ru',
+  'https://www.prim.hu',
+  'https://www.clipartmax.com',
+  'https://www.bnmla.com',
+  'https://www.sickkids.ca',
+  'https://www.yellowsubtrading.co.za',
+  'https://www.inboxdollars.com',
+  'https://www.blinklist.com',
+  'https://www.bike-news.jp',
+  'https://www.smrtb.com',
+  'https://www.sayweee.com',
+  'https://www.sex-videochat.club',
+  'https://www.oo00.biz',
+  'https://www.fraserinstitute.org',
+  'https://www.sunlightfoundation.com',
+  'https://www.servicewechat.com',
+  'https://www.wellgroomedhydrant.com',
+  'https://www.afcpe.org',
+  'https://www.runwayml.com',
+  'https://www.iltempo.it',
+  'https://www.sine.co',
+  'https://www.bricodepot.fr',
+  'https://www.kickfire.com',
+  'https://www.tu-graz.ac.at',
+  'https://www.secureservercdn.net',
+  'https://www.socialbakers.com',
+  'https://www.watchmygf.name',
+  'https://www.loadbee.com',
+  'https://www.karmasgame.com',
+  'https://www.money-easilyxzo.buzz',
+  'https://www.awsdns-35.co.uk',
+  'https://www.dday.it',
+  'https://www.trusselltrust.org',
+  'https://www.earnbitmoon.club',
+  'https://www.javmobile.mobi',
+  'https://www.novel5s.com',
+  'https://www.ge.ch',
+  'https://www.cookiebot.eu',
+  'https://www.mocafarm.shop',
+  'https://www.vk.me',
+  'https://www.bmlink.com',
+  ... 6762 more items
+]
+
+1 (Ghostery): (1) https://www.hubstack.net
+   1 (Ghostery) https://www.hubstack.net: Getting Requests
+   1 (Ghostery) https://www.hubstack.net: Getting Responses
+   1 (Ghostery) : Loading new page https://www.hubstack.net
+   1 (Ghostery) https://www.hubstack.net: Page loaded
+   1 (Ghostery) https://www.hubstack.net: Getting HTML
+   1 (Ghostery) https://www.hubstack.net: Getting Cookies
+   1 (Ghostery) https://www.hubstack.net: Getting Localstorage
+   1 (Ghostery) https://www.hubstack.net: Adding requests to DB
+   1 (Ghostery) https://www.hubstack.net: Page closed
+   1 (Ghostery) https://www.hubstack.net: Adding to successful website
+
+1 (Ghostery): (2) https://www.cloverlearning.com
+   1 (Ghostery) https://www.cloverlearning.com: Getting Requests
+   1 (Ghostery) https://www.cloverlearning.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.cloverlearning.com
+   1 (Ghostery) https://www.cloverlearning.com: Page loaded
+   1 (Ghostery) https://www.cloverlearning.com: Getting HTML
+   1 (Ghostery) https://www.cloverlearning.com: Getting Cookies
+   1 (Ghostery) https://www.cloverlearning.com: Getting Localstorage
+   1 (Ghostery) https://www.cloverlearning.com: Adding requests to DB
+   1 (Ghostery) https://www.cloverlearning.com: Page closed
+   1 (Ghostery) https://www.cloverlearning.com: Adding to successful website
+page closed, returning from page.on('response').
+
+1 (Ghostery): (3) https://www.ul.ie
+   1 (Ghostery) https://www.ul.ie: Getting Requests
+   1 (Ghostery) https://www.ul.ie: Getting Responses
+   1 (Ghostery) : Loading new page https://www.ul.ie
+   1 (Ghostery) https://www.ul.ie: Page loaded
+   1 (Ghostery) https://www.ul.ie: Getting HTML
+   1 (Ghostery) https://www.ul.ie: Getting Cookies
+   1 (Ghostery) https://www.ul.ie: Getting Localstorage
+   1 (Ghostery) https://www.ul.ie: Adding requests to DB
+   1 (Ghostery) https://www.ul.ie: Page closed
+   1 (Ghostery) https://www.ul.ie: Adding to successful website
+
+1 (Ghostery): (4) https://www.online-pedigrees.com
+   1 (Ghostery) https://www.online-pedigrees.com: Getting Requests
+   1 (Ghostery) https://www.online-pedigrees.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.online-pedigrees.com
+** 1 (Ghostery): Error visiting webpage -> https://www.online-pedigrees.com (SSL_ERROR_UNKNOWN at https://www.online-pedigrees.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (5) https://www.vdns.at
+   1 (Ghostery) https://www.vdns.at: Getting Requests
+   1 (Ghostery) https://www.vdns.at: Getting Responses
+   1 (Ghostery) : Loading new page https://www.vdns.at
+** 1 (Ghostery): Error visiting webpage -> https://www.vdns.at (NS_ERROR_UNKNOWN_HOST at https://www.vdns.at)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (6) https://www.sexdeptv.pro
+   1 (Ghostery) https://www.sexdeptv.pro: Getting Requests
+   1 (Ghostery) https://www.sexdeptv.pro: Getting Responses
+   1 (Ghostery) : Loading new page https://www.sexdeptv.pro
+   1 (Ghostery) https://www.sexdeptv.pro: Page loaded
+   1 (Ghostery) https://www.sexdeptv.pro: Getting HTML
+   1 (Ghostery) https://www.sexdeptv.pro: Getting Cookies
+   1 (Ghostery) https://www.sexdeptv.pro: Getting Localstorage
+   1 (Ghostery) https://www.sexdeptv.pro: Adding requests to DB
+   1 (Ghostery) https://www.sexdeptv.pro: Page closed
+   1 (Ghostery) https://www.sexdeptv.pro: Adding to successful website
+
+1 (Ghostery): (7) https://www.ssmb.com
+   1 (Ghostery) https://www.ssmb.com: Getting Requests
+   1 (Ghostery) https://www.ssmb.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.ssmb.com
+** 1 (Ghostery): Error visiting webpage -> https://www.ssmb.com (NS_ERROR_CONNECTION_REFUSED at https://www.ssmb.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (8) https://www.octopia.com
+   1 (Ghostery) https://www.octopia.com: Getting Requests
+   1 (Ghostery) https://www.octopia.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.octopia.com
+** 1 (Ghostery): TimeoutError -> https://www.octopia.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (9) https://www.hometogo.com
+   1 (Ghostery) https://www.hometogo.com: Getting Requests
+   1 (Ghostery) https://www.hometogo.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.hometogo.com
+   1 (Ghostery) https://www.hometogo.com: Page loaded
+   1 (Ghostery) https://www.hometogo.com: Getting HTML
+   1 (Ghostery) https://www.hometogo.com: Getting Cookies
+   1 (Ghostery) https://www.hometogo.com: Getting Localstorage
+   1 (Ghostery) https://www.hometogo.com: Adding requests to DB
+   1 (Ghostery) https://www.hometogo.com: Page closed
+   1 (Ghostery) https://www.hometogo.com: Adding to successful website
+
+1 (Ghostery): (10) https://www.proteste.pt
+   1 (Ghostery) https://www.proteste.pt: Getting Requests
+   1 (Ghostery) https://www.proteste.pt: Getting Responses
+   1 (Ghostery) : Loading new page https://www.proteste.pt
+   1 (Ghostery) https://www.proteste.pt: Page loaded
+   1 (Ghostery) https://www.proteste.pt: Getting HTML
+   1 (Ghostery) https://www.proteste.pt: Getting Cookies
+   1 (Ghostery) https://www.proteste.pt: Getting Localstorage
+   1 (Ghostery) https://www.proteste.pt: Adding requests to DB
+   1 (Ghostery) https://www.proteste.pt: Page closed
+   1 (Ghostery) https://www.proteste.pt: Adding to successful website
+
+1 (Ghostery): (11) https://www.theaccessgroup.com
+   1 (Ghostery) https://www.theaccessgroup.com: Getting Requests
+   1 (Ghostery) https://www.theaccessgroup.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.theaccessgroup.com
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.theaccessgroup.com: Page loaded
+   1 (Ghostery) https://www.theaccessgroup.com: Getting HTML
+   1 (Ghostery) https://www.theaccessgroup.com: Getting Cookies
+   1 (Ghostery) https://www.theaccessgroup.com: Getting Localstorage
+   1 (Ghostery) https://www.theaccessgroup.com: Adding requests to DB
+   1 (Ghostery) https://www.theaccessgroup.com: Page closed
+   1 (Ghostery) https://www.theaccessgroup.com: Adding to successful website
+
+1 (Ghostery): (12) https://www.torob.com
+   1 (Ghostery) https://www.torob.com: Getting Requests
+   1 (Ghostery) https://www.torob.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.torob.com
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.torob.com: Page loaded
+   1 (Ghostery) https://www.torob.com: Getting HTML
+   1 (Ghostery) https://www.torob.com: Getting Cookies
+   1 (Ghostery) https://www.torob.com: Getting Localstorage
+   1 (Ghostery) https://www.torob.com: Adding requests to DB
+   1 (Ghostery) https://www.torob.com: Page closed
+   1 (Ghostery) https://www.torob.com: Adding to successful website
+
+1 (Ghostery): (13) https://www.querobolsa.com.br
+   1 (Ghostery) https://www.querobolsa.com.br: Getting Requests
+   1 (Ghostery) https://www.querobolsa.com.br: Getting Responses
+   1 (Ghostery) : Loading new page https://www.querobolsa.com.br
+   1 (Ghostery) https://www.querobolsa.com.br: Page loaded
+   1 (Ghostery) https://www.querobolsa.com.br: Getting HTML
+   1 (Ghostery) https://www.querobolsa.com.br: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.querobolsa.com.br: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.querobolsa.com.br: Adding requests to DB
+   1 (Ghostery) https://www.querobolsa.com.br: Page closed
+
+1 (Ghostery): (14) https://www.workingnotworking.com
+   1 (Ghostery) https://www.workingnotworking.com: Getting Requests
+   1 (Ghostery) https://www.workingnotworking.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.workingnotworking.com
+   1 (Ghostery) https://www.workingnotworking.com: Page loaded
+   1 (Ghostery) https://www.workingnotworking.com: Getting HTML
+   1 (Ghostery) https://www.workingnotworking.com: Getting Cookies
+   1 (Ghostery) https://www.workingnotworking.com: Getting Localstorage
+   1 (Ghostery) https://www.workingnotworking.com: Adding requests to DB
+   1 (Ghostery) https://www.workingnotworking.com: Page closed
+   1 (Ghostery) https://www.workingnotworking.com: Adding to successful website
+
+1 (Ghostery): (15) https://www.mangatoon.mobi
+   1 (Ghostery) https://www.mangatoon.mobi: Getting Requests
+   1 (Ghostery) https://www.mangatoon.mobi: Getting Responses
+   1 (Ghostery) : Loading new page https://www.mangatoon.mobi
+   1 (Ghostery) https://www.mangatoon.mobi: Page loaded
+   1 (Ghostery) https://www.mangatoon.mobi: Getting HTML
+   1 (Ghostery) https://www.mangatoon.mobi: Getting Cookies
+   1 (Ghostery) https://www.mangatoon.mobi: Getting Localstorage
+   1 (Ghostery) https://www.mangatoon.mobi: Adding requests to DB
+   1 (Ghostery) https://www.mangatoon.mobi: Page closed
+   1 (Ghostery) https://www.mangatoon.mobi: Adding to successful website
+
+1 (Ghostery): (16) https://www.clearchannel.com
+   1 (Ghostery) https://www.clearchannel.com: Getting Requests
+   1 (Ghostery) https://www.clearchannel.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.clearchannel.com
+   1 (Ghostery) https://www.clearchannel.com: Page loaded
+   1 (Ghostery) https://www.clearchannel.com: Getting HTML
+   1 (Ghostery) https://www.clearchannel.com: Getting Cookies
+   1 (Ghostery) https://www.clearchannel.com: Getting Localstorage
+   1 (Ghostery) https://www.clearchannel.com: Adding requests to DB
+   1 (Ghostery) https://www.clearchannel.com: Page closed
+   1 (Ghostery) https://www.clearchannel.com: Adding to successful website
+
+1 (Ghostery): (17) https://www.rommanel.com.br
+   1 (Ghostery) https://www.rommanel.com.br: Getting Requests
+   1 (Ghostery) https://www.rommanel.com.br: Getting Responses
+   1 (Ghostery) : Loading new page https://www.rommanel.com.br
+   1 (Ghostery) https://www.rommanel.com.br: Page loaded
+   1 (Ghostery) https://www.rommanel.com.br: Getting HTML
+   1 (Ghostery) https://www.rommanel.com.br: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.rommanel.com.br: Getting Localstorage
+   1 (Ghostery) https://www.rommanel.com.br: Adding requests to DB
+   1 (Ghostery) https://www.rommanel.com.br: Page closed
+
+1 (Ghostery): (18) https://www.scopus.com
+   1 (Ghostery) https://www.scopus.com: Getting Requests
+   1 (Ghostery) https://www.scopus.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.scopus.com
+   1 (Ghostery) https://www.scopus.com: Page loaded
+   1 (Ghostery) https://www.scopus.com: Getting HTML
+   1 (Ghostery) https://www.scopus.com: Getting Cookies
+   1 (Ghostery) https://www.scopus.com: Getting Localstorage
+   1 (Ghostery) https://www.scopus.com: Adding requests to DB
+   1 (Ghostery) https://www.scopus.com: Page closed
+   1 (Ghostery) https://www.scopus.com: Adding to successful website
+
+1 (Ghostery): (19) https://www.flighthub.com
+   1 (Ghostery) https://www.flighthub.com: Getting Requests
+   1 (Ghostery) https://www.flighthub.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.flighthub.com
+   1 (Ghostery) https://www.flighthub.com: Page loaded
+   1 (Ghostery) https://www.flighthub.com: Getting HTML
+   1 (Ghostery) https://www.flighthub.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.flighthub.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.flighthub.com: Adding requests to DB
+   1 (Ghostery) https://www.flighthub.com: Page closed
+
+1 (Ghostery): (20) https://www.kivra.com
+   1 (Ghostery) https://www.kivra.com: Getting Requests
+   1 (Ghostery) https://www.kivra.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.kivra.com
+   1 (Ghostery) https://www.kivra.com: Page loaded
+   1 (Ghostery) https://www.kivra.com: Getting HTML
+   1 (Ghostery) https://www.kivra.com: Getting Cookies
+   1 (Ghostery) https://www.kivra.com: Getting Localstorage
+   1 (Ghostery) https://www.kivra.com: Adding requests to DB
+   1 (Ghostery) https://www.kivra.com: Page closed
+   1 (Ghostery) https://www.kivra.com: Adding to successful website
+
+1 (Ghostery): (21) https://www.zonatelecom.ru
+   1 (Ghostery) https://www.zonatelecom.ru: Getting Requests
+   1 (Ghostery) https://www.zonatelecom.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.zonatelecom.ru
+   1 (Ghostery) https://www.zonatelecom.ru: Page loaded
+   1 (Ghostery) https://www.zonatelecom.ru: Getting HTML
+   1 (Ghostery) https://www.zonatelecom.ru: Getting Cookies
+   1 (Ghostery) https://www.zonatelecom.ru: Getting Localstorage
+   1 (Ghostery) https://www.zonatelecom.ru: Adding requests to DB
+   1 (Ghostery) https://www.zonatelecom.ru: Page closed
+   1 (Ghostery) https://www.zonatelecom.ru: Adding to successful website
+
+1 (Ghostery): (22) https://www.rusagrogroup.ru
+   1 (Ghostery) https://www.rusagrogroup.ru: Getting Requests
+   1 (Ghostery) https://www.rusagrogroup.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.rusagrogroup.ru
+   1 (Ghostery) https://www.rusagrogroup.ru: Page loaded
+   1 (Ghostery) https://www.rusagrogroup.ru: Getting HTML
+   1 (Ghostery) https://www.rusagrogroup.ru: Getting Cookies
+   1 (Ghostery) https://www.rusagrogroup.ru: Getting Localstorage
+   1 (Ghostery) https://www.rusagrogroup.ru: Adding requests to DB
+   1 (Ghostery) https://www.rusagrogroup.ru: Page closed
+   1 (Ghostery) https://www.rusagrogroup.ru: Adding to successful website
+
+1 (Ghostery): (23) https://www.stellarcyber.cloud
+   1 (Ghostery) https://www.stellarcyber.cloud: Getting Requests
+   1 (Ghostery) https://www.stellarcyber.cloud: Getting Responses
+   1 (Ghostery) : Loading new page https://www.stellarcyber.cloud
+** 1 (Ghostery): TimeoutError -> https://www.stellarcyber.cloud
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (24) https://www.stream-io-api.com
+   1 (Ghostery) https://www.stream-io-api.com: Getting Requests
+   1 (Ghostery) https://www.stream-io-api.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.stream-io-api.com
+** 1 (Ghostery): Error visiting webpage -> https://www.stream-io-api.com (NS_ERROR_UNKNOWN_HOST at https://www.stream-io-api.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (25) https://www.rapolok.com
+   1 (Ghostery) https://www.rapolok.com: Getting Requests
+   1 (Ghostery) https://www.rapolok.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.rapolok.com
+** 1 (Ghostery): Error visiting webpage -> https://www.rapolok.com (NS_ERROR_UNKNOWN_HOST at https://www.rapolok.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (26) https://www.nnm.ru
+   1 (Ghostery) https://www.nnm.ru: Getting Requests
+   1 (Ghostery) https://www.nnm.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.nnm.ru
+   1 (Ghostery) https://www.nnm.ru: Page loaded
+   1 (Ghostery) https://www.nnm.ru: Getting HTML
+   1 (Ghostery) https://www.nnm.ru: Getting Cookies
+   1 (Ghostery) https://www.nnm.ru: Getting Localstorage
+   1 (Ghostery) https://www.nnm.ru: Adding requests to DB
+   1 (Ghostery) https://www.nnm.ru: Page closed
+   1 (Ghostery) https://www.nnm.ru: Adding to successful website
+page closed, returning from page.on('response').
+
+1 (Ghostery): (27) https://www.fresha.com
+   1 (Ghostery) https://www.fresha.com: Getting Requests
+   1 (Ghostery) https://www.fresha.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.fresha.com
+   1 (Ghostery) https://www.fresha.com: Page loaded
+   1 (Ghostery) https://www.fresha.com: Getting HTML
+   1 (Ghostery) https://www.fresha.com: Getting Cookies
+   1 (Ghostery) https://www.fresha.com: Getting Localstorage
+   1 (Ghostery) https://www.fresha.com: Adding requests to DB
+   1 (Ghostery) https://www.fresha.com: Page closed
+   1 (Ghostery) https://www.fresha.com: Adding to successful website
+
+1 (Ghostery): (28) https://www.yiluzhuanqian.com
+   1 (Ghostery) https://www.yiluzhuanqian.com: Getting Requests
+   1 (Ghostery) https://www.yiluzhuanqian.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.yiluzhuanqian.com
+** 1 (Ghostery): Error visiting webpage -> https://www.yiluzhuanqian.com (NS_ERROR_CONNECTION_REFUSED at https://www.yiluzhuanqian.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (29) https://www.hkvitals.com
+   1 (Ghostery) https://www.hkvitals.com: Getting Requests
+   1 (Ghostery) https://www.hkvitals.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.hkvitals.com
+** 1 (Ghostery): TimeoutError -> https://www.hkvitals.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (30) https://www.blablacar.ru
+   1 (Ghostery) https://www.blablacar.ru: Getting Requests
+   1 (Ghostery) https://www.blablacar.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.blablacar.ru
+   1 (Ghostery) https://www.blablacar.ru: Page loaded
+   1 (Ghostery) https://www.blablacar.ru: Getting HTML
+   1 (Ghostery) https://www.blablacar.ru: Getting Cookies
+   1 (Ghostery) https://www.blablacar.ru: Getting Localstorage
+   1 (Ghostery) https://www.blablacar.ru: Adding requests to DB
+   1 (Ghostery) https://www.blablacar.ru: Page closed
+   1 (Ghostery) https://www.blablacar.ru: Adding to successful website
+
+1 (Ghostery): (31) https://www.altapress.ru
+   1 (Ghostery) https://www.altapress.ru: Getting Requests
+   1 (Ghostery) https://www.altapress.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.altapress.ru
+   1 (Ghostery) https://www.altapress.ru: Page loaded
+   1 (Ghostery) https://www.altapress.ru: Getting HTML
+   1 (Ghostery) https://www.altapress.ru: Getting Cookies
+   1 (Ghostery) https://www.altapress.ru: Getting Localstorage
+   1 (Ghostery) https://www.altapress.ru: Adding requests to DB
+   1 (Ghostery) https://www.altapress.ru: Page closed
+   1 (Ghostery) https://www.altapress.ru: Adding to successful website
+page closed, returning from page.on('response').
+
+1 (Ghostery): (32) https://www.retrododo.com
+   1 (Ghostery) https://www.retrododo.com: Getting Requests
+   1 (Ghostery) https://www.retrododo.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.retrododo.com
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.retrododo.com: Page loaded
+   1 (Ghostery) https://www.retrododo.com: Getting HTML
+   1 (Ghostery) https://www.retrododo.com: Getting Cookies
+   1 (Ghostery) https://www.retrododo.com: Getting Localstorage
+   1 (Ghostery) https://www.retrododo.com: Adding requests to DB
+   1 (Ghostery) https://www.retrododo.com: Page closed
+   1 (Ghostery) https://www.retrododo.com: Adding to successful website
+
+1 (Ghostery): (33) https://www.blogsys.jp
+   1 (Ghostery) https://www.blogsys.jp: Getting Requests
+   1 (Ghostery) https://www.blogsys.jp: Getting Responses
+   1 (Ghostery) : Loading new page https://www.blogsys.jp
+** 1 (Ghostery): Error visiting webpage -> https://www.blogsys.jp (NS_ERROR_UNKNOWN_HOST at https://www.blogsys.jp)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (34) https://www.borwap.vip
+   1 (Ghostery) https://www.borwap.vip: Getting Requests
+   1 (Ghostery) https://www.borwap.vip: Getting Responses
+   1 (Ghostery) : Loading new page https://www.borwap.vip
+   1 (Ghostery) https://www.borwap.vip: Page loaded
+   1 (Ghostery) https://www.borwap.vip: Getting HTML
+   1 (Ghostery) https://www.borwap.vip: Getting Cookies
+   1 (Ghostery) https://www.borwap.vip: Getting Localstorage
+   1 (Ghostery) https://www.borwap.vip: Adding requests to DB
+   1 (Ghostery) https://www.borwap.vip: Page closed
+   1 (Ghostery) https://www.borwap.vip: Adding to successful website
+
+1 (Ghostery): (35) https://www.nyrabets.com
+   1 (Ghostery) https://www.nyrabets.com: Getting Requests
+   1 (Ghostery) https://www.nyrabets.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.nyrabets.com
+** 1 (Ghostery): TimeoutError -> https://www.nyrabets.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (36) https://www.nordaccount.com
+   1 (Ghostery) https://www.nordaccount.com: Getting Requests
+   1 (Ghostery) https://www.nordaccount.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.nordaccount.com
+** 1 (Ghostery): Error visiting webpage -> https://www.nordaccount.com (NS_ERROR_UNKNOWN_HOST at https://www.nordaccount.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (37) https://www.garlandcheese.com
+   1 (Ghostery) https://www.garlandcheese.com: Getting Requests
+   1 (Ghostery) https://www.garlandcheese.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.garlandcheese.com
+** 1 (Ghostery): TimeoutError -> https://www.garlandcheese.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (38) https://www.agrarszektor.hu
+   1 (Ghostery) https://www.agrarszektor.hu: Getting Requests
+   1 (Ghostery) https://www.agrarszektor.hu: Getting Responses
+   1 (Ghostery) : Loading new page https://www.agrarszektor.hu
+   1 (Ghostery) https://www.agrarszektor.hu: Page loaded
+   1 (Ghostery) https://www.agrarszektor.hu: Getting HTML
+   1 (Ghostery) https://www.agrarszektor.hu: Getting Cookies
+   1 (Ghostery) https://www.agrarszektor.hu: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.agrarszektor.hu: Adding requests to DB
+   1 (Ghostery) https://www.agrarszektor.hu: Page closed
+
+1 (Ghostery): (39) https://www.proofpoint.us
+   1 (Ghostery) https://www.proofpoint.us: Getting Requests
+   1 (Ghostery) https://www.proofpoint.us: Getting Responses
+   1 (Ghostery) : Loading new page https://www.proofpoint.us
+** 1 (Ghostery): Error visiting webpage -> https://www.proofpoint.us (NS_ERROR_UNKNOWN_HOST at https://www.proofpoint.us)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (40) https://www.jpnumber.com
+   1 (Ghostery) https://www.jpnumber.com: Getting Requests
+   1 (Ghostery) https://www.jpnumber.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.jpnumber.com
+   1 (Ghostery) https://www.jpnumber.com: Page loaded
+   1 (Ghostery) https://www.jpnumber.com: Getting HTML
+   1 (Ghostery) https://www.jpnumber.com: Getting Cookies
+   1 (Ghostery) https://www.jpnumber.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.jpnumber.com: Adding requests to DB
+   1 (Ghostery) https://www.jpnumber.com: Page closed
+
+1 (Ghostery): (41) https://www.cgebet3.com
+   1 (Ghostery) https://www.cgebet3.com: Getting Requests
+   1 (Ghostery) https://www.cgebet3.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.cgebet3.com
+   1 (Ghostery) https://www.cgebet3.com: Page loaded
+   1 (Ghostery) https://www.cgebet3.com: Getting HTML
+   1 (Ghostery) https://www.cgebet3.com: Getting Cookies
+   1 (Ghostery) https://www.cgebet3.com: Getting Localstorage
+   1 (Ghostery) https://www.cgebet3.com: Adding requests to DB
+   1 (Ghostery) https://www.cgebet3.com: Page closed
+   1 (Ghostery) https://www.cgebet3.com: Adding to successful website
+
+1 (Ghostery): (42) https://www.aurevoir143.com
+   1 (Ghostery) https://www.aurevoir143.com: Getting Requests
+   1 (Ghostery) https://www.aurevoir143.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.aurevoir143.com
+** 1 (Ghostery): Error visiting webpage -> https://www.aurevoir143.com (NS_ERROR_UNKNOWN_HOST at https://www.aurevoir143.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (43) https://www.apilayer.net
+   1 (Ghostery) https://www.apilayer.net: Getting Requests
+   1 (Ghostery) https://www.apilayer.net: Getting Responses
+   1 (Ghostery) : Loading new page https://www.apilayer.net
+   1 (Ghostery) https://www.apilayer.net: Page loaded
+   1 (Ghostery) https://www.apilayer.net: Getting HTML
+   1 (Ghostery) https://www.apilayer.net: Getting Cookies
+   1 (Ghostery) https://www.apilayer.net: Getting Localstorage
+   1 (Ghostery) https://www.apilayer.net: Adding requests to DB
+   1 (Ghostery) https://www.apilayer.net: Page closed
+   1 (Ghostery) https://www.apilayer.net: Adding to successful website
+
+1 (Ghostery): (44) https://www.zeitworld.com
+   1 (Ghostery) https://www.zeitworld.com: Getting Requests
+   1 (Ghostery) https://www.zeitworld.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.zeitworld.com
+** 1 (Ghostery): Error visiting webpage -> https://www.zeitworld.com (NS_ERROR_UNKNOWN_HOST at https://www.zeitworld.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (45) https://www.engeniusnetworks.com
+   1 (Ghostery) https://www.engeniusnetworks.com: Getting Requests
+   1 (Ghostery) https://www.engeniusnetworks.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.engeniusnetworks.com
+   1 (Ghostery) https://www.engeniusnetworks.com: Page loaded
+   1 (Ghostery) https://www.engeniusnetworks.com: Getting HTML
+   1 (Ghostery) https://www.engeniusnetworks.com: Getting Cookies
+   1 (Ghostery) https://www.engeniusnetworks.com: Getting Localstorage
+   1 (Ghostery) https://www.engeniusnetworks.com: Adding requests to DB
+   1 (Ghostery) https://www.engeniusnetworks.com: Page closed
+   1 (Ghostery) https://www.engeniusnetworks.com: Adding to successful website
+
+1 (Ghostery): (46) https://www.oo-software.com
+   1 (Ghostery) https://www.oo-software.com: Getting Requests
+   1 (Ghostery) https://www.oo-software.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.oo-software.com
+   1 (Ghostery) https://www.oo-software.com: Page loaded
+   1 (Ghostery) https://www.oo-software.com: Getting HTML
+   1 (Ghostery) https://www.oo-software.com: Getting Cookies
+   1 (Ghostery) https://www.oo-software.com: Getting Localstorage
+   1 (Ghostery) https://www.oo-software.com: Adding requests to DB
+   1 (Ghostery) https://www.oo-software.com: Page closed
+   1 (Ghostery) https://www.oo-software.com: Adding to successful website
+
+1 (Ghostery): (47) https://www.bigosext9s.com
+   1 (Ghostery) https://www.bigosext9s.com: Getting Requests
+   1 (Ghostery) https://www.bigosext9s.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.bigosext9s.com
+** 1 (Ghostery): Error visiting webpage -> https://www.bigosext9s.com (NS_ERROR_UNKNOWN_HOST at https://www.bigosext9s.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (48) https://www.anime-hit.com
+   1 (Ghostery) https://www.anime-hit.com: Getting Requests
+   1 (Ghostery) https://www.anime-hit.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.anime-hit.com
+** 1 (Ghostery): TimeoutError -> https://www.anime-hit.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (49) https://www.altrosky.be
+   1 (Ghostery) https://www.altrosky.be: Getting Requests
+   1 (Ghostery) https://www.altrosky.be: Getting Responses
+   1 (Ghostery) : Loading new page https://www.altrosky.be
+** 1 (Ghostery): Error visiting webpage -> https://www.altrosky.be (NS_ERROR_UNKNOWN_HOST at https://www.altrosky.be)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (50) https://www.pageroonline.com
+   1 (Ghostery) https://www.pageroonline.com: Getting Requests
+   1 (Ghostery) https://www.pageroonline.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.pageroonline.com
+   1 (Ghostery) https://www.pageroonline.com: Page loaded
+   1 (Ghostery) https://www.pageroonline.com: Getting HTML
+   1 (Ghostery) https://www.pageroonline.com: Getting Cookies
+   1 (Ghostery) https://www.pageroonline.com: Getting Localstorage
+   1 (Ghostery) https://www.pageroonline.com: Adding requests to DB
+   1 (Ghostery) https://www.pageroonline.com: Page closed
+   1 (Ghostery) https://www.pageroonline.com: Adding to successful website
+
+1 (Ghostery): (51) https://www.cnblogs.com
+   1 (Ghostery) https://www.cnblogs.com: Getting Requests
+   1 (Ghostery) https://www.cnblogs.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.cnblogs.com
+   1 (Ghostery) https://www.cnblogs.com: Page loaded
+   1 (Ghostery) https://www.cnblogs.com: Getting HTML
+   1 (Ghostery) https://www.cnblogs.com: Getting Cookies
+   1 (Ghostery) https://www.cnblogs.com: Getting Localstorage
+   1 (Ghostery) https://www.cnblogs.com: Adding requests to DB
+   1 (Ghostery) https://www.cnblogs.com: Page closed
+   1 (Ghostery) https://www.cnblogs.com: Adding to successful website
+
+1 (Ghostery): (52) https://www.pei.de
+   1 (Ghostery) https://www.pei.de: Getting Requests
+   1 (Ghostery) https://www.pei.de: Getting Responses
+   1 (Ghostery) : Loading new page https://www.pei.de
+   1 (Ghostery) https://www.pei.de: Page loaded
+   1 (Ghostery) https://www.pei.de: Getting HTML
+   1 (Ghostery) https://www.pei.de: Getting Cookies
+   1 (Ghostery) https://www.pei.de: Getting Localstorage
+   1 (Ghostery) https://www.pei.de: Adding requests to DB
+   1 (Ghostery) https://www.pei.de: Page closed
+   1 (Ghostery) https://www.pei.de: Adding to successful website
+
+1 (Ghostery): (53) https://www.sicat.com
+   1 (Ghostery) https://www.sicat.com: Getting Requests
+   1 (Ghostery) https://www.sicat.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.sicat.com
+   1 (Ghostery) https://www.sicat.com: Page loaded
+   1 (Ghostery) https://www.sicat.com: Getting HTML
+   1 (Ghostery) https://www.sicat.com: Getting Cookies
+   1 (Ghostery) https://www.sicat.com: Getting Localstorage
+   1 (Ghostery) https://www.sicat.com: Adding requests to DB
+   1 (Ghostery) https://www.sicat.com: Page closed
+   1 (Ghostery) https://www.sicat.com: Adding to successful website
+
+1 (Ghostery): (54) https://www.fortinet.com
+   1 (Ghostery) https://www.fortinet.com: Getting Requests
+   1 (Ghostery) https://www.fortinet.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.fortinet.com
+   1 (Ghostery) https://www.fortinet.com: Page loaded
+   1 (Ghostery) https://www.fortinet.com: Getting HTML
+   1 (Ghostery) https://www.fortinet.com: Getting Cookies
+   1 (Ghostery) https://www.fortinet.com: Getting Localstorage
+   1 (Ghostery) https://www.fortinet.com: Adding requests to DB
+   1 (Ghostery) https://www.fortinet.com: Page closed
+   1 (Ghostery) https://www.fortinet.com: Adding to successful website
+
+1 (Ghostery): (55) https://www.mangapill.com
+   1 (Ghostery) https://www.mangapill.com: Getting Requests
+   1 (Ghostery) https://www.mangapill.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.mangapill.com
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.mangapill.com: Page loaded
+   1 (Ghostery) https://www.mangapill.com: Getting HTML
+   1 (Ghostery) https://www.mangapill.com: Getting Cookies
+   1 (Ghostery) https://www.mangapill.com: Getting Localstorage
+   1 (Ghostery) https://www.mangapill.com: Adding requests to DB
+   1 (Ghostery) https://www.mangapill.com: Page closed
+   1 (Ghostery) https://www.mangapill.com: Adding to successful website
+
+1 (Ghostery): (56) https://www.gbpro.info
+   1 (Ghostery) https://www.gbpro.info: Getting Requests
+   1 (Ghostery) https://www.gbpro.info: Getting Responses
+   1 (Ghostery) : Loading new page https://www.gbpro.info
+** 1 (Ghostery): Error visiting webpage -> https://www.gbpro.info (SSL_ERROR_UNKNOWN at https://www.gbpro.info)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (57) https://www.foxtel.com.au
+   1 (Ghostery) https://www.foxtel.com.au: Getting Requests
+   1 (Ghostery) https://www.foxtel.com.au: Getting Responses
+   1 (Ghostery) : Loading new page https://www.foxtel.com.au
+** 1 (Ghostery): TimeoutError -> https://www.foxtel.com.au
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (58) https://www.alfaconcursos.com.br
+   1 (Ghostery) https://www.alfaconcursos.com.br: Getting Requests
+   1 (Ghostery) https://www.alfaconcursos.com.br: Getting Responses
+   1 (Ghostery) : Loading new page https://www.alfaconcursos.com.br
+   1 (Ghostery) https://www.alfaconcursos.com.br: Page loaded
+   1 (Ghostery) https://www.alfaconcursos.com.br: Getting HTML
+   1 (Ghostery) https://www.alfaconcursos.com.br: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.alfaconcursos.com.br: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.alfaconcursos.com.br: Adding requests to DB
+   1 (Ghostery) https://www.alfaconcursos.com.br: Page closed
+
+1 (Ghostery): (59) https://www.xxxpakistanimovies.com
+   1 (Ghostery) https://www.xxxpakistanimovies.com: Getting Requests
+   1 (Ghostery) https://www.xxxpakistanimovies.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.xxxpakistanimovies.com
+   1 (Ghostery) https://www.xxxpakistanimovies.com: Page loaded
+   1 (Ghostery) https://www.xxxpakistanimovies.com: Getting HTML
+   1 (Ghostery) https://www.xxxpakistanimovies.com: Getting Cookies
+   1 (Ghostery) https://www.xxxpakistanimovies.com: Getting Localstorage
+   1 (Ghostery) https://www.xxxpakistanimovies.com: Adding requests to DB
+   1 (Ghostery) https://www.xxxpakistanimovies.com: Page closed
+   1 (Ghostery) https://www.xxxpakistanimovies.com: Adding to successful website
+
+1 (Ghostery): (60) https://www.raiffeisen.ru
+   1 (Ghostery) https://www.raiffeisen.ru: Getting Requests
+   1 (Ghostery) https://www.raiffeisen.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.raiffeisen.ru
+   1 (Ghostery) https://www.raiffeisen.ru: Page loaded
+   1 (Ghostery) https://www.raiffeisen.ru: Getting HTML
+   1 (Ghostery) https://www.raiffeisen.ru: Getting Cookies
+   1 (Ghostery) https://www.raiffeisen.ru: Getting Localstorage
+   1 (Ghostery) https://www.raiffeisen.ru: Adding requests to DB
+   1 (Ghostery) https://www.raiffeisen.ru: Page closed
+   1 (Ghostery) https://www.raiffeisen.ru: Adding to successful website
+
+1 (Ghostery): (61) https://www.prim.hu
+   1 (Ghostery) https://www.prim.hu: Getting Requests
+   1 (Ghostery) https://www.prim.hu: Getting Responses
+   1 (Ghostery) : Loading new page https://www.prim.hu
+   1 (Ghostery) https://www.prim.hu: Page loaded
+   1 (Ghostery) https://www.prim.hu: Getting HTML
+   1 (Ghostery) https://www.prim.hu: Getting Cookies
+   1 (Ghostery) https://www.prim.hu: Getting Localstorage
+   1 (Ghostery) https://www.prim.hu: Adding requests to DB
+   1 (Ghostery) https://www.prim.hu: Page closed
+   1 (Ghostery) https://www.prim.hu: Adding to successful website
+
+1 (Ghostery): (62) https://www.clipartmax.com
+   1 (Ghostery) https://www.clipartmax.com: Getting Requests
+   1 (Ghostery) https://www.clipartmax.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.clipartmax.com
+   1 (Ghostery) https://www.clipartmax.com: Page loaded
+   1 (Ghostery) https://www.clipartmax.com: Getting HTML
+   1 (Ghostery) https://www.clipartmax.com: Getting Cookies
+   1 (Ghostery) https://www.clipartmax.com: Getting Localstorage
+   1 (Ghostery) https://www.clipartmax.com: Adding requests to DB
+   1 (Ghostery) https://www.clipartmax.com: Page closed
+   1 (Ghostery) https://www.clipartmax.com: Adding to successful website
+
+1 (Ghostery): (63) https://www.bnmla.com
+   1 (Ghostery) https://www.bnmla.com: Getting Requests
+   1 (Ghostery) https://www.bnmla.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.bnmla.com
+** 1 (Ghostery): TimeoutError -> https://www.bnmla.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (64) https://www.sickkids.ca
+   1 (Ghostery) https://www.sickkids.ca: Getting Requests
+   1 (Ghostery) https://www.sickkids.ca: Getting Responses
+   1 (Ghostery) : Loading new page https://www.sickkids.ca
+   1 (Ghostery) https://www.sickkids.ca: Page loaded
+   1 (Ghostery) https://www.sickkids.ca: Getting HTML
+   1 (Ghostery) https://www.sickkids.ca: Getting Cookies
+   1 (Ghostery) https://www.sickkids.ca: Getting Localstorage
+   1 (Ghostery) https://www.sickkids.ca: Adding requests to DB
+   1 (Ghostery) https://www.sickkids.ca: Page closed
+   1 (Ghostery) https://www.sickkids.ca: Adding to successful website
+
+1 (Ghostery): (65) https://www.yellowsubtrading.co.za
+   1 (Ghostery) https://www.yellowsubtrading.co.za: Getting Requests
+   1 (Ghostery) https://www.yellowsubtrading.co.za: Getting Responses
+   1 (Ghostery) : Loading new page https://www.yellowsubtrading.co.za
+   1 (Ghostery) https://www.yellowsubtrading.co.za: Page loaded
+   1 (Ghostery) https://www.yellowsubtrading.co.za: Getting HTML
+   1 (Ghostery) https://www.yellowsubtrading.co.za: Getting Cookies
+   1 (Ghostery) https://www.yellowsubtrading.co.za: Getting Localstorage
+   1 (Ghostery) https://www.yellowsubtrading.co.za: Adding requests to DB
+   1 (Ghostery) https://www.yellowsubtrading.co.za: Page closed
+   1 (Ghostery) https://www.yellowsubtrading.co.za: Adding to successful website
+
+1 (Ghostery): (66) https://www.inboxdollars.com
+   1 (Ghostery) https://www.inboxdollars.com: Getting Requests
+   1 (Ghostery) https://www.inboxdollars.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.inboxdollars.com
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.inboxdollars.com: Page loaded
+   1 (Ghostery) https://www.inboxdollars.com: Getting HTML
+   1 (Ghostery) https://www.inboxdollars.com: Getting Cookies
+   1 (Ghostery) https://www.inboxdollars.com: Getting Localstorage
+   1 (Ghostery) https://www.inboxdollars.com: Adding requests to DB
+   1 (Ghostery) https://www.inboxdollars.com: Page closed
+   1 (Ghostery) https://www.inboxdollars.com: Adding to successful website
+
+1 (Ghostery): (67) https://www.blinklist.com
+   1 (Ghostery) https://www.blinklist.com: Getting Requests
+   1 (Ghostery) https://www.blinklist.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.blinklist.com
+page closed, returning from page.on('response').
+** 1 (Ghostery): TimeoutError -> https://www.blinklist.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (68) https://www.bike-news.jp
+   1 (Ghostery) https://www.bike-news.jp: Getting Requests
+   1 (Ghostery) https://www.bike-news.jp: Getting Responses
+   1 (Ghostery) : Loading new page https://www.bike-news.jp
+** 1 (Ghostery): TimeoutError -> https://www.bike-news.jp
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (69) https://www.smrtb.com
+   1 (Ghostery) https://www.smrtb.com: Getting Requests
+   1 (Ghostery) https://www.smrtb.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.smrtb.com
+   1 (Ghostery) https://www.smrtb.com: Page loaded
+   1 (Ghostery) https://www.smrtb.com: Getting HTML
+   1 (Ghostery) https://www.smrtb.com: Getting Cookies
+   1 (Ghostery) https://www.smrtb.com: Getting Localstorage
+   1 (Ghostery) https://www.smrtb.com: Adding requests to DB
+   1 (Ghostery) https://www.smrtb.com: Page closed
+   1 (Ghostery) https://www.smrtb.com: Adding to successful website
+
+1 (Ghostery): (70) https://www.sayweee.com
+   1 (Ghostery) https://www.sayweee.com: Getting Requests
+   1 (Ghostery) https://www.sayweee.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.sayweee.com
+** 1 (Ghostery): TimeoutError -> https://www.sayweee.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (71) https://www.sex-videochat.club
+   1 (Ghostery) https://www.sex-videochat.club: Getting Requests
+   1 (Ghostery) https://www.sex-videochat.club: Getting Responses
+   1 (Ghostery) : Loading new page https://www.sex-videochat.club
+   1 (Ghostery) https://www.sex-videochat.club: Page loaded
+   1 (Ghostery) https://www.sex-videochat.club: Getting HTML
+   1 (Ghostery) https://www.sex-videochat.club: Getting Cookies
+   1 (Ghostery) https://www.sex-videochat.club: Getting Localstorage
+   1 (Ghostery) https://www.sex-videochat.club: Adding requests to DB
+   1 (Ghostery) https://www.sex-videochat.club: Page closed
+   1 (Ghostery) https://www.sex-videochat.club: Adding to successful website
+
+1 (Ghostery): (72) https://www.oo00.biz
+   1 (Ghostery) https://www.oo00.biz: Getting Requests
+   1 (Ghostery) https://www.oo00.biz: Getting Responses
+   1 (Ghostery) : Loading new page https://www.oo00.biz
+** 1 (Ghostery): Error visiting webpage -> https://www.oo00.biz (NS_ERROR_UNKNOWN_HOST at https://www.oo00.biz)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (73) https://www.fraserinstitute.org
+   1 (Ghostery) https://www.fraserinstitute.org: Getting Requests
+   1 (Ghostery) https://www.fraserinstitute.org: Getting Responses
+   1 (Ghostery) : Loading new page https://www.fraserinstitute.org
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+** 1 (Ghostery): TimeoutError -> https://www.fraserinstitute.org
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (74) https://www.sunlightfoundation.com
+   1 (Ghostery) https://www.sunlightfoundation.com: Getting Requests
+   1 (Ghostery) https://www.sunlightfoundation.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.sunlightfoundation.com
+   1 (Ghostery) https://www.sunlightfoundation.com: Page loaded
+   1 (Ghostery) https://www.sunlightfoundation.com: Getting HTML
+   1 (Ghostery) https://www.sunlightfoundation.com: Getting Cookies
+   1 (Ghostery) https://www.sunlightfoundation.com: Getting Localstorage
+   1 (Ghostery) https://www.sunlightfoundation.com: Adding requests to DB
+   1 (Ghostery) https://www.sunlightfoundation.com: Page closed
+   1 (Ghostery) https://www.sunlightfoundation.com: Adding to successful website
+
+1 (Ghostery): (75) https://www.servicewechat.com
+   1 (Ghostery) https://www.servicewechat.com: Getting Requests
+   1 (Ghostery) https://www.servicewechat.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.servicewechat.com
+** 1 (Ghostery): Error visiting webpage -> https://www.servicewechat.com (NS_ERROR_UNKNOWN_HOST at https://www.servicewechat.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (76) https://www.wellgroomedhydrant.com
+   1 (Ghostery) https://www.wellgroomedhydrant.com: Getting Requests
+   1 (Ghostery) https://www.wellgroomedhydrant.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.wellgroomedhydrant.com
+** 1 (Ghostery): Error visiting webpage -> https://www.wellgroomedhydrant.com (NS_ERROR_UNKNOWN_HOST at https://www.wellgroomedhydrant.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (77) https://www.afcpe.org
+   1 (Ghostery) https://www.afcpe.org: Getting Requests
+   1 (Ghostery) https://www.afcpe.org: Getting Responses
+   1 (Ghostery) : Loading new page https://www.afcpe.org
+   1 (Ghostery) https://www.afcpe.org: Page loaded
+   1 (Ghostery) https://www.afcpe.org: Getting HTML
+   1 (Ghostery) https://www.afcpe.org: Getting Cookies
+   1 (Ghostery) https://www.afcpe.org: Getting Localstorage
+   1 (Ghostery) https://www.afcpe.org: Adding requests to DB
+   1 (Ghostery) https://www.afcpe.org: Page closed
+   1 (Ghostery) https://www.afcpe.org: Adding to successful website
+
+1 (Ghostery): (78) https://www.runwayml.com
+   1 (Ghostery) https://www.runwayml.com: Getting Requests
+   1 (Ghostery) https://www.runwayml.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.runwayml.com
+   1 (Ghostery) https://www.runwayml.com: Page loaded
+   1 (Ghostery) https://www.runwayml.com: Getting HTML
+   1 (Ghostery) https://www.runwayml.com: Getting Cookies
+   1 (Ghostery) https://www.runwayml.com: Getting Localstorage
+   1 (Ghostery) https://www.runwayml.com: Adding requests to DB
+   1 (Ghostery) https://www.runwayml.com: Page closed
+   1 (Ghostery) https://www.runwayml.com: Adding to successful website
+
+1 (Ghostery): (79) https://www.iltempo.it
+   1 (Ghostery) https://www.iltempo.it: Getting Requests
+   1 (Ghostery) https://www.iltempo.it: Getting Responses
+   1 (Ghostery) : Loading new page https://www.iltempo.it
+   1 (Ghostery) https://www.iltempo.it: Page loaded
+   1 (Ghostery) https://www.iltempo.it: Getting HTML
+   1 (Ghostery) https://www.iltempo.it: Getting Cookies
+   1 (Ghostery) https://www.iltempo.it: Getting Localstorage
+   1 (Ghostery) https://www.iltempo.it: Adding requests to DB
+   1 (Ghostery) https://www.iltempo.it: Page closed
+   1 (Ghostery) https://www.iltempo.it: Adding to successful website
+
+1 (Ghostery): (80) https://www.sine.co
+   1 (Ghostery) https://www.sine.co: Getting Requests
+   1 (Ghostery) https://www.sine.co: Getting Responses
+   1 (Ghostery) : Loading new page https://www.sine.co
+   1 (Ghostery) https://www.sine.co: Page loaded
+   1 (Ghostery) https://www.sine.co: Getting HTML
+   1 (Ghostery) https://www.sine.co: Getting Cookies
+   1 (Ghostery) https://www.sine.co: Getting Localstorage
+   1 (Ghostery) https://www.sine.co: Adding requests to DB
+   1 (Ghostery) https://www.sine.co: Page closed
+   1 (Ghostery) https://www.sine.co: Adding to successful website
+
+1 (Ghostery): (81) https://www.bricodepot.fr
+   1 (Ghostery) https://www.bricodepot.fr: Getting Requests
+   1 (Ghostery) https://www.bricodepot.fr: Getting Responses
+   1 (Ghostery) : Loading new page https://www.bricodepot.fr
+   1 (Ghostery) https://www.bricodepot.fr: Page loaded
+   1 (Ghostery) https://www.bricodepot.fr: Getting HTML
+   1 (Ghostery) https://www.bricodepot.fr: Getting Cookies
+   1 (Ghostery) https://www.bricodepot.fr: Getting Localstorage
+   1 (Ghostery) https://www.bricodepot.fr: Adding requests to DB
+   1 (Ghostery) https://www.bricodepot.fr: Page closed
+   1 (Ghostery) https://www.bricodepot.fr: Adding to successful website
+
+1 (Ghostery): (82) https://www.kickfire.com
+   1 (Ghostery) https://www.kickfire.com: Getting Requests
+   1 (Ghostery) https://www.kickfire.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.kickfire.com
+   1 (Ghostery) https://www.kickfire.com: Page loaded
+   1 (Ghostery) https://www.kickfire.com: Getting HTML
+   1 (Ghostery) https://www.kickfire.com: Getting Cookies
+   1 (Ghostery) https://www.kickfire.com: Getting Localstorage
+   1 (Ghostery) https://www.kickfire.com: Adding requests to DB
+   1 (Ghostery) https://www.kickfire.com: Page closed
+   1 (Ghostery) https://www.kickfire.com: Adding to successful website
+
+1 (Ghostery): (83) https://www.tu-graz.ac.at
+   1 (Ghostery) https://www.tu-graz.ac.at: Getting Requests
+   1 (Ghostery) https://www.tu-graz.ac.at: Getting Responses
+   1 (Ghostery) : Loading new page https://www.tu-graz.ac.at
+** 1 (Ghostery): Error visiting webpage -> https://www.tu-graz.ac.at (SSL_ERROR_BAD_CERT_DOMAIN at https://www.tu-graz.ac.at)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (84) https://www.secureservercdn.net
+   1 (Ghostery) https://www.secureservercdn.net: Getting Requests
+   1 (Ghostery) https://www.secureservercdn.net: Getting Responses
+   1 (Ghostery) : Loading new page https://www.secureservercdn.net
+** 1 (Ghostery): TimeoutError -> https://www.secureservercdn.net
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (85) https://www.socialbakers.com
+   1 (Ghostery) https://www.socialbakers.com: Getting Requests
+   1 (Ghostery) https://www.socialbakers.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.socialbakers.com
+   1 (Ghostery) https://www.socialbakers.com: Page loaded
+   1 (Ghostery) https://www.socialbakers.com: Getting HTML
+   1 (Ghostery) https://www.socialbakers.com: Getting Cookies
+   1 (Ghostery) https://www.socialbakers.com: Getting Localstorage
+   1 (Ghostery) https://www.socialbakers.com: Adding requests to DB
+   1 (Ghostery) https://www.socialbakers.com: Page closed
+   1 (Ghostery) https://www.socialbakers.com: Adding to successful website
+
+1 (Ghostery): (86) https://www.watchmygf.name
+   1 (Ghostery) https://www.watchmygf.name: Getting Requests
+   1 (Ghostery) https://www.watchmygf.name: Getting Responses
+   1 (Ghostery) : Loading new page https://www.watchmygf.name
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.watchmygf.name: Page loaded
+   1 (Ghostery) https://www.watchmygf.name: Getting HTML
+   1 (Ghostery) https://www.watchmygf.name: Getting Cookies
+   1 (Ghostery) https://www.watchmygf.name: Getting Localstorage
+   1 (Ghostery) https://www.watchmygf.name: Adding requests to DB
+   1 (Ghostery) https://www.watchmygf.name: Page closed
+   1 (Ghostery) https://www.watchmygf.name: Adding to successful website
+
+1 (Ghostery): (87) https://www.loadbee.com
+   1 (Ghostery) https://www.loadbee.com: Getting Requests
+   1 (Ghostery) https://www.loadbee.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.loadbee.com
+   1 (Ghostery) https://www.loadbee.com: Page loaded
+   1 (Ghostery) https://www.loadbee.com: Getting HTML
+   1 (Ghostery) https://www.loadbee.com: Getting Cookies
+   1 (Ghostery) https://www.loadbee.com: Getting Localstorage
+   1 (Ghostery) https://www.loadbee.com: Adding requests to DB
+   1 (Ghostery) https://www.loadbee.com: Page closed
+   1 (Ghostery) https://www.loadbee.com: Adding to successful website
+
+1 (Ghostery): (88) https://www.karmasgame.com
+   1 (Ghostery) https://www.karmasgame.com: Getting Requests
+   1 (Ghostery) https://www.karmasgame.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.karmasgame.com
+   1 (Ghostery) https://www.karmasgame.com: Page loaded
+   1 (Ghostery) https://www.karmasgame.com: Getting HTML
+   1 (Ghostery) https://www.karmasgame.com: Getting Cookies
+   1 (Ghostery) https://www.karmasgame.com: Getting Localstorage
+   1 (Ghostery) https://www.karmasgame.com: Adding requests to DB
+   1 (Ghostery) https://www.karmasgame.com: Page closed
+   1 (Ghostery) https://www.karmasgame.com: Adding to successful website
+
+1 (Ghostery): (89) https://www.money-easilyxzo.buzz
+   1 (Ghostery) https://www.money-easilyxzo.buzz: Getting Requests
+   1 (Ghostery) https://www.money-easilyxzo.buzz: Getting Responses
+   1 (Ghostery) : Loading new page https://www.money-easilyxzo.buzz
+   1 (Ghostery) https://www.money-easilyxzo.buzz: Page loaded
+   1 (Ghostery) https://www.money-easilyxzo.buzz: Getting HTML
+   1 (Ghostery) https://www.money-easilyxzo.buzz: Getting Cookies
+   1 (Ghostery) https://www.money-easilyxzo.buzz: Getting Localstorage
+   1 (Ghostery) https://www.money-easilyxzo.buzz: Adding requests to DB
+   1 (Ghostery) https://www.money-easilyxzo.buzz: Page closed
+   1 (Ghostery) https://www.money-easilyxzo.buzz: Adding to successful website
+
+1 (Ghostery): (90) https://www.awsdns-35.co.uk
+   1 (Ghostery) https://www.awsdns-35.co.uk: Getting Requests
+   1 (Ghostery) https://www.awsdns-35.co.uk: Getting Responses
+   1 (Ghostery) : Loading new page https://www.awsdns-35.co.uk
+** 1 (Ghostery): Error visiting webpage -> https://www.awsdns-35.co.uk (NS_ERROR_UNKNOWN_HOST at https://www.awsdns-35.co.uk)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (91) https://www.dday.it
+   1 (Ghostery) https://www.dday.it: Getting Requests
+   1 (Ghostery) https://www.dday.it: Getting Responses
+   1 (Ghostery) : Loading new page https://www.dday.it
+   1 (Ghostery) https://www.dday.it: Page loaded
+   1 (Ghostery) https://www.dday.it: Getting HTML
+   1 (Ghostery) https://www.dday.it: Getting Cookies
+   1 (Ghostery) https://www.dday.it: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.dday.it: Adding requests to DB
+   1 (Ghostery) https://www.dday.it: Page closed
+
+1 (Ghostery): (92) https://www.trusselltrust.org
+   1 (Ghostery) https://www.trusselltrust.org: Getting Requests
+   1 (Ghostery) https://www.trusselltrust.org: Getting Responses
+   1 (Ghostery) : Loading new page https://www.trusselltrust.org
+   1 (Ghostery) https://www.trusselltrust.org: Page loaded
+   1 (Ghostery) https://www.trusselltrust.org: Getting HTML
+   1 (Ghostery) https://www.trusselltrust.org: Getting Cookies
+   1 (Ghostery) https://www.trusselltrust.org: Getting Localstorage
+   1 (Ghostery) https://www.trusselltrust.org: Adding requests to DB
+   1 (Ghostery) https://www.trusselltrust.org: Page closed
+   1 (Ghostery) https://www.trusselltrust.org: Adding to successful website
+
+1 (Ghostery): (93) https://www.earnbitmoon.club
+   1 (Ghostery) https://www.earnbitmoon.club: Getting Requests
+   1 (Ghostery) https://www.earnbitmoon.club: Getting Responses
+   1 (Ghostery) : Loading new page https://www.earnbitmoon.club
+   1 (Ghostery) https://www.earnbitmoon.club: Page loaded
+   1 (Ghostery) https://www.earnbitmoon.club: Getting HTML
+   1 (Ghostery) https://www.earnbitmoon.club: Getting Cookies
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.earnbitmoon.club: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.earnbitmoon.club: Adding requests to DB
+   1 (Ghostery) https://www.earnbitmoon.club: Page closed
+
+1 (Ghostery): (94) https://www.javmobile.mobi
+   1 (Ghostery) https://www.javmobile.mobi: Getting Requests
+   1 (Ghostery) https://www.javmobile.mobi: Getting Responses
+   1 (Ghostery) : Loading new page https://www.javmobile.mobi
+   1 (Ghostery) https://www.javmobile.mobi: Page loaded
+   1 (Ghostery) https://www.javmobile.mobi: Getting HTML
+   1 (Ghostery) https://www.javmobile.mobi: Getting Cookies
+   1 (Ghostery) https://www.javmobile.mobi: Getting Localstorage
+   1 (Ghostery) https://www.javmobile.mobi: Adding requests to DB
+   1 (Ghostery) https://www.javmobile.mobi: Page closed
+   1 (Ghostery) https://www.javmobile.mobi: Adding to successful website
+
+1 (Ghostery): (95) https://www.novel5s.com
+   1 (Ghostery) https://www.novel5s.com: Getting Requests
+   1 (Ghostery) https://www.novel5s.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.novel5s.com
+   1 (Ghostery) https://www.novel5s.com: Page loaded
+   1 (Ghostery) https://www.novel5s.com: Getting HTML
+   1 (Ghostery) https://www.novel5s.com: Getting Cookies
+   1 (Ghostery) https://www.novel5s.com: Getting Localstorage
+   1 (Ghostery) https://www.novel5s.com: Adding requests to DB
+   1 (Ghostery) https://www.novel5s.com: Page closed
+   1 (Ghostery) https://www.novel5s.com: Adding to successful website
+
+1 (Ghostery): (96) https://www.ge.ch
+   1 (Ghostery) https://www.ge.ch: Getting Requests
+   1 (Ghostery) https://www.ge.ch: Getting Responses
+   1 (Ghostery) : Loading new page https://www.ge.ch
+   1 (Ghostery) https://www.ge.ch: Page loaded
+   1 (Ghostery) https://www.ge.ch: Getting HTML
+   1 (Ghostery) https://www.ge.ch: Getting Cookies
+   1 (Ghostery) https://www.ge.ch: Getting Localstorage
+   1 (Ghostery) https://www.ge.ch: Adding requests to DB
+   1 (Ghostery) https://www.ge.ch: Page closed
+   1 (Ghostery) https://www.ge.ch: Adding to successful website
+
+1 (Ghostery): (97) https://www.cookiebot.eu
+   1 (Ghostery) https://www.cookiebot.eu: Getting Requests
+   1 (Ghostery) https://www.cookiebot.eu: Getting Responses
+   1 (Ghostery) : Loading new page https://www.cookiebot.eu
+** 1 (Ghostery): TimeoutError -> https://www.cookiebot.eu
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (98) https://www.mocafarm.shop
+   1 (Ghostery) https://www.mocafarm.shop: Getting Requests
+   1 (Ghostery) https://www.mocafarm.shop: Getting Responses
+   1 (Ghostery) : Loading new page https://www.mocafarm.shop
+** 1 (Ghostery): Error visiting webpage -> https://www.mocafarm.shop (NS_ERROR_UNKNOWN_HOST at https://www.mocafarm.shop)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (99) https://www.vk.me
+   1 (Ghostery) https://www.vk.me: Getting Requests
+   1 (Ghostery) https://www.vk.me: Getting Responses
+   1 (Ghostery) : Loading new page https://www.vk.me
+   1 (Ghostery) https://www.vk.me: Page loaded
+   1 (Ghostery) https://www.vk.me: Getting HTML
+   1 (Ghostery) https://www.vk.me: Getting Cookies
+   1 (Ghostery) https://www.vk.me: Getting Localstorage
+   1 (Ghostery) https://www.vk.me: Adding requests to DB
+   1 (Ghostery) https://www.vk.me: Page closed
+   1 (Ghostery) https://www.vk.me: Adding to successful website
+
+1 (Ghostery): (100) https://www.bmlink.com
+   1 (Ghostery) https://www.bmlink.com: Getting Requests
+   1 (Ghostery) https://www.bmlink.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.bmlink.com
+** 1 (Ghostery): TimeoutError -> https://www.bmlink.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+
+1 (Ghostery): (101) https://www.zardfilm.in
+   1 (Ghostery) https://www.zardfilm.in: Getting Requests
+   1 (Ghostery) https://www.zardfilm.in: Getting Responses
+   1 (Ghostery) : Loading new page https://www.zardfilm.in
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.zardfilm.in: Page loaded
+   1 (Ghostery) https://www.zardfilm.in: Getting HTML
+   1 (Ghostery) https://www.zardfilm.in: Getting Cookies
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.zardfilm.in: Getting Localstorage
+   1 (Ghostery) https://www.zardfilm.in: Adding requests to DB
+   1 (Ghostery) https://www.zardfilm.in: Page closed
+   1 (Ghostery) https://www.zardfilm.in: Adding to successful website
+page closed, returning from page.on('response').
+
+1 (Ghostery): (102) https://www.eurid.eu
+   1 (Ghostery) https://www.eurid.eu: Getting Requests
+   1 (Ghostery) https://www.eurid.eu: Getting Responses
+   1 (Ghostery) : Loading new page https://www.eurid.eu
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.eurid.eu: Page loaded
+   1 (Ghostery) https://www.eurid.eu: Getting HTML
+   1 (Ghostery) https://www.eurid.eu: Getting Cookies
+   1 (Ghostery) https://www.eurid.eu: Getting Localstorage
+   1 (Ghostery) https://www.eurid.eu: Adding requests to DB
+   1 (Ghostery) https://www.eurid.eu: Page closed
+   1 (Ghostery) https://www.eurid.eu: Adding to successful website
+
+1 (Ghostery): (103) https://www.chello.com
+   1 (Ghostery) https://www.chello.com: Getting Requests
+   1 (Ghostery) https://www.chello.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.chello.com
+** 1 (Ghostery): Error visiting webpage -> https://www.chello.com (SSL_ERROR_BAD_CERT_DOMAIN at https://www.chello.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (104) https://www.slj.com
+   1 (Ghostery) https://www.slj.com: Getting Requests
+   1 (Ghostery) https://www.slj.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.slj.com
+   1 (Ghostery) https://www.slj.com: Page loaded
+   1 (Ghostery) https://www.slj.com: Getting HTML
+   1 (Ghostery) https://www.slj.com: Getting Cookies
+   1 (Ghostery) https://www.slj.com: Getting Localstorage
+   1 (Ghostery) https://www.slj.com: Adding requests to DB
+   1 (Ghostery) https://www.slj.com: Page closed
+   1 (Ghostery) https://www.slj.com: Adding to successful website
+
+1 (Ghostery): (105) https://www.autoscout24.it
+   1 (Ghostery) https://www.autoscout24.it: Getting Requests
+   1 (Ghostery) https://www.autoscout24.it: Getting Responses
+   1 (Ghostery) : Loading new page https://www.autoscout24.it
+   1 (Ghostery) https://www.autoscout24.it: Page loaded
+   1 (Ghostery) https://www.autoscout24.it: Getting HTML
+   1 (Ghostery) https://www.autoscout24.it: Getting Cookies
+   1 (Ghostery) https://www.autoscout24.it: Getting Localstorage
+   1 (Ghostery) https://www.autoscout24.it: Adding requests to DB
+   1 (Ghostery) https://www.autoscout24.it: Page closed
+   1 (Ghostery) https://www.autoscout24.it: Adding to successful website
+
+1 (Ghostery): (106) https://www.tipico.de
+   1 (Ghostery) https://www.tipico.de: Getting Requests
+   1 (Ghostery) https://www.tipico.de: Getting Responses
+   1 (Ghostery) : Loading new page https://www.tipico.de
+** 1 (Ghostery): TimeoutError -> https://www.tipico.de
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (107) https://www.smedia.ru
+   1 (Ghostery) https://www.smedia.ru: Getting Requests
+   1 (Ghostery) https://www.smedia.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.smedia.ru
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.smedia.ru: Page loaded
+   1 (Ghostery) https://www.smedia.ru: Getting HTML
+   1 (Ghostery) https://www.smedia.ru: Getting Cookies
+   1 (Ghostery) https://www.smedia.ru: Getting Localstorage
+   1 (Ghostery) https://www.smedia.ru: Adding requests to DB
+   1 (Ghostery) https://www.smedia.ru: Page closed
+   1 (Ghostery) https://www.smedia.ru: Adding to successful website
+
+1 (Ghostery): (108) https://www.culturemap.com
+   1 (Ghostery) https://www.culturemap.com: Getting Requests
+   1 (Ghostery) https://www.culturemap.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.culturemap.com
+** 1 (Ghostery): Error visiting webpage -> https://www.culturemap.com (NS_ERROR_REDIRECT_LOOP at https://www.culturemap.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (109) https://www.framesdirect.com
+   1 (Ghostery) https://www.framesdirect.com: Getting Requests
+   1 (Ghostery) https://www.framesdirect.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.framesdirect.com
+   1 (Ghostery) https://www.framesdirect.com: Page loaded
+   1 (Ghostery) https://www.framesdirect.com: Getting HTML
+   1 (Ghostery) https://www.framesdirect.com: Getting Cookies
+   1 (Ghostery) https://www.framesdirect.com: Getting Localstorage
+   1 (Ghostery) https://www.framesdirect.com: Adding requests to DB
+   1 (Ghostery) https://www.framesdirect.com: Page closed
+   1 (Ghostery) https://www.framesdirect.com: Adding to successful website
+
+1 (Ghostery): (110) https://www.dugun.com
+   1 (Ghostery) https://www.dugun.com: Getting Requests
+   1 (Ghostery) https://www.dugun.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.dugun.com
+   1 (Ghostery) https://www.dugun.com: Page loaded
+   1 (Ghostery) https://www.dugun.com: Getting HTML
+   1 (Ghostery) https://www.dugun.com: Getting Cookies
+   1 (Ghostery) https://www.dugun.com: Getting Localstorage
+   1 (Ghostery) https://www.dugun.com: Adding requests to DB
+   1 (Ghostery) https://www.dugun.com: Page closed
+   1 (Ghostery) https://www.dugun.com: Adding to successful website
+
+1 (Ghostery): (111) https://www.icosrate.ru
+   1 (Ghostery) https://www.icosrate.ru: Getting Requests
+   1 (Ghostery) https://www.icosrate.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.icosrate.ru
+** 1 (Ghostery): Error visiting webpage -> https://www.icosrate.ru (SSL_ERROR_BAD_CERT_DOMAIN at https://www.icosrate.ru)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (112) https://www.birzeit.edu
+   1 (Ghostery) https://www.birzeit.edu: Getting Requests
+   1 (Ghostery) https://www.birzeit.edu: Getting Responses
+   1 (Ghostery) : Loading new page https://www.birzeit.edu
+   1 (Ghostery) https://www.birzeit.edu: Page loaded
+   1 (Ghostery) https://www.birzeit.edu: Getting HTML
+   1 (Ghostery) https://www.birzeit.edu: Getting Cookies
+   1 (Ghostery) https://www.birzeit.edu: Getting Localstorage
+   1 (Ghostery) https://www.birzeit.edu: Adding requests to DB
+   1 (Ghostery) https://www.birzeit.edu: Page closed
+   1 (Ghostery) https://www.birzeit.edu: Adding to successful website
+
+1 (Ghostery): (113) https://www.nurse.com
+   1 (Ghostery) https://www.nurse.com: Getting Requests
+   1 (Ghostery) https://www.nurse.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.nurse.com
+   1 (Ghostery) https://www.nurse.com: Page loaded
+   1 (Ghostery) https://www.nurse.com: Getting HTML
+   1 (Ghostery) https://www.nurse.com: Getting Cookies
+   1 (Ghostery) https://www.nurse.com: Getting Localstorage
+   1 (Ghostery) https://www.nurse.com: Adding requests to DB
+   1 (Ghostery) https://www.nurse.com: Page closed
+   1 (Ghostery) https://www.nurse.com: Adding to successful website
+
+1 (Ghostery): (114) https://www.pixels.com
+   1 (Ghostery) https://www.pixels.com: Getting Requests
+   1 (Ghostery) https://www.pixels.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.pixels.com
+   1 (Ghostery) https://www.pixels.com: Page loaded
+   1 (Ghostery) https://www.pixels.com: Getting HTML
+   1 (Ghostery) https://www.pixels.com: Getting Cookies
+   1 (Ghostery) https://www.pixels.com: Getting Localstorage
+   1 (Ghostery) https://www.pixels.com: Adding requests to DB
+   1 (Ghostery) https://www.pixels.com: Page closed
+   1 (Ghostery) https://www.pixels.com: Adding to successful website
+
+1 (Ghostery): (115) https://www.cnetfrance.fr
+   1 (Ghostery) https://www.cnetfrance.fr: Getting Requests
+   1 (Ghostery) https://www.cnetfrance.fr: Getting Responses
+   1 (Ghostery) : Loading new page https://www.cnetfrance.fr
+   1 (Ghostery) https://www.cnetfrance.fr: Page loaded
+   1 (Ghostery) https://www.cnetfrance.fr: Getting HTML
+   1 (Ghostery) https://www.cnetfrance.fr: Getting Cookies
+   1 (Ghostery) https://www.cnetfrance.fr: Getting Localstorage
+   1 (Ghostery) https://www.cnetfrance.fr: Adding requests to DB
+   1 (Ghostery) https://www.cnetfrance.fr: Page closed
+   1 (Ghostery) https://www.cnetfrance.fr: Adding to successful website
+
+1 (Ghostery): (116) https://www.extremegaming88.asia
+   1 (Ghostery) https://www.extremegaming88.asia: Getting Requests
+   1 (Ghostery) https://www.extremegaming88.asia: Getting Responses
+   1 (Ghostery) : Loading new page https://www.extremegaming88.asia
+** 1 (Ghostery): TimeoutError -> https://www.extremegaming88.asia
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (117) https://www.diariosur.es
+   1 (Ghostery) https://www.diariosur.es: Getting Requests
+   1 (Ghostery) https://www.diariosur.es: Getting Responses
+   1 (Ghostery) : Loading new page https://www.diariosur.es
+   1 (Ghostery) https://www.diariosur.es: Page loaded
+   1 (Ghostery) https://www.diariosur.es: Getting HTML
+   1 (Ghostery) https://www.diariosur.es: Getting Cookies
+   1 (Ghostery) https://www.diariosur.es: Getting Localstorage
+   1 (Ghostery) https://www.diariosur.es: Adding requests to DB
+   1 (Ghostery) https://www.diariosur.es: Page closed
+   1 (Ghostery) https://www.diariosur.es: Adding to successful website
+
+1 (Ghostery): (118) https://www.xxxvideos.su
+   1 (Ghostery) https://www.xxxvideos.su: Getting Requests
+   1 (Ghostery) https://www.xxxvideos.su: Getting Responses
+   1 (Ghostery) : Loading new page https://www.xxxvideos.su
+   1 (Ghostery) https://www.xxxvideos.su: Page loaded
+   1 (Ghostery) https://www.xxxvideos.su: Getting HTML
+   1 (Ghostery) https://www.xxxvideos.su: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.xxxvideos.su: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.xxxvideos.su: Adding requests to DB
+   1 (Ghostery) https://www.xxxvideos.su: Page closed
+
+1 (Ghostery): (119) https://www.virtualmanager.com
+   1 (Ghostery) https://www.virtualmanager.com: Getting Requests
+   1 (Ghostery) https://www.virtualmanager.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.virtualmanager.com
+** 1 (Ghostery): TimeoutError -> https://www.virtualmanager.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (120) https://www.urlebird.com
+   1 (Ghostery) https://www.urlebird.com: Getting Requests
+   1 (Ghostery) https://www.urlebird.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.urlebird.com
+** 1 (Ghostery): TimeoutError -> https://www.urlebird.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (121) https://www.msb.gov.tr
+   1 (Ghostery) https://www.msb.gov.tr: Getting Requests
+   1 (Ghostery) https://www.msb.gov.tr: Getting Responses
+   1 (Ghostery) : Loading new page https://www.msb.gov.tr
+   1 (Ghostery) https://www.msb.gov.tr: Page loaded
+   1 (Ghostery) https://www.msb.gov.tr: Getting HTML
+   1 (Ghostery) https://www.msb.gov.tr: Getting Cookies
+   1 (Ghostery) https://www.msb.gov.tr: Getting Localstorage
+   1 (Ghostery) https://www.msb.gov.tr: Adding requests to DB
+   1 (Ghostery) https://www.msb.gov.tr: Page closed
+   1 (Ghostery) https://www.msb.gov.tr: Adding to successful website
+
+1 (Ghostery): (122) https://www.stooq.com
+   1 (Ghostery) https://www.stooq.com: Getting Requests
+   1 (Ghostery) https://www.stooq.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.stooq.com
+** 1 (Ghostery): TimeoutError -> https://www.stooq.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (123) https://www.senac.br
+   1 (Ghostery) https://www.senac.br: Getting Requests
+   1 (Ghostery) https://www.senac.br: Getting Responses
+   1 (Ghostery) : Loading new page https://www.senac.br
+   1 (Ghostery) https://www.senac.br: Page loaded
+   1 (Ghostery) https://www.senac.br: Getting HTML
+   1 (Ghostery) https://www.senac.br: Getting Cookies
+   1 (Ghostery) https://www.senac.br: Getting Localstorage
+   1 (Ghostery) https://www.senac.br: Adding requests to DB
+   1 (Ghostery) https://www.senac.br: Page closed
+   1 (Ghostery) https://www.senac.br: Adding to successful website
+
+1 (Ghostery): (124) https://www.royaleapi.com
+   1 (Ghostery) https://www.royaleapi.com: Getting Requests
+   1 (Ghostery) https://www.royaleapi.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.royaleapi.com
+   1 (Ghostery) https://www.royaleapi.com: Page loaded
+   1 (Ghostery) https://www.royaleapi.com: Getting HTML
+   1 (Ghostery) https://www.royaleapi.com: Getting Cookies
+   1 (Ghostery) https://www.royaleapi.com: Getting Localstorage
+   1 (Ghostery) https://www.royaleapi.com: Adding requests to DB
+   1 (Ghostery) https://www.royaleapi.com: Page closed
+   1 (Ghostery) https://www.royaleapi.com: Adding to successful website
+
+1 (Ghostery): (125) https://www.sabavn.com
+   1 (Ghostery) https://www.sabavn.com: Getting Requests
+   1 (Ghostery) https://www.sabavn.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.sabavn.com
+   1 (Ghostery) https://www.sabavn.com: Page loaded
+   1 (Ghostery) https://www.sabavn.com: Getting HTML
+   1 (Ghostery) https://www.sabavn.com: Getting Cookies
+   1 (Ghostery) https://www.sabavn.com: Getting Localstorage
+   1 (Ghostery) https://www.sabavn.com: Adding requests to DB
+   1 (Ghostery) https://www.sabavn.com: Page closed
+   1 (Ghostery) https://www.sabavn.com: Adding to successful website
+
+1 (Ghostery): (126) https://www.netfirms.com
+   1 (Ghostery) https://www.netfirms.com: Getting Requests
+   1 (Ghostery) https://www.netfirms.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.netfirms.com
+   1 (Ghostery) https://www.netfirms.com: Page loaded
+   1 (Ghostery) https://www.netfirms.com: Getting HTML
+   1 (Ghostery) https://www.netfirms.com: Getting Cookies
+   1 (Ghostery) https://www.netfirms.com: Getting Localstorage
+   1 (Ghostery) https://www.netfirms.com: Adding requests to DB
+   1 (Ghostery) https://www.netfirms.com: Page closed
+   1 (Ghostery) https://www.netfirms.com: Adding to successful website
+
+1 (Ghostery): (127) https://www.technowave.ne.jp
+   1 (Ghostery) https://www.technowave.ne.jp: Getting Requests
+   1 (Ghostery) https://www.technowave.ne.jp: Getting Responses
+   1 (Ghostery) : Loading new page https://www.technowave.ne.jp
+page closed, returning from page.on('response').
+** 1 (Ghostery): TimeoutError -> https://www.technowave.ne.jp
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (128) https://www.daichi.ru
+   1 (Ghostery) https://www.daichi.ru: Getting Requests
+   1 (Ghostery) https://www.daichi.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.daichi.ru
+   1 (Ghostery) https://www.daichi.ru: Page loaded
+   1 (Ghostery) https://www.daichi.ru: Getting HTML
+   1 (Ghostery) https://www.daichi.ru: Getting Cookies
+   1 (Ghostery) https://www.daichi.ru: Getting Localstorage
+   1 (Ghostery) https://www.daichi.ru: Adding requests to DB
+   1 (Ghostery) https://www.daichi.ru: Page closed
+   1 (Ghostery) https://www.daichi.ru: Adding to successful website
+
+1 (Ghostery): (129) https://www.your-site.com
+   1 (Ghostery) https://www.your-site.com: Getting Requests
+   1 (Ghostery) https://www.your-site.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.your-site.com
+   1 (Ghostery) https://www.your-site.com: Page loaded
+   1 (Ghostery) https://www.your-site.com: Getting HTML
+   1 (Ghostery) https://www.your-site.com: Getting Cookies
+   1 (Ghostery) https://www.your-site.com: Getting Localstorage
+   1 (Ghostery) https://www.your-site.com: Adding requests to DB
+   1 (Ghostery) https://www.your-site.com: Page closed
+   1 (Ghostery) https://www.your-site.com: Adding to successful website
+
+1 (Ghostery): (130) https://www.amion.com
+   1 (Ghostery) https://www.amion.com: Getting Requests
+   1 (Ghostery) https://www.amion.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.amion.com
+   1 (Ghostery) https://www.amion.com: Page loaded
+   1 (Ghostery) https://www.amion.com: Getting HTML
+   1 (Ghostery) https://www.amion.com: Getting Cookies
+   1 (Ghostery) https://www.amion.com: Getting Localstorage
+   1 (Ghostery) https://www.amion.com: Adding requests to DB
+   1 (Ghostery) https://www.amion.com: Page closed
+   1 (Ghostery) https://www.amion.com: Adding to successful website
+
+1 (Ghostery): (131) https://www.go3.tv
+   1 (Ghostery) https://www.go3.tv: Getting Requests
+   1 (Ghostery) https://www.go3.tv: Getting Responses
+   1 (Ghostery) : Loading new page https://www.go3.tv
+   1 (Ghostery) https://www.go3.tv: Page loaded
+   1 (Ghostery) https://www.go3.tv: Getting HTML
+   1 (Ghostery) https://www.go3.tv: Getting Cookies
+   1 (Ghostery) https://www.go3.tv: Getting Localstorage
+   1 (Ghostery) https://www.go3.tv: Adding requests to DB
+   1 (Ghostery) https://www.go3.tv: Page closed
+   1 (Ghostery) https://www.go3.tv: Adding to successful website
+
+1 (Ghostery): (132) https://www.alt.com
+   1 (Ghostery) https://www.alt.com: Getting Requests
+   1 (Ghostery) https://www.alt.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.alt.com
+   1 (Ghostery) https://www.alt.com: Page loaded
+   1 (Ghostery) https://www.alt.com: Getting HTML
+   1 (Ghostery) https://www.alt.com: Getting Cookies
+   1 (Ghostery) https://www.alt.com: Getting Localstorage
+   1 (Ghostery) https://www.alt.com: Adding requests to DB
+   1 (Ghostery) https://www.alt.com: Page closed
+   1 (Ghostery) https://www.alt.com: Adding to successful website
+
+1 (Ghostery): (133) https://www.nic.st
+   1 (Ghostery) https://www.nic.st: Getting Requests
+   1 (Ghostery) https://www.nic.st: Getting Responses
+   1 (Ghostery) : Loading new page https://www.nic.st
+   1 (Ghostery) https://www.nic.st: Page loaded
+   1 (Ghostery) https://www.nic.st: Getting HTML
+   1 (Ghostery) https://www.nic.st: Getting Cookies
+   1 (Ghostery) https://www.nic.st: Getting Localstorage
+   1 (Ghostery) https://www.nic.st: Adding requests to DB
+   1 (Ghostery) https://www.nic.st: Page closed
+   1 (Ghostery) https://www.nic.st: Adding to successful website
+
+1 (Ghostery): (134) https://www.bigbuckph.com
+   1 (Ghostery) https://www.bigbuckph.com: Getting Requests
+   1 (Ghostery) https://www.bigbuckph.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.bigbuckph.com
+   1 (Ghostery) https://www.bigbuckph.com: Page loaded
+   1 (Ghostery) https://www.bigbuckph.com: Getting HTML
+   1 (Ghostery) https://www.bigbuckph.com: Getting Cookies
+   1 (Ghostery) https://www.bigbuckph.com: Getting Localstorage
+   1 (Ghostery) https://www.bigbuckph.com: Adding requests to DB
+   1 (Ghostery) https://www.bigbuckph.com: Page closed
+   1 (Ghostery) https://www.bigbuckph.com: Adding to successful website
+
+1 (Ghostery): (135) https://www.akamai.com
+   1 (Ghostery) https://www.akamai.com: Getting Requests
+   1 (Ghostery) https://www.akamai.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.akamai.com
+   1 (Ghostery) https://www.akamai.com: Page loaded
+   1 (Ghostery) https://www.akamai.com: Getting HTML
+   1 (Ghostery) https://www.akamai.com: Getting Cookies
+   1 (Ghostery) https://www.akamai.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.akamai.com: Adding requests to DB
+   1 (Ghostery) https://www.akamai.com: Page closed
+
+1 (Ghostery): (136) https://www.s-kaupat.fi
+   1 (Ghostery) https://www.s-kaupat.fi: Getting Requests
+   1 (Ghostery) https://www.s-kaupat.fi: Getting Responses
+   1 (Ghostery) : Loading new page https://www.s-kaupat.fi
+   1 (Ghostery) https://www.s-kaupat.fi: Page loaded
+   1 (Ghostery) https://www.s-kaupat.fi: Getting HTML
+   1 (Ghostery) https://www.s-kaupat.fi: Getting Cookies
+   1 (Ghostery) https://www.s-kaupat.fi: Getting Localstorage
+   1 (Ghostery) https://www.s-kaupat.fi: Adding requests to DB
+   1 (Ghostery) https://www.s-kaupat.fi: Page closed
+   1 (Ghostery) https://www.s-kaupat.fi: Adding to successful website
+
+1 (Ghostery): (137) https://www.webcafe.bg
+   1 (Ghostery) https://www.webcafe.bg: Getting Requests
+   1 (Ghostery) https://www.webcafe.bg: Getting Responses
+   1 (Ghostery) : Loading new page https://www.webcafe.bg
+   1 (Ghostery) https://www.webcafe.bg: Page loaded
+   1 (Ghostery) https://www.webcafe.bg: Getting HTML
+   1 (Ghostery) https://www.webcafe.bg: Getting Cookies
+   1 (Ghostery) https://www.webcafe.bg: Getting Localstorage
+   1 (Ghostery) https://www.webcafe.bg: Adding requests to DB
+   1 (Ghostery) https://www.webcafe.bg: Page closed
+   1 (Ghostery) https://www.webcafe.bg: Adding to successful website
+
+1 (Ghostery): (138) https://www.order.online
+   1 (Ghostery) https://www.order.online: Getting Requests
+   1 (Ghostery) https://www.order.online: Getting Responses
+   1 (Ghostery) : Loading new page https://www.order.online
+** 1 (Ghostery): TimeoutError -> https://www.order.online
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (139) https://www.evetpractice.com
+   1 (Ghostery) https://www.evetpractice.com: Getting Requests
+   1 (Ghostery) https://www.evetpractice.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.evetpractice.com
+   1 (Ghostery) https://www.evetpractice.com: Page loaded
+   1 (Ghostery) https://www.evetpractice.com: Getting HTML
+   1 (Ghostery) https://www.evetpractice.com: Getting Cookies
+   1 (Ghostery) https://www.evetpractice.com: Getting Localstorage
+   1 (Ghostery) https://www.evetpractice.com: Adding requests to DB
+   1 (Ghostery) https://www.evetpractice.com: Page closed
+   1 (Ghostery) https://www.evetpractice.com: Adding to successful website
+
+1 (Ghostery): (140) https://www.mantrazscan.com
+   1 (Ghostery) https://www.mantrazscan.com: Getting Requests
+   1 (Ghostery) https://www.mantrazscan.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.mantrazscan.com
+   1 (Ghostery) https://www.mantrazscan.com: Page loaded
+   1 (Ghostery) https://www.mantrazscan.com: Getting HTML
+   1 (Ghostery) https://www.mantrazscan.com: Getting Cookies
+   1 (Ghostery) https://www.mantrazscan.com: Getting Localstorage
+   1 (Ghostery) https://www.mantrazscan.com: Adding requests to DB
+   1 (Ghostery) https://www.mantrazscan.com: Page closed
+   1 (Ghostery) https://www.mantrazscan.com: Adding to successful website
+
+1 (Ghostery): (141) https://www.bgsu.edu
+   1 (Ghostery) https://www.bgsu.edu: Getting Requests
+   1 (Ghostery) https://www.bgsu.edu: Getting Responses
+   1 (Ghostery) : Loading new page https://www.bgsu.edu
+   1 (Ghostery) https://www.bgsu.edu: Page loaded
+   1 (Ghostery) https://www.bgsu.edu: Getting HTML
+   1 (Ghostery) https://www.bgsu.edu: Getting Cookies
+   1 (Ghostery) https://www.bgsu.edu: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.bgsu.edu: Adding requests to DB
+   1 (Ghostery) https://www.bgsu.edu: Page closed
+
+1 (Ghostery): (142) https://www.origamirisk.com
+   1 (Ghostery) https://www.origamirisk.com: Getting Requests
+   1 (Ghostery) https://www.origamirisk.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.origamirisk.com
+   1 (Ghostery) https://www.origamirisk.com: Page loaded
+   1 (Ghostery) https://www.origamirisk.com: Getting HTML
+   1 (Ghostery) https://www.origamirisk.com: Getting Cookies
+   1 (Ghostery) https://www.origamirisk.com: Getting Localstorage
+   1 (Ghostery) https://www.origamirisk.com: Adding requests to DB
+   1 (Ghostery) https://www.origamirisk.com: Page closed
+   1 (Ghostery) https://www.origamirisk.com: Adding to successful website
+
+1 (Ghostery): (143) https://www.williamhill.es
+   1 (Ghostery) https://www.williamhill.es: Getting Requests
+   1 (Ghostery) https://www.williamhill.es: Getting Responses
+   1 (Ghostery) : Loading new page https://www.williamhill.es
+   1 (Ghostery) https://www.williamhill.es: Page loaded
+   1 (Ghostery) https://www.williamhill.es: Getting HTML
+   1 (Ghostery) https://www.williamhill.es: Getting Cookies
+   1 (Ghostery) https://www.williamhill.es: Getting Localstorage
+   1 (Ghostery) https://www.williamhill.es: Adding requests to DB
+   1 (Ghostery) https://www.williamhill.es: Page closed
+   1 (Ghostery) https://www.williamhill.es: Adding to successful website
+
+1 (Ghostery): (144) https://www.screenpal.com
+   1 (Ghostery) https://www.screenpal.com: Getting Requests
+   1 (Ghostery) https://www.screenpal.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.screenpal.com
+   1 (Ghostery) https://www.screenpal.com: Page loaded
+   1 (Ghostery) https://www.screenpal.com: Getting HTML
+   1 (Ghostery) https://www.screenpal.com: Getting Cookies
+   1 (Ghostery) https://www.screenpal.com: Getting Localstorage
+   1 (Ghostery) https://www.screenpal.com: Adding requests to DB
+   1 (Ghostery) https://www.screenpal.com: Page closed
+   1 (Ghostery) https://www.screenpal.com: Adding to successful website
+
+1 (Ghostery): (145) https://www.petri.com
+   1 (Ghostery) https://www.petri.com: Getting Requests
+   1 (Ghostery) https://www.petri.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.petri.com
+   1 (Ghostery) https://www.petri.com: Page loaded
+   1 (Ghostery) https://www.petri.com: Getting HTML
+   1 (Ghostery) https://www.petri.com: Getting Cookies
+   1 (Ghostery) https://www.petri.com: Getting Localstorage
+   1 (Ghostery) https://www.petri.com: Adding requests to DB
+   1 (Ghostery) https://www.petri.com: Page closed
+   1 (Ghostery) https://www.petri.com: Adding to successful website
+
+1 (Ghostery): (146) https://www.onhealth.com
+   1 (Ghostery) https://www.onhealth.com: Getting Requests
+   1 (Ghostery) https://www.onhealth.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.onhealth.com
+** 1 (Ghostery): TimeoutError -> https://www.onhealth.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (147) https://www.userstyles.org
+   1 (Ghostery) https://www.userstyles.org: Getting Requests
+   1 (Ghostery) https://www.userstyles.org: Getting Responses
+   1 (Ghostery) : Loading new page https://www.userstyles.org
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.userstyles.org: Page loaded
+   1 (Ghostery) https://www.userstyles.org: Getting HTML
+   1 (Ghostery) https://www.userstyles.org: Getting Cookies
+   1 (Ghostery) https://www.userstyles.org: Getting Localstorage
+   1 (Ghostery) https://www.userstyles.org: Adding requests to DB
+   1 (Ghostery) https://www.userstyles.org: Page closed
+   1 (Ghostery) https://www.userstyles.org: Adding to successful website
+
+1 (Ghostery): (148) https://www.awsdns-cn-53.cn
+   1 (Ghostery) https://www.awsdns-cn-53.cn: Getting Requests
+   1 (Ghostery) https://www.awsdns-cn-53.cn: Getting Responses
+   1 (Ghostery) : Loading new page https://www.awsdns-cn-53.cn
+** 1 (Ghostery): Error visiting webpage -> https://www.awsdns-cn-53.cn (NS_ERROR_UNKNOWN_HOST at https://www.awsdns-cn-53.cn)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (149) https://www.vivotek.com
+   1 (Ghostery) https://www.vivotek.com: Getting Requests
+   1 (Ghostery) https://www.vivotek.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.vivotek.com
+   1 (Ghostery) https://www.vivotek.com: Page loaded
+   1 (Ghostery) https://www.vivotek.com: Getting HTML
+   1 (Ghostery) https://www.vivotek.com: Getting Cookies
+   1 (Ghostery) https://www.vivotek.com: Getting Localstorage
+   1 (Ghostery) https://www.vivotek.com: Adding requests to DB
+   1 (Ghostery) https://www.vivotek.com: Page closed
+   1 (Ghostery) https://www.vivotek.com: Adding to successful website
+
+1 (Ghostery): (150) https://www.cdnhwcoem01.com
+   1 (Ghostery) https://www.cdnhwcoem01.com: Getting Requests
+   1 (Ghostery) https://www.cdnhwcoem01.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.cdnhwcoem01.com
+** 1 (Ghostery): Error visiting webpage -> https://www.cdnhwcoem01.com (NS_ERROR_UNKNOWN_HOST at https://www.cdnhwcoem01.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (151) https://www.developerforce.com
+   1 (Ghostery) https://www.developerforce.com: Getting Requests
+   1 (Ghostery) https://www.developerforce.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.developerforce.com
+   1 (Ghostery) https://www.developerforce.com: Page loaded
+   1 (Ghostery) https://www.developerforce.com: Getting HTML
+   1 (Ghostery) https://www.developerforce.com: Getting Cookies
+   1 (Ghostery) https://www.developerforce.com: Getting Localstorage
+   1 (Ghostery) https://www.developerforce.com: Adding requests to DB
+   1 (Ghostery) https://www.developerforce.com: Page closed
+   1 (Ghostery) https://www.developerforce.com: Adding to successful website
+
+1 (Ghostery): (152) https://www.pesi.com
+   1 (Ghostery) https://www.pesi.com: Getting Requests
+   1 (Ghostery) https://www.pesi.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.pesi.com
+   1 (Ghostery) https://www.pesi.com: Page loaded
+   1 (Ghostery) https://www.pesi.com: Getting HTML
+   1 (Ghostery) https://www.pesi.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.pesi.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.pesi.com: Adding requests to DB
+   1 (Ghostery) https://www.pesi.com: Page closed
+
+1 (Ghostery): (153) https://www.wifly.net
+   1 (Ghostery) https://www.wifly.net: Getting Requests
+   1 (Ghostery) https://www.wifly.net: Getting Responses
+   1 (Ghostery) : Loading new page https://www.wifly.net
+   1 (Ghostery) https://www.wifly.net: Page loaded
+   1 (Ghostery) https://www.wifly.net: Getting HTML
+   1 (Ghostery) https://www.wifly.net: Getting Cookies
+   1 (Ghostery) https://www.wifly.net: Getting Localstorage
+   1 (Ghostery) https://www.wifly.net: Adding requests to DB
+   1 (Ghostery) https://www.wifly.net: Page closed
+   1 (Ghostery) https://www.wifly.net: Adding to successful website
+
+1 (Ghostery): (154) https://www.areavibes.com
+   1 (Ghostery) https://www.areavibes.com: Getting Requests
+   1 (Ghostery) https://www.areavibes.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.areavibes.com
+   1 (Ghostery) https://www.areavibes.com: Page loaded
+   1 (Ghostery) https://www.areavibes.com: Getting HTML
+   1 (Ghostery) https://www.areavibes.com: Getting Cookies
+   1 (Ghostery) https://www.areavibes.com: Getting Localstorage
+   1 (Ghostery) https://www.areavibes.com: Adding requests to DB
+   1 (Ghostery) https://www.areavibes.com: Page closed
+   1 (Ghostery) https://www.areavibes.com: Adding to successful website
+
+1 (Ghostery): (155) https://www.theepicbrowser.com
+   1 (Ghostery) https://www.theepicbrowser.com: Getting Requests
+   1 (Ghostery) https://www.theepicbrowser.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.theepicbrowser.com
+** 1 (Ghostery): Error visiting webpage -> https://www.theepicbrowser.com (NS_ERROR_NET_INTERRUPT at https://www.theepicbrowser.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (156) https://www.beyondtrust.com
+   1 (Ghostery) https://www.beyondtrust.com: Getting Requests
+   1 (Ghostery) https://www.beyondtrust.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.beyondtrust.com
+** 1 (Ghostery): TimeoutError -> https://www.beyondtrust.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (157) https://www.accessbankplc.com
+   1 (Ghostery) https://www.accessbankplc.com: Getting Requests
+   1 (Ghostery) https://www.accessbankplc.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.accessbankplc.com
+** 1 (Ghostery): TimeoutError -> https://www.accessbankplc.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+
+1 (Ghostery): (158) https://www.farmergoldfish.com
+   1 (Ghostery) https://www.farmergoldfish.com: Getting Requests
+   1 (Ghostery) https://www.farmergoldfish.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.farmergoldfish.com
+** 1 (Ghostery): Error visiting webpage -> https://www.farmergoldfish.com (NS_ERROR_UNKNOWN_HOST at https://www.farmergoldfish.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (159) https://www.azure-dns-1.cn
+   1 (Ghostery) https://www.azure-dns-1.cn: Getting Requests
+   1 (Ghostery) https://www.azure-dns-1.cn: Getting Responses
+   1 (Ghostery) : Loading new page https://www.azure-dns-1.cn
+** 1 (Ghostery): Error visiting webpage -> https://www.azure-dns-1.cn (NS_ERROR_UNKNOWN_HOST at https://www.azure-dns-1.cn)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+
+1 (Ghostery): (160) https://www.morganstanleyclientserv.com
+   1 (Ghostery) https://www.morganstanleyclientserv.com: Getting Requests
+   1 (Ghostery) https://www.morganstanleyclientserv.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.morganstanleyclientserv.com
+   1 (Ghostery) https://www.morganstanleyclientserv.com: Page loaded
+   1 (Ghostery) https://www.morganstanleyclientserv.com: Getting HTML
+   1 (Ghostery) https://www.morganstanleyclientserv.com: Getting Cookies
+   1 (Ghostery) https://www.morganstanleyclientserv.com: Getting Localstorage
+   1 (Ghostery) https://www.morganstanleyclientserv.com: Adding requests to DB
+   1 (Ghostery) https://www.morganstanleyclientserv.com: Page closed
+   1 (Ghostery) https://www.morganstanleyclientserv.com: Adding to successful website
+
+1 (Ghostery): (161) https://www.itvcita.com
+   1 (Ghostery) https://www.itvcita.com: Getting Requests
+   1 (Ghostery) https://www.itvcita.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.itvcita.com
+   1 (Ghostery) https://www.itvcita.com: Page loaded
+   1 (Ghostery) https://www.itvcita.com: Getting HTML
+   1 (Ghostery) https://www.itvcita.com: Getting Cookies
+   1 (Ghostery) https://www.itvcita.com: Getting Localstorage
+   1 (Ghostery) https://www.itvcita.com: Adding requests to DB
+   1 (Ghostery) https://www.itvcita.com: Page closed
+   1 (Ghostery) https://www.itvcita.com: Adding to successful website
+
+1 (Ghostery): (162) https://www.public.lu
+   1 (Ghostery) https://www.public.lu: Getting Requests
+   1 (Ghostery) https://www.public.lu: Getting Responses
+   1 (Ghostery) : Loading new page https://www.public.lu
+   1 (Ghostery) https://www.public.lu: Page loaded
+   1 (Ghostery) https://www.public.lu: Getting HTML
+   1 (Ghostery) https://www.public.lu: Getting Cookies
+   1 (Ghostery) https://www.public.lu: Getting Localstorage
+   1 (Ghostery) https://www.public.lu: Adding requests to DB
+   1 (Ghostery) https://www.public.lu: Page closed
+   1 (Ghostery) https://www.public.lu: Adding to successful website
+
+1 (Ghostery): (163) https://www.rokfin.com
+   1 (Ghostery) https://www.rokfin.com: Getting Requests
+   1 (Ghostery) https://www.rokfin.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.rokfin.com
+   1 (Ghostery) https://www.rokfin.com: Page loaded
+   1 (Ghostery) https://www.rokfin.com: Getting HTML
+   1 (Ghostery) https://www.rokfin.com: Getting Cookies
+   1 (Ghostery) https://www.rokfin.com: Getting Localstorage
+   1 (Ghostery) https://www.rokfin.com: Adding requests to DB
+   1 (Ghostery) https://www.rokfin.com: Page closed
+   1 (Ghostery) https://www.rokfin.com: Adding to successful website
+
+1 (Ghostery): (164) https://www.dailybruin.com
+   1 (Ghostery) https://www.dailybruin.com: Getting Requests
+   1 (Ghostery) https://www.dailybruin.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.dailybruin.com
+   1 (Ghostery) https://www.dailybruin.com: Page loaded
+   1 (Ghostery) https://www.dailybruin.com: Getting HTML
+   1 (Ghostery) https://www.dailybruin.com: Getting Cookies
+   1 (Ghostery) https://www.dailybruin.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.dailybruin.com: Adding requests to DB
+   1 (Ghostery) https://www.dailybruin.com: Page closed
+
+1 (Ghostery): (165) https://www.eukns.com
+   1 (Ghostery) https://www.eukns.com: Getting Requests
+   1 (Ghostery) https://www.eukns.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.eukns.com
+** 1 (Ghostery): Error visiting webpage -> https://www.eukns.com (NS_ERROR_UNKNOWN_HOST at https://www.eukns.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (166) https://www.dotdigital.com
+   1 (Ghostery) https://www.dotdigital.com: Getting Requests
+   1 (Ghostery) https://www.dotdigital.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.dotdigital.com
+** 1 (Ghostery): TimeoutError -> https://www.dotdigital.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (167) https://www.kbcbank.bg
+   1 (Ghostery) https://www.kbcbank.bg: Getting Requests
+   1 (Ghostery) https://www.kbcbank.bg: Getting Responses
+   1 (Ghostery) : Loading new page https://www.kbcbank.bg
+   1 (Ghostery) https://www.kbcbank.bg: Page loaded
+   1 (Ghostery) https://www.kbcbank.bg: Getting HTML
+   1 (Ghostery) https://www.kbcbank.bg: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.kbcbank.bg: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.kbcbank.bg: Adding requests to DB
+   1 (Ghostery) https://www.kbcbank.bg: Page closed
+
+1 (Ghostery): (168) https://www.avilex.ru
+   1 (Ghostery) https://www.avilex.ru: Getting Requests
+   1 (Ghostery) https://www.avilex.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.avilex.ru
+** 1 (Ghostery): TimeoutError -> https://www.avilex.ru
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+
+1 (Ghostery): (169) https://www.gazsvyaz.ru
+   1 (Ghostery) https://www.gazsvyaz.ru: Getting Requests
+   1 (Ghostery) https://www.gazsvyaz.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.gazsvyaz.ru
+** 1 (Ghostery): Error visiting webpage -> https://www.gazsvyaz.ru (SSL_ERROR_BAD_CERT_DOMAIN at https://www.gazsvyaz.ru)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (170) https://www.centegix.com
+   1 (Ghostery) https://www.centegix.com: Getting Requests
+   1 (Ghostery) https://www.centegix.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.centegix.com
+   1 (Ghostery) https://www.centegix.com: Page loaded
+   1 (Ghostery) https://www.centegix.com: Getting HTML
+   1 (Ghostery) https://www.centegix.com: Getting Cookies
+   1 (Ghostery) https://www.centegix.com: Getting Localstorage
+   1 (Ghostery) https://www.centegix.com: Adding requests to DB
+   1 (Ghostery) https://www.centegix.com: Page closed
+   1 (Ghostery) https://www.centegix.com: Adding to successful website
+
+1 (Ghostery): (171) https://www.payeer.com
+   1 (Ghostery) https://www.payeer.com: Getting Requests
+   1 (Ghostery) https://www.payeer.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.payeer.com
+   1 (Ghostery) https://www.payeer.com: Page loaded
+   1 (Ghostery) https://www.payeer.com: Getting HTML
+   1 (Ghostery) https://www.payeer.com: Getting Cookies
+   1 (Ghostery) https://www.payeer.com: Getting Localstorage
+   1 (Ghostery) https://www.payeer.com: Adding requests to DB
+   1 (Ghostery) https://www.payeer.com: Page closed
+   1 (Ghostery) https://www.payeer.com: Adding to successful website
+
+1 (Ghostery): (172) https://www.elperiodicodelaenergia.com
+   1 (Ghostery) https://www.elperiodicodelaenergia.com: Getting Requests
+   1 (Ghostery) https://www.elperiodicodelaenergia.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.elperiodicodelaenergia.com
+page closed, returning from page.on('response').
+** 1 (Ghostery): TimeoutError -> https://www.elperiodicodelaenergia.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (173) https://www.groupda.link
+   1 (Ghostery) https://www.groupda.link: Getting Requests
+   1 (Ghostery) https://www.groupda.link: Getting Responses
+   1 (Ghostery) : Loading new page https://www.groupda.link
+   1 (Ghostery) https://www.groupda.link: Page loaded
+   1 (Ghostery) https://www.groupda.link: Getting HTML
+   1 (Ghostery) https://www.groupda.link: Getting Cookies
+   1 (Ghostery) https://www.groupda.link: Getting Localstorage
+   1 (Ghostery) https://www.groupda.link: Adding requests to DB
+   1 (Ghostery) https://www.groupda.link: Page closed
+   1 (Ghostery) https://www.groupda.link: Adding to successful website
+
+1 (Ghostery): (174) https://www.hostingpalvelu.fi
+   1 (Ghostery) https://www.hostingpalvelu.fi: Getting Requests
+   1 (Ghostery) https://www.hostingpalvelu.fi: Getting Responses
+   1 (Ghostery) : Loading new page https://www.hostingpalvelu.fi
+   1 (Ghostery) https://www.hostingpalvelu.fi: Page loaded
+   1 (Ghostery) https://www.hostingpalvelu.fi: Getting HTML
+   1 (Ghostery) https://www.hostingpalvelu.fi: Getting Cookies
+   1 (Ghostery) https://www.hostingpalvelu.fi: Getting Localstorage
+   1 (Ghostery) https://www.hostingpalvelu.fi: Adding requests to DB
+   1 (Ghostery) https://www.hostingpalvelu.fi: Page closed
+   1 (Ghostery) https://www.hostingpalvelu.fi: Adding to successful website
+page closed, returning from page.on('response').
+
+1 (Ghostery): (175) https://www.letsdoeit.com
+   1 (Ghostery) https://www.letsdoeit.com: Getting Requests
+   1 (Ghostery) https://www.letsdoeit.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.letsdoeit.com
+   1 (Ghostery) https://www.letsdoeit.com: Page loaded
+   1 (Ghostery) https://www.letsdoeit.com: Getting HTML
+   1 (Ghostery) https://www.letsdoeit.com: Getting Cookies
+   1 (Ghostery) https://www.letsdoeit.com: Getting Localstorage
+   1 (Ghostery) https://www.letsdoeit.com: Adding requests to DB
+   1 (Ghostery) https://www.letsdoeit.com: Page closed
+   1 (Ghostery) https://www.letsdoeit.com: Adding to successful website
+
+1 (Ghostery): (176) https://www.everhelper.me
+   1 (Ghostery) https://www.everhelper.me: Getting Requests
+   1 (Ghostery) https://www.everhelper.me: Getting Responses
+   1 (Ghostery) : Loading new page https://www.everhelper.me
+   1 (Ghostery) https://www.everhelper.me: Page loaded
+   1 (Ghostery) https://www.everhelper.me: Getting HTML
+   1 (Ghostery) https://www.everhelper.me: Getting Cookies
+   1 (Ghostery) https://www.everhelper.me: Getting Localstorage
+   1 (Ghostery) https://www.everhelper.me: Adding requests to DB
+   1 (Ghostery) https://www.everhelper.me: Page closed
+   1 (Ghostery) https://www.everhelper.me: Adding to successful website
+
+1 (Ghostery): (177) https://www.d-zone.ca
+   1 (Ghostery) https://www.d-zone.ca: Getting Requests
+   1 (Ghostery) https://www.d-zone.ca: Getting Responses
+   1 (Ghostery) : Loading new page https://www.d-zone.ca
+   1 (Ghostery) https://www.d-zone.ca: Page loaded
+   1 (Ghostery) https://www.d-zone.ca: Getting HTML
+   1 (Ghostery) https://www.d-zone.ca: Getting Cookies
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.d-zone.ca: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.d-zone.ca: Adding requests to DB
+   1 (Ghostery) https://www.d-zone.ca: Page closed
+
+1 (Ghostery): (178) https://www.maam.ru
+   1 (Ghostery) https://www.maam.ru: Getting Requests
+   1 (Ghostery) https://www.maam.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.maam.ru
+   1 (Ghostery) https://www.maam.ru: Page loaded
+   1 (Ghostery) https://www.maam.ru: Getting HTML
+   1 (Ghostery) https://www.maam.ru: Getting Cookies
+   1 (Ghostery) https://www.maam.ru: Getting Localstorage
+   1 (Ghostery) https://www.maam.ru: Adding requests to DB
+   1 (Ghostery) https://www.maam.ru: Page closed
+   1 (Ghostery) https://www.maam.ru: Adding to successful website
+
+1 (Ghostery): (179) https://www.zakon.ru
+   1 (Ghostery) https://www.zakon.ru: Getting Requests
+   1 (Ghostery) https://www.zakon.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.zakon.ru
+   1 (Ghostery) https://www.zakon.ru: Page loaded
+   1 (Ghostery) https://www.zakon.ru: Getting HTML
+   1 (Ghostery) https://www.zakon.ru: Getting Cookies
+   1 (Ghostery) https://www.zakon.ru: Getting Localstorage
+   1 (Ghostery) https://www.zakon.ru: Adding requests to DB
+   1 (Ghostery) https://www.zakon.ru: Page closed
+   1 (Ghostery) https://www.zakon.ru: Adding to successful website
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+
+1 (Ghostery): (180) https://www.myteksi.net
+   1 (Ghostery) https://www.myteksi.net: Getting Requests
+   1 (Ghostery) https://www.myteksi.net: Getting Responses
+   1 (Ghostery) : Loading new page https://www.myteksi.net
+** 1 (Ghostery): Error visiting webpage -> https://www.myteksi.net (NS_ERROR_UNKNOWN_HOST at https://www.myteksi.net)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (181) https://www.choosealicense.com
+   1 (Ghostery) https://www.choosealicense.com: Getting Requests
+   1 (Ghostery) https://www.choosealicense.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.choosealicense.com
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.choosealicense.com: Page loaded
+   1 (Ghostery) https://www.choosealicense.com: Getting HTML
+   1 (Ghostery) https://www.choosealicense.com: Getting Cookies
+   1 (Ghostery) https://www.choosealicense.com: Getting Localstorage
+   1 (Ghostery) https://www.choosealicense.com: Adding requests to DB
+   1 (Ghostery) https://www.choosealicense.com: Page closed
+   1 (Ghostery) https://www.choosealicense.com: Adding to successful website
+
+1 (Ghostery): (182) https://www.scnow.com
+   1 (Ghostery) https://www.scnow.com: Getting Requests
+   1 (Ghostery) https://www.scnow.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.scnow.com
+** 1 (Ghostery): TimeoutError -> https://www.scnow.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (183) https://www.vidmateapp.store
+   1 (Ghostery) https://www.vidmateapp.store: Getting Requests
+   1 (Ghostery) https://www.vidmateapp.store: Getting Responses
+   1 (Ghostery) : Loading new page https://www.vidmateapp.store
+** 1 (Ghostery): Error visiting webpage -> https://www.vidmateapp.store (NS_ERROR_UNKNOWN_HOST at https://www.vidmateapp.store)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (184) https://www.ereplacementparts.com
+   1 (Ghostery) https://www.ereplacementparts.com: Getting Requests
+   1 (Ghostery) https://www.ereplacementparts.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.ereplacementparts.com
+   1 (Ghostery) https://www.ereplacementparts.com: Page loaded
+   1 (Ghostery) https://www.ereplacementparts.com: Getting HTML
+   1 (Ghostery) https://www.ereplacementparts.com: Getting Cookies
+   1 (Ghostery) https://www.ereplacementparts.com: Getting Localstorage
+   1 (Ghostery) https://www.ereplacementparts.com: Adding requests to DB
+   1 (Ghostery) https://www.ereplacementparts.com: Page closed
+   1 (Ghostery) https://www.ereplacementparts.com: Adding to successful website
+
+1 (Ghostery): (185) https://www.g-pra.com
+   1 (Ghostery) https://www.g-pra.com: Getting Requests
+   1 (Ghostery) https://www.g-pra.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.g-pra.com
+** 1 (Ghostery): Error visiting webpage -> https://www.g-pra.com (SSL_ERROR_UNKNOWN at https://www.g-pra.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (186) https://www.nintendo.it
+   1 (Ghostery) https://www.nintendo.it: Getting Requests
+   1 (Ghostery) https://www.nintendo.it: Getting Responses
+   1 (Ghostery) : Loading new page https://www.nintendo.it
+   1 (Ghostery) https://www.nintendo.it: Page loaded
+   1 (Ghostery) https://www.nintendo.it: Getting HTML
+   1 (Ghostery) https://www.nintendo.it: Getting Cookies
+   1 (Ghostery) https://www.nintendo.it: Getting Localstorage
+   1 (Ghostery) https://www.nintendo.it: Adding requests to DB
+   1 (Ghostery) https://www.nintendo.it: Page closed
+   1 (Ghostery) https://www.nintendo.it: Adding to successful website
+
+1 (Ghostery): (187) https://www.beammp.com
+   1 (Ghostery) https://www.beammp.com: Getting Requests
+   1 (Ghostery) https://www.beammp.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.beammp.com
+   1 (Ghostery) https://www.beammp.com: Page loaded
+   1 (Ghostery) https://www.beammp.com: Getting HTML
+   1 (Ghostery) https://www.beammp.com: Getting Cookies
+   1 (Ghostery) https://www.beammp.com: Getting Localstorage
+   1 (Ghostery) https://www.beammp.com: Adding requests to DB
+   1 (Ghostery) https://www.beammp.com: Page closed
+   1 (Ghostery) https://www.beammp.com: Adding to successful website
+
+1 (Ghostery): (188) https://www.deutsch-franzoesischer-interrail-pass.de
+   1 (Ghostery) https://www.deutsch-franzoesischer-interrail-pass.de: Getting Requests
+   1 (Ghostery) https://www.deutsch-franzoesischer-interrail-pass.de: Getting Responses
+   1 (Ghostery) : Loading new page https://www.deutsch-franzoesischer-interrail-pass.de
+   1 (Ghostery) https://www.deutsch-franzoesischer-interrail-pass.de: Page loaded
+   1 (Ghostery) https://www.deutsch-franzoesischer-interrail-pass.de: Getting HTML
+   1 (Ghostery) https://www.deutsch-franzoesischer-interrail-pass.de: Getting Cookies
+   1 (Ghostery) https://www.deutsch-franzoesischer-interrail-pass.de: Getting Localstorage
+   1 (Ghostery) https://www.deutsch-franzoesischer-interrail-pass.de: Adding requests to DB
+   1 (Ghostery) https://www.deutsch-franzoesischer-interrail-pass.de: Page closed
+   1 (Ghostery) https://www.deutsch-franzoesischer-interrail-pass.de: Adding to successful website
+
+1 (Ghostery): (189) https://www.writeablog.net
+   1 (Ghostery) https://www.writeablog.net: Getting Requests
+   1 (Ghostery) https://www.writeablog.net: Getting Responses
+   1 (Ghostery) : Loading new page https://www.writeablog.net
+** 1 (Ghostery): Error visiting webpage -> https://www.writeablog.net (NS_ERROR_UNKNOWN_HOST at https://www.writeablog.net)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (190) https://www.freshdirect.com
+   1 (Ghostery) https://www.freshdirect.com: Getting Requests
+   1 (Ghostery) https://www.freshdirect.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.freshdirect.com
+** 1 (Ghostery): TimeoutError -> https://www.freshdirect.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+
+1 (Ghostery): (191) https://www.cesoirtv.com
+   1 (Ghostery) https://www.cesoirtv.com: Getting Requests
+   1 (Ghostery) https://www.cesoirtv.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.cesoirtv.com
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.cesoirtv.com: Page loaded
+   1 (Ghostery) https://www.cesoirtv.com: Getting HTML
+   1 (Ghostery) https://www.cesoirtv.com: Getting Cookies
+   1 (Ghostery) https://www.cesoirtv.com: Getting Localstorage
+   1 (Ghostery) https://www.cesoirtv.com: Adding requests to DB
+   1 (Ghostery) https://www.cesoirtv.com: Page closed
+   1 (Ghostery) https://www.cesoirtv.com: Adding to successful website
+
+1 (Ghostery): (192) https://www.athome.co.jp
+   1 (Ghostery) https://www.athome.co.jp: Getting Requests
+   1 (Ghostery) https://www.athome.co.jp: Getting Responses
+   1 (Ghostery) : Loading new page https://www.athome.co.jp
+** 1 (Ghostery): TimeoutError -> https://www.athome.co.jp
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (193) https://www.batchgeo.com
+   1 (Ghostery) https://www.batchgeo.com: Getting Requests
+   1 (Ghostery) https://www.batchgeo.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.batchgeo.com
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.batchgeo.com: Page loaded
+   1 (Ghostery) https://www.batchgeo.com: Getting HTML
+   1 (Ghostery) https://www.batchgeo.com: Getting Cookies
+   1 (Ghostery) https://www.batchgeo.com: Getting Localstorage
+   1 (Ghostery) https://www.batchgeo.com: Adding requests to DB
+   1 (Ghostery) https://www.batchgeo.com: Page closed
+   1 (Ghostery) https://www.batchgeo.com: Adding to successful website
+
+1 (Ghostery): (194) https://www.koumbit.net
+   1 (Ghostery) https://www.koumbit.net: Getting Requests
+   1 (Ghostery) https://www.koumbit.net: Getting Responses
+   1 (Ghostery) : Loading new page https://www.koumbit.net
+** 1 (Ghostery): Error visiting webpage -> https://www.koumbit.net (SSL_ERROR_BAD_CERT_DOMAIN at https://www.koumbit.net)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (195) https://www.asagei.com
+   1 (Ghostery) https://www.asagei.com: Getting Requests
+   1 (Ghostery) https://www.asagei.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.asagei.com
+** 1 (Ghostery): TimeoutError -> https://www.asagei.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (196) https://www.sdncommunications.com
+   1 (Ghostery) https://www.sdncommunications.com: Getting Requests
+   1 (Ghostery) https://www.sdncommunications.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.sdncommunications.com
+** 1 (Ghostery): TimeoutError -> https://www.sdncommunications.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (197) https://www.olimpica.com
+   1 (Ghostery) https://www.olimpica.com: Getting Requests
+   1 (Ghostery) https://www.olimpica.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.olimpica.com
+   1 (Ghostery) https://www.olimpica.com: Page loaded
+   1 (Ghostery) https://www.olimpica.com: Getting HTML
+   1 (Ghostery) https://www.olimpica.com: Getting Cookies
+   1 (Ghostery) https://www.olimpica.com: Getting Localstorage
+   1 (Ghostery) https://www.olimpica.com: Adding requests to DB
+   1 (Ghostery) https://www.olimpica.com: Page closed
+   1 (Ghostery) https://www.olimpica.com: Adding to successful website
+
+1 (Ghostery): (198) https://www.clickfunnels.com
+   1 (Ghostery) https://www.clickfunnels.com: Getting Requests
+   1 (Ghostery) https://www.clickfunnels.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.clickfunnels.com
+** 1 (Ghostery): TimeoutError -> https://www.clickfunnels.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (199) https://www.atleticodemadrid.com
+   1 (Ghostery) https://www.atleticodemadrid.com: Getting Requests
+   1 (Ghostery) https://www.atleticodemadrid.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.atleticodemadrid.com
+   1 (Ghostery) https://www.atleticodemadrid.com: Page loaded
+   1 (Ghostery) https://www.atleticodemadrid.com: Getting HTML
+   1 (Ghostery) https://www.atleticodemadrid.com: Getting Cookies
+   1 (Ghostery) https://www.atleticodemadrid.com: Getting Localstorage
+   1 (Ghostery) https://www.atleticodemadrid.com: Adding requests to DB
+   1 (Ghostery) https://www.atleticodemadrid.com: Page closed
+   1 (Ghostery) https://www.atleticodemadrid.com: Adding to successful website
+
+1 (Ghostery): (200) https://www.nomachine.com
+   1 (Ghostery) https://www.nomachine.com: Getting Requests
+   1 (Ghostery) https://www.nomachine.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.nomachine.com
+   1 (Ghostery) https://www.nomachine.com: Page loaded
+   1 (Ghostery) https://www.nomachine.com: Getting HTML
+   1 (Ghostery) https://www.nomachine.com: Getting Cookies
+   1 (Ghostery) https://www.nomachine.com: Getting Localstorage
+   1 (Ghostery) https://www.nomachine.com: Adding requests to DB
+   1 (Ghostery) https://www.nomachine.com: Page closed
+   1 (Ghostery) https://www.nomachine.com: Adding to successful website
+
+1 (Ghostery): (201) https://www.bizon365.ru
+   1 (Ghostery) https://www.bizon365.ru: Getting Requests
+   1 (Ghostery) https://www.bizon365.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.bizon365.ru
+** 1 (Ghostery): Error visiting webpage -> https://www.bizon365.ru (SSL_ERROR_BAD_CERT_DOMAIN at https://www.bizon365.ru)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (202) https://www.anilibria.tv
+   1 (Ghostery) https://www.anilibria.tv: Getting Requests
+   1 (Ghostery) https://www.anilibria.tv: Getting Responses
+   1 (Ghostery) : Loading new page https://www.anilibria.tv
+   1 (Ghostery) https://www.anilibria.tv: Page loaded
+   1 (Ghostery) https://www.anilibria.tv: Getting HTML
+   1 (Ghostery) https://www.anilibria.tv: Getting Cookies
+   1 (Ghostery) https://www.anilibria.tv: Getting Localstorage
+   1 (Ghostery) https://www.anilibria.tv: Adding requests to DB
+   1 (Ghostery) https://www.anilibria.tv: Page closed
+   1 (Ghostery) https://www.anilibria.tv: Adding to successful website
+
+1 (Ghostery): (203) https://www.freemeteo.com.hr
+   1 (Ghostery) https://www.freemeteo.com.hr: Getting Requests
+   1 (Ghostery) https://www.freemeteo.com.hr: Getting Responses
+   1 (Ghostery) : Loading new page https://www.freemeteo.com.hr
+** 1 (Ghostery): Error visiting webpage -> https://www.freemeteo.com.hr (SSL_ERROR_BAD_CERT_DOMAIN at https://www.freemeteo.com.hr)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (204) https://www.lucidchart.com
+   1 (Ghostery) https://www.lucidchart.com: Getting Requests
+   1 (Ghostery) https://www.lucidchart.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.lucidchart.com
+** 1 (Ghostery): TimeoutError -> https://www.lucidchart.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (205) https://www.brazil999.co
+   1 (Ghostery) https://www.brazil999.co: Getting Requests
+   1 (Ghostery) https://www.brazil999.co: Getting Responses
+   1 (Ghostery) : Loading new page https://www.brazil999.co
+   1 (Ghostery) https://www.brazil999.co: Page loaded
+   1 (Ghostery) https://www.brazil999.co: Getting HTML
+   1 (Ghostery) https://www.brazil999.co: Getting Cookies
+   1 (Ghostery) https://www.brazil999.co: Getting Localstorage
+   1 (Ghostery) https://www.brazil999.co: Adding requests to DB
+   1 (Ghostery) https://www.brazil999.co: Page closed
+   1 (Ghostery) https://www.brazil999.co: Adding to successful website
+page closed, returning from page.on('response').
+
+1 (Ghostery): (206) https://www.marsdd.com
+   1 (Ghostery) https://www.marsdd.com: Getting Requests
+   1 (Ghostery) https://www.marsdd.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.marsdd.com
+** 1 (Ghostery): TimeoutError -> https://www.marsdd.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (207) https://www.pagesix.com
+   1 (Ghostery) https://www.pagesix.com: Getting Requests
+   1 (Ghostery) https://www.pagesix.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.pagesix.com
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+** 1 (Ghostery): TimeoutError -> https://www.pagesix.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+
+1 (Ghostery): (208) https://www.hunqz.com
+   1 (Ghostery) https://www.hunqz.com: Getting Requests
+   1 (Ghostery) https://www.hunqz.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.hunqz.com
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.hunqz.com: Page loaded
+   1 (Ghostery) https://www.hunqz.com: Getting HTML
+   1 (Ghostery) https://www.hunqz.com: Getting Cookies
+   1 (Ghostery) https://www.hunqz.com: Getting Localstorage
+   1 (Ghostery) https://www.hunqz.com: Adding requests to DB
+   1 (Ghostery) https://www.hunqz.com: Page closed
+   1 (Ghostery) https://www.hunqz.com: Adding to successful website
+
+1 (Ghostery): (209) https://www.scandit.com
+   1 (Ghostery) https://www.scandit.com: Getting Requests
+   1 (Ghostery) https://www.scandit.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.scandit.com
+   1 (Ghostery) https://www.scandit.com: Page loaded
+   1 (Ghostery) https://www.scandit.com: Getting HTML
+   1 (Ghostery) https://www.scandit.com: Getting Cookies
+   1 (Ghostery) https://www.scandit.com: Getting Localstorage
+   1 (Ghostery) https://www.scandit.com: Adding requests to DB
+   1 (Ghostery) https://www.scandit.com: Page closed
+   1 (Ghostery) https://www.scandit.com: Adding to successful website
+
+1 (Ghostery): (210) https://www.repelis24.rs
+   1 (Ghostery) https://www.repelis24.rs: Getting Requests
+   1 (Ghostery) https://www.repelis24.rs: Getting Responses
+   1 (Ghostery) : Loading new page https://www.repelis24.rs
+   1 (Ghostery) https://www.repelis24.rs: Page loaded
+   1 (Ghostery) https://www.repelis24.rs: Getting HTML
+   1 (Ghostery) https://www.repelis24.rs: Getting Cookies
+   1 (Ghostery) https://www.repelis24.rs: Getting Localstorage
+   1 (Ghostery) https://www.repelis24.rs: Adding requests to DB
+   1 (Ghostery) https://www.repelis24.rs: Page closed
+   1 (Ghostery) https://www.repelis24.rs: Adding to successful website
+
+1 (Ghostery): (211) https://www.frontiertouring.com
+   1 (Ghostery) https://www.frontiertouring.com: Getting Requests
+   1 (Ghostery) https://www.frontiertouring.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.frontiertouring.com
+   1 (Ghostery) https://www.frontiertouring.com: Page loaded
+   1 (Ghostery) https://www.frontiertouring.com: Getting HTML
+   1 (Ghostery) https://www.frontiertouring.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.frontiertouring.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.frontiertouring.com: Adding requests to DB
+   1 (Ghostery) https://www.frontiertouring.com: Page closed
+
+1 (Ghostery): (212) https://www.onlamp.com
+   1 (Ghostery) https://www.onlamp.com: Getting Requests
+   1 (Ghostery) https://www.onlamp.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.onlamp.com
+** 1 (Ghostery): Error visiting webpage -> https://www.onlamp.com (SSL_ERROR_BAD_CERT_DOMAIN at https://www.onlamp.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (213) https://www.clerk.services
+   1 (Ghostery) https://www.clerk.services: Getting Requests
+   1 (Ghostery) https://www.clerk.services: Getting Responses
+   1 (Ghostery) : Loading new page https://www.clerk.services
+** 1 (Ghostery): Error visiting webpage -> https://www.clerk.services (NS_ERROR_UNKNOWN_HOST at https://www.clerk.services)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (214) https://www.solusi.net.id
+   1 (Ghostery) https://www.solusi.net.id: Getting Requests
+   1 (Ghostery) https://www.solusi.net.id: Getting Responses
+   1 (Ghostery) : Loading new page https://www.solusi.net.id
+** 1 (Ghostery): Error visiting webpage -> https://www.solusi.net.id (NS_ERROR_UNKNOWN_HOST at https://www.solusi.net.id)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (215) https://www.buffalowildwings.com
+   1 (Ghostery) https://www.buffalowildwings.com: Getting Requests
+   1 (Ghostery) https://www.buffalowildwings.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.buffalowildwings.com
+** 1 (Ghostery): TimeoutError -> https://www.buffalowildwings.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (216) https://www.hs-hannover.de
+   1 (Ghostery) https://www.hs-hannover.de: Getting Requests
+   1 (Ghostery) https://www.hs-hannover.de: Getting Responses
+   1 (Ghostery) : Loading new page https://www.hs-hannover.de
+   1 (Ghostery) https://www.hs-hannover.de: Page loaded
+   1 (Ghostery) https://www.hs-hannover.de: Getting HTML
+   1 (Ghostery) https://www.hs-hannover.de: Getting Cookies
+   1 (Ghostery) https://www.hs-hannover.de: Getting Localstorage
+   1 (Ghostery) https://www.hs-hannover.de: Adding requests to DB
+   1 (Ghostery) https://www.hs-hannover.de: Page closed
+   1 (Ghostery) https://www.hs-hannover.de: Adding to successful website
+
+1 (Ghostery): (217) https://www.ajakteman.com
+   1 (Ghostery) https://www.ajakteman.com: Getting Requests
+   1 (Ghostery) https://www.ajakteman.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.ajakteman.com
+   1 (Ghostery) https://www.ajakteman.com: Page loaded
+   1 (Ghostery) https://www.ajakteman.com: Getting HTML
+   1 (Ghostery) https://www.ajakteman.com: Getting Cookies
+   1 (Ghostery) https://www.ajakteman.com: Getting Localstorage
+   1 (Ghostery) https://www.ajakteman.com: Adding requests to DB
+   1 (Ghostery) https://www.ajakteman.com: Page closed
+   1 (Ghostery) https://www.ajakteman.com: Adding to successful website
+
+1 (Ghostery): (218) https://www.uncw.edu
+   1 (Ghostery) https://www.uncw.edu: Getting Requests
+   1 (Ghostery) https://www.uncw.edu: Getting Responses
+   1 (Ghostery) : Loading new page https://www.uncw.edu
+** 1 (Ghostery): TimeoutError -> https://www.uncw.edu
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (219) https://www.willyweather.com.au
+   1 (Ghostery) https://www.willyweather.com.au: Getting Requests
+   1 (Ghostery) https://www.willyweather.com.au: Getting Responses
+   1 (Ghostery) : Loading new page https://www.willyweather.com.au
+   1 (Ghostery) https://www.willyweather.com.au: Page loaded
+   1 (Ghostery) https://www.willyweather.com.au: Getting HTML
+   1 (Ghostery) https://www.willyweather.com.au: Getting Cookies
+   1 (Ghostery) https://www.willyweather.com.au: Getting Localstorage
+   1 (Ghostery) https://www.willyweather.com.au: Adding requests to DB
+   1 (Ghostery) https://www.willyweather.com.au: Page closed
+   1 (Ghostery) https://www.willyweather.com.au: Adding to successful website
+
+1 (Ghostery): (220) https://www.laxativepermissiblesensation.com
+   1 (Ghostery) https://www.laxativepermissiblesensation.com: Getting Requests
+   1 (Ghostery) https://www.laxativepermissiblesensation.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.laxativepermissiblesensation.com
+** 1 (Ghostery): TimeoutError -> https://www.laxativepermissiblesensation.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (221) https://www.lovepanky.com
+   1 (Ghostery) https://www.lovepanky.com: Getting Requests
+   1 (Ghostery) https://www.lovepanky.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.lovepanky.com
+   1 (Ghostery) https://www.lovepanky.com: Page loaded
+   1 (Ghostery) https://www.lovepanky.com: Getting HTML
+   1 (Ghostery) https://www.lovepanky.com: Getting Cookies
+   1 (Ghostery) https://www.lovepanky.com: Getting Localstorage
+   1 (Ghostery) https://www.lovepanky.com: Adding requests to DB
+   1 (Ghostery) https://www.lovepanky.com: Page closed
+   1 (Ghostery) https://www.lovepanky.com: Adding to successful website
+page closed, returning from page.on('response').
+
+1 (Ghostery): (222) https://www.film2movie.asia
+   1 (Ghostery) https://www.film2movie.asia: Getting Requests
+   1 (Ghostery) https://www.film2movie.asia: Getting Responses
+   1 (Ghostery) : Loading new page https://www.film2movie.asia
+   1 (Ghostery) https://www.film2movie.asia: Page loaded
+   1 (Ghostery) https://www.film2movie.asia: Getting HTML
+   1 (Ghostery) https://www.film2movie.asia: Getting Cookies
+   1 (Ghostery) https://www.film2movie.asia: Getting Localstorage
+   1 (Ghostery) https://www.film2movie.asia: Adding requests to DB
+   1 (Ghostery) https://www.film2movie.asia: Page closed
+   1 (Ghostery) https://www.film2movie.asia: Adding to successful website
+
+1 (Ghostery): (223) https://www.mppeb.org
+   1 (Ghostery) https://www.mppeb.org: Getting Requests
+   1 (Ghostery) https://www.mppeb.org: Getting Responses
+   1 (Ghostery) : Loading new page https://www.mppeb.org
+   1 (Ghostery) https://www.mppeb.org: Page loaded
+   1 (Ghostery) https://www.mppeb.org: Getting HTML
+   1 (Ghostery) https://www.mppeb.org: Getting Cookies
+   1 (Ghostery) https://www.mppeb.org: Getting Localstorage
+   1 (Ghostery) https://www.mppeb.org: Adding requests to DB
+   1 (Ghostery) https://www.mppeb.org: Page closed
+   1 (Ghostery) https://www.mppeb.org: Adding to successful website
+
+1 (Ghostery): (224) https://www.servarr.com
+   1 (Ghostery) https://www.servarr.com: Getting Requests
+   1 (Ghostery) https://www.servarr.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.servarr.com
+** 1 (Ghostery): Error visiting webpage -> https://www.servarr.com (NS_ERROR_UNKNOWN_HOST at https://www.servarr.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (225) https://www.pkp.pl
+   1 (Ghostery) https://www.pkp.pl: Getting Requests
+   1 (Ghostery) https://www.pkp.pl: Getting Responses
+   1 (Ghostery) : Loading new page https://www.pkp.pl
+** 1 (Ghostery): TimeoutError -> https://www.pkp.pl
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (226) https://www.143loveme.com
+   1 (Ghostery) https://www.143loveme.com: Getting Requests
+   1 (Ghostery) https://www.143loveme.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.143loveme.com
+** 1 (Ghostery): Error visiting webpage -> https://www.143loveme.com (SSL_ERROR_BAD_CERT_DOMAIN at https://www.143loveme.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (227) https://www.asiaone.com
+   1 (Ghostery) https://www.asiaone.com: Getting Requests
+   1 (Ghostery) https://www.asiaone.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.asiaone.com
+   1 (Ghostery) https://www.asiaone.com: Page loaded
+   1 (Ghostery) https://www.asiaone.com: Getting HTML
+   1 (Ghostery) https://www.asiaone.com: Getting Cookies
+   1 (Ghostery) https://www.asiaone.com: Getting Localstorage
+   1 (Ghostery) https://www.asiaone.com: Adding requests to DB
+   1 (Ghostery) https://www.asiaone.com: Page closed
+   1 (Ghostery) https://www.asiaone.com: Adding to successful website
+
+1 (Ghostery): (228) https://www.za-dns.com
+   1 (Ghostery) https://www.za-dns.com: Getting Requests
+   1 (Ghostery) https://www.za-dns.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.za-dns.com
+   1 (Ghostery) https://www.za-dns.com: Page loaded
+   1 (Ghostery) https://www.za-dns.com: Getting HTML
+   1 (Ghostery) https://www.za-dns.com: Getting Cookies
+   1 (Ghostery) https://www.za-dns.com: Getting Localstorage
+   1 (Ghostery) https://www.za-dns.com: Adding requests to DB
+   1 (Ghostery) https://www.za-dns.com: Page closed
+   1 (Ghostery) https://www.za-dns.com: Adding to successful website
+
+1 (Ghostery): (229) https://www.opengameart.org
+   1 (Ghostery) https://www.opengameart.org: Getting Requests
+   1 (Ghostery) https://www.opengameart.org: Getting Responses
+   1 (Ghostery) : Loading new page https://www.opengameart.org
+   1 (Ghostery) https://www.opengameart.org: Page loaded
+   1 (Ghostery) https://www.opengameart.org: Getting HTML
+   1 (Ghostery) https://www.opengameart.org: Getting Cookies
+   1 (Ghostery) https://www.opengameart.org: Getting Localstorage
+   1 (Ghostery) https://www.opengameart.org: Adding requests to DB
+   1 (Ghostery) https://www.opengameart.org: Page closed
+   1 (Ghostery) https://www.opengameart.org: Adding to successful website
+
+1 (Ghostery): (230) https://www.healio.com
+   1 (Ghostery) https://www.healio.com: Getting Requests
+   1 (Ghostery) https://www.healio.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.healio.com
+   1 (Ghostery) https://www.healio.com: Page loaded
+   1 (Ghostery) https://www.healio.com: Getting HTML
+   1 (Ghostery) https://www.healio.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.healio.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.healio.com: Adding requests to DB
+   1 (Ghostery) https://www.healio.com: Page closed
+
+1 (Ghostery): (231) https://www.d20pfsrd.com
+   1 (Ghostery) https://www.d20pfsrd.com: Getting Requests
+   1 (Ghostery) https://www.d20pfsrd.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.d20pfsrd.com
+   1 (Ghostery) https://www.d20pfsrd.com: Page loaded
+   1 (Ghostery) https://www.d20pfsrd.com: Getting HTML
+   1 (Ghostery) https://www.d20pfsrd.com: Getting Cookies
+   1 (Ghostery) https://www.d20pfsrd.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.d20pfsrd.com: Adding requests to DB
+   1 (Ghostery) https://www.d20pfsrd.com: Page closed
+
+1 (Ghostery): (232) https://www.adventive.com
+   1 (Ghostery) https://www.adventive.com: Getting Requests
+   1 (Ghostery) https://www.adventive.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.adventive.com
+   1 (Ghostery) https://www.adventive.com: Page loaded
+   1 (Ghostery) https://www.adventive.com: Getting HTML
+   1 (Ghostery) https://www.adventive.com: Getting Cookies
+   1 (Ghostery) https://www.adventive.com: Getting Localstorage
+   1 (Ghostery) https://www.adventive.com: Adding requests to DB
+   1 (Ghostery) https://www.adventive.com: Page closed
+   1 (Ghostery) https://www.adventive.com: Adding to successful website
+page closed, returning from page.on('response').
+
+1 (Ghostery): (233) https://www.awsdns-05.com
+   1 (Ghostery) https://www.awsdns-05.com: Getting Requests
+   1 (Ghostery) https://www.awsdns-05.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.awsdns-05.com
+** 1 (Ghostery): Error visiting webpage -> https://www.awsdns-05.com (NS_ERROR_UNKNOWN_HOST at https://www.awsdns-05.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (234) https://www.bsu.by
+   1 (Ghostery) https://www.bsu.by: Getting Requests
+   1 (Ghostery) https://www.bsu.by: Getting Responses
+   1 (Ghostery) : Loading new page https://www.bsu.by
+** 1 (Ghostery): TimeoutError -> https://www.bsu.by
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (235) https://www.teleamazonas.com
+   1 (Ghostery) https://www.teleamazonas.com: Getting Requests
+   1 (Ghostery) https://www.teleamazonas.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.teleamazonas.com
+   1 (Ghostery) https://www.teleamazonas.com: Page loaded
+   1 (Ghostery) https://www.teleamazonas.com: Getting HTML
+   1 (Ghostery) https://www.teleamazonas.com: Getting Cookies
+   1 (Ghostery) https://www.teleamazonas.com: Getting Localstorage
+   1 (Ghostery) https://www.teleamazonas.com: Adding requests to DB
+   1 (Ghostery) https://www.teleamazonas.com: Page closed
+   1 (Ghostery) https://www.teleamazonas.com: Adding to successful website
+
+1 (Ghostery): (236) https://www.egger.com
+   1 (Ghostery) https://www.egger.com: Getting Requests
+   1 (Ghostery) https://www.egger.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.egger.com
+   1 (Ghostery) https://www.egger.com: Page loaded
+   1 (Ghostery) https://www.egger.com: Getting HTML
+   1 (Ghostery) https://www.egger.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.egger.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.egger.com: Adding requests to DB
+   1 (Ghostery) https://www.egger.com: Page closed
+
+1 (Ghostery): (237) https://www.pggoodeveryday.com
+   1 (Ghostery) https://www.pggoodeveryday.com: Getting Requests
+   1 (Ghostery) https://www.pggoodeveryday.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.pggoodeveryday.com
+   1 (Ghostery) https://www.pggoodeveryday.com: Page loaded
+   1 (Ghostery) https://www.pggoodeveryday.com: Getting HTML
+   1 (Ghostery) https://www.pggoodeveryday.com: Getting Cookies
+   1 (Ghostery) https://www.pggoodeveryday.com: Getting Localstorage
+   1 (Ghostery) https://www.pggoodeveryday.com: Adding requests to DB
+   1 (Ghostery) https://www.pggoodeveryday.com: Page closed
+   1 (Ghostery) https://www.pggoodeveryday.com: Adding to successful website
+page closed, returning from page.on('response').
+
+1 (Ghostery): (238) https://www.techsslash.com
+   1 (Ghostery) https://www.techsslash.com: Getting Requests
+   1 (Ghostery) https://www.techsslash.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.techsslash.com
+page closed, returning from page.on('response').
+   1 (Ghostery) https://www.techsslash.com: Page loaded
+   1 (Ghostery) https://www.techsslash.com: Getting HTML
+   1 (Ghostery) https://www.techsslash.com: Getting Cookies
+   1 (Ghostery) https://www.techsslash.com: Getting Localstorage
+   1 (Ghostery) https://www.techsslash.com: Adding requests to DB
+   1 (Ghostery) https://www.techsslash.com: Page closed
+   1 (Ghostery) https://www.techsslash.com: Adding to successful website
+
+1 (Ghostery): (239) https://www.samarth.edu.in
+   1 (Ghostery) https://www.samarth.edu.in: Getting Requests
+   1 (Ghostery) https://www.samarth.edu.in: Getting Responses
+   1 (Ghostery) : Loading new page https://www.samarth.edu.in
+   1 (Ghostery) https://www.samarth.edu.in: Page loaded
+   1 (Ghostery) https://www.samarth.edu.in: Getting HTML
+   1 (Ghostery) https://www.samarth.edu.in: Getting Cookies
+   1 (Ghostery) https://www.samarth.edu.in: Getting Localstorage
+   1 (Ghostery) https://www.samarth.edu.in: Adding requests to DB
+   1 (Ghostery) https://www.samarth.edu.in: Page closed
+   1 (Ghostery) https://www.samarth.edu.in: Adding to successful website
+
+1 (Ghostery): (240) https://www.installads.net
+   1 (Ghostery) https://www.installads.net: Getting Requests
+   1 (Ghostery) https://www.installads.net: Getting Responses
+   1 (Ghostery) : Loading new page https://www.installads.net
+** 1 (Ghostery): Error visiting webpage -> https://www.installads.net (NS_ERROR_CONNECTION_REFUSED at https://www.installads.net)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (241) https://www.pga.jp
+   1 (Ghostery) https://www.pga.jp: Getting Requests
+   1 (Ghostery) https://www.pga.jp: Getting Responses
+   1 (Ghostery) : Loading new page https://www.pga.jp
+** 1 (Ghostery): Error visiting webpage -> https://www.pga.jp (NS_ERROR_UNKNOWN_HOST at https://www.pga.jp)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (242) https://www.myip.top
+   1 (Ghostery) https://www.myip.top: Getting Requests
+   1 (Ghostery) https://www.myip.top: Getting Responses
+   1 (Ghostery) : Loading new page https://www.myip.top
+** 1 (Ghostery): Error visiting webpage -> https://www.myip.top (NS_ERROR_CONNECTION_REFUSED at https://www.myip.top)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (243) https://www.crates.io
+   1 (Ghostery) https://www.crates.io: Getting Requests
+   1 (Ghostery) https://www.crates.io: Getting Responses
+   1 (Ghostery) : Loading new page https://www.crates.io
+   1 (Ghostery) https://www.crates.io: Page loaded
+   1 (Ghostery) https://www.crates.io: Getting HTML
+   1 (Ghostery) https://www.crates.io: Getting Cookies
+   1 (Ghostery) https://www.crates.io: Getting Localstorage
+   1 (Ghostery) https://www.crates.io: Adding requests to DB
+   1 (Ghostery) https://www.crates.io: Page closed
+   1 (Ghostery) https://www.crates.io: Adding to successful website
+
+1 (Ghostery): (244) https://www.xn----jtbhede0biaeco.tv
+   1 (Ghostery) https://www.xn----jtbhede0biaeco.tv: Getting Requests
+   1 (Ghostery) https://www.xn----jtbhede0biaeco.tv: Getting Responses
+   1 (Ghostery) : Loading new page https://www.xn----jtbhede0biaeco.tv
+** 1 (Ghostery): Error visiting webpage -> https://www.xn----jtbhede0biaeco.tv (NS_ERROR_UNKNOWN_HOST at https://www.xn----jtbhede0biaeco.tv)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (245) https://www.clinicaltrials.gov
+   1 (Ghostery) https://www.clinicaltrials.gov: Getting Requests
+   1 (Ghostery) https://www.clinicaltrials.gov: Getting Responses
+   1 (Ghostery) : Loading new page https://www.clinicaltrials.gov
+   1 (Ghostery) https://www.clinicaltrials.gov: Page loaded
+   1 (Ghostery) https://www.clinicaltrials.gov: Getting HTML
+   1 (Ghostery) https://www.clinicaltrials.gov: Getting Cookies
+   1 (Ghostery) https://www.clinicaltrials.gov: Getting Localstorage
+   1 (Ghostery) https://www.clinicaltrials.gov: Adding requests to DB
+   1 (Ghostery) https://www.clinicaltrials.gov: Page closed
+   1 (Ghostery) https://www.clinicaltrials.gov: Adding to successful website
+
+1 (Ghostery): (246) https://www.camelgames-wao.com
+   1 (Ghostery) https://www.camelgames-wao.com: Getting Requests
+   1 (Ghostery) https://www.camelgames-wao.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.camelgames-wao.com
+   1 (Ghostery) https://www.camelgames-wao.com: Page loaded
+   1 (Ghostery) https://www.camelgames-wao.com: Getting HTML
+   1 (Ghostery) https://www.camelgames-wao.com: Getting Cookies
+   1 (Ghostery) https://www.camelgames-wao.com: Getting Localstorage
+   1 (Ghostery) https://www.camelgames-wao.com: Adding requests to DB
+   1 (Ghostery) https://www.camelgames-wao.com: Page closed
+   1 (Ghostery) https://www.camelgames-wao.com: Adding to successful website
+
+1 (Ghostery): (247) https://www.brilliantpala.org
+   1 (Ghostery) https://www.brilliantpala.org: Getting Requests
+   1 (Ghostery) https://www.brilliantpala.org: Getting Responses
+   1 (Ghostery) : Loading new page https://www.brilliantpala.org
+** 1 (Ghostery): TimeoutError -> https://www.brilliantpala.org
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (248) https://www.dzcdn.net
+   1 (Ghostery) https://www.dzcdn.net: Getting Requests
+   1 (Ghostery) https://www.dzcdn.net: Getting Responses
+   1 (Ghostery) : Loading new page https://www.dzcdn.net
+   1 (Ghostery) https://www.dzcdn.net: Page loaded
+   1 (Ghostery) https://www.dzcdn.net: Getting HTML
+   1 (Ghostery) https://www.dzcdn.net: Getting Cookies
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.dzcdn.net: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.dzcdn.net: Adding requests to DB
+   1 (Ghostery) https://www.dzcdn.net: Page closed
+
+1 (Ghostery): (249) https://www.supermamki.ru
+   1 (Ghostery) https://www.supermamki.ru: Getting Requests
+   1 (Ghostery) https://www.supermamki.ru: Getting Responses
+   1 (Ghostery) : Loading new page https://www.supermamki.ru
+** 1 (Ghostery): TimeoutError -> https://www.supermamki.ru
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (250) https://www.hawamer.com
+   1 (Ghostery) https://www.hawamer.com: Getting Requests
+   1 (Ghostery) https://www.hawamer.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.hawamer.com
+page closed, returning from page.on('response').
+** 1 (Ghostery): TimeoutError -> https://www.hawamer.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (251) https://www.logicnow.com
+   1 (Ghostery) https://www.logicnow.com: Getting Requests
+   1 (Ghostery) https://www.logicnow.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.logicnow.com
+** 1 (Ghostery): Error visiting webpage -> https://www.logicnow.com (NS_ERROR_UNKNOWN_HOST at https://www.logicnow.com)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (252) https://www.emotivecdn.io
+   1 (Ghostery) https://www.emotivecdn.io: Getting Requests
+   1 (Ghostery) https://www.emotivecdn.io: Getting Responses
+   1 (Ghostery) : Loading new page https://www.emotivecdn.io
+** 1 (Ghostery): Error visiting webpage -> https://www.emotivecdn.io (NS_ERROR_UNKNOWN_HOST at https://www.emotivecdn.io)
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (253) https://www.sellerly.com
+   1 (Ghostery) https://www.sellerly.com: Getting Requests
+   1 (Ghostery) https://www.sellerly.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.sellerly.com
+   1 (Ghostery) https://www.sellerly.com: Page loaded
+   1 (Ghostery) https://www.sellerly.com: Getting HTML
+   1 (Ghostery) https://www.sellerly.com: Getting Cookies
+   1 (Ghostery) https://www.sellerly.com: Getting Localstorage
+   1 (Ghostery) https://www.sellerly.com: Adding requests to DB
+   1 (Ghostery) https://www.sellerly.com: Page closed
+   1 (Ghostery) https://www.sellerly.com: Adding to successful website
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+page closed, returning from page.on('response').
+
+1 (Ghostery): (254) https://www.aha.io
+   1 (Ghostery) https://www.aha.io: Getting Requests
+   1 (Ghostery) https://www.aha.io: Getting Responses
+   1 (Ghostery) : Loading new page https://www.aha.io
+   1 (Ghostery) https://www.aha.io: Page loaded
+   1 (Ghostery) https://www.aha.io: Getting HTML
+   1 (Ghostery) https://www.aha.io: Getting Cookies
+   1 (Ghostery) https://www.aha.io: Getting Localstorage
+   1 (Ghostery) https://www.aha.io: Adding requests to DB
+   1 (Ghostery) https://www.aha.io: Page closed
+   1 (Ghostery) https://www.aha.io: Adding to successful website
+
+1 (Ghostery): (255) https://www.standsapp.org
+   1 (Ghostery) https://www.standsapp.org: Getting Requests
+   1 (Ghostery) https://www.standsapp.org: Getting Responses
+   1 (Ghostery) : Loading new page https://www.standsapp.org
+   1 (Ghostery) https://www.standsapp.org: Page loaded
+   1 (Ghostery) https://www.standsapp.org: Getting HTML
+   1 (Ghostery) https://www.standsapp.org: Getting Cookies
+   1 (Ghostery) https://www.standsapp.org: Getting Localstorage
+   1 (Ghostery) https://www.standsapp.org: Adding requests to DB
+   1 (Ghostery) https://www.standsapp.org: Page closed
+   1 (Ghostery) https://www.standsapp.org: Adding to successful website
+
+1 (Ghostery): (256) https://www.intelliad.de
+   1 (Ghostery) https://www.intelliad.de: Getting Requests
+   1 (Ghostery) https://www.intelliad.de: Getting Responses
+   1 (Ghostery) : Loading new page https://www.intelliad.de
+   1 (Ghostery) https://www.intelliad.de: Page loaded
+   1 (Ghostery) https://www.intelliad.de: Getting HTML
+   1 (Ghostery) https://www.intelliad.de: Getting Cookies
+   1 (Ghostery) https://www.intelliad.de: Getting Localstorage
+   1 (Ghostery) https://www.intelliad.de: Adding requests to DB
+   1 (Ghostery) https://www.intelliad.de: Page closed
+   1 (Ghostery) https://www.intelliad.de: Adding to successful website
+
+1 (Ghostery): (257) https://www.lainformacion.com
+   1 (Ghostery) https://www.lainformacion.com: Getting Requests
+   1 (Ghostery) https://www.lainformacion.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.lainformacion.com
+   1 (Ghostery) https://www.lainformacion.com: Page loaded
+   1 (Ghostery) https://www.lainformacion.com: Getting HTML
+   1 (Ghostery) https://www.lainformacion.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Ghostery) https://www.lainformacion.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Ghostery) https://www.lainformacion.com: Adding requests to DB
+   1 (Ghostery) https://www.lainformacion.com: Page closed
+
+1 (Ghostery): (258) https://www.discadia.com
+   1 (Ghostery) https://www.discadia.com: Getting Requests
+   1 (Ghostery) https://www.discadia.com: Getting Responses
+   1 (Ghostery) : Loading new page https://www.discadia.com
+** 1 (Ghostery): TimeoutError -> https://www.discadia.com
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+
+1 (Ghostery): (259) https://www.kheloyar.net
+   1 (Ghostery) https://www.kheloyar.net: Getting Requests
+   1 (Ghostery) https://www.kheloyar.net: Getting Responses
+   1 (Ghostery) : Loading new page https://www.kheloyar.net
+** 1 (Ghostery): TimeoutError -> https://www.kheloyar.net
+** 1 (Ghostery) closing page.
+** 1 (Ghostery) Webpage closed.
+ProtocolError: Target.createTarget timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+    at new Callback (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:59:35)
+    at CallbackRegistry.create (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:104:26)
+    at Connection._rawSend (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:219:26)
+    at Connection.send (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:213:21)
+    at CDPBrowser._createPageInContext (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Browser.js:272:94)
+    at CDPBrowserContext.newPage (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Browser.js:521:78)
+    at CDPBrowser.newPage (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Browser.js:266:78)
+    at crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:322:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:469:9)
+Browser instance was closed somehow. Starting a new one.
+Error launching the BrowserInstance
+TimeoutError: Timed out after 30000 ms while waiting for the WS endpoint URL to appear in stdout!
+    at FirefoxLauncher.launch (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/node/ProductLauncher.js:127:23)
+    at async createBrowserInstance (file:///Users/crawler/Documents/cookie-banners/webCrawler/browser.js:113:24)
+    at async startBrowserInstance (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:265:15)
+    at async crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:326:35)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:469:9)
+Error starting browser Ghostery
+Error
+    at createBrowserInstance (file:///Users/crawler/Documents/cookie-banners/webCrawler/browser.js:132:19)
+    at async startBrowserInstance (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:265:15)
+    at async crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:326:35)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:469:9)
+TypeError: Cannot read properties of undefined (reading 'newPage')
+    at crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:327:46)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:469:9)
+Error in the crawl function
+ProtocolError: Protocol error (Target.closeTarget): Unable to find target with id '74688d07-d4e8-42b7-8cf2-d0e812337398' closeTarget@chrome://remote/content/cdp/domains/parent/Target.sys.mjs:155:13
+execute@chrome://remote/content/cdp/domains/DomainCache.sys.mjs:95:25
+execute@chrome://remote/content/cdp/sessions/Session.sys.mjs:59:25
+onPacket@chrome://remote/content/cdp/CDPConnection.sys.mjs:253:36
+onMessage@chrome://remote/content/server/WebSocketTransport.sys.mjs:83:18
+handleEvent@chrome://remote/content/server/WebSocketTransport.sys.mjs:65:14
+
+    at new Callback (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:59:35)
+    at CallbackRegistry.create (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:104:26)
+    at Connection._rawSend (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:219:26)
+    at Connection.send (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:213:21)
+    at CDPPage.close (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Page.js:673:30)
+    at crawl (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:409:20)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:469:9)
+Database connection disconnected
+LOADED COUNTER : 163
+TIMEOUT COUNTER : 47
+OTHER ERROR COUNTER : 49
+COOKIE TIMEOUT COUNTER : 14
+LOCALSTORAGE TIMEOUT COUNTER : 20
+NUMBER OF SUCCESSFUL WEBSITES : 142
+
