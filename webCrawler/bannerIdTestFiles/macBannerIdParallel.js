@@ -17,11 +17,9 @@ sannysoft.jpeg
 netstat -lntu
 */
 import { fork } from 'child_process'
-import * as fs from 'node:fs/promises'
-import { getURLs } from './bannerIdWebsiteSelection.js'
+import { createResultFolder, createArgumentArray } from '../runtimeSetUp'
 
 const BROWSER_LIST = ['Google Chrome']
-const VANTAGE_POINTS = ['UK']
 const START_NUMBER = 0
 const NUM_URLS = 25
 const CORPUS = ['cookie', 'cookies', 'agree', 'accept', 'reject', 'decline', 'preferences', 'policy', 'privacy', 'notice', 'partners', 'third-party']
@@ -30,80 +28,16 @@ const CHILDREN_THRESHOLD = 20
 const PATH_TO_CSV = './shuffled.txt'
 const DEVICE = 'laptop'
 
-// CREATING RESULTS FOLDER
-async function createResultFolder (browserList, vantagePoint, device) {
-  const date = new Date()
-
-  // Saving the data to OneDrive, which doesn't allow some chars (":","/") in filename.
-  const options = {
-    month: 'numeric',
-    day: 'numeric',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    timeZoneName: 'short',
-    hour12: false,
-    hourCycle: 'h23'
-  }
-  const formattedDate = date.toLocaleString('en-GB', options)
-  let formattedDateWithoutColons = formattedDate.replace(/:/g, '-')
-  formattedDateWithoutColons = formattedDate.replace(/[/:]/g, '-')
-
-  let path = `/homes/pp1722/Documents/cookie-banners/results/${formattedDateWithoutColons}`
-  if (device === 'laptop') {
-    path = `/Users/philippe/Library/CloudStorage/OneDrive-Personal/cookie-banners-results/${formattedDateWithoutColons}`
-  }
-  if (device === 'macserver') {
-    path = `/Users/crawler/OneDrive/cookie-banners-results/${formattedDateWithoutColons}`
-  }
-  await fs.mkdir(path)
-
-  for (const location of vantagePoint) {
-    const newPath1 = path + `/${location}`
-    await fs.mkdir(newPath1)
-
-    for (const browser of browserList) {
-      const newPath2 = newPath1 + `/${browser}`
-      await fs.mkdir(newPath2)
-
-      const screenshotPath = newPath2 + '/screenshots'
-      await fs.mkdir(screenshotPath)
-
-      const HTMLPath = newPath2 + '/htmlFiles'
-      await fs.mkdir(HTMLPath)
-    }
-  }
-  return path
-}
-
-async function createArgumentArray (path, browserList, vantagePoint, device) {
-  const argArray = []
-  let i = 1
-
-  for (const location of vantagePoint) {
-    for (const browser of browserList) {
-      const websiteList = await getURLs(NUM_URLS, START_NUMBER, browser, PATH_TO_CSV)
-      const newPath = path + `/${location}/${browser}`
-      argArray.push([newPath, location, browser, websiteList, i, device, CORPUS, PARENTS_THRESHOLD, CHILDREN_THRESHOLD])
-      i++
-    }
-  }
-  return argArray
-}
-
-async function ParallelMain (browserList, vantagePoint, device) {
-  const path = await createResultFolder(browserList, vantagePoint, device)
+async function ParallelMain (browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device) {
+  const resultsPath = await createResultFolder(browserList, device)
 
   // ARGUMENTS PER PROCESS
-  const argumentsArray = await createArgumentArray(path, browserList, vantagePoint, device)
+  const argumentsArray = await createArgumentArray(browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath)
 
   // Launching child processes
   for (const args of argumentsArray) {
     fork('./bannerIdIndex.js', args)
   }
-
-  // callableMain(argumentsArray[0]);
 }
 
-ParallelMain(BROWSER_LIST, VANTAGE_POINTS, DEVICE)
+ParallelMain(BROWSER_LIST, START_NUMBER, NUM_URLS, CORPUS, PARENTS_THRESHOLD, CHILDREN_THRESHOLD, PATH_TO_CSV, DEVICE)

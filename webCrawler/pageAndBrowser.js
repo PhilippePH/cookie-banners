@@ -49,11 +49,13 @@ const macserverExecutablePaths = {
 const macserverUserProfiles = {
   'Google Chrome': '/Users/crawler/Library/Application Support/Google/Chrome/Default',
   Brave: '/Users/crawler/Library/Application Support/BraveSoftware/Brave-Browser/',
-  Firefox: '/Users/crawler/Library/Application Support/Firefox/Profiles/5rv5rl49.default-release',
-  Ghostery: '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release'
+  Ghostery: '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release',
+  'Google Chrome with Ghostery extension': 'TBD',
+  'Firefox 1': '/Users/crawler/Library/Application Support/Firefox/Profiles/5rv5rl49.default-release',
+  'Firefox 2': 'TBD'
 }
 
-export async function createBrowserInstance (browser, vantagePoint, device = 'linux') {
+async function puppeteerLaunchBrowser (browser, device, version) {
   let executablePaths = linuxExecutablePaths
   let userProfiles = linuxUserProfiles
 
@@ -85,21 +87,44 @@ export async function createBrowserInstance (browser, vantagePoint, device = 'li
         args: ['--start-maximized', '--profile-directory=Profile 1']
       })
     } else if (browser === 'Firefox') {
-      return await puppeteer.launch({
-        headless: false,
-        product: 'firefox',
-        executablePath: executablePaths[browser],
-        userDataDir: userProfiles[browser],
-        defaultViewport: null
-      })
+      // This launches the first Firefox profile
+      if (version === 1) {
+        return await puppeteer.launch({
+          headless: false,
+          product: 'firefox',
+          executablePath: executablePaths[browser],
+          userDataDir: userProfiles['Firefox 1'],
+          defaultViewport: null
+        })
+      } else if (version === 2) {
+        // This launches the second Firefox profile (same settings, just for ability to launch two in parallel)
+        return await puppeteer.launch({
+          headless: false,
+          product: 'firefox',
+          executablePath: executablePaths[browser],
+          userDataDir: userProfiles['Firefox 2'],
+          defaultViewport: null
+        })
+      }
     } else if (browser === 'Ghostery') {
-      return await puppeteer.launch({
-        headless: false,
-        product: 'firefox',
-        executablePath: executablePaths[browser],
-        userDataDir: userProfiles[browser],
-        defaultViewport: null
-      })
+      // This launches the Ghostery browser
+      if (version === 1) {
+        return await puppeteer.launch({
+          headless: false,
+          product: 'firefox',
+          executablePath: executablePaths[browser],
+          userDataDir: userProfiles[browser],
+          defaultViewport: null
+        })
+      } else if (version === 2) {
+        // This launches Google Chrome with the Ghostery extension
+        return await puppeteer.launch({
+          headless: false,
+          executablePath: executablePaths['Google Chrome'],
+          userDataDir: userProfiles['Google Chrome with Ghostery extension'],
+          args: ['--start-maximised']
+        })
+      }
     }
   } catch (error) {
     if (error instanceof BrowserNameError) {
@@ -110,5 +135,46 @@ export async function createBrowserInstance (browser, vantagePoint, device = 'li
       console.log(error)
       throw new Error()
     }
+  }
+}
+
+export async function createBrowserInstance (browser, device, version) {
+  let BI
+  try {
+    BI = await puppeteerLaunchBrowser(browser, device)
+  } catch (error) {
+    console.log('Error starting browser ' + browser)
+    console.log(error)
+    process.exit(1)
+  } // Exit if fail to create browser instance
+  return BI
+}
+
+export async function closeBrowserInstance (browserInstance) {
+  try {
+    await Promise.race([
+      await browserInstance.close(),
+      new Promise((_, reject) => setTimeout(() => reject(new Error()), 5000))
+    ])
+  } catch (error) {
+    console.log('Timeout occurred trying to close the browser instance. Exiting program execution')
+    process.exit(1)
+  }
+}
+
+export async function closePage (page, browserInstance) {
+  try {
+    // Here, the goal is to close all the pages that are opened, apart from the about:blank. This should remove pop-ups, etc. 
+    let pages = await browserInstance.pages()
+    pages.splice(0, 1) // removing the about:blank from the pages to close
+    for (const page of pages) {
+      await Promise.race([
+        await page.close(),
+        new Promise((_, reject) => setTimeout(() => reject(new Error()), 1000))
+      ])
+    }
+  } catch (error) {
+    console.log('Timeout occurred trying to close the page. Closing browserInstance.')
+    await closeBrowserInstance(browserInstance)
   }
 }
