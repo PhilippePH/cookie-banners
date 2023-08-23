@@ -1,0 +1,482 @@
+Crawling 4 websites
+[
+  'https://bot.sannysoft.com',
+  'https://www.whatismyip.com',
+  'https://www.showmyip.com',
+  'https://whatismyipaddress.com'
+]
+
+1 (Google Chrome): (1) https://bot.sannysoft.com
+   1 (Google Chrome) : Loading new page https://bot.sannysoft.com
+   1 (Google Chrome) https://bot.sannysoft.com: Page loaded
+   1 (Google Chrome) https://bot.sannysoft.com: Page closed
+
+1 (Google Chrome): (2) https://www.whatismyip.com
+   1 (Google Chrome) : Loading new page https://www.whatismyip.com
+   1 (Google Chrome) https://www.whatismyip.com: Page loaded
+   1 (Google Chrome) https://www.whatismyip.com: Page closed
+
+1 (Google Chrome): (3) https://www.showmyip.com
+   1 (Google Chrome) : Loading new page https://www.showmyip.com
+** 1 (Google Chrome): TimeoutError -> https://www.showmyip.com
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (4) https://whatismyipaddress.com
+   1 (Google Chrome) : Loading new page https://whatismyipaddress.com
+   1 (Google Chrome) https://whatismyipaddress.com: Page loaded
+   1 (Google Chrome) https://whatismyipaddress.com: Page closed
+   1 (Google Chrome) instance closed.
+Database connection established
+Crawling 42 websites
+[
+  'https://www.google.com',
+  'https://www.imghst-de.com',
+  'https://www.stickpng.com',
+  'https://www.thetvdb.com',
+  'https://www.verkada.com',
+  'https://www.sei.sp.gov.br',
+  'https://www.multimovies.shop',
+  'https://www.fgcu.edu',
+  'https://www.prevx.com',
+  'https://www.national.com.au',
+  'https://www.synten.com',
+  'https://www.psvinside.nl',
+  'https://www.saudiexchange.sa',
+  'https://www.pewforum.org',
+  'https://www.radenintan.ac.id',
+  'https://www.faithgateway.com',
+  'https://www.ducks.org',
+  'https://www.reacciun.ve',
+  'https://www.branch.io',
+  'https://www.amzn.to',
+  'https://www.mathtag.com',
+  'https://www.a-mo.net',
+  'https://www.ctmail.com',
+  'https://www.apilayer.net',
+  'https://www.koumbit.net',
+  'https://www.oo7.jp',
+  'https://www.puravidabracelets.com',
+  'https://www.dnsv3.com',
+  'https://www.bitdefender.ro',
+  'https://www.mnmnck.com',
+  'https://www.foodmate.net',
+  'https://www.microlite1.com',
+  'https://www.babla.ru',
+  'https://www.medstarhealth.org',
+  'https://www.utp.edu.pe',
+  'https://www.airproducts.com',
+  'https://www.jaad.org',
+  'https://www.cloud.im',
+  'https://www.noovomoi.ca',
+  'https://www.brookfieldproperties.com',
+  'https://www.v',
+  'erkada.com'
+]
+
+1 (Google Chrome): (1) https://www.google.com
+   1 (Google Chrome) https://www.google.com: Getting Requests
+   1 (Google Chrome) https://www.google.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.google.com
+   1 (Google Chrome) https://www.google.com: Page loaded
+   1 (Google Chrome) https://www.google.com: Getting HTML
+   1 (Google Chrome) https://www.google.com: Getting Cookies
+   1 (Google Chrome) https://www.google.com: Getting Localstorage
+   1 (Google Chrome) https://www.google.com: Adding requests to DB
+   1 (Google Chrome) https://www.google.com: Page closed
+   1 (Google Chrome) https://www.google.com: Adding to successful website
+
+1 (Google Chrome): (2) https://www.imghst-de.com
+   1 (Google Chrome) https://www.imghst-de.com: Getting Requests
+   1 (Google Chrome) https://www.imghst-de.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.imghst-de.com
+** 1 (Google Chrome): Error visiting webpage -> https://www.imghst-de.com (net::ERR_CONNECTION_CLOSED at https://www.imghst-de.com)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (3) https://www.stickpng.com
+   1 (Google Chrome) https://www.stickpng.com: Getting Requests
+   1 (Google Chrome) https://www.stickpng.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.stickpng.com
+   1 (Google Chrome) https://www.stickpng.com: Page loaded
+   1 (Google Chrome) https://www.stickpng.com: Getting HTML
+   1 (Google Chrome) https://www.stickpng.com: Getting Cookies
+   1 (Google Chrome) https://www.stickpng.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Google Chrome) https://www.stickpng.com: Adding requests to DB
+   1 (Google Chrome) https://www.stickpng.com: Page closed
+
+1 (Google Chrome): (4) https://www.thetvdb.com
+   1 (Google Chrome) https://www.thetvdb.com: Getting Requests
+   1 (Google Chrome) https://www.thetvdb.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.thetvdb.com
+   1 (Google Chrome) https://www.thetvdb.com: Page loaded
+   1 (Google Chrome) https://www.thetvdb.com: Getting HTML
+   1 (Google Chrome) https://www.thetvdb.com: Getting Cookies
+   1 (Google Chrome) https://www.thetvdb.com: Getting Localstorage
+   1 (Google Chrome) https://www.thetvdb.com: Adding requests to DB
+   1 (Google Chrome) https://www.thetvdb.com: Page closed
+   1 (Google Chrome) https://www.thetvdb.com: Adding to successful website
+
+1 (Google Chrome): (5) https://www.verkada.com
+   1 (Google Chrome) https://www.verkada.com: Getting Requests
+   1 (Google Chrome) https://www.verkada.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.verkada.com
+   1 (Google Chrome) https://www.verkada.com: Page loaded
+   1 (Google Chrome) https://www.verkada.com: Getting HTML
+   1 (Google Chrome) https://www.verkada.com: Getting Cookies
+   1 (Google Chrome) https://www.verkada.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   1 (Google Chrome) https://www.verkada.com: Adding requests to DB
+   1 (Google Chrome) https://www.verkada.com: Page closed
+
+1 (Google Chrome): (6) https://www.sei.sp.gov.br
+   1 (Google Chrome) https://www.sei.sp.gov.br: Getting Requests
+   1 (Google Chrome) https://www.sei.sp.gov.br: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.sei.sp.gov.br
+** 1 (Google Chrome): Error visiting webpage -> https://www.sei.sp.gov.br (net::ERR_ABORTED at https://www.sei.sp.gov.br)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (7) https://www.multimovies.shop
+   1 (Google Chrome) https://www.multimovies.shop: Getting Requests
+   1 (Google Chrome) https://www.multimovies.shop: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.multimovies.shop
+** 1 (Google Chrome): Error visiting webpage -> https://www.multimovies.shop (net::ERR_SSL_PROTOCOL_ERROR at https://www.multimovies.shop)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (8) https://www.fgcu.edu
+   1 (Google Chrome) https://www.fgcu.edu: Getting Requests
+   1 (Google Chrome) https://www.fgcu.edu: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.fgcu.edu
+** 1 (Google Chrome): TimeoutError -> https://www.fgcu.edu
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (9) https://www.prevx.com
+   1 (Google Chrome) https://www.prevx.com: Getting Requests
+   1 (Google Chrome) https://www.prevx.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.prevx.com
+** 1 (Google Chrome): Error visiting webpage -> https://www.prevx.com (net::ERR_CERT_COMMON_NAME_INVALID at https://www.prevx.com)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (10) https://www.national.com.au
+   1 (Google Chrome) https://www.national.com.au: Getting Requests
+   1 (Google Chrome) https://www.national.com.au: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.national.com.au
+** 1 (Google Chrome): TimeoutError -> https://www.national.com.au
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (11) https://www.synten.com
+   1 (Google Chrome) https://www.synten.com: Getting Requests
+   1 (Google Chrome) https://www.synten.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.synten.com
+   1 (Google Chrome) https://www.synten.com: Page loaded
+   1 (Google Chrome) https://www.synten.com: Getting HTML
+   1 (Google Chrome) https://www.synten.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Google Chrome) https://www.synten.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Google Chrome) https://www.synten.com: Adding requests to DB
+   1 (Google Chrome) https://www.synten.com: Page closed
+
+1 (Google Chrome): (12) https://www.psvinside.nl
+   1 (Google Chrome) https://www.psvinside.nl: Getting Requests
+   1 (Google Chrome) https://www.psvinside.nl: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.psvinside.nl
+   1 (Google Chrome) https://www.psvinside.nl: Page loaded
+   1 (Google Chrome) https://www.psvinside.nl: Getting HTML
+   1 (Google Chrome) https://www.psvinside.nl: Getting Cookies
+   1 (Google Chrome) https://www.psvinside.nl: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Google Chrome) https://www.psvinside.nl: Adding requests to DB
+   1 (Google Chrome) https://www.psvinside.nl: Page closed
+
+1 (Google Chrome): (13) https://www.saudiexchange.sa
+   1 (Google Chrome) https://www.saudiexchange.sa: Getting Requests
+   1 (Google Chrome) https://www.saudiexchange.sa: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.saudiexchange.sa
+   1 (Google Chrome) https://www.saudiexchange.sa: Page loaded
+   1 (Google Chrome) https://www.saudiexchange.sa: Getting HTML
+   1 (Google Chrome) https://www.saudiexchange.sa: Getting Cookies
+   1 (Google Chrome) https://www.saudiexchange.sa: Getting Localstorage
+   1 (Google Chrome) https://www.saudiexchange.sa: Adding requests to DB
+   1 (Google Chrome) https://www.saudiexchange.sa: Page closed
+   1 (Google Chrome) https://www.saudiexchange.sa: Adding to successful website
+
+1 (Google Chrome): (14) https://www.pewforum.org
+   1 (Google Chrome) https://www.pewforum.org: Getting Requests
+   1 (Google Chrome) https://www.pewforum.org: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.pewforum.org
+   1 (Google Chrome) https://www.pewforum.org: Page loaded
+   1 (Google Chrome) https://www.pewforum.org: Getting HTML
+   1 (Google Chrome) https://www.pewforum.org: Getting Cookies
+   1 (Google Chrome) https://www.pewforum.org: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Cannot get frame origin because of lazy frame in local storage
+   1 (Google Chrome) https://www.pewforum.org: Adding requests to DB
+   1 (Google Chrome) https://www.pewforum.org: Page closed
+
+1 (Google Chrome): (15) https://www.radenintan.ac.id
+   1 (Google Chrome) https://www.radenintan.ac.id: Getting Requests
+   1 (Google Chrome) https://www.radenintan.ac.id: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.radenintan.ac.id
+   1 (Google Chrome) https://www.radenintan.ac.id: Page loaded
+   1 (Google Chrome) https://www.radenintan.ac.id: Getting HTML
+   1 (Google Chrome) https://www.radenintan.ac.id: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Google Chrome) https://www.radenintan.ac.id: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Google Chrome) https://www.radenintan.ac.id: Adding requests to DB
+   1 (Google Chrome) https://www.radenintan.ac.id: Page closed
+
+1 (Google Chrome): (16) https://www.faithgateway.com
+   1 (Google Chrome) https://www.faithgateway.com: Getting Requests
+   1 (Google Chrome) https://www.faithgateway.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.faithgateway.com
+   1 (Google Chrome) https://www.faithgateway.com: Page loaded
+   1 (Google Chrome) https://www.faithgateway.com: Getting HTML
+   1 (Google Chrome) https://www.faithgateway.com: Getting Cookies
+   1 (Google Chrome) https://www.faithgateway.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Google Chrome) https://www.faithgateway.com: Adding requests to DB
+   1 (Google Chrome) https://www.faithgateway.com: Page closed
+
+1 (Google Chrome): (17) https://www.ducks.org
+   1 (Google Chrome) https://www.ducks.org: Getting Requests
+   1 (Google Chrome) https://www.ducks.org: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.ducks.org
+** 1 (Google Chrome): TimeoutError -> https://www.ducks.org
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (18) https://www.reacciun.ve
+   1 (Google Chrome) https://www.reacciun.ve: Getting Requests
+   1 (Google Chrome) https://www.reacciun.ve: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.reacciun.ve
+** 1 (Google Chrome): Error visiting webpage -> https://www.reacciun.ve (net::ERR_CONNECTION_REFUSED at https://www.reacciun.ve)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (19) https://www.branch.io
+   1 (Google Chrome) https://www.branch.io: Getting Requests
+   1 (Google Chrome) https://www.branch.io: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.branch.io
+** 1 (Google Chrome): TimeoutError -> https://www.branch.io
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (20) https://www.amzn.to
+   1 (Google Chrome) https://www.amzn.to: Getting Requests
+   1 (Google Chrome) https://www.amzn.to: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.amzn.to
+** 1 (Google Chrome): Error visiting webpage -> https://www.amzn.to (net::ERR_CERT_COMMON_NAME_INVALID at https://www.amzn.to)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (21) https://www.mathtag.com
+   1 (Google Chrome) https://www.mathtag.com: Getting Requests
+   1 (Google Chrome) https://www.mathtag.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.mathtag.com
+** 1 (Google Chrome): TimeoutError -> https://www.mathtag.com
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (22) https://www.a-mo.net
+   1 (Google Chrome) https://www.a-mo.net: Getting Requests
+   1 (Google Chrome) https://www.a-mo.net: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.a-mo.net
+** 1 (Google Chrome): Error visiting webpage -> https://www.a-mo.net (net::ERR_CONNECTION_RESET at https://www.a-mo.net)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (23) https://www.ctmail.com
+   1 (Google Chrome) https://www.ctmail.com: Getting Requests
+   1 (Google Chrome) https://www.ctmail.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.ctmail.com
+** 1 (Google Chrome): Error visiting webpage -> https://www.ctmail.com (net::ERR_CONNECTION_CLOSED at https://www.ctmail.com)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (24) https://www.apilayer.net
+   1 (Google Chrome) https://www.apilayer.net: Getting Requests
+   1 (Google Chrome) https://www.apilayer.net: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.apilayer.net
+** 1 (Google Chrome): TimeoutError -> https://www.apilayer.net
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (25) https://www.koumbit.net
+   1 (Google Chrome) https://www.koumbit.net: Getting Requests
+   1 (Google Chrome) https://www.koumbit.net: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.koumbit.net
+** 1 (Google Chrome): Error visiting webpage -> https://www.koumbit.net (net::ERR_CERT_COMMON_NAME_INVALID at https://www.koumbit.net)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (26) https://www.oo7.jp
+   1 (Google Chrome) https://www.oo7.jp: Getting Requests
+   1 (Google Chrome) https://www.oo7.jp: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.oo7.jp
+** 1 (Google Chrome): Error visiting webpage -> https://www.oo7.jp (net::ERR_CONNECTION_REFUSED at https://www.oo7.jp)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (27) https://www.puravidabracelets.com
+   1 (Google Chrome) https://www.puravidabracelets.com: Getting Requests
+   1 (Google Chrome) https://www.puravidabracelets.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.puravidabracelets.com
+   1 (Google Chrome) https://www.puravidabracelets.com: Page loaded
+   1 (Google Chrome) https://www.puravidabracelets.com: Getting HTML
+   1 (Google Chrome) https://www.puravidabracelets.com: Getting Cookies
+      **** Cannot get frame origin because of lazy frame in cookies
+   1 (Google Chrome) https://www.puravidabracelets.com: Getting Localstorage
+   1 (Google Chrome) https://www.puravidabracelets.com: Adding requests to DB
+   1 (Google Chrome) https://www.puravidabracelets.com: Page closed
+
+1 (Google Chrome): (28) https://www.dnsv3.com
+   1 (Google Chrome) https://www.dnsv3.com: Getting Requests
+   1 (Google Chrome) https://www.dnsv3.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.dnsv3.com
+** 1 (Google Chrome): Error visiting webpage -> https://www.dnsv3.com (net::ERR_CONNECTION_REFUSED at https://www.dnsv3.com)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (29) https://www.bitdefender.ro
+   1 (Google Chrome) https://www.bitdefender.ro: Getting Requests
+   1 (Google Chrome) https://www.bitdefender.ro: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.bitdefender.ro
+** 1 (Google Chrome): TimeoutError -> https://www.bitdefender.ro
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (30) https://www.mnmnck.com
+   1 (Google Chrome) https://www.mnmnck.com: Getting Requests
+   1 (Google Chrome) https://www.mnmnck.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.mnmnck.com
+** 1 (Google Chrome): TimeoutError -> https://www.mnmnck.com
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (31) https://www.foodmate.net
+   1 (Google Chrome) https://www.foodmate.net: Getting Requests
+   1 (Google Chrome) https://www.foodmate.net: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.foodmate.net
+** 1 (Google Chrome): Error visiting webpage -> https://www.foodmate.net (net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH at https://www.foodmate.net)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (32) https://www.microlite1.com
+   1 (Google Chrome) https://www.microlite1.com: Getting Requests
+   1 (Google Chrome) https://www.microlite1.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.microlite1.com
+** 1 (Google Chrome): Error visiting webpage -> https://www.microlite1.com (net::ERR_CERT_COMMON_NAME_INVALID at https://www.microlite1.com)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (33) https://www.babla.ru
+   1 (Google Chrome) https://www.babla.ru: Getting Requests
+   1 (Google Chrome) https://www.babla.ru: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.babla.ru
+** 1 (Google Chrome): TimeoutError -> https://www.babla.ru
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (34) https://www.medstarhealth.org
+   1 (Google Chrome) https://www.medstarhealth.org: Getting Requests
+   1 (Google Chrome) https://www.medstarhealth.org: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.medstarhealth.org
+** 1 (Google Chrome): TimeoutError -> https://www.medstarhealth.org
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (35) https://www.utp.edu.pe
+   1 (Google Chrome) https://www.utp.edu.pe: Getting Requests
+   1 (Google Chrome) https://www.utp.edu.pe: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.utp.edu.pe
+   1 (Google Chrome) https://www.utp.edu.pe: Page loaded
+   1 (Google Chrome) https://www.utp.edu.pe: Getting HTML
+   1 (Google Chrome) https://www.utp.edu.pe: Getting Cookies
+   1 (Google Chrome) https://www.utp.edu.pe: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Google Chrome) https://www.utp.edu.pe: Adding requests to DB
+   1 (Google Chrome) https://www.utp.edu.pe: Page closed
+
+1 (Google Chrome): (36) https://www.airproducts.com
+   1 (Google Chrome) https://www.airproducts.com: Getting Requests
+   1 (Google Chrome) https://www.airproducts.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.airproducts.com
+   1 (Google Chrome) https://www.airproducts.com: Page loaded
+   1 (Google Chrome) https://www.airproducts.com: Getting HTML
+   1 (Google Chrome) https://www.airproducts.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   1 (Google Chrome) https://www.airproducts.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Google Chrome) https://www.airproducts.com: Adding requests to DB
+   1 (Google Chrome) https://www.airproducts.com: Page closed
+
+1 (Google Chrome): (37) https://www.jaad.org
+   1 (Google Chrome) https://www.jaad.org: Getting Requests
+   1 (Google Chrome) https://www.jaad.org: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.jaad.org
+   1 (Google Chrome) https://www.jaad.org: Page loaded
+   1 (Google Chrome) https://www.jaad.org: Getting HTML
+   1 (Google Chrome) https://www.jaad.org: Getting Cookies
+   1 (Google Chrome) https://www.jaad.org: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   1 (Google Chrome) https://www.jaad.org: Adding requests to DB
+   1 (Google Chrome) https://www.jaad.org: Page closed
+
+1 (Google Chrome): (38) https://www.cloud.im
+   1 (Google Chrome) https://www.cloud.im: Getting Requests
+   1 (Google Chrome) https://www.cloud.im: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.cloud.im
+** 1 (Google Chrome): TimeoutError -> https://www.cloud.im
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (39) https://www.noovomoi.ca
+   1 (Google Chrome) https://www.noovomoi.ca: Getting Requests
+   1 (Google Chrome) https://www.noovomoi.ca: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.noovomoi.ca
+** 1 (Google Chrome): TimeoutError -> https://www.noovomoi.ca
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (40) https://www.brookfieldproperties.com
+   1 (Google Chrome) https://www.brookfieldproperties.com: Getting Requests
+   1 (Google Chrome) https://www.brookfieldproperties.com: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.brookfieldproperties.com
+** 1 (Google Chrome): TimeoutError -> https://www.brookfieldproperties.com
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (41) https://www.v
+   1 (Google Chrome) https://www.v: Getting Requests
+   1 (Google Chrome) https://www.v: Getting Responses
+   1 (Google Chrome) : Loading new page https://www.v
+** 1 (Google Chrome): Error visiting webpage -> https://www.v (net::ERR_NAME_NOT_RESOLVED at https://www.v)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+
+1 (Google Chrome): (42) erkada.com
+   1 (Google Chrome) erkada.com: Getting Requests
+   1 (Google Chrome) erkada.com: Getting Responses
+   1 (Google Chrome) : Loading new page erkada.com
+** 1 (Google Chrome): ProtocolError visiting webpage -> erkada.com (Protocol error (Page.navigate): Cannot navigate to invalid URL)
+** 1 (Google Chrome) closing page.
+** 1 (Google Chrome) Webpage closed.
+   1 (Google Chrome) instance closed.
+Database connection disconnected
+LOADED COUNTER : 14
+TIMEOUT COUNTER : 13
+OTHER ERROR COUNTER : 15
+COOKIE TIMEOUT COUNTER : 4
+LOCALSTORAGE TIMEOUT COUNTER : 10
+NUMBER OF SUCCESSFUL WEBSITES : 3
+
