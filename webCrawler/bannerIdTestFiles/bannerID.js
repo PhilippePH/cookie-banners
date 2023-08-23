@@ -32,9 +32,24 @@ async function assessCorpus (element, wordCorpus) {
 
       // Check if any word from the corpus is in the text
       const matchingWords = wordCorpus.filter(corpusWord =>
-          wordsArray.some(nodeWord => nodeWord.toLowerCase() === corpusWord) // THIS ONLY CHECK 1-WORD SEARCH TERMS
+        wordsArray.some((nodeWord, index) => {
+            const normalizedNodeWord = nodeWord.toLowerCase()
+    
+            // Check for 1-word match
+            if (normalizedNodeWord === corpusWord) {
+              return true
+            }
+    
+            // Check for 2-word match using subsequent words
+            if (index < wordsArray.length - 1) {
+              const normalizedNextWord = wordsArray[index + 1].toLowerCase()
+              const twoWordMatch = normalizedNodeWord + ' ' + normalizedNextWord
+              return twoWordMatch === corpusWord
+          }
+    
+            return false;
+        })
       )
-
       return matchingWords
   }
   return [] // is returning an empty array the thing to do here?
