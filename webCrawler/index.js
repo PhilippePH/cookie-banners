@@ -2,11 +2,18 @@
 // import { getScreenshot, getHTML } from './crawlMeasurements.js'
 import { createBrowserInstance, closeBrowserInstance, closePage } from './pageAndBrowser.js'
 import { getResponses, getRequests, getCookies, getLocalStorage, addRequestToDb } from './crawlMeasurements.js'
-import { determineCookieBannerState } from './bannerIdTestFiles/bannerID.js'
+// import { determineCookieBannerState } from './bannerIdTestFiles/bannerID.js'
 import { saveSuccessfulWebsites, saveTimedoutWebsites } from './saveCrawlTraces.js'
 import { startXvfb, stopXvfb } from './headlessSetUp.js'
 import pg from 'pg'
 
+class WebsiteTimeOut extends Error {
+  constructor (message) {
+    super(message)
+    this.name = 'WebsiteTimeOut'
+    this.message = 'The website used up all its time allocation. Forced timeout.'
+  }
+}
 // async function testCrawler (path, browser, device) {
 //   path = path + '/test'
 //   await fs.mkdir(path)
@@ -20,9 +27,9 @@ import pg from 'pg'
 
 export async function visitWebsite (page, websiteUrl, browser, resultPath) {
   try {
-    console.log(`    (${browser}) : Loading new page ${websiteUrl}`)
+    console.log(`   (${browser}) : Loading new page ${websiteUrl}`)
     await page.goto(websiteUrl, { timeout: 10000, waitUntil: 'load' })
-    console.log(`    (${browser}) ${websiteUrl}: Page loaded`)
+    console.log(`   (${browser}) ${websiteUrl}: Page loaded`)
     return 'Success'
   } catch (error) {
     if (error.name === 'TimeoutError') {
@@ -43,8 +50,8 @@ async function takeMeasurements (page, browser, websiteUrl, connection, requestD
   console.log(`   (${browser}) ${websiteUrl}: Getting Localstorage`)
   await getLocalStorage(page, browser, websiteUrl, connection, crawlID)
 
-  console.log(`   (${browser}) ${websiteUrl}: Checking Cookie Banner`)
-  await determineCookieBannerState(page, wordCorpus, parentCutoff, childrenCutoff, crawlID)
+  // console.log(`   (${browser}) ${websiteUrl}: Checking Cookie Banner`)
+  // await determineCookieBannerState(page, wordCorpus, parentCutoff, childrenCutoff, crawlID)
 
   console.log(`   (${browser}) ${websiteUrl}: Adding requests to DB`)
   await addRequestToDb(requestData, browser, websiteUrl, connection, crawlID)
@@ -115,9 +122,9 @@ export async function crawlMain (browser, version, resultPath, urlList, connecti
     // const siteName = await getSiteNames(websiteUrl)
 
     try {
-      const [evaluationResult] = await Promise.race([
+      const evaluationResult = await Promise.race([
         await evaluateWebsite(page, browser, websiteUrl, connection, wordCorpus, parentCutoff, childrenCutoff, resultPath, crawlID),
-        new Promise((_, reject) => setTimeout(() => reject(new Error()), 30000))
+        new Promise((_, reject) => setTimeout(() => reject(new WebsiteTimeOut()), 30000))
       ])
 
       if (evaluationResult) {
@@ -125,9 +132,13 @@ export async function crawlMain (browser, version, resultPath, urlList, connecti
         await saveSuccessfulWebsites(websiteUrl, resultPath, browser)
       }
     } catch (error) {
-      // Add to timeout counter
-      console.log('Website used up all its time allocation. Forced timedout.')
-      await saveTimedoutWebsites(websiteUrl, resultPath, browser)
+      if (error.name === 'WebsiteTimeOut') {
+        // Add to timeout counter
+        console.log(error.message)
+        await saveTimedoutWebsites(websiteUrl, resultPath, browser)
+      } else {
+        console.log(error)
+      }
     }
 
     await closePage(page, browserInstance)

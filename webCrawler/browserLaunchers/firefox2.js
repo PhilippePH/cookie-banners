@@ -16,12 +16,12 @@ sannysoft.jpeg
 
 netstat -lntu
 */
-import { ParallelMain } from '../runtimeSetUp'
+import { ParallelMain } from '../runtimeSetUp.js'
 
 const BROWSER_LIST = ['Firefox']
 const VERSION = 2
-const START_NUMBER = 5001
-const NUM_URLS = 10000
+const START_NUMBER = 0
+const NUM_URLS = 1
 const PATH_TO_CSV = './webCrawler/websiteSelection/shuffled.txt'
 const DEVICE = 'macserver'
 const CORPUS = []

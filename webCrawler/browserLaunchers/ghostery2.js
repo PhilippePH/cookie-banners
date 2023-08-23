@@ -16,12 +16,13 @@ sannysoft.jpeg
 
 netstat -lntu
 */
-import { ParallelMain } from '../runtimeSetUp'
+import { ParallelMain } from '../runtimeSetUp.js'
 
 const BROWSER_LIST = ['Ghostery']
-const VERSION = 0
-const START_NUMBER = 5001
-const NUM_URLS = 10000
+// VERSION 0 is the Ghostery branded browser. VERSION 1 is Google Chrome with the Ghostery extension enabled.
+const VERSION = 2
+const START_NUMBER = 0
+const NUM_URLS = 1
 const PATH_TO_CSV = './webCrawler/websiteSelection/shuffled.txt'
 const DEVICE = 'macserver'
 const CORPUS = []

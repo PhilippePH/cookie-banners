@@ -1,6 +1,6 @@
 import * as fs from 'node:fs/promises'
 import { callableMain } from './index.js'
-import { getURLs } from './bannerIdWebsiteSelection.js'
+import { getURLs } from './websiteSelection/websiteSelection.js'
 
 // CREATING RESULTS FOLDER
 export async function createResultFolder (browserList, device) {
@@ -45,21 +45,21 @@ export async function createResultFolder (browserList, device) {
   return path
 }
 
-export async function createArgumentArray (browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath) {
+export async function createArgumentArray (browserList, version, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath) {
   const argArray = []
 
   for (const browser of browserList) {
     const websiteList = await getURLs(numberUrls, startNumber, browser, pathToCsv)
-    argArray.push([resultsPath, browser, websiteList, device, corpus, parentsThreshold, childrenThreshold])
+    argArray.push([resultsPath, browser, version, websiteList, device, corpus, parentsThreshold, childrenThreshold])
   }
   return argArray
 }
 
-export async function ParallelMain (browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device) {
+export async function ParallelMain (browserList, version, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device) {
   const resultsPath = await createResultFolder(browserList, device)
 
   // ARGUMENTS PER PROCESS
-  const argumentsArray = await createArgumentArray(browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath)
+  const argumentsArray = await createArgumentArray(browserList, version, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath)
 
   callableMain(argumentsArray[0])
 }

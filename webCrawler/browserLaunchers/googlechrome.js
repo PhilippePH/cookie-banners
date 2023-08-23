@@ -16,7 +16,7 @@ sannysoft.jpeg
 
 netstat -lntu
 */
-import { ParallelMain } from '../runtimeSetUp'
+import { ParallelMain } from '../runtimeSetUp.js'
 
 const BROWSER_LIST = ['Google Chrome']
 const VERSION = 0

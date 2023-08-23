@@ -29,17 +29,17 @@ export async function getHTML (page, resultPath, siteName) {
 
 export async function getResponses (page, browser, websiteUrl, connection, crawlID) {
   try {
-    if (page.isClosed()) {
-      console.log('page closed, returning.')
-      return
-    }
+    // if (page.isClosed()) {
+    //   console.log('page closed, returning.')
+    //   return
+    // }
 
     await page.on('response', async (interceptedResponse) => {
       try {
-        if (page.isClosed()) {
-          console.log('page closed, returning from page.on("response").')
-          return
-        }
+        // if (page.isClosed()) {
+        //   console.log('page closed, returning from page.on("response").')
+        //   return
+        // }
 
         await interceptedResponse
         await saveResponses(crawlID, browser, websiteUrl, interceptedResponse, connection)

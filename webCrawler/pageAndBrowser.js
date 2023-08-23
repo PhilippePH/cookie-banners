@@ -14,6 +14,7 @@ puppeteerExtra.use(StealthPlugin()) // allows to pass all tests on SannySoft, ev
 
 const laptopExecutablePaths = {
   'Google Chrome': '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+  'Ghostery Google Chrome': '/Applications/Google Chrome copy.app/Contents/MacOS/Google Chrome',
   Brave: '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
   Firefox: '/Applications/Firefox.app/Contents/MacOS/firefox',
   Ghostery: '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery'
@@ -47,10 +48,10 @@ const macserverExecutablePaths = {
   Ghostery: '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery'
 }
 const macserverUserProfiles = {
-  'Google Chrome': '/Users/crawler/Library/Application Support/Google/Chrome/Profile 2',
+  'Google Chrome': '/Users/crawler/Library/Application Support/Google/Chrome/',
   Brave: '/Users/crawler/Library/Application Support/BraveSoftware/Brave-Browser/',
   Ghostery: '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release',
-  'Google Chrome with Ghostery extension': '/Users/crawler/Library/Application Support/Google/Chrome/Profile 1',
+  'Google Chrome with Ghostery extension': '/Users/crawler/Library/Application Support/Google/Chrome/',
   'Firefox 1': '/Users/crawler/Library/Application Support/Firefox/Profiles/i5wm7jfj.profile1',
   'Firefox 2': '/Users/crawler/Library/Application Support/Firefox/Profiles/pl2a1t2n.profile2'
 }
@@ -76,7 +77,7 @@ async function puppeteerLaunchBrowser (browser, device, version) {
         executablePath: executablePaths[browser],
         userDataDir: userProfiles[browser],
         defaultViewport: null,
-        args: ['--start-maximised']
+        args: ['--start-maximised', '--profile-directory=Profile 2']
       })
     } else if (browser === 'Brave') {
       return await puppeteerExtra.launch({
@@ -88,7 +89,7 @@ async function puppeteerLaunchBrowser (browser, device, version) {
       })
     } else if (browser === 'Firefox') {
       // This launches the first Firefox profile
-      if (version === 1) {
+      if (Number(version) === 1) {
         return await puppeteer.launch({
           headless: false,
           product: 'firefox',
@@ -96,7 +97,7 @@ async function puppeteerLaunchBrowser (browser, device, version) {
           userDataDir: userProfiles['Firefox 1'],
           defaultViewport: null
         })
-      } else if (version === 2) {
+      } else if (Number(version) === 2) {
         // This launches the second Firefox profile (same settings, just for ability to launch two in parallel)
         return await puppeteer.launch({
           headless: false,
@@ -108,7 +109,7 @@ async function puppeteerLaunchBrowser (browser, device, version) {
       }
     } else if (browser === 'Ghostery') {
       // This launches the Ghostery browser
-      if (version === 1) {
+      if (Number(version) === 1) {
         return await puppeteer.launch({
           headless: false,
           product: 'firefox',
@@ -116,13 +117,14 @@ async function puppeteerLaunchBrowser (browser, device, version) {
           userDataDir: userProfiles[browser],
           defaultViewport: null
         })
-      } else if (version === 2) {
+      } else if (Number(version) === 2) {
         // This launches Google Chrome with the Ghostery extension
         return await puppeteer.launch({
           headless: false,
-          executablePath: executablePaths['Google Chrome'],
+          executablePath: executablePaths['Ghostery Google Chrome'],
           userDataDir: userProfiles['Google Chrome with Ghostery extension'],
-          args: ['--start-maximised']
+          defaultViewport: null,
+          args: ['--start-maximised', '--profile-directory=Profile 1']
         })
       }
     }
@@ -141,7 +143,7 @@ async function puppeteerLaunchBrowser (browser, device, version) {
 export async function createBrowserInstance (browser, device, version) {
   let BI
   try {
-    BI = await puppeteerLaunchBrowser(browser, device)
+    BI = await puppeteerLaunchBrowser(browser, device, version)
   } catch (error) {
     console.log('Error starting browser ' + browser)
     console.log(error)

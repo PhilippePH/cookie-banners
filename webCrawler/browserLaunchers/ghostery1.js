@@ -18,8 +18,9 @@ netstat -lntu
 */
 import { ParallelMain } from '../runtimeSetUp.js'
 
-const BROWSER_LIST = ['Brave']
-const VERSION = 0
+const BROWSER_LIST = ['Ghostery']
+// VERSION 0 is the Ghostery branded browser. VERSION 1 is Google Chrome with the Ghostery extension enabled.
+const VERSION = 1
 const START_NUMBER = 0
 const NUM_URLS = 1
 const PATH_TO_CSV = './webCrawler/websiteSelection/shuffled.txt'
