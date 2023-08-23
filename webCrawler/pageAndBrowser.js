@@ -50,6 +50,7 @@ const macserverUserProfiles = {
   'Google Chrome': '/Users/crawler/Library/Application Support/Google/Chrome/Default',
   Brave: '/Users/crawler/Library/Application Support/BraveSoftware/Brave-Browser/',
   Ghostery: '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release',
+  'Google Chrome with Ghostery extension': 'TBD',
   'Firefox 1': '/Users/crawler/Library/Application Support/Firefox/Profiles/5rv5rl49.default-release',
   'Firefox 2': 'TBD'
 }
@@ -86,6 +87,7 @@ async function puppeteerLaunchBrowser (browser, device, version) {
         args: ['--start-maximized', '--profile-directory=Profile 1']
       })
     } else if (browser === 'Firefox') {
+      // This launches the first Firefox profile
       if (version === 1) {
         return await puppeteer.launch({
           headless: false,
@@ -95,6 +97,7 @@ async function puppeteerLaunchBrowser (browser, device, version) {
           defaultViewport: null
         })
       } else if (version === 2) {
+        // This launches the second Firefox profile (same settings, just for ability to launch two in parallel)
         return await puppeteer.launch({
           headless: false,
           product: 'firefox',
@@ -104,13 +107,24 @@ async function puppeteerLaunchBrowser (browser, device, version) {
         })
       }
     } else if (browser === 'Ghostery') {
-      return await puppeteer.launch({
-        headless: false,
-        product: 'firefox',
-        executablePath: executablePaths[browser],
-        userDataDir: userProfiles[browser],
-        defaultViewport: null
-      })
+      // This launches the Ghostery browser
+      if (version === 1) {
+        return await puppeteer.launch({
+          headless: false,
+          product: 'firefox',
+          executablePath: executablePaths[browser],
+          userDataDir: userProfiles[browser],
+          defaultViewport: null
+        })
+      } else if (version === 2) {
+        // This launches Google Chrome with the Ghostery extension
+        return await puppeteer.launch({
+          headless: false,
+          executablePath: executablePaths['Google Chrome'],
+          userDataDir: userProfiles['Google Chrome with Ghostery extension'],
+          args: ['--start-maximised']
+        })
+      }
     }
   } catch (error) {
     if (error instanceof BrowserNameError) {
