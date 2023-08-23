@@ -53,7 +53,7 @@ const macserverUserProfiles = {
   Ghostery: '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release'
 }
 
-export async function createBrowserInstance (browser, vantagePoint, device = 'linux') {
+async function createBrowserInstance (browser, device) {
   let executablePaths = linuxExecutablePaths
   let userProfiles = linuxUserProfiles
 
@@ -110,5 +110,55 @@ export async function createBrowserInstance (browser, vantagePoint, device = 'li
       console.log(error)
       throw new Error()
     }
+  }
+}
+
+
+export async function startBrowserInstance (browser, vantagePoint, device) {
+  let BI
+  try {
+    BI = await createBrowserInstance(browser, vantagePoint, device)
+  } catch (error) {
+    console.log('Error starting browser ' + browser)
+    console.log(error)
+    exit()
+  } // Exit if fail to create browser instance
+  return BI
+}
+
+export async function closeBrowserInstance (browserInstance) {
+  try {
+    await Promise.race([
+      await browserInstance.close(),
+      new Promise((_, reject) => setTimeout(() => reject(new Error()), 5000))
+    ])
+  } catch (error) {
+    console.log('Timeout occurred trying to close the browser instance. Exiting program execution')
+    exit()
+  }
+}
+
+export async function createNewPage (browserInstance) {
+  // Test that browser instance is still active
+  try {
+    page = await browserInstance.newPage()
+  } catch (error) {
+    console.log(error)
+    console.log('Browser instance is closed. Starting a new one.')
+    browserInstance = await startBrowserInstance(browser, device)
+    page = await browserInstance.newPage()
+  }
+  return page
+}
+
+export async function closePage (page, browserInstance) {
+  try {
+    await Promise.race([
+      await page.close(),
+      new Promise((_, reject) => setTimeout(() => reject(new Error()), 1000))
+    ])
+  } catch (error) {
+    console.log('Timeout occurred trying to close the page. Closing browserInstance.')
+    await closeBrowserInstance(browserInstance)
   }
 }

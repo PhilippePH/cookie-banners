@@ -1,100 +1,65 @@
-import { getSiteNames } from './bannerIdWebsiteSelection.js'
-import { createBrowserInstance } from './bannerIdBrowser.js'
+// import { getSiteNames } from './bannerIdWebsiteSelection.js'
 import { determineCookieBannerState } from './bannerID.js'
-import { exit } from 'process'
+import { getScreenshot } from './bannerIdMeasurements.js'
+import { startBrowserInstance, closeBrowserInstance, createNewPage, closePage } from '../pageAndBrowser.js'
 
-async function getScreenshot (page, resultPath, siteName) {
-  // Screenshot
+async function visitWebsite (page, websiteUrl, browser) {
   try {
-    await page.screenshot({
-      path: resultPath + `/screenshots/${siteName}.jpeg`,
-      type: 'jpeg',
-      quality: 25
-    })
+    console.log(`    (${browser}) : Loading new page ${websiteUrl}`)
+    await page.goto(websiteUrl, { timeout: 10000, waitUntil: 'load' })
+    console.log(`    (${browser}) ${websiteUrl}: Page loaded`)
+    return 'Success'
   } catch (error) {
-    console.log('Error with the screenshot')
-    console.log(error)
-  }
-}
-
-async function startBrowserInstance (browser, vantagePoint, device) {
-  let BI
-  try {
-    BI = await createBrowserInstance(browser, vantagePoint, device)
-  } catch (error) {
-    console.log('Error starting browser ' + browser)
-    console.log(error)
-    exit()
-  } // Exit if fail to create browser instance
-  return BI
-}
-
-async function crawl (browser, resultPath, urlList, vantagePoint,
-  connection = null, processID = 1, test = false, device = 'linux',
-  wordCorpus, parentCutoff, childrenCutoff) {
-  const bannerFoundArr = []
-  let browserInstance, page
-  browserInstance = await startBrowserInstance(browser, vantagePoint, device)
-
-  try { // Closes BrowserInstance in case of an unhandled error
-    let urlCounter = 0
-
-    for (const websiteUrl of urlList) {
-      urlCounter++
-
-      // Test that browser instance is still active
-      try {
-        page = await browserInstance.newPage()
-      } catch (error) {
-        console.log(error)
-        console.log('Browser instance was closed somehow. Starting a new one.')
-        browserInstance = await startBrowserInstance(browser, vantagePoint, device)
-        page = await browserInstance.newPage()
-      }
-
-      console.log(`\n${processID} (${browser}): (${urlCounter}) ${websiteUrl}`)
-      const siteName = await getSiteNames(websiteUrl)
-
-      page.on('console', msg => console.log('PAGE LOG:', msg.text()))
-
-      try {
-        console.log(`   ${processID} (${browser}) : Loading new page ${websiteUrl}`)
-        await page.goto(websiteUrl, { timeout: 10000, waitUntil: 'load' })
-        console.log(`   ${processID} (${browser}) ${websiteUrl}: Page loaded`)
-      } catch (error) {
-        // if (error instanceof TimeoutError) { // for some reason, this stopped working at one point.. I tried fixing the imports, but can't find the issue
-        if (error.name === 'TimeoutError') {
-          console.log(`** ${processID} (${browser}): TimeoutError -> ${websiteUrl}`)
-        } else {
-          console.log(`** ${processID} (${browser}): ${error.name} visiting webpage -> ${websiteUrl} (${error.message})`)
-        }
-        console.log(`** ${processID} (${browser}) closing page.`)
-        try {
-          await page.close()
-          // also tried restarting the browser, but that didn't fix the issue etiher....
-        } catch (error) { console.log(` ** ${processID} (${browser}): Error trying to close the page after error with webpage ${websiteUrl}`) }
-        console.log(`** ${processID} (${browser}) Webpage closed.`)
-        continue
-      }
-
-      await getScreenshot(page, resultPath, siteName) // screenshot for top 250
-      const bannerFound = await determineCookieBannerState(page, wordCorpus, parentCutoff, childrenCutoff)
-      bannerFoundArr.push({ siteName, bannerFound })
-
-      console.log(`   ${processID} (${browser}) ${websiteUrl}: Page closed`)
-      await page.close()
+    if (error.name === 'TimeoutError') {
+      console.log(`**  (${browser}): TimeoutError -> ${websiteUrl}`)
+      return 'TimeoutError'
+    } else {
+      console.log(`**  (${browser}): ${error.name} visiting webpage -> ${websiteUrl} (${error.message})`)
+      return 'OtherError'
     }
-  } catch (error) { // Here to ensure the BrowserInstance closes in case of an error
-    console.log(error)
-    await page.close()
-    await browserInstance.close()
-    console.log(`** ${processID} (${browser}): BrowserInstance closed in error handling.`)
-    return
   }
-  await browserInstance.close()
-  console.log(`   ${processID} (${browser}) instance closed.`)
+}
 
-  console.log(bannerFoundArr)
+async function takeMeasurements (page, resultPath, siteName, wordCorpus, parentCutoff, childrenCutoff) {
+  await getScreenshot(page, resultPath, siteName) // screenshot for top 250
+  const bannerFound = await determineCookieBannerState(page, wordCorpus, parentCutoff, childrenCutoff)
+}
+
+async function evaluateWebsite (browser, resultPath, websiteUrl, siteName,
+  connection = null, wordCorpus, parentCutoff, childrenCutoff) {
+    returnCode = await visitWebsite(page, websiteUrl, browser)
+
+    if (returnCode === 'Success') {
+      await takeMeasurements(page, resultPath, siteName, connection, wordCorpus, parentCutoff, childrenCutoff)
+    }
+}
+  
+async function crawlMain (browser, resultPath, urlList, connection = null,
+  test = false, device, wordCorpus, parentCutoff, childrenCutoff) {
+  let browserInstance, page
+  let urlCounter = 0
+  browserInstance = await startBrowserInstance(browser, device)
+    
+  for (const websiteUrl of urlList) {
+    urlCounter++
+    console.log(`\n (${browser}): (${urlCounter}) ${websiteUrl}`)
+
+    page = await createNewPage(browserInstance)
+
+    try {
+      await Promise.race([
+        await evaluateWebsite(browser, resultPath, websiteUrl, siteName,
+          connection = null, wordCorpus, parentCutoff, childrenCutoff),
+        
+        new Promise((_, reject) => setTimeout(() => reject(new Error()), 30000))
+      ])
+    } catch (error) {
+      // Add to timeout counter
+      console.log('Website used up all its time allocation. Forced timedout.')
+    }
+    await closePage(page, browserInstance)
+  }
+  await closeBrowserInstance(browserInstance)
 }
 
 async function CLImain () {
@@ -103,20 +68,18 @@ async function CLImain () {
 
   // Accessing individual arguments
   const path = args[0]
-  const vantagePoint = args[1]
-  const browser = args[2]
-  const websiteListString = args[3]
-  const processID = args[4]
-  const device = args[5]
-  const wordCorpus = args[6]
-  const parentCutoff = args[7]
-  const childrenCutoff = args[8]
+  const browser = args[1]
+  const websiteListString = args[2]
+  const device = args[3]
+  const wordCorpus = args[4]
+  const parentCutoff = args[5]
+  const childrenCutoff = args[6]
 
   const websiteList = websiteListString.split(',') // Convert back to an array
 
   // Crawl
   try {
-    await crawl(browser, path, websiteList, vantagePoint, null, processID, false, device, wordCorpus, parentCutoff, childrenCutoff)
+    await crawlMain(browser, path, websiteList, null, false, device, wordCorpus, parentCutoff, childrenCutoff)
   } catch (error) {
     console.log('Error in the crawl function')
     console.log(error)
