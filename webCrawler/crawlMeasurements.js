@@ -1,4 +1,5 @@
 import { saveCookies, saveResponses, saveRequests, saveLocalStorage } from './db.js'
+import { writeFile } from 'fs'
 
 export async function getScreenshot (page, resultPath, siteName) {
   try {
@@ -22,11 +23,11 @@ export async function getHTML (page, resultPath, siteName) {
       new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout occurred')), HTML_TIMEOUT))
     ])
     const fileName = resultPath + `/htmlFiles/${siteName}.html`
-    fs.writeFile(fileName, htmlContent)
+    writeFile(fileName, htmlContent)
   } catch (error) { console.log('Error with saving the HTML of the page to a file') }
 }
 
-export async function getResponses (page, browser, websiteUrl, connection) {
+export async function getResponses (page, browser, websiteUrl, connection, crawlID) {
   try {
     if (page.isClosed()) {
       console.log('page closed, returning.')
@@ -67,15 +68,10 @@ export async function getRequests (page) {
   return [frames, requestedURL]
 }
 
-async function getCookies (page, browser, websiteUrl, connection) {
-  COOKIE_BOOL = true
+export async function getCookies (page, browser, websiteUrl, connection, crawlID) {
   try {
     const topFrame = await page.mainFrame()
-    await getFrameCookiesRecursive(topFrame, browser, websiteUrl, connection)
-
-    if (!COOKIE_BOOL) {
-      COOKIE_TIMEOUT_COUNTER++
-    }
+    await getFrameCookiesRecursive(topFrame, browser, websiteUrl, connection, crawlID)
   } catch (error) {
     console.log('Error getting top frame. Cookies not saved.')
   }
@@ -92,7 +88,7 @@ async function cookieFrameEvaluate (frame) {
 }
 
 // Function to recursively iterate through frames and save the cookies
-async function getFrameCookiesRecursive (frame, browser, websiteUrl, connection) {
+async function getFrameCookiesRecursive (frame, browser, websiteUrl, connection, crawlID) {
   let frameCookies, frameOrigin
 
   try {
@@ -114,8 +110,6 @@ async function getFrameCookiesRecursive (frame, browser, websiteUrl, connection)
       throw new Error()
     }
   } catch (error) {
-    COOKIE_BOOL = false
-    SUCCESS_BOOL = false
     return
   }
 
@@ -127,7 +121,7 @@ async function getFrameCookiesRecursive (frame, browser, websiteUrl, connection)
 
   const childFrames = frame.childFrames()
   for (const childFrame of childFrames) {
-    await getFrameCookiesRecursive(childFrame, browser, websiteUrl, connection)
+    await getFrameCookiesRecursive(childFrame, browser, websiteUrl, connection, crawlID)
   }
 }
 
@@ -149,7 +143,7 @@ async function LocalStorageFrameEvaluate (frame) {
   ])
 }
 
-async function getLocalStorageRecursive (page, browser, websiteUrl, frame, connection) {
+async function getLocalStorageRecursive (page, browser, websiteUrl, frame, connection, crawlID) {
   let values, localStorage, frameOrigin
   try {
     if (frame) {
@@ -172,8 +166,6 @@ async function getLocalStorageRecursive (page, browser, websiteUrl, frame, conne
       throw new Error()
     }
   } catch (error) {
-    STORAGE_BOOL = false
-    SUCCESS_BOOL = false
     return
   }
 
@@ -190,15 +182,11 @@ async function getLocalStorageRecursive (page, browser, websiteUrl, frame, conne
 }
 
 export async function getLocalStorage (page, browser, websiteUrl, connection) {
-  STORAGE_BOOL = true
   const mainFrame = await page.mainFrame()
   await getLocalStorageRecursive(page, browser, websiteUrl, mainFrame, connection)
-  if (!STORAGE_BOOL) {
-    LOCALSTORAGE_TIMEOUT_COUNTER++
-  }
 }
 
-export async function addRequestToDb (requestData, browser, websiteUrl, connection) {
+export async function addRequestToDb (requestData, browser, websiteUrl, connection, crawlID) {
   const framesObjects = requestData[0]
   const requestedURL = requestData[1]
 

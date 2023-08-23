@@ -1,7 +1,6 @@
 import puppeteer from 'puppeteer-core'
 import puppeteerExtra from 'puppeteer-extra'
 import StealthPlugin from 'puppeteer-extra-plugin-stealth'
-import { exit } from 'process'
 
 class BrowserNameError extends Error {
   constructor (message) {
@@ -54,7 +53,7 @@ const macserverUserProfiles = {
   Ghostery: '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release'
 }
 
-async function createBrowserInstance (browser, vantagePoint, device = 'linux') {
+async function puppeteerLaunchBrowser (browser, device) {
   let executablePaths = linuxExecutablePaths
   let userProfiles = linuxUserProfiles
 
@@ -114,14 +113,14 @@ async function createBrowserInstance (browser, vantagePoint, device = 'linux') {
   }
 }
 
-export async function createBrowserInstance (browser, vantagePoint, device) {
+export async function createBrowserInstance (browser, device) {
   let BI
   try {
-    BI = await createBrowserInstance(browser, vantagePoint, device)
+    BI = await puppeteerLaunchBrowser(browser, device)
   } catch (error) {
     console.log('Error starting browser ' + browser)
     console.log(error)
-    exit()
+    process.exit(1)
   } // Exit if fail to create browser instance
   return BI
 }
@@ -134,21 +133,8 @@ export async function closeBrowserInstance (browserInstance) {
     ])
   } catch (error) {
     console.log('Timeout occurred trying to close the browser instance. Exiting program execution')
-    exit()
+    process.exit(1)
   }
-}
-
-export async function createNewPage (browserInstance) {
-  // Test that browser instance is still active
-  try {
-    page = await browserInstance.newPage()
-  } catch (error) {
-    console.log(error)
-    console.log('Browser instance is closed. Starting a new one.')
-    browserInstance = await startBrowserInstance(browser, device)
-    page = await browserInstance.newPage()
-  }
-  return page
 }
 
 export async function closePage (page, browserInstance) {

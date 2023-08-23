@@ -35,7 +35,7 @@ export async function saveLocalStorage (crawlID, browser, websiteURL, storageTyp
       value,
       null
     ]
-    
+
     try {
       await connection.query(localStorageDataQuery, localStorageData)
     } catch (error) {

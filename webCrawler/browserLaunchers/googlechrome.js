@@ -19,10 +19,12 @@ netstat -lntu
 import { ParallelMain } from '../runtimeSetUp'
 
 const BROWSER_LIST = ['Google Chrome']
-const VANTAGE_POINTS = ['UK']
 const START_NUMBER = 0
 const NUM_URLS = 1
 const PATH_TO_CSV = './webCrawler/websiteSelection/shuffled.txt'
 const DEVICE = 'macserver'
+const CORPUS = []
+const PARENTS_THRESHOLD = 5
+const CHILDREN_THRESHOLD = 20
 
 ParallelMain(BROWSER_LIST, START_NUMBER, NUM_URLS, CORPUS, PARENTS_THRESHOLD, CHILDREN_THRESHOLD, PATH_TO_CSV, DEVICE)

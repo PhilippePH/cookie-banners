@@ -23,7 +23,7 @@ async function randomiseURLs (path) {
     The values within each thirds are shuffled.
     They are then put back into one list, with a value from the first third,
     second third and third third being added in order (and so on).
-   
+
     This outputs a txt file with one URL on each line. */
 
   const myURLs = await TXTtoArray(path)

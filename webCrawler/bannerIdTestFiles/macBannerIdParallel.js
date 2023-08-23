@@ -29,10 +29,10 @@ const PATH_TO_CSV = './shuffled.txt'
 const DEVICE = 'laptop'
 
 async function ParallelMain (browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device) {
-  const path = await createResultFolder(browserList, device)
+  const resultsPath = await createResultFolder(browserList, device)
 
   // ARGUMENTS PER PROCESS
-  const argumentsArray = await createArgumentArray(browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device)
+  const argumentsArray = await createArgumentArray(browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath)
 
   // Launching child processes
   for (const args of argumentsArray) {

@@ -3,7 +3,7 @@ import { callableMain } from './index.js'
 import { getURLs } from './bannerIdWebsiteSelection.js'
 
 // CREATING RESULTS FOLDER
-async function createResultFolder (browserList, device) {
+export async function createResultFolder (browserList, device) {
   const date = new Date()
 
   // Saving the data to OneDrive, which doesn't allow some chars (":","/") in filename.
@@ -45,22 +45,21 @@ async function createResultFolder (browserList, device) {
   return path
 }
 
-async function createArgumentArray (browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device) {
+export async function createArgumentArray (browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath) {
   const argArray = []
 
   for (const browser of browserList) {
     const websiteList = await getURLs(numberUrls, startNumber, browser, pathToCsv)
-    const newPath = path + `/${browser}`
-    argArray.push([newPath, browser, websiteList, device, corpus, parentsThreshold, childrenThreshold])
+    argArray.push([resultsPath, browser, websiteList, device, corpus, parentsThreshold, childrenThreshold])
   }
   return argArray
 }
 
 export async function ParallelMain (browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device) {
-  const path = await createResultFolder(browserList, device)
+  const resultsPath = await createResultFolder(browserList, device)
 
   // ARGUMENTS PER PROCESS
-  const argumentsArray = await createArgumentArray(browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device)
+  const argumentsArray = await createArgumentArray(browserList, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath)
 
   callableMain(argumentsArray[0])
 }
