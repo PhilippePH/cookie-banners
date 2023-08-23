@@ -16,17 +16,19 @@ sannysoft.jpeg
 
 netstat -lntu
 */
-// import { fork } from 'child_process'
+import { fork } from 'child_process'
 import * as fs from 'node:fs/promises'
-import { getURLs } from './WebsiteSelection.js'
-import { callableMain } from './index.js'
+import { getURLs } from './bannerIdWebsiteSelection.js'
 
 const BROWSER_LIST = ['Google Chrome']
 const VANTAGE_POINTS = ['UK']
-const START_NUMBER = 6069
-const NUM_URLS = 10000
-const PATH_TO_CSV = './webCrawler/websiteSelection/shuffled.txt'
-const DEVICE = 'macserver'
+const START_NUMBER = 0
+const NUM_URLS = 25
+const CORPUS = ['cookie', 'cookies', 'agree', 'accept', 'reject', 'decline', 'preferences', 'policy', 'privacy', 'notice', 'partners', 'third-party']
+const PARENTS_THRESHOLD = 5
+const CHILDREN_THRESHOLD = 20
+const PATH_TO_CSV = './shuffled.txt'
+const DEVICE = 'laptop'
 
 // CREATING RESULTS FOLDER
 async function createResultFolder (browserList, vantagePoint, device) {
@@ -83,7 +85,7 @@ async function createArgumentArray (path, browserList, vantagePoint, device) {
     for (const browser of browserList) {
       const websiteList = await getURLs(NUM_URLS, START_NUMBER, browser, PATH_TO_CSV)
       const newPath = path + `/${location}/${browser}`
-      argArray.push([newPath, location, browser, websiteList, i, device])
+      argArray.push([newPath, location, browser, websiteList, i, device, CORPUS, PARENTS_THRESHOLD, CHILDREN_THRESHOLD])
       i++
     }
   }
@@ -97,10 +99,11 @@ async function ParallelMain (browserList, vantagePoint, device) {
   const argumentsArray = await createArgumentArray(path, browserList, vantagePoint, device)
 
   // Launching child processes
-  // for (const args of argumentsArray) {
-  //   fork('./bannerIdIndex.js', args)
-  // }
+  for (const args of argumentsArray) {
+    fork('./bannerIdIndex.js', args)
+  }
 
-  callableMain(argumentsArray[0])
+  // callableMain(argumentsArray[0]);
 }
+
 ParallelMain(BROWSER_LIST, VANTAGE_POINTS, DEVICE)

@@ -7,18 +7,22 @@ import os
 """
 
 # Must be in descending values because no copies of array are being made. 
-THRESHOLD_TEST_VALUES = [1, 0.5, 0.25, 0.10, 0.05, 0.01]
+# THRESHOLD_TEST_VALUES = [1, 0.5, 0.25, 0.10, 0.05, 0.01]
+THRESHOLD_TEST_VALUES = [0.0001]
+# THRESHOLD_TEST_VALUES = [0.01, 0.005, 0.001, 0.0001]
 
 # Smallest corpus to find hits in all tests
-CORPUS_1 = ['agree', 'i agree', 'accept', 'accept all', 'accept cookies',
+# ADDED COOKIE AND COOKIES AS WORDS.. THEY SHOULD'VE BEEN THERE ALREADY
+CORPUS_1 = [ 'cookie', 'cookies', 'agree', 'i agree', 'accept', 'accept all', 'accept cookies',
             'i accept','reject', 'reject all', 'decline', 'cookie preferences',
             'manage cookies',  'preferences', 'learn more',  'more information',
             'privacy policy', 'privacy statement', 'cookie policy','cookie notice',
-            'our partners', 'partners',  'third-party', 'similar technologies']
+            'our partners', 'partners',  'third-party']
 
 # All relevant words
-CORPUS_2 = ['agree', 'i agree','accept', 'accept all', 'accept cookies', 'i accept',
-            'ok','allow all', 'enable all', 'got it', 'allow cookies', 'reject',
+# After doing some tests, "Ok" leads to way too many false positives. Removed to give corpus 2 a figthing chance
+CORPUS_2 = ['cookie', 'cookies','agree', 'i agree','accept', 'accept all', 'accept cookies', 'i accept',
+            'allow all', 'enable all', 'got it', 'allow cookies', 'reject',
             'reject all', 'decline', 'mandatory only', 'required only', 'not accept',
             'disable all', 'disagree', 'decline cookies', 'decline all',
             'mandatory', 'optional cookies', 'essential cookies',
@@ -32,8 +36,32 @@ CORPUS_2 = ['agree', 'i agree','accept', 'accept all', 'accept cookies', 'i acce
             'partners', 'third party', 'vendors', 'similar technologies',
             'other technologies']
 
-CORPUS_TEST_VALUES = [CORPUS_1, CORPUS_2]
-CORPUS_NAMES = ["shortCorpus","longCorpus"]
+CORPUS_3 = ['cookie', 'cookies', 'accept', 'reject', 'policy']
+CORPUS_4 = ['accept', 'reject', 'policy']
+CORPUS_5 = [ 'agree', 'i agree', 'accept', 'accept all', 'accept cookies',
+            'i accept','reject', 'reject all', 'decline', 'cookie preferences',
+            'manage cookies',  'preferences', 'learn more',  'more information',
+            'privacy policy', 'privacy statement', 'cookie policy','cookie notice',
+            'our partners', 'partners',  'third-party']
+CORPUS_6 = ['agree', 'i agree','accept', 'accept all', 'accept cookies', 'i accept',
+            'ok','allow all', 'enable all', 'got it', 'allow cookies', 'reject',
+            'reject all', 'decline', 'mandatory only', 'required only', 'not accept',
+            'disable all', 'disagree', 'decline cookies', 'decline all',
+            'mandatory', 'optional cookies', 'essential cookies',
+            'non-essential cookies','strictly necessary', 'necessary cookies',
+            'required', 'essential', 'non-essential',  'cookie preferences',
+            'manage cookies',  'preferences', 'cookies options','consent manager',
+            'customize cookies', 'cookie options', 'cookies settings', 'manage settings',
+            'manage preferences', 'more options', 'learn more',  'more information',
+            'show purposes', 'further information', 'more options', 'privacy policy',
+            'privacy statement', 'cookie policy','cookie notice', 'our partners',
+            'partners', 'third party', 'vendors', 'similar technologies',
+            'other technologies']
+CORPUS_7 = ['cookies', 'privacy', 'policy', 'consent', 'accept', 'agree', 'personalized', 'legitimate interest']
+
+CORPUS_TEST_VALUES = [CORPUS_1,CORPUS_4, CORPUS_2, CORPUS_5, CORPUS_3, CORPUS_4,CORPUS_7]
+CORPUS_NAMES = ["shortCorpus","shortCorpus_nocookie","longCorpus","longCorpus_nocookie","shortestCorpus","shortestCorpus_nocookie","exploringTheCookieVerseCorpus"]
+
 
 def parseHtmlDir(html_directory_path, filename):
         complete_filename = html_directory_path+filename
@@ -50,6 +78,7 @@ def countNodes(element, recordsArr):
             childrenNodeCounter += returnValues[1]
 
     recordsArr.append([element, childrenNodeCounter])
+
     return (recordsArr, childrenNodeCounter)
 
 def keepSmallNodes(recordsArr, totNodes, threshold):
@@ -61,7 +90,6 @@ def keepSmallNodes(recordsArr, totNodes, threshold):
             recordsArr.pop(i)
             continue
         i += 1
-
     return recordsArr #return only the elements that are lower than the threshold 
 
 
@@ -101,7 +129,7 @@ def isBannerHidden(element):
 def main(directory_path):
     html_directory_path = directory_path + "htmlFiles/"
     filePath = directory_path+'bannerIdentificationResults.txt'
-    
+
     #Clear results of previous run
     with open(filePath, 'w') as file:
         file.write("")
@@ -110,6 +138,7 @@ def main(directory_path):
     for file in os.listdir(iterableDir):
         # Parsing the current file
         filename = os.fsdecode(file)
+
         try:
             soup = parseHtmlDir(html_directory_path, filename)
         except:
@@ -120,14 +149,13 @@ def main(directory_path):
         recordsArr = returnValues[0]
         totNodes = returnValues[1]
         
-        for corpusIndex in range(len(CORPUS_TEST_VALUES)):
-            for threshold in THRESHOLD_TEST_VALUES:
-
-                # Get small nodes
-                # RecordsArr gets modified in the function (the = is just to make it clear)
-                # Ensure that the threshold loops from largest to smallest values
-                recordsArr = keepSmallNodes(recordsArr, totNodes, threshold)
-
+        for threshold in THRESHOLD_TEST_VALUES:
+            # Get small nodes
+            # RecordsArr gets modified in the function (the = is just to make it clear)
+            # Ensure that the threshold loops from largest to smallest values
+            recordsArr = keepSmallNodes(recordsArr, totNodes, threshold)
+            
+            for corpusIndex in range(len(CORPUS_TEST_VALUES)):
                 # Search the small nodes until find the cookie banner
                 element, result = findBanner(recordsArr, CORPUS_TEST_VALUES[corpusIndex])
                 found = (len(result) > 0)
