@@ -325,7 +325,10 @@ async function crawl (browser, resultPath, urlList, vantagePoint,
   connection = null, processID = 1, test = false, device = 'linux') {
   let browserInstance, page
   browserInstance = await startBrowserInstance(browser, vantagePoint, device)
-
+  
+  console.log(`Crawling ${urlList.length} websites`)
+  console.log(urlList)
+  
   // Closes BrowserInstance in case of an unhandled error
   try {
     let urlCounter = 0
