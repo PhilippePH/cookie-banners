@@ -78,3 +78,20 @@ export async function saveRequests (crawlID, browser, websiteURL, frameOrigin, r
     console.log(error)
   }
 }
+
+export async function addCookieBannerDataToDB (browser, websiteURL, connection, crawlID, visibility, bannerInfo) {
+  const bannerDataQuery = 'INSERT INTO bannerData (crawlID, browser, websiteURL, visibility, bannerInfo) VALUES ($1, $2, $3, $4, $5)'
+  const bannerData = [
+    crawlID,
+    browser,
+    websiteURL,
+    visibility,
+    bannerInfo
+  ]
+
+  try {
+    await connection.query(bannerDataQuery, bannerData)
+  } catch (error) {
+    console.log(error)
+  }
+}

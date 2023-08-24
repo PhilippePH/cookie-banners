@@ -1,3 +1,5 @@
+import { addCookieBannerDataToDB } from "./db"
+
 /*
 Step 1. Get all terminal nodes
 Step 2. Filter terminal nodes --> keep only those with at least one word match
@@ -213,23 +215,32 @@ async function checkBannerVisibility (page, cookieBannerInfo) {
   return trueCount > falseCount
 }
 
-export async function determineCookieBannerState (page, wordCorpus, maxNumParents, maxNumChildren) {
+async function saveCookieBannerData (browser, websiteUrl, bannerInfo, visibility) {
+  const file = createWriteStream(`/Users/philippe/Documents/code/cookie-banners/webCrawler/bannerIdTestFiles/${browser}_timedoutURLs.txt`, { flags: 'a' })
+
+  file.on('error', function (err) {
+    console.log(err)
+  })
+
+  file.write(`${websiteUrl} --> Is visible? ${visibility}. Banner Info: ${bannerInfo} \n`)
+  file.end()
+}
+
+export async function determineCookieBannerState (page, wordCorpus, maxNumParents, maxNumChildren, websiteUrl, browser, connection, crawlID) {
   await page.exposeFunction('getTerminalNodes', getTerminalNodes)
   await page.exposeFunction('filterTerminalNodes', filterTerminalNodes)
   await page.exposeFunction('getParents', getParents)
   await page.exposeFunction('selectBannerElement', selectBannerElement)
 
   const cookieBannerInfo = await evaluatePage(page, wordCorpus, maxNumParents, maxNumChildren)
-
-  // If no banner has been found, return null
+  
+  // If no banner has been found, return
   if (cookieBannerInfo === null) {
     console.log('No banners were found on the page.')
-    return null
-    // SAVE THE VALUE SOMEWHRRE
-    // ADD TO DATABASE
+    await saveCookieBannerData(browser, websiteUrl, bannerInfo, null)
+    await addCookieBannerDataToDB(browser, websiteUrl, connection, crawlID, null, cookieBannerInfo)
   }
-  await checkBannerVisibility(page, cookieBannerInfo)
-
-  // SAVE THE VALUE SOMEWHRRE
-  // ADD TO DATABASE
+  const visibility = await checkBannerVisibility(page, cookieBannerInfo)
+  await saveCookieBannerData(browser, websiteUrl, bannerInfo, visibility)
+  await addCookieBannerDataToDB(browser, websiteUrl, connection, crawlID, visibility, cookieBannerInfo)
 }

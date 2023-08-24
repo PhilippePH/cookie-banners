@@ -51,7 +51,7 @@ async function takeMeasurements (page, browser, websiteUrl, connection, requestD
   await getLocalStorage(page, browser, websiteUrl, connection, crawlID)
 
   // console.log(`   (${browser}) ${websiteUrl}: Checking Cookie Banner`)
-  // await determineCookieBannerState(page, wordCorpus, parentCutoff, childrenCutoff, crawlID)
+  // await determineCookieBannerState(page, wordCorpus, maxNumParents, maxNumChildren, websiteUrl, browser, connection, crawlID)
 
   console.log(`   (${browser}) ${websiteUrl}: Adding requests to DB`)
   await addRequestToDb(requestData, browser, websiteUrl, connection, crawlID)
