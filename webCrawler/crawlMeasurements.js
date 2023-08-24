@@ -20,7 +20,7 @@ export async function getHTML (page, resultPath, siteName) {
     const HTML_TIMEOUT = 5000
     const htmlContent = await Promise.race([
       await page.content(),
-      new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout occurred')), HTML_TIMEOUT))
+      new Promise((resolve, reject) => setTimeout(() => reject(new Error('Timeout occurred')), HTML_TIMEOUT))
     ])
     const fileName = resultPath + `/htmlFiles/${siteName}.html`
     writeFile(fileName, htmlContent)
@@ -83,7 +83,7 @@ async function cookieFrameEvaluate (frame) {
     frame.evaluate(() => {
       return window.origin
     }),
-    new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout occurred')), FRAME_TIMEOUT))
+    new Promise((resolve, reject) => setTimeout(() => reject(new Error('Timeout occurred')), FRAME_TIMEOUT))
   ])
 }
 
@@ -132,14 +132,14 @@ async function LocalStorageFrameEvaluate (frame) {
       // stuck here without timeouts
       const origin = window.origin
       const localStorageData = {}
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i)
-        const value = localStorage.getItem(key)
+      for (let i = 0; i < window.localStorage.length; i++) {
+        const key = window.localStorage.key(i)
+        const value = window.localStorage.getItem(key)
         localStorageData[key] = value
       }
       return [localStorageData, origin]
     }),
-    new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout occurred')), FRAME_TIMEOUT))
+    new Promise((resolve, reject) => setTimeout(() => reject(new Error('Timeout occurred')), FRAME_TIMEOUT))
   ])
 }
 

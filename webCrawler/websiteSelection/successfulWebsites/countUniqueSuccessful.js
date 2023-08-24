@@ -2,7 +2,7 @@ import { createReadStream } from 'fs'
 
 const browser = 'Firefox'
 
- async function TXTtoArray (path) {
+async function TXTtoArray (path) {
   return new Promise((resolve, reject) => {
     const myURLs = []
     createReadStream(path, 'utf8')
@@ -24,7 +24,6 @@ const browser = 'Firefox'
       })
   })
 }
-
 
 async function main () {
   let path

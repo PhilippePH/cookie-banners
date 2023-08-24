@@ -106,7 +106,7 @@ export async function crawlMain (browser, version, resultPath, urlList, connecti
       try {
         await Promise.race([
           await browserInstance.close(),
-          new Promise((_, reject) => setTimeout(() => reject(new Error()), 2000))
+          new Promise((resolve, reject) => setTimeout(() => reject(new Error()), 2000))
         ])
       } catch (error) {} // Ignore the timeout, or the error saying the browserInstance was already closed.
 
@@ -124,7 +124,7 @@ export async function crawlMain (browser, version, resultPath, urlList, connecti
     try {
       const evaluationResult = await Promise.race([
         await evaluateWebsite(page, browser, websiteUrl, connection, wordCorpus, parentCutoff, childrenCutoff, resultPath, crawlID),
-        new Promise((_, reject) => setTimeout(() => reject(new WebsiteTimeOut()), 30000))
+        new Promise((resolve, reject) => setTimeout(() => reject(new WebsiteTimeOut()), 30000))
       ])
 
       if (evaluationResult) {
