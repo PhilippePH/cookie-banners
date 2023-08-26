@@ -70,6 +70,9 @@ export async function ALLINONE (page, wordCorpus, maxNumParents, maxNumChildren)
       let getParentOf = nodeElement
       for (let i = 0; i < maxNumParents; i++) { // getting up to the i-th parent
         getParentOf = getParentOf.parentElement
+        if (getParentOf === null) {
+          break // i.e. no parents were found, thus stop the loop and don't push it
+        }
         parents.push(getParentOf)
       }
       subTreesParents.push([nodeElement, parents])
@@ -94,48 +97,36 @@ export async function ALLINONE (page, wordCorpus, maxNumParents, maxNumChildren)
           let childrenCounter = 0
           let reachedTerminalNode = true
           childrenCounter += (child.children).length
-          console.log("1", childrenCounter)
           for (const child2 of child.children) {
             childrenCounter += (child2.children).length
-            console.log("2", childrenCounter)
             for (const child3 of child2.children) {
               childrenCounter += (child3.children).length
-              console.log("3",childrenCounter)
               for (const child4 of child3.children) {
                 childrenCounter += (child4.children).length
-                console.log("4", childrenCounter)
                 for (const child5 of child4.children) {
                   childrenCounter += (child5.children).length
-                  console.log("5", childrenCounter)
-                  console.log(`Child 5 has ${child5.children} children}`)
                   if ((child5.children).length !== 0) {
                     reachedTerminalNode = false
-                    console.log("   Not reached the end")
                   }
 
                   if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
                   loopThroughSubTree.push(child5)
-                  console.log("   Adding 5")
                   }
                 }
                 if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
                   loopThroughSubTree.push(child4)
-                  console.log("   Adding 4")
                 }
               }
               if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
                 loopThroughSubTree.push(child3)
-                console.log("   Adding 3")
               }
             }
             if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
               loopThroughSubTree.push(child2)
-              console.log("   Adding 2")
             }
           }
           if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
             loopThroughSubTree.push(child)
-            console.log("   Adding 1")
           }
         }
       }
@@ -181,11 +172,17 @@ export async function ALLINONE (page, wordCorpus, maxNumParents, maxNumChildren)
               loopThroughSubTree.splice(index, 1) // 2nd parameter means remove one item only
             }
           }
+        } else {
+          // remove from subtree if has no text
+          const index = loopThroughSubTree.indexOf(nodeElement)
+            if (index > -1) { // only splice array when item is found
+              loopThroughSubTree.splice(index, 1) // 2nd parameter means remove one item only
+            }
         }
       }
       console.log(`FOR THIS SUBTREE (size ${loopThroughSubTree.length}), THE FOLLOWING WORDS WERE FOUND: ${[...wordHits]}`)
-      // STEP 4.3: UPDATE THE BEST CANDIDATE IF FOUND
-      if (wordHits.size > maxNumHits) {
+      // STEP 4.3: UPDATE THE BEST CANDIDATE IF FOUND (either more word hits, or same number but smaller subtree)
+      if (wordHits.size > maxNumHits || (wordHits.size === maxNumHits && loopThroughSubTree.length < subTree.length )) {
         console.log(`Found a better match. Used to be ${maxNumHits} hits vs now ${wordHits.size}. The new words '${[...wordHits]}' will replace '${maxWordHits}'`)
         maxNumHits = wordHits.size
         maxWordHits = [...wordHits]
@@ -229,7 +226,7 @@ async function checkBannerVisibility (page, cookieBannerInfo) {
         const elementHandle = await page.$(`.${nodeInfo.class}`)
         const isVisible = await elementHandle.isVisible()
         visibleArray.push(isVisible)
-      } catch (error) { console.log(error) }
+      } catch (error) { console.log("Error accessing element handle's visibility") }
     }
 
     if (visibleArray.length === 0) {

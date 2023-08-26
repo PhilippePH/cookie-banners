@@ -1,73 +1,57 @@
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
+https://www.google.com --> Is visible? true (26/26). Banner Info: reject,reject all,accept,accept all,cookies. Analysed 26 elements. 
 https://www.facebook.com --> Cannot assess visibility of cookie banner. Banner Info: cookie,cookies,learn more,partners,third-party.
-https://www.microsoft.com --> Is visible? true (16/16). Banner Info: accept,reject,cookies,manage cookies. Analysed 16 elements. 
+https://www.microsoft.com --> Is visible? true (14/14). Banner Info: privacy statement,cookies,third-party,reject,accept,manage cookies. Analysed 14 elements. 
 https://www.googleapis.com --> No cookie banner has been found on the page.
-https://www.apple.com --> No cookie banner has been found on the page. Only found words learn more.
-https://www.youtube.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
+https://www.apple.com --> Is visible? true (32/32). Banner Info: privacy policy,learn more. Analysed 32 elements. 
+https://www.youtube.com --> Is visible? true (15/15). Banner Info: reject,reject all,accept,accept all. Analysed 17 elements. 
 https://www.twitter.com --> No cookie banner has been found on the page.
-https://www.netflix.com --> Is visible? true (6/6). Banner Info: cookie,cookie preferences,preferences. Analysed 6 elements. 
+https://www.netflix.com --> Is visible? true (20/24). Banner Info: cookie,cookie preferences,preferences,cookies,learn more,accept,reject. Analysed 31 elements. 
 https://www.instagram.com --> No cookie banner has been found on the page.
-https://www.cloudflare.com --> Is visible? true (25/25). Banner Info: privacy policy,cookie,cookie preferences,preferences. Analysed 25 elements. 
-https://www.live.com --> Cannot assess visibility of cookie banner. Banner Info: cookies,agree.
-https://www.office.com --> Is visible? true (6/6). Banner Info: cookies,manage cookies. Analysed 6 elements. 
-https://www.azure.com --> Is visible? true (16/16). Banner Info: accept,reject,cookies,manage cookies. Analysed 16 elements. 
+https://www.cloudflare.com --> Is visible? true (12/12). Banner Info: cookies,agree,reject,cookie,cookie preferences,preferences,reject all,accept,accept all. Analysed 12 elements. 
+https://www.linkedin.com --> Is visible? true (13/13). Banner Info: cookie,cookie policy,cookies,learn more,accept,reject,decline. Analysed 13 elements. 
+https://www.live.com --> Is visible? false (1/17). Banner Info: cookies,agree,learn more. Analysed 17 elements. 
+https://www.office.com --> Is visible? true (10/10). Banner Info: cookies,manage cookies. Analysed 13 elements. 
+https://www.azure.com --> Is visible? true (18/18). Banner Info: accept,reject,cookies,manage cookies,third-party,privacy statement. Analysed 19 elements. 
 https://www.amazon.com --> No cookie banner has been found on the page. Only found words accept.
 https://www.fbcdn.net --> Cannot assess visibility of cookie banner. Banner Info: cookie,cookies,learn more,partners,third-party.
 https://www.wikipedia.org --> No cookie banner has been found on the page. Only found words privacy policy.
-https://www.fastly.net --> No cookie banner has been found on the page. Only found words partners.
-https://www.yahoo.com --> Cannot assess visibility of cookie banner. Banner Info: accept,accept all,our partners,partners.
+https://www.fastly.net --> Is visible? true (9/13). Banner Info: cookie,cookie policy,cookie preferences,preferences,cookies,agree,accept,accept all. Analysed 13 elements. 
+https://www.yahoo.com --> Is visible? true (23/23). Banner Info: cookies,accept,accept all,our partners,partners,reject,reject all,privacy policy,cookie,cookie policy. Analysed 24 elements. 
 https://www.wordpress.org --> No cookie banner has been found on the page.
 https://www.github.com --> No cookie banner has been found on the page. Only found words partners.
 https://www.vimeo.com --> No cookie banner has been found on the page. Only found words cookies.
-https://www.adobe.com --> Is visible? false (0/6). Banner Info: cookie,cookie preferences,preferences. Analysed 6 elements. 
-https://www.digicert.com --> Is visible? false (0/15). Banner Info: cookie,cookies,preferences,more information. Analysed 15 elements. 
-https://www.spotify.com --> No cookie banner has been found on the page. Only found words cookies.
-https://www.msn.com --> Is visible? true (5/5). Banner Info: accept,i accept,reject,reject all,preferences. Analysed 5 elements. 
-https://www.wordpress.com --> Is visible? false (0/26). Banner Info: accept,cookie,cookie policy,learn more,privacy policy,our partners,partners,cookies,preferences. Analysed 26 elements. 
-https://www.google-analytics.com --> Is visible? true (16/16). Banner Info: cookies,learn more. Analysed 16 elements. 
-https://www.zoom.us --> Is visible? true (11/11). Banner Info: cookie,cookie preferences,preferences. Analysed 11 elements. 
-https://www.bit.ly --> Is visible? false (0/15). Banner Info: cookies,cookie,cookie policy,more information,accept,accept all,cookie preferences,preferences. Analysed 15 elements. 
-https://www.dell.com --> Is visible? true (20/26). Banner Info: cookie,cookie policy,cookies,agree,accept,decline,more information,accept all. Analysed 26 elements. 
-https://www.mozilla.org --> No cookie banner has been found on the page. Only found words learn more.
+https://www.adobe.com --> Is visible? false (0/16). Banner Info: cookie,cookie preferences,preferences. Analysed 16 elements. 
+https://www.digicert.com --> Is visible? true (8/8). Banner Info: cookies,accept,accept cookies,privacy policy,learn more. Analysed 8 elements. 
+https://www.spotify.com --> No cookie banner has been found on the page.
+https://www.msn.com --> Is visible? true (19/19). Banner Info: our partners,partners,cookies,third-party,accept,i accept,reject,reject all,preferences. Analysed 19 elements. 
+https://www.wordpress.com --> Is visible? true (3/5). Banner Info: cookie,cookies,agree,preferences,learn more,our partners,partners. Analysed 5 elements. 
+https://www.google-analytics.com --> Is visible? true (13/13). Banner Info: cookies,learn more. Analysed 13 elements. 
+https://www.zoom.us --> Is visible? true (12/13). Banner Info: partners,cookie,cookie preferences,preferences. Analysed 13 elements. 
+https://www.bit.ly --> Is visible? true (5/5). Banner Info: cookie,accept,accept all,cookie policy,cookies,cookie preferences,preferences,more information. Analysed 5 elements. 
+https://www.dell.com --> Is visible? true (5/7). Banner Info: cookie,cookie policy,cookies,agree,accept,decline,more information,accept all. Analysed 7 elements. 
+https://www.mozilla.org --> No cookie banner has been found on the page. Only found words agree.
 https://www.cloudflare.net --> No cookie banner has been found on the page. Only found words cookies.
-https://www.skype.com --> Is visible? true (6/6). Banner Info: cookies,manage cookies. Analysed 6 elements. 
-https://www.whatsapp.com --> Is visible? false (0/11). Banner Info: cookies,accept,accept cookies. Analysed 11 elements. 
-https://www.roblox.com --> Is visible? true (16/16). Banner Info: cookies,privacy policy,cookie,agree,preferences,more information. Analysed 16 elements. 
-https://www.reddit.com --> Is visible? true (10/10). Banner Info: cookies,partners,agree,cookie,cookie notice,privacy policy. Analysed 10 elements. 
-https://www.opera.com --> Is visible? true (11/11). Banner Info: cookies,accept,accept cookies,manage cookies. Analysed 11 elements. 
-https://www.europa.eu --> Is visible? true (11/11). Banner Info: cookies,accept,accept all. Analysed 11 elements. 
-https://www.tumblr.com --> Cannot assess visibility of cookie banner. Banner Info: cookies,decline,preferences,partners.
-https://www.dropbox.com --> Cannot assess visibility of cookie banner. Banner Info: cookie,cookie policy.
+https://www.skype.com --> Is visible? true (11/11). Banner Info: cookies,manage cookies. Analysed 14 elements. 
+https://www.whatsapp.com --> Is visible? false (5/12). Banner Info: cookie,cookie policy,cookies,accept,accept cookies,manage cookies. Analysed 12 elements. 
+https://www.roblox.com --> Is visible? true (31/31). Banner Info: decline,accept,accept all,cookie,cookies,privacy policy,agree,preferences,more information. Analysed 31 elements. 
+https://www.reddit.com --> Is visible? true (11/14). Banner Info: cookie,cookie notice,privacy policy,cookies,partners,agree. Analysed 16 elements. 
+https://www.opera.com --> Is visible? true (19/30). Banner Info: accept,cookies,third-party,privacy statement,agree,accept cookies,manage cookies. Analysed 30 elements. 
+https://www.europa.eu --> Is visible? true (19/19). Banner Info: cookies,accept,accept all. Analysed 19 elements. 
+https://www.tumblr.com --> Is visible? true (1/1). Banner Info: cookies,decline,preferences,partners. Analysed 1 elements. 
+https://www.dropbox.com --> Is visible? true (23/23). Banner Info: cookie,cookie policy,cookies,preferences. Analysed 36 elements. 
 https://www.snapchat.com --> Cannot assess visibility of cookie banner. Banner Info: cookie,agree,learn more,more information.
+https://www.nytimes.com --> Is visible? true (24/24). Banner Info: privacy policy,cookie,cookie policy,cookies,learn more,preferences,accept,reject. Analysed 24 elements. 
 https://www.flickr.com --> No cookie banner has been found on the page. Only found words cookies.
-https://www.paypal.com --> Cannot assess visibility of cookie banner. Banner Info: cookies,manage cookies,learn more.
-https://www.webex.com --> Cannot assess visibility of cookie banner. Banner Info: privacy statement,cookie,cookie notice.
-https://www.samsung.com --> Is visible? true (31/31). Banner Info: cookies,preferences,third-party,cookie,cookie policy,privacy policy,accept,accept all. Analysed 31 elements. 
-https://www.comcast.net --> Is visible? true (6/6). Banner Info: cookie,cookie preferences,preferences. Analysed 6 elements. 
+https://www.epicgames.com --> Is visible? false (0/1). Banner Info: cookies,agree,our partners,partners,third-party. Analysed 1 elements. 
+https://www.tiktok.com --> Is visible? false (1/5). Banner Info: cookie,cookies,agree,accept,decline,learn more,our partners,partners,third-party,preferences. Analysed 5 elements. 
+https://www.paypal.com --> Is visible? true (17/17). Banner Info: decline,accept,cookies,manage cookies,learn more,our partners,partners. Analysed 17 elements. 
+https://www.webex.com --> Is visible? true (10/10). Banner Info: cookie,reject,accept,cookie notice,cookies,privacy statement,third-party. Analysed 10 elements. 
+https://www.samsung.com --> Is visible? true (21/21). Banner Info: accept,accept all,cookies,preferences,third-party,cookie,cookie policy,privacy policy. Analysed 21 elements. 
+https://www.comcast.net --> Is visible? true (2/2). Banner Info: cookie,cookie preferences,preferences. Analysed 2 elements. 
 https://www.apache.org --> No cookie banner has been found on the page. Only found words cookie.
 https://www.salesforce.com --> No cookie banner has been found on the page. Only found words partners.
-https://www.cnn.com --> Is visible? true (15/20). Banner Info: cookies,privacy policy,agree,preferences. Analysed 20 elements. 
+https://www.cnn.com --> Is visible? true (9/10). Banner Info: cookies,privacy policy,agree,preferences,reject,reject all,accept,accept all. Analysed 10 elements. 
 https://www.soundcloud.com --> No cookie banner has been found on the page.
 https://www.myfritz.net --> No cookie banner has been found on the page.
 https://www.medium.com --> No cookie banner has been found on the page. Only found words more information.
-https://www.theguardian.com --> Cannot assess visibility of cookie banner. Banner Info: cookie,cookies.
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (11/11). Banner Info: reject,reject all. Analysed 11 elements. 
-https://www.google.com --> Is visible? true (31/31). Banner Info: reject,reject all. Analysed 31 elements. 
-https://www.google.com --> Is visible? true (31/31). Banner Info: reject,reject all. Analysed 31 elements. 
-https://www.google.com --> Is visible? true (31/31). Banner Info: reject,reject all. Analysed 31 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (6/6). Banner Info: reject,reject all. Analysed 6 elements. 
-https://www.google.com --> Is visible? true (11/11). Banner Info: reject,reject all. Analysed 11 elements. 
-https://www.google.com --> Is visible? true (11/11). Banner Info: reject,reject all. Analysed 11 elements. 
-https://www.google.com --> Is visible? true (44/45). Banner Info: cookies,reject,reject all,accept,accept all. Analysed 45 elements. 
+https://www.theguardian.com --> Is visible? true (11/12). Banner Info: privacy policy,cookie,cookie policy. Analysed 17 elements. 
