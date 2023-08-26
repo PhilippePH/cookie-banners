@@ -240,8 +240,8 @@ async function checkBannerVisibility (page, cookieBannerInfo) {
     return [trueCount > falseCount, trueCount, falseCount]
   }
   
-  async function saveCookieBannerData (browser, websiteUrl, cookieBannerInfo, visibility, type) {
-    const file = createWriteStream(`/Users/philippe/Documents/code/cookie-banners/webCrawler/bannerIdTestFiles/${browser}_bannerInfo.txt`, { flags: 'a' })
+  async function saveCookieBannerData (browser, websiteUrl, cookieBannerInfo, visibility, type, resultPath) {
+    const file = createWriteStream(`${resultPath}/${browser}_bannerInfo.txt`, { flags: 'a' })
   
     file.on('error', function (err) {
       console.log(err)
@@ -254,7 +254,7 @@ async function checkBannerVisibility (page, cookieBannerInfo) {
       const wordMatches = cookieBannerInfo[1]
       if (wordMatches.length < 2) {
         file.write(`${websiteUrl} --> No cookie banner has been found on the page. Only found words ${wordMatches}.\n`)
-        const file2 = createWriteStream(`/Users/philippe/Documents/code/cookie-banners/webCrawler/bannerIdTestFiles/${browser}_bannerDecisions.txt`, { flags: 'a' })
+        const file2 = createWriteStream(`${resultPath}/${browser}_bannerDecisions.txt`, { flags: 'a' })
         file2.on('error', function (err) {
           console.log(err)
         })
@@ -275,7 +275,7 @@ async function checkBannerVisibility (page, cookieBannerInfo) {
       file.write(`${websiteUrl} --> Is visible? ${visibilityDecision} (${visibility[1]}/${visibility[1]+visibility[2]}). Banner Info: ${wordMatches}. Analysed ${subtreeLength} elements. \n`)
       file.end()
 
-      const file2 = createWriteStream(`/Users/philippe/Documents/code/cookie-banners/webCrawler/bannerIdTestFiles/${browser}_bannerDecisions.txt`, { flags: 'a' })
+      const file2 = createWriteStream(`${resultPath}/${browser}_bannerDecisions.txt`, { flags: 'a' })
   
       file2.on('error', function (err) {
         console.log(err)
@@ -286,18 +286,18 @@ async function checkBannerVisibility (page, cookieBannerInfo) {
   }
 }
 
-export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumParents, maxNumChildren, websiteUrl, browser, connection, crawlID) {
+export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumParents, maxNumChildren, websiteUrl, browser, connection, crawlID, resultPath) {
   const cookieBannerInfo = await ALLINONE(page, wordCorpus, maxNumParents, maxNumChildren)
 
   // If no banner has been found, or if less than 2 words have been found.
   if (cookieBannerInfo === null) {
     console.log('No banners were found on the page (no words).')
-    await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 1)
+    await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 1, resultPath)
   } else if (cookieBannerInfo[1].length < 2) {
     console.log('No banners were found on the page (too little words).')
-    await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 2)
+    await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 2, resultPath)
   } else {
     const visibility = await checkBannerVisibility(page, cookieBannerInfo)
-    await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, visibility, 3)
+    await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, visibility, 3, resultPath)
   }
 }

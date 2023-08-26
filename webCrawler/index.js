@@ -44,7 +44,7 @@ export async function visitWebsite (page, websiteUrl, browser, resultPath) {
   }
 }
 
-async function takeMeasurements (page, browser, websiteUrl, connection, requestData, wordCorpus, parentCutoff, childrenCutoff, crawlID) {
+async function takeMeasurements (page, browser, websiteUrl, connection, requestData, wordCorpus, parentCutoff, childrenCutoff, crawlID, resultPath) {
   // console.log(`   (${browser}) ${websiteUrl}: Getting Cookies`)
   // await getCookies(page, browser, websiteUrl, connection, crawlID)
 
@@ -52,7 +52,7 @@ async function takeMeasurements (page, browser, websiteUrl, connection, requestD
   // await getLocalStorage(page, browser, websiteUrl, connection, crawlID)
 
   console.log(`   (${browser}) ${websiteUrl}: Checking Cookie Banner`)
-  await allInDetermineCookieBannerState(page, wordCorpus, parentCutoff, childrenCutoff, websiteUrl, browser, connection, crawlID)
+  await allInDetermineCookieBannerState(page, wordCorpus, parentCutoff, childrenCutoff, websiteUrl, browser, connection, crawlID, resultPath)
 
 
   // console.log(`   (${browser}) ${websiteUrl}: Adding requests to DB`)
@@ -76,7 +76,7 @@ async function evaluateWebsite (page, browser, websiteUrl, connection, wordCorpu
   const returnCode = await visitWebsite(page, websiteUrl, browser, resultPath)
 
   if (returnCode === 'Success') {
-    await takeMeasurements(page, browser, websiteUrl, connection, requestData, wordCorpus, parentCutoff, childrenCutoff, crawlID)
+    await takeMeasurements(page, browser, websiteUrl, connection, requestData, wordCorpus, parentCutoff, childrenCutoff, crawlID, resultPath)
   } else {
     successBool = false
   }
