@@ -14,10 +14,9 @@ puppeteerExtra.use(StealthPlugin()) // allows to pass all tests on SannySoft, ev
 
 const laptopExecutablePaths = {
   'Google Chrome': '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-  'Ghostery Google Chrome': '/Applications/Google Chrome copy.app/Contents/MacOS/Google Chrome',
   Brave: '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
   Firefox: '/Applications/Firefox.app/Contents/MacOS/firefox',
-  Ghostery: '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery'
+  Ghostery: '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
 }
 
 const laptopUserProfiles = {
@@ -45,13 +44,14 @@ const macserverExecutablePaths = {
   'Google Chrome': '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
   Brave: '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
   Firefox: '/Applications/Firefox.app/Contents/MacOS/firefox',
-  Ghostery: '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery'
+  Ghostery: '/Applications/Ghostery Private Browser.app/Contents/MacOS/Ghostery',
+  'Ghostery2': '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 }
 const macserverUserProfiles = {
   'Google Chrome': '/Users/crawler/Library/Application Support/Google/Chrome/',
   Brave: '/Users/crawler/Library/Application Support/BraveSoftware/Brave-Browser/',
   Ghostery: '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release',
-  'Google Chrome with Ghostery extension': '/Users/crawler/Library/Application Support/Google/Chrome/',
+  'Ghostery2': '/Users/crawler/Library/Application Support/Google/Chrome2/',
   'Firefox 1': '/Users/crawler/Library/Application Support/Firefox/Profiles/i5wm7jfj.profile1',
   'Firefox 2': '/Users/crawler/Library/Application Support/Firefox/Profiles/pl2a1t2n.profile2'
 }
@@ -119,10 +119,10 @@ async function puppeteerLaunchBrowser (browser, device, version) {
         })
       } else if (Number(version) === 2) {
         // This launches Google Chrome with the Ghostery extension
-        return await puppeteer.launch({
+        return await puppeteerExtra.launch({
           headless: false,
-          executablePath: executablePaths['Ghostery Google Chrome'],
-          userDataDir: userProfiles['Google Chrome with Ghostery extension'],
+          executablePath: executablePaths['Ghostery2'],
+          userDataDir: userProfiles['Ghostery2'],
           defaultViewport: null,
           args: ['--start-maximised', '--profile-directory=Profile 1']
         })

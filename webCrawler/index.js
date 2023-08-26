@@ -74,7 +74,7 @@ async function evaluateWebsite (page, browser, websiteUrl, connection, wordCorpu
   const returnCode = await visitWebsite(page, websiteUrl, browser, resultPath)
 
   if (returnCode === 'Success') {
-    await takeMeasurements(page, browser, websiteUrl, connection, requestData, wordCorpus, parentCutoff, childrenCutoff, crawlID)
+    // await takeMeasurements(page, browser, websiteUrl, connection, requestData, wordCorpus, parentCutoff, childrenCutoff, crawlID)
   } else {
     successBool = false
   }
