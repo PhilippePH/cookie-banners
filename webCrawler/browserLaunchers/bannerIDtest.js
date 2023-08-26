@@ -3,7 +3,7 @@ import { ParallelMain } from '../runtimeSetUp.js'
 const BROWSER_LIST = ['Google Chrome']
 const VERSION = 1
 const START_NUMBER = 0
-const NUM_URLS = 60
+const NUM_URLS = 250
 const ADD_TIMEOUTS = false
 const PATH_TO_CSV = '/Users/philippe/Documents/code/cookie-banners/webCrawler/bannerIdTestFiles/bannerIDshuffled.txt'
 const DEVICE = 'laptop'

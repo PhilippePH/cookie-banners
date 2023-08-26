@@ -24,10 +24,10 @@ export async function createResultFolder (browserList, device) {
 
   let path = `/homes/pp1722/Documents/cookie-banners/results/${formattedDateWithoutColons}`
   if (device === 'laptop') {
-    path = `/Users/philippe/Library/CloudStorage/OneDrive-Personal/cookie-banners-results/${formattedDateWithoutColons}`
+    path = `/Users/philippe/Documents/crawlResults/${formattedDateWithoutColons}`
   }
   if (device === 'macserver') {
-    path = `/Users/crawler/OneDrive/cookie-banners-results/${formattedDateWithoutColons}`
+    path = `/Users/crawler/Documents/crawlResults/${formattedDateWithoutColons}`
   }
   await fs.mkdir(path)
 
