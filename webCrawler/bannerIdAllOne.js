@@ -180,7 +180,7 @@ export async function ALLINONE (page, wordCorpus, maxNumParents, maxNumChildren)
             }
         }
       }
-      console.log(`FOR THIS SUBTREE (size ${loopThroughSubTree.length}), THE FOLLOWING WORDS WERE FOUND: ${[...wordHits]}`)
+      
       // STEP 4.3: UPDATE THE BEST CANDIDATE IF FOUND (either more word hits, or same number but smaller subtree)
       if (wordHits.size > maxNumHits || (wordHits.size === maxNumHits && loopThroughSubTree.length < subTree.length )) {
         console.log(`Found a better match. Used to be ${maxNumHits} hits vs now ${wordHits.size}. The new words '${[...wordHits]}' will replace '${maxWordHits}'`)
@@ -206,10 +206,6 @@ export async function ALLINONE (page, wordCorpus, maxNumParents, maxNumChildren)
 
 
 async function checkBannerVisibility (page, cookieBannerInfo) {
-  await Promise.race([
-    new Promise((resolve, reject) => setTimeout(() => resolve(), 5000))
-  ])
-
   // STEP 6. SEE IF THE BEST CANDIDATE IS VISIBLE
     // Unpack non-null return values
     const subTree = cookieBannerInfo[0]
@@ -297,11 +293,9 @@ export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumP
   if (cookieBannerInfo === null) {
     console.log('No banners were found on the page (no words).')
     await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 1)
-    return
   } else if (cookieBannerInfo[1].length < 2) {
     console.log('No banners were found on the page (too little words).')
     await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 2)
-    return
   } else {
     const visibility = await checkBannerVisibility(page, cookieBannerInfo)
     await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, visibility, 3)
