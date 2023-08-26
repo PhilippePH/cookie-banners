@@ -242,14 +242,18 @@ async function checkBannerVisibility (page, cookieBannerInfo) {
   
   async function saveCookieBannerData (browser, websiteUrl, cookieBannerInfo, visibility, type, resultPath) {
     const file = createWriteStream(`${resultPath}/${browser}_bannerInfo.txt`, { flags: 'a' })
-  
     file.on('error', function (err) {
+      console.log(err)
+    })
+
+    const file2 = createWriteStream(`${resultPath}/${browser}_bannerDecisions.txt`, { flags: 'a' })
+    file2.on('error', function (err) {
       console.log(err)
     })
 
     if (type === 1)  {
       file.write(`${websiteUrl} --> No cookie banner has been found on the page.\n`)
-      file.end()
+      file2.write(`${websiteUrl},FALSE\n`)
     } else if (type === 2) {
       const wordMatches = cookieBannerInfo[1]
       if (wordMatches.length < 2) {
@@ -258,15 +262,15 @@ async function checkBannerVisibility (page, cookieBannerInfo) {
         file2.on('error', function (err) {
           console.log(err)
         })
-        file2.write(`${websiteUrl} nobanner\n`)
-        file2.end()
-        file.end()
+        file2.write(`${websiteUrl},FALSE\n`)
       } 
     } else if (type === 3) {
       const wordMatches = cookieBannerInfo[1]
       if (visibility === null) {
         file.write(`${websiteUrl} --> Cannot assess visibility of cookie banner. Banner Info: ${wordMatches}.\n`)
         file.end()
+
+        file2.write(`${websiteUrl},NA\n`)
       } else {
       const subtreeLength = cookieBannerInfo[0].length
       // const wordMatches = cookieBannerInfo[1]
@@ -275,15 +279,11 @@ async function checkBannerVisibility (page, cookieBannerInfo) {
       file.write(`${websiteUrl} --> Is visible? ${visibilityDecision} (${visibility[1]}/${visibility[1]+visibility[2]}). Banner Info: ${wordMatches}. Analysed ${subtreeLength} elements. \n`)
       file.end()
 
-      const file2 = createWriteStream(`${resultPath}/${browser}_bannerDecisions.txt`, { flags: 'a' })
-  
-      file2.on('error', function (err) {
-        console.log(err)
-      })
-      file2.write(`${websiteUrl} ${visibilityDecision}\n`)
-      file2.end()
+      file2.write(`${websiteUrl},${visibilityDecision}\n`)
     }
   }
+  file.end()
+  file2.end()
 }
 
 export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumParents, maxNumChildren, websiteUrl, browser, connection, crawlID, resultPath) {

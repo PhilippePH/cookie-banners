@@ -1,7 +1,7 @@
 import psycopg2
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import pandas as pd
-plt.style.use('_mpl-gallery')
+
 
 def avgRequests(cursor):
   cursor.execute('SELECT browser, count(websiteurl), count(distinct(websiteurl)) from requestdata group by browser')
@@ -30,7 +30,7 @@ def avgRequests_sameSubset(cursor):
     print(f"{browser} has on average {round(numRequests/distinctwebsites,2)} requests per website visited")
 
 def totalNumberRequests_sameSubset(cursor):
-  cursor.execute('SELECT browser, count(websiteurl) from requestdata group by browser where visited_by_all_browsers = true')
+  cursor.execute('SELECT browser, count(websiteurl) from requestdata where visited_by_all_browsers = true group by browser')
   results = cursor.fetchall()
   df = pd.DataFrame(columns=['browser', 'totRequest'])
 
@@ -43,34 +43,54 @@ def totalNumberRequests_sameSubset(cursor):
 
     print(f"{browser} has a total of {numRequests} requests in the subset of websites visited by every browser")
   
-  # plot bar graph
+  # Create bar graph
   plt.figure("bar graph")
-  ax = plt.bar(y=df['totRequest'])
-  ax.set_xticklabels(df['browser'])
+  plt.bar(df['browser'], df['totRequest'])
+  plt.xticks(rotation=45)  # Rotates x-axis labels for better visibility
+  plt.xlabel('Browser')
+  plt.ylabel('Total Requests')
+  plt.title('Total Requests per Browser')
+  plt.show()  # Display the plot
 
 def showRequestDistribution_sameSubset(cursor):
-  cursor.execute('SELECT browser, websiteurl, count(requestedurl) from requestdata group by browser where visited_by_all_browsers = true')
+  cursor.execute('SELECT browser, websiteurl, COUNT(*) AS total_requests FROM requestdata GROUP BY browser, websiteurl')
   results = cursor.fetchall()
-  df = pd.DataFrame(columns=['browser', 'wesbiteurl', 'numRequests'])
+  df = pd.DataFrame(columns=['browser', 'websiteurl', 'numRequests'])
 
-  print("totalNumberRequests_sameSubset")
+  print("showRequestDistribution_sameSubset")
   
-  fig, ax = plt.subplots()
-  ax.margins(0.05) # Optional, just adds 5% padding to the autoscaling
-
   for line in results:
     browser = line[0].strip()
     websiteurl = line[1]
     numRequests = line[2]
     df = pd.concat([pd.DataFrame([[browser, websiteurl, numRequests]], columns=df.columns), df], ignore_index=True)
-    
-  groups = df.groupby('websiteurl')
-  for name, group in groups:
-    ax.plot(group.browser, group.numRequests, marker='o', linestyle='', ms=12)
-  plt.show()
 
+  # Create a grouped box plot
+  fig, ax = plt.subplots()
+
+  # Group the data by 'browser' and aggregate 'numRequests' using a list
+  grouped_data = df.groupby('browser')['numRequests'].apply(list)
+
+  # Plot the grouped box plot
+  ax.violinplot(grouped_data, showmedians=True)
+
+  # Set x-axis tick positions and labels
+  browsers = df['browser'].unique()
+  x_positions = list(range(1, len(browsers) + 1))
+  ax.set_xticks(x_positions)
+  ax.set_xticklabels(browsers, rotation=45, ha='right')
+
+  plt.xlabel('Browser')
+  plt.ylabel('Number of Requests')
+  plt.title('Request Distribution per Browser for Different URLs')
+  plt.tight_layout()  # Improve spacing
+  # Set the y-axis limit to 2500
+  ax.set_ylim(0, 1000)
+ 
+  plt.show()
+  
 def totNumDistinctFrames_sameSubset(cursor):
-  cursor.execute('SELECT browser, count(disinct(frameorigin)) from requestdata group by browser where visited_by_all_browsers = true')
+  cursor.execute('SELECT browser, count(distinct(frameorigin)) from requestdata where visited_by_all_browsers = true group by browser')
   results = cursor.fetchall()
   df = pd.DataFrame(columns=['browser', 'numDistinctFrames'])
 
@@ -85,13 +105,17 @@ def totNumDistinctFrames_sameSubset(cursor):
   
   # plot bar graph
   plt.figure("bar graph")
-  ax = plt.bar(y=df['numDistinctFrames'])
-  ax.set_xticklabels(df['browser'])
+  ax = plt.bar(df['browser'], df['numDistinctFrames'])  # Provide both x and y values
 
+  plt.xticks(rotation=45)  # Rotate x-axis labels for better visibility
+  plt.xlabel('Browser')
+  plt.ylabel('Number of Distinct Frames')
+  plt.title('Total Number of Distinct Frames per Browser')
+  plt.tight_layout()  # Improve spacing
   plt.show()
 
 def totNumDistinctUrls_sameSubset(cursor):
-  cursor.execute('SELECT browser, count(disinct(requestedurl)) from requestdata group by browser where visited_by_all_browsers = true')
+  cursor.execute('SELECT browser, count(distinct(requestedurl)) from requestdata where visited_by_all_browsers = true group by browser')
   results = cursor.fetchall()
   df = pd.DataFrame(columns=['browser', 'numDistinctUrls'])
 
@@ -106,21 +130,28 @@ def totNumDistinctUrls_sameSubset(cursor):
   
   # plot bar graph
   plt.figure("bar graph")
-  ax = plt.bar(y=df['numDistinctUrls'])
-  ax.set_xticklabels(df['browser'])
+  ax = plt.bar(df['browser'], df['numDistinctUrls'])  # Provide both x and y values
 
+  plt.xticks(rotation=45)  # Rotate x-axis labels for better visibility
+  plt.xlabel('Browser')
+  plt.ylabel('Number of Distinct URLs')
+  plt.title('Total Number of Distinct URLs per Browser')
+  plt.tight_layout()  # Improve spacing
   plt.show()
 
 def main():
   dbConnection = psycopg2.connect("dbname=crawl01 user=postgres password=I@mastrongpsswd")
   cursor = dbConnection.cursor()
 
-  avgRequests(cursor)
-  avgRequests_sameSubset(cursor)
-  totalNumberRequests_sameSubset(cursor)
+  # avgRequests(cursor) # runs
+  # avgRequests_sameSubset(cursor) #runs 
+  # totalNumberRequests_sameSubset(cursor) #runs
   showRequestDistribution_sameSubset(cursor)
-  totNumDistinctFrames_sameSubset(cursor)
-  totNumDistinctUrls_sameSubset(cursor)
+  # totNumDistinctFrames_sameSubset(cursor) #runs
+  # totNumDistinctUrls_sameSubset(cursor) #runs
 
   cursor.close()
   dbConnection.close()
+
+if __name__ == '__main__':
+  main()
