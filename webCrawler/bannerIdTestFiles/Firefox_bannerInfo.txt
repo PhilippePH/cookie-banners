@@ -1,0 +1,47 @@
+https://www.facebook.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.microsoft.com --> Is visible? true (6/6). Banner Info: cookies,manage cookies. Analysed 6 elements. 
+https://www.googleapis.com --> No cookie banner has been found on the page.
+https://www.apple.com --> No cookie banner has been found on the page. Only found words learn more.
+https://www.cloudflare.com --> Is visible? true (25/25). Banner Info: privacy policy,cookie,cookie preferences,preferences. Analysed 25 elements. 
+https://www.linkedin.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.live.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.facebook.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.microsoft.com --> Is visible? true (6/6). Banner Info: cookies,manage cookies. Analysed 6 elements. 
+https://www.googleapis.com --> No cookie banner has been found on the page.
+https://www.apple.com --> No cookie banner has been found on the page. Only found words learn more.
+https://www.cloudflare.com --> Is visible? true (25/25). Banner Info: privacy policy,cookie,cookie preferences,preferences. Analysed 25 elements. 
+https://www.linkedin.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.live.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.office.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.azure.com --> Is visible? true (16/16). Banner Info: accept,reject,cookies,manage cookies. Analysed 16 elements. 
+https://www.amazon.com --> No cookie banner has been found on the page. Only found words accept.
+https://www.fbcdn.net --> No cookie banner has been found on the page. Only found words cookies.
+https://www.wikipedia.org --> No cookie banner has been found on the page.
+https://www.fastly.net --> No cookie banner has been found on the page. Only found words partners.
+https://www.yahoo.com --> Cannot assess visibility of cookie banner. Banner Info: accept,accept all,our partners,partners.
+https://www.github.com --> No cookie banner has been found on the page. Only found words partners.
+https://www.vimeo.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.adobe.com --> No cookie banner has been found on the page.
+https://www.spotify.com --> No cookie banner has been found on the page.
+https://www.wordpress.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.google-analytics.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.zoom.us --> Is visible? true (11/11). Banner Info: cookie,cookie preferences,preferences. Analysed 11 elements. 
+https://www.bit.ly --> Cannot assess visibility of cookie banner. Banner Info: privacy policy,cookie,cookie policy.
+https://www.dell.com --> Is visible? false (5/11). Banner Info: our partners,partners. Analysed 11 elements. 
+https://www.mozilla.org --> No cookie banner has been found on the page. Only found words cookies.
+https://www.skype.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.reddit.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.opera.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.europa.eu --> Is visible? true (11/11). Banner Info: cookies,accept,accept all. Analysed 11 elements. 
+https://www.tumblr.com --> Is visible? true (5/5). Banner Info: cookie,cookies,agree,i agree,accept,decline,preferences,learn more,more information,our partners,partners,third-party. Analysed 5 elements. 
+https://www.snapchat.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.flickr.com --> No cookie banner has been found on the page. Only found words cookies.
+https://www.tiktok.com --> No cookie banner has been found on the page. Only found words agree.
+https://www.paypal.com --> Cannot assess visibility of cookie banner. Banner Info: cookies,manage cookies,learn more.
+https://www.samsung.com --> Is visible? false (0/11). Banner Info: cookies,privacy policy. Analysed 11 elements. 
+https://www.comcast.net --> Is visible? true (6/6). Banner Info: cookie,cookie preferences,preferences. Analysed 6 elements. 
+https://www.apache.org --> No cookie banner has been found on the page. Only found words cookie.
+https://www.salesforce.com --> No cookie banner has been found on the page. Only found words partners.
+https://www.myfritz.net --> No cookie banner has been found on the page.
+https://www.medium.com --> No cookie banner has been found on the page. Only found words more information.
+https://www.theguardian.com --> Cannot assess visibility of cookie banner. Banner Info: cookie,cookies.

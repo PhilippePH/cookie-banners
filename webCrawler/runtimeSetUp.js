@@ -55,8 +55,8 @@ export async function createArgumentArray (browserList, version, startNumber, nu
   return argArray
 }
 
-export async function ParallelMain (browserList, version, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device) {
-  const resultsPath = await createResultFolder(browserList, device)
+export async function ParallelMain (browserList, version, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, addTimeouts = true) {
+  const resultsPath = await createResultFolder(browserList, device, addTimeouts)
 
   // ARGUMENTS PER PROCESS
   const argumentsArray = await createArgumentArray(browserList, version, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath)

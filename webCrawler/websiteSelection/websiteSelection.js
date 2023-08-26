@@ -111,12 +111,14 @@ async function getTimedOutUrls (browser) {
   })
 }
 
-export async function getURLs (totalNumber, startNumber, browser, path) {
+export async function getURLs (totalNumber, startNumber, browser, path, addTimeouts) {
   const data = await TXTtoArray(path)
   const newUrls = data.slice(Number(startNumber), Number(totalNumber))
-  const timeouts = await getTimedOutUrls(browser)
-  for (let i = 0; i < timeouts.length; i++) {
-    newUrls.push(timeouts[i])
+  if (addTimeouts) {
+    const timeouts = await getTimedOutUrls(browser)
+    for (let i = 0; i < timeouts.length; i++) {
+      newUrls.push(timeouts[i])
+    }
   }
   return newUrls
 }

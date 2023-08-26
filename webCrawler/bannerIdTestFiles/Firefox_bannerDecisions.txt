@@ -1,0 +1,11 @@
+https://www.microsoft.com true
+https://www.cloudflare.com true
+https://www.microsoft.com true
+https://www.cloudflare.com true
+https://www.azure.com true
+https://www.zoom.us true
+https://www.dell.com false
+https://www.europa.eu true
+https://www.tumblr.com true
+https://www.samsung.com false
+https://www.comcast.net true
