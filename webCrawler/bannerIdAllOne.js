@@ -147,11 +147,12 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
     }
 
     if (Number(maxNumHits) > 0) {
+      // ADDITIONAL CHECK TO SEE IF WORD COOKIE IS PRESENT
       let matchingCookieWords = []
       for (nodeElement of subTree) {
         let text = nodeElement.textContent
         // console.log(text)
-        if (! text) { console.log("What the hell am I doing here?"); continue }
+        if (! text) { continue }
         text = text.trim()
         const wordsArray = text.split(/\s+/)
         // Check that at least one element in the subTree has the word 'cookie' or 'cookies', if not return null
@@ -201,8 +202,8 @@ async function checkBannerVisibility (cookieBannerInfo, frame) {
     const subTree = cookieBannerInfo[0]
     const wordMatches = cookieBannerInfo[1]
     console.log('The following words were found:', wordMatches)
-    console.log('Sub Tree: ', subTree)
-    console.log('Frame', frame)
+    // console.log('Sub Tree: ', subTree)
+    // console.log('Frame', frame)
   
     // Get the visibility of elements.
     const visibleArray = []
@@ -228,14 +229,18 @@ async function checkBannerVisibility (cookieBannerInfo, frame) {
       return null
     }
   
-    console.log('Is element visible?', visibleArray)
+    // console.log('Is element visible?', visibleArray)
   
     const trueCount = visibleArray.filter(value => value === true).length
     const falseCount = visibleArray.length - trueCount
   
-    console.log('Final decision: ', trueCount > falseCount)
+    let decision = 'present-visible'
+    if (trueCount < falseCount) {
+      decision = 'present-invisible'
+    }
+    // console.log('Final decision: ', trueCount > falseCount)
   
-    return [trueCount > falseCount, trueCount, falseCount]
+    return [decision, trueCount, falseCount]
   }
   
   async function saveCookieBannerData (browser, websiteUrl, cookieBannerInfo, visibility, type, resultPath) {
@@ -251,7 +256,7 @@ async function checkBannerVisibility (cookieBannerInfo, frame) {
 
     if (type === 1)  {
       file.write(`${websiteUrl} --> No cookie banner has been found on the page.\n`)
-      file2.write(`${websiteUrl},FALSE\n`)
+      file2.write(`${websiteUrl},noBanner\n`)
     } else if (type === 2) {
       const wordMatches = cookieBannerInfo[1]
       if (wordMatches.length < 2) {
@@ -260,7 +265,7 @@ async function checkBannerVisibility (cookieBannerInfo, frame) {
         file2.on('error', function (err) {
           console.log(err)
         })
-        file2.write(`${websiteUrl},FALSE\n`)
+        file2.write(`${websiteUrl},noBanner\n`)
       } 
     } else if (type === 3) {
       const wordMatches = cookieBannerInfo[1]
@@ -268,7 +273,7 @@ async function checkBannerVisibility (cookieBannerInfo, frame) {
         file.write(`${websiteUrl} --> Cannot assess visibility of cookie banner. Banner Info: ${wordMatches}.\n`)
         file.end()
 
-        file2.write(`${websiteUrl},NA\n`)
+        file2.write(`${websiteUrl},present-NA\n`)
       } else {
       const subtreeLength = cookieBannerInfo[0].length
       // const wordMatches = cookieBannerInfo[1]
