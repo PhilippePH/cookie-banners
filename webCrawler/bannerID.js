@@ -184,7 +184,7 @@ async function checkBannerVisibility (page, subTree, maxWordHits) {
     for (const element of subTree) {
       // if (nodeInfo.class === null) { continue }
       try {
-        // const elementHandle = await page.$(`.${nodeInfo.class}`)
+        const elementHandle = await page.$(`.${nodeInfo.class}`)
         const isVisible = await element.isVisible()
         visibleArray.push(isVisible)
       } catch (error) { console.log(error) }
