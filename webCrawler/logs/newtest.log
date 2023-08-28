@@ -1,0 +1,528 @@
+Database connection established
+
+ (Brave): (1) https://www.scorecardresearch.com
+   (Brave) https://www.scorecardresearch.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.scorecardresearch.com
+   (Brave) https://www.scorecardresearch.com: Page loaded
+   (Brave) https://www.scorecardresearch.com: Getting Cookies
+   (Brave) https://www.scorecardresearch.com: Getting Localstorage
+   (Brave) https://www.scorecardresearch.com: Checking Cookie Banner
+This is the returnValue: [ [], [ 'agree', 'learn more', 'privacy policy' ] ]
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.scorecardresearch.com: Adding requests to DB
+   (Brave) https://www.scorecardresearch.com: Adding to successful website
+
+ (Brave): (2) https://www.dzeninfra.ru
+   (Brave) https://www.dzeninfra.ru: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.dzeninfra.ru
+**  (Brave): Error visiting webpage -> https://www.dzeninfra.ru (net::ERR_NAME_NOT_RESOLVED at https://www.dzeninfra.ru)
+
+ (Brave): (3) https://www.rayjump.com
+   (Brave) https://www.rayjump.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.rayjump.com
+   (Brave) https://www.rayjump.com: Page loaded
+   (Brave) https://www.rayjump.com: Getting Cookies
+   (Brave) https://www.rayjump.com: Getting Localstorage
+   (Brave) https://www.rayjump.com: Checking Cookie Banner
+This is the returnValue: [ [], [ 'privacy policy' ] ]
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.rayjump.com: Adding requests to DB
+   (Brave) https://www.rayjump.com: Adding to successful website
+
+ (Brave): (4) https://www.twitch.tv
+   (Brave) https://www.twitch.tv: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.twitch.tv
+   (Brave) https://www.twitch.tv: Page loaded
+   (Brave) https://www.twitch.tv: Getting Cookies
+   (Brave) https://www.twitch.tv: Getting Localstorage
+   (Brave) https://www.twitch.tv: Checking Cookie Banner
+This is the returnValue: [
+  [
+    { class: 'Layout-sc-1xcs6mc-0.dsWNQt', id: null },
+    { class: 'Layout-sc-1xcs6mc-0.phMMp', id: null },
+    { class: 'ScCoreButtonLabel-sc-s7h2b7-0.kHQqnO', id: null },
+    {
+      class: 'ScCoreButton-sc-ocjdkq-0.ScCoreButtonSecondary-sc-ocjdkq-2.dNGoHt.dXDVB',
+      id: null
+    },
+    { class: 'Layout-sc-1xcs6mc-0.lkTQKB', id: null },
+    { class: 'Layout-sc-1xcs6mc-0.dsWNQt', id: null },
+    { class: 'Layout-sc-1xcs6mc-0.phMMp', id: null },
+    { class: 'ScCoreButtonLabel-sc-s7h2b7-0.kHQqnO', id: null },
+    {
+      class: 'ScCoreButton-sc-ocjdkq-0.ScCoreButtonPrimary-sc-ocjdkq-1.dNGoHt.hdAxZi',
+      id: null
+    }
+  ],
+  [ 'manage cookies', 'accept', 'accept cookies' ]
+]
+The following words were found: [ 'manage cookies', 'accept', 'accept cookies' ]
+Sub Tree:  [
+  { class: 'Layout-sc-1xcs6mc-0.dsWNQt', id: null },
+  { class: 'Layout-sc-1xcs6mc-0.phMMp', id: null },
+  { class: 'ScCoreButtonLabel-sc-s7h2b7-0.kHQqnO', id: null },
+  {
+    class: 'ScCoreButton-sc-ocjdkq-0.ScCoreButtonSecondary-sc-ocjdkq-2.dNGoHt.dXDVB',
+    id: null
+  },
+  { class: 'Layout-sc-1xcs6mc-0.lkTQKB', id: null },
+  { class: 'Layout-sc-1xcs6mc-0.dsWNQt', id: null },
+  { class: 'Layout-sc-1xcs6mc-0.phMMp', id: null },
+  { class: 'ScCoreButtonLabel-sc-s7h2b7-0.kHQqnO', id: null },
+  {
+    class: 'ScCoreButton-sc-ocjdkq-0.ScCoreButtonPrimary-sc-ocjdkq-1.dNGoHt.hdAxZi',
+    id: null
+  }
+]
+Frame Frame {
+  _id: '9BDE8B1BEA0DF979F85127A7269A71A8',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '860EC7183E68A6F79243009FB77C846D',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'firstPaint',
+    'firstContentfulPaint',
+    'firstMeaningfulPaintCandidate',
+    'DOMContentLoaded',
+    'firstImagePaint',
+    'load'
+  }
+}
+Is element visible? [
+  false, false,
+  false, false,
+  false, false,
+  false, false,
+  false
+]
+Final decision:  false
+   (Brave) https://www.twitch.tv: Adding requests to DB
+   (Brave) https://www.twitch.tv: Adding to successful website
+
+ (Brave): (5) https://www.510623.com
+   (Brave) https://www.510623.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.510623.com
+**  (Brave): TimeoutError -> https://www.510623.com
+
+ (Brave): (6) https://www.jomodns.com
+   (Brave) https://www.jomodns.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.jomodns.com
+**  (Brave): Error visiting webpage -> https://www.jomodns.com (net::ERR_NAME_NOT_RESOLVED at https://www.jomodns.com)
+
+ (Brave): (7) https://www.ibm.com
+   (Brave) https://www.ibm.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.ibm.com
+   (Brave) https://www.ibm.com: Page loaded
+   (Brave) https://www.ibm.com: Getting Cookies
+   (Brave) https://www.ibm.com: Getting Localstorage
+   (Brave) https://www.ibm.com: Checking Cookie Banner
+This is the returnValue: [ [ { class: 'bx--link', id: null } ], [ 'learn more' ] ]
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.ibm.com: Adding requests to DB
+   (Brave) https://www.ibm.com: Adding to successful website
+
+ (Brave): (8) https://www.sciencedirect.com
+   (Brave) https://www.sciencedirect.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.sciencedirect.com
+   (Brave) https://www.sciencedirect.com: Page loaded
+   (Brave) https://www.sciencedirect.com: Getting Cookies
+   (Brave) https://www.sciencedirect.com: Getting Localstorage
+   (Brave) https://www.sciencedirect.com: Checking Cookie Banner
+This is the returnValue: [ [], [ 'agree', 'use cookies' ] ]
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.sciencedirect.com: Adding requests to DB
+   (Brave) https://www.sciencedirect.com: Adding to successful website
+
+ (Brave): (9) https://www.issuu.com
+   (Brave) https://www.issuu.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.issuu.com
+   (Brave) https://www.issuu.com: Page loaded
+   (Brave) https://www.issuu.com: Getting Cookies
+   (Brave) https://www.issuu.com: Getting Localstorage
+   (Brave) https://www.issuu.com: Checking Cookie Banner
+This is the returnValue: [ [], [ 'learn more' ] ]
+This is the returnValue: null
+This is the returnValue: null
+This is the returnValue: null
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.issuu.com: Adding requests to DB
+   (Brave) https://www.issuu.com: Adding to successful website
+
+ (Brave): (10) https://www.atomile.com
+   (Brave) https://www.atomile.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.atomile.com
+**  (Brave): Error visiting webpage -> https://www.atomile.com (net::ERR_NAME_NOT_RESOLVED at https://www.atomile.com)
+
+ (Brave): (11) https://www.nginx.org
+   (Brave) https://www.nginx.org: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.nginx.org
+   (Brave) https://www.nginx.org: Page loaded
+   (Brave) https://www.nginx.org: Getting Cookies
+   (Brave) https://www.nginx.org: Getting Localstorage
+   (Brave) https://www.nginx.org: Checking Cookie Banner
+This is the returnValue: null
+No banners were found on the page (no words).
+   (Brave) https://www.nginx.org: Adding requests to DB
+   (Brave) https://www.nginx.org: Adding to successful website
+
+ (Brave): (12) https://www.ampproject.org
+   (Brave) https://www.ampproject.org: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.ampproject.org
+**  (Brave): Error visiting webpage -> https://www.ampproject.org (net::ERR_ABORTED at https://www.ampproject.org)
+
+ (Brave): (13) https://www.ubuntu.com
+   (Brave) https://www.ubuntu.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.ubuntu.com
+   (Brave) https://www.ubuntu.com: Page loaded
+   (Brave) https://www.ubuntu.com: Getting Cookies
+   (Brave) https://www.ubuntu.com: Getting Localstorage
+   (Brave) https://www.ubuntu.com: Checking Cookie Banner
+This is the returnValue: [
+  [ { class: 'wrapper.u-no-margin--top', id: null } ],
+  [ 'learn more' ]
+]
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.ubuntu.com: Adding requests to DB
+   (Brave) https://www.ubuntu.com: Adding to successful website
+
+ (Brave): (14) https://www.amazon.co.uk
+   (Brave) https://www.amazon.co.uk: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.amazon.co.uk
+   (Brave) https://www.amazon.co.uk: Page loaded
+   (Brave) https://www.amazon.co.uk: Getting Cookies
+   (Brave) https://www.amazon.co.uk: Getting Localstorage
+   (Brave) https://www.amazon.co.uk: Checking Cookie Banner
+This is the returnValue: [
+  [
+    { class: null, id: 'sp-cc' },
+    { class: null, id: 'sp-cc-rejectall-container' },
+    { class: 'a-spacing-small', id: null },
+    { class: 'a-alert-content', id: null },
+    {
+      class: 'a-box.a-alert-inline.a-alert-inline-error.aok-hidden.a-spacing-top-base',
+      id: 'sp-cc-error'
+    },
+    { class: 'sp-cc-text', id: null },
+    { class: 'a-button-text', id: 'a-autoid-0-announce' },
+    { class: 'a-button-inner', id: null },
+    { class: 'a-button.a-button-base', id: 'a-autoid-0' },
+    { class: 'a-button-inner', id: null },
+    { class: 'sp-cc-buttons', id: null }
+  ],
+  [
+    'decline',
+    'learn more',
+    'use cookies',
+    'cookie preferences',
+    'cookie notice',
+    'accept'
+  ]
+]
+The following words were found: [
+  'decline',
+  'learn more',
+  'use cookies',
+  'cookie preferences',
+  'cookie notice',
+  'accept'
+]
+Sub Tree:  [
+  { class: null, id: 'sp-cc' },
+  { class: null, id: 'sp-cc-rejectall-container' },
+  { class: 'a-spacing-small', id: null },
+  { class: 'a-alert-content', id: null },
+  {
+    class: 'a-box.a-alert-inline.a-alert-inline-error.aok-hidden.a-spacing-top-base',
+    id: 'sp-cc-error'
+  },
+  { class: 'sp-cc-text', id: null },
+  { class: 'a-button-text', id: 'a-autoid-0-announce' },
+  { class: 'a-button-inner', id: null },
+  { class: 'a-button.a-button-base', id: 'a-autoid-0' },
+  { class: 'a-button-inner', id: null },
+  { class: 'sp-cc-buttons', id: null }
+]
+Frame Frame {
+  _id: 'C67789145E9E649E4043502B3E5565B7',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '385D6A19093A11BD53EC2F4431368B77',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'firstPaint',
+    'firstContentfulPaint',
+    'firstMeaningfulPaintCandidate',
+    'firstImagePaint',
+    'DOMContentLoaded',
+    'load'
+  }
+}
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Is element visible? [
+  false, false,
+  false, false,
+  false, false,
+  false, false,
+  false
+]
+Final decision:  false
+   (Brave) https://www.amazon.co.uk: Adding requests to DB
+   (Brave) https://www.amazon.co.uk: Adding to successful website
+
+ (Brave): (15) https://www.cdc.gov
+   (Brave) https://www.cdc.gov: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.cdc.gov
+   (Brave) https://www.cdc.gov: Page loaded
+   (Brave) https://www.cdc.gov: Getting Cookies
+   (Brave) https://www.cdc.gov: Getting Localstorage
+   (Brave) https://www.cdc.gov: Checking Cookie Banner
+This is the returnValue: [
+  [
+    {
+      class: 'cdc-2022.theme-blue.cdc-root-home.home-2022.cdc-page-type-2022home',
+      id: null
+    }
+  ],
+  [ 'more information', 'privacy policy' ]
+]
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.cdc.gov: Adding requests to DB
+   (Brave) https://www.cdc.gov: Adding to successful website
+
+ (Brave): (16) https://www.youtube-nocookie.com
+   (Brave) https://www.youtube-nocookie.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.youtube-nocookie.com
+   (Brave) https://www.youtube-nocookie.com: Page loaded
+   (Brave) https://www.youtube-nocookie.com: Getting Cookies
+   (Brave) https://www.youtube-nocookie.com: Getting Localstorage
+   (Brave) https://www.youtube-nocookie.com: Checking Cookie Banner
+This is the returnValue: null
+No banners were found on the page (no words).
+   (Brave) https://www.youtube-nocookie.com: Adding requests to DB
+   (Brave) https://www.youtube-nocookie.com: Adding to successful website
+
+ (Brave): (17) https://www.msftconnecttest.com
+   (Brave) https://www.msftconnecttest.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.msftconnecttest.com
+**  (Brave): Error visiting webpage -> https://www.msftconnecttest.com (net::ERR_CERT_COMMON_NAME_INVALID at https://www.msftconnecttest.com)
+
+ (Brave): (18) https://www.force.com
+   (Brave) https://www.force.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.force.com
+   (Brave) https://www.force.com: Page loaded
+   (Brave) https://www.force.com: Getting Cookies
+   (Brave) https://www.force.com: Getting Localstorage
+   (Brave) https://www.force.com: Checking Cookie Banner
+This is the returnValue: [ [], [ 'cookie preferences', 'learn more' ] ]
+This is the returnValue: null
+This is the returnValue: null
+This is the returnValue: null
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.force.com: Adding requests to DB
+   (Brave) https://www.force.com: Adding to successful website
+
+ (Brave): (19) https://www.playstation.net
+   (Brave) https://www.playstation.net: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.playstation.net
+**  (Brave): Error visiting webpage -> https://www.playstation.net (net::ERR_NAME_NOT_RESOLVED at https://www.playstation.net)
+
+ (Brave): (20) https://www.researchgate.net
+   (Brave) https://www.researchgate.net: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.researchgate.net
+   (Brave) https://www.researchgate.net: Page loaded
+   (Brave) https://www.researchgate.net: Getting Cookies
+   (Brave) https://www.researchgate.net: Getting Localstorage
+   (Brave) https://www.researchgate.net: Checking Cookie Banner
+This is the returnValue: null
+This is the returnValue: null
+No banners were found on the page (no words).
+   (Brave) https://www.researchgate.net: Adding requests to DB
+   (Brave) https://www.researchgate.net: Adding to successful website
+
+ (Brave): (21) https://www.hubspot.com
+   (Brave) https://www.hubspot.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.hubspot.com
+   (Brave) https://www.hubspot.com: Page loaded
+   (Brave) https://www.hubspot.com: Getting Cookies
+   (Brave) https://www.hubspot.com: Getting Localstorage
+   (Brave) https://www.hubspot.com: Checking Cookie Banner
+This is the returnValue: [ [], [ 'learn more', 'privacy policy' ] ]
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.hubspot.com: Adding requests to DB
+   (Brave) https://www.hubspot.com: Adding to successful website
+
+ (Brave): (22) https://www.nginx.com
+   (Brave) https://www.nginx.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.nginx.com
+   (Brave) https://www.nginx.com: Page loaded
+   (Brave) https://www.nginx.com: Getting Cookies
+   (Brave) https://www.nginx.com: Getting Localstorage
+   (Brave) https://www.nginx.com: Checking Cookie Banner
+This is the returnValue: [
+  [],
+  [
+    'accept',
+    'accept cookies',
+    'cookie preferences',
+    'learn more',
+    'use cookies'
+  ]
+]
+This is the returnValue: null
+This is the returnValue: null
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.nginx.com: Adding requests to DB
+   (Brave) https://www.nginx.com: Adding to successful website
+
+ (Brave): (23) https://www.wp.com
+   (Brave) https://www.wp.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.wp.com
+   (Brave) https://www.wp.com: Page loaded
+   (Brave) https://www.wp.com: Getting Cookies
+   (Brave) https://www.wp.com: Getting Localstorage
+   (Brave) https://www.wp.com: Checking Cookie Banner
+This is the returnValue: [
+  [ { class: 'webp.async-dim', id: null } ],
+  [
+    'agree',
+    'customize',
+    'learn more',
+    'privacy policy',
+    'use cookies'
+  ]
+]
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.wp.com: Adding requests to DB
+   (Brave) https://www.wp.com: Adding to successful website
+
+ (Brave): (24) https://www.dailymail.co.uk
+   (Brave) https://www.dailymail.co.uk: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.dailymail.co.uk
+   (Brave) https://www.dailymail.co.uk: Page loaded
+   (Brave) https://www.dailymail.co.uk: Getting Cookies
+   (Brave) https://www.dailymail.co.uk: Getting Localstorage
+   (Brave) https://www.dailymail.co.uk: Checking Cookie Banner
+This is the returnValue: [
+  [
+    {
+      class: 'molads_channel_feed_on.molads_gallery_billboard_on.molads_mpu_player_on.molads_mpu_puff_5_on.molads_mpu_puff_others_on.molads_sky_left_gallery_on.molads_sky_right_gallery_on.molads_smart_feed_on.molads_billboard_on.molads_mpu_puff_10_on.molads_mpu_puff_20_on.molads_leader_lower_middle_on.molads_leader_middle_on.molads_leader_very_bottom_on.molads_mpu_home_on.molads_mpu_middle_on.molads_mpu_left_on.molads_mpu_puff_30_on.molads_sky_left_top_on.molads_sky_right_top_on.molads_mpu_puff_45_on.molads_mpu_top_on.molads_puff_ad_others_on.molads_video_ad_on.gb_country.molads_adx_page_skins_off.molads_adx_tracking_off.molads_banner_top_off.molads_bvp_puff_26_off.molads_bvp_puff_29_off.molads_fff_off.molads_fff_overlay_off.molads_half_mpu_top_off.molads_inread_player_off.molads_inread_player_mw_off.molads_inread_player_top_off.molads_intro_ad_off.molads_leader_bottom_off.molads_leader_top_off.molads_leader_wide_off.molads_mpu_bottom_off.molads_mpu_bottom_right_off.molads_mpu_channel_off.molads_mpu_comments_1_off.molads_mpu_comments_2_off.molads_mpu_mobile_off.molads_mpu_mobile_bottom_off.molads_mpu_mobile_lower_middle_off.molads_mpu_mobile_top_off.molads_mpu_mobile_upper_middle_off.molads_mpu_puff_15_off.molads_native_fff_accessorise_off.molads_native_fff_overlay_accessorise_off.molads_network_banner_off.molads_para_top_off.molads_puff_ad_3_off.molads_puff_ad_6_off.molads_puff_ad_9_off.molads_sky_left_bottom_off.molads_sky_right_bottom_off.molads_sticky_banner_off.molads_video_carousel_off.ext-strict',
+      id: null
+    },
+    { class: null, id: 'homePageCover' },
+    { class: 'lightbox-gallery.hidden', id: 'lightbox-target' }
+  ],
+  [ 'agree', 'privacy policy' ]
+]
+The following words were found: [ 'agree', 'privacy policy' ]
+Sub Tree:  [
+  {
+    class: 'molads_channel_feed_on.molads_gallery_billboard_on.molads_mpu_player_on.molads_mpu_puff_5_on.molads_mpu_puff_others_on.molads_sky_left_gallery_on.molads_sky_right_gallery_on.molads_smart_feed_on.molads_billboard_on.molads_mpu_puff_10_on.molads_mpu_puff_20_on.molads_leader_lower_middle_on.molads_leader_middle_on.molads_leader_very_bottom_on.molads_mpu_home_on.molads_mpu_middle_on.molads_mpu_left_on.molads_mpu_puff_30_on.molads_sky_left_top_on.molads_sky_right_top_on.molads_mpu_puff_45_on.molads_mpu_top_on.molads_puff_ad_others_on.molads_video_ad_on.gb_country.molads_adx_page_skins_off.molads_adx_tracking_off.molads_banner_top_off.molads_bvp_puff_26_off.molads_bvp_puff_29_off.molads_fff_off.molads_fff_overlay_off.molads_half_mpu_top_off.molads_inread_player_off.molads_inread_player_mw_off.molads_inread_player_top_off.molads_intro_ad_off.molads_leader_bottom_off.molads_leader_top_off.molads_leader_wide_off.molads_mpu_bottom_off.molads_mpu_bottom_right_off.molads_mpu_channel_off.molads_mpu_comments_1_off.molads_mpu_comments_2_off.molads_mpu_mobile_off.molads_mpu_mobile_bottom_off.molads_mpu_mobile_lower_middle_off.molads_mpu_mobile_top_off.molads_mpu_mobile_upper_middle_off.molads_mpu_puff_15_off.molads_native_fff_accessorise_off.molads_native_fff_overlay_accessorise_off.molads_network_banner_off.molads_para_top_off.molads_puff_ad_3_off.molads_puff_ad_6_off.molads_puff_ad_9_off.molads_sky_left_bottom_off.molads_sky_right_bottom_off.molads_sticky_banner_off.molads_video_carousel_off.ext-strict',
+    id: null
+  },
+  { class: null, id: 'homePageCover' },
+  { class: 'lightbox-gallery.hidden', id: 'lightbox-target' }
+]
+Frame Frame {
+  _id: '32BA5100A37921467813F6EAE8D1DD05',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '6E7F50D080DC57639822815E9BEDD2C6',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'firstPaint',
+    'firstContentfulPaint',
+    'firstImagePaint',
+    'firstMeaningfulPaintCandidate',
+    'DOMContentLoaded',
+    'load'
+  }
+}
+Error accessing element handle's visibility -- id
+Is element visible? [ true, false ]
+Final decision:  false
+   (Brave) https://www.dailymail.co.uk: Adding requests to DB
+   (Brave) https://www.dailymail.co.uk: Adding to successful website
+
+ (Brave): (25) https://www.zendesk.com
+   (Brave) https://www.zendesk.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.zendesk.com
+   (Brave) https://www.zendesk.com: Page loaded
+   (Brave) https://www.zendesk.com: Getting Cookies
+   (Brave) https://www.zendesk.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Brave) https://www.zendesk.com: Checking Cookie Banner
+This is the returnValue: [ [], [ 'agree' ] ]
+This is the returnValue: null
+This is the returnValue: null
+No banners were found on the page (less than 2 words founds, or less than 2 elements in subtree).
+   (Brave) https://www.zendesk.com: Adding requests to DB
+   (Brave) https://www.zendesk.com: Adding to successful website
+Database connection disconnected

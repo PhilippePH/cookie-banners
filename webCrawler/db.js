@@ -15,7 +15,7 @@ export async function saveCookies (crawlID, browser, websiteURL, storageType, fr
     try {
       await connection.query(cookieDataQuery, cookieData)
     } catch (error) {
-      console.log(error)
+      console.log("Error adding Cookies to DB")
     }
   })
 }
@@ -39,7 +39,7 @@ export async function saveLocalStorage (crawlID, browser, websiteURL, storageTyp
     try {
       await connection.query(localStorageDataQuery, localStorageData)
     } catch (error) {
-      console.log(error)
+      console.log("Error adding LocalStorage to DB")
     }
   })
 }
@@ -58,7 +58,7 @@ export async function saveResponses (crawlID, browser, websiteURL, interceptedRe
   try {
     await connection.query(responseDataQuery, responseData)
   } catch (error) {
-    console.log(error)
+    console.log("Error adding responseData to DB")
   }
 }
 
@@ -75,7 +75,7 @@ export async function saveRequests (crawlID, browser, websiteURL, frameOrigin, r
   try {
     await connection.query(requestDataQuery, requestData)
   } catch (error) {
-    console.log(error)
+    console.log("Error adding requestData to DB")
   }
 }
 
@@ -92,6 +92,6 @@ export async function addCookieBannerDataToDB (browser, websiteURL, connection, 
   try {
     await connection.query(bannerDataQuery, bannerData)
   } catch (error) {
-    console.log(error)
+    console.log("Error adding bannerData to DB")
   }
 }
