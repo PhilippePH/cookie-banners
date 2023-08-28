@@ -13,68 +13,77 @@ Step 6. Call isVisible on the most prolific child (as well as the others in the 
 export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
   const returnValue = await frame.evaluate((wordCorpus, maxNumChildren) => {
     const allElements = document.querySelectorAll('*')
-    console.log(allElements.length)
 
     let maxNumHits = 0
     let maxWordHits
-    let subTree = []
+    let subTree
+    let index2
+    let i = 0
 
     for (const element of allElements) {
-      // if (element.type === 'button') {
-      //   console.log(`Button content: ${element.textContent}`)
-      // }
+      if (element.tagName === 'HTML') { continue }
+      if (element.className === 'qOCyff') { console.log(element.textContent)}
+      if (element.className === 'NuVImH') { console.log(element.textContent)}
+      if (element.className === 'WSh558') { console.log(element.textContent)}
+      if (element.id === 'wix-warmup-data') { console.log("1")}
+      if (element.className === 'qOCyff') { console.log(element.textContent)}
+      if (element.className === 'qOCyff') { console.log(element.textContent)}
+
+      i++
       const loopThroughSubTree = [element]
+      let childrenCounter = (element.children).length
+      // let reachedTerminalNode = true
+      let skipBool = false
 
       for (const child of element.children) {
         // I am making the number of children and reaching a terminal node a requirement for the specific children of this parent.
         // If none of the children satisfy the requirements, then none will be added. 
-        let childrenCounter = 0
-        let reachedTerminalNode = true
-
+        
         childrenCounter += (child.children).length
-        if (childrenCounter > maxNumChildren) { continue }
+        if (childrenCounter > maxNumChildren) { skipBool = true; break }
 
         for (const child2 of child.children) {
           childrenCounter += (child2.children).length
-          if (childrenCounter > maxNumChildren) { continue }
+          if (childrenCounter > maxNumChildren) { skipBool = true; break }
 
           for (const child3 of child2.children) {
             childrenCounter += (child3.children).length
-            if (childrenCounter > maxNumChildren) { continue }
+            if (childrenCounter > maxNumChildren) { skipBool = true; break }
 
             for (const child4 of child3.children) {
               childrenCounter += (child4.children).length
-              if (childrenCounter > maxNumChildren) { continue }
+              if (childrenCounter > maxNumChildren) { skipBool = true; break }
 
               for (const child5 of child4.children) {
                 childrenCounter += (child5.children).length
 
                 if ((child5.children).length !== 0) {
-                  reachedTerminalNode = false
+                  skipBool = true // if haven't reached the end
+                  break
                 }
 
-                if (childrenCounter > maxNumChildren) { continue }
+                if (childrenCounter > maxNumChildren) { 
+                  skipBool = true
+                  break 
+                }
 
-                if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
+                if (skipBool) { break }
                 loopThroughSubTree.push(child5)
-                }
               }
-              if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
-                loopThroughSubTree.push(child4)
-              }
+              if (skipBool) { break }
+              loopThroughSubTree.push(child4)
             }
-            if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
-              loopThroughSubTree.push(child3)
-            }
+            if (skipBool) { break }
+            loopThroughSubTree.push(child3)
           }
-          if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
-            loopThroughSubTree.push(child2)
-          }
+          if (skipBool) { break }
+          loopThroughSubTree.push(child2)
         }
-        if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
-          loopThroughSubTree.push(child)
-        }
+        if (skipBool) { break }
+        loopThroughSubTree.push(child)
       }
+
+      if (skipBool) { continue } // ignore that element
 
       const wordHits = new Set()
       for (const nodeElement of loopThroughSubTree) {
@@ -82,7 +91,7 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
         // Get the text of the Node (if any)
         const text = nodeElement.textContent.trim() // this should return an empty string if no text is found. it should not throw an error
 
-        if (text.length > 0) {
+        if (text && text.length > 0) {
           // const wordCorpusArray = wordCorpus.split(',')
           const wordsArray = text.split(/\s+/)
 
@@ -93,6 +102,7 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
 
               // Check for 1-word match
               if (normalizedNodeWord === corpusWord) {
+                // console.log(corpusWord)
                 return true
               }
 
@@ -108,37 +118,73 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
           )
 
           if (matchingWords.length > 0) {
-            // Set, so only unique values will be added.
-            // This is to encourage matching different words, rather than the same over and over again (like a script setting 500 "cookies")
             matchingWords.forEach(wordHits.add, wordHits)
           } else { // if the element in the subTree has NO matches, remove it from the subTree being considered as a banner. this will help removing "random" elements that are included in the subtree
             const index = loopThroughSubTree.indexOf(nodeElement)
             if (index > -1) { // only splice array when item is found
               loopThroughSubTree.splice(index, 1) // 2nd parameter means remove one item only
-            }
+            } else {"!!!!!!!!!!!!!! yo i failed"}
           }
         } else {
           // remove from subtree if has no text
           const index = loopThroughSubTree.indexOf(nodeElement)
             if (index > -1) { // only splice array when item is found
               loopThroughSubTree.splice(index, 1) // 2nd parameter means remove one item only
-            }
+            } else {"!!!!!!!!!!!!!! yo i failed"}
         }
       }
       
       // STEP 4.3: UPDATE THE BEST CANDIDATE IF FOUND (either more word hits, or same number but smaller subtree)
-      if (wordHits.size > maxNumHits || (wordHits.size === maxNumHits && loopThroughSubTree.length < subTree.length )) {
-        console.log(`!_!: Found a better match. Used to be ${maxNumHits} hits vs now ${wordHits.size}. The new words '${[...wordHits]}' will replace '${maxWordHits}'`)
-        maxNumHits = wordHits.size
-        maxWordHits = [...wordHits]
-        subTree = loopThroughSubTree
-      }
+      if (wordHits.size > 0) {
+        if (wordHits.size > maxNumHits || (wordHits.size === maxNumHits && loopThroughSubTree.length < subTree.length )) {
+          console.log(`!_!: Found a better match. Used to be ${maxNumHits} hits vs now ${wordHits.size}. The new words '${[...wordHits]}' will replace '${maxWordHits}'`)
+          maxNumHits = wordHits.size
+          maxWordHits = [...wordHits]
+          subTree = loopThroughSubTree
+          index2 = i
+        }
+      }  
     }
 
     if (Number(maxNumHits) > 0) {
+      let matchingCookieWords = []
+      for (nodeElement of subTree) {
+        let text = nodeElement.textContent
+        // console.log(text)
+        if (! text) { console.log("What the hell am I doing here?"); continue }
+        text = text.trim()
+        const wordsArray = text.split(/\s+/)
+        // Check that at least one element in the subTree has the word 'cookie' or 'cookies', if not return null
+        const cookieWords = ['cookie', 'cookies']
+        matchingCookieWords = cookieWords.filter(cookieWord =>
+          wordsArray.some((nodeWord) => {
+            const normalizedNodeWord = nodeWord.toLowerCase()
+
+            // Check for 1-word match
+            if (normalizedNodeWord === cookieWord) {
+              return true
+            }
+          })
+        )
+        if (matchingCookieWords.length > 0) {
+          break // if found one match
+        }
+      }
+      
+      if (matchingCookieWords.length === 0) {
+        return null // if no word cookie or cookies was found, return null. This likely was not the banner
+      }
+      // Otherwise, return the banner
       const subTreeInfo = subTree.map(nodeElement => {
         const classAttribute = nodeElement.getAttribute('class')
-        return classAttribute ? { class: classAttribute.split(' ').join('.') } : null // joins multi word class names with . to form a valid one for puppeteer to search with
+        const idAttribute = nodeElement.getAttribute('id')
+        if (classAttribute) {
+          return { class: classAttribute.split(' ').join('.'), id: idAttribute }
+        } else if (idAttribute) {
+          return { class: null, id: idAttribute }
+        } else {
+          return null
+        }
       })
         .filter(Boolean) // remove null values
       return [subTreeInfo, maxWordHits]
@@ -148,7 +194,6 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
   }, wordCorpus, maxNumChildren)
   return [returnValue, frame]
 }
-
 
 async function checkBannerVisibility (cookieBannerInfo, frame) {
   // STEP 6. SEE IF THE BEST CANDIDATE IS VISIBLE
@@ -163,13 +208,19 @@ async function checkBannerVisibility (cookieBannerInfo, frame) {
     const visibleArray = []
 
     for (const nodeInfo of subTree) {
-      if (nodeInfo.class === null) { continue }
-  
-      try {
-        const elementHandle = await frame.$(`.${nodeInfo.class}`)
-        const isVisible = await elementHandle.isVisible()
-        visibleArray.push(isVisible)
-      } catch (error) { console.log("Error accessing element handle's visibility") }
+      if (nodeInfo.class !== null) { 
+        try {
+          const elementHandle = await frame.$(`.${nodeInfo.class}`)
+          const isVisible = await elementHandle.isVisible()
+          visibleArray.push(isVisible)
+        } catch (error) { console.log("Error accessing element handle's visibility -- classname") }
+      } else if (nodeInfo.id !== null) {
+        try {
+          const elementHandle = await frame.$(`#${nodeInfo.class}`)
+          const isVisible = await elementHandle.isVisible()
+          visibleArray.push(isVisible)
+        } catch (error) { console.log("Error accessing element handle's visibility -- id") }
+      }
     }
 
     if (visibleArray.length === 0) {
@@ -204,7 +255,7 @@ async function checkBannerVisibility (cookieBannerInfo, frame) {
     } else if (type === 2) {
       const wordMatches = cookieBannerInfo[1]
       if (wordMatches.length < 2) {
-        file.write(`${websiteUrl} --> No cookie banner has been found on the page. Only found words ${wordMatches}.\n`)
+        file.write(`${websiteUrl} --> No cookie banner has been found on the page. Only found words ${wordMatches} in ${cookieBannerInfo[0].length} elements.\n`)
         const file2 = createWriteStream(`${resultPath}/${browser}_bannerDecisions.txt`, { flags: 'a' })
         file2.on('error', function (err) {
           console.log(err)
@@ -241,12 +292,14 @@ async function findBannerFrameRecursive (frame, wordCorpus, maxNumChildren) {
     bestCookieBannerCandidate = await ALLINONE(frame, wordCorpus, maxNumChildren)
   } catch (error) { console.log(error )}
 
-  if (bestCookieBannerCandidate[0] === null) {
+  // If returned Null, or only less than 2 elements in subtree, or less than 2 words matches --> see if another frame can do better
+  if (bestCookieBannerCandidate[0] === null || bestCookieBannerCandidate[0][0].length < 2 || bestCookieBannerCandidate[0][1].length < 2) {
     const childFrames = frame.childFrames()
+    console.log("Checking frames:", childFrames)
     for (const childFrame of childFrames) {
       
       let childCandidate = await findBannerFrameRecursive(childFrame, wordCorpus, maxNumChildren)
-
+      console.log("Frame candidate:", childCandidate)
       if (childCandidate[0] === null) { continue }
 
       if (bestCookieBannerCandidate[0] === null) {
@@ -269,6 +322,8 @@ async function accessAllFrames (page, wordCorpus, maxNumChildren) {
 
 
 export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumParents, maxNumChildren, websiteUrl, browser, connection, crawlID, resultPath) {
+  await new Promise((resolve) => setTimeout(resolve, 1000))
+  
   const results = await accessAllFrames(page, wordCorpus, maxNumChildren)
   const cookieBannerInfo = results[0]
   const frame = results[1]
@@ -277,8 +332,8 @@ export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumP
   if (cookieBannerInfo === null) {
     console.log('No banners were found on the page (no words).')
     await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 1, resultPath)
-  } else if (cookieBannerInfo[1].length < 2) {
-    console.log('No banners were found on the page (too little words).')
+  } else if (cookieBannerInfo[1].length < 2 || cookieBannerInfo[0].length < 2) {
+    console.log(`No banners were found on the page (less than 2 words founds (${cookieBannerInfo[1]}), or less than 2 elements in subtree (${cookieBannerInfo[0].length})).`)
     await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 2, resultPath)
   } else {
     // await new Promise((resolve) => setTimeout(resolve, 1000))

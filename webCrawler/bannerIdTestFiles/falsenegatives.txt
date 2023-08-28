@@ -1,8 +1,1 @@
-61,spotify.com
-104,dropbox.com
-147,salesforce.com
-158,medium.com
-180,forbes.com
-240,researchgate.net
-185,ebay.com
-177,doubleverify.com
+177,wixsite.com
