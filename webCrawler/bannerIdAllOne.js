@@ -15,159 +15,46 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
   const returnValue = await frame.evaluate((wordCorpus, maxNumChildren) => {
     const allElements = document.querySelectorAll('*')
 
-    let maxNumHits = 0
-    let maxWordHits
-    let subTree
+    let WordsFound = []
+    let subTree = []
 
     for (const element of allElements) {
       if (element.tagName === 'HTML') { continue }
 
-      const loopThroughSubTree = [element]
-      let childrenCounter = (element.children).length
-      // let reachedTerminalNode = true
-      let skipBool = false
+      const text = element.textContent.trim() // this should return an empty string if no text is found. it should not throw an error
 
-      for (const child of element.children) {
-        // I am making the number of children and reaching a terminal node a requirement for the specific children of this parent.
-        // If none of the children satisfy the requirements, then none will be added. 
-        
-        childrenCounter += (child.children).length
-        if (childrenCounter > maxNumChildren) { skipBool = true; break }
+      if (text && text.length > 0) {
+        const wordsArray = text.split(/\s+/)
 
-        for (const child2 of child.children) {
-          childrenCounter += (child2.children).length
-          if (childrenCounter > maxNumChildren) { skipBool = true; break }
+        // Check if any word from the corpus is in the text
+        const matchingWords = wordCorpus.filter(corpusWord =>
+          wordsArray.some((nodeWord, index) => {
+            const normalizedNodeWord = nodeWord.toLowerCase()
 
-          for (const child3 of child2.children) {
-            childrenCounter += (child3.children).length
-            if (childrenCounter > maxNumChildren) { skipBool = true; break }
-
-            for (const child4 of child3.children) {
-              childrenCounter += (child4.children).length
-              if (childrenCounter > maxNumChildren) { skipBool = true; break }
-
-              for (const child5 of child4.children) {
-                childrenCounter += (child5.children).length
-
-                if ((child5.children).length !== 0) {
-                  skipBool = true // if haven't reached the end
-                  break
-                }
-
-                if (childrenCounter > maxNumChildren) { 
-                  skipBool = true
-                  break 
-                }
-
-                if (skipBool) { break }
-                loopThroughSubTree.push(child5)
-              }
-              if (skipBool) { break }
-              loopThroughSubTree.push(child4)
+            // Check for 1-word match
+            if (normalizedNodeWord === corpusWord) {
+              // console.log(corpusWord)
+              return true
             }
-            if (skipBool) { break }
-            loopThroughSubTree.push(child3)
-          }
-          if (skipBool) { break }
-          loopThroughSubTree.push(child2)
-        }
-        if (skipBool) { break }
-        loopThroughSubTree.push(child)
-      }
 
-      if (skipBool) { continue } // ignore that element
-
-      const wordHits = new Set()
-      for (const nodeElement of loopThroughSubTree) {
-        // STEP 4.2: COMPARE THE VALUES TO THE WORD CORPUS
-        // Get the text of the Node (if any)
-        const text = nodeElement.textContent.trim() // this should return an empty string if no text is found. it should not throw an error
-
-        if (text && text.length > 0) {
-          // const wordCorpusArray = wordCorpus.split(',')
-          const wordsArray = text.split(/\s+/)
-
-          // Check if any word from the corpus is in the text
-          const matchingWords = wordCorpus.filter(corpusWord =>
-            wordsArray.some((nodeWord, index) => {
-              const normalizedNodeWord = nodeWord.toLowerCase()
-
-              // Check for 1-word match
-              if (normalizedNodeWord === corpusWord) {
-                // console.log(corpusWord)
-                return true
-              }
-
-              // Check for 2-word match using subsequent words
-              if (index < wordsArray.length - 1) {
-                const normalizedNextWord = wordsArray[index + 1].toLowerCase()
-                const twoWordMatch = normalizedNodeWord + ' ' + normalizedNextWord
-                return twoWordMatch === corpusWord
-              }
-
-              return false
-            })
-          )
-
-          if (matchingWords.length > 0) {
-            matchingWords.forEach(wordHits.add, wordHits)
-          } else { // if the element in the subTree has NO matches, remove it from the subTree being considered as a banner. this will help removing "random" elements that are included in the subtree
-            const index = loopThroughSubTree.indexOf(nodeElement)
-            if (index > -1) { // only splice array when item is found
-              loopThroughSubTree.splice(index, 1) // 2nd parameter means remove one item only
+            // Check for 2-word match using subsequent words
+            if (index < wordsArray.length - 1) {
+              const normalizedNextWord = wordsArray[index + 1].toLowerCase()
+              const twoWordMatch = normalizedNodeWord + ' ' + normalizedNextWord
+              return twoWordMatch === corpusWord
             }
-          }
-        } else {
-          // remove from subtree if has no text
-          const index = loopThroughSubTree.indexOf(nodeElement)
-            if (index > -1) { // only splice array when item is found
-              loopThroughSubTree.splice(index, 1) // 2nd parameter means remove one item only
-            }
+
+            return false
+          })
+        )
+
+        if (matchingWords.length > 0) {
+          matchingWords.forEach(word => WordsFound.push(word))
+          subTree.push(element)
         }
       }
-      
-      // STEP 4.3: UPDATE THE BEST CANDIDATE IF FOUND (either more word hits, or same number but smaller subtree)
-      if (wordHits.size > 0) {
-        if (wordHits.size > maxNumHits || (wordHits.size === maxNumHits && loopThroughSubTree.length < subTree.length )) {
-          console.log(`!_!: Found a better match. Used to be ${maxNumHits} hits vs now ${wordHits.size}. The new words '${[...wordHits]}' will replace '${maxWordHits}'`)
-          maxNumHits = wordHits.size
-          maxWordHits = [...wordHits]
-          subTree = loopThroughSubTree
-        }
-      }  
     }
-
-    if (Number(maxNumHits) > 0) {
-      // ADDITIONAL CHECK TO SEE IF WORD COOKIE IS PRESENT
-      // let matchingCookieWords = []
-      // for (nodeElement of subTree) {
-      //   let text = nodeElement.textContent
-      //   // console.log(text)
-      //   if (! text) { continue }
-      //   text = text.trim()
-      //   const wordsArray = text.split(/\s+/)
-      //   // Check that at least one element in the subTree has the word 'cookie' or 'cookies', if not return null
-      //   const cookieWords = ['cookie', 'cookies']
-      //   matchingCookieWords = cookieWords.filter(cookieWord =>
-      //     wordsArray.some((nodeWord) => {
-      //       const normalizedNodeWord = nodeWord.toLowerCase()
-
-      //       // Check for 1-word match
-      //       if (normalizedNodeWord === cookieWord) {
-      //         return true
-      //       }
-      //     })
-      //   )
-      //   if (matchingCookieWords.length > 0) {
-      //     break // if found one match
-      //   }
-      // }
-      
-      // if (matchingCookieWords.length === 0) {
-      //   console.log("No cookie, no banner!")
-      //   return null // if no word cookie or cookies was found, return null. This likely was not the banner
-      // }
-      // Otherwise, return the banner
+    if (WordsFound.length > 0) {
       const subTreeInfo = subTree.map(nodeElement => {
         const classAttribute = nodeElement.getAttribute('class')
         const idAttribute = nodeElement.getAttribute('id')
@@ -180,7 +67,7 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
         }
       })
         .filter(Boolean) // remove null values
-      return [subTreeInfo, maxWordHits]
+      return [subTreeInfo, WordsFound]
     } else {
       return null // No banner on the page
     }
