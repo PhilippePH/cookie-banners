@@ -70,7 +70,7 @@ async function evaluateWebsite (page, browser, websiteUrl, connection, wordCorpu
     console.log(`(${browser}) ${websiteUrl}: An error happened when getting requests or responses. ${error.name} ${error.message}`)
   }
   
-  page.on('console', msg => console.log('PAGE LOG:', msg.text()))
+  // page.on('console', msg => console.log('PAGE LOG:', msg.text()))
   const returnCode = await visitWebsite(page, websiteUrl, browser, resultPath)
 
   if (returnCode === 'Success') {

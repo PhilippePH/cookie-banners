@@ -15,46 +15,145 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
   const returnValue = await frame.evaluate((wordCorpus, maxNumChildren) => {
     const allElements = document.querySelectorAll('*')
 
-    let WordsFound = []
-    let subTree = []
+    let maxNumHits = 0
+    let maxWordHits
+    let subTree
 
     for (const element of allElements) {
       if (element.tagName === 'HTML') { continue }
 
-      const text = element.textContent.trim() // this should return an empty string if no text is found. it should not throw an error
+      const loopThroughSubTree = [element]
+      let childrenCounter = (element.children).length
+      // let reachedTerminalNode = true
+      let skipBool = false
 
-      if (text && text.length > 0) {
-        const wordsArray = text.split(/\s+/)
+      for (const child of element.children) {
+        // I am making the number of children and reaching a terminal node a requirement for the specific children of this parent.
+        // If none of the children satisfy the requirements, then none will be added. 
+        
+        childrenCounter += (child.children).length
+        if (childrenCounter > maxNumChildren) { skipBool = true; break }
 
-        // Check if any word from the corpus is in the text
-        const matchingWords = wordCorpus.filter(corpusWord =>
-          wordsArray.some((nodeWord, index) => {
-            const normalizedNodeWord = nodeWord.toLowerCase()
+        for (const child2 of child.children) {
+          childrenCounter += (child2.children).length
+          if (childrenCounter > maxNumChildren) { skipBool = true; break }
 
-            // Check for 1-word match
-            if (normalizedNodeWord === corpusWord) {
-              // console.log(corpusWord)
-              return true
+          for (const child3 of child2.children) {
+            childrenCounter += (child3.children).length
+            if (childrenCounter > maxNumChildren) { skipBool = true; break }
+
+            for (const child4 of child3.children) {
+              childrenCounter += (child4.children).length
+              if (childrenCounter > maxNumChildren) { skipBool = true; break }
+
+              for (const child5 of child4.children) {
+                childrenCounter += (child5.children).length
+                if (childrenCounter > maxNumChildren) { skipBool = true; break }
+
+                  for (const child6 of child5.children) {
+                    childrenCounter += (child6.children).length
+                    if (childrenCounter > maxNumChildren) { skipBool = true; break }
+
+                    for (const child7 of child6.children) {
+                      childrenCounter += (child7.children).length
+
+                      if ((child7.children).length !== 0) {
+                        skipBool = true // if haven't reached the end
+                        break
+                      }
+
+                      if (childrenCounter > maxNumChildren) { 
+                        skipBool = true
+                        break 
+                      }
+
+                      if (skipBool) { break }
+                      loopThroughSubTree.push(child7)
+                    }
+
+                    if (skipBool) { break }
+                    loopThroughSubTree.push(child6)
+                  }
+                  if (skipBool) { break }
+                  loopThroughSubTree.push(child5)
+              }
+              if (skipBool) { break }
+              loopThroughSubTree.push(child4)
             }
+            if (skipBool) { break }
+            loopThroughSubTree.push(child3)
+          }
+          if (skipBool) { break }
+          loopThroughSubTree.push(child2)
+        }
+        if (skipBool) { break }
+        loopThroughSubTree.push(child)
+      }
 
-            // Check for 2-word match using subsequent words
-            if (index < wordsArray.length - 1) {
-              const normalizedNextWord = wordsArray[index + 1].toLowerCase()
-              const twoWordMatch = normalizedNodeWord + ' ' + normalizedNextWord
-              return twoWordMatch === corpusWord
+      if (skipBool) { continue } // ignore that element
+
+      const wordHits = new Set()
+      for (const nodeElement of loopThroughSubTree) {
+        // STEP 4.2: COMPARE THE VALUES TO THE WORD CORPUS
+        // Get the text of the Node (if any)
+        const text = nodeElement.textContent.trim() // this should return an empty string if no text is found. it should not throw an error
+
+        if (text && text.length > 0) {
+          // const wordCorpusArray = wordCorpus.split(',')
+          const wordsArray = text.split(/\s+/)
+
+          // Check if any word from the corpus is in the text
+          const matchingWords = wordCorpus.filter(corpusWord =>
+            wordsArray.some((nodeWord, index) => {
+              const normalizedNodeWord = nodeWord.toLowerCase()
+
+              // Check for 1-word match
+              if (normalizedNodeWord === corpusWord) {
+                // console.log(corpusWord)
+                return true
+              }
+
+              // Check for 2-word match using subsequent words
+              if (index < wordsArray.length - 1) {
+                const normalizedNextWord = wordsArray[index + 1].toLowerCase()
+                const twoWordMatch = normalizedNodeWord + ' ' + normalizedNextWord
+                return twoWordMatch === corpusWord
+              }
+
+              return false
+            })
+          )
+
+          if (matchingWords.length > 0) {
+            matchingWords.forEach(wordHits.add, wordHits)
+          } else { // if the element in the subTree has NO matches, remove it from the subTree being considered as a banner. this will help removing "random" elements that are included in the subtree
+            const index = loopThroughSubTree.indexOf(nodeElement)
+            if (index > -1) { // only splice array when item is found
+              loopThroughSubTree.splice(index, 1) // 2nd parameter means remove one item only
             }
-
-            return false
-          })
-        )
-
-        if (matchingWords.length > 0) {
-          matchingWords.forEach(word => WordsFound.push(word))
-          subTree.push(element)
+          }
+        } else {
+          // remove from subtree if has no text
+          const index = loopThroughSubTree.indexOf(nodeElement)
+            if (index > -1) { // only splice array when item is found
+              loopThroughSubTree.splice(index, 1) // 2nd parameter means remove one item only
+            }
         }
       }
+      
+      // STEP 4.3: UPDATE THE BEST CANDIDATE IF FOUND (either more word hits, or same number but smaller subtree)
+      if (wordHits.size > 0) {
+        if (wordHits.size > maxNumHits || (wordHits.size === maxNumHits && loopThroughSubTree.length < subTree.length )) {
+          console.log(`!_!: Found a better match. Used to be ${maxNumHits} hits vs now ${wordHits.size}. The new words '${[...wordHits]}' will replace '${maxWordHits}'`)
+          maxNumHits = wordHits.size
+          maxWordHits = [...wordHits]
+          subTree = loopThroughSubTree
+        }
+      }  
     }
-    if (WordsFound.length > 0) {
+
+    if (Number(maxNumHits) > 0) {
+      // Otherwise, return the banner
       const subTreeInfo = subTree.map(nodeElement => {
         const classAttribute = nodeElement.getAttribute('class')
         const idAttribute = nodeElement.getAttribute('id')
@@ -67,7 +166,7 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
         }
       })
         .filter(Boolean) // remove null values
-      return [subTreeInfo, WordsFound]
+      return [subTreeInfo, maxWordHits]
     } else {
       return null // No banner on the page
     }
@@ -108,7 +207,7 @@ async function checkBannerVisibility (cookieBannerInfo, frame) {
       return null
     }
   
-    // console.log('Is element visible?', visibleArray)
+    console.log('Is element visible?', visibleArray)
   
     const trueCount = visibleArray.filter(value => value === true).length
     const falseCount = visibleArray.length - trueCount
@@ -117,7 +216,7 @@ async function checkBannerVisibility (cookieBannerInfo, frame) {
     if (trueCount < falseCount) {
       decision = 'present-invisible'
     }
-    // console.log('Final decision: ', trueCount > falseCount)
+    console.log('Final decision: ', trueCount > falseCount)
   
     return [decision, trueCount, falseCount]
   }
@@ -183,7 +282,6 @@ async function findBannerFrameRecursive (frame, wordCorpus, maxNumChildren) {
     for (const childFrame of childFrames) {
       
       let childCandidate = await findBannerFrameRecursive(childFrame, wordCorpus, maxNumChildren)
-      console.log("Frame candidate:", childCandidate)
       if (childCandidate[0] === null) { continue }
 
       if (bestCookieBannerCandidate[0] === null) {
@@ -206,7 +304,7 @@ async function accessAllFrames (page, wordCorpus, maxNumChildren) {
 
 
 export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumParents, maxNumChildren, websiteUrl, browser, connection, crawlID, resultPath) {
-  await new Promise((resolve) => setTimeout(resolve, 1000))
+  await new Promise((resolve) => setTimeout(resolve, 5000))
   
   const results = await accessAllFrames(page, wordCorpus, maxNumChildren)
   const cookieBannerInfo = results[0]
