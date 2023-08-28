@@ -1,0 +1,2046 @@
+Database connection established
+
+ (Firefox): (1) https://www.google.com
+   (Firefox) https://www.google.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.google.com
+**  (Firefox): TimeoutError -> https://www.google.com
+
+ (Firefox): (2) https://www.a-msedge.net
+   (Firefox) https://www.a-msedge.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.a-msedge.net
+**  (Firefox): Error visiting webpage -> https://www.a-msedge.net (NS_ERROR_UNKNOWN_HOST at https://www.a-msedge.net)
+
+ (Firefox): (3) https://www.facebook.com
+   (Firefox) https://www.facebook.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.facebook.com
+   (Firefox) https://www.facebook.com: Page loaded
+   (Firefox) https://www.facebook.com: Getting Cookies
+   (Firefox) https://www.facebook.com: Getting Localstorage
+   (Firefox) https://www.facebook.com: Checking Cookie Banner
+No banners were found on the page (too little words).
+   (Firefox) https://www.facebook.com: Adding requests to DB
+   (Firefox) https://www.facebook.com: Adding to successful website
+
+ (Firefox): (4) https://www.microsoft.com
+   (Firefox) https://www.microsoft.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.microsoft.com
+   (Firefox) https://www.microsoft.com: Page loaded
+   (Firefox) https://www.microsoft.com: Getting Cookies
+   (Firefox) https://www.microsoft.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.microsoft.com: Checking Cookie Banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (5) https://www.amazonaws.com
+   (Firefox) https://www.amazonaws.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.amazonaws.com
+**  (Firefox): Error visiting webpage -> https://www.amazonaws.com (NS_ERROR_CONNECTION_REFUSED at https://www.amazonaws.com)
+
+ (Firefox): (6) https://www.googleapis.com
+   (Firefox) https://www.googleapis.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.googleapis.com
+   (Firefox) https://www.googleapis.com: Page loaded
+   (Firefox) https://www.googleapis.com: Getting Cookies
+   (Firefox) https://www.googleapis.com: Getting Localstorage
+   (Firefox) https://www.googleapis.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.googleapis.com: Adding requests to DB
+   (Firefox) https://www.googleapis.com: Adding to successful website
+
+ (Firefox): (7) https://www.apple.com
+   (Firefox) https://www.apple.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.apple.com
+   (Firefox) https://www.apple.com: Page loaded
+   (Firefox) https://www.apple.com: Getting Cookies
+   (Firefox) https://www.apple.com: Getting Localstorage
+   (Firefox) https://www.apple.com: Checking Cookie Banner
+The following words were found: [ 'learn more', 'privacy policy' ]
+Sub Tree:  [
+  {
+    class: 'js.no-touch.progressive-image.no-reduced-motion.no-edge.no-ie.css-mask.inline-video.desktop.no-tablet.no-windows.no-android.retina.no-safari.no-old-safari.no-chrome.firefox.no-iphone.no-ipad.ac-ls-visible.ac-ls-fixed.fnb-supported'
+  }
+]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809898702',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '18',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Firefox) https://www.apple.com: Adding requests to DB
+   (Firefox) https://www.apple.com: Adding to successful website
+
+ (Firefox): (8) https://www.youtube.com
+   (Firefox) https://www.youtube.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.youtube.com
+   (Firefox) https://www.youtube.com: Page loaded
+   (Firefox) https://www.youtube.com: Getting Cookies
+   (Firefox) https://www.youtube.com: Getting Localstorage
+   (Firefox) https://www.youtube.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'decline' ]
+Sub Tree:  []
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809898759',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '19',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Could not evaluate visibility
+   (Firefox) https://www.youtube.com: Adding requests to DB
+   (Firefox) https://www.youtube.com: Adding to successful website
+
+ (Firefox): (9) https://www.akamaiedge.net
+   (Firefox) https://www.akamaiedge.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.akamaiedge.net
+**  (Firefox): Error visiting webpage -> https://www.akamaiedge.net (NS_ERROR_UNKNOWN_HOST at https://www.akamaiedge.net)
+
+ (Firefox): (10) https://www.twitter.com
+   (Firefox) https://www.twitter.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.twitter.com
+**  (Firefox): TimeoutError -> https://www.twitter.com
+
+ (Firefox): (11) https://www.netflix.com
+   (Firefox) https://www.netflix.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.netflix.com
+   (Firefox) https://www.netflix.com: Page loaded
+   (Firefox) https://www.netflix.com: Getting Cookies
+   (Firefox) https://www.netflix.com: Getting Localstorage
+   (Firefox) https://www.netflix.com: Checking Cookie Banner
+The following words were found: [ 'learn more', 'use cookies', 'accept', 'reject' ]
+Sub Tree:  [
+  { class: 'default-ltr-cache-1h3fewl.e1yb99j90' },
+  { class: 'pointer.cookie-disclosure-link' },
+  { class: 'default-ltr-cache-z8ra07.enn6hg40' },
+  { class: 'pointer.cookie-disclosure-link' },
+  { class: 'default-ltr-cache-k03rno.enn6hg41' },
+  { class: '.e1ax5wel1.default-ltr-cache-gaoz1w' },
+  { class: '.e1ax5wel1.default-ltr-cache-gaoz1w' }
+]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809898953',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '23',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Error accessing element handle's visibility
+Error accessing element handle's visibility
+Is element visible? [ false, false, false, false, false ]
+Final decision:  false
+   (Firefox) https://www.netflix.com: Adding requests to DB
+   (Firefox) https://www.netflix.com: Adding to successful website
+
+ (Firefox): (12) https://www.instagram.com
+   (Firefox) https://www.instagram.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.instagram.com
+**  (Firefox): TimeoutError -> https://www.instagram.com
+
+ (Firefox): (13) https://www.googlevideo.com
+   (Firefox) https://www.googlevideo.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.googlevideo.com
+   (Firefox) https://www.googlevideo.com: Page loaded
+   (Firefox) https://www.googlevideo.com: Getting Cookies
+   (Firefox) https://www.googlevideo.com: Getting Localstorage
+   (Firefox) https://www.googlevideo.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.googlevideo.com: Adding requests to DB
+   (Firefox) https://www.googlevideo.com: Adding to successful website
+
+ (Firefox): (14) https://www.cloudflare.com
+   (Firefox) https://www.cloudflare.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.cloudflare.com
+   (Firefox) https://www.cloudflare.com: Page loaded
+   (Firefox) https://www.cloudflare.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Firefox) https://www.cloudflare.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.cloudflare.com: Checking Cookie Banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (15) https://www.gtld-servers.net
+   (Firefox) https://www.gtld-servers.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.gtld-servers.net
+**  (Firefox): Error visiting webpage -> https://www.gtld-servers.net (NS_ERROR_UNKNOWN_HOST at https://www.gtld-servers.net)
+
+ (Firefox): (16) https://www.gstatic.com
+   (Firefox) https://www.gstatic.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.gstatic.com
+   (Firefox) https://www.gstatic.com: Page loaded
+   (Firefox) https://www.gstatic.com: Getting Cookies
+   (Firefox) https://www.gstatic.com: Getting Localstorage
+   (Firefox) https://www.gstatic.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.gstatic.com: Adding requests to DB
+   (Firefox) https://www.gstatic.com: Adding to successful website
+
+ (Firefox): (17) https://www.akamai.net
+   (Firefox) https://www.akamai.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.akamai.net
+**  (Firefox): Error visiting webpage -> https://www.akamai.net (NS_ERROR_UNKNOWN_HOST at https://www.akamai.net)
+
+ (Firefox): (18) https://www.linkedin.com
+   (Firefox) https://www.linkedin.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.linkedin.com
+   (Firefox) https://www.linkedin.com: Page loaded
+   (Firefox) https://www.linkedin.com: Getting Cookies
+   (Firefox) https://www.linkedin.com: Getting Localstorage
+   (Firefox) https://www.linkedin.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.linkedin.com: Adding requests to DB
+   (Firefox) https://www.linkedin.com: Adding to successful website
+
+ (Firefox): (19) https://www.live.com
+   (Firefox) https://www.live.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.live.com
+   (Firefox) https://www.live.com: Page loaded
+   (Firefox) https://www.live.com: Getting Cookies
+   (Firefox) https://www.live.com: Getting Localstorage
+   (Firefox) https://www.live.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'learn more', 'uses cookies' ]
+Sub Tree:  []
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809899142',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '32',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Could not evaluate visibility
+   (Firefox) https://www.live.com: Adding requests to DB
+   (Firefox) https://www.live.com: Adding to successful website
+
+ (Firefox): (20) https://www.tiktokcdn.com
+   (Firefox) https://www.tiktokcdn.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.tiktokcdn.com
+**  (Firefox): Error visiting webpage -> https://www.tiktokcdn.com (NS_ERROR_UNKNOWN_HOST at https://www.tiktokcdn.com)
+
+ (Firefox): (21) https://www.domaincontrol.com
+   (Firefox) https://www.domaincontrol.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.domaincontrol.com
+**  (Firefox): Error visiting webpage -> https://www.domaincontrol.com (NS_ERROR_UNKNOWN_HOST at https://www.domaincontrol.com)
+
+ (Firefox): (22) https://www.office.com
+   (Firefox) https://www.office.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.office.com
+**  (Firefox): TimeoutError -> https://www.office.com
+
+ (Firefox): (23) https://www.azure.com
+   (Firefox) https://www.azure.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.azure.com
+   (Firefox) https://www.azure.com: Page loaded
+   (Firefox) https://www.azure.com: Getting Cookies
+   (Firefox) https://www.azure.com: Getting Localstorage
+   (Firefox) https://www.azure.com: Checking Cookie Banner
+The following words were found: [ 'manage cookies', 'learn more' ]
+Sub Tree:  []
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809899312',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '36',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Could not evaluate visibility
+   (Firefox) https://www.azure.com: Adding requests to DB
+   (Firefox) https://www.azure.com: Adding to successful website
+
+ (Firefox): (24) https://www.googletagmanager.com
+   (Firefox) https://www.googletagmanager.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.googletagmanager.com
+   (Firefox) https://www.googletagmanager.com: Page loaded
+   (Firefox) https://www.googletagmanager.com: Getting Cookies
+   (Firefox) https://www.googletagmanager.com: Getting Localstorage
+   (Firefox) https://www.googletagmanager.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.googletagmanager.com: Adding requests to DB
+   (Firefox) https://www.googletagmanager.com: Adding to successful website
+
+ (Firefox): (25) https://www.doubleclick.net
+   (Firefox) https://www.doubleclick.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.doubleclick.net
+   (Firefox) https://www.doubleclick.net: Page loaded
+   (Firefox) https://www.doubleclick.net: Getting Cookies
+   (Firefox) https://www.doubleclick.net: Getting Localstorage
+   (Firefox) https://www.doubleclick.net: Checking Cookie Banner
+The following words were found: [ 'learn more', 'uses cookies' ]
+Sub Tree:  [
+  { class: 'glue-flexbox.glue-flexbox.glue-app-ready.ng-scope' },
+  { class: 'cookieBarText' }
+]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809899390',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '38',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true, true ]
+Final decision:  true
+   (Firefox) https://www.doubleclick.net: Adding requests to DB
+   (Firefox) https://www.doubleclick.net: Adding to successful website
+
+ (Firefox): (26) https://www.akadns.net
+   (Firefox) https://www.akadns.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.akadns.net
+**  (Firefox): Error visiting webpage -> https://www.akadns.net (NS_ERROR_UNKNOWN_HOST at https://www.akadns.net)
+
+ (Firefox): (27) https://www.amazon.com
+   (Firefox) https://www.amazon.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.amazon.com
+   (Firefox) https://www.amazon.com: Page loaded
+   (Firefox) https://www.amazon.com: Getting Cookies
+   (Firefox) https://www.amazon.com: Getting Localstorage
+   (Firefox) https://www.amazon.com: Checking Cookie Banner
+No banners were found on the page (too little words).
+   (Firefox) https://www.amazon.com: Adding requests to DB
+   (Firefox) https://www.amazon.com: Adding to successful website
+
+ (Firefox): (28) https://www.windowsupdate.com
+   (Firefox) https://www.windowsupdate.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.windowsupdate.com
+**  (Firefox): Error visiting webpage -> https://www.windowsupdate.com (SSL_ERROR_BAD_CERT_DOMAIN at https://www.windowsupdate.com)
+
+ (Firefox): (29) https://www.fbcdn.net
+   (Firefox) https://www.fbcdn.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.fbcdn.net
+   (Firefox) https://www.fbcdn.net: Page loaded
+   (Firefox) https://www.fbcdn.net: Getting Cookies
+   (Firefox) https://www.fbcdn.net: Getting Localstorage
+   (Firefox) https://www.fbcdn.net: Checking Cookie Banner
+No banners were found on the page (too little words).
+   (Firefox) https://www.fbcdn.net: Adding requests to DB
+   (Firefox) https://www.fbcdn.net: Adding to successful website
+
+ (Firefox): (30) https://www.apple-dns.net
+   (Firefox) https://www.apple-dns.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.apple-dns.net
+**  (Firefox): Error visiting webpage -> https://www.apple-dns.net (NS_ERROR_UNKNOWN_HOST at https://www.apple-dns.net)
+
+ (Firefox): (31) https://www.wikipedia.org
+   (Firefox) https://www.wikipedia.org: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.wikipedia.org
+   (Firefox) https://www.wikipedia.org: Page loaded
+   (Firefox) https://www.wikipedia.org: Getting Cookies
+   (Firefox) https://www.wikipedia.org: Getting Localstorage
+   (Firefox) https://www.wikipedia.org: Checking Cookie Banner
+The following words were found: [ 'customize', 'privacy policy' ]
+Sub Tree:  [ { class: 'js-enabled' } ]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809899566',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '44',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Firefox) https://www.wikipedia.org: Adding requests to DB
+   (Firefox) https://www.wikipedia.org: Adding to successful website
+
+ (Firefox): (32) https://www.root-servers.net
+   (Firefox) https://www.root-servers.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.root-servers.net
+**  (Firefox): Error visiting webpage -> https://www.root-servers.net (NS_ERROR_UNKNOWN_HOST at https://www.root-servers.net)
+
+ (Firefox): (33) https://www.fastly.net
+   (Firefox) https://www.fastly.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.fastly.net
+   (Firefox) https://www.fastly.net: Page loaded
+   (Firefox) https://www.fastly.net: Getting Cookies
+   (Firefox) https://www.fastly.net: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.fastly.net: Checking Cookie Banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (34) https://www.yahoo.com
+   (Firefox) https://www.yahoo.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.yahoo.com
+   (Firefox) https://www.yahoo.com: Page loaded
+   (Firefox) https://www.yahoo.com: Getting Cookies
+   (Firefox) https://www.yahoo.com: Getting Localstorage
+   (Firefox) https://www.yahoo.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.yahoo.com: Adding requests to DB
+   (Firefox) https://www.yahoo.com: Adding to successful website
+
+ (Firefox): (35) https://www.trafficmanager.net
+   (Firefox) https://www.trafficmanager.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.trafficmanager.net
+**  (Firefox): Error visiting webpage -> https://www.trafficmanager.net (NS_ERROR_UNKNOWN_HOST at https://www.trafficmanager.net)
+
+ (Firefox): (36) https://www.bing.com
+   (Firefox) https://www.bing.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.bing.com
+   (Firefox) https://www.bing.com: Page loaded
+   (Firefox) https://www.bing.com: Getting Cookies
+   (Firefox) https://www.bing.com: Getting Localstorage
+   (Firefox) https://www.bing.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.bing.com: Adding requests to DB
+   (Firefox) https://www.bing.com: Adding to successful website
+
+ (Firefox): (37) https://www.wordpress.org
+   (Firefox) https://www.wordpress.org: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.wordpress.org
+   (Firefox) https://www.wordpress.org: Page loaded
+   (Firefox) https://www.wordpress.org: Getting Cookies
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+   (Firefox) https://www.wordpress.org: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.wordpress.org: Checking Cookie Banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (38) https://www.icloud.com
+   (Firefox) https://www.icloud.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.icloud.com
+   (Firefox) https://www.icloud.com: Page loaded
+   (Firefox) https://www.icloud.com: Getting Cookies
+   (Firefox) https://www.icloud.com: Getting Localstorage
+   (Firefox) https://www.icloud.com: Checking Cookie Banner
+No banners were found on the page (too little words).
+   (Firefox) https://www.icloud.com: Adding requests to DB
+   (Firefox) https://www.icloud.com: Adding to successful website
+
+ (Firefox): (39) https://www.tiktokv.com
+   (Firefox) https://www.tiktokv.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.tiktokv.com
+   (Firefox) https://www.tiktokv.com: Page loaded
+   (Firefox) https://www.tiktokv.com: Getting Cookies
+   (Firefox) https://www.tiktokv.com: Getting Localstorage
+   (Firefox) https://www.tiktokv.com: Checking Cookie Banner
+The following words were found: [
+  'agree',
+  'accept',
+  'decline',
+  'learn more',
+  'use cookies',
+  'uses cookies'
+]
+Sub Tree:  []
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809900334',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '52',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Could not evaluate visibility
+   (Firefox) https://www.tiktokv.com: Adding requests to DB
+   (Firefox) https://www.tiktokv.com: Adding to successful website
+
+ (Firefox): (40) https://www.microsoftonline.com
+   (Firefox) https://www.microsoftonline.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.microsoftonline.com
+**  (Firefox): Error visiting webpage -> https://www.microsoftonline.com (NS_ERROR_UNKNOWN_HOST at https://www.microsoftonline.com)
+
+ (Firefox): (41) https://www.youtu.be
+   (Firefox) https://www.youtu.be: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.youtu.be
+**  (Firefox): Error visiting webpage -> https://www.youtu.be (NS_ERROR_UNKNOWN_HOST at https://www.youtu.be)
+
+ (Firefox): (42) https://www.pinterest.com
+   (Firefox) https://www.pinterest.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.pinterest.com
+   (Firefox) https://www.pinterest.com: Page loaded
+   (Firefox) https://www.pinterest.com: Getting Cookies
+   (Firefox) https://www.pinterest.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.pinterest.com: Checking Cookie Banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (43) https://www.mail.ru
+   (Firefox) https://www.mail.ru: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.mail.ru
+**  (Firefox): TimeoutError -> https://www.mail.ru
+
+ (Firefox): (44) https://www.googleusercontent.com
+   (Firefox) https://www.googleusercontent.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.googleusercontent.com
+   (Firefox) https://www.googleusercontent.com: Page loaded
+   (Firefox) https://www.googleusercontent.com: Getting Cookies
+   (Firefox) https://www.googleusercontent.com: Getting Localstorage
+   (Firefox) https://www.googleusercontent.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.googleusercontent.com: Adding requests to DB
+   (Firefox) https://www.googleusercontent.com: Adding to successful website
+
+ (Firefox): (45) https://www.aaplimg.com
+   (Firefox) https://www.aaplimg.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.aaplimg.com
+**  (Firefox): Error visiting webpage -> https://www.aaplimg.com (NS_ERROR_UNKNOWN_HOST at https://www.aaplimg.com)
+
+ (Firefox): (46) https://www.l-msedge.net
+   (Firefox) https://www.l-msedge.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.l-msedge.net
+**  (Firefox): Error visiting webpage -> https://www.l-msedge.net (NS_ERROR_UNKNOWN_HOST at https://www.l-msedge.net)
+
+ (Firefox): (47) https://www.googlesyndication.com
+   (Firefox) https://www.googlesyndication.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.googlesyndication.com
+**  (Firefox): Error visiting webpage -> https://www.googlesyndication.com (NS_ERROR_UNKNOWN_HOST at https://www.googlesyndication.com)
+
+ (Firefox): (48) https://www.github.com
+   (Firefox) https://www.github.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.github.com
+   (Firefox) https://www.github.com: Page loaded
+   (Firefox) https://www.github.com: Getting Cookies
+   (Firefox) https://www.github.com: Getting Localstorage
+   (Firefox) https://www.github.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.github.com: Adding requests to DB
+   (Firefox) https://www.github.com: Adding to successful website
+
+ (Firefox): (49) https://www.nflxso.net
+   (Firefox) https://www.nflxso.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.nflxso.net
+**  (Firefox): Error visiting webpage -> https://www.nflxso.net (NS_ERROR_UNKNOWN_HOST at https://www.nflxso.net)
+
+ (Firefox): (50) https://www.windows.net
+   (Firefox) https://www.windows.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.windows.net
+**  (Firefox): Error visiting webpage -> https://www.windows.net (SSL_ERROR_BAD_CERT_DOMAIN at https://www.windows.net)
+
+ (Firefox): (51) https://www.vimeo.com
+   (Firefox) https://www.vimeo.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.vimeo.com
+   (Firefox) https://www.vimeo.com: Page loaded
+   (Firefox) https://www.vimeo.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Firefox) https://www.vimeo.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.vimeo.com: Checking Cookie Banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (52) https://www.sharepoint.com
+   (Firefox) https://www.sharepoint.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.sharepoint.com
+   (Firefox) https://www.sharepoint.com: Page loaded
+   (Firefox) https://www.sharepoint.com: Getting Cookies
+   (Firefox) https://www.sharepoint.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.sharepoint.com: Checking Cookie Banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (53) https://www.adobe.com
+   (Firefox) https://www.adobe.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.adobe.com
+   (Firefox) https://www.adobe.com: Page loaded
+   (Firefox) https://www.adobe.com: Getting Cookies
+   (Firefox) https://www.adobe.com: Getting Localstorage
+   (Firefox) https://www.adobe.com: Checking Cookie Banner
+The following words were found: [ 'cookie preferences', 'use cookie' ]
+Sub Tree:  [ { class: 'spectrum--medium' } ]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809901467',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '66',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Firefox) https://www.adobe.com: Adding requests to DB
+   (Firefox) https://www.adobe.com: Adding to successful website
+
+ (Firefox): (54) https://www.digicert.com
+   (Firefox) https://www.digicert.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.digicert.com
+**  (Firefox): TimeoutError -> https://www.digicert.com
+
+ (Firefox): (55) https://www.s-msedge.net
+   (Firefox) https://www.s-msedge.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.s-msedge.net
+**  (Firefox): Error visiting webpage -> https://www.s-msedge.net (NS_ERROR_UNKNOWN_HOST at https://www.s-msedge.net)
+
+ (Firefox): (56) https://www.office365.com
+   (Firefox) https://www.office365.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.office365.com
+   (Firefox) https://www.office365.com: Page loaded
+   (Firefox) https://www.office365.com: Getting Cookies
+   (Firefox) https://www.office365.com: Getting Localstorage
+   (Firefox) https://www.office365.com: Checking Cookie Banner
+The following words were found: [ 'manage cookies', 'learn more' ]
+Sub Tree:  [ { class: 'js' } ]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809901607',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '69',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Firefox) https://www.office365.com: Adding requests to DB
+   (Firefox) https://www.office365.com: Adding to successful website
+
+ (Firefox): (57) https://www.cloudfront.net
+   (Firefox) https://www.cloudfront.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.cloudfront.net
+**  (Firefox): Error visiting webpage -> https://www.cloudfront.net (NS_ERROR_UNKNOWN_HOST at https://www.cloudfront.net)
+
+ (Firefox): (58) https://www.goo.gl
+   (Firefox) https://www.goo.gl: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.goo.gl
+**  (Firefox): TimeoutError -> https://www.goo.gl
+
+ (Firefox): (59) https://www.netflix.net
+   (Firefox) https://www.netflix.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.netflix.net
+**  (Firefox): Error visiting webpage -> https://www.netflix.net (SEC_ERROR_UNKNOWN_ISSUER at https://www.netflix.net)
+
+ (Firefox): (60) https://www.t-msedge.net
+   (Firefox) https://www.t-msedge.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.t-msedge.net
+**  (Firefox): Error visiting webpage -> https://www.t-msedge.net (NS_ERROR_UNKNOWN_HOST at https://www.t-msedge.net)
+
+ (Firefox): (61) https://www.spotify.com
+   (Firefox) https://www.spotify.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.spotify.com
+   (Firefox) https://www.spotify.com: Page loaded
+   (Firefox) https://www.spotify.com: Getting Cookies
+   (Firefox) https://www.spotify.com: Getting Localstorage
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+   (Firefox) https://www.spotify.com: Checking Cookie Banner
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+No banners were found on the page (no words).
+   (Firefox) https://www.spotify.com: Adding requests to DB
+   (Firefox) https://www.spotify.com: Adding to successful website
+
+ (Firefox): (62) https://www.googledomains.com
+   (Firefox) https://www.googledomains.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.googledomains.com
+   (Firefox) https://www.googledomains.com: Page loaded
+   (Firefox) https://www.googledomains.com: Getting Cookies
+   (Firefox) https://www.googledomains.com: Getting Localstorage
+   (Firefox) https://www.googledomains.com: Checking Cookie Banner
+The following words were found: [ 'uses cookies', 'learn more' ]
+Sub Tree:  [ { class: 'text\n' } ]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809901854',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '76',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Firefox) https://www.googledomains.com: Adding requests to DB
+   (Firefox) https://www.googledomains.com: Adding to successful website
+
+ (Firefox): (63) https://www.msn.com
+   (Firefox) https://www.msn.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.msn.com
+**  (Firefox): TimeoutError -> https://www.msn.com
+
+ (Firefox): (64) https://www.gandi.net
+   (Firefox) https://www.gandi.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.gandi.net
+**  (Firefox): TimeoutError -> https://www.gandi.net
+
+ (Firefox): (65) https://www.wordpress.com
+   (Firefox) https://www.wordpress.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.wordpress.com
+   (Firefox) https://www.wordpress.com: Page loaded
+   (Firefox) https://www.wordpress.com: Getting Cookies
+   (Firefox) https://www.wordpress.com: Getting Localstorage
+   (Firefox) https://www.wordpress.com: Checking Cookie Banner
+The following words were found: [
+  'accept',
+  'customize',
+  'learn more',
+  'privacy policy',
+  'use cookies',
+  'accept all',
+  'cookie policy'
+]
+Sub Tree:  [
+  { class: 'a8c-cookie-banner.a8c-cookie-banner-v2' },
+  { class: 'a8c-cookie-banner__simple-text-description' },
+  { class: 'a8c-cookie-banner__customize-button' },
+  { class: 'a8c-cookie-banner__accept-all-button' },
+  { class: 'a8c-cookie-banner__simple-options' },
+  { class: 'a8c-cookie-banner__options-lead-text' },
+  { class: 'a8c-cookie-banner__checkbox-container' },
+  { class: 'a8c-cookie-banner__bucket-container' }
+]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809902653',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '79',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [
+  true,  true,
+  true,  true,
+  true,  false,
+  false, false
+]
+Final decision:  true
+   (Firefox) https://www.wordpress.com: Adding requests to DB
+   (Firefox) https://www.wordpress.com: Adding to successful website
+
+ (Firefox): (66) https://www.google-analytics.com
+   (Firefox) https://www.google-analytics.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.google-analytics.com
+   (Firefox) https://www.google-analytics.com: Page loaded
+   (Firefox) https://www.google-analytics.com: Getting Cookies
+   (Firefox) https://www.google-analytics.com: Getting Localstorage
+   (Firefox) https://www.google-analytics.com: Checking Cookie Banner
+The following words were found: [ 'learn more', 'uses cookies' ]
+Sub Tree:  [
+  { class: 'glue-flexbox.glue-flexbox.glue-app-ready.ng-scope' },
+  { class: 'cookieBarText' }
+]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809902726',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '80',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true, true ]
+Final decision:  true
+   (Firefox) https://www.google-analytics.com: Adding requests to DB
+   (Firefox) https://www.google-analytics.com: Adding to successful website
+
+ (Firefox): (67) https://www.edgekey.net
+   (Firefox) https://www.edgekey.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.edgekey.net
+**  (Firefox): Error visiting webpage -> https://www.edgekey.net (SSL_ERROR_BAD_CERT_DOMAIN at https://www.edgekey.net)
+
+ (Firefox): (68) https://www.ui.com
+   (Firefox) https://www.ui.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ui.com
+**  (Firefox): TimeoutError -> https://www.ui.com
+
+ (Firefox): (69) https://www.zoom.us
+   (Firefox) https://www.zoom.us: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.zoom.us
+   (Firefox) https://www.zoom.us: Page loaded
+   (Firefox) https://www.zoom.us: Getting Cookies
+   (Firefox) https://www.zoom.us: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.zoom.us: Checking Cookie Banner
+The following words were found: [ 'cookie preferences', 'learn more' ]
+Sub Tree:  []
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809902886',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '83',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Could not evaluate visibility
+   (Firefox) https://www.zoom.us: Adding requests to DB
+   (Firefox) https://www.zoom.us: Adding to successful website
+
+ (Firefox): (70) https://www.bit.ly
+   (Firefox) https://www.bit.ly: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.bit.ly
+   (Firefox) https://www.bit.ly: Page loaded
+   (Firefox) https://www.bit.ly: Getting Cookies
+   (Firefox) https://www.bit.ly: Getting Localstorage
+   (Firefox) https://www.bit.ly: Checking Cookie Banner
+The following words were found: [ 'learn more', 'privacy policy', 'cookie policy' ]
+Sub Tree:  [ { class: 'off-canvas-wrapper' } ]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809903000',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '84',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Firefox) https://www.bit.ly: Adding requests to DB
+   (Firefox) https://www.bit.ly: Adding to successful website
+
+ (Firefox): (71) https://www.whatsapp.net
+   (Firefox) https://www.whatsapp.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.whatsapp.net
+**  (Firefox): Error visiting webpage -> https://www.whatsapp.net (NS_ERROR_UNKNOWN_HOST at https://www.whatsapp.net)
+
+ (Firefox): (72) https://www.dell.com
+   (Firefox) https://www.dell.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.dell.com
+   (Firefox) https://www.dell.com: Page loaded
+   (Firefox) https://www.dell.com: Getting Cookies
+   (Firefox) https://www.dell.com: Getting Localstorage
+   (Firefox) https://www.dell.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.dell.com: Adding requests to DB
+   (Firefox) https://www.dell.com: Adding to successful website
+
+ (Firefox): (73) https://www.gvt2.com
+   (Firefox) https://www.gvt2.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.gvt2.com
+**  (Firefox): Error visiting webpage -> https://www.gvt2.com (NS_ERROR_UNKNOWN_HOST at https://www.gvt2.com)
+
+ (Firefox): (74) https://www.mozilla.org
+   (Firefox) https://www.mozilla.org: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.mozilla.org
+   (Firefox) https://www.mozilla.org: Page loaded
+   (Firefox) https://www.mozilla.org: Getting Cookies
+   (Firefox) https://www.mozilla.org: Getting Localstorage
+   (Firefox) https://www.mozilla.org: Checking Cookie Banner
+The following words were found: [ 'agree', 'learn more' ]
+Sub Tree:  [
+  {
+    class: 'osx.js.is-firefox.is-modern-browser.mzp-has-sticky-navigation.loaded'
+  }
+]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '106042742538269',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '88',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Firefox) https://www.mozilla.org: Adding requests to DB
+   (Firefox) https://www.mozilla.org: Adding to successful website
+
+ (Firefox): (75) https://www.cloudapp.net
+   (Firefox) https://www.cloudapp.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.cloudapp.net
+**  (Firefox): Error visiting webpage -> https://www.cloudapp.net (NS_ERROR_UNKNOWN_HOST at https://www.cloudapp.net)
+
+ (Firefox): (76) https://www.outlook.com
+   (Firefox) https://www.outlook.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.outlook.com
+   (Firefox) https://www.outlook.com: Page loaded
+   (Firefox) https://www.outlook.com: Getting Cookies
+   (Firefox) https://www.outlook.com: Getting Localstorage
+   (Firefox) https://www.outlook.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'learn more', 'uses cookies' ]
+Sub Tree:  []
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809903197',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '90',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Could not evaluate visibility
+   (Firefox) https://www.outlook.com: Adding requests to DB
+   (Firefox) https://www.outlook.com: Adding to successful website
+
+ (Firefox): (77) https://www.cloudflare.net
+   (Firefox) https://www.cloudflare.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.cloudflare.net
+**  (Firefox): TimeoutError -> https://www.cloudflare.net
+
+ (Firefox): (78) https://www.skype.com
+   (Firefox) https://www.skype.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.skype.com
+   (Firefox) https://www.skype.com: Page loaded
+   (Firefox) https://www.skype.com: Getting Cookies
+   (Firefox) https://www.skype.com: Getting Localstorage
+   (Firefox) https://www.skype.com: Checking Cookie Banner
+The following words were found: [ 'manage cookies', 'learn more' ]
+Sub Tree:  [
+  {
+    class: 'en.ltr.os_Windows10.passiveeventlisteners.csstransforms.supports.csstransforms3d.backgroundsize.borderradius.cssanimations.csstransitions.canvas.audio.video.svg.smil.os_noWindows.js'
+  }
+]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809903277',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '93',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Firefox) https://www.skype.com: Adding requests to DB
+   (Firefox) https://www.skype.com: Adding to successful website
+
+ (Firefox): (79) https://www.qq.com
+   (Firefox) https://www.qq.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.qq.com
+   (Firefox) https://www.qq.com: Page loaded
+   (Firefox) https://www.qq.com: Getting Cookies
+   (Firefox) https://www.qq.com: Getting Localstorage
+   (Firefox) https://www.qq.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.qq.com: Adding requests to DB
+   (Firefox) https://www.qq.com: Adding to successful website
+
+ (Firefox): (80) https://www.tds.net
+   (Firefox) https://www.tds.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.tds.net
+   (Firefox) https://www.tds.net: Page loaded
+   (Firefox) https://www.tds.net: Getting Cookies
+   (Firefox) https://www.tds.net: Getting Localstorage
+   (Firefox) https://www.tds.net: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.tds.net: Adding requests to DB
+   (Firefox) https://www.tds.net: Adding to successful website
+
+ (Firefox): (81) https://www.ntp.org
+   (Firefox) https://www.ntp.org: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ntp.org
+   (Firefox) https://www.ntp.org: Page loaded
+   (Firefox) https://www.ntp.org: Getting Cookies
+   (Firefox) https://www.ntp.org: Getting Localstorage
+   (Firefox) https://www.ntp.org: Checking Cookie Banner
+No banners were found on the page (too little words).
+   (Firefox) https://www.ntp.org: Adding requests to DB
+   (Firefox) https://www.ntp.org: Adding to successful website
+
+ (Firefox): (82) https://www.office.net
+   (Firefox) https://www.office.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.office.net
+**  (Firefox): Error visiting webpage -> https://www.office.net (NS_ERROR_UNKNOWN_HOST at https://www.office.net)
+
+ (Firefox): (83) https://www.yandex.net
+   (Firefox) https://www.yandex.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.yandex.net
+   (Firefox) https://www.yandex.net: Page loaded
+   (Firefox) https://www.yandex.net: Getting Cookies
+   (Firefox) https://www.yandex.net: Getting Localstorage
+   (Firefox) https://www.yandex.net: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.yandex.net: Adding requests to DB
+   (Firefox) https://www.yandex.net: Adding to successful website
+
+ (Firefox): (84) https://www.blogspot.com
+   (Firefox) https://www.blogspot.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.blogspot.com
+**  (Firefox): TimeoutError -> https://www.blogspot.com
+
+ (Firefox): (85) https://www.gvt1.com
+   (Firefox) https://www.gvt1.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.gvt1.com
+**  (Firefox): Error visiting webpage -> https://www.gvt1.com (NS_ERROR_UNKNOWN_HOST at https://www.gvt1.com)
+
+ (Firefox): (86) https://www.whatsapp.com
+   (Firefox) https://www.whatsapp.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.whatsapp.com
+**  (Firefox): TimeoutError -> https://www.whatsapp.com
+
+ (Firefox): (87) https://www.roblox.com
+   (Firefox) https://www.roblox.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.roblox.com
+**  (Firefox): TimeoutError -> https://www.roblox.com
+
+ (Firefox): (88) https://www.ytimg.com
+   (Firefox) https://www.ytimg.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ytimg.com
+**  (Firefox): Error visiting webpage -> https://www.ytimg.com (NS_ERROR_UNKNOWN_HOST at https://www.ytimg.com)
+
+ (Firefox): (89) https://www.yandex.ru
+   (Firefox) https://www.yandex.ru: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.yandex.ru
+**  (Firefox): TimeoutError -> https://www.yandex.ru
+
+ (Firefox): (90) https://www.app-measurement.com
+   (Firefox) https://www.app-measurement.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.app-measurement.com
+**  (Firefox): Error visiting webpage -> https://www.app-measurement.com (NS_ERROR_UNKNOWN_HOST at https://www.app-measurement.com)
+
+ (Firefox): (91) https://www.reddit.com
+   (Firefox) https://www.reddit.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.reddit.com
+   (Firefox) https://www.reddit.com: Page loaded
+   (Firefox) https://www.reddit.com: Getting Cookies
+   (Firefox) https://www.reddit.com: Getting Localstorage
+   (Firefox) https://www.reddit.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'privacy policy' ]
+Sub Tree:  [
+  {
+    class: 'grid-container.grid.gap-md.s:gap-lg.grid-cols-4.xs:grid-cols-[repeat(8,_1fr)_repeat(4,minmax(67px,_1fr))].m:grid-cols-14.l:grid-cols-16.xl:grid-cols-18.mx-auto.xs:mx-md.m:mx-lg.l:m-auto.xl:m-auto.l:max-w-[1352px].xl:max-w-[1524px].new.sidebar-grid.pdp'
+  }
+]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809903993',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '109',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Error accessing element handle's visibility
+Could not evaluate visibility
+   (Firefox) https://www.reddit.com: Adding requests to DB
+   (Firefox) https://www.reddit.com: Adding to successful website
+
+ (Firefox): (92) https://www.cloudflare-dns.com
+   (Firefox) https://www.cloudflare-dns.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.cloudflare-dns.com
+**  (Firefox): Error visiting webpage -> https://www.cloudflare-dns.com (NS_ERROR_UNKNOWN_HOST at https://www.cloudflare-dns.com)
+
+ (Firefox): (93) https://www.lencr.org
+   (Firefox) https://www.lencr.org: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.lencr.org
+   (Firefox) https://www.lencr.org: Page loaded
+   (Firefox) https://www.lencr.org: Getting Cookies
+   (Firefox) https://www.lencr.org: Getting Localstorage
+   (Firefox) https://www.lencr.org: Checking Cookie Banner
+No banners were found on the page (too little words).
+   (Firefox) https://www.lencr.org: Adding requests to DB
+   (Firefox) https://www.lencr.org: Adding to successful website
+
+ (Firefox): (94) https://www.adnxs.com
+   (Firefox) https://www.adnxs.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.adnxs.com
+**  (Firefox): Error visiting webpage -> https://www.adnxs.com (SSL_ERROR_BAD_CERT_DOMAIN at https://www.adnxs.com)
+
+ (Firefox): (95) https://www.intuit.com
+   (Firefox) https://www.intuit.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.intuit.com
+   (Firefox) https://www.intuit.com: Page loaded
+   (Firefox) https://www.intuit.com: Getting Cookies
+   (Firefox) https://www.intuit.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.intuit.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'manage cookies' ]
+Sub Tree:  [
+  { class: 'FooterBottom_legalBottomLeft__8f0de5e0' },
+  { class: 'FooterBottom_copyright__8f0de5e0' },
+  {
+    class: 'Link_link__829fb056.FooterBottom_link__8f0de5e0.FooterBottom_cookieLink__8f0de5e0.FooterBottom_underline__8f0de5e0.Link_white__829fb056.Link_body02__829fb056.Link_medium__829fb056'
+  },
+  {
+    class: 'Link_link__829fb056.FooterBottom_link__8f0de5e0.FooterBottom_cookieLink__8f0de5e0.FooterBottom_underline__8f0de5e0.Link_white__829fb056.Link_body02__829fb056.Link_medium__829fb056'
+  }
+]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809904193',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '113',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true, true, true, true ]
+Final decision:  true
+   (Firefox) https://www.intuit.com: Adding requests to DB
+   (Firefox) https://www.intuit.com: Adding to successful website
+
+ (Firefox): (96) https://www.opera.com
+   (Firefox) https://www.opera.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.opera.com
+   (Firefox) https://www.opera.com: Page loaded
+   (Firefox) https://www.opera.com: Getting Cookies
+   (Firefox) https://www.opera.com: Getting Localstorage
+   (Firefox) https://www.opera.com: Checking Cookie Banner
+The following words were found: [
+  'agree',
+  'accept',
+  'accept cookies',
+  'manage cookies',
+  'privacy statement',
+  'use cookies'
+]
+Sub Tree:  [ { class: 'large-screen-ready.v2023.home.' } ]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809904403',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '114',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Error accessing element handle's visibility
+Could not evaluate visibility
+   (Firefox) https://www.opera.com: Adding requests to DB
+   (Firefox) https://www.opera.com: Adding to successful website
+
+ (Firefox): (97) https://www.criteo.com
+   (Firefox) https://www.criteo.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.criteo.com
+   (Firefox) https://www.criteo.com: Page loaded
+   (Firefox) https://www.criteo.com: Getting Cookies
+   (Firefox) https://www.criteo.com: Getting Localstorage
+   (Firefox) https://www.criteo.com: Checking Cookie Banner
+The following words were found: [ 'learn more', 'privacy policy' ]
+Sub Tree:  [ { class: 'en_US' } ]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809904479',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '115',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Firefox) https://www.criteo.com: Adding requests to DB
+   (Firefox) https://www.criteo.com: Adding to successful website
+
+ (Firefox): (98) https://www.nic.ru
+   (Firefox) https://www.nic.ru: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.nic.ru
+**  (Firefox): TimeoutError -> https://www.nic.ru
+
+ (Firefox): (99) https://www.macromedia.com
+   (Firefox) https://www.macromedia.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.macromedia.com
+   (Firefox) https://www.macromedia.com: Page loaded
+   (Firefox) https://www.macromedia.com: Getting Cookies
+   (Firefox) https://www.macromedia.com: Getting Localstorage
+   (Firefox) https://www.macromedia.com: Checking Cookie Banner
+The following words were found: [ 'cookie preferences', 'use cookie' ]
+Sub Tree:  [ { class: 'spectrum--medium' } ]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809904710',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '117',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Firefox) https://www.macromedia.com: Adding requests to DB
+   (Firefox) https://www.macromedia.com: Adding to successful website
+
+ (Firefox): (100) https://www.pki.goog
+   (Firefox) https://www.pki.goog: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.pki.goog
+**  (Firefox): TimeoutError -> https://www.pki.goog
+
+ (Firefox): (101) https://www.europa.eu
+   (Firefox) https://www.europa.eu: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.europa.eu
+   (Firefox) https://www.europa.eu: Page loaded
+   (Firefox) https://www.europa.eu: Getting Cookies
+   (Firefox) https://www.europa.eu: Getting Localstorage
+   (Firefox) https://www.europa.eu: Checking Cookie Banner
+The following words were found: [ 'accept', 'accept all', 'uses cookies' ]
+Sub Tree:  [ { class: '.js' } ]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809904778',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '120',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Error accessing element handle's visibility
+Could not evaluate visibility
+   (Firefox) https://www.europa.eu: Adding requests to DB
+   (Firefox) https://www.europa.eu: Adding to successful website
+
+ (Firefox): (102) https://www.bytefcdn-oversea.com
+   (Firefox) https://www.bytefcdn-oversea.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.bytefcdn-oversea.com
+**  (Firefox): Error visiting webpage -> https://www.bytefcdn-oversea.com (NS_ERROR_UNKNOWN_HOST at https://www.bytefcdn-oversea.com)
+
+ (Firefox): (103) https://www.tumblr.com
+   (Firefox) https://www.tumblr.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.tumblr.com
+   (Firefox) https://www.tumblr.com: Page loaded
+   (Firefox) https://www.tumblr.com: Getting Cookies
+   (Firefox) https://www.tumblr.com: Getting Localstorage
+   (Firefox) https://www.tumblr.com: Checking Cookie Banner
+From frame: Found a better match. Used to be 3 hits vs now 4. The new words 'customize,decline,use cookies,learn more' will replace 'customize,decline,use cookies'
+The following words were found: [ 'customize', 'decline', 'use cookies', 'learn more' ]
+Sub Tree:  [
+  { class: 'cmp__dialog' },
+  { class: 'cmp__dialog-header' },
+  { class: 'cmp__notice-form' },
+  { class: 'cmp__dialog-content' },
+  { class: 'components-button.white-space-normal.is-secondary' },
+  { class: 'cmp__dialog-footer-buttons' }
+]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: undefined,
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '246960619523',
+  _parentId: '122',
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: ''
+}
+Is element visible? [ true, true, true, true, true, true ]
+Final decision:  true
+   (Firefox) https://www.tumblr.com: Adding requests to DB
+   (Firefox) https://www.tumblr.com: Adding to successful website
+
+ (Firefox): (104) https://www.dropbox.com
+   (Firefox) https://www.dropbox.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.dropbox.com
+   (Firefox) https://www.dropbox.com: Page loaded
+   (Firefox) https://www.dropbox.com: Getting Cookies
+   (Firefox) https://www.dropbox.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.dropbox.com: Checking Cookie Banner
+From frame: Found a better match. Used to be 1 hits vs now 5. The new words 'privacy policy,use cookies,decline,accept,accept all' will replace 'learn more'
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (105) https://www.snapchat.com
+   (Firefox) https://www.snapchat.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.snapchat.com
+   (Firefox) https://www.snapchat.com: Page loaded
+   (Firefox) https://www.snapchat.com: Getting Cookies
+   (Firefox) https://www.snapchat.com: Getting Localstorage
+   (Firefox) https://www.snapchat.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'learn more', 'more information' ]
+Sub Tree:  []
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809905259',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '124',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Could not evaluate visibility
+   (Firefox) https://www.snapchat.com: Adding requests to DB
+   (Firefox) https://www.snapchat.com: Adding to successful website
+
+ (Firefox): (106) https://www.amazon-adsystem.com
+   (Firefox) https://www.amazon-adsystem.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.amazon-adsystem.com
+**  (Firefox): Error visiting webpage -> https://www.amazon-adsystem.com (NS_ERROR_UNKNOWN_HOST at https://www.amazon-adsystem.com)
+
+ (Firefox): (107) https://www.baidu.com
+   (Firefox) https://www.baidu.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.baidu.com
+   (Firefox) https://www.baidu.com: Page loaded
+   (Firefox) https://www.baidu.com: Getting Cookies
+   (Firefox) https://www.baidu.com: Getting Localstorage
+   (Firefox) https://www.baidu.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.baidu.com: Adding requests to DB
+   (Firefox) https://www.baidu.com: Adding to successful website
+
+ (Firefox): (108) https://www.ruidongcloud.com
+   (Firefox) https://www.ruidongcloud.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ruidongcloud.com
+**  (Firefox): Error visiting webpage -> https://www.ruidongcloud.com (NS_ERROR_UNKNOWN_HOST at https://www.ruidongcloud.com)
+
+ (Firefox): (109) https://www.trbcdn.net
+   (Firefox) https://www.trbcdn.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.trbcdn.net
+**  (Firefox): Error visiting webpage -> https://www.trbcdn.net (SSL_ERROR_BAD_CERT_DOMAIN at https://www.trbcdn.net)
+
+ (Firefox): (110) https://www.nih.gov
+   (Firefox) https://www.nih.gov: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.nih.gov
+   (Firefox) https://www.nih.gov: Page loaded
+   (Firefox) https://www.nih.gov: Getting Cookies
+   (Firefox) https://www.nih.gov: Getting Localstorage
+   (Firefox) https://www.nih.gov: Checking Cookie Banner
+The following words were found: [ 'learn more', 'privacy policy' ]
+Sub Tree:  [ { class: 'js' } ]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809905377',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '129',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Firefox) https://www.nih.gov: Adding requests to DB
+   (Firefox) https://www.nih.gov: Adding to successful website
+
+ (Firefox): (111) https://www.msedge.net
+   (Firefox) https://www.msedge.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.msedge.net
+**  (Firefox): TimeoutError -> https://www.msedge.net
+
+ (Firefox): (112) https://www.cdn77.org
+   (Firefox) https://www.cdn77.org: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.cdn77.org
+**  (Firefox): Error visiting webpage -> https://www.cdn77.org (NS_ERROR_UNKNOWN_HOST at https://www.cdn77.org)
+
+ (Firefox): (113) https://www.gravatar.com
+   (Firefox) https://www.gravatar.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.gravatar.com
+   (Firefox) https://www.gravatar.com: Page loaded
+   (Firefox) https://www.gravatar.com: Getting Cookies
+   (Firefox) https://www.gravatar.com: Getting Localstorage
+   (Firefox) https://www.gravatar.com: Checking Cookie Banner
+The following words were found: [
+  'accept',
+  'customize',
+  'learn more',
+  'privacy policy',
+  'use cookies',
+  'accept all',
+  'cookie policy'
+]
+Sub Tree:  [
+  { class: 'a8c-cookie-banner.a8c-cookie-banner-v2' },
+  { class: 'a8c-cookie-banner__simple-text-description' },
+  { class: 'a8c-cookie-banner__customize-button' },
+  { class: 'a8c-cookie-banner__accept-all-button' },
+  { class: 'a8c-cookie-banner__simple-options' },
+  { class: 'a8c-cookie-banner__options-lead-text' },
+  { class: 'a8c-cookie-banner__checkbox-container' },
+  { class: 'a8c-cookie-banner__bucket-container' }
+]
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809905455',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '132',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Is element visible? [
+  true,  true,
+  true,  true,
+  true,  false,
+  false, false
+]
+Final decision:  true
+   (Firefox) https://www.gravatar.com: Adding requests to DB
+   (Firefox) https://www.gravatar.com: Adding to successful website
+
+ (Firefox): (114) https://www.nytimes.com
+   (Firefox) https://www.nytimes.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.nytimes.com
+**  (Firefox): TimeoutError -> https://www.nytimes.com
+
+ (Firefox): (115) https://www.registrar-servers.com
+   (Firefox) https://www.registrar-servers.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.registrar-servers.com
+**  (Firefox): Error visiting webpage -> https://www.registrar-servers.com (NS_ERROR_UNKNOWN_HOST at https://www.registrar-servers.com)
+
+ (Firefox): (116) https://www.t.co
+   (Firefox) https://www.t.co: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.t.co
+   (Firefox) https://www.t.co: Page loaded
+   (Firefox) https://www.t.co: Getting Cookies
+   (Firefox) https://www.t.co: Getting Localstorage
+   (Firefox) https://www.t.co: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Firefox) https://www.t.co: Adding requests to DB
+   (Firefox) https://www.t.co: Adding to successful website
+
+ (Firefox): (117) https://www.flickr.com
+   (Firefox) https://www.flickr.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.flickr.com
+   (Firefox) https://www.flickr.com: Page loaded
+   (Firefox) https://www.flickr.com: Getting Cookies
+   (Firefox) https://www.flickr.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.flickr.com: Checking Cookie Banner
+No banners were found on the page (too little words).
+   (Firefox) https://www.flickr.com: Adding requests to DB
+   (Firefox) https://www.flickr.com: Adding to successful website
+
+ (Firefox): (118) https://www.msftncsi.com
+   (Firefox) https://www.msftncsi.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.msftncsi.com
+**  (Firefox): Error visiting webpage -> https://www.msftncsi.com (SSL_ERROR_BAD_CERT_DOMAIN at https://www.msftncsi.com)
+
+ (Firefox): (119) https://www.epicgames.com
+   (Firefox) https://www.epicgames.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.epicgames.com
+**  (Firefox): TimeoutError -> https://www.epicgames.com
+
+ (Firefox): (120) https://www.tiktok.com
+   (Firefox) https://www.tiktok.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.tiktok.com
+   (Firefox) https://www.tiktok.com: Page loaded
+   (Firefox) https://www.tiktok.com: Getting Cookies
+   (Firefox) https://www.tiktok.com: Getting Localstorage
+   (Firefox) https://www.tiktok.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'accept' ]
+Sub Tree:  []
+Frame Frame {
+  _hasStartedLoading: true,
+  _loaderId: '104747809905719',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' },
+  _frameManager: FrameManager {
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    _frameTree: FrameTree {}
+  },
+  _id: '140',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined
+}
+Could not evaluate visibility
+   (Firefox) https://www.tiktok.com: Adding requests to DB
+   (Firefox) https://www.tiktok.com: Adding to successful website
+
+ (Firefox): (121) https://www.omtrdc.net
+   (Firefox) https://www.omtrdc.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.omtrdc.net
+**  (Firefox): Error visiting webpage -> https://www.omtrdc.net (SSL_ERROR_BAD_CERT_DOMAIN at https://www.omtrdc.net)
+
+ (Firefox): (122) https://www.paypal.com
+   (Firefox) https://www.paypal.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.paypal.com
+   (Firefox) https://www.paypal.com: Page loaded
+   (Firefox) https://www.paypal.com: Getting Cookies
+   (Firefox) https://www.paypal.com: Getting Localstorage
+   (Firefox) https://www.paypal.com: Checking Cookie Banner
+No banners were found on the page (too little words).
+   (Firefox) https://www.paypal.com: Adding requests to DB
+   (Firefox) https://www.paypal.com: Adding to successful website
+
+ (Firefox): (123) https://www.webex.com
+   (Firefox) https://www.webex.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.webex.com
+**  (Firefox): TimeoutError -> https://www.webex.com
+
+ (Firefox): (124) https://www.aiv-cdn.net
+   (Firefox) https://www.aiv-cdn.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.aiv-cdn.net
+**  (Firefox): Error visiting webpage -> https://www.aiv-cdn.net (NS_ERROR_UNKNOWN_HOST at https://www.aiv-cdn.net)
+
+ (Firefox): (125) https://www.one.one
+   (Firefox) https://www.one.one: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.one.one
+**  (Firefox): Error visiting webpage -> https://www.one.one (NS_ERROR_UNKNOWN_HOST at https://www.one.one)
+Database connection disconnected

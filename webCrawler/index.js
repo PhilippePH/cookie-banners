@@ -45,34 +45,32 @@ export async function visitWebsite (page, websiteUrl, browser, resultPath) {
 }
 
 async function takeMeasurements (page, browser, websiteUrl, connection, requestData, wordCorpus, parentCutoff, childrenCutoff, crawlID, resultPath) {
-  // console.log(`   (${browser}) ${websiteUrl}: Getting Cookies`)
-  // await getCookies(page, browser, websiteUrl, connection, crawlID)
+  console.log(`   (${browser}) ${websiteUrl}: Getting Cookies`)
+  await getCookies(page, browser, websiteUrl, connection, crawlID)
 
-  // console.log(`   (${browser}) ${websiteUrl}: Getting Localstorage`)
-  // await getLocalStorage(page, browser, websiteUrl, connection, crawlID)
+  console.log(`   (${browser}) ${websiteUrl}: Getting Localstorage`)
+  await getLocalStorage(page, browser, websiteUrl, connection, crawlID)
 
   console.log(`   (${browser}) ${websiteUrl}: Checking Cookie Banner`)
   await allInDetermineCookieBannerState(page, wordCorpus, parentCutoff, childrenCutoff, websiteUrl, browser, connection, crawlID, resultPath)
 
-
-  // console.log(`   (${browser}) ${websiteUrl}: Adding requests to DB`)
-  // await addRequestToDb(requestData, browser, websiteUrl, connection, crawlID)
+  console.log(`   (${browser}) ${websiteUrl}: Adding requests to DB`)
+  await addRequestToDb(requestData, browser, websiteUrl, connection, crawlID)
 }
 
 async function evaluateWebsite (page, browser, websiteUrl, connection, wordCorpus, parentCutoff, childrenCutoff, resultPath, crawlID) {
   let successBool = true
   let requestData
 
-  // try {
-  //   console.log(`   (${browser}) ${websiteUrl}: Getting Requests and Reponses`)
-  //   requestData = await getRequests(page)
-  //   await getResponses(page, browser, websiteUrl, connection)
-  // } catch (error) {
-  //   console.log(`(${browser}) ${websiteUrl}: An error happened when getting requests or responses. ${error.name} ${error.message}`)
-  // }
+  try {
+    console.log(`   (${browser}) ${websiteUrl}: Getting Requests and Reponses`)
+    requestData = await getRequests(page)
+    await getResponses(page, browser, websiteUrl, connection)
+  } catch (error) {
+    console.log(`(${browser}) ${websiteUrl}: An error happened when getting requests or responses. ${error.name} ${error.message}`)
+  }
   
-  // page.on('console', msg => console.log('PAGE LOG:', msg.text()));
-
+  // page.on('console', msg => console.log('PAGE LOG:', msg.text()))
   const returnCode = await visitWebsite(page, websiteUrl, browser, resultPath)
 
   if (returnCode === 'Success') {
@@ -124,11 +122,16 @@ export async function crawlMain (browser, version, resultPath, urlList, connecti
     }
 
     // const siteName = await getSiteNames(websiteUrl)
+    function delay(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms))
+    }
 
     try {
       const evaluationResult = await Promise.race([
-        await evaluateWebsite(page, browser, websiteUrl, connection, wordCorpus, parentCutoff, childrenCutoff, resultPath, crawlID),
-        new Promise((resolve, reject) => setTimeout(() => reject(new WebsiteTimeOut()), 30000))
+        evaluateWebsite(page, browser, websiteUrl, connection, wordCorpus, parentCutoff, childrenCutoff, resultPath, crawlID),
+        delay(30000).then(() => { throw new WebsiteTimeOut() })
+        
+        // new Promise((resolve, reject) => setTimeout(() => reject(new WebsiteTimeOut()), 30000))
       ])
 
       if (evaluationResult) {
@@ -177,17 +180,16 @@ export async function callableMain (args) {
   // }
 
   // Set up Database connection
-  // const connection = new pg.Client({
-  //   user: 'postgres',
-  //   password: 'I@mastrongpsswd',
-  //   host: '127.0.0.1',
-  //   database: 'crawlingData',
-  //   port: '5432'
-  // })
-  const connection = null
+  const connection = new pg.Client({
+    user: 'postgres',
+    password: 'I@mastrongpsswd',
+    host: '127.0.0.1',
+    database: 'crawlingData',
+    port: '5432'
+  })
 
-  // await connection.connect()
-  // console.log('Database connection established')
+  await connection.connect()
+  console.log('Database connection established')
 
   // Crawl
   try {
@@ -198,8 +200,8 @@ export async function callableMain (args) {
   }
 
   // Close database connection
-  // await connection.end()
-  // console.log('Database connection disconnected')
+  await connection.end()
+  console.log('Database connection disconnected')
 
   // Close XVFB
   if (XVFB) {

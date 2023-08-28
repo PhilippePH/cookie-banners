@@ -1,0 +1,897 @@
+Database connection established
+
+ (Google Chrome): (1) https://www.google.com
+   (Google Chrome) https://www.google.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.google.com
+   (Google Chrome) https://www.google.com: Page loaded
+   (Google Chrome) https://www.google.com: Getting Cookies
+   (Google Chrome) https://www.google.com: Getting Localstorage
+   (Google Chrome) https://www.google.com: Checking Cookie Banner
+The following words were found: [ 'use cookies', 'reject', 'reject all', 'accept', 'accept all' ]
+Sub Tree:  [
+  { class: 'dbsFrd' },
+  { class: 'I90TVb' },
+  { class: 'gowsYd.ibCF0c' },
+  { class: 'gowsYd.v8Bpfb' },
+  { class: 'eLZYyf' },
+  { class: 'QS5gu.sy4vM' },
+  { class: 'tHlp8d' },
+  { class: 'QS5gu.sy4vM' },
+  { class: 'tHlp8d' },
+  { class: 'GzLjMd' },
+  { class: 'tHlp8d' },
+  { class: 'spoKVd' },
+  { class: 'o9D5Zb' },
+  { class: 'XWlrff.cG0Dmf' }
+]
+Frame Frame {
+  _id: 'D51B85D1B6BDDB50A1E2F9C14694D935',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: 'C29F8D083565E9B4215F12DD520BC417',
+  _lifecycleEvents: Set(3) { 'init', 'DOMContentLoaded', 'load' }
+}
+Is element visible? [
+  true, true, true,
+  true, true, true,
+  true, true, true,
+  true, true, true,
+  true, true
+]
+Final decision:  true
+   (Google Chrome) https://www.google.com: Adding requests to DB
+   (Google Chrome) https://www.google.com: Adding to successful website
+
+ (Google Chrome): (2) https://www.a-msedge.net
+   (Google Chrome) https://www.a-msedge.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.a-msedge.net
+**  (Google Chrome): Error visiting webpage -> https://www.a-msedge.net (net::ERR_NAME_NOT_RESOLVED at https://www.a-msedge.net)
+
+ (Google Chrome): (3) https://www.facebook.com
+   (Google Chrome) https://www.facebook.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.facebook.com
+   (Google Chrome) https://www.facebook.com: Page loaded
+   (Google Chrome) https://www.facebook.com: Getting Cookies
+   (Google Chrome) https://www.facebook.com: Getting Localstorage
+   (Google Chrome) https://www.facebook.com: Checking Cookie Banner
+The following words were found: [ 'learn more', 'use cookies', 'decline' ]
+Sub Tree:  [
+  { class: '_4-i2._pig._al5h._al7j._50f4' },
+  { class: '_al52' },
+  { class: '_al52' },
+  { class: '_42ft._4jy0._al66._4jy3._4jy1.selected._51sy' },
+  { class: '_al64' },
+  { class: 'img.sp_EP9wX8qDDvu.sx_7ba541' },
+  { class: '_ala5' },
+  { class: '_ala6' },
+  { class: 'img.sp_EP9wX8qDDvu.sx_7ba541' },
+  { class: '_ala5' },
+  { class: '_ala6' },
+  { class: '_am3h' },
+  { class: '_al7e' },
+  { class: '_al7f' },
+  { class: '_am3h' },
+  { class: '_al7e' },
+  { class: '_al7f' }
+]
+Frame Frame {
+  _id: 'B50B968842F77E83AD5BDAD41AF7D8F8',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '907CAFA44969ADC2B317528F9D5FE43B',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'DOMContentLoaded',
+    'firstPaint',
+    'firstContentfulPaint',
+    'firstImagePaint',
+    'firstMeaningfulPaintCandidate',
+    'load'
+  }
+}
+Is element visible? [
+  true,  true,  true,  true,
+  true,  false, false, false,
+  false, false, false, false,
+  false, false, false, false,
+  false
+]
+Final decision:  false
+   (Google Chrome) https://www.facebook.com: Adding requests to DB
+   (Google Chrome) https://www.facebook.com: Adding to successful website
+
+ (Google Chrome): (4) https://www.microsoft.com
+   (Google Chrome) https://www.microsoft.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.microsoft.com
+   (Google Chrome) https://www.microsoft.com: Page loaded
+   (Google Chrome) https://www.microsoft.com: Getting Cookies
+      **** Cannot get frame origin because of lazy frame in cookies
+   (Google Chrome) https://www.microsoft.com: Getting Localstorage
+      **** Cannot get frame origin because of lazy frame in local storage
+   (Google Chrome) https://www.microsoft.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'reject', 'manage cookies', 'learn more' ]
+Sub Tree:  [ { class: 'js' } ]
+Frame Frame {
+  _id: '4985DCEEA0AFB4C1124F6EB593F5964D',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '665B43F65A8CB16B86B7644A9F5D8605',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'firstPaint',
+    'firstContentfulPaint',
+    'firstImagePaint',
+    'firstMeaningfulPaintCandidate',
+    'DOMContentLoaded',
+    'load'
+  }
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Google Chrome) https://www.microsoft.com: Adding requests to DB
+   (Google Chrome) https://www.microsoft.com: Adding to successful website
+
+ (Google Chrome): (5) https://www.amazonaws.com
+   (Google Chrome) https://www.amazonaws.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.amazonaws.com
+**  (Google Chrome): Error visiting webpage -> https://www.amazonaws.com (net::ERR_CONNECTION_REFUSED at https://www.amazonaws.com)
+
+ (Google Chrome): (6) https://www.googleapis.com
+   (Google Chrome) https://www.googleapis.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.googleapis.com
+   (Google Chrome) https://www.googleapis.com: Page loaded
+   (Google Chrome) https://www.googleapis.com: Getting Cookies
+   (Google Chrome) https://www.googleapis.com: Getting Localstorage
+   (Google Chrome) https://www.googleapis.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.googleapis.com: Adding requests to DB
+   (Google Chrome) https://www.googleapis.com: Adding to successful website
+
+ (Google Chrome): (7) https://www.apple.com
+   (Google Chrome) https://www.apple.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.apple.com
+   (Google Chrome) https://www.apple.com: Page loaded
+   (Google Chrome) https://www.apple.com: Getting Cookies
+   (Google Chrome) https://www.apple.com: Getting Localstorage
+   (Google Chrome) https://www.apple.com: Checking Cookie Banner
+The following words were found: [ 'learn more', 'privacy policy' ]
+Sub Tree:  [
+  {
+    class: 'js.no-touch.progressive-image.no-reduced-motion.no-edge.no-ie.css-mask.inline-video.desktop.no-tablet.no-windows.no-android.retina.no-safari.no-old-safari.chrome.no-firefox.no-iphone.no-ipad.fnb-supported.ac-ls-visible.ac-ls-fixed'
+  }
+]
+Frame Frame {
+  _id: 'A740DBEA31C5144D2CC5507665EF51D8',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: 'CEE4685B5682BCE5B65F6E8ED3A24C01',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'firstPaint',
+    'firstContentfulPaint',
+    'firstMeaningfulPaintCandidate',
+    'firstImagePaint',
+    'DOMContentLoaded',
+    'load'
+  }
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Google Chrome) https://www.apple.com: Adding requests to DB
+   (Google Chrome) https://www.apple.com: Adding to successful website
+
+ (Google Chrome): (8) https://www.youtube.com
+   (Google Chrome) https://www.youtube.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.youtube.com
+   (Google Chrome) https://www.youtube.com: Page loaded
+   (Google Chrome) https://www.youtube.com: Getting Cookies
+   (Google Chrome) https://www.youtube.com: Getting Localstorage
+   (Google Chrome) https://www.youtube.com: Checking Cookie Banner
+The following words were found: [
+  'agree',
+  'accept',
+  'accept all',
+  'reject',
+  'reject all',
+  'privacy policy',
+  'use cookies'
+]
+Sub Tree:  []
+Frame Frame {
+  _id: 'E80E7276E24AE454DD1EA62A18FAF72E',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '0A44AA732C6AE059E666E080C2571B4F',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'firstPaint',
+    'firstMeaningfulPaintCandidate',
+    'firstContentfulPaint',
+    'DOMContentLoaded',
+    'firstImagePaint',
+    'load'
+  }
+}
+Could not evaluate visibility
+   (Google Chrome) https://www.youtube.com: Adding requests to DB
+   (Google Chrome) https://www.youtube.com: Adding to successful website
+
+ (Google Chrome): (9) https://www.akamaiedge.net
+   (Google Chrome) https://www.akamaiedge.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.akamaiedge.net
+**  (Google Chrome): Error visiting webpage -> https://www.akamaiedge.net (net::ERR_NAME_NOT_RESOLVED at https://www.akamaiedge.net)
+
+ (Google Chrome): (10) https://www.twitter.com
+   (Google Chrome) https://www.twitter.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.twitter.com
+   (Google Chrome) https://www.twitter.com: Page loaded
+   (Google Chrome) https://www.twitter.com: Getting Cookies
+   (Google Chrome) https://www.twitter.com: Getting Localstorage
+   (Google Chrome) https://www.twitter.com: Checking Cookie Banner
+The following words were found: [ 'use cookies', 'accept', 'accept all' ]
+Sub Tree:  [
+  {
+    class: 'css-1dbjc4n.r-1awozwy.r-1sw30gj.r-15ce4ve.r-18u37iz.r-1d7fvdj.r-ymttw5.r-1f1sjgu.r-13qz1uu'
+  },
+  {
+    class: 'css-901oao.r-37j5jr.r-1inkyih.r-majxgm.r-rjixqe.r-bcqeeo.r-qvutc0'
+  },
+  {
+    class: 'css-18t94o4.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-1ddef8g.r-tjvw6i.r-qvutc0'
+  },
+  {
+    class: 'css-901oao.r-37j5jr.r-n6v787.r-16dba41.r-1cwl3u0.r-5oul0u.r-knv0ih.r-bcqeeo.r-qvutc0'
+  },
+  { class: 'css-1dbjc4n.r-13awgt0.r-1cmskyw' },
+  { class: 'css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0' },
+  {
+    class: 'css-901oao.css-16my406.css-1hf3ou5.r-poiln3.r-a023e6.r-rjixqe.r-bcqeeo.r-qvutc0'
+  },
+  {
+    class: 'css-901oao.r-1awozwy.r-6koalj.r-18u37iz.r-16y2uox.r-37j5jr.r-a023e6.r-b88u0q.r-1777fci.r-rjixqe.r-bcqeeo.r-q4m81j.r-qvutc0'
+  },
+  {
+    class: 'css-18t94o4.css-1dbjc4n.r-sdzlij.r-1phboty.r-rs99b7.r-18kxxzh.r-1q142lx.r-eu3ka.r-5oul0u.r-2yi16.r-1qi8awa.r-1ny4l3l.r-ymttw5.r-o7ynqc.r-6416eg.r-lrvibr.r-lif3th'
+  },
+  {
+    class: 'css-901oao.css-16my406.css-1hf3ou5.r-poiln3.r-a023e6.r-rjixqe.r-bcqeeo.r-qvutc0'
+  },
+  {
+    class: 'css-18t94o4.css-1dbjc4n.r-sdzlij.r-1phboty.r-rs99b7.r-18kxxzh.r-1q142lx.r-eu3ka.r-5oul0u.r-2yi16.r-1qi8awa.r-1ny4l3l.r-ymttw5.r-o7ynqc.r-6416eg.r-lrvibr.r-lif3th'
+  },
+  { class: 'css-1dbjc4n.r-eqz5dr.r-1joea0r.r-1r5su4o' }
+]
+Frame Frame {
+  _id: '415FFB91F40E783D86C429B79CADB8B6',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '796E34C755941BAE102E5368D4683B1D',
+  _lifecycleEvents: Set(6) {
+    'init',
+    'firstPaint',
+    'firstMeaningfulPaintCandidate',
+    'firstContentfulPaint',
+    'DOMContentLoaded',
+    'load'
+  }
+}
+Is element visible? [
+  true, true, true,
+  true, true, true,
+  true, true, true,
+  true, true, true
+]
+Final decision:  true
+   (Google Chrome) https://www.twitter.com: Adding requests to DB
+   (Google Chrome) https://www.twitter.com: Adding to successful website
+
+ (Google Chrome): (11) https://www.netflix.com
+   (Google Chrome) https://www.netflix.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.netflix.com
+   (Google Chrome) https://www.netflix.com: Page loaded
+   (Google Chrome) https://www.netflix.com: Getting Cookies
+   (Google Chrome) https://www.netflix.com: Getting Localstorage
+   (Google Chrome) https://www.netflix.com: Checking Cookie Banner
+The following words were found: [
+  'accept',
+  'accept cookies',
+  'customize',
+  'cookie preferences',
+  'learn more',
+  'more information',
+  'use cookies'
+]
+Sub Tree:  [ { class: '.' } ]
+Frame Frame {
+  _id: '644A7952D97C28CA8555C2C9D976E4A5',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: 'F1CADBF39182AFF5E40CE02016A5F2AA',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'firstPaint',
+    'firstContentfulPaint',
+    'firstImagePaint',
+    'firstMeaningfulPaintCandidate',
+    'DOMContentLoaded',
+    'load'
+  }
+}
+Error accessing element handle's visibility
+Could not evaluate visibility
+   (Google Chrome) https://www.netflix.com: Adding requests to DB
+   (Google Chrome) https://www.netflix.com: Adding to successful website
+
+ (Google Chrome): (12) https://www.instagram.com
+   (Google Chrome) https://www.instagram.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.instagram.com
+   (Google Chrome) https://www.instagram.com: Page loaded
+   (Google Chrome) https://www.instagram.com: Getting Cookies
+   (Google Chrome) https://www.instagram.com: Getting Localstorage
+   (Google Chrome) https://www.instagram.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.instagram.com: Adding requests to DB
+   (Google Chrome) https://www.instagram.com: Adding to successful website
+
+ (Google Chrome): (13) https://www.googlevideo.com
+   (Google Chrome) https://www.googlevideo.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.googlevideo.com
+   (Google Chrome) https://www.googlevideo.com: Page loaded
+   (Google Chrome) https://www.googlevideo.com: Getting Cookies
+   (Google Chrome) https://www.googlevideo.com: Getting Localstorage
+   (Google Chrome) https://www.googlevideo.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.googlevideo.com: Adding requests to DB
+   (Google Chrome) https://www.googlevideo.com: Adding to successful website
+
+ (Google Chrome): (14) https://www.cloudflare.com
+   (Google Chrome) https://www.cloudflare.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.cloudflare.com
+   (Google Chrome) https://www.cloudflare.com: Page loaded
+   (Google Chrome) https://www.cloudflare.com: Getting Cookies
+   (Google Chrome) https://www.cloudflare.com: Getting Localstorage
+   (Google Chrome) https://www.cloudflare.com: Checking Cookie Banner
+The following words were found: [
+  'agree',
+  'accept',
+  'accept all',
+  'reject',
+  'reject all',
+  'use cookies',
+  'cookie preferences'
+]
+Sub Tree:  [
+  { class: 'ot-sdk-row' },
+  { class: 'ot-sdk-eight.ot-sdk-columns' },
+  { class: 'cookie-setting-link' },
+  { class: 'ot-sdk-three.ot-sdk-columns.has-reject-all-button' }
+]
+Frame Frame {
+  _id: '19095F7661320DDE8D2F90BE26BA0598',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '1F30D3B3CF434C50609B131375688603',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'DOMContentLoaded',
+    'firstPaint',
+    'firstContentfulPaint',
+    'firstImagePaint',
+    'firstMeaningfulPaintCandidate',
+    'load'
+  }
+}
+Is element visible? [ true, true, true, true ]
+Final decision:  true
+   (Google Chrome) https://www.cloudflare.com: Adding requests to DB
+   (Google Chrome) https://www.cloudflare.com: Adding to successful website
+
+ (Google Chrome): (15) https://www.gtld-servers.net
+   (Google Chrome) https://www.gtld-servers.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.gtld-servers.net
+**  (Google Chrome): Error visiting webpage -> https://www.gtld-servers.net (net::ERR_NAME_NOT_RESOLVED at https://www.gtld-servers.net)
+
+ (Google Chrome): (16) https://www.gstatic.com
+   (Google Chrome) https://www.gstatic.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.gstatic.com
+   (Google Chrome) https://www.gstatic.com: Page loaded
+   (Google Chrome) https://www.gstatic.com: Getting Cookies
+   (Google Chrome) https://www.gstatic.com: Getting Localstorage
+   (Google Chrome) https://www.gstatic.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.gstatic.com: Adding requests to DB
+   (Google Chrome) https://www.gstatic.com: Adding to successful website
+
+ (Google Chrome): (17) https://www.akamai.net
+   (Google Chrome) https://www.akamai.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.akamai.net
+**  (Google Chrome): Error visiting webpage -> https://www.akamai.net (net::ERR_NAME_NOT_RESOLVED at https://www.akamai.net)
+
+ (Google Chrome): (18) https://www.linkedin.com
+   (Google Chrome) https://www.linkedin.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.linkedin.com
+   (Google Chrome) https://www.linkedin.com: Page loaded
+   (Google Chrome) https://www.linkedin.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Google Chrome) https://www.linkedin.com: Getting Localstorage
+   (Google Chrome) https://www.linkedin.com: Checking Cookie Banner
+The following words were found: [
+  'accept',
+  'reject',
+  'decline',
+  'learn more',
+  'privacy policy',
+  'cookie policy'
+]
+Sub Tree:  []
+Frame Frame {
+  _id: '7B45F632D189E758EF6A709F3E443A6B',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '1FB5487103D327604550FC3E57BF62D5',
+  _lifecycleEvents: Set(2) { 'init', 'DOMContentLoaded' }
+}
+Could not evaluate visibility
+   (Google Chrome) https://www.linkedin.com: Adding requests to DB
+   (Google Chrome) https://www.linkedin.com: Adding to successful website
+
+ (Google Chrome): (19) https://www.live.com
+   (Google Chrome) https://www.live.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.live.com
+   (Google Chrome) https://www.live.com: Page loaded
+   (Google Chrome) https://www.live.com: Getting Cookies
+   (Google Chrome) https://www.live.com: Getting Localstorage
+   (Google Chrome) https://www.live.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'learn more', 'uses cookies' ]
+Sub Tree:  []
+Frame Frame {
+  _id: '0B2B21AEB3DC6C67AABADFF18C1ADFEA',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '386070580E5346431CF033442E8CB1E4',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'DOMContentLoaded',
+    'firstPaint',
+    'firstContentfulPaint',
+    'firstMeaningfulPaintCandidate',
+    'firstImagePaint',
+    'load'
+  }
+}
+Could not evaluate visibility
+   (Google Chrome) https://www.live.com: Adding requests to DB
+   (Google Chrome) https://www.live.com: Adding to successful website
+
+ (Google Chrome): (20) https://www.tiktokcdn.com
+   (Google Chrome) https://www.tiktokcdn.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.tiktokcdn.com
+**  (Google Chrome): Error visiting webpage -> https://www.tiktokcdn.com (net::ERR_NAME_NOT_RESOLVED at https://www.tiktokcdn.com)
+
+ (Google Chrome): (21) https://www.domaincontrol.com
+   (Google Chrome) https://www.domaincontrol.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.domaincontrol.com
+**  (Google Chrome): Error visiting webpage -> https://www.domaincontrol.com (net::ERR_NAME_NOT_RESOLVED at https://www.domaincontrol.com)
+
+ (Google Chrome): (22) https://www.office.com
+   (Google Chrome) https://www.office.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.office.com
+   (Google Chrome) https://www.office.com: Page loaded
+   (Google Chrome) https://www.office.com: Getting Cookies
+   (Google Chrome) https://www.office.com: Getting Localstorage
+   (Google Chrome) https://www.office.com: Checking Cookie Banner
+The following words were found: [
+  'accept',
+  'reject',
+  'manage cookies',
+  'learn more',
+  'privacy statement'
+]
+Sub Tree:  [ { class: 'js' } ]
+Frame Frame {
+  _id: 'B5798072994DBDE8C42579CBB7965E7C',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '1B43473735C595D1DEF9079245AC7657',
+  _lifecycleEvents: Set(9) {
+    'init',
+    'firstPaint',
+    'firstContentfulPaint',
+    'firstImagePaint',
+    'firstMeaningfulPaintCandidate',
+    'DOMContentLoaded',
+    'networkAlmostIdle',
+    'firstMeaningfulPaint',
+    'load'
+  }
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Google Chrome) https://www.office.com: Adding requests to DB
+   (Google Chrome) https://www.office.com: Adding to successful website
+
+ (Google Chrome): (23) https://www.azure.com
+   (Google Chrome) https://www.azure.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.azure.com
+   (Google Chrome) https://www.azure.com: Page loaded
+   (Google Chrome) https://www.azure.com: Getting Cookies
+   (Google Chrome) https://www.azure.com: Getting Localstorage
+   (Google Chrome) https://www.azure.com: Checking Cookie Banner
+The following words were found: [
+  'accept',
+  'reject',
+  'manage cookies',
+  'learn more',
+  'privacy statement'
+]
+Sub Tree:  []
+Frame Frame {
+  _id: '46F8FF5F39712770387510B4A2D724D0',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '7B6FFD376B5B52A51BB4BE4F5E1F58C0',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'firstPaint',
+    'firstMeaningfulPaintCandidate',
+    'firstContentfulPaint',
+    'firstImagePaint',
+    'DOMContentLoaded',
+    'load'
+  }
+}
+Could not evaluate visibility
+   (Google Chrome) https://www.azure.com: Adding requests to DB
+   (Google Chrome) https://www.azure.com: Adding to successful website
+
+ (Google Chrome): (24) https://www.googletagmanager.com
+   (Google Chrome) https://www.googletagmanager.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.googletagmanager.com
+   (Google Chrome) https://www.googletagmanager.com: Page loaded
+   (Google Chrome) https://www.googletagmanager.com: Getting Cookies
+   (Google Chrome) https://www.googletagmanager.com: Getting Localstorage
+   (Google Chrome) https://www.googletagmanager.com: Checking Cookie Banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.googletagmanager.com: Adding requests to DB
+   (Google Chrome) https://www.googletagmanager.com: Adding to successful website
+
+ (Google Chrome): (25) https://www.doubleclick.net
+   (Google Chrome) https://www.doubleclick.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.doubleclick.net
+   (Google Chrome) https://www.doubleclick.net: Page loaded
+   (Google Chrome) https://www.doubleclick.net: Getting Cookies
+   (Google Chrome) https://www.doubleclick.net: Getting Localstorage
+   (Google Chrome) https://www.doubleclick.net: Checking Cookie Banner
+The following words were found: [ 'learn more', 'uses cookies' ]
+Sub Tree:  [ { class: 'glue-flexbox.glue-flexbox.glue-app-ready.ng-scope' } ]
+Frame Frame {
+  _id: 'AC4BF050DA5FF67F31338326AB1004DF',
+  _parentId: undefined,
+  worlds: {
+    [Symbol(mainWorld)]: IsolatedWorld {},
+    [Symbol(puppeteerWorld)]: IsolatedWorld {}
+  },
+  _name: undefined,
+  _hasStartedLoading: true,
+  _frameManager: FrameManager {
+    emitter: {
+      all: [Map],
+      on: [Function: on],
+      off: [Function: off],
+      emit: [Function: emit]
+    },
+    eventsMap: Map(6) {
+      Symbol(FrameManager.FrameAttached) => [Array],
+      Symbol(FrameManager.FrameDetached) => [Array],
+      Symbol(FrameManager.FrameNavigated) => [Array],
+      Symbol(FrameManager.LifecycleEvent) => [],
+      Symbol(FrameManager.FrameNavigatedWithinDocument) => [],
+      Symbol(FrameManager.FrameSwapped) => []
+    },
+    _frameTree: FrameTree {}
+  },
+  _loaderId: '1728051E38D0FBC266F763E534FC9120',
+  _lifecycleEvents: Set(7) {
+    'init',
+    'firstPaint',
+    'firstContentfulPaint',
+    'firstImagePaint',
+    'firstMeaningfulPaintCandidate',
+    'load',
+    'DOMContentLoaded'
+  }
+}
+Is element visible? [ true ]
+Final decision:  true
+   (Google Chrome) https://www.doubleclick.net: Adding requests to DB
+   (Google Chrome) https://www.doubleclick.net: Adding to successful website
+
+ (Google Chrome): (26) https://www.akadns.net
+   (Google Chrome) https://www.akadns.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.akadns.net
+**  (Google Chrome): Error visiting webpage -> https://www.akadns.net (net::ERR_NAME_NOT_RESOLVED at https://www.akadns.net)
+
+ (Google Chrome): (27) https://www.amazon.com
+   (Google Chrome) https://www.amazon.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.amazon.com
+   (Google Chrome) https://www.amazon.com: Page loaded
+   (Google Chrome) https://www.amazon.com: Getting Cookies
+   (Google Chrome) https://www.amazon.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Google Chrome) https://www.amazon.com: Checking Cookie Banner
+No banners were found on the page (too little words).
+   (Google Chrome) https://www.amazon.com: Adding requests to DB
+   (Google Chrome) https://www.amazon.com: Adding to successful website
+
+ (Google Chrome): (28) https://www.windowsupdate.com
+   (Google Chrome) https://www.windowsupdate.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.windowsupdate.com
+**  (Google Chrome): Error visiting webpage -> https://www.windowsupdate.com (net::ERR_CERT_COMMON_NAME_INVALID at https://www.windowsupdate.com)
+
+ (Google Chrome): (29) https://www.fbcdn.net
+   (Google Chrome) https://www.fbcdn.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.fbcdn.net

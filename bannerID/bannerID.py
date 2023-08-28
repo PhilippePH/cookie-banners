@@ -37,12 +37,11 @@ CORPUS_2 = ['cookie', 'cookies','agree', 'i agree','accept', 'accept all', 'acce
             'other technologies']
 
 CORPUS_3 = ['cookie', 'cookies', 'accept', 'reject', 'policy']
-CORPUS_4 = ['accept', 'reject', 'policy']
-CORPUS_5 = [ 'agree', 'i agree', 'accept', 'accept all', 'accept cookies',
+CORPUS_4 = ['accept', 'reject', 'policy', 'agree', 'consent']
+CORPUS_5 = ['agree', 'i agree', 'accept', 'accept all', 'accept cookies',
             'i accept','reject', 'reject all', 'decline', 'cookie preferences',
-            'manage cookies',  'preferences', 'learn more',  'more information',
-            'privacy policy', 'privacy statement', 'cookie policy','cookie notice',
-            'our partners', 'partners',  'third-party']
+            'manage cookies', 'preferences', 'learn more', 'more information',
+            'privacy policy', 'privacy statement', 'cookie policy', 'cookie notice', 'third-party']
 CORPUS_6 = ['agree', 'i agree','accept', 'accept all', 'accept cookies', 'i accept',
             'ok','allow all', 'enable all', 'got it', 'allow cookies', 'reject',
             'reject all', 'decline', 'mandatory only', 'required only', 'not accept',

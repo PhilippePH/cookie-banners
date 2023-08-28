@@ -10,124 +10,69 @@ Step 5. Choose the sub-tree that has the maximum number of hits
 Step 6. Call isVisible on the most prolific child (as well as the others in the tree)
 */
 
-export async function ALLINONE (page, wordCorpus, maxNumParents, maxNumChildren) {
-  const returnValue = await page.evaluate((wordCorpus, maxNumParents, maxNumChildren) => {
-    // STEP 1. GET ALL THE TERMINAL NODES
+export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
+  const returnValue = await frame.evaluate((wordCorpus, maxNumChildren) => {
     const allElements = document.querySelectorAll('*')
-    const terminalNodes = []
+    console.log(allElements.length)
 
-    // Filter out elements with children
-    for (const element of allElements) {
-      if (element.children.length === 0) {
-        terminalNodes.push(element)
-      }
-    }
-
-    // STEP 2. FILTER THE TERMINAL NODES
-    const filteredNodes = []
-
-    for (const nodeElement of terminalNodes) {
-      // STEP 2.1: COMPARE THE VALUES TO THE WORD CORPUS
-      // Get the text of the Node (if any)
-      const text = nodeElement.textContent.trim() // this should return an empty string if no text is found. it should not throw an error
-
-      if (text.length > 0) {
-        // const wordCorpusArray = wordCorpus.split(',')
-        const wordsArray = text.split(/\s+/)
-
-      // Check if any word from the corpus is in the text
-      const matchingWords = wordCorpus.filter(corpusWord =>
-        wordsArray.some((nodeWord, index) => {
-          const normalizedNodeWord = nodeWord.toLowerCase()
-
-          // Check for 1-word match
-          if (normalizedNodeWord === corpusWord) {
-            return true
-          }
-
-          // Check for 2-word match using subsequent words
-          if (index < wordsArray.length - 1) {
-            const normalizedNextWord = wordsArray[index + 1].toLowerCase()
-            const twoWordMatch = normalizedNodeWord + ' ' + normalizedNextWord
-            return twoWordMatch === corpusWord
-          }
-
-          return false
-        })
-      )
-
-        if (matchingWords.length > 0) {
-          filteredNodes.push(nodeElement)
-        }
-      }
-    }
-
-    // STEP 3. GET THE PARENTS
-    const subTreesParents = []
-    
-    for (const nodeElement of filteredNodes) {
-      const parents = []
-      let getParentOf = nodeElement
-      for (let i = 0; i < maxNumParents; i++) { // getting up to the i-th parent
-        getParentOf = getParentOf.parentElement
-        if (getParentOf === null) {
-          break // i.e. no parents were found, thus stop the loop and don't push it
-        }
-        parents.push(getParentOf)
-      }
-      subTreesParents.push([nodeElement, parents])
-    }
-
-    // STEP 4. ANALYSE THE SUBTREES
     let maxNumHits = 0
     let maxWordHits
-    let subTree
+    let subTree = []
 
-    for (const values of subTreesParents) {
-      const wordHitElement = values[0]
-      const parents = values[1]
-      // STEP 4.1: Get the list of parent and all children
-      const loopThroughSubTree = [wordHitElement]
+    for (const element of allElements) {
+      // if (element.type === 'button') {
+      //   console.log(`Button content: ${element.textContent}`)
+      // }
+      const loopThroughSubTree = [element]
 
-      for (const parent of parents) {
-        // THIS USED TO BE RECURSIVE, BUT I DON'T THINK I CAN DO THIS NICELY FULLY ITERABLY
-        for (const child of parent.children) {
-          // I am making the number of children and reaching a terminal node a requirement for the specific children of this parent.
-          // If none of the children satisfy the requirements, then none will be added. 
-          let childrenCounter = 0
-          let reachedTerminalNode = true
-          childrenCounter += (child.children).length
-          for (const child2 of child.children) {
-            childrenCounter += (child2.children).length
-            for (const child3 of child2.children) {
-              childrenCounter += (child3.children).length
-              for (const child4 of child3.children) {
-                childrenCounter += (child4.children).length
-                for (const child5 of child4.children) {
-                  childrenCounter += (child5.children).length
-                  if ((child5.children).length !== 0) {
-                    reachedTerminalNode = false
-                  }
+      for (const child of element.children) {
+        // I am making the number of children and reaching a terminal node a requirement for the specific children of this parent.
+        // If none of the children satisfy the requirements, then none will be added. 
+        let childrenCounter = 0
+        let reachedTerminalNode = true
 
-                  if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
-                  loopThroughSubTree.push(child5)
-                  }
+        childrenCounter += (child.children).length
+        if (childrenCounter > maxNumChildren) { continue }
+
+        for (const child2 of child.children) {
+          childrenCounter += (child2.children).length
+          if (childrenCounter > maxNumChildren) { continue }
+
+          for (const child3 of child2.children) {
+            childrenCounter += (child3.children).length
+            if (childrenCounter > maxNumChildren) { continue }
+
+            for (const child4 of child3.children) {
+              childrenCounter += (child4.children).length
+              if (childrenCounter > maxNumChildren) { continue }
+
+              for (const child5 of child4.children) {
+                childrenCounter += (child5.children).length
+
+                if ((child5.children).length !== 0) {
+                  reachedTerminalNode = false
                 }
+
+                if (childrenCounter > maxNumChildren) { continue }
+
                 if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
-                  loopThroughSubTree.push(child4)
+                loopThroughSubTree.push(child5)
                 }
               }
               if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
-                loopThroughSubTree.push(child3)
+                loopThroughSubTree.push(child4)
               }
             }
             if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
-              loopThroughSubTree.push(child2)
+              loopThroughSubTree.push(child3)
             }
           }
           if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
-            loopThroughSubTree.push(child)
+            loopThroughSubTree.push(child2)
           }
+        }
+        if (reachedTerminalNode && childrenCounter <= maxNumChildren) {
+          loopThroughSubTree.push(child)
         }
       }
 
@@ -136,7 +81,7 @@ export async function ALLINONE (page, wordCorpus, maxNumParents, maxNumChildren)
         // STEP 4.2: COMPARE THE VALUES TO THE WORD CORPUS
         // Get the text of the Node (if any)
         const text = nodeElement.textContent.trim() // this should return an empty string if no text is found. it should not throw an error
-        
+
         if (text.length > 0) {
           // const wordCorpusArray = wordCorpus.split(',')
           const wordsArray = text.split(/\s+/)
@@ -183,7 +128,7 @@ export async function ALLINONE (page, wordCorpus, maxNumParents, maxNumChildren)
       
       // STEP 4.3: UPDATE THE BEST CANDIDATE IF FOUND (either more word hits, or same number but smaller subtree)
       if (wordHits.size > maxNumHits || (wordHits.size === maxNumHits && loopThroughSubTree.length < subTree.length )) {
-        console.log(`Found a better match. Used to be ${maxNumHits} hits vs now ${wordHits.size}. The new words '${[...wordHits]}' will replace '${maxWordHits}'`)
+        console.log(`!_!: Found a better match. Used to be ${maxNumHits} hits vs now ${wordHits.size}. The new words '${[...wordHits]}' will replace '${maxWordHits}'`)
         maxNumHits = wordHits.size
         maxWordHits = [...wordHits]
         subTree = loopThroughSubTree
@@ -200,17 +145,19 @@ export async function ALLINONE (page, wordCorpus, maxNumParents, maxNumChildren)
     } else {
       return null // No banner on the page
     }
-  }, wordCorpus, maxNumParents, maxNumChildren)
-  return returnValue
+  }, wordCorpus, maxNumChildren)
+  return [returnValue, frame]
 }
 
 
-async function checkBannerVisibility (page, cookieBannerInfo) {
+async function checkBannerVisibility (cookieBannerInfo, frame) {
   // STEP 6. SEE IF THE BEST CANDIDATE IS VISIBLE
     // Unpack non-null return values
     const subTree = cookieBannerInfo[0]
     const wordMatches = cookieBannerInfo[1]
     console.log('The following words were found:', wordMatches)
+    console.log('Sub Tree: ', subTree)
+    console.log('Frame', frame)
   
     // Get the visibility of elements.
     const visibleArray = []
@@ -219,7 +166,7 @@ async function checkBannerVisibility (page, cookieBannerInfo) {
       if (nodeInfo.class === null) { continue }
   
       try {
-        const elementHandle = await page.$(`.${nodeInfo.class}`)
+        const elementHandle = await frame.$(`.${nodeInfo.class}`)
         const isVisible = await elementHandle.isVisible()
         visibleArray.push(isVisible)
       } catch (error) { console.log("Error accessing element handle's visibility") }
@@ -286,8 +233,45 @@ async function checkBannerVisibility (page, cookieBannerInfo) {
   file2.end()
 }
 
+
+async function findBannerFrameRecursive (frame, wordCorpus, maxNumChildren) {
+  let bestCookieBannerCandidate
+
+  try {
+    bestCookieBannerCandidate = await ALLINONE(frame, wordCorpus, maxNumChildren)
+  } catch (error) { console.log(error )}
+
+  if (bestCookieBannerCandidate[0] === null) {
+    const childFrames = frame.childFrames()
+    for (const childFrame of childFrames) {
+      
+      let childCandidate = await findBannerFrameRecursive(childFrame, wordCorpus, maxNumChildren)
+
+      if (childCandidate[0] === null) { continue }
+
+      if (bestCookieBannerCandidate[0] === null) {
+        bestCookieBannerCandidate = childCandidate
+      }
+
+      if (childCandidate[0][1].length > bestCookieBannerCandidate[0][1].length) {
+        console.log(`From frame: Found a better match. Used to be ${bestCookieBannerCandidate[0][1].length} hits vs now ${childCandidate[0][1].length}. The new words '${[childCandidate[0][1]]}' will replace '${bestCookieBannerCandidate[0][1]}'`)
+        bestCookieBannerCandidate = childCandidate
+      }
+    }
+  }
+  return bestCookieBannerCandidate
+}
+
+async function accessAllFrames (page, wordCorpus, maxNumChildren) {
+  const topFrame = await page.mainFrame()
+  return await findBannerFrameRecursive(topFrame, wordCorpus, maxNumChildren)
+}
+
+
 export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumParents, maxNumChildren, websiteUrl, browser, connection, crawlID, resultPath) {
-  const cookieBannerInfo = await ALLINONE(page, wordCorpus, maxNumParents, maxNumChildren)
+  const results = await accessAllFrames(page, wordCorpus, maxNumChildren)
+  const cookieBannerInfo = results[0]
+  const frame = results[1]
 
   // If no banner has been found, or if less than 2 words have been found.
   if (cookieBannerInfo === null) {
@@ -297,7 +281,8 @@ export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumP
     console.log('No banners were found on the page (too little words).')
     await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 2, resultPath)
   } else {
-    const visibility = await checkBannerVisibility(page, cookieBannerInfo)
+    // await new Promise((resolve) => setTimeout(resolve, 1000))
+    const visibility = await checkBannerVisibility(cookieBannerInfo, frame)
     await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, visibility, 3, resultPath)
   }
 }

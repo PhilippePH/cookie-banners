@@ -7,11 +7,9 @@ const NUM_URLS = 250
 const ADD_TIMEOUTS = false
 const PATH_TO_CSV = './webCrawler/websiteSelection/shuffled.txt'
 const DEVICE = 'macserver'
-const CORPUS = ['cookie', 'cookies', 'agree', 'i agree', 'accept', 'accept all',
-'accept cookies', 'i accept','reject', 'reject all', 'decline', 'cookie preferences',
-'manage cookies',  'preferences', 'learn more', 'more information',
-'privacy policy', 'privacy statement', 'cookie policy', 'cookie notice',
-'our partners', 'partners',  'third-party']
+const CORPUS = ['agree', 'accept', 'accept all', 'accept cookies', 'customize', 'reject', 'reject all', 'decline', 'cookie preferences',
+'manage cookies', 'learn more', 'more information', 'privacy policy', 'privacy statement', 'cookie policy', 'cookie notice', 
+'use cookie', 'use cookies', 'uses cookies']
 const PARENTS_THRESHOLD = 5
 const CHILDREN_THRESHOLD = 15
 
