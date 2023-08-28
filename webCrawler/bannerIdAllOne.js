@@ -1,4 +1,5 @@
 import { createWriteStream } from 'fs'
+
 // import { addCookieBannerDataToDB } from "./db"
 
 /*
@@ -17,19 +18,10 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
     let maxNumHits = 0
     let maxWordHits
     let subTree
-    let index2
-    let i = 0
 
     for (const element of allElements) {
       if (element.tagName === 'HTML') { continue }
-      if (element.className === 'qOCyff') { console.log(element.textContent)}
-      if (element.className === 'NuVImH') { console.log(element.textContent)}
-      if (element.className === 'WSh558') { console.log(element.textContent)}
-      if (element.id === 'wix-warmup-data') { console.log("1")}
-      if (element.className === 'qOCyff') { console.log(element.textContent)}
-      if (element.className === 'qOCyff') { console.log(element.textContent)}
 
-      i++
       const loopThroughSubTree = [element]
       let childrenCounter = (element.children).length
       // let reachedTerminalNode = true
@@ -123,14 +115,14 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
             const index = loopThroughSubTree.indexOf(nodeElement)
             if (index > -1) { // only splice array when item is found
               loopThroughSubTree.splice(index, 1) // 2nd parameter means remove one item only
-            } else {"!!!!!!!!!!!!!! yo i failed"}
+            }
           }
         } else {
           // remove from subtree if has no text
           const index = loopThroughSubTree.indexOf(nodeElement)
             if (index > -1) { // only splice array when item is found
               loopThroughSubTree.splice(index, 1) // 2nd parameter means remove one item only
-            } else {"!!!!!!!!!!!!!! yo i failed"}
+            }
         }
       }
       
@@ -141,40 +133,40 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
           maxNumHits = wordHits.size
           maxWordHits = [...wordHits]
           subTree = loopThroughSubTree
-          index2 = i
         }
       }  
     }
 
     if (Number(maxNumHits) > 0) {
       // ADDITIONAL CHECK TO SEE IF WORD COOKIE IS PRESENT
-      let matchingCookieWords = []
-      for (nodeElement of subTree) {
-        let text = nodeElement.textContent
-        // console.log(text)
-        if (! text) { continue }
-        text = text.trim()
-        const wordsArray = text.split(/\s+/)
-        // Check that at least one element in the subTree has the word 'cookie' or 'cookies', if not return null
-        const cookieWords = ['cookie', 'cookies']
-        matchingCookieWords = cookieWords.filter(cookieWord =>
-          wordsArray.some((nodeWord) => {
-            const normalizedNodeWord = nodeWord.toLowerCase()
+      // let matchingCookieWords = []
+      // for (nodeElement of subTree) {
+      //   let text = nodeElement.textContent
+      //   // console.log(text)
+      //   if (! text) { continue }
+      //   text = text.trim()
+      //   const wordsArray = text.split(/\s+/)
+      //   // Check that at least one element in the subTree has the word 'cookie' or 'cookies', if not return null
+      //   const cookieWords = ['cookie', 'cookies']
+      //   matchingCookieWords = cookieWords.filter(cookieWord =>
+      //     wordsArray.some((nodeWord) => {
+      //       const normalizedNodeWord = nodeWord.toLowerCase()
 
-            // Check for 1-word match
-            if (normalizedNodeWord === cookieWord) {
-              return true
-            }
-          })
-        )
-        if (matchingCookieWords.length > 0) {
-          break // if found one match
-        }
-      }
+      //       // Check for 1-word match
+      //       if (normalizedNodeWord === cookieWord) {
+      //         return true
+      //       }
+      //     })
+      //   )
+      //   if (matchingCookieWords.length > 0) {
+      //     break // if found one match
+      //   }
+      // }
       
-      if (matchingCookieWords.length === 0) {
-        return null // if no word cookie or cookies was found, return null. This likely was not the banner
-      }
+      // if (matchingCookieWords.length === 0) {
+      //   console.log("No cookie, no banner!")
+      //   return null // if no word cookie or cookies was found, return null. This likely was not the banner
+      // }
       // Otherwise, return the banner
       const subTreeInfo = subTree.map(nodeElement => {
         const classAttribute = nodeElement.getAttribute('class')
@@ -300,7 +292,7 @@ async function findBannerFrameRecursive (frame, wordCorpus, maxNumChildren) {
   // If returned Null, or only less than 2 elements in subtree, or less than 2 words matches --> see if another frame can do better
   if (bestCookieBannerCandidate[0] === null || bestCookieBannerCandidate[0][0].length < 2 || bestCookieBannerCandidate[0][1].length < 2) {
     const childFrames = frame.childFrames()
-    console.log("Checking frames:", childFrames)
+    console.log("Checking frames for banner")
     for (const childFrame of childFrames) {
       
       let childCandidate = await findBannerFrameRecursive(childFrame, wordCorpus, maxNumChildren)
@@ -333,7 +325,7 @@ export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumP
   const cookieBannerInfo = results[0]
   const frame = results[1]
 
-  // If no banner has been found, or if less than 2 words have been found.
+  // If no banner has been found, or if less than 3 words have been found.
   if (cookieBannerInfo === null) {
     console.log('No banners were found on the page (no words).')
     await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 1, resultPath)
