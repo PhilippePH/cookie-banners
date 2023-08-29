@@ -50,32 +50,16 @@ export async function ALLINONE (frame, wordCorpus, maxNumChildren) {
                 childrenCounter += (child5.children).length
                 if (childrenCounter > maxNumChildren) { skipBool = true; break }
 
-                  for (const child6 of child5.children) {
-                    childrenCounter += (child6.children).length
-                    if (childrenCounter > maxNumChildren) { skipBool = true; break }
+                if ((child5.children).length !== 0) {
+                  skipBool = true // if haven't reached the end
+                  break
+                }
 
-                    for (const child7 of child6.children) {
-                      childrenCounter += (child7.children).length
-
-                      if ((child7.children).length !== 0) {
-                        skipBool = true // if haven't reached the end
-                        break
-                      }
-
-                      if (childrenCounter > maxNumChildren) { 
-                        skipBool = true
-                        break 
-                      }
-
-                      if (skipBool) { break }
-                      loopThroughSubTree.push(child7)
-                    }
-
-                    if (skipBool) { break }
-                    loopThroughSubTree.push(child6)
-                  }
-                  if (skipBool) { break }
-                  loopThroughSubTree.push(child5)
+                if (childrenCounter > maxNumChildren) { 
+                  skipBool = true
+                  break 
+                }
+              loopThroughSubTree.push(child5)
               }
               if (skipBool) { break }
               loopThroughSubTree.push(child4)
@@ -304,7 +288,7 @@ async function accessAllFrames (page, wordCorpus, maxNumChildren) {
 
 
 export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumParents, maxNumChildren, websiteUrl, browser, connection, crawlID, resultPath) {
-  await new Promise((resolve) => setTimeout(resolve, 5000))
+  await new Promise((resolve) => setTimeout(resolve, 1000))
   
   const results = await accessAllFrames(page, wordCorpus, maxNumChildren)
   const cookieBannerInfo = results[0]
