@@ -65,7 +65,7 @@ async function evaluateWebsite (page, browser, websiteUrl, connection, wordCorpu
   try {
     console.log(`   (${browser}) ${websiteUrl}: Getting Requests and Reponses`)
     requestData = await getRequests(page)
-    await getResponses(page, browser, websiteUrl, connection)
+    await getResponses(page, browser, websiteUrl, connection, crawlID)
   } catch (error) {
     console.log(`(${browser}) ${websiteUrl}: An error happened when getting requests or responses. ${error.name} ${error.message}`)
   }

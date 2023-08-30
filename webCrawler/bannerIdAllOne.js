@@ -1,5 +1,5 @@
 import { createWriteStream } from 'fs'
-import { addCookieBannerDataToDB } from "./db"
+import { addCookieBannerDataToDB } from "./db.js"
 
 /*
 Step 1. Get all terminal nodes
