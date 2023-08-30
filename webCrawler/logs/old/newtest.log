@@ -35,7 +35,9 @@ No banners were found on the page (less than 2 words founds (use cookies), or le
    (Google Chrome) : Loading new page https://www.microsoft.com
    (Google Chrome) https://www.microsoft.com: Page loaded
    (Google Chrome) https://www.microsoft.com: Getting Cookies
+      **** Cannot get frame origin because of lazy frame in cookies
    (Google Chrome) https://www.microsoft.com: Getting Localstorage
+      **** Cannot get frame origin because of lazy frame in local storage
    (Google Chrome) https://www.microsoft.com: Checking Cookie Banner
 The following words were found: [ 'accept', 'reject', 'manage cookies' ]
 Is element visible? [ true, true, true, true ]
@@ -99,14 +101,8 @@ No banners were found on the page (less than 2 words founds (reject,reject all),
    (Google Chrome) https://www.twitter.com: Getting Cookies
    (Google Chrome) https://www.twitter.com: Getting Localstorage
    (Google Chrome) https://www.twitter.com: Checking Cookie Banner
-The following words were found: [ 'use cookies', 'accept', 'accept all' ]
-Is element visible? [
-  true, true, true,
-  true, true, true,
-  true, true, true,
-  true, true, true
-]
-Final decision:  true
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,accept all), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.twitter.com: Adding requests to DB
    (Google Chrome) https://www.twitter.com: Adding to successful website
 
@@ -119,7 +115,7 @@ Final decision:  true
    (Google Chrome) https://www.netflix.com: Checking Cookie Banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (accept,accept cookies,cookie preferences,more information), or less than 2 elements in subtree (1)).
+No banners were found on the page (less than 2 words founds (consent,use cookies), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.netflix.com: Adding requests to DB
    (Google Chrome) https://www.netflix.com: Adding to successful website
 
@@ -154,26 +150,20 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.cloudflare.com: Getting Cookies
    (Google Chrome) https://www.cloudflare.com: Getting Localstorage
    (Google Chrome) https://www.cloudflare.com: Checking Cookie Banner
-Error: Execution context was destroyed, most likely because of a navigation.
-    at rewriteError (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:311:15)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async #evaluate (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:250:60)
-    at async ExecutionContext.evaluate (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:149:16)
-    at async ALLINONE (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:15:23)
-    at async findBannerFrameRecursive (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:259:33)
-    at async accessAllFrames (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:286:10)
-    at async allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:293:19)
-    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
-    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
-TypeError: Cannot read properties of undefined (reading '0')
-    at findBannerFrameRecursive (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:263:32)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async accessAllFrames (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:286:10)
-    at async allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:293:19)
-    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
-    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
-    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
-    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+The following words were found: [
+  'accept',
+  'accept all',
+  'reject',
+  'reject all',
+  'cookie preferences'
+]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Is element visible? [ true ]
+Final decision:  true
+   (Google Chrome) https://www.cloudflare.com: Adding requests to DB
+   (Google Chrome) https://www.cloudflare.com: Adding to successful website
 
  (Google Chrome): (15) https://www.gtld-servers.net
    (Google Chrome) https://www.gtld-servers.net: Getting Requests and Reponses
@@ -206,7 +196,7 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.linkedin.com: Checking Cookie Banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (accept,reject,decline), or less than 2 elements in subtree (0)).
+No banners were found on the page (less than 2 words founds (accept,consent,reject,decline), or less than 2 elements in subtree (0)).
    (Google Chrome) https://www.linkedin.com: Adding requests to DB
    (Google Chrome) https://www.linkedin.com: Adding to successful website
 
@@ -241,13 +231,8 @@ No banners were found on the page (less than 2 words founds (agree,uses cookies)
       **** Error in CookieFrameEvaluate
    (Google Chrome) https://www.office.com: Getting Localstorage
    (Google Chrome) https://www.office.com: Checking Cookie Banner
-The following words were found: [ 'accept', 'reject', 'manage cookies', 'privacy statement' ]
-Is element visible? [
-  true, true,
-  true, true,
-  true, true,
-  true
-]
+The following words were found: [ 'accept', 'reject', 'manage cookies' ]
+Is element visible? [ true, true, true, true ]
 Final decision:  true
    (Google Chrome) https://www.office.com: Adding requests to DB
    (Google Chrome) https://www.office.com: Adding to successful website
@@ -259,13 +244,8 @@ Final decision:  true
    (Google Chrome) https://www.azure.com: Getting Cookies
    (Google Chrome) https://www.azure.com: Getting Localstorage
    (Google Chrome) https://www.azure.com: Checking Cookie Banner
-The following words were found: [ 'accept', 'reject', 'manage cookies', 'privacy statement' ]
-Is element visible? [
-  true, true,
-  true, true,
-  true, true,
-  true
-]
+The following words were found: [ 'accept', 'reject', 'manage cookies' ]
+Is element visible? [ true, true, true, true ]
 Final decision:  true
    (Google Chrome) https://www.azure.com: Adding requests to DB
    (Google Chrome) https://www.azure.com: Adding to successful website
@@ -308,6 +288,7 @@ No banners were found on the page (less than 2 words founds (uses cookies), or l
    (Google Chrome) https://www.amazon.com: Getting Localstorage
       **** Error in LocalStorageFrameEvaluate
    (Google Chrome) https://www.amazon.com: Checking Cookie Banner
+Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
@@ -362,24 +343,10 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.fastly.net: Getting Cookies
    (Google Chrome) https://www.fastly.net: Getting Localstorage
    (Google Chrome) https://www.fastly.net: Checking Cookie Banner
-The following words were found: [
-  'agree',
-  'use cookies',
-  'cookie preferences',
-  'cookie policy',
-  'accept',
-  'accept all'
-]
+The following words were found: [ 'agree', 'use cookies', 'cookie preferences', 'cookie policy' ]
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [
-  true, false,
-  true, true,
-  true, false,
-  true, false
-]
+Is element visible? [ true ]
 Final decision:  true
    (Google Chrome) https://www.fastly.net: Adding requests to DB
    (Google Chrome) https://www.fastly.net: Adding to successful website
@@ -391,9 +358,8 @@ Final decision:  true
    (Google Chrome) https://www.yahoo.com: Getting Cookies
    (Google Chrome) https://www.yahoo.com: Getting Localstorage
    (Google Chrome) https://www.yahoo.com: Checking Cookie Banner
-The following words were found: [ 'use cookies', 'accept', 'accept all', 'reject', 'reject all' ]
-Is element visible? [ true, true, true ]
-Final decision:  true
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (use cookies,accept,accept all), or less than 2 elements in subtree (0)).
    (Google Chrome) https://www.yahoo.com: Adding requests to DB
    (Google Chrome) https://www.yahoo.com: Adding to successful website
 
@@ -409,12 +375,8 @@ Final decision:  true
    (Google Chrome) https://www.bing.com: Getting Cookies
    (Google Chrome) https://www.bing.com: Getting Localstorage
    (Google Chrome) https://www.bing.com: Checking Cookie Banner
-The following words were found: [ 'decline', 'use cookies', 'privacy statement', 'accept', 'reject' ]
-Is element visible? [
-  false, true,  true,
-  true,  false, true,
-  true,  true
-]
+The following words were found: [ 'consent', 'decline', 'privacy statement', 'use cookies' ]
+Is element visible? [ true, true, true, true ]
 Final decision:  true
    (Google Chrome) https://www.bing.com: Adding requests to DB
    (Google Chrome) https://www.bing.com: Adding to successful website
@@ -509,7 +471,7 @@ Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (accept,accept all), or less than 2 elements in subtree (1)).
+No banners were found on the page (less than 2 words founds (consent,use cookies), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.mail.ru: Adding requests to DB
    (Google Chrome) https://www.mail.ru: Adding to successful website
 
@@ -568,7 +530,9 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.vimeo.com: Page loaded
    (Google Chrome) https://www.vimeo.com: Getting Cookies
    (Google Chrome) https://www.vimeo.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
    (Google Chrome) https://www.vimeo.com: Checking Cookie Banner
+Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
@@ -614,13 +578,11 @@ No banners were found on the page (less than 2 words founds (reject,reject all),
    (Google Chrome) https://www.digicert.com: Getting Cookies
    (Google Chrome) https://www.digicert.com: Getting Localstorage
    (Google Chrome) https://www.digicert.com: Checking Cookie Banner
-The following words were found: [ 'accept', 'accept cookies', 'uses cookies' ]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,accept cookies), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.digicert.com: Adding requests to DB
    (Google Chrome) https://www.digicert.com: Adding to successful website
 
@@ -634,7 +596,9 @@ Final decision:  true
    (Google Chrome) : Loading new page https://www.office365.com
    (Google Chrome) https://www.office365.com: Page loaded
    (Google Chrome) https://www.office365.com: Getting Cookies
+      **** Cannot get frame origin because of lazy frame in cookies
    (Google Chrome) https://www.office365.com: Getting Localstorage
+      **** Cannot get frame origin because of lazy frame in local storage
    (Google Chrome) https://www.office365.com: Checking Cookie Banner
 The following words were found: [ 'accept', 'reject', 'manage cookies' ]
 Is element visible? [ true, true, true, true ]
@@ -675,67 +639,6 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.spotify.com: Page loaded
    (Google Chrome) https://www.spotify.com: Getting Cookies
    (Google Chrome) https://www.spotify.com: Getting Localstorage
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
-Error adding LocalStorage to DB
 Error adding LocalStorage to DB
    (Google Chrome) https://www.spotify.com: Checking Cookie Banner
 Error adding LocalStorage to DB
@@ -804,13 +707,210 @@ Error adding LocalStorage to DB
 Error adding LocalStorage to DB
 Error adding LocalStorage to DB
 Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
+Error adding LocalStorage to DB
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (accept,accept cookies), or less than 2 elements in subtree (1)).
+No banners were found on the page (less than 2 words founds (consent,use cookies), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.spotify.com: Adding requests to DB
    (Google Chrome) https://www.spotify.com: Adding to successful website
 
@@ -891,14 +991,16 @@ No banners were found on the page (less than 2 words founds (uses cookies), or l
    (Google Chrome) https://www.ui.com: Getting Cookies
    (Google Chrome) https://www.ui.com: Getting Localstorage
    (Google Chrome) https://www.ui.com: Checking Cookie Banner
-The following words were found: [ 'agree', 'accept', 'accept all' ]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,accept all), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.ui.com: Adding requests to DB
    (Google Chrome) https://www.ui.com: Adding to successful website
 
@@ -909,17 +1011,10 @@ Final decision:  true
    (Google Chrome) https://www.zoom.us: Getting Cookies
    (Google Chrome) https://www.zoom.us: Getting Localstorage
    (Google Chrome) https://www.zoom.us: Checking Cookie Banner
-The following words were found: [
-  'accept',
-  'decline',
-  'more information',
-  'use cookies',
-  'uses cookies',
-  'privacy statement'
-]
-Error accessing element handle's visibility -- id
-Is element visible? [ false ]
-Final decision:  false
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie preferences,uses cookies,privacy statement), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.zoom.us: Adding requests to DB
    (Google Chrome) https://www.zoom.us: Adding to successful website
 
@@ -930,21 +1025,10 @@ Final decision:  false
    (Google Chrome) https://www.bit.ly: Getting Cookies
    (Google Chrome) https://www.bit.ly: Getting Localstorage
    (Google Chrome) https://www.bit.ly: Checking Cookie Banner
-The following words were found: [
-  'accept',
-  'accept all',
-  'cookie preferences',
-  'more information',
-  'use cookies',
-  'cookie policy'
-]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie preferences,more information,use cookies,cookie policy), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.bit.ly: Adding requests to DB
    (Google Chrome) https://www.bit.ly: Adding to successful website
 
@@ -966,7 +1050,15 @@ Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (agree,accept,decline,more information,use cookies), or less than 2 elements in subtree (1)).
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,accept,consent,decline,more information,use cookies), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.dell.com: Adding requests to DB
    (Google Chrome) https://www.dell.com: Adding to successful website
 
@@ -990,7 +1082,7 @@ No banners were found on the page (less than 2 words founds (agree), or less tha
  (Google Chrome): (75) https://www.cloudapp.net
    (Google Chrome) https://www.cloudapp.net: Getting Requests and Reponses
    (Google Chrome) : Loading new page https://www.cloudapp.net
-**  (Google Chrome): Error visiting webpage -> https://www.cloudapp.net (net::ERR_NAME_NOT_RESOLVED at https://www.cloudapp.net)
+**  (Google Chrome): Error visiting webpage -> https://www.cloudapp.net (net::ERR_CONNECTION_REFUSED at https://www.cloudapp.net)
 
  (Google Chrome): (76) https://www.outlook.com
    (Google Chrome) https://www.outlook.com: Getting Requests and Reponses
@@ -1025,13 +1117,8 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.skype.com: Getting Cookies
    (Google Chrome) https://www.skype.com: Getting Localstorage
    (Google Chrome) https://www.skype.com: Checking Cookie Banner
-The following words were found: [ 'accept', 'reject', 'manage cookies', 'privacy statement' ]
-Is element visible? [
-  true, true,
-  true, true,
-  true, true,
-  true
-]
+The following words were found: [ 'accept', 'reject', 'manage cookies' ]
+Is element visible? [ true, true, true, true ]
 Final decision:  true
    (Google Chrome) https://www.skype.com: Adding requests to DB
    (Google Chrome) https://www.skype.com: Adding to successful website
@@ -1087,7 +1174,7 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.yandex.net: Getting Localstorage
    (Google Chrome) https://www.yandex.net: Checking Cookie Banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (cookie policy), or less than 2 elements in subtree (0)).
+No banners were found on the page (less than 2 words founds (more information,cookie policy), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.yandex.net: Adding requests to DB
    (Google Chrome) https://www.yandex.net: Adding to successful website
 
@@ -1127,20 +1214,8 @@ No banners were found on the page (less than 2 words founds (accept,accept cooki
    (Google Chrome) https://www.roblox.com: Getting Cookies
    (Google Chrome) https://www.roblox.com: Getting Localstorage
    (Google Chrome) https://www.roblox.com: Checking Cookie Banner
-The following words were found: [
-  'agree',
-  'more information',
-  'use cookies',
-  'accept',
-  'accept all',
-  'decline'
-]
-Is element visible? [
-  true, true,
-  true, true,
-  true, true,
-  true
-]
+The following words were found: [ 'agree', 'consent', 'more information', 'use cookies' ]
+Is element visible? [ true, true, true ]
 Final decision:  true
    (Google Chrome) https://www.roblox.com: Adding requests to DB
    (Google Chrome) https://www.roblox.com: Adding to successful website
@@ -1157,6 +1232,8 @@ Final decision:  true
    (Google Chrome) https://www.yandex.ru: Getting Cookies
    (Google Chrome) https://www.yandex.ru: Getting Localstorage
    (Google Chrome) https://www.yandex.ru: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
@@ -1178,7 +1255,8 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.reddit.com: Checking Cookie Banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (agree,cookie notice,use cookies), or less than 2 elements in subtree (1)).
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (use cookies), or less than 2 elements in subtree (0)).
    (Google Chrome) https://www.reddit.com: Adding requests to DB
    (Google Chrome) https://www.reddit.com: Adding to successful website
 
@@ -1230,16 +1308,10 @@ No banners were found on the page (less than 2 words founds (agree), or less tha
    (Google Chrome) https://www.opera.com: Getting Cookies
    (Google Chrome) https://www.opera.com: Getting Localstorage
    (Google Chrome) https://www.opera.com: Checking Cookie Banner
-The following words were found: [
-  'agree',
-  'accept',
-  'accept cookies',
-  'manage cookies',
-  'privacy statement',
-  'use cookies'
-]
-Is element visible? [ true, true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,accept,privacy statement,use cookies), or less than 2 elements in subtree (0)).
    (Google Chrome) https://www.opera.com: Adding requests to DB
    (Google Chrome) https://www.opera.com: Adding to successful website
 
@@ -1250,22 +1322,11 @@ Final decision:  true
    (Google Chrome) https://www.criteo.com: Getting Cookies
    (Google Chrome) https://www.criteo.com: Getting Localstorage
    (Google Chrome) https://www.criteo.com: Checking Cookie Banner
-The following words were found: [
-  'agree',
-  'accept',
-  'accept all',
-  'reject',
-  'reject all',
-  'more information'
-]
+The following words were found: [ 'accept', 'accept all', 'reject', 'reject all' ]
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ false, true, true ]
-Final decision:  true
+Could not evaluate visibility
    (Google Chrome) https://www.criteo.com: Adding requests to DB
    (Google Chrome) https://www.criteo.com: Adding to successful website
 
@@ -1276,7 +1337,6 @@ Final decision:  true
    (Google Chrome) https://www.nic.ru: Getting Cookies
    (Google Chrome) https://www.nic.ru: Getting Localstorage
    (Google Chrome) https://www.nic.ru: Checking Cookie Banner
-Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 No banners were found on the page (no words).
@@ -1320,13 +1380,8 @@ No banners were found on the page (less than 2 words founds (uses cookies), or l
    (Google Chrome) https://www.europa.eu: Getting Cookies
    (Google Chrome) https://www.europa.eu: Getting Localstorage
    (Google Chrome) https://www.europa.eu: Checking Cookie Banner
-The following words were found: [ 'accept', 'accept all', 'uses cookies' ]
-Is element visible? [
-  true, true, true,
-  true, true, true,
-  true, true, true
-]
-Final decision:  true
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,accept all), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.europa.eu: Adding requests to DB
    (Google Chrome) https://www.europa.eu: Adding to successful website
 
@@ -1346,7 +1401,14 @@ Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (decline,use cookies), or less than 2 elements in subtree (1)).
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent,decline,use cookies), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.tumblr.com: Adding requests to DB
    (Google Chrome) https://www.tumblr.com: Adding to successful website
 
@@ -1359,11 +1421,9 @@ No banners were found on the page (less than 2 words founds (decline,use cookies
    (Google Chrome) https://www.dropbox.com: Checking Cookie Banner
 Checking frames for banner
 Checking frames for banner
-From frame: Found a better match. Used to be 1 hits vs now 4. The new words 'use cookies,decline,accept,accept all' will replace 'cookie policy'
-The following words were found: [ 'use cookies', 'decline', 'accept', 'accept all' ]
-Error accessing element handle's visibility -- id
-Is element visible? [ true, true, true, true ]
-Final decision:  true
+Checking frames for banner
+From frame: Found a better match. Used to be 1 hits vs now 2. The new words 'accept,accept all' will replace 'cookie policy'
+No banners were found on the page (less than 2 words founds (accept,accept all), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.dropbox.com: Adding requests to DB
    (Google Chrome) https://www.dropbox.com: Adding to successful website
 
@@ -1447,13 +1507,15 @@ No banners were found on the page (less than 2 words founds (accept,accept all),
    (Google Chrome) https://www.nytimes.com: Getting Cookies
    (Google Chrome) https://www.nytimes.com: Getting Localstorage
    (Google Chrome) https://www.nytimes.com: Checking Cookie Banner
-The following words were found: [ 'use cookies', 'cookie policy', 'accept', 'reject' ]
-Is element visible? [
-  true, true, true,
-  true, true, true,
-  true, true
-]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent,decline), or less than 2 elements in subtree (0)).
    (Google Chrome) https://www.nytimes.com: Adding requests to DB
    (Google Chrome) https://www.nytimes.com: Adding to successful website
 
@@ -1504,14 +1566,11 @@ Final decision:  true
    (Google Chrome) https://www.epicgames.com: Getting Cookies
    (Google Chrome) https://www.epicgames.com: Getting Localstorage
    (Google Chrome) https://www.epicgames.com: Checking Cookie Banner
-The following words were found: [ 'agree', 'accept', 'accept all', 'reject', 'reject all' ]
+The following words were found: [ 'accept', 'accept all', 'reject', 'reject all' ]
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ false, false, false, true, false ]
-Final decision:  false
+Could not evaluate visibility
    (Google Chrome) https://www.epicgames.com: Adding requests to DB
    (Google Chrome) https://www.epicgames.com: Adding to successful website
 
@@ -1553,14 +1612,10 @@ Final decision:  true
    (Google Chrome) https://www.webex.com: Getting Cookies
    (Google Chrome) https://www.webex.com: Getting Localstorage
    (Google Chrome) https://www.webex.com: Checking Cookie Banner
-The following words were found: [ 'accept', 'reject', 'privacy statement', 'cookie notice' ]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (privacy statement,cookie notice), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.webex.com: Adding requests to DB
    (Google Chrome) https://www.webex.com: Adding to successful website
 
@@ -1621,6 +1676,7 @@ No banners were found on the page (no words).
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
+Checking frames for banner
 Error: Execution context is not available in detached frame "about:blank" (are you trying to evaluate?)
     at IsolatedWorld.executionContext (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/IsolatedWorld.js:81:19)
     at IsolatedWorld.evaluate (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/IsolatedWorld.js:95:36)
@@ -1650,10 +1706,8 @@ TypeError: Cannot read properties of undefined (reading '0')
    (Google Chrome) https://www.rubiconproject.com: Getting Cookies
    (Google Chrome) https://www.rubiconproject.com: Getting Localstorage
    (Google Chrome) https://www.rubiconproject.com: Checking Cookie Banner
-The following words were found: [ 'uses cookies', 'decline' ]
-Error accessing element handle's visibility -- classname
-Is element visible? [ true, true, true ]
-Final decision:  true
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent,uses cookies), or less than 2 elements in subtree (0)).
    (Google Chrome) https://www.rubiconproject.com: Adding requests to DB
    (Google Chrome) https://www.rubiconproject.com: Adding to successful website
 
@@ -1706,13 +1760,8 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.samsung.com: Getting Cookies
    (Google Chrome) https://www.samsung.com: Getting Localstorage
    (Google Chrome) https://www.samsung.com: Checking Cookie Banner
-The following words were found: [ 'accept', 'accept all', 'cookie policy', 'use cookies' ]
-Is element visible? [
-  true, true,
-  true, true,
-  true, true,
-  true
-]
+The following words were found: [ 'accept', 'accept all', 'consent', 'cookie policy' ]
+Is element visible? [ true, true, true ]
 Final decision:  true
    (Google Chrome) https://www.samsung.com: Adding requests to DB
    (Google Chrome) https://www.samsung.com: Adding to successful website
@@ -1734,9 +1783,9 @@ Final decision:  true
    (Google Chrome) https://www.comcast.net: Getting Cookies
    (Google Chrome) https://www.comcast.net: Getting Localstorage
    (Google Chrome) https://www.comcast.net: Checking Cookie Banner
-The following words were found: [ 'accept', 'cookie preferences', 'accept all', 'decline' ]
-Is element visible? [ true, true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
    (Google Chrome) https://www.comcast.net: Adding requests to DB
    (Google Chrome) https://www.comcast.net: Adding to successful website
 
@@ -1776,14 +1825,11 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.unity3d.com: Getting Cookies
    (Google Chrome) https://www.unity3d.com: Getting Localstorage
    (Google Chrome) https://www.unity3d.com: Checking Cookie Banner
-The following words were found: [ 'agree', 'accept', 'accept all', 'reject', 'reject all' ]
+The following words were found: [ 'accept', 'accept all', 'reject', 'reject all' ]
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, true, true ]
-Final decision:  true
+Could not evaluate visibility
    (Google Chrome) https://www.unity3d.com: Adding requests to DB
    (Google Chrome) https://www.unity3d.com: Adding to successful website
 
@@ -1794,20 +1840,10 @@ Final decision:  true
    (Google Chrome) https://www.zemanta.com: Getting Cookies
    (Google Chrome) https://www.zemanta.com: Getting Localstorage
    (Google Chrome) https://www.zemanta.com: Checking Cookie Banner
-The following words were found: [
-  'accept',
-  'more information',
-  'reject',
-  'reject all',
-  'accept cookies'
-]
+The following words were found: [ 'accept', 'accept cookies', 'reject', 'reject all' ]
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, false, true, true, true ]
+Is element visible? [ true ]
 Final decision:  true
    (Google Chrome) https://www.zemanta.com: Adding requests to DB
    (Google Chrome) https://www.zemanta.com: Adding to successful website
@@ -1819,43 +1855,18 @@ Final decision:  true
    (Google Chrome) https://www.salesforce.com: Getting Cookies
    (Google Chrome) https://www.salesforce.com: Getting Localstorage
    (Google Chrome) https://www.salesforce.com: Checking Cookie Banner
-The following words were found: [
-  'accept',
-  'accept all',
-  'reject',
-  'more information',
-  'use cookies',
-  'privacy statement'
-]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, false, true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent,reject,more information,use cookies,privacy statement), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.salesforce.com: Adding requests to DB
    (Google Chrome) https://www.salesforce.com: Adding to successful website
 
  (Google Chrome): (148) https://www.miit.gov.cn
    (Google Chrome) https://www.miit.gov.cn: Getting Requests and Reponses
    (Google Chrome) : Loading new page https://www.miit.gov.cn
-   (Google Chrome) https://www.miit.gov.cn: Page loaded
-   (Google Chrome) https://www.miit.gov.cn: Getting Cookies
-   (Google Chrome) https://www.miit.gov.cn: Getting Localstorage
-   (Google Chrome) https://www.miit.gov.cn: Checking Cookie Banner
-Checking frames for banner
-Checking frames for banner
-Checking frames for banner
-Checking frames for banner
-Checking frames for banner
-Checking frames for banner
-Checking frames for banner
-Checking frames for banner
-Checking frames for banner
-No banners were found on the page (no words).
-   (Google Chrome) https://www.miit.gov.cn: Adding requests to DB
-   (Google Chrome) https://www.miit.gov.cn: Adding to successful website
+**  (Google Chrome): TimeoutError -> https://www.miit.gov.cn
 
  (Google Chrome): (149) https://www.azureedge.net
    (Google Chrome) https://www.azureedge.net: Getting Requests and Reponses
@@ -1917,7 +1928,7 @@ Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (accept,accept all), or less than 2 elements in subtree (1)).
+No banners were found on the page (less than 2 words founds (accept,accept all,consent), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.soundcloud.com: Adding requests to DB
    (Google Chrome) https://www.soundcloud.com: Adding to successful website
 
@@ -1972,7 +1983,15 @@ No banners were found on the page (less than 2 words founds (reject,reject all),
  (Google Chrome): (160) https://www.health.mil
    (Google Chrome) https://www.health.mil: Getting Requests and Reponses
    (Google Chrome) : Loading new page https://www.health.mil
-**  (Google Chrome): TimeoutError -> https://www.health.mil
+   (Google Chrome) https://www.health.mil: Page loaded
+   (Google Chrome) https://www.health.mil: Getting Cookies
+   (Google Chrome) https://www.health.mil: Getting Localstorage
+   (Google Chrome) https://www.health.mil: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.health.mil: Adding requests to DB
+   (Google Chrome) https://www.health.mil: Adding to successful website
 
  (Google Chrome): (161) https://www.vk.com
    (Google Chrome) https://www.vk.com: Getting Requests and Reponses
@@ -2007,14 +2026,10 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.meraki.com: Getting Cookies
    (Google Chrome) https://www.meraki.com: Getting Localstorage
    (Google Chrome) https://www.meraki.com: Checking Cookie Banner
-The following words were found: [ 'accept', 'reject', 'privacy statement', 'cookie notice' ]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (privacy statement,cookie notice), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.meraki.com: Adding requests to DB
    (Google Chrome) https://www.meraki.com: Adding to successful website
 
@@ -2065,7 +2080,7 @@ Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
-From frame: Found a better match. Used to be 1 hits vs now 2. The new words 'accept,reject' will replace 'agree'
+From frame: Found a better match. Used to be 1 hits vs now 2. The new words 'accept,reject' will replace 'reject'
 No banners were found on the page (less than 2 words founds (accept,reject), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.theguardian.com: Adding requests to DB
    (Google Chrome) https://www.theguardian.com: Adding to successful website
@@ -2092,22 +2107,9 @@ No banners were found on the page (less than 2 words founds (accept,reject), or 
    (Google Chrome) https://www.appsflyer.com: Getting Cookies
    (Google Chrome) https://www.appsflyer.com: Getting Localstorage
    (Google Chrome) https://www.appsflyer.com: Checking Cookie Banner
-The following words were found: [
-  'accept',
-  'accept all',
-  'reject',
-  'reject all',
-  'more information',
-  'use cookies',
-  'cookie policy'
-]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, false, true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,accept all,reject,reject all), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.appsflyer.com: Adding requests to DB
    (Google Chrome) https://www.appsflyer.com: Adding to successful website
 
@@ -2152,8 +2154,7 @@ No banners were found on the page (less than 2 words founds (agree,use cookies),
    (Google Chrome) https://www.demdex.net: Checking Cookie Banner
 Checking frames for banner
 Checking frames for banner
-Checking frames for banner
-No banners were found on the page (less than 2 words founds (reject,reject all), or less than 2 elements in subtree (1)).
+No banners were found on the page (no words).
    (Google Chrome) https://www.demdex.net: Adding requests to DB
    (Google Chrome) https://www.demdex.net: Adding to successful website
 
@@ -2171,8 +2172,8 @@ Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
+From frame: Found a better match. Used to be 1 hits vs now 4. The new words 'agree,accept,accept cookies,use cookies' will replace 'consent'
 Checking frames for banner
-From frame: Found a better match. Used to be 1 hits vs now 4. The new words 'agree,accept,accept cookies,use cookies' will replace 'cookie notice'
 No banners were found on the page (less than 2 words founds (agree,accept,accept cookies,use cookies), or less than 2 elements in subtree (0)).
    (Google Chrome) https://www.doubleverify.com: Adding requests to DB
    (Google Chrome) https://www.doubleverify.com: Adding to successful website
@@ -2188,6 +2189,7 @@ No banners were found on the page (less than 2 words founds (agree,accept,accept
    (Google Chrome) https://www.taboola.com: Page loaded
    (Google Chrome) https://www.taboola.com: Getting Cookies
    (Google Chrome) https://www.taboola.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
    (Google Chrome) https://www.taboola.com: Checking Cookie Banner
 The following words were found: [
   'accept',
@@ -2210,16 +2212,9 @@ Final decision:  true
    (Google Chrome) https://www.forbes.com: Getting Cookies
    (Google Chrome) https://www.forbes.com: Getting Localstorage
    (Google Chrome) https://www.forbes.com: Checking Cookie Banner
-The following words were found: [ 'use cookies', 'privacy statement', 'accept', 'accept all' ]
-Error accessing element handle's visibility -- classname
-Error accessing element handle's visibility -- classname
-Is element visible? [
-  true, true,
-  true, true,
-  true, true,
-  true
-]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,accept all), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.forbes.com: Adding requests to DB
    (Google Chrome) https://www.forbes.com: Adding to successful website
 
@@ -2230,14 +2225,11 @@ Final decision:  true
    (Google Chrome) https://www.applovin.com: Getting Cookies
    (Google Chrome) https://www.applovin.com: Getting Localstorage
    (Google Chrome) https://www.applovin.com: Checking Cookie Banner
-The following words were found: [ 'agree', 'accept', 'accept all', 'reject', 'reject all' ]
+The following words were found: [ 'accept', 'accept all', 'reject', 'reject all' ]
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, true, true ]
-Final decision:  true
+Could not evaluate visibility
    (Google Chrome) https://www.applovin.com: Adding requests to DB
    (Google Chrome) https://www.applovin.com: Adding to successful website
 
@@ -2282,19 +2274,14 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.ebay.com: Checking Cookie Banner
 Checking frames for banner
 Checking frames for banner
-Checking frames for banner
-Checking frames for banner
-Checking frames for banner
-Checking frames for banner
-Checking frames for banner
-No banners were found on the page (no words).
+No banners were found on the page (less than 2 words founds (agree,consent,decline,use cookies,cookie notice), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.ebay.com: Adding requests to DB
    (Google Chrome) https://www.ebay.com: Adding to successful website
 
  (Google Chrome): (186) https://www.azurewebsites.net
    (Google Chrome) https://www.azurewebsites.net: Getting Requests and Reponses
    (Google Chrome) : Loading new page https://www.azurewebsites.net
-**  (Google Chrome): Error visiting webpage -> https://www.azurewebsites.net (net::ERR_NAME_NOT_RESOLVED at https://www.azurewebsites.net)
+**  (Google Chrome): Error visiting webpage -> https://www.azurewebsites.net (net::ERR_CONNECTION_REFUSED at https://www.azurewebsites.net)
 
  (Google Chrome): (187) https://www.adobe.io
    (Google Chrome) https://www.adobe.io: Getting Requests and Reponses
@@ -2303,7 +2290,6 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.adobe.io: Getting Cookies
    (Google Chrome) https://www.adobe.io: Getting Localstorage
    (Google Chrome) https://www.adobe.io: Checking Cookie Banner
-Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 No banners were found on the page (less than 2 words founds (reject,reject all), or less than 2 elements in subtree (1)).
@@ -2446,10 +2432,8 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.smartadserver.com: Getting Cookies
    (Google Chrome) https://www.smartadserver.com: Getting Localstorage
    (Google Chrome) https://www.smartadserver.com: Checking Cookie Banner
-The following words were found: [ 'accept', 'reject', 'uses cookies' ]
-Error accessing element handle's visibility -- classname
-Is element visible? [ false, false, false, false ]
-Final decision:  false
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,uses cookies), or less than 2 elements in subtree (0)).
    (Google Chrome) https://www.smartadserver.com: Adding requests to DB
    (Google Chrome) https://www.smartadserver.com: Adding to successful website
 
@@ -2465,7 +2449,7 @@ Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (1)).
+No banners were found on the page (less than 2 words founds (accept,consent), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.sourceforge.net: Adding requests to DB
    (Google Chrome) https://www.sourceforge.net: Adding to successful website
 
@@ -2514,7 +2498,7 @@ Final decision:  true
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (uses cookies), or less than 2 elements in subtree (1)).
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.kaspersky.com: Adding requests to DB
    (Google Chrome) https://www.kaspersky.com: Adding to successful website
 
@@ -2541,14 +2525,9 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.cisco.com: Getting Cookies
    (Google Chrome) https://www.cisco.com: Getting Localstorage
    (Google Chrome) https://www.cisco.com: Checking Cookie Banner
-The following words were found: [ 'accept', 'reject', 'privacy statement', 'cookie notice' ]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (privacy statement,cookie notice), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.cisco.com: Adding requests to DB
    (Google Chrome) https://www.cisco.com: Adding to successful website
 
@@ -2597,7 +2576,7 @@ Checking frames for banner
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (accept,reject), or less than 2 elements in subtree (0)).
+No banners were found on the page (less than 2 words founds (accept,consent,reject), or less than 2 elements in subtree (0)).
    (Google Chrome) https://www.washingtonpost.com: Adding requests to DB
    (Google Chrome) https://www.washingtonpost.com: Adding to successful website
 
@@ -2620,21 +2599,16 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.opendns.com: Getting Cookies
    (Google Chrome) https://www.opendns.com: Getting Localstorage
    (Google Chrome) https://www.opendns.com: Checking Cookie Banner
-The following words were found: [ 'accept', 'reject', 'privacy statement', 'cookie notice' ]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (privacy statement,cookie notice), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.opendns.com: Adding requests to DB
    (Google Chrome) https://www.opendns.com: Adding to successful website
 
  (Google Chrome): (215) https://www.shifen.com
    (Google Chrome) https://www.shifen.com: Getting Requests and Reponses
    (Google Chrome) : Loading new page https://www.shifen.com
-**  (Google Chrome): Error visiting webpage -> https://www.shifen.com (net::ERR_CERT_COMMON_NAME_INVALID at https://www.shifen.com)
+**  (Google Chrome): TimeoutError -> https://www.shifen.com
 
  (Google Chrome): (216) https://www.name-services.com
    (Google Chrome) https://www.name-services.com: Getting Requests and Reponses
@@ -2649,15 +2623,11 @@ Final decision:  true
    (Google Chrome) https://www.discord.com: Getting Localstorage
       **** Error in LocalStorageFrameEvaluate
    (Google Chrome) https://www.discord.com: Checking Cookie Banner
-The following words were found: [ 'agree', 'accept', 'accept all', 'reject', 'reject all' ]
+The following words were found: [ 'accept', 'accept all', 'reject', 'reject all' ]
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, true, true ]
-Final decision:  true
+Could not evaluate visibility
    (Google Chrome) https://www.discord.com: Adding requests to DB
    (Google Chrome) https://www.discord.com: Adding to successful website
 
@@ -2668,15 +2638,8 @@ Final decision:  true
    (Google Chrome) https://www.amazonvideo.com: Getting Cookies
    (Google Chrome) https://www.amazonvideo.com: Getting Localstorage
    (Google Chrome) https://www.amazonvideo.com: Checking Cookie Banner
-The following words were found: [
-  'decline',
-  'use cookies',
-  'cookie notice',
-  'accept',
-  'accept cookies'
-]
-Is element visible? [ true, true, true, true, true ]
-Final decision:  true
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (decline,use cookies,cookie notice), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.amazonvideo.com: Adding requests to DB
    (Google Chrome) https://www.amazonvideo.com: Adding to successful website
 
@@ -2687,7 +2650,7 @@ Final decision:  true
    (Google Chrome) https://www.wixsite.com: Getting Cookies
    (Google Chrome) https://www.wixsite.com: Getting Localstorage
    (Google Chrome) https://www.wixsite.com: Checking Cookie Banner
-The following words were found: [ 'use cookies', 'cookie policy' ]
+The following words were found: [ 'consent', 'use cookies', 'cookie policy' ]
 Is element visible? [ true, true ]
 Final decision:  true
    (Google Chrome) https://www.wixsite.com: Adding requests to DB
@@ -2741,12 +2704,8 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.twitch.tv: Getting Cookies
    (Google Chrome) https://www.twitch.tv: Getting Localstorage
    (Google Chrome) https://www.twitch.tv: Checking Cookie Banner
-The following words were found: [ 'manage cookies', 'accept', 'accept cookies' ]
-Is element visible? [
-  true, true, true,
-  true, true, true,
-  true, true, true
-]
+The following words were found: [ 'consent', 'decline', 'cookie notice' ]
+Is element visible? [ true, true, true ]
 Final decision:  true
    (Google Chrome) https://www.twitch.tv: Adding requests to DB
    (Google Chrome) https://www.twitch.tv: Adding to successful website
@@ -2759,7 +2718,7 @@ Final decision:  true
  (Google Chrome): (226) https://www.jomodns.com
    (Google Chrome) https://www.jomodns.com: Getting Requests and Reponses
    (Google Chrome) : Loading new page https://www.jomodns.com
-**  (Google Chrome): Error visiting webpage -> https://www.jomodns.com (net::ERR_NAME_NOT_RESOLVED at https://www.jomodns.com)
+**  (Google Chrome): TimeoutError -> https://www.jomodns.com
 
  (Google Chrome): (227) https://www.ibm.com
    (Google Chrome) https://www.ibm.com: Getting Requests and Reponses
@@ -2837,10 +2796,8 @@ No banners were found on the page (less than 2 words founds (accept,use cookies)
    (Google Chrome) https://www.ubuntu.com: Getting Cookies
    (Google Chrome) https://www.ubuntu.com: Getting Localstorage
    (Google Chrome) https://www.ubuntu.com: Checking Cookie Banner
-The following words were found: [ 'accept', 'accept all', 'use cookies' ]
-Error accessing element handle's visibility -- id
-Is element visible? [ true, false ]
-Final decision:  false
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,accept all), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.ubuntu.com: Adding requests to DB
    (Google Chrome) https://www.ubuntu.com: Adding to successful website
 
@@ -2851,9 +2808,12 @@ Final decision:  false
    (Google Chrome) https://www.amazon.co.uk: Getting Cookies
    (Google Chrome) https://www.amazon.co.uk: Getting Localstorage
    (Google Chrome) https://www.amazon.co.uk: Checking Cookie Banner
-The following words were found: [ 'decline', 'use cookies', 'cookie preferences', 'cookie notice' ]
-Is element visible? [ true, true, false, false ]
-Final decision:  false
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (decline,use cookies,cookie notice), or less than 2 elements in subtree (0)).
    (Google Chrome) https://www.amazon.co.uk: Adding requests to DB
    (Google Chrome) https://www.amazon.co.uk: Adding to successful website
 
@@ -2866,7 +2826,7 @@ Final decision:  false
    (Google Chrome) https://www.cdc.gov: Checking Cookie Banner
 Checking frames for banner
 Checking frames for banner
-No banners were found on the page (less than 2 words founds (more information), or less than 2 elements in subtree (3)).
+No banners were found on the page (no words).
    (Google Chrome) https://www.cdc.gov: Adding requests to DB
    (Google Chrome) https://www.cdc.gov: Adding to successful website
 
@@ -2894,21 +2854,12 @@ No banners were found on the page (no words).
    (Google Chrome) https://www.force.com: Getting Cookies
    (Google Chrome) https://www.force.com: Getting Localstorage
    (Google Chrome) https://www.force.com: Checking Cookie Banner
-The following words were found: [
-  'accept',
-  'accept all',
-  'reject',
-  'more information',
-  'use cookies',
-  'privacy statement'
-]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, false, true, true, true ]
-Final decision:  true
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent,reject,more information,use cookies,privacy statement), or less than 2 elements in subtree (1)).
    (Google Chrome) https://www.force.com: Adding requests to DB
    (Google Chrome) https://www.force.com: Adding to successful website
 
@@ -2938,21 +2889,10 @@ No banners were found on the page (less than 2 words founds (agree), or less tha
    (Google Chrome) https://www.hubspot.com: Getting Cookies
    (Google Chrome) https://www.hubspot.com: Getting Localstorage
    (Google Chrome) https://www.hubspot.com: Checking Cookie Banner
-The following words were found: [
-  'decline',
-  'use cookies',
-  'cookie policy',
-  'accept',
-  'accept all',
-  'manage cookies'
-]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Could not evaluate visibility
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent,decline,use cookies,cookie policy), or less than 2 elements in subtree (0)).
    (Google Chrome) https://www.hubspot.com: Adding requests to DB
    (Google Chrome) https://www.hubspot.com: Adding to successful website
 
@@ -3004,21 +2944,10 @@ No banners were found on the page (less than 2 words founds (agree), or less tha
    (Google Chrome) https://www.zendesk.com: Getting Cookies
    (Google Chrome) https://www.zendesk.com: Getting Localstorage
    (Google Chrome) https://www.zendesk.com: Checking Cookie Banner
-The following words were found: [
-  'agree',
-  'accept',
-  'use cookies',
-  'cookie notice',
-  'reject',
-  'reject all',
-  'accept all'
-]
+The following words were found: [ 'accept', 'accept all', 'reject', 'reject all' ]
 Error accessing element handle's visibility -- id
 Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, false, true, true, true ]
+Is element visible? [ true ]
 Final decision:  true
    (Google Chrome) https://www.zendesk.com: Adding requests to DB
    (Google Chrome) https://www.zendesk.com: Adding to successful website
@@ -3035,22 +2964,9 @@ Final decision:  true
    (Google Chrome) https://www.weebly.com: Getting Cookies
    (Google Chrome) https://www.weebly.com: Getting Localstorage
    (Google Chrome) https://www.weebly.com: Checking Cookie Banner
-The following words were found: [
-  'accept',
-  'accept all',
-  'reject',
-  'cookie preferences',
-  'uses cookies',
-  'manage cookies'
-]
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Error accessing element handle's visibility -- id
-Is element visible? [ true, false, true, true, true ]
-Final decision:  true
+The following words were found: [ 'accept', 'accept cookies', 'cookie policy', 'uses cookies' ]
+Is element visible? [ false, false, false ]
+Final decision:  false
    (Google Chrome) https://www.weebly.com: Adding requests to DB
    (Google Chrome) https://www.weebly.com: Adding to successful website
 
@@ -3064,8 +2980,9 @@ Final decision:  true
 Checking frames for banner
 Checking frames for banner
 Checking frames for banner
-Checking frames for banner
-The website used up all its time allocation. Forced timeout.
+No banners were found on the page (no words).
+   (Google Chrome) https://www.rambler.ru: Adding requests to DB
+   (Google Chrome) https://www.rambler.ru: Adding to successful website
 
  (Google Chrome): (249) https://www.reg.ru
    (Google Chrome) https://www.reg.ru: Getting Requests and Reponses

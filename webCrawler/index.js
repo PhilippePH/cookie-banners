@@ -184,7 +184,7 @@ export async function callableMain (args) {
     user: 'postgres',
     password: 'I@mastrongpsswd',
     host: '127.0.0.1',
-    database: 'crawlingData',
+    database: 'crawlingData2',
     port: '5432'
   })
 

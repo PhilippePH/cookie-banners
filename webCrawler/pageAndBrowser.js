@@ -53,7 +53,8 @@ const macserverUserProfiles = {
   Ghostery: '/Users/crawler/Library/Application Support/Ghostery Browser/Profiles/qjo0uxbs.default-release',
   'Ghostery2': '/Users/crawler/Library/Application Support/Google/Chrome2/',
   'Firefox 1': '/Users/crawler/Library/Application Support/Firefox/Profiles/i5wm7jfj.profile1',
-  'Firefox 2': '/Users/crawler/Library/Application Support/Firefox/Profiles/pl2a1t2n.profile2'
+  'Firefox 2': '/Users/crawler/Library/Application Support/Firefox/Profiles/pl2a1t2n.profile2',
+  'Firefox 3': '/Users/crawler/Library/Application Support/Firefox/Profiles/6flzb267.profile3',
 }
 
 async function puppeteerLaunchBrowser (browser, device, version) {
@@ -104,6 +105,15 @@ async function puppeteerLaunchBrowser (browser, device, version) {
           product: 'firefox',
           executablePath: executablePaths[browser],
           userDataDir: userProfiles['Firefox 2'],
+          defaultViewport: null
+        })
+      } else if (Number(version) === 3) {
+        // This launches the second Firefox profile (same settings, just for ability to launch two in parallel)
+        return await puppeteer.launch({
+          headless: false,
+          product: 'firefox',
+          executablePath: executablePaths[browser],
+          userDataDir: userProfiles['Firefox 3'],
           defaultViewport: null
         })
       }

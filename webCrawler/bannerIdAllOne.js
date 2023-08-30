@@ -1,6 +1,5 @@
 import { createWriteStream } from 'fs'
-
-// import { addCookieBannerDataToDB } from "./db"
+import { addCookieBannerDataToDB } from "./db"
 
 /*
 Step 1. Get all terminal nodes
@@ -191,18 +190,21 @@ async function checkBannerVisibility (cookieBannerInfo, frame) {
       return null
     }
   
-    console.log('Is element visible?', visibleArray)
+    // console.log('Is element visible?', visibleArray)
   
     const trueCount = visibleArray.filter(value => value === true).length
     const falseCount = visibleArray.length - trueCount
+    const percentageVisibility = +(100 * (trueCount / (trueCount + falseCount))).toFixed(2)
   
-    let decision = 'present-visible'
-    if (trueCount < falseCount) {
-      decision = 'present-invisible'
-    }
-    console.log('Final decision: ', trueCount > falseCount)
+    // let decision = 'present-visible'
+    // if (trueCount < falseCount) {
+    //   decision = 'present-invisible'
+    // }
+    // console.log('Final decision: ', trueCount > falseCount)
   
-    return [decision, trueCount, falseCount]
+    // return [decision, trueCount, falseCount]
+
+    return [trueCount > falseCount, percentageVisibility]
   }
   
   async function saveCookieBannerData (browser, websiteUrl, cookieBannerInfo, visibility, type, resultPath) {
@@ -297,13 +299,18 @@ export async function allInDetermineCookieBannerState (page, wordCorpus, maxNumP
   // If no banner has been found, or if less than 3 words have been found.
   if (cookieBannerInfo === null) {
     console.log('No banners were found on the page (no words).')
-    await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 1, resultPath)
+    // await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 1, resultPath)
+    await addCookieBannerDataToDB(browser, websiteUrl, connection, crawlID, false, null, null, null, null, false, 1)
   } else if (cookieBannerInfo[1].length < 2 || cookieBannerInfo[0].length < 2) {
     console.log(`No banners were found on the page (less than 2 words founds (${cookieBannerInfo[1]}), or less than 2 elements in subtree (${cookieBannerInfo[0].length})).`)
-    await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 2, resultPath)
+    // await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, null, 2, resultPath)
+    await addCookieBannerDataToDB(browser, websiteUrl, connection, crawlID, false, cookieBannerInfo[1], cookieBannerInfo[0].length, null, null, false, 2)
   } else {
     // await new Promise((resolve) => setTimeout(resolve, 1000))
-    const visibility = await checkBannerVisibility(cookieBannerInfo, frame)
-    await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, visibility, 3, resultPath)
+    const visibilityResults = await checkBannerVisibility(cookieBannerInfo, frame)
+    const visibility = visibilityResults[0]
+    const percentageVisibility = visibilityResults[1]
+    // await saveCookieBannerData(browser, websiteUrl, cookieBannerInfo, visibility, 3, resultPath)
+    await addCookieBannerDataToDB(browser, websiteUrl, connection, crawlID, true, cookieBannerInfo[1], cookieBannerInfo[0].length, visibility, percentageVisibility, visibility, 3)
   }
 }
