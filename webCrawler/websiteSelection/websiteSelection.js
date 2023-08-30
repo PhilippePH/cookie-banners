@@ -100,7 +100,7 @@ async function getTimedOutUrls (browser) {
         // keep only those that timedout less than 3 times
         const lessthan3 = []
         for (const key of Object.keys(myURLs)) {
-          if (myURLs[key] < 3) { lessthan3.push(key) }
+          if (myURLs[key] < 2) { lessthan3.push(key) }
         }
         resolve(lessthan3)
       })
