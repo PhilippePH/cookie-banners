@@ -3,8 +3,8 @@ import { ParallelMain } from '../runtimeSetUp.js'
 const BROWSER_LIST = ['Firefox']
 const VERSION = 1
 const START_NUMBER = 0
-const NUM_URLS = 3333
-const ADD_TIMEOUTS = false
+const NUM_URLS = 1
+const ADD_TIMEOUTS = true
 const PATH_TO_CSV = './webCrawler/websiteSelection/shuffled.txt'
 const DEVICE = 'macserver'
 const CORPUS = ['agree', 'accept', 'accept all', 'accept cookies', 'consent', 'reject', 'reject all', 'decline', 'cookie preferences',

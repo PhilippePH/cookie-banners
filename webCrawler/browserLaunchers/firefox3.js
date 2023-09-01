@@ -2,7 +2,7 @@ import { ParallelMain } from '../runtimeSetUp.js'
 
 const BROWSER_LIST = ['Firefox']
 const VERSION = 3
-const START_NUMBER = 6667
+const START_NUMBER = 9556
 const NUM_URLS = 10000
 const ADD_TIMEOUTS = false
 const PATH_TO_CSV = './webCrawler/websiteSelection/shuffled.txt'

@@ -1,0 +1,13 @@
+Database connection established
+
+ (Brave): (1) https://www.google.com
+   (Brave) https://www.google.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.google.com
+   (Brave) https://www.google.com: Page loaded
+   (Brave) https://www.google.com: Getting Cookies
+   (Brave) https://www.google.com: Getting Localstorage
+   (Brave) https://www.google.com: Checking Cookie Banner
+The following words were found: [ 'reject', 'reject all', 'accept', 'accept all' ]
+   (Brave) https://www.google.com: Adding requests to DB
+   (Brave) https://www.google.com: Adding to successful website
+Database connection disconnected

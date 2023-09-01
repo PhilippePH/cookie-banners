@@ -1,0 +1,7 @@
+Database connection established
+
+ (Firefox): (1) https://www.google.com
+   (Firefox) https://www.google.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.google.com
+**  (Firefox): TimeoutError -> https://www.google.com
+Database connection disconnected

@@ -1,0 +1,14 @@
+Database connection established
+
+ (Ghostery): (1) https://www.google.com
+   (Ghostery) https://www.google.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.google.com
+   (Ghostery) https://www.google.com: Page loaded
+   (Ghostery) https://www.google.com: Getting Cookies
+   (Ghostery) https://www.google.com: Getting Localstorage
+   (Ghostery) https://www.google.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.google.com: Adding requests to DB
+   (Ghostery) https://www.google.com: Adding to successful website
+Database connection disconnected

@@ -45,21 +45,21 @@ export async function createResultFolder (browserList, device) {
   return path
 }
 
-export async function createArgumentArray (browserList, version, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath) {
+export async function createArgumentArray (browserList, version, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath, addTimeouts) {
   const argArray = []
 
   for (const browser of browserList) {
-    const websiteList = await getURLs(numberUrls, startNumber, browser, pathToCsv)
+    const websiteList = await getURLs(numberUrls, startNumber, browser, pathToCsv, addTimeouts)
     argArray.push([resultsPath, browser, version, websiteList, device, corpus, parentsThreshold, childrenThreshold])
   }
   return argArray
 }
 
 export async function ParallelMain (browserList, version, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, addTimeouts = true) {
-  const resultsPath = await createResultFolder(browserList, device, addTimeouts)
+  const resultsPath = await createResultFolder(browserList, device)
 
   // ARGUMENTS PER PROCESS
-  const argumentsArray = await createArgumentArray(browserList, version, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath)
+  const argumentsArray = await createArgumentArray(browserList, version, startNumber, numberUrls, corpus, parentsThreshold, childrenThreshold, pathToCsv, device, resultsPath, addTimeouts)
 
   callableMain(argumentsArray[0])
 }

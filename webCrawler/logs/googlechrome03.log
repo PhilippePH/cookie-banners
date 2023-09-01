@@ -1,0 +1,13 @@
+Database connection established
+
+ (Google Chrome): (1) https://www.google.com
+   (Google Chrome) https://www.google.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.google.com
+   (Google Chrome) https://www.google.com: Page loaded
+   (Google Chrome) https://www.google.com: Getting Cookies
+   (Google Chrome) https://www.google.com: Getting Localstorage
+   (Google Chrome) https://www.google.com: Checking Cookie Banner
+The following words were found: [ 'reject', 'reject all', 'accept', 'accept all' ]
+   (Google Chrome) https://www.google.com: Adding requests to DB
+   (Google Chrome) https://www.google.com: Adding to successful website
+Database connection disconnected
