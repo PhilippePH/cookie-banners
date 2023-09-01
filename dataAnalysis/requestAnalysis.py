@@ -29,6 +29,8 @@ def avgRequests_sameSubset(cursor):
 
     print(f"{browser} has on average {round(numRequests/distinctwebsites,2)} requests per website visited")
 
+
+
 def totalNumberRequests_sameSubset(cursor):
   cursor.execute('SELECT browser, count(websiteurl) from requestdata where visited_by_all_browsers = true group by browser')
   results = cursor.fetchall()
@@ -44,13 +46,49 @@ def totalNumberRequests_sameSubset(cursor):
     print(f"{browser} has a total of {numRequests} requests in the subset of websites visited by every browser")
   
   # Create bar graph
-  plt.figure("bar graph")
+  plt.figure("totalNumberRequests_sameSubset")
   plt.bar(df['browser'], df['totRequest'])
   plt.xticks(rotation=45)  # Rotates x-axis labels for better visibility
   plt.xlabel('Browser')
   plt.ylabel('Total Requests')
   plt.title('Total Requests per Browser')
-  plt.show()  # Display the plot
+  plt.tight_layout()
+
+  plt.savefig('./requestPlots/totalNumberRequests_sameSubset.png')  
+  plt.close()
+
+def totalNumberRequests_sameSubset_PercentageChange(cursor):
+    cursor.execute('SELECT browser, count(websiteurl) from requestdata where visited_by_all_browsers = true group by browser')
+    results = cursor.fetchall()
+    df = pd.DataFrame(columns=['browser', 'totRequests'])
+
+    print("totalNumberRequests_sameSubset_PercentageChange")
+
+    for line in results:
+        browser = line[0].strip()
+        numRequests = line[1]
+        df = pd.concat([pd.DataFrame([[browser, numRequests]], columns=df.columns), df], ignore_index=True)
+
+   # Calculate the percentage change compared to Google Chrome
+    google_chrome_requests = df[df['browser'] == 'Google Chrome']['totRequests'].values[0]
+    df['percentage_change'] = ((df['totRequests'] / google_chrome_requests) - 1) * 100
+
+    # Remove the Google Chrome row from the DataFrame
+    df = df[df['browser'] != 'Google Chrome']
+
+    # Create bar graph
+    plt.figure("totalNumberRequests_sameSubset_PercentageChange")
+    plt.bar(df['browser'], df['percentage_change'])
+    plt.xticks(rotation=45)  # Rotates x-axis labels for better visibility
+    plt.xlabel('Browser')
+    plt.ylabel('Percentage Change compared to Google Chrome')
+    plt.title('Percentage Change of Total Requests per Browser compared to Google Chrome')
+    plt.tight_layout()
+
+    plt.savefig('./requestPlots/totalNumberRequests_sameSubset_PercentageChange.png')
+    plt.close()
+
+
 
 def showRequestDistribution_sameSubset(cursor):
   cursor.execute('SELECT browser, websiteurl, COUNT(*) AS total_requests FROM requestdata GROUP BY browser, websiteurl')
@@ -87,7 +125,8 @@ def showRequestDistribution_sameSubset(cursor):
   # Set the y-axis limit to 2500
   ax.set_ylim(0, 1000)
  
-  plt.show()
+  plt.savefig('./requestPlots/showRequestDistribution_sameSubset.png')  
+  plt.close()
   
 def totNumDistinctFrames_sameSubset(cursor):
   cursor.execute('SELECT browser, count(distinct(frameorigin)) from requestdata where visited_by_all_browsers = true group by browser')
@@ -104,7 +143,7 @@ def totNumDistinctFrames_sameSubset(cursor):
     print(f"{browser} has a total of {numDistinctFrames} distinct frames making requests in the subset of websites visited by every browser")
   
   # plot bar graph
-  plt.figure("bar graph")
+  plt.figure("totNumDistinctFrames_sameSubset")
   ax = plt.bar(df['browser'], df['numDistinctFrames'])  # Provide both x and y values
 
   plt.xticks(rotation=45)  # Rotate x-axis labels for better visibility
@@ -112,7 +151,8 @@ def totNumDistinctFrames_sameSubset(cursor):
   plt.ylabel('Number of Distinct Frames')
   plt.title('Total Number of Distinct Frames per Browser')
   plt.tight_layout()  # Improve spacing
-  plt.show()
+  plt.savefig('./requestPlots/totNumDistinctFrames_sameSubset.png')  
+  plt.close()
 
 def totNumDistinctUrls_sameSubset(cursor):
   cursor.execute('SELECT browser, count(distinct(requestedurl)) from requestdata where visited_by_all_browsers = true group by browser')
@@ -129,7 +169,7 @@ def totNumDistinctUrls_sameSubset(cursor):
     print(f"{browser} has a total of {numDistinctUrls} distinct urls being requested in the subset of websites visited by every browser")
   
   # plot bar graph
-  plt.figure("bar graph")
+  plt.figure("totNumDistinctUrls_sameSubset")
   ax = plt.bar(df['browser'], df['numDistinctUrls'])  # Provide both x and y values
 
   plt.xticks(rotation=45)  # Rotate x-axis labels for better visibility
@@ -137,7 +177,9 @@ def totNumDistinctUrls_sameSubset(cursor):
   plt.ylabel('Number of Distinct URLs')
   plt.title('Total Number of Distinct URLs per Browser')
   plt.tight_layout()  # Improve spacing
-  plt.show()
+
+  plt.savefig('./requestPlots/totNumDistinctUrls_sameSubset.png')  
+  plt.close()
 
 def main():
   dbConnection = psycopg2.connect("dbname=crawl01 user=postgres password=I@mastrongpsswd")
@@ -145,8 +187,11 @@ def main():
 
   # avgRequests(cursor) # runs
   # avgRequests_sameSubset(cursor) #runs 
+  
   # totalNumberRequests_sameSubset(cursor) #runs
-  showRequestDistribution_sameSubset(cursor)
+  totalNumberRequests_sameSubset_PercentageChange(cursor)
+  
+  # showRequestDistribution_sameSubset(cursor)
   # totNumDistinctFrames_sameSubset(cursor) #runs
   # totNumDistinctUrls_sameSubset(cursor) #runs
 
