@@ -1,0 +1,1592 @@
+Database connection established
+
+ (Firefox): (1) https://www.google.com
+   (Firefox) https://www.google.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.google.com
+**  (Firefox): TimeoutError -> https://www.google.com
+
+ (Firefox): (2) https://www.ondemand.com
+   (Firefox) https://www.ondemand.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ondemand.com
+**  (Firefox): Error visiting webpage -> https://www.ondemand.com (SSL_ERROR_BAD_CERT_DOMAIN at https://www.ondemand.com)
+
+ (Firefox): (3) https://www.gihc.net
+   (Firefox) https://www.gihc.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.gihc.net
+**  (Firefox): Error visiting webpage -> https://www.gihc.net (NS_ERROR_NET_INTERRUPT at https://www.gihc.net)
+
+ (Firefox): (4) https://www.apilayer.net
+   (Firefox) https://www.apilayer.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.apilayer.net
+   (Firefox) https://www.apilayer.net: Page loaded
+   (Firefox) https://www.apilayer.net: Getting Cookies
+   (Firefox) https://www.apilayer.net: Getting Localstorage
+   (Firefox) https://www.apilayer.net: Checking Cookie Banner
+The following words were found: [ 'accept', 'accept all', 'decline' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (5) https://www.privateemail.com
+   (Firefox) https://www.privateemail.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.privateemail.com
+**  (Firefox): Error visiting webpage -> https://www.privateemail.com (NS_ERROR_NET_RESET at https://www.privateemail.com)
+
+ (Firefox): (6) https://www.xycdn.com
+   (Firefox) https://www.xycdn.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.xycdn.com
+**  (Firefox): Error visiting webpage -> https://www.xycdn.com (NS_ERROR_UNKNOWN_HOST at https://www.xycdn.com)
+
+ (Firefox): (7) https://www.mumresults.in
+   (Firefox) https://www.mumresults.in: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.mumresults.in
+**  (Firefox): Error visiting webpage -> https://www.mumresults.in (NS_ERROR_NET_INTERRUPT at https://www.mumresults.in)
+
+ (Firefox): (8) https://www.ayo788.org
+   (Firefox) https://www.ayo788.org: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ayo788.org
+**  (Firefox): TimeoutError -> https://www.ayo788.org
+
+ (Firefox): (9) https://www.dtdc.in
+   (Firefox) https://www.dtdc.in: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.dtdc.in
+   (Firefox) https://www.dtdc.in: Page loaded
+   (Firefox) https://www.dtdc.in: Getting Cookies
+   (Firefox) https://www.dtdc.in: Getting Localstorage
+   (Firefox) https://www.dtdc.in: Checking Cookie Banner
+The following words were found: [ 'use cookies', 'uses cookies' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (10) https://www.webreus.net
+   (Firefox) https://www.webreus.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.webreus.net
+**  (Firefox): Error visiting webpage -> https://www.webreus.net (NS_ERROR_NET_INTERRUPT at https://www.webreus.net)
+
+ (Firefox): (11) https://www.expurgate.net
+   (Firefox) https://www.expurgate.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.expurgate.net
+**  (Firefox): Error visiting webpage -> https://www.expurgate.net (SSL_ERROR_BAD_CERT_DOMAIN at https://www.expurgate.net)
+
+ (Firefox): (12) https://www.nic.tv
+   (Firefox) https://www.nic.tv: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.nic.tv
+**  (Firefox): Error visiting webpage -> https://www.nic.tv (SSL_ERROR_BAD_CERT_DOMAIN at https://www.nic.tv)
+
+ (Firefox): (13) https://www.application-marketing.com
+   (Firefox) https://www.application-marketing.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.application-marketing.com
+**  (Firefox): Error visiting webpage -> https://www.application-marketing.com (SSL_ERROR_BAD_CERT_DOMAIN at https://www.application-marketing.com)
+
+ (Firefox): (14) https://www.tdnsv8.com
+   (Firefox) https://www.tdnsv8.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.tdnsv8.com
+**  (Firefox): Error visiting webpage -> https://www.tdnsv8.com (NS_ERROR_UNKNOWN_HOST at https://www.tdnsv8.com)
+
+ (Firefox): (15) https://www.animalsaroundtheglobe.com
+   (Firefox) https://www.animalsaroundtheglobe.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.animalsaroundtheglobe.com
+**  (Firefox): TimeoutError -> https://www.animalsaroundtheglobe.com
+
+ (Firefox): (16) https://www.aber.ac.uk
+   (Firefox) https://www.aber.ac.uk: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.aber.ac.uk
+   (Firefox) https://www.aber.ac.uk: Page loaded
+   (Firefox) https://www.aber.ac.uk: Getting Cookies
+   (Firefox) https://www.aber.ac.uk: Getting Localstorage
+   (Firefox) https://www.aber.ac.uk: Checking Cookie Banner
+The following words were found: [ 'use cookies', 'uses cookies' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (17) https://www.khruqc.com
+   (Firefox) https://www.khruqc.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.khruqc.com
+**  (Firefox): TimeoutError -> https://www.khruqc.com
+
+ (Firefox): (18) https://www.zeturf.fr
+   (Firefox) https://www.zeturf.fr: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.zeturf.fr
+   (Firefox) https://www.zeturf.fr: Page loaded
+   (Firefox) https://www.zeturf.fr: Getting Cookies
+   (Firefox) https://www.zeturf.fr: Getting Localstorage
+   (Firefox) https://www.zeturf.fr: Checking Cookie Banner
+The following words were found: [ 'use cookies', 'uses cookies' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (19) https://www.appice.io
+   (Firefox) https://www.appice.io: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.appice.io
+   (Firefox) https://www.appice.io: Page loaded
+   (Firefox) https://www.appice.io: Getting Cookies
+   (Firefox) https://www.appice.io: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.appice.io: Checking Cookie Banner
+The following words were found: [ 'accept', 'decline' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (20) https://www.tokyometro.jp
+   (Firefox) https://www.tokyometro.jp: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.tokyometro.jp
+   (Firefox) https://www.tokyometro.jp: Page loaded
+   (Firefox) https://www.tokyometro.jp: Getting Cookies
+   (Firefox) https://www.tokyometro.jp: Getting Localstorage
+   (Firefox) https://www.tokyometro.jp: Checking Cookie Banner
+The following words were found: [ 'use cookies', 'uses cookies' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (21) https://www.bpldns.net
+   (Firefox) https://www.bpldns.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.bpldns.net
+**  (Firefox): Error visiting webpage -> https://www.bpldns.net (NS_ERROR_UNKNOWN_HOST at https://www.bpldns.net)
+
+ (Firefox): (22) https://www.voroniny-online.pw
+   (Firefox) https://www.voroniny-online.pw: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.voroniny-online.pw
+**  (Firefox): Error visiting webpage -> https://www.voroniny-online.pw (NS_ERROR_UNKNOWN_HOST at https://www.voroniny-online.pw)
+
+ (Firefox): (23) https://www.classicindustries.com
+   (Firefox) https://www.classicindustries.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.classicindustries.com
+   (Firefox) https://www.classicindustries.com: Page loaded
+   (Firefox) https://www.classicindustries.com: Getting Cookies
+   (Firefox) https://www.classicindustries.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.classicindustries.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'decline' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (24) https://www.videowise.com
+   (Firefox) https://www.videowise.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.videowise.com
+   (Firefox) https://www.videowise.com: Page loaded
+   (Firefox) https://www.videowise.com: Getting Cookies
+   (Firefox) https://www.videowise.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.videowise.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'accept all', 'decline', 'uses cookies', 'cookie policy' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (25) https://www.inpi.gov.br
+   (Firefox) https://www.inpi.gov.br: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.inpi.gov.br
+**  (Firefox): Error visiting webpage -> https://www.inpi.gov.br (NS_ERROR_NET_INTERRUPT at https://www.inpi.gov.br)
+
+ (Firefox): (26) https://www.jwallet.link
+   (Firefox) https://www.jwallet.link: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.jwallet.link
+**  (Firefox): Error visiting webpage -> https://www.jwallet.link (NS_ERROR_UNKNOWN_HOST at https://www.jwallet.link)
+
+ (Firefox): (27) https://www.ifastnet.com
+   (Firefox) https://www.ifastnet.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ifastnet.com
+   (Firefox) https://www.ifastnet.com: Page loaded
+   (Firefox) https://www.ifastnet.com: Getting Cookies
+   (Firefox) https://www.ifastnet.com: Getting Localstorage
+   (Firefox) https://www.ifastnet.com: Checking Cookie Banner
+The following words were found: [ 'consent', 'uses cookies', 'agree' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (28) https://www.bl
+   (Firefox) https://www.bl: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.bl
+**  (Firefox): Error visiting webpage -> https://www.bl (NS_ERROR_UNKNOWN_HOST at https://www.bl)
+
+ (Firefox): (29) ogul-lui-atanase.ro
+   (Firefox) ogul-lui-atanase.ro: Getting Requests and Reponses
+   (Firefox) : Loading new page ogul-lui-atanase.ro
+**  (Firefox): ProtocolError visiting webpage -> ogul-lui-atanase.ro (Protocol error (Page.navigate): Error: Cannot navigate to invalid URL navigate@chrome://remote/content/cdp/domains/parent/Page.sys.mjs:93:13
+execute@chrome://remote/content/cdp/domains/DomainCache.sys.mjs:95:25
+execute@chrome://remote/content/cdp/sessions/Session.sys.mjs:59:25
+execute@chrome://remote/content/cdp/sessions/TabSession.sys.mjs:70:20
+onPacket@chrome://remote/content/cdp/CDPConnection.sys.mjs:251:36
+onMessage@chrome://remote/content/server/WebSocketTransport.sys.mjs:127:18
+handleEvent@chrome://remote/content/server/WebSocketTransport.sys.mjs:109:14
+)
+
+ (Firefox): (30) https://www.meta3s.com
+   (Firefox) https://www.meta3s.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.meta3s.com
+   (Firefox) https://www.meta3s.com: Page loaded
+   (Firefox) https://www.meta3s.com: Getting Cookies
+   (Firefox) https://www.meta3s.com: Getting Localstorage
+   (Firefox) https://www.meta3s.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (31) https://www.presspage.com
+   (Firefox) https://www.presspage.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.presspage.com
+   (Firefox) https://www.presspage.com: Page loaded
+   (Firefox) https://www.presspage.com: Getting Cookies
+   (Firefox) https://www.presspage.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.presspage.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'decline' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (32) https://www.webfinlandtestnumber1.com
+   (Firefox) https://www.webfinlandtestnumber1.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.webfinlandtestnumber1.com
+**  (Firefox): Error visiting webpage -> https://www.webfinlandtestnumber1.com (NS_ERROR_UNKNOWN_HOST at https://www.webfinlandtestnumber1.com)
+
+ (Firefox): (33) https://www.wcfbc.net
+   (Firefox) https://www.wcfbc.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.wcfbc.net
+**  (Firefox): Error visiting webpage -> https://www.wcfbc.net (NS_ERROR_UNKNOWN_HOST at https://www.wcfbc.net)
+
+ (Firefox): (34) https://www.deviceatlas.com
+   (Firefox) https://www.deviceatlas.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.deviceatlas.com
+   (Firefox) https://www.deviceatlas.com: Page loaded
+   (Firefox) https://www.deviceatlas.com: Getting Cookies
+   (Firefox) https://www.deviceatlas.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.deviceatlas.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'decline' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (35) https://www.sophi.io
+   (Firefox) https://www.sophi.io: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.sophi.io
+   (Firefox) https://www.sophi.io: Page loaded
+   (Firefox) https://www.sophi.io: Getting Cookies
+   (Firefox) https://www.sophi.io: Getting Localstorage
+   (Firefox) https://www.sophi.io: Checking Cookie Banner
+The following words were found: [ 'accept', 'consent', 'reject', 'decline', 'uses cookies' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (36) https://www.competitivecyclist.com
+   (Firefox) https://www.competitivecyclist.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.competitivecyclist.com
+   (Firefox) https://www.competitivecyclist.com: Page loaded
+   (Firefox) https://www.competitivecyclist.com: Getting Cookies
+   (Firefox) https://www.competitivecyclist.com: Getting Localstorage
+   (Firefox) https://www.competitivecyclist.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'accept cookies', 'consent', 'use cookies' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Firefox): (37) https://www.ayo788.
+   (Firefox) https://www.ayo788.: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ayo788.
+**  (Firefox): Error visiting webpage -> https://www.ayo788. (NS_ERROR_UNKNOWN_HOST at https://www.ayo788.)
+
+ (Firefox): (38) org
+   (Firefox) org: Getting Requests and Reponses
+   (Firefox) : Loading new page org
+**  (Firefox): ProtocolError visiting webpage -> org (Protocol error (Page.navigate): Error: Cannot navigate to invalid URL navigate@chrome://remote/content/cdp/domains/parent/Page.sys.mjs:93:13
+execute@chrome://remote/content/cdp/domains/DomainCache.sys.mjs:95:25
+execute@chrome://remote/content/cdp/sessions/Session.sys.mjs:59:25
+execute@chrome://remote/content/cdp/sessions/TabSession.sys.mjs:70:20
+onPacket@chrome://remote/content/cdp/CDPConnection.sys.mjs:251:36
+onMessage@chrome://remote/content/server/WebSocketTransport.sys.mjs:127:18
+handleEvent@chrome://remote/content/server/WebSocketTransport.sys.mjs:109:14
+)
+
+ (Firefox): (39) https://www.blogul-lui-atanase.ro
+   (Firefox) https://www.blogul-lui-atanase.ro: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.blogul-lui-atanase.ro
+**  (Firefox): TimeoutError -> https://www.blogul-lui-atanase.ro
+
+ (Firefox): (40) https://www.yakult.co.id
+   (Firefox) https://www.yakult.co.id: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.yakult.co.id
+**  (Firefox): TimeoutError -> https://www.yakult.co.id
+
+ (Firefox): (41) https://www.devex.com
+   (Firefox) https://www.devex.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.devex.com
+   (Firefox) https://www.devex.com: Page loaded
+   (Firefox) https://www.devex.com: Getting Cookies
+   (Firefox) https://www.devex.com: Getting Localstorage
+   (Firefox) https://www.devex.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (42) https://www.qweather.com
+   (Firefox) https://www.qweather.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.qweather.com
+   (Firefox) https://www.qweather.com: Page loaded
+   (Firefox) https://www.qweather.com: Getting Cookies
+   (Firefox) https://www.qweather.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.qweather.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,accept all), or less than 2 elements in subtree (1)).
+   (Firefox) https://www.qweather.com: Adding requests to DB
+   (Firefox) https://www.qweather.com: Adding to successful website
+
+ (Firefox): (43) https://www.duba.net
+   (Firefox) https://www.duba.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.duba.net
+**  (Firefox): TimeoutError -> https://www.duba.net
+
+ (Firefox): (44) https://www.krosno24.pl
+   (Firefox) https://www.krosno24.pl: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.krosno24.pl
+**  (Firefox): TimeoutError -> https://www.krosno24.pl
+
+ (Firefox): (45) https://www.unikrn.com
+   (Firefox) https://www.unikrn.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.unikrn.com
+**  (Firefox): TimeoutError -> https://www.unikrn.com
+
+ (Firefox): (46) https://www.vader.news
+   (Firefox) https://www.vader.news: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.vader.news
+**  (Firefox): TimeoutError -> https://www.vader.news
+
+ (Firefox): (47) https://www.nirvam.it
+   (Firefox) https://www.nirvam.it: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.nirvam.it
+   (Firefox) https://www.nirvam.it: Page loaded
+   (Firefox) https://www.nirvam.it: Getting Cookies
+   (Firefox) https://www.nirvam.it: Getting Localstorage
+   (Firefox) https://www.nirvam.it: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (48) https://www.195sports.com
+   (Firefox) https://www.195sports.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.195sports.com
+   (Firefox) https://www.195sports.com: Page loaded
+   (Firefox) https://www.195sports.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+   (Firefox) https://www.195sports.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.195sports.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (49) https://www.entrerios.gov.ar
+   (Firefox) https://www.entrerios.gov.ar: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.entrerios.gov.ar
+   (Firefox) https://www.entrerios.gov.ar: Page loaded
+   (Firefox) https://www.entrerios.gov.ar: Getting Cookies
+   (Firefox) https://www.entrerios.gov.ar: Getting Localstorage
+   (Firefox) https://www.entrerios.gov.ar: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.entrerios.gov.ar: Adding requests to DB
+   (Firefox) https://www.entrerios.gov.ar: Adding to successful website
+
+ (Firefox): (50) https://www.nextcity.org
+   (Firefox) https://www.nextcity.org: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.nextcity.org
+   (Firefox) https://www.nextcity.org: Page loaded
+   (Firefox) https://www.nextcity.org: Getting Cookies
+   (Firefox) https://www.nextcity.org: Getting Localstorage
+   (Firefox) https://www.nextcity.org: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.nextcity.org: Adding requests to DB
+   (Firefox) https://www.nextcity.org: Adding to successful website
+
+ (Firefox): (51) https://www.opintopolku.fi
+   (Firefox) https://www.opintopolku.fi: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.opintopolku.fi
+**  (Firefox): TimeoutError -> https://www.opintopolku.fi
+
+ (Firefox): (52) https://www.manabadi.co.in
+   (Firefox) https://www.manabadi.co.in: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.manabadi.co.in
+   (Firefox) https://www.manabadi.co.in: Page loaded
+   (Firefox) https://www.manabadi.co.in: Getting Cookies
+   (Firefox) https://www.manabadi.co.in: Getting Localstorage
+   (Firefox) https://www.manabadi.co.in: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.manabadi.co.in: Adding requests to DB
+   (Firefox) https://www.manabadi.co.in: Adding to successful website
+
+ (Firefox): (53) https://www.calmatters.org
+   (Firefox) https://www.calmatters.org: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.calmatters.org
+**  (Firefox): TimeoutError -> https://www.calmatters.org
+
+ (Firefox): (54) https://www.barbie.com
+   (Firefox) https://www.barbie.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.barbie.com
+   (Firefox) https://www.barbie.com: Page loaded
+   (Firefox) https://www.barbie.com: Getting Cookies
+   (Firefox) https://www.barbie.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.barbie.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'privacy statement' ]
+   (Firefox) https://www.barbie.com: Adding requests to DB
+   (Firefox) https://www.barbie.com: Adding to successful website
+
+ (Firefox): (55) https://www.drmax.sk
+   (Firefox) https://www.drmax.sk: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.drmax.sk
+**  (Firefox): TimeoutError -> https://www.drmax.sk
+
+ (Firefox): (56) https://www.zooart.com.pl
+   (Firefox) https://www.zooart.com.pl: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.zooart.com.pl
+**  (Firefox): TimeoutError -> https://www.zooart.com.pl
+
+ (Firefox): (57) https://www.lazlogistics.ph
+   (Firefox) https://www.lazlogistics.ph: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.lazlogistics.ph
+   (Firefox) https://www.lazlogistics.ph: Page loaded
+   (Firefox) https://www.lazlogistics.ph: Getting Cookies
+   (Firefox) https://www.lazlogistics.ph: Getting Localstorage
+   (Firefox) https://www.lazlogistics.ph: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.lazlogistics.ph: Adding requests to DB
+   (Firefox) https://www.lazlogistics.ph: Adding to successful website
+
+ (Firefox): (58) https://www.colunadofla.com
+   (Firefox) https://www.colunadofla.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.colunadofla.com
+   (Firefox) https://www.colunadofla.com: Page loaded
+   (Firefox) https://www.colunadofla.com: Getting Cookies
+   (Firefox) https://www.colunadofla.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.colunadofla.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (1)).
+   (Firefox) https://www.colunadofla.com: Adding requests to DB
+   (Firefox) https://www.colunadofla.com: Adding to successful website
+
+ (Firefox): (59) https://www.vlan.be
+   (Firefox) https://www.vlan.be: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.vlan.be
+   (Firefox) https://www.vlan.be: Page loaded
+   (Firefox) https://www.vlan.be: Getting Cookies
+   (Firefox) https://www.vlan.be: Getting Localstorage
+   (Firefox) https://www.vlan.be: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (0)).
+   (Firefox) https://www.vlan.be: Adding requests to DB
+   (Firefox) https://www.vlan.be: Adding to successful website
+
+ (Firefox): (60) https://www.medicoverhospitals.in
+   (Firefox) https://www.medicoverhospitals.in: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.medicoverhospitals.in
+   (Firefox) https://www.medicoverhospitals.in: Page loaded
+   (Firefox) https://www.medicoverhospitals.in: Getting Cookies
+   (Firefox) https://www.medicoverhospitals.in: Getting Localstorage
+   (Firefox) https://www.medicoverhospitals.in: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (uses cookies,cookie policy), or less than 2 elements in subtree (1)).
+   (Firefox) https://www.medicoverhospitals.in: Adding requests to DB
+   (Firefox) https://www.medicoverhospitals.in: Adding to successful website
+
+ (Firefox): (61) https://www.dlouha-videa.cz
+   (Firefox) https://www.dlouha-videa.cz: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.dlouha-videa.cz
+   (Firefox) https://www.dlouha-videa.cz: Page loaded
+   (Firefox) https://www.dlouha-videa.cz: Getting Cookies
+   (Firefox) https://www.dlouha-videa.cz: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.dlouha-videa.cz: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.dlouha-videa.cz: Adding requests to DB
+   (Firefox) https://www.dlouha-videa.cz: Adding to successful website
+
+ (Firefox): (62) https://www.erate.co.il
+   (Firefox) https://www.erate.co.il: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.erate.co.il
+**  (Firefox): TimeoutError -> https://www.erate.co.il
+
+ (Firefox): (63) https://www.ca
+   (Firefox) https://www.ca: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ca
+**  (Firefox): TimeoutError -> https://www.ca
+
+ (Firefox): (64) https://www.ballstep69.com
+   (Firefox) https://www.ballstep69.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ballstep69.com
+   (Firefox) https://www.ballstep69.com: Page loaded
+   (Firefox) https://www.ballstep69.com: Getting Cookies
+   (Firefox) https://www.ballstep69.com: Getting Localstorage
+   (Firefox) https://www.ballstep69.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.ballstep69.com: Adding requests to DB
+   (Firefox) https://www.ballstep69.com: Adding to successful website
+
+ (Firefox): (65) https://www.wedos.com
+   (Firefox) https://www.wedos.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.wedos.com
+**  (Firefox): TimeoutError -> https://www.wedos.com
+
+ (Firefox): (66) https://www.staugustine.com
+   (Firefox) https://www.staugustine.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.staugustine.com
+**  (Firefox): TimeoutError -> https://www.staugustine.com
+
+ (Firefox): (67) https://www.stratus.com.br
+   (Firefox) https://www.stratus.com.br: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.stratus.com.br
+   (Firefox) https://www.stratus.com.br: Page loaded
+   (Firefox) https://www.stratus.com.br: Getting Cookies
+   (Firefox) https://www.stratus.com.br: Getting Localstorage
+   (Firefox) https://www.stratus.com.br: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.stratus.com.br: Adding requests to DB
+   (Firefox) https://www.stratus.com.br: Adding to successful website
+
+ (Firefox): (68) https://www.wienerlinien.at
+   (Firefox) https://www.wienerlinien.at: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.wienerlinien.at
+   (Firefox) https://www.wienerlinien.at: Page loaded
+   (Firefox) https://www.wienerlinien.at: Getting Cookies
+   (Firefox) https://www.wienerlinien.at: Getting Localstorage
+   (Firefox) https://www.wienerlinien.at: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (0)).
+   (Firefox) https://www.wienerlinien.at: Adding requests to DB
+   (Firefox) https://www.wienerlinien.at: Adding to successful website
+
+ (Firefox): (69) https://www.patientsknowbest.com
+   (Firefox) https://www.patientsknowbest.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.patientsknowbest.com
+   (Firefox) https://www.patientsknowbest.com: Page loaded
+   (Firefox) https://www.patientsknowbest.com: Getting Cookies
+   (Firefox) https://www.patientsknowbest.com: Getting Localstorage
+   (Firefox) https://www.patientsknowbest.com: Checking Cookie Banner
+The following words were found: [
+  'accept',
+  'accept all',
+  'consent',
+  'reject',
+  'reject all',
+  'use cookies'
+]
+Error accessing element handle's visibility -- id
+   (Firefox) https://www.patientsknowbest.com: Adding requests to DB
+   (Firefox) https://www.patientsknowbest.com: Adding to successful website
+
+ (Firefox): (70) https://www.thrillshare.com
+   (Firefox) https://www.thrillshare.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.thrillshare.com
+   (Firefox) https://www.thrillshare.com: Page loaded
+   (Firefox) https://www.thrillshare.com: Getting Cookies
+   (Firefox) https://www.thrillshare.com: Getting Localstorage
+   (Firefox) https://www.thrillshare.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.thrillshare.com: Adding requests to DB
+   (Firefox) https://www.thrillshare.com: Adding to successful website
+
+ (Firefox): (71) https://www.idm.net.lb
+   (Firefox) https://www.idm.net.lb: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.idm.net.lb
+   (Firefox) https://www.idm.net.lb: Page loaded
+   (Firefox) https://www.idm.net.lb: Getting Cookies
+   (Firefox) https://www.idm.net.lb: Getting Localstorage
+   (Firefox) https://www.idm.net.lb: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.idm.net.lb: Adding requests to DB
+   (Firefox) https://www.idm.net.lb: Adding to successful website
+
+ (Firefox): (72) https://www.sfweekly.com
+   (Firefox) https://www.sfweekly.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.sfweekly.com
+   (Firefox) https://www.sfweekly.com: Page loaded
+   (Firefox) https://www.sfweekly.com: Getting Cookies
+   (Firefox) https://www.sfweekly.com: Getting Localstorage
+   (Firefox) https://www.sfweekly.com: Checking Cookie Banner
+The following words were found: [ 'reject', 'reject all', 'accept', 'accept all' ]
+   (Firefox) https://www.sfweekly.com: Adding requests to DB
+   (Firefox) https://www.sfweekly.com: Adding to successful website
+
+ (Firefox): (73) https://www.restplatzboerse.at
+   (Firefox) https://www.restplatzboerse.at: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.restplatzboerse.at
+**  (Firefox): TimeoutError -> https://www.restplatzboerse.at
+
+ (Firefox): (74) https://www.netlify.com
+   (Firefox) https://www.netlify.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.netlify.com
+**  (Firefox): TimeoutError -> https://www.netlify.com
+
+ (Firefox): (75) https://www.gamingbible.com
+   (Firefox) https://www.gamingbible.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.gamingbible.com
+**  (Firefox): TimeoutError -> https://www.gamingbible.com
+
+ (Firefox): (76) https://www.hitv.com
+   (Firefox) https://www.hitv.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.hitv.com
+   (Firefox) https://www.hitv.com: Page loaded
+   (Firefox) https://www.hitv.com: Getting Cookies
+   (Firefox) https://www.hitv.com: Getting Localstorage
+   (Firefox) https://www.hitv.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (1)).
+   (Firefox) https://www.hitv.com: Adding requests to DB
+   (Firefox) https://www.hitv.com: Adding to successful website
+
+ (Firefox): (77) https://www.hermanodeleche.com
+   (Firefox) https://www.hermanodeleche.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.hermanodeleche.com
+**  (Firefox): TimeoutError -> https://www.hermanodeleche.com
+
+ (Firefox): (78) https://www.lg.co.kr
+   (Firefox) https://www.lg.co.kr: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.lg.co.kr
+**  (Firefox): TimeoutError -> https://www.lg.co.kr
+
+ (Firefox): (79) https://www.obi.pl
+   (Firefox) https://www.obi.pl: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.obi.pl
+**  (Firefox): TimeoutError -> https://www.obi.pl
+
+ (Firefox): (80) https://www.vl3x.net
+   (Firefox) https://www.vl3x.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.vl3x.net
+   (Firefox) https://www.vl3x.net: Page loaded
+   (Firefox) https://www.vl3x.net: Getting Cookies
+   (Firefox) https://www.vl3x.net: Getting Localstorage
+   (Firefox) https://www.vl3x.net: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.vl3x.net: Adding requests to DB
+   (Firefox) https://www.vl3x.net: Adding to successful website
+
+ (Firefox): (81) https://www.cnca.gov.cn
+   (Firefox) https://www.cnca.gov.cn: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.cnca.gov.cn
+   (Firefox) https://www.cnca.gov.cn: Page loaded
+   (Firefox) https://www.cnca.gov.cn: Getting Cookies
+   (Firefox) https://www.cnca.gov.cn: Getting Localstorage
+   (Firefox) https://www.cnca.gov.cn: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.cnca.gov.cn: Adding requests to DB
+   (Firefox) https://www.cnca.gov.cn: Adding to successful website
+
+ (Firefox): (82) https://www.eurasiareview.com
+   (Firefox) https://www.eurasiareview.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.eurasiareview.com
+**  (Firefox): TimeoutError -> https://www.eurasiareview.com
+
+ (Firefox): (83) https://www.smarter.com
+   (Firefox) https://www.smarter.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.smarter.com
+**  (Firefox): TimeoutError -> https://www.smarter.com
+
+ (Firefox): (84) https://www.sbp.org.pk
+   (Firefox) https://www.sbp.org.pk: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.sbp.org.pk
+   (Firefox) https://www.sbp.org.pk: Page loaded
+   (Firefox) https://www.sbp.org.pk: Getting Cookies
+   (Firefox) https://www.sbp.org.pk: Getting Localstorage
+   (Firefox) https://www.sbp.org.pk: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.sbp.org.pk: Adding requests to DB
+   (Firefox) https://www.sbp.org.pk: Adding to successful website
+
+ (Firefox): (85) https://www.sudbury.com
+   (Firefox) https://www.sudbury.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.sudbury.com
+**  (Firefox): TimeoutError -> https://www.sudbury.com
+
+ (Firefox): (86) https://www.housedigest.com
+   (Firefox) https://www.housedigest.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.housedigest.com
+**  (Firefox): TimeoutError -> https://www.housedigest.com
+
+ (Firefox): (87) https://www.puma.com
+   (Firefox) https://www.puma.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.puma.com
+   (Firefox) https://www.puma.com: Page loaded
+   (Firefox) https://www.puma.com: Getting Cookies
+   (Firefox) https://www.puma.com: Getting Localstorage
+   (Firefox) https://www.puma.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,accept,accept cookies,consent,manage cookies,more information,use cookies), or less than 2 elements in subtree (1)).
+   (Firefox) https://www.puma.com: Adding requests to DB
+   (Firefox) https://www.puma.com: Adding to successful website
+
+ (Firefox): (88) https://www.heraldcorp.com
+   (Firefox) https://www.heraldcorp.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.heraldcorp.com
+**  (Firefox): TimeoutError -> https://www.heraldcorp.com
+
+ (Firefox): (89) https://www.imbagacorx.com
+   (Firefox) https://www.imbagacorx.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.imbagacorx.com
+**  (Firefox): TimeoutError -> https://www.imbagacorx.com
+
+ (Firefox): (90) https://www.ge.movie
+   (Firefox) https://www.ge.movie: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ge.movie
+   (Firefox) https://www.ge.movie: Page loaded
+   (Firefox) https://www.ge.movie: Getting Cookies
+   (Firefox) https://www.ge.movie: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.ge.movie: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.ge.movie: Adding requests to DB
+   (Firefox) https://www.ge.movie: Adding to successful website
+
+ (Firefox): (91) https://www.undana.ac.id
+   (Firefox) https://www.undana.ac.id: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.undana.ac.id
+   (Firefox) https://www.undana.ac.id: Page loaded
+   (Firefox) https://www.undana.ac.id: Getting Cookies
+   (Firefox) https://www.undana.ac.id: Getting Localstorage
+   (Firefox) https://www.undana.ac.id: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.undana.ac.id: Adding requests to DB
+   (Firefox) https://www.undana.ac.id: Adding to successful website
+
+ (Firefox): (92) https://www.decathlon.cz
+   (Firefox) https://www.decathlon.cz: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.decathlon.cz
+**  (Firefox): TimeoutError -> https://www.decathlon.cz
+
+ (Firefox): (93) https://www.rotogrinders.com
+   (Firefox) https://www.rotogrinders.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.rotogrinders.com
+**  (Firefox): TimeoutError -> https://www.rotogrinders.com
+
+ (Firefox): (94) https://www.hayu.com
+   (Firefox) https://www.hayu.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.hayu.com
+   (Firefox) https://www.hayu.com: Page loaded
+   (Firefox) https://www.hayu.com: Getting Cookies
+   (Firefox) https://www.hayu.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.hayu.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (95) https://www.bnmuumis.in
+   (Firefox) https://www.bnmuumis.in: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.bnmuumis.in
+   (Firefox) https://www.bnmuumis.in: Page loaded
+   (Firefox) https://www.bnmuumis.in: Getting Cookies
+   (Firefox) https://www.bnmuumis.in: Getting Localstorage
+   (Firefox) https://www.bnmuumis.in: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.bnmuumis.in: Adding requests to DB
+   (Firefox) https://www.bnmuumis.in: Adding to successful website
+
+ (Firefox): (96) https://www.bonanzasatrangi.com
+   (Firefox) https://www.bonanzasatrangi.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.bonanzasatrangi.com
+   (Firefox) https://www.bonanzasatrangi.com: Page loaded
+   (Firefox) https://www.bonanzasatrangi.com: Getting Cookies
+   (Firefox) https://www.bonanzasatrangi.com: Getting Localstorage
+   (Firefox) https://www.bonanzasatrangi.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.bonanzasatrangi.com: Adding requests to DB
+   (Firefox) https://www.bonanzasatrangi.com: Adding to successful website
+
+ (Firefox): (97) https://www.corcoran.com
+   (Firefox) https://www.corcoran.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.corcoran.com
+**  (Firefox): TimeoutError -> https://www.corcoran.com
+
+ (Firefox): (98) https://www.monden.ro
+   (Firefox) https://www.monden.ro: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.monden.ro
+**  (Firefox): TimeoutError -> https://www.monden.ro
+
+ (Firefox): (99) https://www.thehansindia.com
+   (Firefox) https://www.thehansindia.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.thehansindia.com
+**  (Firefox): TimeoutError -> https://www.thehansindia.com
+
+ (Firefox): (100) https://www.qikify.com
+   (Firefox) https://www.qikify.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.qikify.com
+   (Firefox) https://www.qikify.com: Page loaded
+   (Firefox) https://www.qikify.com: Getting Cookies
+   (Firefox) https://www.qikify.com: Getting Localstorage
+   (Firefox) https://www.qikify.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.qikify.com: Adding requests to DB
+   (Firefox) https://www.qikify.com: Adding to successful website
+
+ (Firefox): (101) https://www.davita.com
+   (Firefox) https://www.davita.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.davita.com
+**  (Firefox): TimeoutError -> https://www.davita.com
+
+ (Firefox): (102) https://www.niu.com
+   (Firefox) https://www.niu.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.niu.com
+**  (Firefox): TimeoutError -> https://www.niu.com
+
+ (Firefox): (103) https://www.zaius.com
+   (Firefox) https://www.zaius.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.zaius.com
+   (Firefox) https://www.zaius.com: Page loaded
+   (Firefox) https://www.zaius.com: Getting Cookies
+   (Firefox) https://www.zaius.com: Getting Localstorage
+   (Firefox) https://www.zaius.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (reject,reject all), or less than 2 elements in subtree (1)).
+   (Firefox) https://www.zaius.com: Adding requests to DB
+   (Firefox) https://www.zaius.com: Adding to successful website
+
+ (Firefox): (104) https://www.hnzyy.net
+   (Firefox) https://www.hnzyy.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.hnzyy.net
+   (Firefox) https://www.hnzyy.net: Page loaded
+   (Firefox) https://www.hnzyy.net: Getting Cookies
+   (Firefox) https://www.hnzyy.net: Getting Localstorage
+   (Firefox) https://www.hnzyy.net: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.hnzyy.net: Adding requests to DB
+   (Firefox) https://www.hnzyy.net: Adding to successful website
+
+ (Firefox): (105) https://www.invoicehome.com
+   (Firefox) https://www.invoicehome.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.invoicehome.com
+   (Firefox) https://www.invoicehome.com: Page loaded
+   (Firefox) https://www.invoicehome.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Firefox) https://www.invoicehome.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.invoicehome.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (106) https://www.senate.gov
+   (Firefox) https://www.senate.gov: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.senate.gov
+   (Firefox) https://www.senate.gov: Page loaded
+   (Firefox) https://www.senate.gov: Getting Cookies
+   (Firefox) https://www.senate.gov: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.senate.gov: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.senate.gov: Adding requests to DB
+   (Firefox) https://www.senate.gov: Adding to successful website
+
+ (Firefox): (107) https://www.acmepackingcompany.com
+   (Firefox) https://www.acmepackingcompany.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.acmepackingcompany.com
+   (Firefox) https://www.acmepackingcompany.com: Page loaded
+   (Firefox) https://www.acmepackingcompany.com: Getting Cookies
+   (Firefox) https://www.acmepackingcompany.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.acmepackingcompany.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'consent', 'use cookies' ]
+Error accessing element handle's visibility -- id
+   (Firefox) https://www.acmepackingcompany.com: Adding requests to DB
+   (Firefox) https://www.acmepackingcompany.com: Adding to successful website
+
+ (Firefox): (108) https://www.office.com
+   (Firefox) https://www.office.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.office.com
+   (Firefox) https://www.office.com: Page loaded
+   (Firefox) https://www.office.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Firefox) https://www.office.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.office.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (109) https://www.bing.com
+   (Firefox) https://www.bing.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.bing.com
+   (Firefox) https://www.bing.com: Page loaded
+   (Firefox) https://www.bing.com: Getting Cookies
+   (Firefox) https://www.bing.com: Getting Localstorage
+   (Firefox) https://www.bing.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (110) https://www.sberdevices.ru
+   (Firefox) https://www.sberdevices.ru: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.sberdevices.ru
+   (Firefox) https://www.sberdevices.ru: Page loaded
+   (Firefox) https://www.sberdevices.ru: Getting Cookies
+   (Firefox) https://www.sberdevices.ru: Getting Localstorage
+   (Firefox) https://www.sberdevices.ru: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (111) https://www.reg.ru
+   (Firefox) https://www.reg.ru: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.reg.ru
+**  (Firefox): TimeoutError -> https://www.reg.ru
+
+ (Firefox): (112) https://www.godaddy.com
+   (Firefox) https://www.godaddy.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.godaddy.com
+   (Firefox) https://www.godaddy.com: Page loaded
+   (Firefox) https://www.godaddy.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+   (Firefox) https://www.godaddy.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (113) https://www.statista.com
+   (Firefox) https://www.statista.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.statista.com
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.godaddy.com: Checking Cookie Banner
+   (Firefox) https://www.statista.com: Page loaded
+   (Firefox) https://www.statista.com: Getting Cookies
+   (Firefox) https://www.statista.com: Getting Localstorage
+ProtocolError: Protocol error (Runtime.callFunctionOn): this.mm is null executeInChild/<@chrome://remote/content/cdp/sessions/TabSession.sys.mjs:81:7
+executeInChild@chrome://remote/content/cdp/sessions/TabSession.sys.mjs:76:12
+execute@chrome://remote/content/cdp/sessions/TabSession.sys.mjs:72:17
+onPacket@chrome://remote/content/cdp/CDPConnection.sys.mjs:251:36
+onMessage@chrome://remote/content/server/WebSocketTransport.sys.mjs:127:18
+handleEvent@chrome://remote/content/server/WebSocketTransport.sys.mjs:109:14
+
+    at new Callback (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:59:35)
+    at CallbackRegistry.create (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:104:26)
+    at Connection._rawSend (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:219:26)
+    at CDPSessionImpl.send (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/Connection.js:426:78)
+    at ExecutionContext._ExecutionContext_evaluate (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/ExecutionContext.js:240:46)
+    at async ExecutionContext.evaluate (file:///Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer-core/lib/esm/puppeteer/common/ExecutionContext.js:142:16)
+    at async ALLINONE (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:14:23)
+    at async findBannerFrameRecursive (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:261:33)
+    at async accessAllFrames (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:288:10)
+    at async allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:295:19)
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.statista.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'accept', 'privacy statement', 'accept all' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+   (Firefox) https://www.statista.com: Adding requests to DB
+   (Firefox) https://www.statista.com: Adding to successful website
+
+ (Firefox): (114) https://www.ted.com
+   (Firefox) https://www.ted.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ted.com
+   (Firefox) https://www.ted.com: Page loaded
+   (Firefox) https://www.ted.com: Getting Cookies
+   (Firefox) https://www.ted.com: Getting Localstorage
+   (Firefox) https://www.ted.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (1)).
+   (Firefox) https://www.ted.com: Adding requests to DB
+   (Firefox) https://www.ted.com: Adding to successful website
+
+ (Firefox): (115) https://www.nvidia.com
+   (Firefox) https://www.nvidia.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.nvidia.com
+**  (Firefox): TimeoutError -> https://www.nvidia.com
+
+ (Firefox): (116) https://www.target.com
+   (Firefox) https://www.target.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.target.com
+**  (Firefox): TimeoutError -> https://www.target.com
+
+ (Firefox): (117) https://www.warnerbros.com
+   (Firefox) https://www.warnerbros.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.warnerbros.com
+   (Firefox) https://www.warnerbros.com: Page loaded
+   (Firefox) https://www.warnerbros.com: Getting Cookies
+   (Firefox) https://www.warnerbros.com: Getting Localstorage
+   (Firefox) https://www.warnerbros.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (118) https://www.lenovo.com
+   (Firefox) https://www.lenovo.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.lenovo.com
+**  (Firefox): TimeoutError -> https://www.lenovo.com
+
+ (Firefox): (119) https://www.docker.com
+   (Firefox) https://www.docker.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.docker.com
+   (Firefox) https://www.docker.com: Page loaded
+   (Firefox) https://www.docker.com: Getting Cookies
+   (Firefox) https://www.docker.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.docker.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (120) https://www.amazon.in
+   (Firefox) https://www.amazon.in: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.amazon.in
+   (Firefox) https://www.amazon.in: Page loaded
+   (Firefox) https://www.amazon.in: Getting Cookies
+   (Firefox) https://www.amazon.in: Getting Localstorage
+   (Firefox) https://www.amazon.in: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (121) https://www.stackstorage.com
+   (Firefox) https://www.stackstorage.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.stackstorage.com
+   (Firefox) https://www.stackstorage.com: Page loaded
+   (Firefox) https://www.stackstorage.com: Getting Cookies
+   (Firefox) https://www.stackstorage.com: Getting Localstorage
+   (Firefox) https://www.stackstorage.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (122) https://www.amazon.es
+   (Firefox) https://www.amazon.es: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.amazon.es
+   (Firefox) https://www.amazon.es: Page loaded
+   (Firefox) https://www.amazon.es: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Firefox) https://www.amazon.es: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.amazon.es: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (123) https://www.exacttarget.com
+   (Firefox) https://www.exacttarget.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.exacttarget.com
+   (Firefox) https://www.exacttarget.com: Page loaded
+   (Firefox) https://www.exacttarget.com: Getting Cookies
+   (Firefox) https://www.exacttarget.com: Getting Localstorage
+   (Firefox) https://www.exacttarget.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.exacttarget.com: Adding requests to DB
+   (Firefox) https://www.exacttarget.com: Adding to successful website
+
+ (Firefox): (124) https://www.fastpng.com
+   (Firefox) https://www.fastpng.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.fastpng.com
+   (Firefox) https://www.fastpng.com: Page loaded
+   (Firefox) https://www.fastpng.com: Getting Cookies
+   (Firefox) https://www.fastpng.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.fastpng.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (125) https://www.gene.com
+   (Firefox) https://www.gene.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.gene.com
+**  (Firefox): TimeoutError -> https://www.gene.com
+
+ (Firefox): (126) https://www.hbo.com
+   (Firefox) https://www.hbo.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.hbo.com
+   (Firefox) https://www.hbo.com: Page loaded
+   (Firefox) https://www.hbo.com: Getting Cookies
+   (Firefox) https://www.hbo.com: Getting Localstorage
+   (Firefox) https://www.hbo.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (127) https://www.ebay.de
+   (Firefox) https://www.ebay.de: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ebay.de
+   (Firefox) https://www.ebay.de: Page loaded
+   (Firefox) https://www.ebay.de: Getting Cookies
+   (Firefox) https://www.ebay.de: Getting Localstorage
+   (Firefox) https://www.ebay.de: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (128) https://www.redfin.com
+   (Firefox) https://www.redfin.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.redfin.com
+**  (Firefox): TimeoutError -> https://www.redfin.com
+
+ (Firefox): (129) https://www.cox.net
+   (Firefox) https://www.cox.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.cox.net
+**  (Firefox): TimeoutError -> https://www.cox.net
+
+ (Firefox): (130) https://www.bottegaveneta.com
+   (Firefox) https://www.bottegaveneta.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.bottegaveneta.com
+**  (Firefox): TimeoutError -> https://www.bottegaveneta.com
+
+ (Firefox): (131) https://www.idfarm.co.kr
+   (Firefox) https://www.idfarm.co.kr: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.idfarm.co.kr
+   (Firefox) https://www.idfarm.co.kr: Page loaded
+   (Firefox) https://www.idfarm.co.kr: Getting Cookies
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+   (Firefox) https://www.idfarm.co.kr: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.idfarm.co.kr: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (132) https://www.upstream.to
+   (Firefox) https://www.upstream.to: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.upstream.to
+**  (Firefox): TimeoutError -> https://www.upstream.to
+
+ (Firefox): (133) https://www.geoguessr.com
+   (Firefox) https://www.geoguessr.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.geoguessr.com
+   (Firefox) https://www.geoguessr.com: Page loaded
+   (Firefox) https://www.geoguessr.com: Getting Cookies
+   (Firefox) https://www.geoguessr.com: Getting Localstorage
+   (Firefox) https://www.geoguessr.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (134) https://www.paradoxwikis.com
+   (Firefox) https://www.paradoxwikis.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.paradoxwikis.com
+   (Firefox) https://www.paradoxwikis.com: Page loaded
+   (Firefox) https://www.paradoxwikis.com: Getting Cookies
+   (Firefox) https://www.paradoxwikis.com: Getting Localstorage
+   (Firefox) https://www.paradoxwikis.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (135) https://www.doctruyen3qtv.net
+   (Firefox) https://www.doctruyen3qtv.net: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.doctruyen3qtv.net
+**  (Firefox): TimeoutError -> https://www.doctruyen3qtv.net
+
+ (Firefox): (136) https://www.lingvanex.com
+   (Firefox) https://www.lingvanex.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.lingvanex.com
+   (Firefox) https://www.lingvanex.com: Page loaded
+   (Firefox) https://www.lingvanex.com: Getting Cookies
+   (Firefox) https://www.lingvanex.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.lingvanex.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,accept all,consent,reject,reject all,use cookies), or less than 2 elements in subtree (1)).
+   (Firefox) https://www.lingvanex.com: Adding requests to DB
+   (Firefox) https://www.lingvanex.com: Adding to successful website
+
+ (Firefox): (137) https://www.sexdeptv.pro
+   (Firefox) https://www.sexdeptv.pro: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.sexdeptv.pro
+   (Firefox) https://www.sexdeptv.pro: Page loaded
+   (Firefox) https://www.sexdeptv.pro: Getting Cookies
+   (Firefox) https://www.sexdeptv.pro: Getting Localstorage
+   (Firefox) https://www.sexdeptv.pro: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Firefox) https://www.sexdeptv.pro: Adding requests to DB
+   (Firefox) https://www.sexdeptv.pro: Adding to successful website
+
+ (Firefox): (138) https://www.newshinditv.com
+   (Firefox) https://www.newshinditv.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.newshinditv.com
+**  (Firefox): TimeoutError -> https://www.newshinditv.com
+
+ (Firefox): (139) https://www.zakon.ru
+   (Firefox) https://www.zakon.ru: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.zakon.ru
+**  (Firefox): TimeoutError -> https://www.zakon.ru
+
+ (Firefox): (140) https://www.biblehub.com
+   (Firefox) https://www.biblehub.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.biblehub.com
+   (Firefox) https://www.biblehub.com: Page loaded
+   (Firefox) https://www.biblehub.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Firefox) https://www.biblehub.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.biblehub.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (141) https://www.ajakteman.com
+   (Firefox) https://www.ajakteman.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.ajakteman.com
+   (Firefox) https://www.ajakteman.com: Page loaded
+   (Firefox) https://www.ajakteman.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Firefox) https://www.ajakteman.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.ajakteman.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (142) https://www.vetstreet.com
+   (Firefox) https://www.vetstreet.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.vetstreet.com
+   (Firefox) https://www.vetstreet.com: Page loaded
+   (Firefox) https://www.vetstreet.com: Getting Cookies
+   (Firefox) https://www.vetstreet.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.vetstreet.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (143) https://www.rssing.com
+   (Firefox) https://www.rssing.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.rssing.com
+**  (Firefox): TimeoutError -> https://www.rssing.com
+
+ (Firefox): (144) https://www.msf-usa.org
+   (Firefox) https://www.msf-usa.org: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.msf-usa.org
+   (Firefox) https://www.msf-usa.org: Page loaded
+   (Firefox) https://www.msf-usa.org: Getting Cookies
+   (Firefox) https://www.msf-usa.org: Getting Localstorage
+   (Firefox) https://www.msf-usa.org: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (145) https://www.sita.sk
+   (Firefox) https://www.sita.sk: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.sita.sk
+**  (Firefox): TimeoutError -> https://www.sita.sk
+
+ (Firefox): (146) https://www.4khd.com
+   (Firefox) https://www.4khd.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.4khd.com
+**  (Firefox): TimeoutError -> https://www.4khd.com
+
+ (Firefox): (147) https://www.eo.nl
+   (Firefox) https://www.eo.nl: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.eo.nl
+**  (Firefox): TimeoutError -> https://www.eo.nl
+
+ (Firefox): (148) https://www.iclasspro.com
+   (Firefox) https://www.iclasspro.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.iclasspro.com
+**  (Firefox): TimeoutError -> https://www.iclasspro.com
+
+ (Firefox): (149) https://www.psurectt.in
+   (Firefox) https://www.psurectt.in: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.psurectt.in
+   (Firefox) https://www.psurectt.in: Page loaded
+   (Firefox) https://www.psurectt.in: Getting Cookies
+   (Firefox) https://www.psurectt.in: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.psurectt.in: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (150) https://www.dailypotrika.xyz
+   (Firefox) https://www.dailypotrika.xyz: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.dailypotrika.xyz
+   (Firefox) https://www.dailypotrika.xyz: Page loaded
+   (Firefox) https://www.dailypotrika.xyz: Getting Cookies
+   (Firefox) https://www.dailypotrika.xyz: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Firefox) https://www.dailypotrika.xyz: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Firefox): (151) https://www.thechopal.com
+   (Firefox) https://www.thechopal.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.thechopal.com
+**  (Firefox): TimeoutError -> https://www.thechopal.com
+
+ (Firefox): (152) https://www.qyer.com
+   (Firefox) https://www.qyer.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.qyer.com
+**  (Firefox): TimeoutError -> https://www.qyer.com
+
+ (Firefox): (153) https://www.trtworld.com
+   (Firefox) https://www.trtworld.com: Getting Requests and Reponses
+   (Firefox) : Loading new page https://www.trtworld.com
+**  (Firefox): TimeoutError -> https://www.trtworld.com
+Database connection disconnected

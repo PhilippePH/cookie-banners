@@ -1,0 +1,1848 @@
+Database connection established
+
+ (Google Chrome): (1) https://www.google.com
+   (Google Chrome) https://www.google.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.google.com
+   (Google Chrome) https://www.google.com: Page loaded
+   (Google Chrome) https://www.google.com: Getting Cookies
+   (Google Chrome) https://www.google.com: Getting Localstorage
+   (Google Chrome) https://www.google.com: Checking Cookie Banner
+The following words were found: [ 'reject', 'reject all', 'accept', 'accept all' ]
+   (Google Chrome) https://www.google.com: Adding requests to DB
+   (Google Chrome) https://www.google.com: Adding to successful website
+
+ (Google Chrome): (2) https://www.nurse.com
+   (Google Chrome) https://www.nurse.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.nurse.com
+   (Google Chrome) https://www.nurse.com: Page loaded
+   (Google Chrome) https://www.nurse.com: Getting Cookies
+   (Google Chrome) https://www.nurse.com: Getting Localstorage
+   (Google Chrome) https://www.nurse.com: Checking Cookie Banner
+The following words were found: [ 'use cookies', 'uses cookies' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Google Chrome): (3) https://www.myip.top
+   (Google Chrome) https://www.myip.top: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.myip.top
+**  (Google Chrome): Error visiting webpage -> https://www.myip.top (net::ERR_CONNECTION_REFUSED at https://www.myip.top)
+
+ (Google Chrome): (4) https://www.kaluga.su
+   (Google Chrome) https://www.kaluga.su: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.kaluga.su
+**  (Google Chrome): Error visiting webpage -> https://www.kaluga.su (net::ERR_CONNECTION_REFUSED at https://www.kaluga.su)
+
+ (Google Chrome): (5) https://www.xycdn.com
+   (Google Chrome) https://www.xycdn.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.xycdn.com
+**  (Google Chrome): Error visiting webpage -> https://www.xycdn.com (net::ERR_NAME_NOT_RESOLVED at https://www.xycdn.com)
+
+ (Google Chrome): (6) https://www.benevity.org
+   (Google Chrome) https://www.benevity.org: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.benevity.org
+**  (Google Chrome): Error visiting webpage -> https://www.benevity.org (net::ERR_CONNECTION_CLOSED at https://www.benevity.org)
+
+ (Google Chrome): (7) https://www.dewucdn.com
+   (Google Chrome) https://www.dewucdn.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.dewucdn.com
+**  (Google Chrome): Error visiting webpage -> https://www.dewucdn.com (net::ERR_CONNECTION_REFUSED at https://www.dewucdn.com)
+
+ (Google Chrome): (8) https://www.segodnya.ua
+   (Google Chrome) https://www.segodnya.ua: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.segodnya.ua
+   (Google Chrome) https://www.segodnya.ua: Page loaded
+   (Google Chrome) https://www.segodnya.ua: Getting Cookies
+   (Google Chrome) https://www.segodnya.ua: Getting Localstorage
+   (Google Chrome) https://www.segodnya.ua: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.segodnya.ua: Adding requests to DB
+   (Google Chrome) https://www.segodnya.ua: Adding to successful website
+
+ (Google Chrome): (9) https://www.crystalmark.info
+   (Google Chrome) https://www.crystalmark.info: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.crystalmark.info
+   (Google Chrome) https://www.crystalmark.info: Page loaded
+   (Google Chrome) https://www.crystalmark.info: Getting Cookies
+   (Google Chrome) https://www.crystalmark.info: Getting Localstorage
+   (Google Chrome) https://www.crystalmark.info: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Google Chrome) https://www.crystalmark.info: Adding requests to DB
+   (Google Chrome) https://www.crystalmark.info: Adding to successful website
+
+ (Google Chrome): (10) https://www.moneymetals.com
+   (Google Chrome) https://www.moneymetals.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.moneymetals.com
+   (Google Chrome) https://www.moneymetals.com: Page loaded
+   (Google Chrome) https://www.moneymetals.com: Getting Cookies
+   (Google Chrome) https://www.moneymetals.com: Getting Localstorage
+   (Google Chrome) https://www.moneymetals.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (2)).
+   (Google Chrome) https://www.moneymetals.com: Adding requests to DB
+   (Google Chrome) https://www.moneymetals.com: Adding to successful website
+
+ (Google Chrome): (11) https://www.ayobandung.com
+   (Google Chrome) https://www.ayobandung.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.ayobandung.com
+   (Google Chrome) https://www.ayobandung.com: Page loaded
+   (Google Chrome) https://www.ayobandung.com: Getting Cookies
+   (Google Chrome) https://www.ayobandung.com: Getting Localstorage
+   (Google Chrome) https://www.ayobandung.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.ayobandung.com: Adding requests to DB
+   (Google Chrome) https://www.ayobandung.com: Adding to successful website
+
+ (Google Chrome): (12) https://www.nivod4.tv
+   (Google Chrome) https://www.nivod4.tv: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.nivod4.tv
+   (Google Chrome) https://www.nivod4.tv: Page loaded
+   (Google Chrome) https://www.nivod4.tv: Getting Cookies
+   (Google Chrome) https://www.nivod4.tv: Getting Localstorage
+   (Google Chrome) https://www.nivod4.tv: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.nivod4.tv: Adding requests to DB
+   (Google Chrome) https://www.nivod4.tv: Adding to successful website
+
+ (Google Chrome): (13) https://www.big.or.jp
+   (Google Chrome) https://www.big.or.jp: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.big.or.jp
+   (Google Chrome) https://www.big.or.jp: Page loaded
+   (Google Chrome) https://www.big.or.jp: Getting Cookies
+   (Google Chrome) https://www.big.or.jp: Getting Localstorage
+   (Google Chrome) https://www.big.or.jp: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.big.or.jp: Adding requests to DB
+   (Google Chrome) https://www.big.or.jp: Adding to successful website
+
+ (Google Chrome): (14) https://www.voroniny-online.pw
+   (Google Chrome) https://www.voroniny-online.pw: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.voroniny-online.pw
+**  (Google Chrome): Error visiting webpage -> https://www.voroniny-online.pw (net::ERR_NAME_NOT_RESOLVED at https://www.voroniny-online.pw)
+
+ (Google Chrome): (15) https://www.calyptra-soft.net
+   (Google Chrome) https://www.calyptra-soft.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.calyptra-soft.net
+**  (Google Chrome): Error visiting webpage -> https://www.calyptra-soft.net (net::ERR_CERT_AUTHORITY_INVALID at https://www.calyptra-soft.net)
+
+ (Google Chrome): (16) https://www.ifastnet.com
+   (Google Chrome) https://www.ifastnet.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.ifastnet.com
+   (Google Chrome) https://www.ifastnet.com: Page loaded
+   (Google Chrome) https://www.ifastnet.com: Getting Cookies
+   (Google Chrome) https://www.ifastnet.com: Getting Localstorage
+   (Google Chrome) https://www.ifastnet.com: Checking Cookie Banner
+The following words were found: [ 'consent', 'uses cookies', 'agree' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Google Chrome): (17) https://www.presspage.com
+   (Google Chrome) https://www.presspage.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.presspage.com
+**  (Google Chrome): TimeoutError -> https://www.presspage.com
+
+ (Google Chrome): (18) https://www.fogodechao.com
+   (Google Chrome) https://www.fogodechao.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.fogodechao.com
+**  (Google Chrome): TimeoutError -> https://www.fogodechao.com
+
+ (Google Chrome): (19) https://www.n06.biz
+   (Google Chrome) https://www.n06.biz: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.n06.biz
+**  (Google Chrome): Error visiting webpage -> https://www.n06.biz (net::ERR_CERT_AUTHORITY_INVALID at https://www.n06.biz)
+
+ (Google Chrome): (20) https://www.ee-share.com
+   (Google Chrome) https://www.ee-share.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.ee-share.com
+**  (Google Chrome): Error visiting webpage -> https://www.ee-share.com (net::ERR_CERT_COMMON_NAME_INVALID at https://www.ee-share.com)
+
+ (Google Chrome): (21) https://www.flywire.com
+   (Google Chrome) https://www.flywire.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.flywire.com
+   (Google Chrome) https://www.flywire.com: Page loaded
+   (Google Chrome) https://www.flywire.com: Getting Cookies
+   (Google Chrome) https://www.flywire.com: Getting Localstorage
+   (Google Chrome) https://www.flywire.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'more information', 'uses cookies' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Google Chrome): (22) https://www.nddamp.com
+   (Google Chrome) https://www.nddamp.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.nddamp.com
+**  (Google Chrome): Error visiting webpage -> https://www.nddamp.com (net::ERR_CERT_AUTHORITY_INVALID at https://www.nddamp.com)
+
+ (Google Chrome): (23) https://www.nra.lv
+   (Google Chrome) https://www.nra.lv: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.nra.lv
+**  (Google Chrome): TimeoutError -> https://www.nra.lv
+
+ (Google Chrome): (24) https://www.dvava.com
+   (Google Chrome) https://www.dvava.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.dvava.com
+   (Google Chrome) https://www.dvava.com: Page loaded
+   (Google Chrome) https://www.dvava.com: Getting Cookies
+   (Google Chrome) https://www.dvava.com: Getting Localstorage
+   (Google Chrome) https://www.dvava.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.dvava.com: Adding requests to DB
+   (Google Chrome) https://www.dvava.com: Adding to successful website
+
+ (Google Chrome): (25) https://www.nu.edu.bd
+   (Google Chrome) https://www.nu.edu.bd: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.nu.edu.bd
+**  (Google Chrome): Error visiting webpage -> https://www.nu.edu.bd (net::ERR_NAME_NOT_RESOLVED at https://www.nu.edu.bd)
+
+ (Google Chrome): (26) https://www.konami.jp
+   (Google Chrome) https://www.konami.jp: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.konami.jp
+**  (Google Chrome): Error visiting webpage -> https://www.konami.jp (net::ERR_CERT_COMMON_NAME_INVALID at https://www.konami.jp)
+
+ (Google Chrome): (27) https://www.insurancebusinessmag.com
+   (Google Chrome) https://www.insurancebusinessmag.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.insurancebusinessmag.com
+   (Google Chrome) https://www.insurancebusinessmag.com: Page loaded
+   (Google Chrome) https://www.insurancebusinessmag.com: Getting Cookies
+   (Google Chrome) https://www.insurancebusinessmag.com: Getting Localstorage
+   (Google Chrome) https://www.insurancebusinessmag.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy,use cookies), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.insurancebusinessmag.com: Adding requests to DB
+   (Google Chrome) https://www.insurancebusinessmag.com: Adding to successful website
+
+ (Google Chrome): (28) https://www.lt-net.cz
+   (Google Chrome) https://www.lt-net.cz: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.lt-net.cz
+**  (Google Chrome): Error visiting webpage -> https://www.lt-net.cz (net::ERR_CERT_AUTHORITY_INVALID at https://www.lt-net.cz)
+
+ (Google Chrome): (29) https://www.panelboxmanager.com
+   (Google Chrome) https://www.panelboxmanager.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.panelboxmanager.com
+**  (Google Chrome): Error visiting webpage -> https://www.panelboxmanager.com (net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH at https://www.panelboxmanager.com)
+
+ (Google Chrome): (30) https://www.khruqc.com
+   (Google Chrome) https://www.khruqc.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.khruqc.com
+**  (Google Chrome): Error visiting webpage -> https://www.khruqc.com (net::ERR_CERT_AUTHORITY_INVALID at https://www.khruqc.com)
+
+ (Google Chrome): (31) https://www.zeturf.fr
+   (Google Chrome) https://www.zeturf.fr: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.zeturf.fr
+   (Google Chrome) https://www.zeturf.fr: Page loaded
+   (Google Chrome) https://www.zeturf.fr: Getting Cookies
+   (Google Chrome) https://www.zeturf.fr: Getting Localstorage
+   (Google Chrome) https://www.zeturf.fr: Checking Cookie Banner
+The following words were found: [ 'use cookies', 'uses cookies' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Google Chrome): (32) https://www.brookfieldproperties.com
+   (Google Chrome) https://www.brookfieldproperties.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.brookfieldproperties.com
+   (Google Chrome) https://www.brookfieldproperties.com: Page loaded
+   (Google Chrome) https://www.brookfieldproperties.com: Getting Cookies
+   (Google Chrome) https://www.brookfieldproperties.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Google Chrome) https://www.brookfieldproperties.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'accept all', 'reject' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Google Chrome): (33) https://www.firstwefeast.com
+   (Google Chrome) https://www.firstwefeast.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.firstwefeast.com
+   (Google Chrome) https://www.firstwefeast.com: Page loaded
+   (Google Chrome) https://www.firstwefeast.com: Getting Cookies
+   (Google Chrome) https://www.firstwefeast.com: Getting Localstorage
+   (Google Chrome) https://www.firstwefeast.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'reject', 'reject all' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Google Chrome): (34) https://www.opencmp.net
+   (Google Chrome) https://www.opencmp.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.opencmp.net
+**  (Google Chrome): Error visiting webpage -> https://www.opencmp.net (net::ERR_INVALID_AUTH_CREDENTIALS at https://www.opencmp.net)
+
+ (Google Chrome): (35) https://www.bed-and-breakfast.it
+   (Google Chrome) https://www.bed-and-breakfast.it: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.bed-and-breakfast.it
+   (Google Chrome) https://www.bed-and-breakfast.it: Page loaded
+   (Google Chrome) https://www.bed-and-breakfast.it: Getting Cookies
+   (Google Chrome) https://www.bed-and-breakfast.it: Getting Localstorage
+   (Google Chrome) https://www.bed-and-breakfast.it: Checking Cookie Banner
+Error [TypeError]: child3.children is not iterable
+    at evaluate (evaluate at ALLINONE (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:14:35), <anonymous>:30:40)
+    at #evaluate (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:252:55)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ExecutionContext.evaluate (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:149:16)
+    at async ALLINONE (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:14:23)
+    at async findBannerFrameRecursive (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:261:33)
+    at async accessAllFrames (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:288:10)
+    at async allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:295:19)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+TypeError: Cannot read properties of undefined (reading '0')
+    at findBannerFrameRecursive (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:265:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async accessAllFrames (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:288:10)
+    at async allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:295:19)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Google Chrome): (36) https://www.evenweb.com
+   (Google Chrome) https://www.evenweb.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.evenweb.com
+**  (Google Chrome): Error visiting webpage -> https://www.evenweb.com (net::ERR_CERT_DATE_INVALID at https://www.evenweb.com)
+
+ (Google Chrome): (37) https://www.huaweisafedns.cn
+   (Google Chrome) https://www.huaweisafedns.cn: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.huaweisafedns.cn
+**  (Google Chrome): Error visiting webpage -> https://www.huaweisafedns.cn (net::ERR_CERT_COMMON_NAME_INVALID at https://www.huaweisafedns.cn)
+
+ (Google Chrome): (38) https://www.huaweicdn-vip.com
+   (Google Chrome) https://www.huaweicdn-vip.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.huaweicdn-vip.com
+**  (Google Chrome): Error visiting webpage -> https://www.huaweicdn-vip.com (net::ERR_CERT_AUTHORITY_INVALID at https://www.huaweicdn-vip.com)
+
+ (Google Chrome): (39) https://www.steepandcheap.com
+   (Google Chrome) https://www.steepandcheap.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.steepandcheap.com
+   (Google Chrome) https://www.steepandcheap.com: Page loaded
+   (Google Chrome) https://www.steepandcheap.com: Getting Cookies
+   (Google Chrome) https://www.steepandcheap.com: Getting Localstorage
+   (Google Chrome) https://www.steepandcheap.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'accept cookies', 'consent', 'use cookies' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Google Chrome): (40) https://www.udec.cl
+   (Google Chrome) https://www.udec.cl: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.udec.cl
+**  (Google Chrome): TimeoutError -> https://www.udec.cl
+
+ (Google Chrome): (41) https://www.solecollector.com
+   (Google Chrome) https://www.solecollector.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.solecollector.com
+   (Google Chrome) https://www.solecollector.com: Page loaded
+   (Google Chrome) https://www.solecollector.com: Getting Cookies
+   (Google Chrome) https://www.solecollector.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Google Chrome) https://www.solecollector.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'reject', 'reject all' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Could not evaluate visibility
+TypeError: Cannot read properties of null (reading '0')
+    at allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:311:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Google Chrome): (42) https://www.ow.ly
+   (Google Chrome) https://www.ow.ly: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.ow.ly
+**  (Google Chrome): Error visiting webpage -> https://www.ow.ly (net::ERR_CERT_COMMON_NAME_INVALID at https://www.ow.ly)
+
+ (Google Chrome): (43) https://www.mizbandp.com
+   (Google Chrome) https://www.mizbandp.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.mizbandp.com
+**  (Google Chrome): Error visiting webpage -> https://www.mizbandp.com (net::ERR_CERT_COMMON_NAME_INVALID at https://www.mizbandp.com)
+
+ (Google Chrome): (44) https://www.jkldmp.work
+   (Google Chrome) https://www.jkldmp.work: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.jkldmp.work
+**  (Google Chrome): TimeoutError -> https://www.jkldmp.work
+
+ (Google Chrome): (45) https://www.szhanlinyuan.com
+   (Google Chrome) https://www.szhanlinyuan.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.szhanlinyuan.com
+**  (Google Chrome): Error visiting webpage -> https://www.szhanlinyuan.com (net::ERR_NAME_NOT_RESOLVED at https://www.szhanlinyuan.com)
+
+ (Google Chrome): (46) https://www.hypnet.pl
+   (Google Chrome) https://www.hypnet.pl: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.hypnet.pl
+**  (Google Chrome): Error visiting webpage -> https://www.hypnet.pl (net::ERR_CERT_AUTHORITY_INVALID at https://www.hypnet.pl)
+
+ (Google Chrome): (47) https://www.informs.org
+   (Google Chrome) https://www.informs.org: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.informs.org
+**  (Google Chrome): TimeoutError -> https://www.informs.org
+
+ (Google Chrome): (48) https://www.mothership.sg
+   (Google Chrome) https://www.mothership.sg: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.mothership.sg
+   (Google Chrome) https://www.mothership.sg: Page loaded
+   (Google Chrome) https://www.mothership.sg: Getting Cookies
+   (Google Chrome) https://www.mothership.sg: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Google Chrome) https://www.mothership.sg: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.mothership.sg: Adding requests to DB
+   (Google Chrome) https://www.mothership.sg: Adding to successful website
+
+ (Google Chrome): (49) https://www.
+   (Google Chrome) https://www.: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.
+**  (Google Chrome): Error visiting webpage -> https://www. (net::ERR_NAME_NOT_RESOLVED at https://www.)
+
+ (Google Chrome): (50) udec.cl
+   (Google Chrome) udec.cl: Getting Requests and Reponses
+   (Google Chrome) : Loading new page udec.cl
+**  (Google Chrome): ProtocolError visiting webpage -> udec.cl (Protocol error (Page.navigate): Cannot navigate to invalid URL)
+
+ (Google Chrome): (51) https://www.bsu.by
+   (Google Chrome) https://www.bsu.by: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.bsu.by
+**  (Google Chrome): TimeoutError -> https://www.bsu.by
+
+ (Google Chrome): (52) https://www.thescottishsun.co.uk
+   (Google Chrome) https://www.thescottishsun.co.uk: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.thescottishsun.co.uk
+**  (Google Chrome): TimeoutError -> https://www.thescottishsun.co.uk
+
+ (Google Chrome): (53) https://www.trading212.com
+   (Google Chrome) https://www.trading212.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.trading212.com
+   (Google Chrome) https://www.trading212.com: Page loaded
+   (Google Chrome) https://www.trading212.com: Getting Cookies
+   (Google Chrome) https://www.trading212.com: Getting Localstorage
+   (Google Chrome) https://www.trading212.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,accept,consent), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.trading212.com: Adding requests to DB
+   (Google Chrome) https://www.trading212.com: Adding to successful website
+
+ (Google Chrome): (54) https://www.virgilio.it
+   (Google Chrome) https://www.virgilio.it: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.virgilio.it
+   (Google Chrome) https://www.virgilio.it: Page loaded
+   (Google Chrome) https://www.virgilio.it: Getting Cookies
+   (Google Chrome) https://www.virgilio.it: Getting Localstorage
+   (Google Chrome) https://www.virgilio.it: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.virgilio.it: Adding requests to DB
+   (Google Chrome) https://www.virgilio.it: Adding to successful website
+
+ (Google Chrome): (55) https://www.ips-dc.org
+   (Google Chrome) https://www.ips-dc.org: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.ips-dc.org
+   (Google Chrome) https://www.ips-dc.org: Page loaded
+   (Google Chrome) https://www.ips-dc.org: Getting Cookies
+   (Google Chrome) https://www.ips-dc.org: Getting Localstorage
+   (Google Chrome) https://www.ips-dc.org: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Google Chrome) https://www.ips-dc.org: Adding requests to DB
+   (Google Chrome) https://www.ips-dc.org: Adding to successful website
+
+ (Google Chrome): (56) https://www.miricanvas.com
+   (Google Chrome) https://www.miricanvas.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.miricanvas.com
+   (Google Chrome) https://www.miricanvas.com: Page loaded
+   (Google Chrome) https://www.miricanvas.com: Getting Cookies
+   (Google Chrome) https://www.miricanvas.com: Getting Localstorage
+   (Google Chrome) https://www.miricanvas.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (more information), or less than 2 elements in subtree (0)).
+   (Google Chrome) https://www.miricanvas.com: Adding requests to DB
+   (Google Chrome) https://www.miricanvas.com: Adding to successful website
+
+ (Google Chrome): (57) https://www.harness.io
+   (Google Chrome) https://www.harness.io: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.harness.io
+**  (Google Chrome): TimeoutError -> https://www.harness.io
+
+ (Google Chrome): (58) https://www.lpu.in
+   (Google Chrome) https://www.lpu.in: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.lpu.in
+**  (Google Chrome): TimeoutError -> https://www.lpu.in
+
+ (Google Chrome): (59) https://www.jula.se
+   (Google Chrome) https://www.jula.se: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.jula.se
+   (Google Chrome) https://www.jula.se: Page loaded
+   (Google Chrome) https://www.jula.se: Getting Cookies
+   (Google Chrome) https://www.jula.se: Getting Localstorage
+   (Google Chrome) https://www.jula.se: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.jula.se: Adding requests to DB
+   (Google Chrome) https://www.jula.se: Adding to successful website
+
+ (Google Chrome): (60) https://www.cartstack.com.br
+   (Google Chrome) https://www.cartstack.com.br: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.cartstack.com.br
+   (Google Chrome) https://www.cartstack.com.br: Page loaded
+   (Google Chrome) https://www.cartstack.com.br: Getting Cookies
+   (Google Chrome) https://www.cartstack.com.br: Getting Localstorage
+   (Google Chrome) https://www.cartstack.com.br: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.cartstack.com.br: Adding requests to DB
+   (Google Chrome) https://www.cartstack.com.br: Adding to successful website
+
+ (Google Chrome): (61) https://www.ustrotting.com
+   (Google Chrome) https://www.ustrotting.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.ustrotting.com
+   (Google Chrome) https://www.ustrotting.com: Page loaded
+   (Google Chrome) https://www.ustrotting.com: Getting Cookies
+   (Google Chrome) https://www.ustrotting.com: Getting Localstorage
+   (Google Chrome) https://www.ustrotting.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (0)).
+   (Google Chrome) https://www.ustrotting.com: Adding requests to DB
+   (Google Chrome) https://www.ustrotting.com: Adding to successful website
+
+ (Google Chrome): (62) https://www.bbcearth.com
+   (Google Chrome) https://www.bbcearth.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.bbcearth.com
+**  (Google Chrome): TimeoutError -> https://www.bbcearth.com
+
+ (Google Chrome): (63) https://www.calcionapoli1926.it
+   (Google Chrome) https://www.calcionapoli1926.it: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.calcionapoli1926.it
+   (Google Chrome) https://www.calcionapoli1926.it: Page loaded
+   (Google Chrome) https://www.calcionapoli1926.it: Getting Cookies
+   (Google Chrome) https://www.calcionapoli1926.it: Getting Localstorage
+   (Google Chrome) https://www.calcionapoli1926.it: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy), or less than 2 elements in subtree (0)).
+   (Google Chrome) https://www.calcionapoli1926.it: Adding requests to DB
+   (Google Chrome) https://www.calcionapoli1926.it: Adding to successful website
+
+ (Google Chrome): (64) https://www.ayahealthcare.com
+   (Google Chrome) https://www.ayahealthcare.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.ayahealthcare.com
+**  (Google Chrome): TimeoutError -> https://www.ayahealthcare.com
+
+ (Google Chrome): (65) https://www.ghantalele.com
+   (Google Chrome) https://www.ghantalele.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.ghantalele.com
+   (Google Chrome) https://www.ghantalele.com: Page loaded
+   (Google Chrome) https://www.ghantalele.com: Getting Cookies
+   (Google Chrome) https://www.ghantalele.com: Getting Localstorage
+   (Google Chrome) https://www.ghantalele.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.ghantalele.com: Adding requests to DB
+   (Google Chrome) https://www.ghantalele.com: Adding to successful website
+
+ (Google Chrome): (66) https://www.streak.com
+   (Google Chrome) https://www.streak.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.streak.com
+**  (Google Chrome): TimeoutError -> https://www.streak.com
+
+ (Google Chrome): (67) https://www.flannels.com
+   (Google Chrome) https://www.flannels.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.flannels.com
+   (Google Chrome) https://www.flannels.com: Page loaded
+   (Google Chrome) https://www.flannels.com: Getting Cookies
+      **** Cannot get frame origin because of lazy frame in cookies
+   (Google Chrome) https://www.flannels.com: Getting Localstorage
+   (Google Chrome) https://www.flannels.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (manage cookies), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.flannels.com: Adding requests to DB
+   (Google Chrome) https://www.flannels.com: Adding to successful website
+
+ (Google Chrome): (68) https://www.mcdonalds.co.jp
+   (Google Chrome) https://www.mcdonalds.co.jp: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.mcdonalds.co.jp
+   (Google Chrome) https://www.mcdonalds.co.jp: Page loaded
+   (Google Chrome) https://www.mcdonalds.co.jp: Getting Cookies
+   (Google Chrome) https://www.mcdonalds.co.jp: Getting Localstorage
+   (Google Chrome) https://www.mcdonalds.co.jp: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.mcdonalds.co.jp: Adding requests to DB
+   (Google Chrome) https://www.mcdonalds.co.jp: Adding to successful website
+
+ (Google Chrome): (69) https://www.glispa.com
+   (Google Chrome) https://www.glispa.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.glispa.com
+   (Google Chrome) https://www.glispa.com: Page loaded
+   (Google Chrome) https://www.glispa.com: Getting Cookies
+   (Google Chrome) https://www.glispa.com: Getting Localstorage
+   (Google Chrome) https://www.glispa.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Google Chrome): (70) https://www.artdaily.cc
+   (Google Chrome) https://www.artdaily.cc: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.artdaily.cc
+   (Google Chrome) https://www.artdaily.cc: Page loaded
+   (Google Chrome) https://www.artdaily.cc: Getting Cookies
+   (Google Chrome) https://www.artdaily.cc: Getting Localstorage
+   (Google Chrome) https://www.artdaily.cc: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.artdaily.cc: Adding requests to DB
+   (Google Chrome) https://www.artdaily.cc: Adding to successful website
+
+ (Google Chrome): (71) https://www.gazetaweb.com
+   (Google Chrome) https://www.gazetaweb.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.gazetaweb.com
+   (Google Chrome) https://www.gazetaweb.com: Page loaded
+   (Google Chrome) https://www.gazetaweb.com: Getting Cookies
+   (Google Chrome) https://www.gazetaweb.com: Getting Localstorage
+   (Google Chrome) https://www.gazetaweb.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.gazetaweb.com: Adding requests to DB
+   (Google Chrome) https://www.gazetaweb.com: Adding to successful website
+
+ (Google Chrome): (72) https://www.quantamagazine.org
+   (Google Chrome) https://www.quantamagazine.org: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.quantamagazine.org
+**  (Google Chrome): TimeoutError -> https://www.quantamagazine.org
+
+ (Google Chrome): (73) https://www.i-scream.co.kr
+   (Google Chrome) https://www.i-scream.co.kr: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.i-scream.co.kr
+**  (Google Chrome): TimeoutError -> https://www.i-scream.co.kr
+
+ (Google Chrome): (74) https://www.secretescapes.com
+   (Google Chrome) https://www.secretescapes.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.secretescapes.com
+   (Google Chrome) https://www.secretescapes.com: Page loaded
+   (Google Chrome) https://www.secretescapes.com: Getting Cookies
+   (Google Chrome) https://www.secretescapes.com: Getting Localstorage
+   (Google Chrome) https://www.secretescapes.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'accept', 'accept all', 'cookie preferences' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+   (Google Chrome) https://www.secretescapes.com: Adding requests to DB
+   (Google Chrome) https://www.secretescapes.com: Adding to successful website
+
+ (Google Chrome): (75) https://www.crystalbet.com
+   (Google Chrome) https://www.crystalbet.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.crystalbet.com
+**  (Google Chrome): TimeoutError -> https://www.crystalbet.com
+
+ (Google Chrome): (76) https://www.maps.me
+   (Google Chrome) https://www.maps.me: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.maps.me
+**  (Google Chrome): TimeoutError -> https://www.maps.me
+
+ (Google Chrome): (77) https://www.best-world.id
+   (Google Chrome) https://www.best-world.id: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.best-world.id
+**  (Google Chrome): TimeoutError -> https://www.best-world.id
+
+ (Google Chrome): (78) https://www.b1tv.ro
+   (Google Chrome) https://www.b1tv.ro: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.b1tv.ro
+   (Google Chrome) https://www.b1tv.ro: Page loaded
+   (Google Chrome) https://www.b1tv.ro: Getting Cookies
+   (Google Chrome) https://www.b1tv.ro: Getting Localstorage
+   (Google Chrome) https://www.b1tv.ro: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.b1tv.ro: Adding requests to DB
+   (Google Chrome) https://www.b1tv.ro: Adding to successful website
+
+ (Google Chrome): (79) https://www.noovomoi.ca
+   (Google Chrome) https://www.noovomoi.ca: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.noovomoi.ca
+   (Google Chrome) https://www.noovomoi.ca: Page loaded
+   (Google Chrome) https://www.noovomoi.ca: Getting Cookies
+   (Google Chrome) https://www.noovomoi.ca: Getting Localstorage
+   (Google Chrome) https://www.noovomoi.ca: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.noovomoi.ca: Adding requests to DB
+   (Google Chrome) https://www.noovomoi.ca: Adding to successful website
+
+ (Google Chrome): (80) https://www.smtickets.com
+   (Google Chrome) https://www.smtickets.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.smtickets.com
+**  (Google Chrome): TimeoutError -> https://www.smtickets.com
+
+ (Google Chrome): (81) https://www.yakimaherald.com
+   (Google Chrome) https://www.yakimaherald.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.yakimaherald.com
+**  (Google Chrome): TimeoutError -> https://www.yakimaherald.com
+
+ (Google Chrome): (82) https://www.empireonline.com
+   (Google Chrome) https://www.empireonline.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.empireonline.com
+   (Google Chrome) https://www.empireonline.com: Page loaded
+   (Google Chrome) https://www.empireonline.com: Getting Cookies
+   (Google Chrome) https://www.empireonline.com: Getting Localstorage
+   (Google Chrome) https://www.empireonline.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.empireonline.com: Adding requests to DB
+   (Google Chrome) https://www.empireonline.com: Adding to successful website
+
+ (Google Chrome): (83) https://www.keralaplot.com
+   (Google Chrome) https://www.keralaplot.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.keralaplot.com
+   (Google Chrome) https://www.keralaplot.com: Page loaded
+   (Google Chrome) https://www.keralaplot.com: Getting Cookies
+   (Google Chrome) https://www.keralaplot.com: Getting Localstorage
+   (Google Chrome) https://www.keralaplot.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.keralaplot.com: Adding requests to DB
+   (Google Chrome) https://www.keralaplot.com: Adding to successful website
+
+ (Google Chrome): (84) https://www.techcombank.com.vn
+   (Google Chrome) https://www.techcombank.com.vn: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.techcombank.com.vn
+   (Google Chrome) https://www.techcombank.com.vn: Page loaded
+   (Google Chrome) https://www.techcombank.com.vn: Getting Cookies
+   (Google Chrome) https://www.techcombank.com.vn: Getting Localstorage
+   (Google Chrome) https://www.techcombank.com.vn: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.techcombank.com.vn: Adding requests to DB
+   (Google Chrome) https://www.techcombank.com.vn: Adding to successful website
+
+ (Google Chrome): (85) https://www.apkpure.net
+   (Google Chrome) https://www.apkpure.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.apkpure.net
+**  (Google Chrome): TimeoutError -> https://www.apkpure.net
+
+ (Google Chrome): (86) https://www.holidayinn.com
+   (Google Chrome) https://www.holidayinn.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.holidayinn.com
+   (Google Chrome) https://www.holidayinn.com: Page loaded
+   (Google Chrome) https://www.holidayinn.com: Getting Cookies
+   (Google Chrome) https://www.holidayinn.com: Getting Localstorage
+   (Google Chrome) https://www.holidayinn.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy,use cookies), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.holidayinn.com: Adding requests to DB
+   (Google Chrome) https://www.holidayinn.com: Adding to successful website
+
+ (Google Chrome): (87) https://www.makro.co.za
+   (Google Chrome) https://www.makro.co.za: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.makro.co.za
+   (Google Chrome) https://www.makro.co.za: Page loaded
+   (Google Chrome) https://www.makro.co.za: Getting Cookies
+   (Google Chrome) https://www.makro.co.za: Getting Localstorage
+   (Google Chrome) https://www.makro.co.za: Checking Cookie Banner
+The following words were found: [ 'consent', 'use cookies', 'accept' ]
+   (Google Chrome) https://www.makro.co.za: Adding requests to DB
+   (Google Chrome) https://www.makro.co.za: Adding to successful website
+
+ (Google Chrome): (88) https://www.kwai.net
+   (Google Chrome) https://www.kwai.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.kwai.net
+   (Google Chrome) https://www.kwai.net: Page loaded
+   (Google Chrome) https://www.kwai.net: Getting Cookies
+   (Google Chrome) https://www.kwai.net: Getting Localstorage
+   (Google Chrome) https://www.kwai.net: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.kwai.net: Adding requests to DB
+   (Google Chrome) https://www.kwai.net: Adding to successful website
+
+ (Google Chrome): (89) https://www.hops.id
+   (Google Chrome) https://www.hops.id: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.hops.id
+   (Google Chrome) https://www.hops.id: Page loaded
+   (Google Chrome) https://www.hops.id: Getting Cookies
+   (Google Chrome) https://www.hops.id: Getting Localstorage
+   (Google Chrome) https://www.hops.id: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,uses cookies), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.hops.id: Adding requests to DB
+   (Google Chrome) https://www.hops.id: Adding to successful website
+
+ (Google Chrome): (90) https://www.mangatoto.org
+   (Google Chrome) https://www.mangatoto.org: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.mangatoto.org
+   (Google Chrome) https://www.mangatoto.org: Page loaded
+   (Google Chrome) https://www.mangatoto.org: Getting Cookies
+   (Google Chrome) https://www.mangatoto.org: Getting Localstorage
+   (Google Chrome) https://www.mangatoto.org: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.mangatoto.org: Adding requests to DB
+   (Google Chrome) https://www.mangatoto.org: Adding to successful website
+
+ (Google Chrome): (91) https://www.mujerhoy.com
+   (Google Chrome) https://www.mujerhoy.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.mujerhoy.com
+   (Google Chrome) https://www.mujerhoy.com: Page loaded
+   (Google Chrome) https://www.mujerhoy.com: Getting Cookies
+   (Google Chrome) https://www.mujerhoy.com: Getting Localstorage
+   (Google Chrome) https://www.mujerhoy.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent,use cookies), or less than 2 elements in subtree (0)).
+   (Google Chrome) https://www.mujerhoy.com: Adding requests to DB
+   (Google Chrome) https://www.mujerhoy.com: Adding to successful website
+
+ (Google Chrome): (92) https://www.grimsbytelegraph.co.uk
+   (Google Chrome) https://www.grimsbytelegraph.co.uk: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.grimsbytelegraph.co.uk
+**  (Google Chrome): TimeoutError -> https://www.grimsbytelegraph.co.uk
+
+ (Google Chrome): (93) https://www.chewy.com
+   (Google Chrome) https://www.chewy.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.chewy.com
+**  (Google Chrome): TimeoutError -> https://www.chewy.com
+
+ (Google Chrome): (94) https://www.profiwh.com
+   (Google Chrome) https://www.profiwh.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.profiwh.com
+   (Google Chrome) https://www.profiwh.com: Page loaded
+   (Google Chrome) https://www.profiwh.com: Getting Cookies
+   (Google Chrome) https://www.profiwh.com: Getting Localstorage
+   (Google Chrome) https://www.profiwh.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.profiwh.com: Adding requests to DB
+   (Google Chrome) https://www.profiwh.com: Adding to successful website
+
+ (Google Chrome): (95) https://www.scamadviser.com
+   (Google Chrome) https://www.scamadviser.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.scamadviser.com
+   (Google Chrome) https://www.scamadviser.com: Page loaded
+   (Google Chrome) https://www.scamadviser.com: Getting Cookies
+   (Google Chrome) https://www.scamadviser.com: Getting Localstorage
+   (Google Chrome) https://www.scamadviser.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent,use cookies), or less than 2 elements in subtree (0)).
+   (Google Chrome) https://www.scamadviser.com: Adding requests to DB
+   (Google Chrome) https://www.scamadviser.com: Adding to successful website
+
+ (Google Chrome): (96) https://www.philkotse.com
+   (Google Chrome) https://www.philkotse.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.philkotse.com
+   (Google Chrome) https://www.philkotse.com: Page loaded
+   (Google Chrome) https://www.philkotse.com: Getting Cookies
+   (Google Chrome) https://www.philkotse.com: Getting Localstorage
+   (Google Chrome) https://www.philkotse.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.philkotse.com: Adding requests to DB
+   (Google Chrome) https://www.philkotse.com: Adding to successful website
+
+ (Google Chrome): (97) https://www.almanar.com.lb
+   (Google Chrome) https://www.almanar.com.lb: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.almanar.com.lb
+**  (Google Chrome): TimeoutError -> https://www.almanar.com.lb
+
+ (Google Chrome): (98) https://www.syr.edu
+   (Google Chrome) https://www.syr.edu: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.syr.edu
+   (Google Chrome) https://www.syr.edu: Page loaded
+   (Google Chrome) https://www.syr.edu: Getting Cookies
+   (Google Chrome) https://www.syr.edu: Getting Localstorage
+   (Google Chrome) https://www.syr.edu: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (0)).
+   (Google Chrome) https://www.syr.edu: Adding requests to DB
+   (Google Chrome) https://www.syr.edu: Adding to successful website
+
+ (Google Chrome): (99) https://www.therams.com
+   (Google Chrome) https://www.therams.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.therams.com
+   (Google Chrome) https://www.therams.com: Page loaded
+   (Google Chrome) https://www.therams.com: Getting Cookies
+   (Google Chrome) https://www.therams.com: Getting Localstorage
+   (Google Chrome) https://www.therams.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'accept', 'accept cookies', 'reject', 'cookie preferences' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+   (Google Chrome) https://www.therams.com: Adding requests to DB
+   (Google Chrome) https://www.therams.com: Adding to successful website
+
+ (Google Chrome): (100) https://www.aappublications.org
+   (Google Chrome) https://www.aappublications.org: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.aappublications.org
+   (Google Chrome) https://www.aappublications.org: Page loaded
+   (Google Chrome) https://www.aappublications.org: Getting Cookies
+   (Google Chrome) https://www.aappublications.org: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Google Chrome) https://www.aappublications.org: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (privacy statement), or less than 2 elements in subtree (0)).
+   (Google Chrome) https://www.aappublications.org: Adding requests to DB
+   (Google Chrome) https://www.aappublications.org: Adding to successful website
+
+ (Google Chrome): (101) https://www.ilcittadino.it
+   (Google Chrome) https://www.ilcittadino.it: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.ilcittadino.it
+   (Google Chrome) https://www.ilcittadino.it: Page loaded
+   (Google Chrome) https://www.ilcittadino.it: Getting Cookies
+   (Google Chrome) https://www.ilcittadino.it: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Google Chrome) https://www.ilcittadino.it: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.ilcittadino.it: Adding requests to DB
+   (Google Chrome) https://www.ilcittadino.it: Adding to successful website
+
+ (Google Chrome): (102) https://www.bigbasket.com
+   (Google Chrome) https://www.bigbasket.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.bigbasket.com
+   (Google Chrome) https://www.bigbasket.com: Page loaded
+   (Google Chrome) https://www.bigbasket.com: Getting Cookies
+   (Google Chrome) https://www.bigbasket.com: Getting Localstorage
+   (Google Chrome) https://www.bigbasket.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.bigbasket.com: Adding requests to DB
+   (Google Chrome) https://www.bigbasket.com: Adding to successful website
+
+ (Google Chrome): (103) https://www.zajenata.bg
+   (Google Chrome) https://www.zajenata.bg: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.zajenata.bg
+**  (Google Chrome): TimeoutError -> https://www.zajenata.bg
+
+ (Google Chrome): (104) https://www.fox6now.com
+   (Google Chrome) https://www.fox6now.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.fox6now.com
+**  (Google Chrome): TimeoutError -> https://www.fox6now.com
+
+ (Google Chrome): (105) https://www.hk6d.co
+   (Google Chrome) https://www.hk6d.co: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.hk6d.co
+   (Google Chrome) https://www.hk6d.co: Page loaded
+   (Google Chrome) https://www.hk6d.co: Getting Cookies
+   (Google Chrome) https://www.hk6d.co: Getting Localstorage
+   (Google Chrome) https://www.hk6d.co: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.hk6d.co: Adding requests to DB
+   (Google Chrome) https://www.hk6d.co: Adding to successful website
+
+ (Google Chrome): (106) https://www.hepper.com
+   (Google Chrome) https://www.hepper.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.hepper.com
+   (Google Chrome) https://www.hepper.com: Page loaded
+   (Google Chrome) https://www.hepper.com: Getting Cookies
+   (Google Chrome) https://www.hepper.com: Getting Localstorage
+   (Google Chrome) https://www.hepper.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.hepper.com: Adding requests to DB
+   (Google Chrome) https://www.hepper.com: Adding to successful website
+
+ (Google Chrome): (107) https://www.flyerbox.ca
+   (Google Chrome) https://www.flyerbox.ca: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.flyerbox.ca
+   (Google Chrome) https://www.flyerbox.ca: Page loaded
+   (Google Chrome) https://www.flyerbox.ca: Getting Cookies
+   (Google Chrome) https://www.flyerbox.ca: Getting Localstorage
+   (Google Chrome) https://www.flyerbox.ca: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.flyerbox.ca: Adding requests to DB
+   (Google Chrome) https://www.flyerbox.ca: Adding to successful website
+
+ (Google Chrome): (108) https://www.versum.com
+   (Google Chrome) https://www.versum.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.versum.com
+**  (Google Chrome): TimeoutError -> https://www.versum.com
+
+ (Google Chrome): (109) https://www.katalozi.net
+   (Google Chrome) https://www.katalozi.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.katalozi.net
+   (Google Chrome) https://www.katalozi.net: Page loaded
+   (Google Chrome) https://www.katalozi.net: Getting Cookies
+   (Google Chrome) https://www.katalozi.net: Getting Localstorage
+   (Google Chrome) https://www.katalozi.net: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.katalozi.net: Adding requests to DB
+   (Google Chrome) https://www.katalozi.net: Adding to successful website
+
+ (Google Chrome): (110) https://www.swimoutlet.com
+   (Google Chrome) https://www.swimoutlet.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.swimoutlet.com
+**  (Google Chrome): TimeoutError -> https://www.swimoutlet.com
+
+ (Google Chrome): (111) https://www.syncromsp.com
+   (Google Chrome) https://www.syncromsp.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.syncromsp.com
+**  (Google Chrome): TimeoutError -> https://www.syncromsp.com
+
+ (Google Chrome): (112) https://www.cooperhewitt.org
+   (Google Chrome) https://www.cooperhewitt.org: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.cooperhewitt.org
+**  (Google Chrome): TimeoutError -> https://www.cooperhewitt.org
+
+ (Google Chrome): (113) https://www.iproperty.com.my
+   (Google Chrome) https://www.iproperty.com.my: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.iproperty.com.my
+   (Google Chrome) https://www.iproperty.com.my: Page loaded
+   (Google Chrome) https://www.iproperty.com.my: Getting Cookies
+   (Google Chrome) https://www.iproperty.com.my: Getting Localstorage
+   (Google Chrome) https://www.iproperty.com.my: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Google Chrome): (114) https://www.beniculturali.it
+   (Google Chrome) https://www.beniculturali.it: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.beniculturali.it
+**  (Google Chrome): TimeoutError -> https://www.beniculturali.it
+
+ (Google Chrome): (115) https://www.wrightflyer.net
+   (Google Chrome) https://www.wrightflyer.net: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.wrightflyer.net
+   (Google Chrome) https://www.wrightflyer.net: Page loaded
+   (Google Chrome) https://www.wrightflyer.net: Getting Cookies
+   (Google Chrome) https://www.wrightflyer.net: Getting Localstorage
+   (Google Chrome) https://www.wrightflyer.net: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.wrightflyer.net: Adding requests to DB
+   (Google Chrome) https://www.wrightflyer.net: Adding to successful website
+
+ (Google Chrome): (116) https://www.foodnavigator-usa.com
+   (Google Chrome) https://www.foodnavigator-usa.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.foodnavigator-usa.com
+   (Google Chrome) https://www.foodnavigator-usa.com: Page loaded
+   (Google Chrome) https://www.foodnavigator-usa.com: Getting Cookies
+   (Google Chrome) https://www.foodnavigator-usa.com: Getting Localstorage
+   (Google Chrome) https://www.foodnavigator-usa.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'reject', 'cookie preferences', 'more information' ]
+Error accessing element handle's visibility -- id
+   (Google Chrome) https://www.foodnavigator-usa.com: Adding requests to DB
+   (Google Chrome) https://www.foodnavigator-usa.com: Adding to successful website
+
+ (Google Chrome): (117) https://www.wadiz.kr
+   (Google Chrome) https://www.wadiz.kr: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.wadiz.kr
+   (Google Chrome) https://www.wadiz.kr: Page loaded
+   (Google Chrome) https://www.wadiz.kr: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Google Chrome) https://www.wadiz.kr: Getting Localstorage
+   (Google Chrome) https://www.wadiz.kr: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.wadiz.kr: Adding requests to DB
+   (Google Chrome) https://www.wadiz.kr: Adding to successful website
+
+ (Google Chrome): (118) https://www.it-d.it
+   (Google Chrome) https://www.it-d.it: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.it-d.it
+   (Google Chrome) https://www.it-d.it: Page loaded
+   (Google Chrome) https://www.it-d.it: Getting Cookies
+   (Google Chrome) https://www.it-d.it: Getting Localstorage
+   (Google Chrome) https://www.it-d.it: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (uses cookies), or less than 2 elements in subtree (0)).
+   (Google Chrome) https://www.it-d.it: Adding requests to DB
+   (Google Chrome) https://www.it-d.it: Adding to successful website
+
+ (Google Chrome): (119) https://www.philadelphia.edu.jo
+   (Google Chrome) https://www.philadelphia.edu.jo: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.philadelphia.edu.jo
+   (Google Chrome) https://www.philadelphia.edu.jo: Page loaded
+   (Google Chrome) https://www.philadelphia.edu.jo: Getting Cookies
+   (Google Chrome) https://www.philadelphia.edu.jo: Getting Localstorage
+   (Google Chrome) https://www.philadelphia.edu.jo: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (more information), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.philadelphia.edu.jo: Adding requests to DB
+   (Google Chrome) https://www.philadelphia.edu.jo: Adding to successful website
+
+ (Google Chrome): (120) https://www.laphil.com
+   (Google Chrome) https://www.laphil.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.laphil.com
+**  (Google Chrome): TimeoutError -> https://www.laphil.com
+
+ (Google Chrome): (121) https://www.metroecuador.com.ec
+   (Google Chrome) https://www.metroecuador.com.ec: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.metroecuador.com.ec
+**  (Google Chrome): TimeoutError -> https://www.metroecuador.com.ec
+
+ (Google Chrome): (122) https://www.wbrc.com
+   (Google Chrome) https://www.wbrc.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.wbrc.com
+**  (Google Chrome): TimeoutError -> https://www.wbrc.com
+
+ (Google Chrome): (123) https://www.via.com
+   (Google Chrome) https://www.via.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.via.com
+**  (Google Chrome): TimeoutError -> https://www.via.com
+
+ (Google Chrome): (124) https://www.setaswall.com
+   (Google Chrome) https://www.setaswall.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.setaswall.com
+   (Google Chrome) https://www.setaswall.com: Page loaded
+   (Google Chrome) https://www.setaswall.com: Getting Cookies
+   (Google Chrome) https://www.setaswall.com: Getting Localstorage
+   (Google Chrome) https://www.setaswall.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.setaswall.com: Adding requests to DB
+   (Google Chrome) https://www.setaswall.com: Adding to successful website
+
+ (Google Chrome): (125) https://www.historynet.com
+   (Google Chrome) https://www.historynet.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.historynet.com
+   (Google Chrome) https://www.historynet.com: Page loaded
+   (Google Chrome) https://www.historynet.com: Getting Cookies
+   (Google Chrome) https://www.historynet.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Google Chrome) https://www.historynet.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.historynet.com: Adding requests to DB
+   (Google Chrome) https://www.historynet.com: Adding to successful website
+
+ (Google Chrome): (126) https://www.manheim.com.au
+   (Google Chrome) https://www.manheim.com.au: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.manheim.com.au
+   (Google Chrome) https://www.manheim.com.au: Page loaded
+   (Google Chrome) https://www.manheim.com.au: Getting Cookies
+   (Google Chrome) https://www.manheim.com.au: Getting Localstorage
+   (Google Chrome) https://www.manheim.com.au: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.manheim.com.au: Adding requests to DB
+   (Google Chrome) https://www.manheim.com.au: Adding to successful website
+
+ (Google Chrome): (127) https://www.ugto.mx
+   (Google Chrome) https://www.ugto.mx: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.ugto.mx
+   (Google Chrome) https://www.ugto.mx: Page loaded
+   (Google Chrome) https://www.ugto.mx: Getting Cookies
+   (Google Chrome) https://www.ugto.mx: Getting Localstorage
+   (Google Chrome) https://www.ugto.mx: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.ugto.mx: Adding requests to DB
+   (Google Chrome) https://www.ugto.mx: Adding to successful website
+
+ (Google Chrome): (128) https://www.voka.tv
+   (Google Chrome) https://www.voka.tv: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.voka.tv
+**  (Google Chrome): TimeoutError -> https://www.voka.tv
+
+ (Google Chrome): (129) https://www.huami.com
+   (Google Chrome) https://www.huami.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.huami.com
+**  (Google Chrome): TimeoutError -> https://www.huami.com
+
+ (Google Chrome): (130) https://www.newscorpaustralia.com
+   (Google Chrome) https://www.newscorpaustralia.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.newscorpaustralia.com
+   (Google Chrome) https://www.newscorpaustralia.com: Page loaded
+   (Google Chrome) https://www.newscorpaustralia.com: Getting Cookies
+   (Google Chrome) https://www.newscorpaustralia.com: Getting Localstorage
+   (Google Chrome) https://www.newscorpaustralia.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy), or less than 2 elements in subtree (1)).
+   (Google Chrome) https://www.newscorpaustralia.com: Adding requests to DB
+   (Google Chrome) https://www.newscorpaustralia.com: Adding to successful website
+
+ (Google Chrome): (131) https://www.cris.org.in
+   (Google Chrome) https://www.cris.org.in: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.cris.org.in
+**  (Google Chrome): TimeoutError -> https://www.cris.org.in
+
+ (Google Chrome): (132) https://www.nic.ec
+   (Google Chrome) https://www.nic.ec: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.nic.ec
+**  (Google Chrome): TimeoutError -> https://www.nic.ec
+
+ (Google Chrome): (133) https://www.catofashions.com
+   (Google Chrome) https://www.catofashions.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.catofashions.com
+**  (Google Chrome): TimeoutError -> https://www.catofashions.com
+
+ (Google Chrome): (134) https://www.biji.co
+   (Google Chrome) https://www.biji.co: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.biji.co
+**  (Google Chrome): TimeoutError -> https://www.biji.co
+
+ (Google Chrome): (135) https://www.8world.com
+   (Google Chrome) https://www.8world.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.8world.com
+**  (Google Chrome): TimeoutError -> https://www.8world.com
+
+ (Google Chrome): (136) https://www.zeus138eternal.com
+   (Google Chrome) https://www.zeus138eternal.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.zeus138eternal.com
+   (Google Chrome) https://www.zeus138eternal.com: Page loaded
+   (Google Chrome) https://www.zeus138eternal.com: Getting Cookies
+   (Google Chrome) https://www.zeus138eternal.com: Getting Localstorage
+   (Google Chrome) https://www.zeus138eternal.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.zeus138eternal.com: Adding requests to DB
+   (Google Chrome) https://www.zeus138eternal.com: Adding to successful website
+
+ (Google Chrome): (137) https://www.greentechmedia.com
+   (Google Chrome) https://www.greentechmedia.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.greentechmedia.com
+**  (Google Chrome): TimeoutError -> https://www.greentechmedia.com
+
+ (Google Chrome): (138) https://www.estantevirtual.com.br
+   (Google Chrome) https://www.estantevirtual.com.br: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.estantevirtual.com.br
+   (Google Chrome) https://www.estantevirtual.com.br: Page loaded
+   (Google Chrome) https://www.estantevirtual.com.br: Getting Cookies
+   (Google Chrome) https://www.estantevirtual.com.br: Getting Localstorage
+   (Google Chrome) https://www.estantevirtual.com.br: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.estantevirtual.com.br: Adding requests to DB
+   (Google Chrome) https://www.estantevirtual.com.br: Adding to successful website
+
+ (Google Chrome): (139) https://www.clevescene.com
+   (Google Chrome) https://www.clevescene.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.clevescene.com
+   (Google Chrome) https://www.clevescene.com: Page loaded
+   (Google Chrome) https://www.clevescene.com: Getting Cookies
+   (Google Chrome) https://www.clevescene.com: Getting Localstorage
+   (Google Chrome) https://www.clevescene.com: Checking Cookie Banner
+The following words were found: [ 'consent', 'agree' ]
+Error accessing element handle's visibility -- classname
+Error accessing element handle's visibility -- classname
+Error accessing element handle's visibility -- classname
+   (Google Chrome) https://www.clevescene.com: Adding requests to DB
+   (Google Chrome) https://www.clevescene.com: Adding to successful website
+
+ (Google Chrome): (140) https://www.historyplace.com
+   (Google Chrome) https://www.historyplace.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.historyplace.com
+**  (Google Chrome): TimeoutError -> https://www.historyplace.com
+
+ (Google Chrome): (141) https://www.2345.cc
+   (Google Chrome) https://www.2345.cc: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.2345.cc
+**  (Google Chrome): TimeoutError -> https://www.2345.cc
+
+ (Google Chrome): (142) https://www.cctv.cn
+   (Google Chrome) https://www.cctv.cn: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.cctv.cn
+**  (Google Chrome): TimeoutError -> https://www.cctv.cn
+
+ (Google Chrome): (143) https://www.mcw.edu
+   (Google Chrome) https://www.mcw.edu: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.mcw.edu
+**  (Google Chrome): TimeoutError -> https://www.mcw.edu
+
+ (Google Chrome): (144) https://www.eldeber.com.bo
+   (Google Chrome) https://www.eldeber.com.bo: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.eldeber.com.bo
+**  (Google Chrome): TimeoutError -> https://www.eldeber.com.bo
+
+ (Google Chrome): (145) https://www.equinix.com
+   (Google Chrome) https://www.equinix.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.equinix.com
+   (Google Chrome) https://www.equinix.com: Page loaded
+   (Google Chrome) https://www.equinix.com: Getting Cookies
+   (Google Chrome) https://www.equinix.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Google Chrome) https://www.equinix.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The following words were found: [ 'agree', 'reject', 'reject all' ]
+   (Google Chrome) https://www.equinix.com: Adding requests to DB
+   (Google Chrome) https://www.equinix.com: Adding to successful website
+
+ (Google Chrome): (146) https://www.fox13news.com
+   (Google Chrome) https://www.fox13news.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.fox13news.com
+   (Google Chrome) https://www.fox13news.com: Page loaded
+   (Google Chrome) https://www.fox13news.com: Getting Cookies
+   (Google Chrome) https://www.fox13news.com: Getting Localstorage
+   (Google Chrome) https://www.fox13news.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Google Chrome) https://www.fox13news.com: Adding requests to DB
+   (Google Chrome) https://www.fox13news.com: Adding to successful website
+
+ (Google Chrome): (147) https://www.faa.gov
+   (Google Chrome) https://www.faa.gov: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.faa.gov
+   (Google Chrome) https://www.faa.gov: Page loaded
+   (Google Chrome) https://www.faa.gov: Getting Cookies
+   (Google Chrome) https://www.faa.gov: Getting Localstorage
+   (Google Chrome) https://www.faa.gov: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.faa.gov: Adding requests to DB
+   (Google Chrome) https://www.faa.gov: Adding to successful website
+
+ (Google Chrome): (148) https://www.pc-builds.com
+   (Google Chrome) https://www.pc-builds.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.pc-builds.com
+**  (Google Chrome): TimeoutError -> https://www.pc-builds.com
+
+ (Google Chrome): (149) https://www.hokiesports.com
+   (Google Chrome) https://www.hokiesports.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.hokiesports.com
+**  (Google Chrome): TimeoutError -> https://www.hokiesports.com
+
+ (Google Chrome): (150) https://www.meteo.gr
+   (Google Chrome) https://www.meteo.gr: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.meteo.gr
+**  (Google Chrome): TimeoutError -> https://www.meteo.gr
+
+ (Google Chrome): (151) https://www.nu.ac.bd
+   (Google Chrome) https://www.nu.ac.bd: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.nu.ac.bd
+   (Google Chrome) https://www.nu.ac.bd: Page loaded
+   (Google Chrome) https://www.nu.ac.bd: Getting Cookies
+   (Google Chrome) https://www.nu.ac.bd: Getting Localstorage
+   (Google Chrome) https://www.nu.ac.bd: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.nu.ac.bd: Adding requests to DB
+   (Google Chrome) https://www.nu.ac.bd: Adding to successful website
+
+ (Google Chrome): (152) https://www.hinatazaka46.com
+   (Google Chrome) https://www.hinatazaka46.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.hinatazaka46.com
+**  (Google Chrome): TimeoutError -> https://www.hinatazaka46.com
+
+ (Google Chrome): (153) https://www.cicero.de
+   (Google Chrome) https://www.cicero.de: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.cicero.de
+   (Google Chrome) https://www.cicero.de: Page loaded
+   (Google Chrome) https://www.cicero.de: Getting Cookies
+   (Google Chrome) https://www.cicero.de: Getting Localstorage
+   (Google Chrome) https://www.cicero.de: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Google Chrome) https://www.cicero.de: Adding requests to DB
+   (Google Chrome) https://www.cicero.de: Adding to successful website
+
+ (Google Chrome): (154) https://www.exploreminnesota.com
+   (Google Chrome) https://www.exploreminnesota.com: Getting Requests and Reponses
+   (Google Chrome) : Loading new page https://www.exploreminnesota.com
+   (Google Chrome) https://www.exploreminnesota.com: Page loaded
+   (Google Chrome) https://www.exploreminnesota.com: Getting Cookies
+   (Google Chrome) https://www.exploreminnesota.com: Getting Localstorage
+   (Google Chrome) https://www.exploreminnesota.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'consent' ]
+Error accessing element handle's visibility -- classname
+   (Google Chrome) https://www.exploreminnesota.com: Adding requests to DB
+   (Google Chrome) https://www.exploreminnesota.com: Adding to successful website
+Database connection disconnected
