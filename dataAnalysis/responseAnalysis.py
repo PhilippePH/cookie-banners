@@ -161,16 +161,73 @@ def popularContentTypeCountPerBrowserPercentageChange(cursor):
   plt.close()
 
 
+
+
+def pieChartContentType(cursor):
+  cursor.execute("""
+  SELECT
+  browser,
+  SPLIT_PART(contenttype, ';', 1) AS content_type,
+  COUNT(*) AS content_type_count
+  FROM
+  responsedata
+  GROUP BY
+  browser, SPLIT_PART(contenttype, ';', 1)
+                """)
+  results = cursor.fetchall()
+  
+  # Create a DataFrame from the data
+  df = pd.DataFrame(columns=["Browser", "Content_Type", "Count"])
+  print("pieChartContentType")
+  
+  for line in results:
+    browser = line[0].strip()
+    content_type = line[1]
+    count = line[2]
+
+    df = pd.concat([pd.DataFrame([[browser, content_type, count]], columns=df.columns), df], ignore_index=True)
+
+  # Get distinct browser values
+  distinct_browsers = df["Browser"].unique()
+
+  for browser in distinct_browsers:
+    browser_data = df[df["Browser"] == browser]
+    browser_data = browser_data.sort_values(by="Count", ascending=False)
+    
+    top_10_content_types = browser_data.head(10)
+    other_count = browser_data.iloc[10:]["Count"].sum()
+
+    # Create a list of content types for the pie chart
+    content_types = top_10_content_types["Content_Type"].tolist()
+    content_types.append("Other")
+
+    # Calculate counts for the pie chart
+    counts = top_10_content_types["Count"].tolist()
+    counts.append(other_count)
+
+    # Create a pie chart
+    plt.figure(f"pieChartContentType_{browser}")
+    plt.pie(counts, labels=content_types, autopct="%1.1f%%")
+    plt.title(f"Content Types Distribution - {browser}")
+    plt.axis("equal")  # Equal aspect ratio ensures that pie is drawn as a circle.
+    plt.savefig(f"./responsePlots/pieChartContentType_{browser}.png")
+    plt.close()
+
+
+
+
 def main():
   dbConnection = psycopg2.connect("dbname=crawl01 user=postgres password=I@mastrongpsswd")
   cursor = dbConnection.cursor()
 
   # avgContentLength(cursor)  # doesn't yet work with non-number content length
 
-  totalNumberResponses_sameSubset(cursor)
-  totalNumberResponses_sameSubset_PercentageChange(cursor)
+  # totalNumberResponses_sameSubset(cursor)
+  # totalNumberResponses_sameSubset_PercentageChange(cursor)
   # popularContentTypeCountPerBrowser(cursor)
   # popularContentTypeCountPerBrowserPercentageChange(cursor)
+
+  pieChartContentType(cursor)
 
   cursor.close()
   dbConnection.close()

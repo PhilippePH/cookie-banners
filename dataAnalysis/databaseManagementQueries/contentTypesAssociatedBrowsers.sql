@@ -6,5 +6,5 @@ FROM
     responsedata
 GROUP BY
     SPLIT_PART(contenttype, ';', 1)
--- HAVING
--- 	string_agg(browser, ', ') = 'Google Chrome';
+HAVING
+	count(*) > 500
