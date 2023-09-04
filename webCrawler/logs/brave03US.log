@@ -1,0 +1,1196 @@
+Database connection established
+
+ (Brave): (1) https://www.google.com
+   (Brave) https://www.google.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.google.com
+   (Brave) https://www.google.com: Page loaded
+   (Brave) https://www.google.com: Getting Cookies
+   (Brave) https://www.google.com: Getting Localstorage
+   (Brave) https://www.google.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.google.com: Adding requests to DB
+   (Brave) https://www.google.com: Adding to successful website
+
+ (Brave): (2) https://www.microsoft.com
+   (Brave) https://www.microsoft.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.microsoft.com
+   (Brave) https://www.microsoft.com: Page loaded
+   (Brave) https://www.microsoft.com: Getting Cookies
+   (Brave) https://www.microsoft.com: Getting Localstorage
+   (Brave) https://www.microsoft.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (manage cookies), or less than 2 elements in subtree (1)).
+   (Brave) https://www.microsoft.com: Adding requests to DB
+   (Brave) https://www.microsoft.com: Adding to successful website
+
+ (Brave): (3) https://www.linkedin.com
+   (Brave) https://www.linkedin.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.linkedin.com
+   (Brave) https://www.linkedin.com: Page loaded
+   (Brave) https://www.linkedin.com: Getting Cookies
+   (Brave) https://www.linkedin.com: Getting Localstorage
+   (Brave) https://www.linkedin.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy), or less than 2 elements in subtree (1)).
+   (Brave) https://www.linkedin.com: Adding requests to DB
+   (Brave) https://www.linkedin.com: Adding to successful website
+
+ (Brave): (4) https://www.live.com
+   (Brave) https://www.live.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.live.com
+   (Brave) https://www.live.com: Page loaded
+   (Brave) https://www.live.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Brave) https://www.live.com: Getting Localstorage
+   (Brave) https://www.live.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (manage cookies), or less than 2 elements in subtree (1)).
+   (Brave) https://www.live.com: Adding requests to DB
+   (Brave) https://www.live.com: Adding to successful website
+
+ (Brave): (5) https://www.sharepoint.com
+   (Brave) https://www.sharepoint.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.sharepoint.com
+   (Brave) https://www.sharepoint.com: Page loaded
+   (Brave) https://www.sharepoint.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Brave) https://www.sharepoint.com: Getting Localstorage
+   (Brave) https://www.sharepoint.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (manage cookies), or less than 2 elements in subtree (1)).
+   (Brave) https://www.sharepoint.com: Adding requests to DB
+   (Brave) https://www.sharepoint.com: Adding to successful website
+
+ (Brave): (6) https://www.health.mil
+   (Brave) https://www.health.mil: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.health.mil
+**  (Brave): TimeoutError -> https://www.health.mil
+
+ (Brave): (7) https://www.booking.com
+   (Brave) https://www.booking.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.booking.com
+   (Brave) https://www.booking.com: Page loaded
+   (Brave) https://www.booking.com: Getting Cookies
+   (Brave) https://www.booking.com: Getting Localstorage
+   (Brave) https://www.booking.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (0)).
+   (Brave) https://www.booking.com: Adding requests to DB
+   (Brave) https://www.booking.com: Adding to successful website
+
+ (Brave): (8) https://www.bluehost.com
+   (Brave) https://www.bluehost.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.bluehost.com
+   (Brave) https://www.bluehost.com: Page loaded
+   (Brave) https://www.bluehost.com: Getting Cookies
+   (Brave) https://www.bluehost.com: Getting Localstorage
+   (Brave) https://www.bluehost.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Brave) https://www.bluehost.com: Adding requests to DB
+   (Brave) https://www.bluehost.com: Adding to successful website
+
+ (Brave): (9) https://www.dbankcloud.cn
+   (Brave) https://www.dbankcloud.cn: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.dbankcloud.cn
+   (Brave) https://www.dbankcloud.cn: Page loaded
+   (Brave) https://www.dbankcloud.cn: Getting Cookies
+   (Brave) https://www.dbankcloud.cn: Getting Localstorage
+   (Brave) https://www.dbankcloud.cn: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.dbankcloud.cn: Adding requests to DB
+   (Brave) https://www.dbankcloud.cn: Adding to successful website
+
+ (Brave): (10) https://www.nike.com
+   (Brave) https://www.nike.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.nike.com
+**  (Brave): TimeoutError -> https://www.nike.com
+
+ (Brave): (11) https://www.livejournal.com
+   (Brave) https://www.livejournal.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.livejournal.com
+   (Brave) https://www.livejournal.com: Page loaded
+   (Brave) https://www.livejournal.com: Getting Cookies
+   (Brave) https://www.livejournal.com: Getting Localstorage
+   (Brave) https://www.livejournal.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (0)).
+   (Brave) https://www.livejournal.com: Adding requests to DB
+   (Brave) https://www.livejournal.com: Adding to successful website
+
+ (Brave): (12) https://www.aboutads.info
+   (Brave) https://www.aboutads.info: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.aboutads.info
+   (Brave) https://www.aboutads.info: Page loaded
+   (Brave) https://www.aboutads.info: Getting Cookies
+   (Brave) https://www.aboutads.info: Getting Localstorage
+   (Brave) https://www.aboutads.info: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.aboutads.info: Adding requests to DB
+   (Brave) https://www.aboutads.info: Adding to successful website
+
+ (Brave): (13) https://www.gosuslugi.ru
+   (Brave) https://www.gosuslugi.ru: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.gosuslugi.ru
+**  (Brave): TimeoutError -> https://www.gosuslugi.ru
+
+ (Brave): (14) https://www.allegro.pl
+   (Brave) https://www.allegro.pl: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.allegro.pl
+   (Brave) https://www.allegro.pl: Page loaded
+   (Brave) https://www.allegro.pl: Getting Cookies
+   (Brave) https://www.allegro.pl: Getting Localstorage
+   (Brave) https://www.allegro.pl: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.allegro.pl: Adding requests to DB
+   (Brave) https://www.allegro.pl: Adding to successful website
+
+ (Brave): (15) https://www.shein.com
+   (Brave) https://www.shein.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.shein.com
+**  (Brave): TimeoutError -> https://www.shein.com
+
+ (Brave): (16) https://www.hinet.net
+   (Brave) https://www.hinet.net: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.hinet.net
+**  (Brave): TimeoutError -> https://www.hinet.net
+
+ (Brave): (17) https://www.a-mo.net
+   (Brave) https://www.a-mo.net: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.a-mo.net
+**  (Brave): TimeoutError -> https://www.a-mo.net
+
+ (Brave): (18) https://www.columbia.edu
+   (Brave) https://www.columbia.edu: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.columbia.edu
+   (Brave) https://www.columbia.edu: Page loaded
+   (Brave) https://www.columbia.edu: Getting Cookies
+   (Brave) https://www.columbia.edu: Getting Localstorage
+   (Brave) https://www.columbia.edu: Checking Cookie Banner
+The following words were found: [ 'consent', 'uses cookies', 'cookie notice', 'agree' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+   (Brave) https://www.columbia.edu: Adding requests to DB
+   (Brave) https://www.columbia.edu: Adding to successful website
+
+ (Brave): (19) https://www.upstream.to
+   (Brave) https://www.upstream.to: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.upstream.to
+   (Brave) https://www.upstream.to: Page loaded
+   (Brave) https://www.upstream.to: Getting Cookies
+   (Brave) https://www.upstream.to: Getting Localstorage
+   (Brave) https://www.upstream.to: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.upstream.to: Adding requests to DB
+   (Brave) https://www.upstream.to: Adding to successful website
+
+ (Brave): (20) https://www.ha-vel.cz
+   (Brave) https://www.ha-vel.cz: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.ha-vel.cz
+   (Brave) https://www.ha-vel.cz: Page loaded
+   (Brave) https://www.ha-vel.cz: Getting Cookies
+   (Brave) https://www.ha-vel.cz: Getting Localstorage
+   (Brave) https://www.ha-vel.cz: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.ha-vel.cz: Adding requests to DB
+   (Brave) https://www.ha-vel.cz: Adding to successful website
+
+ (Brave): (21) https://www.workingnotworking.com
+   (Brave) https://www.workingnotworking.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.workingnotworking.com
+   (Brave) https://www.workingnotworking.com: Page loaded
+   (Brave) https://www.workingnotworking.com: Getting Cookies
+   (Brave) https://www.workingnotworking.com: Getting Localstorage
+   (Brave) https://www.workingnotworking.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.workingnotworking.com: Adding requests to DB
+   (Brave) https://www.workingnotworking.com: Adding to successful website
+
+ (Brave): (22) https://www.bnmla.com
+   (Brave) https://www.bnmla.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.bnmla.com
+**  (Brave): Error visiting webpage -> https://www.bnmla.com (net::ERR_NAME_NOT_RESOLVED at https://www.bnmla.com)
+
+ (Brave): (23) https://www.framesdirect.com
+   (Brave) https://www.framesdirect.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.framesdirect.com
+   (Brave) https://www.framesdirect.com: Page loaded
+   (Brave) https://www.framesdirect.com: Getting Cookies
+   (Brave) https://www.framesdirect.com: Getting Localstorage
+   (Brave) https://www.framesdirect.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Brave): (24) https://www.nic.st
+   (Brave) https://www.nic.st: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.nic.st
+   (Brave) https://www.nic.st: Page loaded
+   (Brave) https://www.nic.st: Getting Cookies
+   (Brave) https://www.nic.st: Getting Localstorage
+   (Brave) https://www.nic.st: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (more information), or less than 2 elements in subtree (1)).
+   (Brave) https://www.nic.st: Adding requests to DB
+   (Brave) https://www.nic.st: Adding to successful website
+
+ (Brave): (25) https://www.lucidchart.com
+   (Brave) https://www.lucidchart.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.lucidchart.com
+   (Brave) https://www.lucidchart.com: Page loaded
+   (Brave) https://www.lucidchart.com: Getting Cookies
+   (Brave) https://www.lucidchart.com: Getting Localstorage
+   (Brave) https://www.lucidchart.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Brave): (26) https://www.d20pfsrd.com
+   (Brave) https://www.d20pfsrd.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.d20pfsrd.com
+   (Brave) https://www.d20pfsrd.com: Page loaded
+   (Brave) https://www.d20pfsrd.com: Getting Cookies
+   (Brave) https://www.d20pfsrd.com: Getting Localstorage
+   (Brave) https://www.d20pfsrd.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,uses cookies), or less than 2 elements in subtree (0)).
+   (Brave) https://www.d20pfsrd.com: Adding requests to DB
+   (Brave) https://www.d20pfsrd.com: Adding to successful website
+
+ (Brave): (27) https://www.samarth.edu.in
+   (Brave) https://www.samarth.edu.in: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.samarth.edu.in
+   (Brave) https://www.samarth.edu.in: Page loaded
+   (Brave) https://www.samarth.edu.in: Getting Cookies
+   (Brave) https://www.samarth.edu.in: Getting Localstorage
+   (Brave) https://www.samarth.edu.in: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.samarth.edu.in: Adding requests to DB
+   (Brave) https://www.samarth.edu.in: Adding to successful website
+
+ (Brave): (28) https://www.gsi.go.jp
+   (Brave) https://www.gsi.go.jp: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.gsi.go.jp
+   (Brave) https://www.gsi.go.jp: Page loaded
+   (Brave) https://www.gsi.go.jp: Getting Cookies
+   (Brave) https://www.gsi.go.jp: Getting Localstorage
+   (Brave) https://www.gsi.go.jp: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.gsi.go.jp: Adding requests to DB
+   (Brave) https://www.gsi.go.jp: Adding to successful website
+
+ (Brave): (29) https://www.zbj.com
+   (Brave) https://www.zbj.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.zbj.com
+**  (Brave): TimeoutError -> https://www.zbj.com
+
+ (Brave): (30) https://www.searchbooster.net
+   (Brave) https://www.searchbooster.net: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.searchbooster.net
+   (Brave) https://www.searchbooster.net: Page loaded
+   (Brave) https://www.searchbooster.net: Getting Cookies
+   (Brave) https://www.searchbooster.net: Getting Localstorage
+   (Brave) https://www.searchbooster.net: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Brave) https://www.searchbooster.net: Adding requests to DB
+   (Brave) https://www.searchbooster.net: Adding to successful website
+
+ (Brave): (31) https://www.qualified.com
+   (Brave) https://www.qualified.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.qualified.com
+**  (Brave): TimeoutError -> https://www.qualified.com
+
+ (Brave): (32) https://www.1688.com
+   (Brave) https://www.1688.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.1688.com
+**  (Brave): TimeoutError -> https://www.1688.com
+
+ (Brave): (33) https://www.oreo.com
+   (Brave) https://www.oreo.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.oreo.com
+   (Brave) https://www.oreo.com: Page loaded
+   (Brave) https://www.oreo.com: Getting Cookies
+   (Brave) https://www.oreo.com: Getting Localstorage
+   (Brave) https://www.oreo.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,use cookies), or less than 2 elements in subtree (0)).
+   (Brave) https://www.oreo.com: Adding requests to DB
+   (Brave) https://www.oreo.com: Adding to successful website
+
+ (Brave): (34) https://www.moitruongvadothi.vn
+   (Brave) https://www.moitruongvadothi.vn: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.moitruongvadothi.vn
+**  (Brave): TimeoutError -> https://www.moitruongvadothi.vn
+
+ (Brave): (35) https://www.rssing.com
+   (Brave) https://www.rssing.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.rssing.com
+   (Brave) https://www.rssing.com: Page loaded
+   (Brave) https://www.rssing.com: Getting Cookies
+   (Brave) https://www.rssing.com: Getting Localstorage
+   (Brave) https://www.rssing.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.rssing.com: Adding requests to DB
+   (Brave) https://www.rssing.com: Adding to successful website
+
+ (Brave): (36) https://www.theplaylist.net
+   (Brave) https://www.theplaylist.net: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.theplaylist.net
+   (Brave) https://www.theplaylist.net: Page loaded
+   (Brave) https://www.theplaylist.net: Getting Cookies
+   (Brave) https://www.theplaylist.net: Getting Localstorage
+   (Brave) https://www.theplaylist.net: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.theplaylist.net: Adding requests to DB
+   (Brave) https://www.theplaylist.net: Adding to successful website
+
+ (Brave): (37) https://www.travian.com
+   (Brave) https://www.travian.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.travian.com
+   (Brave) https://www.travian.com: Page loaded
+   (Brave) https://www.travian.com: Getting Cookies
+   (Brave) https://www.travian.com: Getting Localstorage
+   (Brave) https://www.travian.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.travian.com: Adding requests to DB
+   (Brave) https://www.travian.com: Adding to successful website
+
+ (Brave): (38) https://www.animeworld.so
+   (Brave) https://www.animeworld.so: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.animeworld.so
+   (Brave) https://www.animeworld.so: Page loaded
+   (Brave) https://www.animeworld.so: Getting Cookies
+   (Brave) https://www.animeworld.so: Getting Localstorage
+   (Brave) https://www.animeworld.so: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.animeworld.so: Adding requests to DB
+   (Brave) https://www.animeworld.so: Adding to successful website
+
+ (Brave): (39) https://www.atlantafed.org
+   (Brave) https://www.atlantafed.org: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.atlantafed.org
+**  (Brave): TimeoutError -> https://www.atlantafed.org
+
+ (Brave): (40) https://www.gtu.ac.in
+   (Brave) https://www.gtu.ac.in: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.gtu.ac.in
+   (Brave) https://www.gtu.ac.in: Page loaded
+   (Brave) https://www.gtu.ac.in: Getting Cookies
+   (Brave) https://www.gtu.ac.in: Getting Localstorage
+   (Brave) https://www.gtu.ac.in: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.gtu.ac.in: Adding requests to DB
+   (Brave) https://www.gtu.ac.in: Adding to successful website
+
+ (Brave): (41) https://www.unwiredltd.com
+   (Brave) https://www.unwiredltd.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.unwiredltd.com
+**  (Brave): TimeoutError -> https://www.unwiredltd.com
+
+ (Brave): (42) https://www.remitano.com
+   (Brave) https://www.remitano.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.remitano.com
+   (Brave) https://www.remitano.com: Page loaded
+   (Brave) https://www.remitano.com: Getting Cookies
+   (Brave) https://www.remitano.com: Getting Localstorage
+   (Brave) https://www.remitano.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (0)).
+   (Brave) https://www.remitano.com: Adding requests to DB
+   (Brave) https://www.remitano.com: Adding to successful website
+
+ (Brave): (43) https://www.yingjiesheng.com
+   (Brave) https://www.yingjiesheng.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.yingjiesheng.com
+**  (Brave): TimeoutError -> https://www.yingjiesheng.com
+
+ (Brave): (44) https://www.developpez.net
+   (Brave) https://www.developpez.net: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.developpez.net
+   (Brave) https://www.developpez.net: Page loaded
+   (Brave) https://www.developpez.net: Getting Cookies
+   (Brave) https://www.developpez.net: Getting Localstorage
+   (Brave) https://www.developpez.net: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Brave) https://www.developpez.net: Adding requests to DB
+   (Brave) https://www.developpez.net: Adding to successful website
+
+ (Brave): (45) https://www.rnd.de
+   (Brave) https://www.rnd.de: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.rnd.de
+   (Brave) https://www.rnd.de: Page loaded
+   (Brave) https://www.rnd.de: Getting Cookies
+   (Brave) https://www.rnd.de: Getting Localstorage
+   (Brave) https://www.rnd.de: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.rnd.de: Adding requests to DB
+   (Brave) https://www.rnd.de: Adding to successful website
+
+ (Brave): (46) https://www.eo.nl
+   (Brave) https://www.eo.nl: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.eo.nl
+**  (Brave): TimeoutError -> https://www.eo.nl
+
+ (Brave): (47) https://www.trugreen.com
+   (Brave) https://www.trugreen.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.trugreen.com
+   (Brave) https://www.trugreen.com: Page loaded
+   (Brave) https://www.trugreen.com: Getting Cookies
+   (Brave) https://www.trugreen.com: Getting Localstorage
+   (Brave) https://www.trugreen.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,consent,use cookies), or less than 2 elements in subtree (0)).
+   (Brave) https://www.trugreen.com: Adding requests to DB
+   (Brave) https://www.trugreen.com: Adding to successful website
+
+ (Brave): (48) https://www.tuat.ac.jp
+   (Brave) https://www.tuat.ac.jp: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.tuat.ac.jp
+   (Brave) https://www.tuat.ac.jp: Page loaded
+   (Brave) https://www.tuat.ac.jp: Getting Cookies
+   (Brave) https://www.tuat.ac.jp: Getting Localstorage
+   (Brave) https://www.tuat.ac.jp: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Brave) https://www.tuat.ac.jp: Adding requests to DB
+   (Brave) https://www.tuat.ac.jp: Adding to successful website
+
+ (Brave): (49) https://www.yourtexasbenefits.com
+   (Brave) https://www.yourtexasbenefits.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.yourtexasbenefits.com
+   (Brave) https://www.yourtexasbenefits.com: Page loaded
+   (Brave) https://www.yourtexasbenefits.com: Getting Cookies
+   (Brave) https://www.yourtexasbenefits.com: Getting Localstorage
+   (Brave) https://www.yourtexasbenefits.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.yourtexasbenefits.com: Adding requests to DB
+   (Brave) https://www.yourtexasbenefits.com: Adding to successful website
+
+ (Brave): (50) https://www.gijima.com
+   (Brave) https://www.gijima.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.gijima.com
+   (Brave) https://www.gijima.com: Page loaded
+   (Brave) https://www.gijima.com: Getting Cookies
+   (Brave) https://www.gijima.com: Getting Localstorage
+   (Brave) https://www.gijima.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.gijima.com: Adding requests to DB
+   (Brave) https://www.gijima.com: Adding to successful website
+
+ (Brave): (51) https://www.kbs.co.kr
+   (Brave) https://www.kbs.co.kr: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.kbs.co.kr
+   (Brave) https://www.kbs.co.kr: Page loaded
+   (Brave) https://www.kbs.co.kr: Getting Cookies
+   (Brave) https://www.kbs.co.kr: Getting Localstorage
+   (Brave) https://www.kbs.co.kr: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.kbs.co.kr: Adding requests to DB
+   (Brave) https://www.kbs.co.kr: Adding to successful website
+
+ (Brave): (52) https://www.591.com.tw
+   (Brave) https://www.591.com.tw: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.591.com.tw
+**  (Brave): TimeoutError -> https://www.591.com.tw
+
+ (Brave): (53) https://www.mfa.gov.by
+   (Brave) https://www.mfa.gov.by: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.mfa.gov.by
+   (Brave) https://www.mfa.gov.by: Page loaded
+   (Brave) https://www.mfa.gov.by: Getting Cookies
+   (Brave) https://www.mfa.gov.by: Getting Localstorage
+   (Brave) https://www.mfa.gov.by: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.mfa.gov.by: Adding requests to DB
+   (Brave) https://www.mfa.gov.by: Adding to successful website
+
+ (Brave): (54) https://www.privatbankar.hu
+   (Brave) https://www.privatbankar.hu: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.privatbankar.hu
+   (Brave) https://www.privatbankar.hu: Page loaded
+   (Brave) https://www.privatbankar.hu: Getting Cookies
+   (Brave) https://www.privatbankar.hu: Getting Localstorage
+   (Brave) https://www.privatbankar.hu: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.privatbankar.hu: Adding requests to DB
+   (Brave) https://www.privatbankar.hu: Adding to successful website
+
+ (Brave): (55) https://www.saashr.com
+   (Brave) https://www.saashr.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.saashr.com
+   (Brave) https://www.saashr.com: Page loaded
+   (Brave) https://www.saashr.com: Getting Cookies
+   (Brave) https://www.saashr.com: Getting Localstorage
+   (Brave) https://www.saashr.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie notice), or less than 2 elements in subtree (0)).
+   (Brave) https://www.saashr.com: Adding requests to DB
+   (Brave) https://www.saashr.com: Adding to successful website
+
+ (Brave): (56) https://www.pemex.com
+   (Brave) https://www.pemex.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.pemex.com
+**  (Brave): TimeoutError -> https://www.pemex.com
+
+ (Brave): (57) https://www.wineandfoodtour.it
+   (Brave) https://www.wineandfoodtour.it: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.wineandfoodtour.it
+   (Brave) https://www.wineandfoodtour.it: Page loaded
+   (Brave) https://www.wineandfoodtour.it: Getting Cookies
+   (Brave) https://www.wineandfoodtour.it: Getting Localstorage
+   (Brave) https://www.wineandfoodtour.it: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.wineandfoodtour.it: Adding requests to DB
+   (Brave) https://www.wineandfoodtour.it: Adding to successful website
+
+ (Brave): (58) https://www.so.com
+   (Brave) https://www.so.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.so.com
+**  (Brave): TimeoutError -> https://www.so.com
+
+ (Brave): (59) https://www.otenki.com
+   (Brave) https://www.otenki.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.otenki.com
+   (Brave) https://www.otenki.com: Page loaded
+   (Brave) https://www.otenki.com: Getting Cookies
+   (Brave) https://www.otenki.com: Getting Localstorage
+   (Brave) https://www.otenki.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Brave) https://www.otenki.com: Adding requests to DB
+   (Brave) https://www.otenki.com: Adding to successful website
+
+ (Brave): (60) https://www.stibee.com
+   (Brave) https://www.stibee.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.stibee.com
+   (Brave) https://www.stibee.com: Page loaded
+   (Brave) https://www.stibee.com: Getting Cookies
+   (Brave) https://www.stibee.com: Getting Localstorage
+   (Brave) https://www.stibee.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.stibee.com: Adding requests to DB
+   (Brave) https://www.stibee.com: Adding to successful website
+
+ (Brave): (61) https://www.chillingeffects.org
+   (Brave) https://www.chillingeffects.org: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.chillingeffects.org
+   (Brave) https://www.chillingeffects.org: Page loaded
+   (Brave) https://www.chillingeffects.org: Getting Cookies
+   (Brave) https://www.chillingeffects.org: Getting Localstorage
+   (Brave) https://www.chillingeffects.org: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Brave) https://www.chillingeffects.org: Adding requests to DB
+   (Brave) https://www.chillingeffects.org: Adding to successful website
+
+ (Brave): (62) https://www.edomex.gob.mx
+   (Brave) https://www.edomex.gob.mx: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.edomex.gob.mx
+**  (Brave): TimeoutError -> https://www.edomex.gob.mx
+
+ (Brave): (63) https://www.calyptra-soft.net
+   (Brave) https://www.calyptra-soft.net: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.calyptra-soft.net
+**  (Brave): TimeoutError -> https://www.calyptra-soft.net
+
+ (Brave): (64) https://www.hitv.com
+   (Brave) https://www.hitv.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.hitv.com
+   (Brave) https://www.hitv.com: Page loaded
+   (Brave) https://www.hitv.com: Getting Cookies
+   (Brave) https://www.hitv.com: Getting Localstorage
+   (Brave) https://www.hitv.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (1)).
+   (Brave) https://www.hitv.com: Adding requests to DB
+   (Brave) https://www.hitv.com: Adding to successful website
+
+ (Brave): (65) https://www.ksl.com
+   (Brave) https://www.ksl.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.ksl.com
+   (Brave) https://www.ksl.com: Page loaded
+   (Brave) https://www.ksl.com: Getting Cookies
+   (Brave) https://www.ksl.com: Getting Localstorage
+   (Brave) https://www.ksl.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (privacy statement), or less than 2 elements in subtree (0)).
+   (Brave) https://www.ksl.com: Adding requests to DB
+   (Brave) https://www.ksl.com: Adding to successful website
+
+ (Brave): (66) https://www.bnmuumis.in
+   (Brave) https://www.bnmuumis.in: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.bnmuumis.in
+   (Brave) https://www.bnmuumis.in: Page loaded
+   (Brave) https://www.bnmuumis.in: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Brave) https://www.bnmuumis.in: Getting Localstorage
+   (Brave) https://www.bnmuumis.in: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Brave) https://www.bnmuumis.in: Adding requests to DB
+   (Brave) https://www.bnmuumis.in: Adding to successful website
+
+ (Brave): (67) https://www.nsw2u.com
+   (Brave) https://www.nsw2u.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.nsw2u.com
+   (Brave) https://www.nsw2u.com: Page loaded
+   (Brave) https://www.nsw2u.com: Getting Cookies
+   (Brave) https://www.nsw2u.com: Getting Localstorage
+   (Brave) https://www.nsw2u.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.nsw2u.com: Adding requests to DB
+   (Brave) https://www.nsw2u.com: Adding to successful website
+
+ (Brave): (68) https://www.codecombat.com
+   (Brave) https://www.codecombat.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.codecombat.com
+   (Brave) https://www.codecombat.com: Page loaded
+   (Brave) https://www.codecombat.com: Getting Cookies
+   (Brave) https://www.codecombat.com: Getting Localstorage
+   (Brave) https://www.codecombat.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy), or less than 2 elements in subtree (1)).
+   (Brave) https://www.codecombat.com: Adding requests to DB
+   (Brave) https://www.codecombat.com: Adding to successful website
+
+ (Brave): (69) https://www.spd.net.tr
+   (Brave) https://www.spd.net.tr: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.spd.net.tr
+   (Brave) https://www.spd.net.tr: Page loaded
+   (Brave) https://www.spd.net.tr: Getting Cookies
+   (Brave) https://www.spd.net.tr: Getting Localstorage
+   (Brave) https://www.spd.net.tr: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.spd.net.tr: Adding requests to DB
+   (Brave) https://www.spd.net.tr: Adding to successful website
+
+ (Brave): (70) https://www.campeonatochileno.cl
+   (Brave) https://www.campeonatochileno.cl: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.campeonatochileno.cl
+   (Brave) https://www.campeonatochileno.cl: Page loaded
+   (Brave) https://www.campeonatochileno.cl: Getting Cookies
+   (Brave) https://www.campeonatochileno.cl: Getting Localstorage
+   (Brave) https://www.campeonatochileno.cl: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.campeonatochileno.cl: Adding requests to DB
+   (Brave) https://www.campeonatochileno.cl: Adding to successful website
+
+ (Brave): (71) https://www.g2sports.bet
+   (Brave) https://www.g2sports.bet: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.g2sports.bet
+   (Brave) https://www.g2sports.bet: Page loaded
+   (Brave) https://www.g2sports.bet: Getting Cookies
+   (Brave) https://www.g2sports.bet: Getting Localstorage
+   (Brave) https://www.g2sports.bet: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.g2sports.bet: Adding requests to DB
+   (Brave) https://www.g2sports.bet: Adding to successful website
+
+ (Brave): (72) https://www.revolver.news
+   (Brave) https://www.revolver.news: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.revolver.news
+   (Brave) https://www.revolver.news: Page loaded
+   (Brave) https://www.revolver.news: Getting Cookies
+   (Brave) https://www.revolver.news: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Brave) https://www.revolver.news: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (0)).
+   (Brave) https://www.revolver.news: Adding requests to DB
+   (Brave) https://www.revolver.news: Adding to successful website
+
+ (Brave): (73) https://www.bsn.com.my
+   (Brave) https://www.bsn.com.my: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.bsn.com.my
+   (Brave) https://www.bsn.com.my: Page loaded
+   (Brave) https://www.bsn.com.my: Getting Cookies
+   (Brave) https://www.bsn.com.my: Getting Localstorage
+   (Brave) https://www.bsn.com.my: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.bsn.com.my: Adding requests to DB
+   (Brave) https://www.bsn.com.my: Adding to successful website
+
+ (Brave): (74) https://www.jogodasorte.net
+   (Brave) https://www.jogodasorte.net: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.jogodasorte.net
+   (Brave) https://www.jogodasorte.net: Page loaded
+   (Brave) https://www.jogodasorte.net: Getting Cookies
+   (Brave) https://www.jogodasorte.net: Getting Localstorage
+   (Brave) https://www.jogodasorte.net: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.jogodasorte.net: Adding requests to DB
+   (Brave) https://www.jogodasorte.net: Adding to successful website
+
+ (Brave): (75) https://www.dreame.tech
+   (Brave) https://www.dreame.tech: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.dreame.tech
+**  (Brave): TimeoutError -> https://www.dreame.tech
+
+ (Brave): (76) https://www.merolagani.com
+   (Brave) https://www.merolagani.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.merolagani.com
+**  (Brave): TimeoutError -> https://www.merolagani.com
+
+ (Brave): (77) https://www.j-live.tv
+   (Brave) https://www.j-live.tv: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.j-live.tv
+**  (Brave): TimeoutError -> https://www.j-live.tv
+
+ (Brave): (78) https://www.itplatforma.com
+   (Brave) https://www.itplatforma.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.itplatforma.com
+**  (Brave): TimeoutError -> https://www.itplatforma.com
+
+ (Brave): (79) https://www.opticnet.pro
+   (Brave) https://www.opticnet.pro: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.opticnet.pro
+**  (Brave): TimeoutError -> https://www.opticnet.pro
+
+ (Brave): (80) https://www.ralphlauren.co.jp
+   (Brave) https://www.ralphlauren.co.jp: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.ralphlauren.co.jp
+   (Brave) https://www.ralphlauren.co.jp: Page loaded
+   (Brave) https://www.ralphlauren.co.jp: Getting Cookies
+   (Brave) https://www.ralphlauren.co.jp: Getting Localstorage
+   (Brave) https://www.ralphlauren.co.jp: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.ralphlauren.co.jp: Adding requests to DB
+   (Brave) https://www.ralphlauren.co.jp: Adding to successful website
+
+ (Brave): (81) https://www.sro.vic.gov.au
+   (Brave) https://www.sro.vic.gov.au: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.sro.vic.gov.au
+   (Brave) https://www.sro.vic.gov.au: Page loaded
+   (Brave) https://www.sro.vic.gov.au: Getting Cookies
+   (Brave) https://www.sro.vic.gov.au: Getting Localstorage
+   (Brave) https://www.sro.vic.gov.au: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.sro.vic.gov.au: Adding requests to DB
+   (Brave) https://www.sro.vic.gov.au: Adding to successful website
+
+ (Brave): (82) https://www.elcode.ru
+   (Brave) https://www.elcode.ru: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.elcode.ru
+   (Brave) https://www.elcode.ru: Page loaded
+   (Brave) https://www.elcode.ru: Getting Cookies
+   (Brave) https://www.elcode.ru: Getting Localstorage
+   (Brave) https://www.elcode.ru: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.elcode.ru: Adding requests to DB
+   (Brave) https://www.elcode.ru: Adding to successful website
+
+ (Brave): (83) https://www.i-scream.co.kr
+   (Brave) https://www.i-scream.co.kr: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.i-scream.co.kr
+   (Brave) https://www.i-scream.co.kr: Page loaded
+   (Brave) https://www.i-scream.co.kr: Getting Cookies
+   (Brave) https://www.i-scream.co.kr: Getting Localstorage
+   (Brave) https://www.i-scream.co.kr: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.i-scream.co.kr: Adding requests to DB
+   (Brave) https://www.i-scream.co.kr: Adding to successful website
+
+ (Brave): (84) https://www.umj.ac.id
+   (Brave) https://www.umj.ac.id: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.umj.ac.id
+   (Brave) https://www.umj.ac.id: Page loaded
+   (Brave) https://www.umj.ac.id: Getting Cookies
+   (Brave) https://www.umj.ac.id: Getting Localstorage
+   (Brave) https://www.umj.ac.id: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.umj.ac.id: Adding requests to DB
+   (Brave) https://www.umj.ac.id: Adding to successful website
+
+ (Brave): (85) https://www.tiendapanini.com.mx
+   (Brave) https://www.tiendapanini.com.mx: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.tiendapanini.com.mx
+   (Brave) https://www.tiendapanini.com.mx: Page loaded
+   (Brave) https://www.tiendapanini.com.mx: Getting Cookies
+   (Brave) https://www.tiendapanini.com.mx: Getting Localstorage
+   (Brave) https://www.tiendapanini.com.mx: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.tiendapanini.com.mx: Adding requests to DB
+   (Brave) https://www.tiendapanini.com.mx: Adding to successful website
+
+ (Brave): (86) https://www.invaluable.com
+   (Brave) https://www.invaluable.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.invaluable.com
+   (Brave) https://www.invaluable.com: Page loaded
+   (Brave) https://www.invaluable.com: Getting Cookies
+   (Brave) https://www.invaluable.com: Getting Localstorage
+   (Brave) https://www.invaluable.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (1)).
+   (Brave) https://www.invaluable.com: Adding requests to DB
+   (Brave) https://www.invaluable.com: Adding to successful website
+
+ (Brave): (87) https://www.hcc.edu.tw
+   (Brave) https://www.hcc.edu.tw: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.hcc.edu.tw
+   (Brave) https://www.hcc.edu.tw: Page loaded
+   (Brave) https://www.hcc.edu.tw: Getting Cookies
+   (Brave) https://www.hcc.edu.tw: Getting Localstorage
+   (Brave) https://www.hcc.edu.tw: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.hcc.edu.tw: Adding requests to DB
+   (Brave) https://www.hcc.edu.tw: Adding to successful website
+
+ (Brave): (88) https://www.k618.cn
+   (Brave) https://www.k618.cn: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.k618.cn
+   (Brave) https://www.k618.cn: Page loaded
+   (Brave) https://www.k618.cn: Getting Cookies
+   (Brave) https://www.k618.cn: Getting Localstorage
+   (Brave) https://www.k618.cn: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.k618.cn: Adding requests to DB
+   (Brave) https://www.k618.cn: Adding to successful website
+
+ (Brave): (89) https://www.wp-pl-potwierdz-dostep.site
+   (Brave) https://www.wp-pl-potwierdz-dostep.site: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.wp-pl-potwierdz-dostep.site
+**  (Brave): TimeoutError -> https://www.wp-pl-potwierdz-dostep.site
+
+ (Brave): (90) https://www.bisafans.de
+   (Brave) https://www.bisafans.de: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.bisafans.de
+   (Brave) https://www.bisafans.de: Page loaded
+   (Brave) https://www.bisafans.de: Getting Cookies
+   (Brave) https://www.bisafans.de: Getting Localstorage
+   (Brave) https://www.bisafans.de: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Brave): (91) https://www.wocloud.cn
+   (Brave) https://www.wocloud.cn: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.wocloud.cn
+**  (Brave): TimeoutError -> https://www.wocloud.cn
+
+ (Brave): (92) https://www.ajinomoto.co.jp
+   (Brave) https://www.ajinomoto.co.jp: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.ajinomoto.co.jp
+**  (Brave): TimeoutError -> https://www.ajinomoto.co.jp
+
+ (Brave): (93) https://www.bitpin.ir
+   (Brave) https://www.bitpin.ir: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.bitpin.ir
+   (Brave) https://www.bitpin.ir: Page loaded
+   (Brave) https://www.bitpin.ir: Getting Cookies
+   (Brave) https://www.bitpin.ir: Getting Localstorage
+   (Brave) https://www.bitpin.ir: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.bitpin.ir: Adding requests to DB
+   (Brave) https://www.bitpin.ir: Adding to successful website
+
+ (Brave): (94) https://www.manythings.org
+   (Brave) https://www.manythings.org: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.manythings.org
+   (Brave) https://www.manythings.org: Page loaded
+   (Brave) https://www.manythings.org: Getting Cookies
+   (Brave) https://www.manythings.org: Getting Localstorage
+   (Brave) https://www.manythings.org: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Brave): (95) https://www.gxnu.edu.cn
+   (Brave) https://www.gxnu.edu.cn: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.gxnu.edu.cn
+   (Brave) https://www.gxnu.edu.cn: Page loaded
+   (Brave) https://www.gxnu.edu.cn: Getting Cookies
+   (Brave) https://www.gxnu.edu.cn: Getting Localstorage
+   (Brave) https://www.gxnu.edu.cn: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.gxnu.edu.cn: Adding requests to DB
+   (Brave) https://www.gxnu.edu.cn: Adding to successful website
+
+ (Brave): (96) https://www.analyticsinsight.net
+   (Brave) https://www.analyticsinsight.net: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.analyticsinsight.net
+   (Brave) https://www.analyticsinsight.net: Page loaded
+   (Brave) https://www.analyticsinsight.net: Getting Cookies
+   (Brave) https://www.analyticsinsight.net: Getting Localstorage
+   (Brave) https://www.analyticsinsight.net: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (decline), or less than 2 elements in subtree (0)).
+   (Brave) https://www.analyticsinsight.net: Adding requests to DB
+   (Brave) https://www.analyticsinsight.net: Adding to successful website
+
+ (Brave): (97) https://www.emerse.com
+   (Brave) https://www.emerse.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.emerse.com
+   (Brave) https://www.emerse.com: Page loaded
+   (Brave) https://www.emerse.com: Getting Cookies
+   (Brave) https://www.emerse.com: Getting Localstorage
+   (Brave) https://www.emerse.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Brave): (98) https://www.damai.cn
+   (Brave) https://www.damai.cn: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.damai.cn
+   (Brave) https://www.damai.cn: Page loaded
+   (Brave) https://www.damai.cn: Getting Cookies
+   (Brave) https://www.damai.cn: Getting Localstorage
+   (Brave) https://www.damai.cn: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Brave) https://www.damai.cn: Adding requests to DB
+   (Brave) https://www.damai.cn: Adding to successful website
+
+ (Brave): (99) https://www.buntogel88.com
+   (Brave) https://www.buntogel88.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.buntogel88.com
+   (Brave) https://www.buntogel88.com: Page loaded
+   (Brave) https://www.buntogel88.com: Getting Cookies
+   (Brave) https://www.buntogel88.com: Getting Localstorage
+   (Brave) https://www.buntogel88.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Brave) https://www.buntogel88.com: Adding requests to DB
+   (Brave) https://www.buntogel88.com: Adding to successful website
+
+ (Brave): (100) https://www.fbf17cb842e16d4f41b597ad9da38d640f3bf9f526c3553cec2d7a7c.com
+   (Brave) https://www.fbf17cb842e16d4f41b597ad9da38d640f3bf9f526c3553cec2d7a7c.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.fbf17cb842e16d4f41b597ad9da38d640f3bf9f526c3553cec2d7a7c.com
+**  (Brave): TimeoutError -> https://www.fbf17cb842e16d4f41b597ad9da38d640f3bf9f526c3553cec2d7a7c.com
+
+ (Brave): (101) https://www.bcolyyp.in
+   (Brave) https://www.bcolyyp.in: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.bcolyyp.in
+**  (Brave): TimeoutError -> https://www.bcolyyp.in
+
+ (Brave): (102) https://www.comc.com
+   (Brave) https://www.comc.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.comc.com
+   (Brave) https://www.comc.com: Page loaded
+   (Brave) https://www.comc.com: Getting Cookies
+   (Brave) https://www.comc.com: Getting Localstorage
+   (Brave) https://www.comc.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Brave) https://www.comc.com: Adding requests to DB
+   (Brave) https://www.comc.com: Adding to successful website
+
+ (Brave): (103) https://www.crosscut.com
+   (Brave) https://www.crosscut.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.crosscut.com
+   (Brave) https://www.crosscut.com: Page loaded
+   (Brave) https://www.crosscut.com: Getting Cookies
+   (Brave) https://www.crosscut.com: Getting Localstorage
+   (Brave) https://www.crosscut.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (1)).
+   (Brave) https://www.crosscut.com: Adding requests to DB
+   (Brave) https://www.crosscut.com: Adding to successful website
+
+ (Brave): (104) https://www.sakurazaka46.com
+   (Brave) https://www.sakurazaka46.com: Getting Requests and Reponses
+   (Brave) : Loading new page https://www.sakurazaka46.com
+   (Brave) https://www.sakurazaka46.com: Page loaded
+   (Brave) https://www.sakurazaka46.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Brave) https://www.sakurazaka46.com: Getting Localstorage
+   (Brave) https://www.sakurazaka46.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Brave) https://www.sakurazaka46.com: Adding requests to DB
+   (Brave) https://www.sakurazaka46.com: Adding to successful website
+Database connection disconnected

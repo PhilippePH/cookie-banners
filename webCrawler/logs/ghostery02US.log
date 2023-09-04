@@ -1,0 +1,3593 @@
+Database connection established
+
+ (Ghostery): (1) https://www.google.com
+   (Ghostery) https://www.google.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.google.com
+**  (Ghostery): TimeoutError -> https://www.google.com
+
+ (Ghostery): (2) https://www.outlook.com
+   (Ghostery) https://www.outlook.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.outlook.com
+   (Ghostery) https://www.outlook.com: Page loaded
+   (Ghostery) https://www.outlook.com: Getting Cookies
+   (Ghostery) https://www.outlook.com: Getting Localstorage
+   (Ghostery) https://www.outlook.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,uses cookies), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.outlook.com: Adding requests to DB
+   (Ghostery) https://www.outlook.com: Adding to successful website
+
+ (Ghostery): (3) https://www.qq.com
+   (Ghostery) https://www.qq.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.qq.com
+**  (Ghostery): TimeoutError -> https://www.qq.com
+
+ (Ghostery): (4) https://www.tds.net
+   (Ghostery) https://www.tds.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.tds.net
+   (Ghostery) https://www.tds.net: Page loaded
+   (Ghostery) https://www.tds.net: Getting Cookies
+   (Ghostery) https://www.tds.net: Getting Localstorage
+   (Ghostery) https://www.tds.net: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.tds.net: Adding requests to DB
+   (Ghostery) https://www.tds.net: Adding to successful website
+
+ (Ghostery): (5) https://www.msedge.net
+   (Ghostery) https://www.msedge.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.msedge.net
+**  (Ghostery): TimeoutError -> https://www.msedge.net
+
+ (Ghostery): (6) https://www.tiktok.com
+   (Ghostery) https://www.tiktok.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.tiktok.com
+   (Ghostery) https://www.tiktok.com: Page loaded
+   (Ghostery) https://www.tiktok.com: Getting Cookies
+   (Ghostery) https://www.tiktok.com: Getting Localstorage
+   (Ghostery) https://www.tiktok.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,accept,decline,use cookies,uses cookies), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.tiktok.com: Adding requests to DB
+   (Ghostery) https://www.tiktok.com: Adding to successful website
+
+ (Ghostery): (7) https://www.paypal.com
+   (Ghostery) https://www.paypal.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.paypal.com
+   (Ghostery) https://www.paypal.com: Page loaded
+   (Ghostery) https://www.paypal.com: Getting Cookies
+   (Ghostery) https://www.paypal.com: Getting Localstorage
+   (Ghostery) https://www.paypal.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,accept), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.paypal.com: Adding requests to DB
+   (Ghostery) https://www.paypal.com: Adding to successful website
+
+ (Ghostery): (8) https://www.miit.gov.cn
+   (Ghostery) https://www.miit.gov.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.miit.gov.cn
+**  (Ghostery): TimeoutError -> https://www.miit.gov.cn
+
+ (Ghostery): (9) https://www.health.mil
+   (Ghostery) https://www.health.mil: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.health.mil
+**  (Ghostery): TimeoutError -> https://www.health.mil
+
+ (Ghostery): (10) https://www.bbc.co.uk
+   (Ghostery) https://www.bbc.co.uk: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bbc.co.uk
+   (Ghostery) https://www.bbc.co.uk: Page loaded
+   (Ghostery) https://www.bbc.co.uk: Getting Cookies
+   (Ghostery) https://www.bbc.co.uk: Getting Localstorage
+   (Ghostery) https://www.bbc.co.uk: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.bbc.co.uk: Adding requests to DB
+   (Ghostery) https://www.bbc.co.uk: Adding to successful website
+
+ (Ghostery): (11) https://www.mangosip.ru
+   (Ghostery) https://www.mangosip.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.mangosip.ru
+**  (Ghostery): TimeoutError -> https://www.mangosip.ru
+
+ (Ghostery): (12) https://www.adsafeprotected.com
+   (Ghostery) https://www.adsafeprotected.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.adsafeprotected.com
+**  (Ghostery): TimeoutError -> https://www.adsafeprotected.com
+
+ (Ghostery): (13) https://www.510623.com
+   (Ghostery) https://www.510623.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.510623.com
+**  (Ghostery): TimeoutError -> https://www.510623.com
+
+ (Ghostery): (14) https://www.jomodns.com
+   (Ghostery) https://www.jomodns.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.jomodns.com
+**  (Ghostery): TimeoutError -> https://www.jomodns.com
+
+ (Ghostery): (15) https://www.weebly.com
+   (Ghostery) https://www.weebly.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.weebly.com
+   (Ghostery) https://www.weebly.com: Page loaded
+   (Ghostery) https://www.weebly.com: Getting Cookies
+   (Ghostery) https://www.weebly.com: Getting Localstorage
+   (Ghostery) https://www.weebly.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.weebly.com: Adding requests to DB
+   (Ghostery) https://www.weebly.com: Adding to successful website
+
+ (Ghostery): (16) https://www.go.com
+   (Ghostery) https://www.go.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.go.com
+**  (Ghostery): TimeoutError -> https://www.go.com
+
+ (Ghostery): (17) https://www.hichina.com
+   (Ghostery) https://www.hichina.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hichina.com
+**  (Ghostery): TimeoutError -> https://www.hichina.com
+
+ (Ghostery): (18) https://www.elasticbeanstalk.com
+   (Ghostery) https://www.elasticbeanstalk.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.elasticbeanstalk.com
+**  (Ghostery): TimeoutError -> https://www.elasticbeanstalk.com
+
+ (Ghostery): (19) https://www.bidswitch.net
+   (Ghostery) https://www.bidswitch.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bidswitch.net
+**  (Ghostery): TimeoutError -> https://www.bidswitch.net
+
+ (Ghostery): (20) https://www.crashlytics.com
+   (Ghostery) https://www.crashlytics.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.crashlytics.com
+   (Ghostery) https://www.crashlytics.com: Page loaded
+   (Ghostery) https://www.crashlytics.com: Getting Cookies
+   (Ghostery) https://www.crashlytics.com: Getting Localstorage
+   (Ghostery) https://www.crashlytics.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (decline), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.crashlytics.com: Adding requests to DB
+   (Ghostery) https://www.crashlytics.com: Adding to successful website
+
+ (Ghostery): (21) https://www.cdngslb.com
+   (Ghostery) https://www.cdngslb.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cdngslb.com
+**  (Ghostery): TimeoutError -> https://www.cdngslb.com
+
+ (Ghostery): (22) https://www.hicloud.com
+   (Ghostery) https://www.hicloud.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hicloud.com
+**  (Ghostery): TimeoutError -> https://www.hicloud.com
+
+ (Ghostery): (23) https://www.sohu.com
+   (Ghostery) https://www.sohu.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.sohu.com
+**  (Ghostery): TimeoutError -> https://www.sohu.com
+
+ (Ghostery): (24) https://www.rackspace.net
+   (Ghostery) https://www.rackspace.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.rackspace.net
+**  (Ghostery): TimeoutError -> https://www.rackspace.net
+
+ (Ghostery): (25) https://www.bluehost.com
+   (Ghostery) https://www.bluehost.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bluehost.com
+   (Ghostery) https://www.bluehost.com: Page loaded
+   (Ghostery) https://www.bluehost.com: Getting Cookies
+   (Ghostery) https://www.bluehost.com: Getting Localstorage
+   (Ghostery) https://www.bluehost.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (26) https://www.inner-active.mobi
+   (Ghostery) https://www.inner-active.mobi: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.inner-active.mobi
+**  (Ghostery): Error visiting webpage -> https://www.inner-active.mobi (net::ERR_CONNECTION_CLOSED at https://www.inner-active.mobi)
+
+ (Ghostery): (27) https://www.ubnt.com
+   (Ghostery) https://www.ubnt.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ubnt.com
+   (Ghostery) https://www.ubnt.com: Page loaded
+   (Ghostery) https://www.ubnt.com: Getting Cookies
+   (Ghostery) https://www.ubnt.com: Getting Localstorage
+   (Ghostery) https://www.ubnt.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (more information), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.ubnt.com: Adding requests to DB
+   (Ghostery) https://www.ubnt.com: Adding to successful website
+
+ (Ghostery): (28) https://www.firetvcaptiveportal.com
+   (Ghostery) https://www.firetvcaptiveportal.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.firetvcaptiveportal.com
+**  (Ghostery): TimeoutError -> https://www.firetvcaptiveportal.com
+
+ (Ghostery): (29) https://www.ddns.net
+   (Ghostery) https://www.ddns.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ddns.net
+**  (Ghostery): TimeoutError -> https://www.ddns.net
+
+ (Ghostery): (30) https://www.worldnic.com
+   (Ghostery) https://www.worldnic.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.worldnic.com
+**  (Ghostery): TimeoutError -> https://www.worldnic.com
+
+ (Ghostery): (31) https://www.sina.com.cn
+   (Ghostery) https://www.sina.com.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.sina.com.cn
+**  (Ghostery): TimeoutError -> https://www.sina.com.cn
+
+ (Ghostery): (32) https://www.name.com
+   (Ghostery) https://www.name.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.name.com
+   (Ghostery) https://www.name.com: Page loaded
+   (Ghostery) https://www.name.com: Getting Cookies
+   (Ghostery) https://www.name.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.name.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'consent' ]
+   (Ghostery) https://www.name.com: Adding requests to DB
+   (Ghostery) https://www.name.com: Adding to successful website
+
+ (Ghostery): (33) https://www.alicdn.com
+   (Ghostery) https://www.alicdn.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.alicdn.com
+**  (Ghostery): TimeoutError -> https://www.alicdn.com
+
+ (Ghostery): (34) https://www.marriott.com
+   (Ghostery) https://www.marriott.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.marriott.com
+   (Ghostery) https://www.marriott.com: Page loaded
+   (Ghostery) https://www.marriott.com: Getting Cookies
+   (Ghostery) https://www.marriott.com: Getting Localstorage
+   (Ghostery) https://www.marriott.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (reject,reject all), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.marriott.com: Adding requests to DB
+   (Ghostery) https://www.marriott.com: Adding to successful website
+
+ (Ghostery): (35) https://www.tradingview.com
+   (Ghostery) https://www.tradingview.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.tradingview.com
+   (Ghostery) https://www.tradingview.com: Page loaded
+   (Ghostery) https://www.tradingview.com: Getting Cookies
+   (Ghostery) https://www.tradingview.com: Getting Localstorage
+   (Ghostery) https://www.tradingview.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (decline), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.tradingview.com: Adding requests to DB
+   (Ghostery) https://www.tradingview.com: Adding to successful website
+
+ (Ghostery): (36) https://www.dbankcloud.cn
+   (Ghostery) https://www.dbankcloud.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.dbankcloud.cn
+   (Ghostery) https://www.dbankcloud.cn: Page loaded
+   (Ghostery) https://www.dbankcloud.cn: Getting Cookies
+   (Ghostery) https://www.dbankcloud.cn: Getting Localstorage
+   (Ghostery) https://www.dbankcloud.cn: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.dbankcloud.cn: Adding requests to DB
+   (Ghostery) https://www.dbankcloud.cn: Adding to successful website
+
+ (Ghostery): (37) https://www.dnspod.net
+   (Ghostery) https://www.dnspod.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.dnspod.net
+**  (Ghostery): TimeoutError -> https://www.dnspod.net
+
+ (Ghostery): (38) https://www.theverge.com
+   (Ghostery) https://www.theverge.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.theverge.com
+   (Ghostery) https://www.theverge.com: Page loaded
+   (Ghostery) https://www.theverge.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Ghostery) https://www.theverge.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.theverge.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (39) https://www.nike.com
+   (Ghostery) https://www.nike.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.nike.com
+**  (Ghostery): TimeoutError -> https://www.nike.com
+
+ (Ghostery): (40) https://www.aboutads.info
+   (Ghostery) https://www.aboutads.info: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.aboutads.info
+**  (Ghostery): TimeoutError -> https://www.aboutads.info
+
+ (Ghostery): (41) https://www.exelator.com
+   (Ghostery) https://www.exelator.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.exelator.com
+**  (Ghostery): TimeoutError -> https://www.exelator.com
+
+ (Ghostery): (42) https://www.gosuslugi.ru
+   (Ghostery) https://www.gosuslugi.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.gosuslugi.ru
+   (Ghostery) https://www.gosuslugi.ru: Page loaded
+   (Ghostery) https://www.gosuslugi.ru: Getting Cookies
+   (Ghostery) https://www.gosuslugi.ru: Getting Localstorage
+   (Ghostery) https://www.gosuslugi.ru: Checking Cookie Banner
+Error: Execution context was destroyed, most likely because of a navigation.
+    at rewriteError (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:311:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async #evaluate (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:250:60)
+    at async ExecutionContext.evaluate (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:149:16)
+    at async ALLINONE (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:14:23)
+    at async findBannerFrameRecursive (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:261:33)
+    at async accessAllFrames (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:288:10)
+    at async allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:295:19)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+TypeError: Cannot read properties of undefined (reading '0')
+    at findBannerFrameRecursive (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:265:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async accessAllFrames (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:288:10)
+    at async allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:295:19)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Ghostery): (43) https://www.optimizely.com
+   (Ghostery) https://www.optimizely.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.optimizely.com
+   (Ghostery) https://www.optimizely.com: Page loaded
+   (Ghostery) https://www.optimizely.com: Getting Cookies
+   (Ghostery) https://www.optimizely.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.optimizely.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.optimizely.com: Adding requests to DB
+   (Ghostery) https://www.optimizely.com: Adding to successful website
+
+ (Ghostery): (44) https://www.yieldmo.com
+   (Ghostery) https://www.yieldmo.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.yieldmo.com
+   (Ghostery) https://www.yieldmo.com: Page loaded
+   (Ghostery) https://www.yieldmo.com: Getting Cookies
+   (Ghostery) https://www.yieldmo.com: Getting Localstorage
+   (Ghostery) https://www.yieldmo.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.yieldmo.com: Adding requests to DB
+   (Ghostery) https://www.yieldmo.com: Adding to successful website
+
+ (Ghostery): (45) https://www.mlb.com
+   (Ghostery) https://www.mlb.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.mlb.com
+   (Ghostery) https://www.mlb.com: Page loaded
+   (Ghostery) https://www.mlb.com: Getting Cookies
+   (Ghostery) https://www.mlb.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.mlb.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'accept', 'accept all' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+   (Ghostery) https://www.mlb.com: Adding requests to DB
+   (Ghostery) https://www.mlb.com: Adding to successful website
+
+ (Ghostery): (46) https://www.statcounter.com
+   (Ghostery) https://www.statcounter.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.statcounter.com
+   (Ghostery) https://www.statcounter.com: Page loaded
+   (Ghostery) https://www.statcounter.com: Getting Cookies
+   (Ghostery) https://www.statcounter.com: Getting Localstorage
+   (Ghostery) https://www.statcounter.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.statcounter.com: Adding requests to DB
+   (Ghostery) https://www.statcounter.com: Adding to successful website
+
+ (Ghostery): (47) https://www.amazon.ca
+   (Ghostery) https://www.amazon.ca: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.amazon.ca
+   (Ghostery) https://www.amazon.ca: Page loaded
+   (Ghostery) https://www.amazon.ca: Getting Cookies
+   (Ghostery) https://www.amazon.ca: Getting Localstorage
+   (Ghostery) https://www.amazon.ca: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.amazon.ca: Adding requests to DB
+   (Ghostery) https://www.amazon.ca: Adding to successful website
+
+ (Ghostery): (48) https://www.lenovo.com
+   (Ghostery) https://www.lenovo.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.lenovo.com
+   (Ghostery) https://www.lenovo.com: Page loaded
+   (Ghostery) https://www.lenovo.com: Getting Cookies
+   (Ghostery) https://www.lenovo.com: Getting Localstorage
+   (Ghostery) https://www.lenovo.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,consent,reject,reject all,use cookies), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.lenovo.com: Adding requests to DB
+   (Ghostery) https://www.lenovo.com: Adding to successful website
+
+ (Ghostery): (49) https://www.dbankcdn.com
+   (Ghostery) https://www.dbankcdn.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.dbankcdn.com
+   (Ghostery) https://www.dbankcdn.com: Page loaded
+   (Ghostery) https://www.dbankcdn.com: Getting Cookies
+   (Ghostery) https://www.dbankcdn.com: Getting Localstorage
+   (Ghostery) https://www.dbankcdn.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.dbankcdn.com: Adding requests to DB
+   (Ghostery) https://www.dbankcdn.com: Adding to successful website
+
+ (Ghostery): (50) https://www.beeline.ru
+   (Ghostery) https://www.beeline.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.beeline.ru
+**  (Ghostery): TimeoutError -> https://www.beeline.ru
+
+ (Ghostery): (51) https://www.quantummetric.com
+   (Ghostery) https://www.quantummetric.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.quantummetric.com
+   (Ghostery) https://www.quantummetric.com: Page loaded
+   (Ghostery) https://www.quantummetric.com: Getting Cookies
+   (Ghostery) https://www.quantummetric.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.quantummetric.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.quantummetric.com: Adding requests to DB
+   (Ghostery) https://www.quantummetric.com: Adding to successful website
+
+ (Ghostery): (52) https://www.nease.net
+   (Ghostery) https://www.nease.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.nease.net
+**  (Ghostery): Error visiting webpage -> https://www.nease.net (net::ERR_CONNECTION_CLOSED at https://www.nease.net)
+
+ (Ghostery): (53) https://www.pluto.tv
+   (Ghostery) https://www.pluto.tv: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.pluto.tv
+   (Ghostery) https://www.pluto.tv: Page loaded
+   (Ghostery) https://www.pluto.tv: Getting Cookies
+   (Ghostery) https://www.pluto.tv: Getting Localstorage
+   (Ghostery) https://www.pluto.tv: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.pluto.tv: Adding requests to DB
+   (Ghostery) https://www.pluto.tv: Adding to successful website
+
+ (Ghostery): (54) https://www.hinet.net
+   (Ghostery) https://www.hinet.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hinet.net
+   (Ghostery) https://www.hinet.net: Page loaded
+   (Ghostery) https://www.hinet.net: Getting Cookies
+   (Ghostery) https://www.hinet.net: Getting Localstorage
+   (Ghostery) https://www.hinet.net: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.hinet.net: Adding requests to DB
+   (Ghostery) https://www.hinet.net: Adding to successful website
+
+ (Ghostery): (55) https://www.seznam.cz
+   (Ghostery) https://www.seznam.cz: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.seznam.cz
+   (Ghostery) https://www.seznam.cz: Page loaded
+   (Ghostery) https://www.seznam.cz: Getting Cookies
+   (Ghostery) https://www.seznam.cz: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.seznam.cz: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.seznam.cz: Adding requests to DB
+   (Ghostery) https://www.seznam.cz: Adding to successful website
+
+ (Ghostery): (56) https://www.netgear.com
+   (Ghostery) https://www.netgear.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.netgear.com
+   (Ghostery) https://www.netgear.com: Page loaded
+   (Ghostery) https://www.netgear.com: Getting Cookies
+   (Ghostery) https://www.netgear.com: Getting Localstorage
+   (Ghostery) https://www.netgear.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy,uses cookies), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.netgear.com: Adding requests to DB
+   (Ghostery) https://www.netgear.com: Adding to successful website
+
+ (Ghostery): (57) https://www.discordapp.com
+   (Ghostery) https://www.discordapp.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.discordapp.com
+   (Ghostery) https://www.discordapp.com: Page loaded
+   (Ghostery) https://www.discordapp.com: Getting Cookies
+   (Ghostery) https://www.discordapp.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.discordapp.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.discordapp.com: Adding requests to DB
+   (Ghostery) https://www.discordapp.com: Adding to successful website
+
+ (Ghostery): (58) https://www.adjust.com
+   (Ghostery) https://www.adjust.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.adjust.com
+   (Ghostery) https://www.adjust.com: Page loaded
+   (Ghostery) https://www.adjust.com: Getting Cookies
+   (Ghostery) https://www.adjust.com: Getting Localstorage
+   (Ghostery) https://www.adjust.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.adjust.com: Adding requests to DB
+   (Ghostery) https://www.adjust.com: Adding to successful website
+
+ (Ghostery): (59) https://www.a-mo.net
+   (Ghostery) https://www.a-mo.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.a-mo.net
+**  (Ghostery): Error visiting webpage -> https://www.a-mo.net (net::ERR_CONNECTION_CLOSED at https://www.a-mo.net)
+
+ (Ghostery): (60) https://www.appier.net
+   (Ghostery) https://www.appier.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.appier.net
+**  (Ghostery): TimeoutError -> https://www.appier.net
+
+ (Ghostery): (61) https://www.spotxchange.com
+   (Ghostery) https://www.spotxchange.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.spotxchange.com
+**  (Ghostery): TimeoutError -> https://www.spotxchange.com
+
+ (Ghostery): (62) https://www.marketwatch.com
+   (Ghostery) https://www.marketwatch.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.marketwatch.com
+   (Ghostery) https://www.marketwatch.com: Page loaded
+   (Ghostery) https://www.marketwatch.com: Getting Cookies
+   (Ghostery) https://www.marketwatch.com: Getting Localstorage
+   (Ghostery) https://www.marketwatch.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.marketwatch.com: Adding requests to DB
+   (Ghostery) https://www.marketwatch.com: Adding to successful website
+
+ (Ghostery): (63) https://www.repubblica.it
+   (Ghostery) https://www.repubblica.it: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.repubblica.it
+**  (Ghostery): TimeoutError -> https://www.repubblica.it
+
+ (Ghostery): (64) https://www.sonobi.com
+   (Ghostery) https://www.sonobi.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.sonobi.com
+   (Ghostery) https://www.sonobi.com: Page loaded
+   (Ghostery) https://www.sonobi.com: Getting Cookies
+   (Ghostery) https://www.sonobi.com: Getting Localstorage
+   (Ghostery) https://www.sonobi.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.sonobi.com: Adding requests to DB
+   (Ghostery) https://www.sonobi.com: Adding to successful website
+
+ (Ghostery): (65) https://www.connatix.com
+   (Ghostery) https://www.connatix.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.connatix.com
+**  (Ghostery): TimeoutError -> https://www.connatix.com
+
+ (Ghostery): (66) https://www.cloudflareinsights.com
+   (Ghostery) https://www.cloudflareinsights.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cloudflareinsights.com
+**  (Ghostery): TimeoutError -> https://www.cloudflareinsights.com
+
+ (Ghostery): (67) https://www.ad.gt
+   (Ghostery) https://www.ad.gt: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ad.gt
+**  (Ghostery): TimeoutError -> https://www.ad.gt
+
+ (Ghostery): (68) https://www.cryptology.com
+   (Ghostery) https://www.cryptology.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cryptology.com
+   (Ghostery) https://www.cryptology.com: Page loaded
+   (Ghostery) https://www.cryptology.com: Getting Cookies
+   (Ghostery) https://www.cryptology.com: Getting Localstorage
+   (Ghostery) https://www.cryptology.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,accept,more information,uses cookies), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.cryptology.com: Adding requests to DB
+   (Ghostery) https://www.cryptology.com: Adding to successful website
+
+ (Ghostery): (69) https://www.parsely.com
+   (Ghostery) https://www.parsely.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.parsely.com
+   (Ghostery) https://www.parsely.com: Page loaded
+   (Ghostery) https://www.parsely.com: Getting Cookies
+   (Ghostery) https://www.parsely.com: Getting Localstorage
+   (Ghostery) https://www.parsely.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.parsely.com: Adding requests to DB
+   (Ghostery) https://www.parsely.com: Adding to successful website
+
+ (Ghostery): (70) https://www.mgts.ru
+   (Ghostery) https://www.mgts.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.mgts.ru
+**  (Ghostery): TimeoutError -> https://www.mgts.ru
+
+ (Ghostery): (71) https://www.quizlet.com
+   (Ghostery) https://www.quizlet.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.quizlet.com
+   (Ghostery) https://www.quizlet.com: Page loaded
+   (Ghostery) https://www.quizlet.com: Getting Cookies
+   (Ghostery) https://www.quizlet.com: Getting Localstorage
+   (Ghostery) https://www.quizlet.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept,accept cookies,consent), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.quizlet.com: Adding requests to DB
+   (Ghostery) https://www.quizlet.com: Adding to successful website
+
+ (Ghostery): (72) https://www.springserve.com
+   (Ghostery) https://www.springserve.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.springserve.com
+   (Ghostery) https://www.springserve.com: Page loaded
+   (Ghostery) https://www.springserve.com: Getting Cookies
+   (Ghostery) https://www.springserve.com: Getting Localstorage
+   (Ghostery) https://www.springserve.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.springserve.com: Adding requests to DB
+   (Ghostery) https://www.springserve.com: Adding to successful website
+
+ (Ghostery): (73) https://www.ys7.com
+   (Ghostery) https://www.ys7.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ys7.com
+**  (Ghostery): TimeoutError -> https://www.ys7.com
+
+ (Ghostery): (74) https://www.savvis.net
+   (Ghostery) https://www.savvis.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.savvis.net
+   (Ghostery) https://www.savvis.net: Page loaded
+   (Ghostery) https://www.savvis.net: Getting Cookies
+   (Ghostery) https://www.savvis.net: Getting Localstorage
+   (Ghostery) https://www.savvis.net: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.savvis.net: Adding requests to DB
+   (Ghostery) https://www.savvis.net: Adding to successful website
+
+ (Ghostery): (75) https://www.blog.com
+   (Ghostery) https://www.blog.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.blog.com
+   (Ghostery) https://www.blog.com: Page loaded
+   (Ghostery) https://www.blog.com: Getting Cookies
+   (Ghostery) https://www.blog.com: Getting Localstorage
+   (Ghostery) https://www.blog.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.blog.com: Adding requests to DB
+   (Ghostery) https://www.blog.com: Adding to successful website
+
+ (Ghostery): (76) https://www.bottegaveneta.com
+   (Ghostery) https://www.bottegaveneta.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bottegaveneta.com
+   (Ghostery) https://www.bottegaveneta.com: Page loaded
+   (Ghostery) https://www.bottegaveneta.com: Getting Cookies
+   (Ghostery) https://www.bottegaveneta.com: Getting Localstorage
+   (Ghostery) https://www.bottegaveneta.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,more information), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.bottegaveneta.com: Adding requests to DB
+   (Ghostery) https://www.bottegaveneta.com: Adding to successful website
+
+ (Ghostery): (77) https://www.ch3plus.com
+   (Ghostery) https://www.ch3plus.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ch3plus.com
+   (Ghostery) https://www.ch3plus.com: Page loaded
+   (Ghostery) https://www.ch3plus.com: Getting Cookies
+   (Ghostery) https://www.ch3plus.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.ch3plus.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.ch3plus.com: Adding requests to DB
+   (Ghostery) https://www.ch3plus.com: Adding to successful website
+
+ (Ghostery): (78) https://www.upstream.to
+   (Ghostery) https://www.upstream.to: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.upstream.to
+   (Ghostery) https://www.upstream.to: Page loaded
+   (Ghostery) https://www.upstream.to: Getting Cookies
+   (Ghostery) https://www.upstream.to: Getting Localstorage
+   (Ghostery) https://www.upstream.to: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.upstream.to: Adding requests to DB
+   (Ghostery) https://www.upstream.to: Adding to successful website
+
+ (Ghostery): (79) https://www.pdffiller.com
+   (Ghostery) https://www.pdffiller.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.pdffiller.com
+   (Ghostery) https://www.pdffiller.com: Page loaded
+   (Ghostery) https://www.pdffiller.com: Getting Cookies
+   (Ghostery) https://www.pdffiller.com: Getting Localstorage
+   (Ghostery) https://www.pdffiller.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'accept', 'use cookies' ]
+   (Ghostery) https://www.pdffiller.com: Adding requests to DB
+   (Ghostery) https://www.pdffiller.com: Adding to successful website
+
+ (Ghostery): (80) https://www.alanya.edu.tr
+   (Ghostery) https://www.alanya.edu.tr: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.alanya.edu.tr
+**  (Ghostery): TimeoutError -> https://www.alanya.edu.tr
+
+ (Ghostery): (81) https://www.tattelecom.ru
+   (Ghostery) https://www.tattelecom.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.tattelecom.ru
+**  (Ghostery): TimeoutError -> https://www.tattelecom.ru
+
+ (Ghostery): (82) https://www.webcd-dns.com
+   (Ghostery) https://www.webcd-dns.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.webcd-dns.com
+**  (Ghostery): TimeoutError -> https://www.webcd-dns.com
+
+ (Ghostery): (83) https://www.motorsportreg.com
+   (Ghostery) https://www.motorsportreg.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.motorsportreg.com
+   (Ghostery) https://www.motorsportreg.com: Page loaded
+   (Ghostery) https://www.motorsportreg.com: Getting Cookies
+   (Ghostery) https://www.motorsportreg.com: Getting Localstorage
+   (Ghostery) https://www.motorsportreg.com: Checking Cookie Banner
+The following words were found: [
+  'accept',
+  'accept all',
+  'reject',
+  'cookie preferences',
+  'use cookies'
+]
+   (Ghostery) https://www.motorsportreg.com: Adding requests to DB
+   (Ghostery) https://www.motorsportreg.com: Adding to successful website
+
+ (Ghostery): (84) https://www.videobyte.com
+   (Ghostery) https://www.videobyte.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.videobyte.com
+**  (Ghostery): TimeoutError -> https://www.videobyte.com
+
+ (Ghostery): (85) https://www.videohub.tv
+   (Ghostery) https://www.videohub.tv: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.videohub.tv
+**  (Ghostery): TimeoutError -> https://www.videohub.tv
+
+ (Ghostery): (86) https://www.srbijasport.net
+   (Ghostery) https://www.srbijasport.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.srbijasport.net
+   (Ghostery) https://www.srbijasport.net: Page loaded
+   (Ghostery) https://www.srbijasport.net: Getting Cookies
+   (Ghostery) https://www.srbijasport.net: Getting Localstorage
+   (Ghostery) https://www.srbijasport.net: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.srbijasport.net: Adding requests to DB
+   (Ghostery) https://www.srbijasport.net: Adding to successful website
+
+ (Ghostery): (87) https://www.iohk.io
+   (Ghostery) https://www.iohk.io: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.iohk.io
+   (Ghostery) https://www.iohk.io: Page loaded
+   (Ghostery) https://www.iohk.io: Getting Cookies
+   (Ghostery) https://www.iohk.io: Getting Localstorage
+   (Ghostery) https://www.iohk.io: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.iohk.io: Adding requests to DB
+   (Ghostery) https://www.iohk.io: Adding to successful website
+
+ (Ghostery): (88) https://www.dickinson.edu
+   (Ghostery) https://www.dickinson.edu: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.dickinson.edu
+   (Ghostery) https://www.dickinson.edu: Page loaded
+   (Ghostery) https://www.dickinson.edu: Getting Cookies
+   (Ghostery) https://www.dickinson.edu: Getting Localstorage
+   (Ghostery) https://www.dickinson.edu: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (privacy statement), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.dickinson.edu: Adding requests to DB
+   (Ghostery) https://www.dickinson.edu: Adding to successful website
+
+ (Ghostery): (89) https://www.mozy.com
+   (Ghostery) https://www.mozy.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.mozy.com
+**  (Ghostery): TimeoutError -> https://www.mozy.com
+
+ (Ghostery): (90) https://www.isacombank.com.vn
+   (Ghostery) https://www.isacombank.com.vn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.isacombank.com.vn
+**  (Ghostery): TimeoutError -> https://www.isacombank.com.vn
+
+ (Ghostery): (91) https://www.apptopia.com
+   (Ghostery) https://www.apptopia.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.apptopia.com
+   (Ghostery) https://www.apptopia.com: Page loaded
+   (Ghostery) https://www.apptopia.com: Getting Cookies
+   (Ghostery) https://www.apptopia.com: Getting Localstorage
+   (Ghostery) https://www.apptopia.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.apptopia.com: Adding requests to DB
+   (Ghostery) https://www.apptopia.com: Adding to successful website
+
+ (Ghostery): (92) https://www.twnic.net
+   (Ghostery) https://www.twnic.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.twnic.net
+**  (Ghostery): TimeoutError -> https://www.twnic.net
+
+ (Ghostery): (93) https://www.output.com
+   (Ghostery) https://www.output.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.output.com
+   (Ghostery) https://www.output.com: Page loaded
+   (Ghostery) https://www.output.com: Getting Cookies
+   (Ghostery) https://www.output.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.output.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.output.com: Adding requests to DB
+   (Ghostery) https://www.output.com: Adding to successful website
+
+ (Ghostery): (94) https://www.dyndns.ws
+   (Ghostery) https://www.dyndns.ws: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.dyndns.ws
+**  (Ghostery): TimeoutError -> https://www.dyndns.ws
+
+ (Ghostery): (95) https://www.mule.co.kr
+   (Ghostery) https://www.mule.co.kr: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.mule.co.kr
+**  (Ghostery): TimeoutError -> https://www.mule.co.kr
+
+ (Ghostery): (96) https://www.stellarcyber.cloud
+   (Ghostery) https://www.stellarcyber.cloud: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.stellarcyber.cloud
+**  (Ghostery): TimeoutError -> https://www.stellarcyber.cloud
+
+ (Ghostery): (97) https://www.engeniusnetworks.com
+   (Ghostery) https://www.engeniusnetworks.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.engeniusnetworks.com
+   (Ghostery) https://www.engeniusnetworks.com: Page loaded
+   (Ghostery) https://www.engeniusnetworks.com: Getting Cookies
+   (Ghostery) https://www.engeniusnetworks.com: Getting Localstorage
+   (Ghostery) https://www.engeniusnetworks.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'accept' ]
+   (Ghostery) https://www.engeniusnetworks.com: Adding requests to DB
+   (Ghostery) https://www.engeniusnetworks.com: Adding to successful website
+
+ (Ghostery): (98) https://www.yellowsubtrading.co.za
+   (Ghostery) https://www.yellowsubtrading.co.za: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.yellowsubtrading.co.za
+   (Ghostery) https://www.yellowsubtrading.co.za: Page loaded
+   (Ghostery) https://www.yellowsubtrading.co.za: Getting Cookies
+   (Ghostery) https://www.yellowsubtrading.co.za: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.yellowsubtrading.co.za: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.yellowsubtrading.co.za: Adding requests to DB
+   (Ghostery) https://www.yellowsubtrading.co.za: Adding to successful website
+
+ (Ghostery): (99) https://www.secureservercdn.net
+   (Ghostery) https://www.secureservercdn.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.secureservercdn.net
+**  (Ghostery): TimeoutError -> https://www.secureservercdn.net
+
+ (Ghostery): (100) https://www.cookiebot.eu
+   (Ghostery) https://www.cookiebot.eu: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cookiebot.eu
+**  (Ghostery): TimeoutError -> https://www.cookiebot.eu
+
+ (Ghostery): (101) https://www.bmlink.com
+   (Ghostery) https://www.bmlink.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bmlink.com
+**  (Ghostery): TimeoutError -> https://www.bmlink.com
+
+ (Ghostery): (102) https://www.smedia.ru
+   (Ghostery) https://www.smedia.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.smedia.ru
+   (Ghostery) https://www.smedia.ru: Page loaded
+   (Ghostery) https://www.smedia.ru: Getting Cookies
+   (Ghostery) https://www.smedia.ru: Getting Localstorage
+   (Ghostery) https://www.smedia.ru: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.smedia.ru: Adding requests to DB
+   (Ghostery) https://www.smedia.ru: Adding to successful website
+
+ (Ghostery): (103) https://www.framesdirect.com
+   (Ghostery) https://www.framesdirect.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.framesdirect.com
+   (Ghostery) https://www.framesdirect.com: Page loaded
+   (Ghostery) https://www.framesdirect.com: Getting Cookies
+   (Ghostery) https://www.framesdirect.com: Getting Localstorage
+   (Ghostery) https://www.framesdirect.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (104) https://www.technowave.ne.jp
+   (Ghostery) https://www.technowave.ne.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.technowave.ne.jp
+**  (Ghostery): TimeoutError -> https://www.technowave.ne.jp
+
+ (Ghostery): (105) https://www.s-kaupat.fi
+   (Ghostery) https://www.s-kaupat.fi: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.s-kaupat.fi
+   (Ghostery) https://www.s-kaupat.fi: Page loaded
+   (Ghostery) https://www.s-kaupat.fi: Getting Cookies
+   (Ghostery) https://www.s-kaupat.fi: Getting Localstorage
+   (Ghostery) https://www.s-kaupat.fi: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.s-kaupat.fi: Adding requests to DB
+   (Ghostery) https://www.s-kaupat.fi: Adding to successful website
+
+ (Ghostery): (106) https://www.userstyles.org
+   (Ghostery) https://www.userstyles.org: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.userstyles.org
+   (Ghostery) https://www.userstyles.org: Page loaded
+   (Ghostery) https://www.userstyles.org: Getting Cookies
+   (Ghostery) https://www.userstyles.org: Getting Localstorage
+   (Ghostery) https://www.userstyles.org: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.userstyles.org: Adding requests to DB
+   (Ghostery) https://www.userstyles.org: Adding to successful website
+
+ (Ghostery): (107) https://www.payeer.com
+   (Ghostery) https://www.payeer.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.payeer.com
+**  (Ghostery): TimeoutError -> https://www.payeer.com
+
+ (Ghostery): (108) https://www.zakon.ru
+   (Ghostery) https://www.zakon.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.zakon.ru
+   (Ghostery) https://www.zakon.ru: Page loaded
+   (Ghostery) https://www.zakon.ru: Getting Cookies
+   (Ghostery) https://www.zakon.ru: Getting Localstorage
+   (Ghostery) https://www.zakon.ru: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.zakon.ru: Adding requests to DB
+   (Ghostery) https://www.zakon.ru: Adding to successful website
+
+ (Ghostery): (109) https://www.athome.co.jp
+   (Ghostery) https://www.athome.co.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.athome.co.jp
+   (Ghostery) https://www.athome.co.jp: Page loaded
+   (Ghostery) https://www.athome.co.jp: Getting Cookies
+   (Ghostery) https://www.athome.co.jp: Getting Localstorage
+   (Ghostery) https://www.athome.co.jp: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.athome.co.jp: Adding requests to DB
+   (Ghostery) https://www.athome.co.jp: Adding to successful website
+
+ (Ghostery): (110) https://www.asiaone.com
+   (Ghostery) https://www.asiaone.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.asiaone.com
+   (Ghostery) https://www.asiaone.com: Page loaded
+   (Ghostery) https://www.asiaone.com: Getting Cookies
+   (Ghostery) https://www.asiaone.com: Getting Localstorage
+   (Ghostery) https://www.asiaone.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (111) https://www.samarth.edu.in
+   (Ghostery) https://www.samarth.edu.in: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.samarth.edu.in
+   (Ghostery) https://www.samarth.edu.in: Page loaded
+   (Ghostery) https://www.samarth.edu.in: Getting Cookies
+   (Ghostery) https://www.samarth.edu.in: Getting Localstorage
+   (Ghostery) https://www.samarth.edu.in: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.samarth.edu.in: Adding requests to DB
+   (Ghostery) https://www.samarth.edu.in: Adding to successful website
+
+ (Ghostery): (112) https://www.clinicaltrials.gov
+   (Ghostery) https://www.clinicaltrials.gov: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.clinicaltrials.gov
+   (Ghostery) https://www.clinicaltrials.gov: Page loaded
+   (Ghostery) https://www.clinicaltrials.gov: Getting Cookies
+   (Ghostery) https://www.clinicaltrials.gov: Getting Localstorage
+   (Ghostery) https://www.clinicaltrials.gov: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (113) https://www.kheloyar.net
+   (Ghostery) https://www.kheloyar.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.kheloyar.net
+**  (Ghostery): TimeoutError -> https://www.kheloyar.net
+
+ (Ghostery): (114) https://www.etnews.com
+   (Ghostery) https://www.etnews.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.etnews.com
+**  (Ghostery): TimeoutError -> https://www.etnews.com
+
+ (Ghostery): (115) https://www.homilistana.com
+   (Ghostery) https://www.homilistana.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.homilistana.com
+**  (Ghostery): TimeoutError -> https://www.homilistana.com
+
+ (Ghostery): (116) https://www.gsi.go.jp
+   (Ghostery) https://www.gsi.go.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.gsi.go.jp
+   (Ghostery) https://www.gsi.go.jp: Page loaded
+   (Ghostery) https://www.gsi.go.jp: Getting Cookies
+   (Ghostery) https://www.gsi.go.jp: Getting Localstorage
+   (Ghostery) https://www.gsi.go.jp: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.gsi.go.jp: Adding requests to DB
+   (Ghostery) https://www.gsi.go.jp: Adding to successful website
+
+ (Ghostery): (117) https://www.zbj.com
+   (Ghostery) https://www.zbj.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.zbj.com
+**  (Ghostery): TimeoutError -> https://www.zbj.com
+
+ (Ghostery): (118) https://www.snip.net
+   (Ghostery) https://www.snip.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.snip.net
+**  (Ghostery): TimeoutError -> https://www.snip.net
+
+ (Ghostery): (119) https://www.miniorange.com
+   (Ghostery) https://www.miniorange.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.miniorange.com
+**  (Ghostery): TimeoutError -> https://www.miniorange.com
+
+ (Ghostery): (120) https://www.networkworld.com
+   (Ghostery) https://www.networkworld.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.networkworld.com
+   (Ghostery) https://www.networkworld.com: Page loaded
+   (Ghostery) https://www.networkworld.com: Getting Cookies
+   (Ghostery) https://www.networkworld.com: Getting Localstorage
+   (Ghostery) https://www.networkworld.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.networkworld.com: Adding requests to DB
+   (Ghostery) https://www.networkworld.com: Adding to successful website
+
+ (Ghostery): (121) https://www.qualified.com
+   (Ghostery) https://www.qualified.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.qualified.com
+**  (Ghostery): TimeoutError -> https://www.qualified.com
+
+ (Ghostery): (122) https://www.rbhrzmr.in
+   (Ghostery) https://www.rbhrzmr.in: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.rbhrzmr.in
+**  (Ghostery): Error visiting webpage -> https://www.rbhrzmr.in (net::ERR_CERT_AUTHORITY_INVALID at https://www.rbhrzmr.in)
+
+ (Ghostery): (123) https://www.vads.com
+   (Ghostery) https://www.vads.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.vads.com
+**  (Ghostery): TimeoutError -> https://www.vads.com
+
+ (Ghostery): (124) https://www.netnorth.net
+   (Ghostery) https://www.netnorth.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.netnorth.net
+   (Ghostery) https://www.netnorth.net: Page loaded
+   (Ghostery) https://www.netnorth.net: Getting Cookies
+   (Ghostery) https://www.netnorth.net: Getting Localstorage
+   (Ghostery) https://www.netnorth.net: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.netnorth.net: Adding requests to DB
+   (Ghostery) https://www.netnorth.net: Adding to successful website
+
+ (Ghostery): (125) https://www.oo7.jp
+   (Ghostery) https://www.oo7.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.oo7.jp
+**  (Ghostery): TimeoutError -> https://www.oo7.jp
+
+ (Ghostery): (126) https://www.1688.com
+   (Ghostery) https://www.1688.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.1688.com
+**  (Ghostery): TimeoutError -> https://www.1688.com
+
+ (Ghostery): (127) https://www.cas.cz
+   (Ghostery) https://www.cas.cz: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cas.cz
+**  (Ghostery): TimeoutError -> https://www.cas.cz
+
+ (Ghostery): (128) https://www.istat.it
+   (Ghostery) https://www.istat.it: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.istat.it
+**  (Ghostery): TimeoutError -> https://www.istat.it
+
+ (Ghostery): (129) https://www.healthmug.com
+   (Ghostery) https://www.healthmug.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.healthmug.com
+**  (Ghostery): TimeoutError -> https://www.healthmug.com
+
+ (Ghostery): (130) https://www.easynet.be
+   (Ghostery) https://www.easynet.be: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.easynet.be
+**  (Ghostery): TimeoutError -> https://www.easynet.be
+
+ (Ghostery): (131) https://www.dashburst.com
+   (Ghostery) https://www.dashburst.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.dashburst.com
+**  (Ghostery): TimeoutError -> https://www.dashburst.com
+
+ (Ghostery): (132) https://www.moitruongvadothi.vn
+   (Ghostery) https://www.moitruongvadothi.vn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.moitruongvadothi.vn
+**  (Ghostery): TimeoutError -> https://www.moitruongvadothi.vn
+
+ (Ghostery): (133) https://www.trustvox.com.br
+   (Ghostery) https://www.trustvox.com.br: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.trustvox.com.br
+   (Ghostery) https://www.trustvox.com.br: Page loaded
+   (Ghostery) https://www.trustvox.com.br: Getting Cookies
+   (Ghostery) https://www.trustvox.com.br: Getting Localstorage
+   (Ghostery) https://www.trustvox.com.br: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.trustvox.com.br: Adding requests to DB
+   (Ghostery) https://www.trustvox.com.br: Adding to successful website
+
+ (Ghostery): (134) https://www.bankcomm.com
+   (Ghostery) https://www.bankcomm.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bankcomm.com
+   (Ghostery) https://www.bankcomm.com: Page loaded
+   (Ghostery) https://www.bankcomm.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Ghostery) https://www.bankcomm.com: Getting Localstorage
+   (Ghostery) https://www.bankcomm.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.bankcomm.com: Adding requests to DB
+   (Ghostery) https://www.bankcomm.com: Adding to successful website
+
+ (Ghostery): (135) https://www.wiair.com
+   (Ghostery) https://www.wiair.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.wiair.com
+**  (Ghostery): TimeoutError -> https://www.wiair.com
+
+ (Ghostery): (136) https://www.travian.com
+   (Ghostery) https://www.travian.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.travian.com
+   (Ghostery) https://www.travian.com: Page loaded
+   (Ghostery) https://www.travian.com: Getting Cookies
+   (Ghostery) https://www.travian.com: Getting Localstorage
+   (Ghostery) https://www.travian.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.travian.com: Adding requests to DB
+   (Ghostery) https://www.travian.com: Adding to successful website
+
+ (Ghostery): (137) https://www.rheem.com
+   (Ghostery) https://www.rheem.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.rheem.com
+   (Ghostery) https://www.rheem.com: Page loaded
+   (Ghostery) https://www.rheem.com: Getting Cookies
+   (Ghostery) https://www.rheem.com: Getting Localstorage
+   (Ghostery) https://www.rheem.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (138) https://www.emerson.com
+   (Ghostery) https://www.emerson.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.emerson.com
+   (Ghostery) https://www.emerson.com: Page loaded
+   (Ghostery) https://www.emerson.com: Getting Cookies
+   (Ghostery) https://www.emerson.com: Getting Localstorage
+   (Ghostery) https://www.emerson.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'accept', 'accept all' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+   (Ghostery) https://www.emerson.com: Adding requests to DB
+   (Ghostery) https://www.emerson.com: Adding to successful website
+
+ (Ghostery): (139) https://www.rea.ru
+   (Ghostery) https://www.rea.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.rea.ru
+**  (Ghostery): TimeoutError -> https://www.rea.ru
+
+ (Ghostery): (140) https://www.animeworld.so
+   (Ghostery) https://www.animeworld.so: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.animeworld.so
+   (Ghostery) https://www.animeworld.so: Page loaded
+   (Ghostery) https://www.animeworld.so: Getting Cookies
+   (Ghostery) https://www.animeworld.so: Getting Localstorage
+   (Ghostery) https://www.animeworld.so: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.animeworld.so: Adding requests to DB
+   (Ghostery) https://www.animeworld.so: Adding to successful website
+
+ (Ghostery): (141) https://www.todofp.es
+   (Ghostery) https://www.todofp.es: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.todofp.es
+   (Ghostery) https://www.todofp.es: Page loaded
+   (Ghostery) https://www.todofp.es: Getting Cookies
+   (Ghostery) https://www.todofp.es: Getting Localstorage
+   (Ghostery) https://www.todofp.es: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (142) https://www.atlantafed.org
+   (Ghostery) https://www.atlantafed.org: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.atlantafed.org
+   (Ghostery) https://www.atlantafed.org: Page loaded
+   (Ghostery) https://www.atlantafed.org: Getting Cookies
+   (Ghostery) https://www.atlantafed.org: Getting Localstorage
+   (Ghostery) https://www.atlantafed.org: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,accept,decline), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.atlantafed.org: Adding requests to DB
+   (Ghostery) https://www.atlantafed.org: Adding to successful website
+
+ (Ghostery): (143) https://www.world4ufree.hair
+   (Ghostery) https://www.world4ufree.hair: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.world4ufree.hair
+**  (Ghostery): TimeoutError -> https://www.world4ufree.hair
+
+ (Ghostery): (144) https://www.gtu.ac.in
+   (Ghostery) https://www.gtu.ac.in: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.gtu.ac.in
+   (Ghostery) https://www.gtu.ac.in: Page loaded
+   (Ghostery) https://www.gtu.ac.in: Getting Cookies
+   (Ghostery) https://www.gtu.ac.in: Getting Localstorage
+   (Ghostery) https://www.gtu.ac.in: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.gtu.ac.in: Adding requests to DB
+   (Ghostery) https://www.gtu.ac.in: Adding to successful website
+
+ (Ghostery): (145) https://www.queniuck.com
+   (Ghostery) https://www.queniuck.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.queniuck.com
+**  (Ghostery): TimeoutError -> https://www.queniuck.com
+
+ (Ghostery): (146) https://www.grani.ru
+   (Ghostery) https://www.grani.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.grani.ru
+**  (Ghostery): TimeoutError -> https://www.grani.ru
+
+ (Ghostery): (147) https://www.iinfo.cz
+   (Ghostery) https://www.iinfo.cz: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.iinfo.cz
+   (Ghostery) https://www.iinfo.cz: Page loaded
+   (Ghostery) https://www.iinfo.cz: Getting Cookies
+   (Ghostery) https://www.iinfo.cz: Getting Localstorage
+   (Ghostery) https://www.iinfo.cz: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (148) https://www.mirbeer.ru
+   (Ghostery) https://www.mirbeer.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.mirbeer.ru
+   (Ghostery) https://www.mirbeer.ru: Page loaded
+   (Ghostery) https://www.mirbeer.ru: Getting Cookies
+   (Ghostery) https://www.mirbeer.ru: Getting Localstorage
+   (Ghostery) https://www.mirbeer.ru: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.mirbeer.ru: Adding requests to DB
+   (Ghostery) https://www.mirbeer.ru: Adding to successful website
+
+ (Ghostery): (149) https://www.dhs.gov
+   (Ghostery) https://www.dhs.gov: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.dhs.gov
+   (Ghostery) https://www.dhs.gov: Page loaded
+   (Ghostery) https://www.dhs.gov: Getting Cookies
+   (Ghostery) https://www.dhs.gov: Getting Localstorage
+   (Ghostery) https://www.dhs.gov: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.dhs.gov: Adding requests to DB
+   (Ghostery) https://www.dhs.gov: Adding to successful website
+
+ (Ghostery): (150) https://www.madeirabelongstoall.com
+   (Ghostery) https://www.madeirabelongstoall.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.madeirabelongstoall.com
+   (Ghostery) https://www.madeirabelongstoall.com: Page loaded
+   (Ghostery) https://www.madeirabelongstoall.com: Getting Cookies
+   (Ghostery) https://www.madeirabelongstoall.com: Getting Localstorage
+   (Ghostery) https://www.madeirabelongstoall.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'accept', 'cookie policy' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+   (Ghostery) https://www.madeirabelongstoall.com: Adding requests to DB
+   (Ghostery) https://www.madeirabelongstoall.com: Adding to successful website
+
+ (Ghostery): (151) https://www.dlatv.net
+   (Ghostery) https://www.dlatv.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.dlatv.net
+**  (Ghostery): TimeoutError -> https://www.dlatv.net
+
+ (Ghostery): (152) https://www.pnzreg.ru
+   (Ghostery) https://www.pnzreg.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.pnzreg.ru
+**  (Ghostery): TimeoutError -> https://www.pnzreg.ru
+
+ (Ghostery): (153) https://www.illum.io
+   (Ghostery) https://www.illum.io: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.illum.io
+**  (Ghostery): TimeoutError -> https://www.illum.io
+
+ (Ghostery): (154) https://www.iphost.gr
+   (Ghostery) https://www.iphost.gr: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.iphost.gr
+   (Ghostery) https://www.iphost.gr: Page loaded
+   (Ghostery) https://www.iphost.gr: Getting Cookies
+   (Ghostery) https://www.iphost.gr: Getting Localstorage
+   (Ghostery) https://www.iphost.gr: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.iphost.gr: Adding requests to DB
+   (Ghostery) https://www.iphost.gr: Adding to successful website
+
+ (Ghostery): (155) https://www.kapanlagi.com
+   (Ghostery) https://www.kapanlagi.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.kapanlagi.com
+   (Ghostery) https://www.kapanlagi.com: Page loaded
+   (Ghostery) https://www.kapanlagi.com: Getting Cookies
+   (Ghostery) https://www.kapanlagi.com: Getting Localstorage
+   (Ghostery) https://www.kapanlagi.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (156) https://www.javeriana.edu.co
+   (Ghostery) https://www.javeriana.edu.co: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.javeriana.edu.co
+   (Ghostery) https://www.javeriana.edu.co: Page loaded
+   (Ghostery) https://www.javeriana.edu.co: Getting Cookies
+   (Ghostery) https://www.javeriana.edu.co: Getting Localstorage
+   (Ghostery) https://www.javeriana.edu.co: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.javeriana.edu.co: Adding requests to DB
+   (Ghostery) https://www.javeriana.edu.co: Adding to successful website
+
+ (Ghostery): (157) https://www.qianzhan.com
+   (Ghostery) https://www.qianzhan.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.qianzhan.com
+**  (Ghostery): TimeoutError -> https://www.qianzhan.com
+
+ (Ghostery): (158) https://www.gendama.jp
+   (Ghostery) https://www.gendama.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.gendama.jp
+   (Ghostery) https://www.gendama.jp: Page loaded
+   (Ghostery) https://www.gendama.jp: Getting Cookies
+   (Ghostery) https://www.gendama.jp: Getting Localstorage
+   (Ghostery) https://www.gendama.jp: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.gendama.jp: Adding requests to DB
+   (Ghostery) https://www.gendama.jp: Adding to successful website
+
+ (Ghostery): (159) https://www.metro.co.uk
+   (Ghostery) https://www.metro.co.uk: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.metro.co.uk
+   (Ghostery) https://www.metro.co.uk: Page loaded
+   (Ghostery) https://www.metro.co.uk: Getting Cookies
+   (Ghostery) https://www.metro.co.uk: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.metro.co.uk: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (160) https://www.tula.net
+   (Ghostery) https://www.tula.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.tula.net
+**  (Ghostery): TimeoutError -> https://www.tula.net
+
+ (Ghostery): (161) https://www.rnd.de
+   (Ghostery) https://www.rnd.de: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.rnd.de
+   (Ghostery) https://www.rnd.de: Page loaded
+   (Ghostery) https://www.rnd.de: Getting Cookies
+   (Ghostery) https://www.rnd.de: Getting Localstorage
+   (Ghostery) https://www.rnd.de: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.rnd.de: Adding requests to DB
+   (Ghostery) https://www.rnd.de: Adding to successful website
+
+ (Ghostery): (162) https://www.viralize.tv
+   (Ghostery) https://www.viralize.tv: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.viralize.tv
+**  (Ghostery): TimeoutError -> https://www.viralize.tv
+
+ (Ghostery): (163) https://www.vertv.net.ar
+   (Ghostery) https://www.vertv.net.ar: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.vertv.net.ar
+**  (Ghostery): TimeoutError -> https://www.vertv.net.ar
+
+ (Ghostery): (164) https://www.htzq.com.cn
+   (Ghostery) https://www.htzq.com.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.htzq.com.cn
+**  (Ghostery): TimeoutError -> https://www.htzq.com.cn
+
+ (Ghostery): (165) https://www.wholefoodsmarket.com
+   (Ghostery) https://www.wholefoodsmarket.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.wholefoodsmarket.com
+   (Ghostery) https://www.wholefoodsmarket.com: Page loaded
+   (Ghostery) https://www.wholefoodsmarket.com: Getting Cookies
+   (Ghostery) https://www.wholefoodsmarket.com: Getting Localstorage
+   (Ghostery) https://www.wholefoodsmarket.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.wholefoodsmarket.com: Adding requests to DB
+   (Ghostery) https://www.wholefoodsmarket.com: Adding to successful website
+
+ (Ghostery): (166) https://www.tuat.ac.jp
+   (Ghostery) https://www.tuat.ac.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.tuat.ac.jp
+   (Ghostery) https://www.tuat.ac.jp: Page loaded
+   (Ghostery) https://www.tuat.ac.jp: Getting Cookies
+   (Ghostery) https://www.tuat.ac.jp: Getting Localstorage
+   (Ghostery) https://www.tuat.ac.jp: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.tuat.ac.jp: Adding requests to DB
+   (Ghostery) https://www.tuat.ac.jp: Adding to successful website
+
+ (Ghostery): (167) https://www.morphe.com
+   (Ghostery) https://www.morphe.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.morphe.com
+   (Ghostery) https://www.morphe.com: Page loaded
+   (Ghostery) https://www.morphe.com: Getting Cookies
+   (Ghostery) https://www.morphe.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.morphe.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (more information), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.morphe.com: Adding requests to DB
+   (Ghostery) https://www.morphe.com: Adding to successful website
+
+ (Ghostery): (168) https://www.republicain-lorrain.fr
+   (Ghostery) https://www.republicain-lorrain.fr: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.republicain-lorrain.fr
+   (Ghostery) https://www.republicain-lorrain.fr: Page loaded
+   (Ghostery) https://www.republicain-lorrain.fr: Getting Cookies
+   (Ghostery) https://www.republicain-lorrain.fr: Getting Localstorage
+   (Ghostery) https://www.republicain-lorrain.fr: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (169) https://www.groupprice.ru
+   (Ghostery) https://www.groupprice.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.groupprice.ru
+   (Ghostery) https://www.groupprice.ru: Page loaded
+   (Ghostery) https://www.groupprice.ru: Getting Cookies
+   (Ghostery) https://www.groupprice.ru: Getting Localstorage
+   (Ghostery) https://www.groupprice.ru: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.groupprice.ru: Adding requests to DB
+   (Ghostery) https://www.groupprice.ru: Adding to successful website
+
+ (Ghostery): (170) https://www.personio.de
+   (Ghostery) https://www.personio.de: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.personio.de
+   (Ghostery) https://www.personio.de: Page loaded
+   (Ghostery) https://www.personio.de: Getting Cookies
+   (Ghostery) https://www.personio.de: Getting Localstorage
+   (Ghostery) https://www.personio.de: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (171) https://www.nonghyup.com
+   (Ghostery) https://www.nonghyup.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.nonghyup.com
+**  (Ghostery): TimeoutError -> https://www.nonghyup.com
+
+ (Ghostery): (172) https://www.joinindiannavy.gov.in
+   (Ghostery) https://www.joinindiannavy.gov.in: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.joinindiannavy.gov.in
+   (Ghostery) https://www.joinindiannavy.gov.in: Page loaded
+   (Ghostery) https://www.joinindiannavy.gov.in: Getting Cookies
+   (Ghostery) https://www.joinindiannavy.gov.in: Getting Localstorage
+   (Ghostery) https://www.joinindiannavy.gov.in: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.joinindiannavy.gov.in: Adding requests to DB
+   (Ghostery) https://www.joinindiannavy.gov.in: Adding to successful website
+
+ (Ghostery): (173) https://www.moodys.io
+   (Ghostery) https://www.moodys.io: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.moodys.io
+**  (Ghostery): TimeoutError -> https://www.moodys.io
+
+ (Ghostery): (174) https://www.gijima.com
+   (Ghostery) https://www.gijima.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.gijima.com
+**  (Ghostery): TimeoutError -> https://www.gijima.com
+
+ (Ghostery): (175) https://www.kbs.co.kr
+   (Ghostery) https://www.kbs.co.kr: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.kbs.co.kr
+**  (Ghostery): TimeoutError -> https://www.kbs.co.kr
+
+ (Ghostery): (176) https://www.denpasarkota.go.id
+   (Ghostery) https://www.denpasarkota.go.id: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.denpasarkota.go.id
+**  (Ghostery): Error visiting webpage -> https://www.denpasarkota.go.id (net::ERR_NAME_NOT_RESOLVED at https://www.denpasarkota.go.id)
+
+ (Ghostery): (177) https://www.591.com.tw
+   (Ghostery) https://www.591.com.tw: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.591.com.tw
+   (Ghostery) https://www.591.com.tw: Page loaded
+   (Ghostery) https://www.591.com.tw: Getting Cookies
+   (Ghostery) https://www.591.com.tw: Getting Localstorage
+   (Ghostery) https://www.591.com.tw: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.591.com.tw: Adding requests to DB
+   (Ghostery) https://www.591.com.tw: Adding to successful website
+
+ (Ghostery): (178) https://www.ewn.co.za
+   (Ghostery) https://www.ewn.co.za: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ewn.co.za
+   (Ghostery) https://www.ewn.co.za: Page loaded
+   (Ghostery) https://www.ewn.co.za: Getting Cookies
+   (Ghostery) https://www.ewn.co.za: Getting Localstorage
+   (Ghostery) https://www.ewn.co.za: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.ewn.co.za: Adding requests to DB
+   (Ghostery) https://www.ewn.co.za: Adding to successful website
+
+ (Ghostery): (179) https://www.bitv.eu
+   (Ghostery) https://www.bitv.eu: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bitv.eu
+   (Ghostery) https://www.bitv.eu: Page loaded
+   (Ghostery) https://www.bitv.eu: Getting Cookies
+   (Ghostery) https://www.bitv.eu: Getting Localstorage
+   (Ghostery) https://www.bitv.eu: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.bitv.eu: Adding requests to DB
+   (Ghostery) https://www.bitv.eu: Adding to successful website
+
+ (Ghostery): (180) https://www.ayo788.org
+   (Ghostery) https://www.ayo788.org: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ayo788.org
+   (Ghostery) https://www.ayo788.org: Page loaded
+   (Ghostery) https://www.ayo788.org: Getting Cookies
+   (Ghostery) https://www.ayo788.org: Getting Localstorage
+   (Ghostery) https://www.ayo788.org: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.ayo788.org: Adding requests to DB
+   (Ghostery) https://www.ayo788.org: Adding to successful website
+
+ (Ghostery): (181) https://www.ihsdnsw1.com
+   (Ghostery) https://www.ihsdnsw1.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ihsdnsw1.com
+**  (Ghostery): TimeoutError -> https://www.ihsdnsw1.com
+
+ (Ghostery): (182) https://www.dnsv3.com
+   (Ghostery) https://www.dnsv3.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.dnsv3.com
+**  (Ghostery): Error visiting webpage -> https://www.dnsv3.com (net::ERR_CONNECTION_CLOSED at https://www.dnsv3.com)
+
+ (Ghostery): (183) https://www.sphere.ne.jp
+   (Ghostery) https://www.sphere.ne.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.sphere.ne.jp
+   (Ghostery) https://www.sphere.ne.jp: Page loaded
+   (Ghostery) https://www.sphere.ne.jp: Getting Cookies
+   (Ghostery) https://www.sphere.ne.jp: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.sphere.ne.jp: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.sphere.ne.jp: Adding requests to DB
+   (Ghostery) https://www.sphere.ne.jp: Adding to successful website
+
+ (Ghostery): (184) https://www.truckerpath.com
+   (Ghostery) https://www.truckerpath.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.truckerpath.com
+   (Ghostery) https://www.truckerpath.com: Page loaded
+   (Ghostery) https://www.truckerpath.com: Getting Cookies
+   (Ghostery) https://www.truckerpath.com: Getting Localstorage
+   (Ghostery) https://www.truckerpath.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (reject,reject all), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.truckerpath.com: Adding requests to DB
+   (Ghostery) https://www.truckerpath.com: Adding to successful website
+
+ (Ghostery): (185) https://www.auswaertiges-amt.de
+   (Ghostery) https://www.auswaertiges-amt.de: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.auswaertiges-amt.de
+**  (Ghostery): TimeoutError -> https://www.auswaertiges-amt.de
+
+ (Ghostery): (186) https://www.travelland.rs
+   (Ghostery) https://www.travelland.rs: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.travelland.rs
+**  (Ghostery): TimeoutError -> https://www.travelland.rs
+
+ (Ghostery): (187) https://www.whodoyou.com
+   (Ghostery) https://www.whodoyou.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.whodoyou.com
+   (Ghostery) https://www.whodoyou.com: Page loaded
+   (Ghostery) https://www.whodoyou.com: Getting Cookies
+   (Ghostery) https://www.whodoyou.com: Getting Localstorage
+   (Ghostery) https://www.whodoyou.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.whodoyou.com: Adding requests to DB
+   (Ghostery) https://www.whodoyou.com: Adding to successful website
+
+ (Ghostery): (188) https://www.davidsuzuki.org
+   (Ghostery) https://www.davidsuzuki.org: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.davidsuzuki.org
+   (Ghostery) https://www.davidsuzuki.org: Page loaded
+   (Ghostery) https://www.davidsuzuki.org: Getting Cookies
+   (Ghostery) https://www.davidsuzuki.org: Getting Localstorage
+   (Ghostery) https://www.davidsuzuki.org: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (189) https://www.divan.tv
+   (Ghostery) https://www.divan.tv: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.divan.tv
+**  (Ghostery): TimeoutError -> https://www.divan.tv
+
+ (Ghostery): (190) https://www.mailclub.com
+   (Ghostery) https://www.mailclub.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.mailclub.com
+**  (Ghostery): TimeoutError -> https://www.mailclub.com
+
+ (Ghostery): (191) https://www.adrcdn.com
+   (Ghostery) https://www.adrcdn.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.adrcdn.com
+**  (Ghostery): TimeoutError -> https://www.adrcdn.com
+
+ (Ghostery): (192) https://www.bsc.es
+   (Ghostery) https://www.bsc.es: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bsc.es
+**  (Ghostery): TimeoutError -> https://www.bsc.es
+
+ (Ghostery): (193) https://www.caac.gov.cn
+   (Ghostery) https://www.caac.gov.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.caac.gov.cn
+**  (Ghostery): TimeoutError -> https://www.caac.gov.cn
+
+ (Ghostery): (194) https://www.chatiw.me
+   (Ghostery) https://www.chatiw.me: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.chatiw.me
+   (Ghostery) https://www.chatiw.me: Page loaded
+   (Ghostery) https://www.chatiw.me: Getting Cookies
+   (Ghostery) https://www.chatiw.me: Getting Localstorage
+   (Ghostery) https://www.chatiw.me: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.chatiw.me: Adding requests to DB
+   (Ghostery) https://www.chatiw.me: Adding to successful website
+
+ (Ghostery): (195) https://www.shop.kz
+   (Ghostery) https://www.shop.kz: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.shop.kz
+   (Ghostery) https://www.shop.kz: Page loaded
+   (Ghostery) https://www.shop.kz: Getting Cookies
+   (Ghostery) https://www.shop.kz: Getting Localstorage
+   (Ghostery) https://www.shop.kz: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.shop.kz: Adding requests to DB
+   (Ghostery) https://www.shop.kz: Adding to successful website
+
+ (Ghostery): (196) https://www.ajur.info
+   (Ghostery) https://www.ajur.info: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ajur.info
+**  (Ghostery): TimeoutError -> https://www.ajur.info
+
+ (Ghostery): (197) https://www.gamivo.com
+   (Ghostery) https://www.gamivo.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.gamivo.com
+   (Ghostery) https://www.gamivo.com: Page loaded
+   (Ghostery) https://www.gamivo.com: Getting Cookies
+   (Ghostery) https://www.gamivo.com: Getting Localstorage
+   (Ghostery) https://www.gamivo.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,accept,consent,more information), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.gamivo.com: Adding requests to DB
+   (Ghostery) https://www.gamivo.com: Adding to successful website
+
+ (Ghostery): (198) https://www.webhostbd.net
+   (Ghostery) https://www.webhostbd.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.webhostbd.net
+**  (Ghostery): TimeoutError -> https://www.webhostbd.net
+
+ (Ghostery): (199) https://www.cumm.com
+   (Ghostery) https://www.cumm.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cumm.com
+**  (Ghostery): TimeoutError -> https://www.cumm.com
+
+ (Ghostery): (200) https://www.boticario.com.br
+   (Ghostery) https://www.boticario.com.br: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.boticario.com.br
+   (Ghostery) https://www.boticario.com.br: Page loaded
+   (Ghostery) https://www.boticario.com.br: Getting Cookies
+   (Ghostery) https://www.boticario.com.br: Getting Localstorage
+   (Ghostery) https://www.boticario.com.br: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.boticario.com.br: Adding requests to DB
+   (Ghostery) https://www.boticario.com.br: Adding to successful website
+
+ (Ghostery): (201) https://www.cuevana3.ai
+   (Ghostery) https://www.cuevana3.ai: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cuevana3.ai
+**  (Ghostery): TimeoutError -> https://www.cuevana3.ai
+
+ (Ghostery): (202) https://www.bigfish.com
+   (Ghostery) https://www.bigfish.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bigfish.com
+**  (Ghostery): TimeoutError -> https://www.bigfish.com
+
+ (Ghostery): (203) https://www.aicte-india.org
+   (Ghostery) https://www.aicte-india.org: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.aicte-india.org
+**  (Ghostery): TimeoutError -> https://www.aicte-india.org
+
+ (Ghostery): (204) https://www.cmd.su
+   (Ghostery) https://www.cmd.su: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cmd.su
+**  (Ghostery): TimeoutError -> https://www.cmd.su
+
+ (Ghostery): (205) https://www.kanachu.co.jp
+   (Ghostery) https://www.kanachu.co.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.kanachu.co.jp
+   (Ghostery) https://www.kanachu.co.jp: Page loaded
+   (Ghostery) https://www.kanachu.co.jp: Getting Cookies
+   (Ghostery) https://www.kanachu.co.jp: Getting Localstorage
+   (Ghostery) https://www.kanachu.co.jp: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.kanachu.co.jp: Adding requests to DB
+   (Ghostery) https://www.kanachu.co.jp: Adding to successful website
+
+ (Ghostery): (206) https://www.lastminute.com.au
+   (Ghostery) https://www.lastminute.com.au: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.lastminute.com.au
+   (Ghostery) https://www.lastminute.com.au: Page loaded
+   (Ghostery) https://www.lastminute.com.au: Getting Cookies
+   (Ghostery) https://www.lastminute.com.au: Getting Localstorage
+   (Ghostery) https://www.lastminute.com.au: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,uses cookies), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.lastminute.com.au: Adding requests to DB
+   (Ghostery) https://www.lastminute.com.au: Adding to successful website
+
+ (Ghostery): (207) https://www.tetrika-school.ru
+   (Ghostery) https://www.tetrika-school.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.tetrika-school.ru
+   (Ghostery) https://www.tetrika-school.ru: Page loaded
+   (Ghostery) https://www.tetrika-school.ru: Getting Cookies
+   (Ghostery) https://www.tetrika-school.ru: Getting Localstorage
+   (Ghostery) https://www.tetrika-school.ru: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.tetrika-school.ru: Adding requests to DB
+   (Ghostery) https://www.tetrika-school.ru: Adding to successful website
+
+ (Ghostery): (208) https://www.prenhall.com
+   (Ghostery) https://www.prenhall.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.prenhall.com
+**  (Ghostery): TimeoutError -> https://www.prenhall.com
+
+ (Ghostery): (209) https://www.tessian-platform.com
+   (Ghostery) https://www.tessian-platform.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.tessian-platform.com
+   (Ghostery) https://www.tessian-platform.com: Page loaded
+   (Ghostery) https://www.tessian-platform.com: Getting Cookies
+   (Ghostery) https://www.tessian-platform.com: Getting Localstorage
+   (Ghostery) https://www.tessian-platform.com: Checking Cookie Banner
+Error: Execution context was destroyed, most likely because of a navigation.
+    at rewriteError (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:311:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async #evaluate (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:250:60)
+    at async ExecutionContext.evaluate (/Users/crawler/Documents/cookie-banners/webCrawler/node_modules/puppeteer/node_modules/puppeteer-core/lib/cjs/puppeteer/common/ExecutionContext.js:149:16)
+    at async ALLINONE (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:14:23)
+    at async findBannerFrameRecursive (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:261:33)
+    at async accessAllFrames (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:288:10)
+    at async allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:295:19)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+TypeError: Cannot read properties of undefined (reading '0')
+    at findBannerFrameRecursive (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:265:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async accessAllFrames (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:288:10)
+    at async allInDetermineCookieBannerState (file:///Users/crawler/Documents/cookie-banners/webCrawler/bannerIdAllOne.js:295:19)
+    at async takeMeasurements (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:55:3)
+    at async evaluateWebsite (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:77:5)
+    at async crawlMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:130:32)
+    at async callableMain (file:///Users/crawler/Documents/cookie-banners/webCrawler/index.js:196:5)
+
+ (Ghostery): (210) https://www.lanihengshi.xyz
+   (Ghostery) https://www.lanihengshi.xyz: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.lanihengshi.xyz
+**  (Ghostery): TimeoutError -> https://www.lanihengshi.xyz
+
+ (Ghostery): (211) https://www.griffeshop.com
+   (Ghostery) https://www.griffeshop.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.griffeshop.com
+**  (Ghostery): TimeoutError -> https://www.griffeshop.com
+
+ (Ghostery): (212) https://www.winfuture.de
+   (Ghostery) https://www.winfuture.de: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.winfuture.de
+   (Ghostery) https://www.winfuture.de: Page loaded
+   (Ghostery) https://www.winfuture.de: Getting Cookies
+   (Ghostery) https://www.winfuture.de: Getting Localstorage
+   (Ghostery) https://www.winfuture.de: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (213) https://www.watchabc.com
+   (Ghostery) https://www.watchabc.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.watchabc.com
+**  (Ghostery): TimeoutError -> https://www.watchabc.com
+
+ (Ghostery): (214) https://www.cogeco.net
+   (Ghostery) https://www.cogeco.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cogeco.net
+**  (Ghostery): TimeoutError -> https://www.cogeco.net
+
+ (Ghostery): (215) https://www.u-aizu.ac.jp
+   (Ghostery) https://www.u-aizu.ac.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.u-aizu.ac.jp
+**  (Ghostery): TimeoutError -> https://www.u-aizu.ac.jp
+
+ (Ghostery): (216) https://www.slfiber.com
+   (Ghostery) https://www.slfiber.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.slfiber.com
+**  (Ghostery): TimeoutError -> https://www.slfiber.com
+
+ (Ghostery): (217) https://www.tjam.jus.br
+   (Ghostery) https://www.tjam.jus.br: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.tjam.jus.br
+**  (Ghostery): TimeoutError -> https://www.tjam.jus.br
+
+ (Ghostery): (218) https://www.hokiemasvip2.com
+   (Ghostery) https://www.hokiemasvip2.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hokiemasvip2.com
+**  (Ghostery): TimeoutError -> https://www.hokiemasvip2.com
+
+ (Ghostery): (219) https://www.onec.dz
+   (Ghostery) https://www.onec.dz: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.onec.dz
+**  (Ghostery): TimeoutError -> https://www.onec.dz
+
+ (Ghostery): (220) https://www.aics.ad.jp
+   (Ghostery) https://www.aics.ad.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.aics.ad.jp
+**  (Ghostery): TimeoutError -> https://www.aics.ad.jp
+
+ (Ghostery): (221) https://www.hello.gr
+   (Ghostery) https://www.hello.gr: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hello.gr
+   (Ghostery) https://www.hello.gr: Page loaded
+   (Ghostery) https://www.hello.gr: Getting Cookies
+   (Ghostery) https://www.hello.gr: Getting Localstorage
+   (Ghostery) https://www.hello.gr: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.hello.gr: Adding requests to DB
+   (Ghostery) https://www.hello.gr: Adding to successful website
+
+ (Ghostery): (222) https://www.moi.gov.tw
+   (Ghostery) https://www.moi.gov.tw: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.moi.gov.tw
+   (Ghostery) https://www.moi.gov.tw: Page loaded
+   (Ghostery) https://www.moi.gov.tw: Getting Cookies
+   (Ghostery) https://www.moi.gov.tw: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.moi.gov.tw: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.moi.gov.tw: Adding requests to DB
+   (Ghostery) https://www.moi.gov.tw: Adding to successful website
+
+ (Ghostery): (223) https://www.eci.gov.in
+   (Ghostery) https://www.eci.gov.in: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.eci.gov.in
+**  (Ghostery): TimeoutError -> https://www.eci.gov.in
+
+ (Ghostery): (224) https://www.baan-series.co
+   (Ghostery) https://www.baan-series.co: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.baan-series.co
+   (Ghostery) https://www.baan-series.co: Page loaded
+   (Ghostery) https://www.baan-series.co: Getting Cookies
+   (Ghostery) https://www.baan-series.co: Getting Localstorage
+   (Ghostery) https://www.baan-series.co: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.baan-series.co: Adding requests to DB
+   (Ghostery) https://www.baan-series.co: Adding to successful website
+
+ (Ghostery): (225) https://www.rtbiq.com
+   (Ghostery) https://www.rtbiq.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.rtbiq.com
+   (Ghostery) https://www.rtbiq.com: Page loaded
+   (Ghostery) https://www.rtbiq.com: Getting Cookies
+   (Ghostery) https://www.rtbiq.com: Getting Localstorage
+   (Ghostery) https://www.rtbiq.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.rtbiq.com: Adding requests to DB
+   (Ghostery) https://www.rtbiq.com: Adding to successful website
+
+ (Ghostery): (226) https://www.houwei-tech.com
+   (Ghostery) https://www.houwei-tech.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.houwei-tech.com
+**  (Ghostery): TimeoutError -> https://www.houwei-tech.com
+
+ (Ghostery): (227) https://www.vlan.be
+   (Ghostery) https://www.vlan.be: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.vlan.be
+   (Ghostery) https://www.vlan.be: Page loaded
+   (Ghostery) https://www.vlan.be: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Ghostery) https://www.vlan.be: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.vlan.be: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (228) https://www.ekbet.com
+   (Ghostery) https://www.ekbet.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ekbet.com
+   (Ghostery) https://www.ekbet.com: Page loaded
+   (Ghostery) https://www.ekbet.com: Getting Cookies
+   (Ghostery) https://www.ekbet.com: Getting Localstorage
+   (Ghostery) https://www.ekbet.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.ekbet.com: Adding requests to DB
+   (Ghostery) https://www.ekbet.com: Adding to successful website
+
+ (Ghostery): (229) https://www.kremlin.ru
+   (Ghostery) https://www.kremlin.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.kremlin.ru
+**  (Ghostery): TimeoutError -> https://www.kremlin.ru
+
+ (Ghostery): (230) https://www.edomex.gob.mx
+   (Ghostery) https://www.edomex.gob.mx: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.edomex.gob.mx
+**  (Ghostery): TimeoutError -> https://www.edomex.gob.mx
+
+ (Ghostery): (231) https://www.segmentify.com
+   (Ghostery) https://www.segmentify.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.segmentify.com
+   (Ghostery) https://www.segmentify.com: Page loaded
+   (Ghostery) https://www.segmentify.com: Getting Cookies
+   (Ghostery) https://www.segmentify.com: Getting Localstorage
+   (Ghostery) https://www.segmentify.com: Checking Cookie Banner
+The following words were found: [ 'accept', 'accept all', 'uses cookies' ]
+   (Ghostery) https://www.segmentify.com: Adding requests to DB
+   (Ghostery) https://www.segmentify.com: Adding to successful website
+
+ (Ghostery): (232) https://www.altitude-arena.com
+   (Ghostery) https://www.altitude-arena.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.altitude-arena.com
+**  (Ghostery): TimeoutError -> https://www.altitude-arena.com
+
+ (Ghostery): (233) https://www.calyptra-soft.net
+   (Ghostery) https://www.calyptra-soft.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.calyptra-soft.net
+**  (Ghostery): TimeoutError -> https://www.calyptra-soft.net
+
+ (Ghostery): (234) https://www.japxtube.com
+   (Ghostery) https://www.japxtube.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.japxtube.com
+   (Ghostery) https://www.japxtube.com: Page loaded
+   (Ghostery) https://www.japxtube.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Ghostery) https://www.japxtube.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.japxtube.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (235) https://www.inpi.gov.br
+   (Ghostery) https://www.inpi.gov.br: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.inpi.gov.br
+**  (Ghostery): TimeoutError -> https://www.inpi.gov.br
+
+ (Ghostery): (236) https://www.xizang.gov.cn
+   (Ghostery) https://www.xizang.gov.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.xizang.gov.cn
+**  (Ghostery): TimeoutError -> https://www.xizang.gov.cn
+
+ (Ghostery): (237) https://www.kinokuniya.co.jp
+   (Ghostery) https://www.kinokuniya.co.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.kinokuniya.co.jp
+   (Ghostery) https://www.kinokuniya.co.jp: Page loaded
+   (Ghostery) https://www.kinokuniya.co.jp: Getting Cookies
+   (Ghostery) https://www.kinokuniya.co.jp: Getting Localstorage
+   (Ghostery) https://www.kinokuniya.co.jp: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.kinokuniya.co.jp: Adding requests to DB
+   (Ghostery) https://www.kinokuniya.co.jp: Adding to successful website
+
+ (Ghostery): (238) https://www.metrocast.net
+   (Ghostery) https://www.metrocast.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.metrocast.net
+**  (Ghostery): TimeoutError -> https://www.metrocast.net
+
+ (Ghostery): (239) https://www.scea.com
+   (Ghostery) https://www.scea.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.scea.com
+**  (Ghostery): TimeoutError -> https://www.scea.com
+
+ (Ghostery): (240) https://www.hover.to
+   (Ghostery) https://www.hover.to: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hover.to
+   (Ghostery) https://www.hover.to: Page loaded
+   (Ghostery) https://www.hover.to: Getting Cookies
+   (Ghostery) https://www.hover.to: Getting Localstorage
+   (Ghostery) https://www.hover.to: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.hover.to: Adding requests to DB
+   (Ghostery) https://www.hover.to: Adding to successful website
+
+ (Ghostery): (241) https://www.rionegro.gov.ar
+   (Ghostery) https://www.rionegro.gov.ar: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.rionegro.gov.ar
+   (Ghostery) https://www.rionegro.gov.ar: Page loaded
+   (Ghostery) https://www.rionegro.gov.ar: Getting Cookies
+   (Ghostery) https://www.rionegro.gov.ar: Getting Localstorage
+   (Ghostery) https://www.rionegro.gov.ar: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.rionegro.gov.ar: Adding requests to DB
+   (Ghostery) https://www.rionegro.gov.ar: Adding to successful website
+
+ (Ghostery): (242) https://www.phenompro.com
+   (Ghostery) https://www.phenompro.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.phenompro.com
+**  (Ghostery): TimeoutError -> https://www.phenompro.com
+
+ (Ghostery): (243) https://www.ihio.gov.ir
+   (Ghostery) https://www.ihio.gov.ir: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ihio.gov.ir
+**  (Ghostery): TimeoutError -> https://www.ihio.gov.ir
+
+ (Ghostery): (244) https://www.7tv.app
+   (Ghostery) https://www.7tv.app: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.7tv.app
+**  (Ghostery): TimeoutError -> https://www.7tv.app
+
+ (Ghostery): (245) https://www.puma.com
+   (Ghostery) https://www.puma.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.puma.com
+   (Ghostery) https://www.puma.com: Page loaded
+   (Ghostery) https://www.puma.com: Getting Cookies
+   (Ghostery) https://www.puma.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.puma.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree,accept,accept cookies,consent,manage cookies,more information,use cookies), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.puma.com: Adding requests to DB
+   (Ghostery) https://www.puma.com: Adding to successful website
+
+ (Ghostery): (246) https://www.heraldcorp.com
+   (Ghostery) https://www.heraldcorp.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.heraldcorp.com
+   (Ghostery) https://www.heraldcorp.com: Page loaded
+   (Ghostery) https://www.heraldcorp.com: Getting Cookies
+   (Ghostery) https://www.heraldcorp.com: Getting Localstorage
+   (Ghostery) https://www.heraldcorp.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.heraldcorp.com: Adding requests to DB
+   (Ghostery) https://www.heraldcorp.com: Adding to successful website
+
+ (Ghostery): (247) https://www.serebii.net
+   (Ghostery) https://www.serebii.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.serebii.net
+   (Ghostery) https://www.serebii.net: Page loaded
+   (Ghostery) https://www.serebii.net: Getting Cookies
+   (Ghostery) https://www.serebii.net: Getting Localstorage
+   (Ghostery) https://www.serebii.net: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.serebii.net: Adding requests to DB
+   (Ghostery) https://www.serebii.net: Adding to successful website
+
+ (Ghostery): (248) https://www.nowtv.it
+   (Ghostery) https://www.nowtv.it: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.nowtv.it
+   (Ghostery) https://www.nowtv.it: Page loaded
+   (Ghostery) https://www.nowtv.it: Getting Cookies
+   (Ghostery) https://www.nowtv.it: Getting Localstorage
+   (Ghostery) https://www.nowtv.it: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.nowtv.it: Adding requests to DB
+   (Ghostery) https://www.nowtv.it: Adding to successful website
+
+ (Ghostery): (249) https://www.vidaxl.de
+   (Ghostery) https://www.vidaxl.de: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.vidaxl.de
+   (Ghostery) https://www.vidaxl.de: Page loaded
+   (Ghostery) https://www.vidaxl.de: Getting Cookies
+   (Ghostery) https://www.vidaxl.de: Getting Localstorage
+   (Ghostery) https://www.vidaxl.de: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.vidaxl.de: Adding requests to DB
+   (Ghostery) https://www.vidaxl.de: Adding to successful website
+
+ (Ghostery): (250) https://www.megapath.net
+   (Ghostery) https://www.megapath.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.megapath.net
+**  (Ghostery): TimeoutError -> https://www.megapath.net
+
+ (Ghostery): (251) https://www.arakmu.ac.ir
+   (Ghostery) https://www.arakmu.ac.ir: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.arakmu.ac.ir
+**  (Ghostery): TimeoutError -> https://www.arakmu.ac.ir
+
+ (Ghostery): (252) https://www.csfor4d1.com
+   (Ghostery) https://www.csfor4d1.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.csfor4d1.com
+**  (Ghostery): TimeoutError -> https://www.csfor4d1.com
+
+ (Ghostery): (253) https://www.kebaya4dselaluok.com
+   (Ghostery) https://www.kebaya4dselaluok.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.kebaya4dselaluok.com
+   (Ghostery) https://www.kebaya4dselaluok.com: Page loaded
+   (Ghostery) https://www.kebaya4dselaluok.com: Getting Cookies
+   (Ghostery) https://www.kebaya4dselaluok.com: Getting Localstorage
+   (Ghostery) https://www.kebaya4dselaluok.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.kebaya4dselaluok.com: Adding requests to DB
+   (Ghostery) https://www.kebaya4dselaluok.com: Adding to successful website
+
+ (Ghostery): (254) https://www.karzar.net
+   (Ghostery) https://www.karzar.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.karzar.net
+**  (Ghostery): TimeoutError -> https://www.karzar.net
+
+ (Ghostery): (255) https://www.n.nu
+   (Ghostery) https://www.n.nu: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.n.nu
+**  (Ghostery): TimeoutError -> https://www.n.nu
+
+ (Ghostery): (256) https://www.bnmuumis.in
+   (Ghostery) https://www.bnmuumis.in: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bnmuumis.in
+   (Ghostery) https://www.bnmuumis.in: Page loaded
+   (Ghostery) https://www.bnmuumis.in: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Ghostery) https://www.bnmuumis.in: Getting Localstorage
+   (Ghostery) https://www.bnmuumis.in: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.bnmuumis.in: Adding requests to DB
+   (Ghostery) https://www.bnmuumis.in: Adding to successful website
+
+ (Ghostery): (257) https://www.belediye.gov.tr
+   (Ghostery) https://www.belediye.gov.tr: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.belediye.gov.tr
+**  (Ghostery): TimeoutError -> https://www.belediye.gov.tr
+
+ (Ghostery): (258) https://www.queniuhy.com
+   (Ghostery) https://www.queniuhy.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.queniuhy.com
+**  (Ghostery): TimeoutError -> https://www.queniuhy.com
+
+ (Ghostery): (259) https://www.tri.co.id
+   (Ghostery) https://www.tri.co.id: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.tri.co.id
+**  (Ghostery): TimeoutError -> https://www.tri.co.id
+
+ (Ghostery): (260) https://www.milenio.com
+   (Ghostery) https://www.milenio.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.milenio.com
+   (Ghostery) https://www.milenio.com: Page loaded
+   (Ghostery) https://www.milenio.com: Getting Cookies
+   (Ghostery) https://www.milenio.com: Getting Localstorage
+   (Ghostery) https://www.milenio.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.milenio.com: Adding requests to DB
+   (Ghostery) https://www.milenio.com: Adding to successful website
+
+ (Ghostery): (261) https://www.sreedharscce.com
+   (Ghostery) https://www.sreedharscce.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.sreedharscce.com
+   (Ghostery) https://www.sreedharscce.com: Page loaded
+   (Ghostery) https://www.sreedharscce.com: Getting Cookies
+   (Ghostery) https://www.sreedharscce.com: Getting Localstorage
+   (Ghostery) https://www.sreedharscce.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.sreedharscce.com: Adding requests to DB
+   (Ghostery) https://www.sreedharscce.com: Adding to successful website
+
+ (Ghostery): (262) https://www.qikify.com
+   (Ghostery) https://www.qikify.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.qikify.com
+**  (Ghostery): TimeoutError -> https://www.qikify.com
+
+ (Ghostery): (263) https://www.santalolla.com.br
+   (Ghostery) https://www.santalolla.com.br: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.santalolla.com.br
+   (Ghostery) https://www.santalolla.com.br: Page loaded
+   (Ghostery) https://www.santalolla.com.br: Getting Cookies
+   (Ghostery) https://www.santalolla.com.br: Getting Localstorage
+   (Ghostery) https://www.santalolla.com.br: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.santalolla.com.br: Adding requests to DB
+   (Ghostery) https://www.santalolla.com.br: Adding to successful website
+
+ (Ghostery): (264) https://www.hnzyy.net
+   (Ghostery) https://www.hnzyy.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hnzyy.net
+**  (Ghostery): TimeoutError -> https://www.hnzyy.net
+
+ (Ghostery): (265) https://www.shopifycdn.net
+   (Ghostery) https://www.shopifycdn.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.shopifycdn.net
+   (Ghostery) https://www.shopifycdn.net: Page loaded
+   (Ghostery) https://www.shopifycdn.net: Getting Cookies
+   (Ghostery) https://www.shopifycdn.net: Getting Localstorage
+   (Ghostery) https://www.shopifycdn.net: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.shopifycdn.net: Adding requests to DB
+   (Ghostery) https://www.shopifycdn.net: Adding to successful website
+
+ (Ghostery): (266) https://www.directtalk.com.br
+   (Ghostery) https://www.directtalk.com.br: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.directtalk.com.br
+**  (Ghostery): TimeoutError -> https://www.directtalk.com.br
+
+ (Ghostery): (267) https://www.sharebox.co.kr
+   (Ghostery) https://www.sharebox.co.kr: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.sharebox.co.kr
+**  (Ghostery): TimeoutError -> https://www.sharebox.co.kr
+
+ (Ghostery): (268) https://www.getaroom.com
+   (Ghostery) https://www.getaroom.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.getaroom.com
+   (Ghostery) https://www.getaroom.com: Page loaded
+   (Ghostery) https://www.getaroom.com: Getting Cookies
+   (Ghostery) https://www.getaroom.com: Getting Localstorage
+   (Ghostery) https://www.getaroom.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.getaroom.com: Adding requests to DB
+   (Ghostery) https://www.getaroom.com: Adding to successful website
+
+ (Ghostery): (269) https://www.novaposhta.ua
+   (Ghostery) https://www.novaposhta.ua: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.novaposhta.ua
+**  (Ghostery): TimeoutError -> https://www.novaposhta.ua
+
+ (Ghostery): (270) https://www.betawitoto.io
+   (Ghostery) https://www.betawitoto.io: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.betawitoto.io
+**  (Ghostery): TimeoutError -> https://www.betawitoto.io
+
+ (Ghostery): (271) https://www.you1news.com
+   (Ghostery) https://www.you1news.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.you1news.com
+   (Ghostery) https://www.you1news.com: Page loaded
+   (Ghostery) https://www.you1news.com: Getting Cookies
+   (Ghostery) https://www.you1news.com: Getting Localstorage
+   (Ghostery) https://www.you1news.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.you1news.com: Adding requests to DB
+   (Ghostery) https://www.you1news.com: Adding to successful website
+
+ (Ghostery): (272) https://www.expansion.com
+   (Ghostery) https://www.expansion.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.expansion.com
+   (Ghostery) https://www.expansion.com: Page loaded
+   (Ghostery) https://www.expansion.com: Getting Cookies
+   (Ghostery) https://www.expansion.com: Getting Localstorage
+   (Ghostery) https://www.expansion.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.expansion.com: Adding requests to DB
+   (Ghostery) https://www.expansion.com: Adding to successful website
+
+ (Ghostery): (273) https://www.microfocus.com
+   (Ghostery) https://www.microfocus.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.microfocus.com
+   (Ghostery) https://www.microfocus.com: Page loaded
+   (Ghostery) https://www.microfocus.com: Getting Cookies
+   (Ghostery) https://www.microfocus.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.microfocus.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (more information), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.microfocus.com: Adding requests to DB
+   (Ghostery) https://www.microfocus.com: Adding to successful website
+
+ (Ghostery): (274) https://www.indihome.co.id
+   (Ghostery) https://www.indihome.co.id: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.indihome.co.id
+**  (Ghostery): TimeoutError -> https://www.indihome.co.id
+
+ (Ghostery): (275) https://www.menopause.org
+   (Ghostery) https://www.menopause.org: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.menopause.org
+   (Ghostery) https://www.menopause.org: Page loaded
+   (Ghostery) https://www.menopause.org: Getting Cookies
+   (Ghostery) https://www.menopause.org: Getting Localstorage
+   (Ghostery) https://www.menopause.org: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (accept), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.menopause.org: Adding requests to DB
+   (Ghostery) https://www.menopause.org: Adding to successful website
+
+ (Ghostery): (276) https://www.vtex.com
+   (Ghostery) https://www.vtex.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.vtex.com
+   (Ghostery) https://www.vtex.com: Page loaded
+   (Ghostery) https://www.vtex.com: Getting Cookies
+   (Ghostery) https://www.vtex.com: Getting Localstorage
+   (Ghostery) https://www.vtex.com: Checking Cookie Banner
+The following words were found: [ 'agree', 'accept', 'accept all' ]
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+Error accessing element handle's visibility -- id
+   (Ghostery) https://www.vtex.com: Adding requests to DB
+   (Ghostery) https://www.vtex.com: Adding to successful website
+
+ (Ghostery): (277) https://www.enzymic.co
+   (Ghostery) https://www.enzymic.co: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.enzymic.co
+**  (Ghostery): TimeoutError -> https://www.enzymic.co
+
+ (Ghostery): (278) https://www.optusnet.com.au
+   (Ghostery) https://www.optusnet.com.au: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.optusnet.com.au
+**  (Ghostery): TimeoutError -> https://www.optusnet.com.au
+
+ (Ghostery): (279) https://www.blogthisbiz.com
+   (Ghostery) https://www.blogthisbiz.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.blogthisbiz.com
+**  (Ghostery): TimeoutError -> https://www.blogthisbiz.com
+
+ (Ghostery): (280) https://www.hao123.com
+   (Ghostery) https://www.hao123.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hao123.com
+**  (Ghostery): TimeoutError -> https://www.hao123.com
+
+ (Ghostery): (281) https://www.skline.co.kr
+   (Ghostery) https://www.skline.co.kr: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.skline.co.kr
+**  (Ghostery): TimeoutError -> https://www.skline.co.kr
+
+ (Ghostery): (282) https://www.sumbarprov.go.id
+   (Ghostery) https://www.sumbarprov.go.id: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.sumbarprov.go.id
+   (Ghostery) https://www.sumbarprov.go.id: Page loaded
+   (Ghostery) https://www.sumbarprov.go.id: Getting Cookies
+   (Ghostery) https://www.sumbarprov.go.id: Getting Localstorage
+   (Ghostery) https://www.sumbarprov.go.id: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.sumbarprov.go.id: Adding requests to DB
+   (Ghostery) https://www.sumbarprov.go.id: Adding to successful website
+
+ (Ghostery): (283) https://www.jovempan.com.br
+   (Ghostery) https://www.jovempan.com.br: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.jovempan.com.br
+**  (Ghostery): TimeoutError -> https://www.jovempan.com.br
+
+ (Ghostery): (284) https://www.nice1010.fun
+   (Ghostery) https://www.nice1010.fun: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.nice1010.fun
+**  (Ghostery): TimeoutError -> https://www.nice1010.fun
+
+ (Ghostery): (285) https://www.fmgid.com
+   (Ghostery) https://www.fmgid.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.fmgid.com
+**  (Ghostery): TimeoutError -> https://www.fmgid.com
+
+ (Ghostery): (286) https://www.sgcarmart.com
+   (Ghostery) https://www.sgcarmart.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.sgcarmart.com
+**  (Ghostery): TimeoutError -> https://www.sgcarmart.com
+
+ (Ghostery): (287) https://www.yesfile.com
+   (Ghostery) https://www.yesfile.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.yesfile.com
+**  (Ghostery): TimeoutError -> https://www.yesfile.com
+
+ (Ghostery): (288) https://www.globalresearch.ca
+   (Ghostery) https://www.globalresearch.ca: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.globalresearch.ca
+   (Ghostery) https://www.globalresearch.ca: Page loaded
+   (Ghostery) https://www.globalresearch.ca: Getting Cookies
+   (Ghostery) https://www.globalresearch.ca: Getting Localstorage
+   (Ghostery) https://www.globalresearch.ca: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (more information), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.globalresearch.ca: Adding requests to DB
+   (Ghostery) https://www.globalresearch.ca: Adding to successful website
+
+ (Ghostery): (289) https://www.powertel.net.au
+   (Ghostery) https://www.powertel.net.au: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.powertel.net.au
+**  (Ghostery): TimeoutError -> https://www.powertel.net.au
+
+ (Ghostery): (290) https://www.revolver.news
+   (Ghostery) https://www.revolver.news: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.revolver.news
+   (Ghostery) https://www.revolver.news: Page loaded
+   (Ghostery) https://www.revolver.news: Getting Cookies
+   (Ghostery) https://www.revolver.news: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.revolver.news: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (agree), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.revolver.news: Adding requests to DB
+   (Ghostery) https://www.revolver.news: Adding to successful website
+
+ (Ghostery): (291) https://www.glispa.com
+   (Ghostery) https://www.glispa.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.glispa.com
+   (Ghostery) https://www.glispa.com: Page loaded
+   (Ghostery) https://www.glispa.com: Getting Cookies
+   (Ghostery) https://www.glispa.com: Getting Localstorage
+   (Ghostery) https://www.glispa.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (cookie policy), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.glispa.com: Adding requests to DB
+   (Ghostery) https://www.glispa.com: Adding to successful website
+
+ (Ghostery): (292) https://www.ua.ac.be
+   (Ghostery) https://www.ua.ac.be: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ua.ac.be
+**  (Ghostery): TimeoutError -> https://www.ua.ac.be
+
+ (Ghostery): (293) https://www.mitel.io
+   (Ghostery) https://www.mitel.io: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.mitel.io
+   (Ghostery) https://www.mitel.io: Page loaded
+   (Ghostery) https://www.mitel.io: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Ghostery) https://www.mitel.io: Getting Localstorage
+   (Ghostery) https://www.mitel.io: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent,more information,cookie policy,use cookies), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.mitel.io: Adding requests to DB
+   (Ghostery) https://www.mitel.io: Adding to successful website
+
+ (Ghostery): (294) https://www.tvr.ro
+   (Ghostery) https://www.tvr.ro: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.tvr.ro
+**  (Ghostery): TimeoutError -> https://www.tvr.ro
+
+ (Ghostery): (295) https://www.csu.edu.cn
+   (Ghostery) https://www.csu.edu.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.csu.edu.cn
+   (Ghostery) https://www.csu.edu.cn: Page loaded
+   (Ghostery) https://www.csu.edu.cn: Getting Cookies
+   (Ghostery) https://www.csu.edu.cn: Getting Localstorage
+   (Ghostery) https://www.csu.edu.cn: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.csu.edu.cn: Adding requests to DB
+   (Ghostery) https://www.csu.edu.cn: Adding to successful website
+
+ (Ghostery): (296) https://www.smotrim.ru
+   (Ghostery) https://www.smotrim.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.smotrim.ru
+   (Ghostery) https://www.smotrim.ru: Page loaded
+   (Ghostery) https://www.smotrim.ru: Getting Cookies
+   (Ghostery) https://www.smotrim.ru: Getting Localstorage
+   (Ghostery) https://www.smotrim.ru: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.smotrim.ru: Adding requests to DB
+   (Ghostery) https://www.smotrim.ru: Adding to successful website
+
+ (Ghostery): (297) https://www.filmmodu.org
+   (Ghostery) https://www.filmmodu.org: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.filmmodu.org
+   (Ghostery) https://www.filmmodu.org: Page loaded
+   (Ghostery) https://www.filmmodu.org: Getting Cookies
+   (Ghostery) https://www.filmmodu.org: Getting Localstorage
+   (Ghostery) https://www.filmmodu.org: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.filmmodu.org: Adding requests to DB
+   (Ghostery) https://www.filmmodu.org: Adding to successful website
+
+ (Ghostery): (298) https://www.hanbiro.com
+   (Ghostery) https://www.hanbiro.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hanbiro.com
+**  (Ghostery): TimeoutError -> https://www.hanbiro.com
+
+ (Ghostery): (299) https://www.u5fgb.com
+   (Ghostery) https://www.u5fgb.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.u5fgb.com
+**  (Ghostery): TimeoutError -> https://www.u5fgb.com
+
+ (Ghostery): (300) https://www.bsn.com.my
+   (Ghostery) https://www.bsn.com.my: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bsn.com.my
+**  (Ghostery): TimeoutError -> https://www.bsn.com.my
+
+ (Ghostery): (301) https://www.inflow.net
+   (Ghostery) https://www.inflow.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.inflow.net
+**  (Ghostery): TimeoutError -> https://www.inflow.net
+
+ (Ghostery): (302) https://www.nhathuoclongchau.com.vn
+   (Ghostery) https://www.nhathuoclongchau.com.vn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.nhathuoclongchau.com.vn
+**  (Ghostery): TimeoutError -> https://www.nhathuoclongchau.com.vn
+
+ (Ghostery): (303) https://www.win.net
+   (Ghostery) https://www.win.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.win.net
+**  (Ghostery): TimeoutError -> https://www.win.net
+
+ (Ghostery): (304) https://www.apuscn.com
+   (Ghostery) https://www.apuscn.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.apuscn.com
+**  (Ghostery): TimeoutError -> https://www.apuscn.com
+
+ (Ghostery): (305) https://www.merolagani.com
+   (Ghostery) https://www.merolagani.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.merolagani.com
+**  (Ghostery): TimeoutError -> https://www.merolagani.com
+
+ (Ghostery): (306) https://www.uast.ac.ir
+   (Ghostery) https://www.uast.ac.ir: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.uast.ac.ir
+**  (Ghostery): TimeoutError -> https://www.uast.ac.ir
+
+ (Ghostery): (307) https://www.artdaily.cc
+   (Ghostery) https://www.artdaily.cc: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.artdaily.cc
+   (Ghostery) https://www.artdaily.cc: Page loaded
+   (Ghostery) https://www.artdaily.cc: Getting Cookies
+   (Ghostery) https://www.artdaily.cc: Getting Localstorage
+   (Ghostery) https://www.artdaily.cc: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.artdaily.cc: Adding requests to DB
+   (Ghostery) https://www.artdaily.cc: Adding to successful website
+
+ (Ghostery): (308) https://www.fudan.edu.cn
+   (Ghostery) https://www.fudan.edu.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.fudan.edu.cn
+**  (Ghostery): TimeoutError -> https://www.fudan.edu.cn
+
+ (Ghostery): (309) https://www.coloros.com
+   (Ghostery) https://www.coloros.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.coloros.com
+**  (Ghostery): TimeoutError -> https://www.coloros.com
+
+ (Ghostery): (310) https://www.servepics.com
+   (Ghostery) https://www.servepics.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.servepics.com
+**  (Ghostery): TimeoutError -> https://www.servepics.com
+
+ (Ghostery): (311) https://www.j-live.tv
+   (Ghostery) https://www.j-live.tv: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.j-live.tv
+   (Ghostery) https://www.j-live.tv: Page loaded
+   (Ghostery) https://www.j-live.tv: Getting Cookies
+   (Ghostery) https://www.j-live.tv: Getting Localstorage
+   (Ghostery) https://www.j-live.tv: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.j-live.tv: Adding requests to DB
+   (Ghostery) https://www.j-live.tv: Adding to successful website
+
+ (Ghostery): (312) https://www.itplatforma.com
+   (Ghostery) https://www.itplatforma.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.itplatforma.com
+   (Ghostery) https://www.itplatforma.com: Page loaded
+   (Ghostery) https://www.itplatforma.com: Getting Cookies
+   (Ghostery) https://www.itplatforma.com: Getting Localstorage
+   (Ghostery) https://www.itplatforma.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.itplatforma.com: Adding requests to DB
+   (Ghostery) https://www.itplatforma.com: Adding to successful website
+
+ (Ghostery): (313) https://www.juraganfilm.digital
+   (Ghostery) https://www.juraganfilm.digital: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.juraganfilm.digital
+**  (Ghostery): TimeoutError -> https://www.juraganfilm.digital
+
+ (Ghostery): (314) https://www.asstr.org
+   (Ghostery) https://www.asstr.org: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.asstr.org
+**  (Ghostery): TimeoutError -> https://www.asstr.org
+
+ (Ghostery): (315) https://www.gazetaweb.com
+   (Ghostery) https://www.gazetaweb.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.gazetaweb.com
+   (Ghostery) https://www.gazetaweb.com: Page loaded
+   (Ghostery) https://www.gazetaweb.com: Getting Cookies
+   (Ghostery) https://www.gazetaweb.com: Getting Localstorage
+   (Ghostery) https://www.gazetaweb.com: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (316) https://www.pen.io
+   (Ghostery) https://www.pen.io: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.pen.io
+**  (Ghostery): TimeoutError -> https://www.pen.io
+
+ (Ghostery): (317) https://www.indianmotorcycle.com
+   (Ghostery) https://www.indianmotorcycle.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.indianmotorcycle.com
+   (Ghostery) https://www.indianmotorcycle.com: Page loaded
+   (Ghostery) https://www.indianmotorcycle.com: Getting Cookies
+   (Ghostery) https://www.indianmotorcycle.com: Getting Localstorage
+   (Ghostery) https://www.indianmotorcycle.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.indianmotorcycle.com: Adding requests to DB
+   (Ghostery) https://www.indianmotorcycle.com: Adding to successful website
+
+ (Ghostery): (318) https://www.worldsecuresystems.com
+   (Ghostery) https://www.worldsecuresystems.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.worldsecuresystems.com
+**  (Ghostery): Error visiting webpage -> https://www.worldsecuresystems.com (net::ERR_NAME_NOT_RESOLVED at https://www.worldsecuresystems.com)
+
+ (Ghostery): (319) https://www.birch.net
+   (Ghostery) https://www.birch.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.birch.net
+**  (Ghostery): TimeoutError -> https://www.birch.net
+
+ (Ghostery): (320) https://www.gayporno.fm
+   (Ghostery) https://www.gayporno.fm: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.gayporno.fm
+   (Ghostery) https://www.gayporno.fm: Page loaded
+   (Ghostery) https://www.gayporno.fm: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Ghostery) https://www.gayporno.fm: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.gayporno.fm: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (321) https://www.une.edu
+   (Ghostery) https://www.une.edu: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.une.edu
+   (Ghostery) https://www.une.edu: Page loaded
+   (Ghostery) https://www.une.edu: Getting Cookies
+   (Ghostery) https://www.une.edu: Getting Localstorage
+   (Ghostery) https://www.une.edu: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (322) https://www.whichcar.com.au
+   (Ghostery) https://www.whichcar.com.au: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.whichcar.com.au
+   (Ghostery) https://www.whichcar.com.au: Page loaded
+   (Ghostery) https://www.whichcar.com.au: Getting Cookies
+   (Ghostery) https://www.whichcar.com.au: Getting Localstorage
+   (Ghostery) https://www.whichcar.com.au: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.whichcar.com.au: Adding requests to DB
+   (Ghostery) https://www.whichcar.com.au: Adding to successful website
+
+ (Ghostery): (323) https://www.vision.net
+   (Ghostery) https://www.vision.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.vision.net
+**  (Ghostery): TimeoutError -> https://www.vision.net
+
+ (Ghostery): (324) https://www.zazzle.net
+   (Ghostery) https://www.zazzle.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.zazzle.net
+**  (Ghostery): TimeoutError -> https://www.zazzle.net
+
+ (Ghostery): (325) https://www.bjtu.edu.cn
+   (Ghostery) https://www.bjtu.edu.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bjtu.edu.cn
+**  (Ghostery): TimeoutError -> https://www.bjtu.edu.cn
+
+ (Ghostery): (326) https://www.n06.biz
+   (Ghostery) https://www.n06.biz: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.n06.biz
+**  (Ghostery): TimeoutError -> https://www.n06.biz
+
+ (Ghostery): (327) https://www.projectkenobi.com
+   (Ghostery) https://www.projectkenobi.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.projectkenobi.com
+**  (Ghostery): TimeoutError -> https://www.projectkenobi.com
+
+ (Ghostery): (328) https://www.i-scream.co.kr
+   (Ghostery) https://www.i-scream.co.kr: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.i-scream.co.kr
+**  (Ghostery): TimeoutError -> https://www.i-scream.co.kr
+
+ (Ghostery): (329) https://www.lnhi.net
+   (Ghostery) https://www.lnhi.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.lnhi.net
+**  (Ghostery): TimeoutError -> https://www.lnhi.net
+
+ (Ghostery): (330) https://www.cherwellondemand.com
+   (Ghostery) https://www.cherwellondemand.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cherwellondemand.com
+**  (Ghostery): TimeoutError -> https://www.cherwellondemand.com
+
+ (Ghostery): (331) https://www.eldia.es
+   (Ghostery) https://www.eldia.es: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.eldia.es
+   (Ghostery) https://www.eldia.es: Page loaded
+   (Ghostery) https://www.eldia.es: Getting Cookies
+      **** Error in CookieFrameEvaluate
+      **** Error in CookieFrameEvaluate
+   (Ghostery) https://www.eldia.es: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.eldia.es: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (332) https://www.rosseti.ru
+   (Ghostery) https://www.rosseti.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.rosseti.ru
+**  (Ghostery): TimeoutError -> https://www.rosseti.ru
+
+ (Ghostery): (333) https://www.qtfm.cn
+   (Ghostery) https://www.qtfm.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.qtfm.cn
+**  (Ghostery): TimeoutError -> https://www.qtfm.cn
+
+ (Ghostery): (334) https://www.faeaindia.org
+   (Ghostery) https://www.faeaindia.org: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.faeaindia.org
+   (Ghostery) https://www.faeaindia.org: Page loaded
+   (Ghostery) https://www.faeaindia.org: Getting Cookies
+   (Ghostery) https://www.faeaindia.org: Getting Localstorage
+   (Ghostery) https://www.faeaindia.org: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.faeaindia.org: Adding requests to DB
+   (Ghostery) https://www.faeaindia.org: Adding to successful website
+
+ (Ghostery): (335) https://www.ninjatech.io
+   (Ghostery) https://www.ninjatech.io: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ninjatech.io
+**  (Ghostery): TimeoutError -> https://www.ninjatech.io
+
+ (Ghostery): (336) https://www.goepson.com
+   (Ghostery) https://www.goepson.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.goepson.com
+**  (Ghostery): TimeoutError -> https://www.goepson.com
+
+ (Ghostery): (337) https://www.svrsstatus.com
+   (Ghostery) https://www.svrsstatus.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.svrsstatus.com
+**  (Ghostery): TimeoutError -> https://www.svrsstatus.com
+
+ (Ghostery): (338) https://www.bmicc.ir
+   (Ghostery) https://www.bmicc.ir: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bmicc.ir
+**  (Ghostery): TimeoutError -> https://www.bmicc.ir
+
+ (Ghostery): (339) https://www.6w9hps.com
+   (Ghostery) https://www.6w9hps.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.6w9hps.com
+**  (Ghostery): TimeoutError -> https://www.6w9hps.com
+
+ (Ghostery): (340) https://www.flashjoin.net
+   (Ghostery) https://www.flashjoin.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.flashjoin.net
+**  (Ghostery): TimeoutError -> https://www.flashjoin.net
+
+ (Ghostery): (341) https://www.aktu.ac.in
+   (Ghostery) https://www.aktu.ac.in: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.aktu.ac.in
+**  (Ghostery): TimeoutError -> https://www.aktu.ac.in
+
+ (Ghostery): (342) https://www.hcc.edu.tw
+   (Ghostery) https://www.hcc.edu.tw: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hcc.edu.tw
+**  (Ghostery): TimeoutError -> https://www.hcc.edu.tw
+
+ (Ghostery): (343) https://www.ccb.com.cn
+   (Ghostery) https://www.ccb.com.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ccb.com.cn
+**  (Ghostery): TimeoutError -> https://www.ccb.com.cn
+
+ (Ghostery): (344) https://www.bisafans.de
+   (Ghostery) https://www.bisafans.de: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bisafans.de
+   (Ghostery) https://www.bisafans.de: Page loaded
+   (Ghostery) https://www.bisafans.de: Getting Cookies
+   (Ghostery) https://www.bisafans.de: Getting Localstorage
+   (Ghostery) https://www.bisafans.de: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.bisafans.de: Adding requests to DB
+   (Ghostery) https://www.bisafans.de: Adding to successful website
+
+ (Ghostery): (345) https://www.bnr.bg
+   (Ghostery) https://www.bnr.bg: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bnr.bg
+**  (Ghostery): TimeoutError -> https://www.bnr.bg
+
+ (Ghostery): (346) https://www.grimoldi.com
+   (Ghostery) https://www.grimoldi.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.grimoldi.com
+   (Ghostery) https://www.grimoldi.com: Page loaded
+   (Ghostery) https://www.grimoldi.com: Getting Cookies
+   (Ghostery) https://www.grimoldi.com: Getting Localstorage
+   (Ghostery) https://www.grimoldi.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.grimoldi.com: Adding requests to DB
+   (Ghostery) https://www.grimoldi.com: Adding to successful website
+
+ (Ghostery): (347) https://www.chutogel303.com
+   (Ghostery) https://www.chutogel303.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.chutogel303.com
+**  (Ghostery): TimeoutError -> https://www.chutogel303.com
+
+ (Ghostery): (348) https://www.livescore.co.kr
+   (Ghostery) https://www.livescore.co.kr: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.livescore.co.kr
+**  (Ghostery): TimeoutError -> https://www.livescore.co.kr
+
+ (Ghostery): (349) https://www.hotwire.com
+   (Ghostery) https://www.hotwire.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hotwire.com
+   (Ghostery) https://www.hotwire.com: Page loaded
+   (Ghostery) https://www.hotwire.com: Getting Cookies
+   (Ghostery) https://www.hotwire.com: Getting Localstorage
+      **** Error in LocalStorageFrameEvaluate
+   (Ghostery) https://www.hotwire.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (350) https://www.carozzicorp.com
+   (Ghostery) https://www.carozzicorp.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.carozzicorp.com
+**  (Ghostery): TimeoutError -> https://www.carozzicorp.com
+
+ (Ghostery): (351) https://www.comporium.net
+   (Ghostery) https://www.comporium.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.comporium.net
+**  (Ghostery): TimeoutError -> https://www.comporium.net
+
+ (Ghostery): (352) https://www.ajinomoto.co.jp
+   (Ghostery) https://www.ajinomoto.co.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ajinomoto.co.jp
+   (Ghostery) https://www.ajinomoto.co.jp: Page loaded
+   (Ghostery) https://www.ajinomoto.co.jp: Getting Cookies
+   (Ghostery) https://www.ajinomoto.co.jp: Getting Localstorage
+   (Ghostery) https://www.ajinomoto.co.jp: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.ajinomoto.co.jp: Adding requests to DB
+   (Ghostery) https://www.ajinomoto.co.jp: Adding to successful website
+
+ (Ghostery): (353) https://www.lms.at
+   (Ghostery) https://www.lms.at: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.lms.at
+**  (Ghostery): TimeoutError -> https://www.lms.at
+
+ (Ghostery): (354) https://www.err.ee
+   (Ghostery) https://www.err.ee: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.err.ee
+   (Ghostery) https://www.err.ee: Page loaded
+   (Ghostery) https://www.err.ee: Getting Cookies
+   (Ghostery) https://www.err.ee: Getting Localstorage
+   (Ghostery) https://www.err.ee: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.err.ee: Adding requests to DB
+   (Ghostery) https://www.err.ee: Adding to successful website
+
+ (Ghostery): (355) https://www.cghub.com
+   (Ghostery) https://www.cghub.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cghub.com
+**  (Ghostery): TimeoutError -> https://www.cghub.com
+
+ (Ghostery): (356) https://www.pitchleads.com
+   (Ghostery) https://www.pitchleads.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.pitchleads.com
+**  (Ghostery): TimeoutError -> https://www.pitchleads.com
+
+ (Ghostery): (357) https://www.esoft.tech
+   (Ghostery) https://www.esoft.tech: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.esoft.tech
+**  (Ghostery): TimeoutError -> https://www.esoft.tech
+
+ (Ghostery): (358) https://www.exposure.co
+   (Ghostery) https://www.exposure.co: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.exposure.co
+   (Ghostery) https://www.exposure.co: Page loaded
+   (Ghostery) https://www.exposure.co: Getting Cookies
+   (Ghostery) https://www.exposure.co: Getting Localstorage
+   (Ghostery) https://www.exposure.co: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.exposure.co: Adding requests to DB
+   (Ghostery) https://www.exposure.co: Adding to successful website
+
+ (Ghostery): (359) https://www.census.ke
+   (Ghostery) https://www.census.ke: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.census.ke
+**  (Ghostery): TimeoutError -> https://www.census.ke
+
+ (Ghostery): (360) https://www.analyticsinsight.net
+   (Ghostery) https://www.analyticsinsight.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.analyticsinsight.net
+   (Ghostery) https://www.analyticsinsight.net: Page loaded
+   (Ghostery) https://www.analyticsinsight.net: Getting Cookies
+   (Ghostery) https://www.analyticsinsight.net: Getting Localstorage
+   (Ghostery) https://www.analyticsinsight.net: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (decline), or less than 2 elements in subtree (0)).
+   (Ghostery) https://www.analyticsinsight.net: Adding requests to DB
+   (Ghostery) https://www.analyticsinsight.net: Adding to successful website
+
+ (Ghostery): (361) https://www.nddamp.com
+   (Ghostery) https://www.nddamp.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.nddamp.com
+**  (Ghostery): TimeoutError -> https://www.nddamp.com
+
+ (Ghostery): (362) https://www.whatsappmods.me
+   (Ghostery) https://www.whatsappmods.me: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.whatsappmods.me
+**  (Ghostery): TimeoutError -> https://www.whatsappmods.me
+
+ (Ghostery): (363) https://www.emerse.com
+   (Ghostery) https://www.emerse.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.emerse.com
+   (Ghostery) https://www.emerse.com: Page loaded
+   (Ghostery) https://www.emerse.com: Getting Cookies
+      **** Error in CookieFrameEvaluate
+   (Ghostery) https://www.emerse.com: Getting Localstorage
+   (Ghostery) https://www.emerse.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.emerse.com: Adding requests to DB
+   (Ghostery) https://www.emerse.com: Adding to successful website
+
+ (Ghostery): (364) https://www.nic.cz
+   (Ghostery) https://www.nic.cz: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.nic.cz
+   (Ghostery) https://www.nic.cz: Page loaded
+   (Ghostery) https://www.nic.cz: Getting Cookies
+   (Ghostery) https://www.nic.cz: Getting Localstorage
+   (Ghostery) https://www.nic.cz: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.nic.cz: Adding requests to DB
+   (Ghostery) https://www.nic.cz: Adding to successful website
+
+ (Ghostery): (365) https://www.nidw.gov.bd
+   (Ghostery) https://www.nidw.gov.bd: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.nidw.gov.bd
+**  (Ghostery): TimeoutError -> https://www.nidw.gov.bd
+
+ (Ghostery): (366) https://www.buntogel88.com
+   (Ghostery) https://www.buntogel88.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.buntogel88.com
+**  (Ghostery): TimeoutError -> https://www.buntogel88.com
+
+ (Ghostery): (367) https://www.contentexchange.me
+   (Ghostery) https://www.contentexchange.me: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.contentexchange.me
+   (Ghostery) https://www.contentexchange.me: Page loaded
+   (Ghostery) https://www.contentexchange.me: Getting Cookies
+   (Ghostery) https://www.contentexchange.me: Getting Localstorage
+   (Ghostery) https://www.contentexchange.me: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (less than 2 words founds (consent), or less than 2 elements in subtree (1)).
+   (Ghostery) https://www.contentexchange.me: Adding requests to DB
+   (Ghostery) https://www.contentexchange.me: Adding to successful website
+
+ (Ghostery): (368) https://www.jinshuju.net
+   (Ghostery) https://www.jinshuju.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.jinshuju.net
+   (Ghostery) https://www.jinshuju.net: Page loaded
+   (Ghostery) https://www.jinshuju.net: Getting Cookies
+   (Ghostery) https://www.jinshuju.net: Getting Localstorage
+   (Ghostery) https://www.jinshuju.net: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.jinshuju.net: Adding requests to DB
+   (Ghostery) https://www.jinshuju.net: Adding to successful website
+
+ (Ghostery): (369) https://www.bidence.net
+   (Ghostery) https://www.bidence.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.bidence.net
+**  (Ghostery): TimeoutError -> https://www.bidence.net
+
+ (Ghostery): (370) https://www.asideas.de
+   (Ghostery) https://www.asideas.de: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.asideas.de
+**  (Ghostery): TimeoutError -> https://www.asideas.de
+
+ (Ghostery): (371) https://www.fesco.com
+   (Ghostery) https://www.fesco.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.fesco.com
+   (Ghostery) https://www.fesco.com: Page loaded
+   (Ghostery) https://www.fesco.com: Getting Cookies
+   (Ghostery) https://www.fesco.com: Getting Localstorage
+   (Ghostery) https://www.fesco.com: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.fesco.com: Adding requests to DB
+   (Ghostery) https://www.fesco.com: Adding to successful website
+
+ (Ghostery): (372) https://www.fbf17cb842e16d4f41b597ad9da38d640f3bf9f526c3553cec2d7a7c.com
+   (Ghostery) https://www.fbf17cb842e16d4f41b597ad9da38d640f3bf9f526c3553cec2d7a7c.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.fbf17cb842e16d4f41b597ad9da38d640f3bf9f526c3553cec2d7a7c.com
+**  (Ghostery): TimeoutError -> https://www.fbf17cb842e16d4f41b597ad9da38d640f3bf9f526c3553cec2d7a7c.com
+
+ (Ghostery): (373) https://www.hiutoto168.com
+   (Ghostery) https://www.hiutoto168.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hiutoto168.com
+**  (Ghostery): TimeoutError -> https://www.hiutoto168.com
+
+ (Ghostery): (374) https://www.trouble-free.net
+   (Ghostery) https://www.trouble-free.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.trouble-free.net
+**  (Ghostery): TimeoutError -> https://www.trouble-free.net
+
+ (Ghostery): (375) https://www.o2online.de
+   (Ghostery) https://www.o2online.de: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.o2online.de
+   (Ghostery) https://www.o2online.de: Page loaded
+   (Ghostery) https://www.o2online.de: Getting Cookies
+   (Ghostery) https://www.o2online.de: Getting Localstorage
+   (Ghostery) https://www.o2online.de: Checking Cookie Banner
+Checking frames for banner
+The website used up all its time allocation. Forced timeout.
+
+ (Ghostery): (376) https://www.repayonline.com
+   (Ghostery) https://www.repayonline.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.repayonline.com
+**  (Ghostery): TimeoutError -> https://www.repayonline.com
+
+ (Ghostery): (377) https://www.juntaelectoralcentral.es
+   (Ghostery) https://www.juntaelectoralcentral.es: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.juntaelectoralcentral.es
+**  (Ghostery): TimeoutError -> https://www.juntaelectoralcentral.es
+
+ (Ghostery): (378) https://www.decathlon.net
+   (Ghostery) https://www.decathlon.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.decathlon.net
+**  (Ghostery): TimeoutError -> https://www.decathlon.net
+
+ (Ghostery): (379) https://www.crystalbet.com
+   (Ghostery) https://www.crystalbet.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.crystalbet.com
+**  (Ghostery): TimeoutError -> https://www.crystalbet.com
+
+ (Ghostery): (380) https://www.delete-registration.com
+   (Ghostery) https://www.delete-registration.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.delete-registration.com
+**  (Ghostery): TimeoutError -> https://www.delete-registration.com
+
+ (Ghostery): (381) https://www.salyk.kz
+   (Ghostery) https://www.salyk.kz: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.salyk.kz
+**  (Ghostery): TimeoutError -> https://www.salyk.kz
+
+ (Ghostery): (382) https://www.u-hyogo.ac.jp
+   (Ghostery) https://www.u-hyogo.ac.jp: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.u-hyogo.ac.jp
+**  (Ghostery): TimeoutError -> https://www.u-hyogo.ac.jp
+
+ (Ghostery): (383) https://www.miechat.tv
+   (Ghostery) https://www.miechat.tv: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.miechat.tv
+**  (Ghostery): TimeoutError -> https://www.miechat.tv
+
+ (Ghostery): (384) https://www.avakids.com
+   (Ghostery) https://www.avakids.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.avakids.com
+**  (Ghostery): TimeoutError -> https://www.avakids.com
+
+ (Ghostery): (385) https://www.ingenieur.de
+   (Ghostery) https://www.ingenieur.de: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ingenieur.de
+   (Ghostery) https://www.ingenieur.de: Page loaded
+   (Ghostery) https://www.ingenieur.de: Getting Cookies
+   (Ghostery) https://www.ingenieur.de: Getting Localstorage
+   (Ghostery) https://www.ingenieur.de: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.ingenieur.de: Adding requests to DB
+   (Ghostery) https://www.ingenieur.de: Adding to successful website
+
+ (Ghostery): (386) https://www.guancha.cn
+   (Ghostery) https://www.guancha.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.guancha.cn
+**  (Ghostery): TimeoutError -> https://www.guancha.cn
+
+ (Ghostery): (387) https://www.rozklad-pkp.pl
+   (Ghostery) https://www.rozklad-pkp.pl: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.rozklad-pkp.pl
+**  (Ghostery): TimeoutError -> https://www.rozklad-pkp.pl
+
+ (Ghostery): (388) https://www.khakasnet.ru
+   (Ghostery) https://www.khakasnet.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.khakasnet.ru
+**  (Ghostery): TimeoutError -> https://www.khakasnet.ru
+
+ (Ghostery): (389) https://www.hostinglnr.ru
+   (Ghostery) https://www.hostinglnr.ru: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.hostinglnr.ru
+**  (Ghostery): TimeoutError -> https://www.hostinglnr.ru
+
+ (Ghostery): (390) https://www.aweray.net
+   (Ghostery) https://www.aweray.net: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.aweray.net
+**  (Ghostery): TimeoutError -> https://www.aweray.net
+
+ (Ghostery): (391) https://www.cheshi.com
+   (Ghostery) https://www.cheshi.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.cheshi.com
+   (Ghostery) https://www.cheshi.com: Page loaded
+   (Ghostery) https://www.cheshi.com: Getting Cookies
+   (Ghostery) https://www.cheshi.com: Getting Localstorage
+   (Ghostery) https://www.cheshi.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.cheshi.com: Adding requests to DB
+   (Ghostery) https://www.cheshi.com: Adding to successful website
+
+ (Ghostery): (392) https://www.shaanxi.gov.cn
+   (Ghostery) https://www.shaanxi.gov.cn: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.shaanxi.gov.cn
+**  (Ghostery): TimeoutError -> https://www.shaanxi.gov.cn
+
+ (Ghostery): (393) https://www.shoppun88.com
+   (Ghostery) https://www.shoppun88.com: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.shoppun88.com
+   (Ghostery) https://www.shoppun88.com: Page loaded
+   (Ghostery) https://www.shoppun88.com: Getting Cookies
+   (Ghostery) https://www.shoppun88.com: Getting Localstorage
+   (Ghostery) https://www.shoppun88.com: Checking Cookie Banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.shoppun88.com: Adding requests to DB
+   (Ghostery) https://www.shoppun88.com: Adding to successful website
+
+ (Ghostery): (394) https://www.webescuela.cl
+   (Ghostery) https://www.webescuela.cl: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.webescuela.cl
+**  (Ghostery): TimeoutError -> https://www.webescuela.cl
+
+ (Ghostery): (395) https://www.24horas.cl
+   (Ghostery) https://www.24horas.cl: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.24horas.cl
+   (Ghostery) https://www.24horas.cl: Page loaded
+   (Ghostery) https://www.24horas.cl: Getting Cookies
+   (Ghostery) https://www.24horas.cl: Getting Localstorage
+   (Ghostery) https://www.24horas.cl: Checking Cookie Banner
+Checking frames for banner
+Checking frames for banner
+Checking frames for banner
+No banners were found on the page (no words).
+   (Ghostery) https://www.24horas.cl: Adding requests to DB
+   (Ghostery) https://www.24horas.cl: Adding to successful website
+
+ (Ghostery): (396) https://www.ust.edu.ph
+   (Ghostery) https://www.ust.edu.ph: Getting Requests and Reponses
+   (Ghostery) : Loading new page https://www.ust.edu.ph
+**  (Ghostery): TimeoutError -> https://www.ust.edu.ph
+Database connection disconnected
