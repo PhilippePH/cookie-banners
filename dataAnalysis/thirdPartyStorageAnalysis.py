@@ -121,7 +121,15 @@ def thirdPartyTotalStorage_Subset_Percentage(cursor):
 
 
 def main():
-  dbConnection = psycopg2.connect("dbname=crawl01 user=postgres password=I@mastrongpsswd")
+  US = True
+  if US:
+    dbConnection = psycopg2.connect("dbname=crawlUS user=postgres password=I@mastrongpsswd")
+    path = './US_bannerPlots'
+  
+  else:
+    dbConnection = psycopg2.connect("dbname=crawlUK user=postgres password=I@mastrongpsswd")
+    path = './bannerPlots'
+  
   cursor = dbConnection.cursor()
 
   thirdPartyTotalStorage_Subset(cursor)

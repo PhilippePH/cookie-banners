@@ -13,12 +13,10 @@ def getSubsetSize(cursor):
 
 
 
-
-
 """
 COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET USING ALL THE SUBSET SIZE
 """
-def avgNumCookies_Subset(cursor, subsetSize):
+def avgNumCookies_Subset(cursor, subsetSize, path):
   cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'cookies' group by browser")
   results = cursor.fetchall()
   
@@ -42,10 +40,10 @@ def avgNumCookies_Subset(cursor, subsetSize):
   plt.xticks(rotation=45, ha="right")
   plt.tight_layout()
 
-  plt.savefig('./storagePlots/avgNumCookies_Subset.png')  
+  plt.savefig(path+'/avgNumCookies_Subset.png')  
   plt.close()
 
-def avgNumLocalStorage_Subset(cursor, subsetSize):
+def avgNumLocalStorage_Subset(cursor, subsetSize, path):
   cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'localStorage' group by browser")
   results = cursor.fetchall()
   
@@ -69,10 +67,10 @@ def avgNumLocalStorage_Subset(cursor, subsetSize):
   plt.xticks(rotation=45, ha="right")
   plt.tight_layout()
 
-  plt.savefig('./storagePlots/avgNumLocalStorage_Subset.png')  
+  plt.savefig(path+'/avgNumLocalStorage_Subset.png')  
   plt.close()
 
-def avgTotalStorage_Subset(cursor, subsetSize):
+def avgTotalStorage_Subset(cursor, subsetSize, path):
   cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers = true group by browser")
   results = cursor.fetchall()
   
@@ -96,7 +94,7 @@ def avgTotalStorage_Subset(cursor, subsetSize):
   plt.xticks(rotation=45, ha="right")
   plt.tight_layout()
 
-  plt.savefig('./storagePlots/avgTotalStorage_Subset.png')
+  plt.savefig(path+'/avgTotalStorage_Subset.png')
   plt.close()  
 
 
@@ -106,7 +104,7 @@ def avgTotalStorage_Subset(cursor, subsetSize):
 """
 COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET USING ONLY SITES WITH THE STORAGE TYPE
 """
-def avgNumCookies_SubsetWithCookies(cursor):
+def avgNumCookies_SubsetWithCookies(cursor, path):
   cursor.execute("select browser, count(distinct(websiteurl)), count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'cookies' group by browser")
   results = cursor.fetchall()
   
@@ -131,10 +129,10 @@ def avgNumCookies_SubsetWithCookies(cursor):
   plt.xticks(rotation=45, ha="right")
   plt.tight_layout()
 
-  plt.savefig('./storagePlots/avgNumCookies_SubsetWithCookies.png')
+  plt.savefig(path+'/avgNumCookies_SubsetWithCookies.png')
   plt.close()
 
-def avgNumLocalStorage_SubsetWithLocalStorage(cursor):
+def avgNumLocalStorage_SubsetWithLocalStorage(cursor, path):
   cursor.execute("select browser, count(distinct(websiteurl)), count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'localStorage' group by browser")
   results = cursor.fetchall()
 
@@ -159,10 +157,10 @@ def avgNumLocalStorage_SubsetWithLocalStorage(cursor):
   plt.xticks(rotation=45, ha="right")
   plt.tight_layout()
 
-  plt.savefig('./storagePlots/avgNumLocalStorage_SubsetWithLocalStorage.png')
+  plt.savefig(path+'/avgNumLocalStorage_SubsetWithLocalStorage.png')
   plt.close()
 
-def avgTotalStorage_SubsetWithStorage(cursor):
+def avgTotalStorage_SubsetWithStorage(cursor, path):
   cursor.execute("select browser, storagetype, count(distinct(websiteurl)), count(*) from storagedata where visited_by_all_browsers = true group by browser, storagetype")
   results = cursor.fetchall()
   
@@ -209,14 +207,14 @@ def avgTotalStorage_SubsetWithStorage(cursor):
   
   # plt.tight_layout()
 
-  # plt.savefig('./storagePlots/avgTotalStorage_SubsetWithStorage.png')
+  # plt.savefig(path+'/avgTotalStorage_SubsetWithStorage.png')
   # plt.close()
 
 
 """
 GET TOTALS, NOT AVG: COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET
 """
-def totNumCookies_SubsetWithCookies(cursor):
+def totNumCookies_SubsetWithCookies(cursor, path):
   cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'cookies' group by browser")
   results = cursor.fetchall()
   
@@ -239,10 +237,10 @@ def totNumCookies_SubsetWithCookies(cursor):
   plt.xticks(rotation=45, ha="right")
   plt.tight_layout()
 
-  plt.savefig('./storagePlots/totNumCookies_SubsetWithCookies.png')
+  plt.savefig(path+'/totNumCookies_SubsetWithCookies.png')
   plt.close()
 
-def totNumLocalStorage_SubsetWithLocalStorage(cursor):
+def totNumLocalStorage_SubsetWithLocalStorage(cursor, path):
   cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'localStorage' group by browser")
   results = cursor.fetchall()
 
@@ -265,12 +263,12 @@ def totNumLocalStorage_SubsetWithLocalStorage(cursor):
   plt.xticks(rotation=45, ha="right")
   plt.tight_layout()
 
-  plt.savefig('./storagePlots/totNumLocalStorage_SubsetWithLocalStorage.png')
+  plt.savefig(path+'/totNumLocalStorage_SubsetWithLocalStorage.png')
   plt.close()
 
 
 # HEY NOTE TO SELF: if this is total storage, we don't need to only count websites with storage.
-def totTotalStorage_Subset(cursor):
+def totTotalStorage_Subset(cursor, path):
   cursor.execute("select browser, storagetype, count(*) from storagedata where visited_by_all_browsers = true group by browser, storagetype")
   results = cursor.fetchall()
   
@@ -314,19 +312,22 @@ def totTotalStorage_Subset(cursor):
   
   plt.tight_layout()
 
-  plt.savefig('./storagePlots/totTotalStorage_Subset.png')
+  plt.savefig(path+'/totTotalStorage_Subset.png')
   plt.close()
 
 
-def totTotalStorage_Subset_Percentage(cursor):
+def totTotalStorage_Subset_Percentage(cursor, path):
   cursor.execute("select browser, storagetype, count(*) from storagedata where visited_by_all_browsers = true group by browser, storagetype")
   results = cursor.fetchall()
 
   df = pd.DataFrame(columns=['browser', 'storagetype', 'totalNum'])
   print("totTotalStorage_Subset_Percentage")
+  browsers = []
 
   for line in results:
       browser = line[0].strip()
+      if browser not in browsers:
+        browsers.append(browser)
       storagetype = line[1].strip()
       totalNum = line[2]
 
@@ -337,7 +338,7 @@ def totTotalStorage_Subset_Percentage(cursor):
   data_list = []
   
   # Calculate percentage change for each browser
-  for browser in ['Brave', 'Firefox', 'Ghostery']:
+  for browser in browsers:
     # Filter the data for the current browser
     browser_data = df[(df['browser'] == browser)]
 
@@ -376,32 +377,40 @@ def totTotalStorage_Subset_Percentage(cursor):
   plt.title('Percentage Change in Cookies and LocalStorage Compared to Google Chrome')
   plt.legend(title='Storage Type')
   plt.tight_layout()
-  plt.savefig('./storagePlots/totTotalStorage_Subset_Percentage.png')
+  plt.savefig(path+'/totTotalStorage_Subset_Percentage.png')
   plt.close()
 
 def main():
-  dbConnection = psycopg2.connect("dbname=crawl01 user=postgres password=I@mastrongpsswd")
+  US = True
+  if US:
+    dbConnection = psycopg2.connect("dbname=crawlUS user=postgres password=I@mastrongpsswd")
+    path = './US_storagePlots'
+  
+  else:
+    dbConnection = psycopg2.connect("dbname=crawlUK user=postgres password=I@mastrongpsswd")
+    path = './storagePlots'
+
   cursor = dbConnection.cursor()
 
   
   # COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET USING ALL THE SUBSET SIZE
-  # subsetSize = getSubsetSize(cursor)
-  # avgNumCookies_Subset(cursor, subsetSize) 
-  # avgNumLocalStorage_Subset(cursor, subsetSize)
-  # avgTotalStorage_Subset(cursor, subsetSize)
+  subsetSize = getSubsetSize(cursor)     ######## check ehre
+  avgNumCookies_Subset(cursor, subsetSize, path) 
+  avgNumLocalStorage_Subset(cursor, subsetSize, path)
+  avgTotalStorage_Subset(cursor, subsetSize, path)
 
   # ## COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET USING ONLY SITES WITH THE STORAGE TYPE
-  # avgNumCookies_SubsetWithCookies(cursor)
-  # avgNumLocalStorage_SubsetWithLocalStorage(cursor)
-  avgTotalStorage_SubsetWithStorage(cursor)
+  avgNumCookies_SubsetWithCookies(cursor, path)
+  avgNumLocalStorage_SubsetWithLocalStorage(cursor, path)
+  avgTotalStorage_SubsetWithStorage(cursor, path )
 
   ## GET TOTALS, NOT AVG: COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET
-  # totNumCookies_SubsetWithCookies(cursor)
-  # totNumLocalStorage_SubsetWithLocalStorage(cursor)
-  # totTotalStorage_Subset(cursor)
+  totNumCookies_SubsetWithCookies(cursor, path)
+  totNumLocalStorage_SubsetWithLocalStorage(cursor, path)
+  totTotalStorage_Subset(cursor, path)
 
-  ## total storage percentage change per storage type
-  # totTotalStorage_Subset_Percentage(cursor)
+  # total storage percentage change per storage type
+  totTotalStorage_Subset_Percentage(cursor, path)
 
   cursor.close()
   dbConnection.close()

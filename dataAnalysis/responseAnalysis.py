@@ -16,7 +16,7 @@ def avgContentLength(cursor):
     print(f"{browser} has on average {round(contentLengthSum/numReponses,2)} content length per responses visited")
 
 
-def totalNumberResponses_sameSubset(cursor):
+def totalNumberResponses_sameSubset(cursor, path):
   cursor.execute('SELECT browser, count(websiteurl) from responsedata where visited_by_all_browsers = true group by browser')
   results = cursor.fetchall()
   df = pd.DataFrame(columns=['browser', 'totResponses'])
@@ -39,14 +39,14 @@ def totalNumberResponses_sameSubset(cursor):
   plt.title('Total Reponses per Browser')
   plt.tight_layout()
 
-  plt.savefig('./responsePlots/totalNumberResponses_sameSubset.png')  
+  plt.savefig(path+'/totalNumberResponses_sameSubset.png')  
   plt.close()
 
 
 import matplotlib.pyplot as plt
 import pandas as pd
 
-def totalNumberResponses_sameSubset_PercentageChange(cursor):
+def totalNumberResponses_sameSubset_PercentageChange(cursor, path):
     cursor.execute('SELECT browser, count(websiteurl) from responsedata where visited_by_all_browsers = true group by browser')
     results = cursor.fetchall()
     df = pd.DataFrame(columns=['browser', 'totResponses'])
@@ -74,11 +74,11 @@ def totalNumberResponses_sameSubset_PercentageChange(cursor):
     plt.title('Percentage Change of Total Responses per Browser compared to Google Chrome')
     plt.tight_layout()
 
-    plt.savefig('./responsePlots/totalNumberResponses_sameSubset_PercentageChange.png')
+    plt.savefig(path+'/totalNumberResponses_sameSubset_PercentageChange.png')
     plt.close()
 
 
-def popularContentTypeCountPerBrowser(cursor):
+def popularContentTypeCountPerBrowser(cursor, path):
     cursor.execute("""
     SELECT
       browser,
@@ -114,11 +114,11 @@ def popularContentTypeCountPerBrowser(cursor):
     plt.title('Total Responses per Content Type and Browser (Log Scale) - Sorted by Count')
     plt.tight_layout()
 
-    plt.savefig('./responsePlots/popularContentTypeCountPerBrowser.png')
+    plt.savefig(path+'/popularContentTypeCountPerBrowser.png')
     plt.close()
 
 
-def popularContentTypeCountPerBrowserPercentageChange(cursor):
+def popularContentTypeCountPerBrowserPercentageChange(cursor, path):
   cursor.execute("""
     SELECT
       browser,
@@ -157,13 +157,13 @@ def popularContentTypeCountPerBrowserPercentageChange(cursor):
   plt.title('Percentage Change of Total Responses per Browser and Content Type compared to Google Chrome')
   plt.tight_layout()
 
-  plt.savefig('./responsePlots/popularContentTypeCountPerBrowserPercentageChange.png')
+  plt.savefig(path+'/popularContentTypeCountPerBrowserPercentageChange.png')
   plt.close()
 
 
 
 
-def pieChartContentType(cursor):
+def pieChartContentType(cursor, path):
   cursor.execute("""
   SELECT
   browser,
@@ -210,22 +210,30 @@ def pieChartContentType(cursor):
     plt.pie(counts, labels=content_types, autopct="%1.1f%%")
     plt.title(f"Content Types Distribution - {browser}")
     plt.axis("equal")  # Equal aspect ratio ensures that pie is drawn as a circle.
-    plt.savefig(f"./responsePlots/pieChartContentType_{browser}.png")
+    plt.savefig(path+f"/pieChartContentType_{browser}.png")
     plt.close()
 
 
 
 
 def main():
-  dbConnection = psycopg2.connect("dbname=crawlUK user=postgres password=I@mastrongpsswd")
+  US = True
+  if US:
+    dbConnection = psycopg2.connect("dbname=crawlUS user=postgres password=I@mastrongpsswd")
+    path = './US_responsePlots'
+  
+  else:
+    dbConnection = psycopg2.connect("dbname=crawlUK user=postgres password=I@mastrongpsswd")
+    path = './responsePlots'
+  
   cursor = dbConnection.cursor()
 
-  # avgContentLength(cursor)  # doesn't yet work with non-number content length
+  avgContentLength(cursor)  # doesn't yet work with non-number content length
 
-  totalNumberResponses_sameSubset(cursor)
-  totalNumberResponses_sameSubset_PercentageChange(cursor)
-  popularContentTypeCountPerBrowser(cursor)
-  popularContentTypeCountPerBrowserPercentageChange(cursor)
+  totalNumberResponses_sameSubset(cursor, path)
+  totalNumberResponses_sameSubset_PercentageChange(cursor, path)
+  popularContentTypeCountPerBrowser(cursor, path)
+  popularContentTypeCountPerBrowserPercentageChange(cursor, path)
 
   # pieChartContentType(cursor)
 

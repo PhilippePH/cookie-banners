@@ -31,7 +31,7 @@ def avgRequests_sameSubset(cursor):
 
 
 
-def totalNumberRequests_sameSubset(cursor):
+def totalNumberRequests_sameSubset(cursor,path):
   cursor.execute('SELECT browser, count(websiteurl) from requestdata where visited_by_all_browsers = true group by browser')
   results = cursor.fetchall()
   df = pd.DataFrame(columns=['browser', 'totRequest'])
@@ -54,10 +54,10 @@ def totalNumberRequests_sameSubset(cursor):
   plt.title('Total Requests per Browser')
   plt.tight_layout()
 
-  plt.savefig('./requestPlots/totalNumberRequests_sameSubset.png')  
+  plt.savefig(path+'/totalNumberRequests_sameSubset.png')  
   plt.close()
 
-def totalNumberRequests_sameSubset_PercentageChange(cursor):
+def totalNumberRequests_sameSubset_PercentageChange(cursor, path):
     cursor.execute('SELECT browser, count(websiteurl) from requestdata where visited_by_all_browsers = true group by browser')
     results = cursor.fetchall()
     df = pd.DataFrame(columns=['browser', 'totRequests'])
@@ -85,14 +85,14 @@ def totalNumberRequests_sameSubset_PercentageChange(cursor):
     plt.title('Percentage Change of Total Requests per Browser compared to Google Chrome')
     plt.tight_layout()
 
-    plt.savefig('./requestPlots/totalNumberRequests_sameSubset_PercentageChange.png')
+    plt.savefig(path+'/totalNumberRequests_sameSubset_PercentageChange.png')
     plt.close()
 
 
 
 
 
-def showRequestDistribution_sameSubset(cursor):
+def showRequestDistribution_sameSubset(cursor,path):
   cursor.execute('SELECT browser, websiteurl, COUNT(*) AS total_requests FROM requestdata GROUP BY browser, websiteurl')
   results = cursor.fetchall()
   df = pd.DataFrame(columns=['browser', 'websiteurl', 'numRequests'])
@@ -120,7 +120,7 @@ def showRequestDistribution_sameSubset(cursor):
     plt.title(f'Request Distribution for {browser}')
     
     plt.tight_layout()  # Improve spacing
-    plt.savefig(f'./requestPlots/showRequestDistribution_{browser}.png')
+    plt.savefig(path+f'/showRequestDistribution_{browser}.png')
     plt.close()
 
 
@@ -128,7 +128,7 @@ def showRequestDistribution_sameSubset(cursor):
 
 
   
-def totNumDistinctFrames_sameSubset(cursor):
+def totNumDistinctFrames_sameSubset(cursor, path):
   cursor.execute('SELECT browser, count(distinct(frameorigin)) from requestdata where visited_by_all_browsers = true group by browser')
   results = cursor.fetchall()
   df = pd.DataFrame(columns=['browser', 'numDistinctFrames'])
@@ -151,10 +151,10 @@ def totNumDistinctFrames_sameSubset(cursor):
   plt.ylabel('Number of Distinct Frames')
   plt.title('Total Number of Distinct Frames per Browser')
   plt.tight_layout()  # Improve spacing
-  plt.savefig('./requestPlots/totNumDistinctFrames_sameSubset.png')  
+  plt.savefig(path+'/totNumDistinctFrames_sameSubset.png')  
   plt.close()
 
-def totNumDistinctUrls_sameSubset(cursor):
+def totNumDistinctUrls_sameSubset(cursor,path):
   cursor.execute('SELECT browser, count(distinct(requestedurl)) from requestdata where visited_by_all_browsers = true group by browser')
   results = cursor.fetchall()
   df = pd.DataFrame(columns=['browser', 'numDistinctUrls'])
@@ -178,22 +178,29 @@ def totNumDistinctUrls_sameSubset(cursor):
   plt.title('Total Number of Distinct URLs per Browser')
   plt.tight_layout()  # Improve spacing
 
-  plt.savefig('./requestPlots/totNumDistinctUrls_sameSubset.png')  
+  plt.savefig(path+'/totNumDistinctUrls_sameSubset.png')  
   plt.close()
 
 def main():
-  dbConnection = psycopg2.connect("dbname=crawlUK user=postgres password=I@mastrongpsswd")
+  US = True
+  if US:
+    dbConnection = psycopg2.connect("dbname=crawlUS user=postgres password=I@mastrongpsswd")
+    path = './US_requestPlots'
+  
+  else:
+    dbConnection = psycopg2.connect("dbname=crawlUK user=postgres password=I@mastrongpsswd")
+    path = './requestPlots'
   cursor = dbConnection.cursor()
 
-  # avgRequests(cursor) # runs
-  # avgRequests_sameSubset(cursor) #runs 
+  avgRequests(cursor) # runs
+  avgRequests_sameSubset(cursor) #runs 
   
-  # totalNumberRequests_sameSubset(cursor) #runs
-  # totalNumberRequests_sameSubset_PercentageChange(cursor)
+  totalNumberRequests_sameSubset(cursor,path) #runs
+  totalNumberRequests_sameSubset_PercentageChange(cursor, path)
   
-  showRequestDistribution_sameSubset(cursor)
-  # totNumDistinctFrames_sameSubset(cursor) #runs
-  # totNumDistinctUrls_sameSubset(cursor) #runs
+  showRequestDistribution_sameSubset(cursor,path)
+  totNumDistinctFrames_sameSubset(cursor,path) #runs
+  totNumDistinctUrls_sameSubset(cursor,path) #runs
 
   cursor.close()
   dbConnection.close()

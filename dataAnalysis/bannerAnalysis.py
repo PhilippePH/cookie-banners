@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 
-def numBannersVisible(cursor):
+def numBannersVisible(cursor, path):
   cursor.execute("""
   select browser, count(distinct(websiteurl))
   from bannerdata
@@ -36,10 +36,10 @@ def numBannersVisible(cursor):
   plt.title('Number of Banners Visible per Browser')
   plt.tight_layout()
 
-  plt.savefig('./bannerPlots/numBannersVisible.png')  
+  plt.savefig(path+'/numBannersVisible.png')  
   plt.close()
 
-def numBannersVisible3Browsers(cursor):
+def numBannersVisible3Browsers(cursor, path):
   cursor.execute("""
   select browser, count(distinct(websiteurl))
   from bannerdata
@@ -72,10 +72,10 @@ def numBannersVisible3Browsers(cursor):
   plt.title('Number of Banners Visible per Browser')
   plt.tight_layout()
 
-  plt.savefig('./bannerPlots/numBannersVisible3Browsers.png')  
+  plt.savefig(path+'/numBannersVisible3Browsers.png')  
   plt.close()
 
-def bannersVisiblePercentageChange(cursor):
+def bannersVisiblePercentageChange(cursor, path):
   cursor.execute("""
   select browser, count(distinct(websiteurl))
   from bannerdata
@@ -85,9 +85,12 @@ def bannersVisiblePercentageChange(cursor):
   """)
   results = cursor.fetchall()
   df = pd.DataFrame(columns=['browser', 'numBannersVisible'])
+  browsers = []
   
   for line in results:
     browser = line[0].strip()
+    if browser not in browsers:
+      browsers.append(browser)
     numBannersVisible = line[1]
     df = pd.concat([pd.DataFrame([[browser,numBannersVisible]], columns=df.columns), df], ignore_index=True)
 
@@ -96,7 +99,7 @@ def bannersVisiblePercentageChange(cursor):
   data_list = []
   
   # Calculate percentage change for each browser
-  for browser in ['Brave', 'Firefox', 'Ghostery']:
+  for browser in browsers:
     # Filter the data for the current browser
     browser_data = df[(df['browser'] == browser)]
     bannerChange = ((browser_data['numBannersVisible'].values[0] - googleChromeCookieValue) / googleChromeCookieValue) * 100
@@ -113,10 +116,10 @@ def bannersVisiblePercentageChange(cursor):
   plt.title('Percentage Change in Cookie Banner Visibility Compared to Google Chrome')  
   plt.tight_layout()
 
-  plt.savefig('./bannerPlots/bannersVisiblePercentageChange.png')
+  plt.savefig(path+'bannersVisiblePercentageChange.png')
   plt.close()
 
-def bannersVisiblePercentageChange3Browsers(cursor):
+def bannersVisiblePercentageChange3Browsers(cursor, path):
   cursor.execute("""
   select browser, count(distinct(websiteurl))
   from bannerdata
@@ -155,7 +158,7 @@ def bannersVisiblePercentageChange3Browsers(cursor):
   plt.title('Percentage Change in Cookie Banner Visibility Compared to Google Chrome')  
   plt.tight_layout()
 
-  plt.savefig('./bannerPlots/bannersVisiblePercentageChange3Browsers.png')
+  plt.savefig(path+'/bannersVisiblePercentageChange3Browsers.png')
   plt.close()
 
 
@@ -163,13 +166,21 @@ def bannersVisiblePercentageChange3Browsers(cursor):
 
 
 def main():
-  dbConnection = psycopg2.connect("dbname=crawlUK user=postgres password=I@mastrongpsswd")
+  US = True
+  if US:
+    dbConnection = psycopg2.connect("dbname=crawlUS user=postgres password=I@mastrongpsswd")
+    path = './US_bannerPlots'
+  
+  else:
+    dbConnection = psycopg2.connect("dbname=crawlUK user=postgres password=I@mastrongpsswd")
+    path = './bannerPlots'
+
   cursor = dbConnection.cursor()
 
-  numBannersVisible(cursor)
-  bannersVisiblePercentageChange(cursor)
-  numBannersVisible3Browsers(cursor)
-  bannersVisiblePercentageChange3Browsers(cursor)
+  numBannersVisible(cursor, path)
+  bannersVisiblePercentageChange(cursor, path)
+  numBannersVisible3Browsers(cursor, path)
+  bannersVisiblePercentageChange3Browsers(cursor, path)
 
   cursor.close()
   dbConnection.close()
