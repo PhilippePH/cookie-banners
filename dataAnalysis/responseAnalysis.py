@@ -217,17 +217,17 @@ def pieChartContentType(cursor):
 
 
 def main():
-  dbConnection = psycopg2.connect("dbname=crawl01 user=postgres password=I@mastrongpsswd")
+  dbConnection = psycopg2.connect("dbname=crawlUK user=postgres password=I@mastrongpsswd")
   cursor = dbConnection.cursor()
 
   # avgContentLength(cursor)  # doesn't yet work with non-number content length
 
-  # totalNumberResponses_sameSubset(cursor)
-  # totalNumberResponses_sameSubset_PercentageChange(cursor)
-  # popularContentTypeCountPerBrowser(cursor)
-  # popularContentTypeCountPerBrowserPercentageChange(cursor)
+  totalNumberResponses_sameSubset(cursor)
+  totalNumberResponses_sameSubset_PercentageChange(cursor)
+  popularContentTypeCountPerBrowser(cursor)
+  popularContentTypeCountPerBrowserPercentageChange(cursor)
 
-  pieChartContentType(cursor)
+  # pieChartContentType(cursor)
 
   cursor.close()
   dbConnection.close()

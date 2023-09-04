@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 def getSubsetSize(cursor):
-  cursor.execute("select count(distinct(websiteurl)) from storagedata where visited_by_all_browsers2 = true")
+  cursor.execute("select count(distinct(websiteurl)) from storagedata where visited_by_all_browsers = true")
   results = cursor.fetchall()
   return results[0][0]
 
@@ -19,7 +19,7 @@ def getSubsetSize(cursor):
 COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET USING ALL THE SUBSET SIZE
 """
 def avgNumCookies_Subset(cursor, subsetSize):
-  cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers2 = true and storagetype = 'cookies' group by browser")
+  cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'cookies' group by browser")
   results = cursor.fetchall()
   
   df = pd.DataFrame(columns=['browser', 'avg_cookies'])
@@ -46,7 +46,7 @@ def avgNumCookies_Subset(cursor, subsetSize):
   plt.close()
 
 def avgNumLocalStorage_Subset(cursor, subsetSize):
-  cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers2 = true and storagetype = 'localStorage' group by browser")
+  cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'localStorage' group by browser")
   results = cursor.fetchall()
   
   df = pd.DataFrame(columns=['browser', 'avg_localStorage'])
@@ -73,7 +73,7 @@ def avgNumLocalStorage_Subset(cursor, subsetSize):
   plt.close()
 
 def avgTotalStorage_Subset(cursor, subsetSize):
-  cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers2 = true group by browser")
+  cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers = true group by browser")
   results = cursor.fetchall()
   
   df = pd.DataFrame(columns=['browser', 'avg_totalStorage'])
@@ -107,7 +107,7 @@ def avgTotalStorage_Subset(cursor, subsetSize):
 COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET USING ONLY SITES WITH THE STORAGE TYPE
 """
 def avgNumCookies_SubsetWithCookies(cursor):
-  cursor.execute("select browser, count(distinct(websiteurl)), count(*) from storagedata where visited_by_all_browsers2 = true and storagetype = 'cookies' group by browser")
+  cursor.execute("select browser, count(distinct(websiteurl)), count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'cookies' group by browser")
   results = cursor.fetchall()
   
   df = pd.DataFrame(columns=['browser', 'avg_cookies'])
@@ -135,7 +135,7 @@ def avgNumCookies_SubsetWithCookies(cursor):
   plt.close()
 
 def avgNumLocalStorage_SubsetWithLocalStorage(cursor):
-  cursor.execute("select browser, count(distinct(websiteurl)), count(*) from storagedata where visited_by_all_browsers2 = true and storagetype = 'localStorage' group by browser")
+  cursor.execute("select browser, count(distinct(websiteurl)), count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'localStorage' group by browser")
   results = cursor.fetchall()
 
   df = pd.DataFrame(columns=['browser', 'avg_localStorage'])
@@ -163,7 +163,7 @@ def avgNumLocalStorage_SubsetWithLocalStorage(cursor):
   plt.close()
 
 def avgTotalStorage_SubsetWithStorage(cursor):
-  cursor.execute("select browser, storagetype, count(distinct(websiteurl)), count(*) from storagedata where visited_by_all_browsers2 = true group by browser, storagetype")
+  cursor.execute("select browser, storagetype, count(distinct(websiteurl)), count(*) from storagedata where visited_by_all_browsers = true group by browser, storagetype")
   results = cursor.fetchall()
   
   df = pd.DataFrame(columns=['browser', 'storageType', 'avg_totalStorage'])
@@ -171,53 +171,53 @@ def avgTotalStorage_SubsetWithStorage(cursor):
   
   for line in results:
     browser = line[0].strip()
-    storagetype = line[1].strop
+    storagetype = line[1].strip()
     subsetWithStorage = line[2]
     totalNum = line[3]
     avg_totalStorage = round(totalNum/subsetWithStorage,2)
 
     print(f"{browser} has on average {avg_totalStorage} totalStorage per website WITH storage in the subset")
-    df = pd.concat([pd.DataFrame([[browser,avg_totalStorage]], columns=df.columns), df], ignore_index=True)
+    df = pd.concat([pd.DataFrame([[browser,storagetype,avg_totalStorage]], columns=df.columns), df], ignore_index=True)
 
-  # Plotting
-  # Pivot the dataframe to have browser as index, storagetype as columns, and totalNum as values
-  pivot_df = df.pivot(index='browser', columns='storagetype', values='totalNum')
+  # # Plotting
+  # # Pivot the dataframe to have browser as index, storagetype as columns, and totalNum as values
+  # pivot_df = df.pivot(index='browser', columns='storagetype', values='totalNum')
 
-  # Calculate the total storage for each browser
-  pivot_df['Total'] = pivot_df.sum(axis=1)
-  pivot_df = pivot_df.sort_values(by='Total', ascending=False)
+  # # Calculate the total storage for each browser
+  # pivot_df['Total'] = pivot_df.sum(axis=1)
+  # pivot_df = pivot_df.sort_values(by='Total', ascending=False)
 
-  # Calculate the total storage for each browser and the grand total
-  pivot_df['Total'] = pivot_df.sum(axis=1)
-  grand_total = pivot_df['Total'].sum()
+  # # Calculate the total storage for each browser and the grand total
+  # pivot_df['Total'] = pivot_df.sum(axis=1)
+  # grand_total = pivot_df['Total'].sum()
 
-  # Sort the dataframe based on the grand total
-  pivot_df = pivot_df.sort_values(by='Total', ascending=False)
+  # # Sort the dataframe based on the grand total
+  # pivot_df = pivot_df.sort_values(by='Total', ascending=False)
 
-  # Plotting
-  plt.figure("avgTotalStorage_SubsetWithStorage")
-  ax = pivot_df.drop(columns='Total').plot(kind='bar', stacked=True, colormap='tab20')  # Use a colormap for different colors
-  plt.xlabel('Browser')
-  plt.ylabel('Average totalStorage per Website')
-  plt.title('Average totalStorage per Website by Browser')
-  plt.xticks(rotation=45, ha="right")
-  plt.legend(title='Storage Type')
+  # # Plotting
+  # plt.figure("avgTotalStorage_SubsetWithStorage")
+  # ax = pivot_df.drop(columns='Total').plot(kind='bar', stacked=True, colormap='tab20')  # Use a colormap for different colors
+  # plt.xlabel('Browser')
+  # plt.ylabel('Average totalStorage per Website')
+  # plt.title('Average totalStorage per Website by Browser')
+  # plt.xticks(rotation=45, ha="right")
+  # plt.legend(title='Storage Type')
   
-  # Set a padding for the y-axis labels
-  plt.gca().yaxis.grid(True, linewidth=0.5)
-  plt.gca().yaxis.set_label_coords(-0.125, 0.5)
+  # # Set a padding for the y-axis labels
+  # plt.gca().yaxis.grid(True, linewidth=0.5)
+  # plt.gca().yaxis.set_label_coords(-0.125, 0.5)
   
-  plt.tight_layout()
+  # plt.tight_layout()
 
-  plt.savefig('./storagePlots/avgTotalStorage_SubsetWithStorage.png')
-  plt.close()
+  # plt.savefig('./storagePlots/avgTotalStorage_SubsetWithStorage.png')
+  # plt.close()
 
 
 """
 GET TOTALS, NOT AVG: COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET
 """
 def totNumCookies_SubsetWithCookies(cursor):
-  cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers2 = true and storagetype = 'cookies' group by browser")
+  cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'cookies' group by browser")
   results = cursor.fetchall()
   
   df = pd.DataFrame(columns=['browser', 'numCookies'])
@@ -243,7 +243,7 @@ def totNumCookies_SubsetWithCookies(cursor):
   plt.close()
 
 def totNumLocalStorage_SubsetWithLocalStorage(cursor):
-  cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers2 = true and storagetype = 'localStorage' group by browser")
+  cursor.execute("select browser, count(*) from storagedata where visited_by_all_browsers = true and storagetype = 'localStorage' group by browser")
   results = cursor.fetchall()
 
   df = pd.DataFrame(columns=['browser', 'numLocalStorage'])
@@ -271,7 +271,7 @@ def totNumLocalStorage_SubsetWithLocalStorage(cursor):
 
 # HEY NOTE TO SELF: if this is total storage, we don't need to only count websites with storage.
 def totTotalStorage_Subset(cursor):
-  cursor.execute("select browser, storagetype, count(*) from storagedata where visited_by_all_browsers2 = true group by browser, storagetype")
+  cursor.execute("select browser, storagetype, count(*) from storagedata where visited_by_all_browsers = true group by browser, storagetype")
   results = cursor.fetchall()
   
   df = pd.DataFrame(columns=['browser','storagetype', 'totalNum'])
@@ -319,7 +319,7 @@ def totTotalStorage_Subset(cursor):
 
 
 def totTotalStorage_Subset_Percentage(cursor):
-  cursor.execute("select browser, storagetype, count(*) from storagedata where visited_by_all_browsers2 = true group by browser, storagetype")
+  cursor.execute("select browser, storagetype, count(*) from storagedata where visited_by_all_browsers = true group by browser, storagetype")
   results = cursor.fetchall()
 
   df = pd.DataFrame(columns=['browser', 'storagetype', 'totalNum'])
@@ -384,7 +384,7 @@ def main():
   cursor = dbConnection.cursor()
 
   
-  ## COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET USING ALL THE SUBSET SIZE
+  # COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET USING ALL THE SUBSET SIZE
   # subsetSize = getSubsetSize(cursor)
   # avgNumCookies_Subset(cursor, subsetSize) 
   # avgNumLocalStorage_Subset(cursor, subsetSize)
@@ -393,15 +393,15 @@ def main():
   # ## COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET USING ONLY SITES WITH THE STORAGE TYPE
   # avgNumCookies_SubsetWithCookies(cursor)
   # avgNumLocalStorage_SubsetWithLocalStorage(cursor)
-  # avgTotalStorage_SubsetWithStorage(cursor)
+  avgTotalStorage_SubsetWithStorage(cursor)
 
-  # ## GET TOTALS, NOT AVG: COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET
+  ## GET TOTALS, NOT AVG: COOKIES, LOCALSTORAGE, AND TOTAL WITHIN THE SUBSET
   # totNumCookies_SubsetWithCookies(cursor)
   # totNumLocalStorage_SubsetWithLocalStorage(cursor)
   # totTotalStorage_Subset(cursor)
 
-  # total storage percentage change per storage type
-  totTotalStorage_Subset_Percentage(cursor)
+  ## total storage percentage change per storage type
+  # totTotalStorage_Subset_Percentage(cursor)
 
   cursor.close()
   dbConnection.close()
