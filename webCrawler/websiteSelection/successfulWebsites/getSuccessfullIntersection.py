@@ -1,5 +1,5 @@
 # List of input file names
-input_files = ['./BraveSuccessful.txt', './GhosterySuccessful.txt', './Google ChromeSuccessful.txt']
+input_files = ['./UK/BraveSuccessful.txt', './UK/GhosterySuccessful.txt', './UK/Google ChromeSuccessful.txt', './UK/FirefoxSuccessful.txt']
 
 # Initialize a list to store the URLs from each file
 url_lists = []
@@ -14,7 +14,7 @@ for file_name in input_files:
 common_urls = set.intersection(*url_lists)
 
 # Output file name
-output_file = './successfulIntersection.txt'
+output_file = './UK/successfulIntersection.txt'
 
 # Write the common URLs to the output file
 with open(output_file, 'w') as file:
