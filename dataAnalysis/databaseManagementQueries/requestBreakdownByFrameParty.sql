@@ -15,8 +15,8 @@ SELECT
   R.browser,
   COUNT(DISTINCT R.websiteurl) AS num_websites,
   CASE WHEN R.frameorigin = R.websiteurl THEN 'First Party' ELSE 'Third Party' END AS party_type,
-  SUM(CASE WHEN R.frameorigin = R.websiteurl THEN 1 ELSE 0 END) AS count_equal,
-  SUM(CASE WHEN R.frameorigin <> R.websiteurl THEN 1 ELSE 0 END) AS count_not_equal
+  COUNT(DISTINCT CASE WHEN R.frameorigin = R.websiteurl THEN R.frameorigin ELSE 'No' END) AS count_equal,
+  COUNT(DISTINCT CASE WHEN R.frameorigin <> R.websiteurl THEN R.frameorigin ELSE 'no' END) AS count_not_equal
   
 FROM
   LatestCrawlData L

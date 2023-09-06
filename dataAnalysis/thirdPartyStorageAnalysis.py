@@ -129,6 +129,8 @@ GROUP BY browser, storagetype;
   
   # Calculate percentage change for each browser
   for browser in browsers:
+    if browser == 'Google Chrome':
+      continue
     # Filter the data for the current browser
     browser_data = df[(df['browser'] == browser)]
 

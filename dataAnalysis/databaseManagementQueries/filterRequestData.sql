@@ -13,8 +13,7 @@ WITH LatestCrawlData AS (
 )
 SELECT
   R.browser,
-  COUNT(*) AS NumReponses,
-  COUNT(DISTINCT(R.websiteurl))
+  COUNT(DISTINCT(R.frameorigin))
 FROM
   LatestCrawlData L
 INNER JOIN
