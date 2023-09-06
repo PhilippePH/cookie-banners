@@ -3,8 +3,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
+# fix later
+FOUR_BROWSERS_SAMPLE_SIZE = 3869
 
-def numBannersVisible(cursor, path):
+def percentageBannersVisible(cursor, path):
   cursor.execute("""
   select browser, count(distinct(websiteurl))
   from bannerdata
@@ -13,30 +15,31 @@ def numBannersVisible(cursor, path):
   group by browser
   """)
   results = cursor.fetchall()
-  df = pd.DataFrame(columns=['browser', 'numBannersVisible'])
+  df = pd.DataFrame(columns=['browser', 'numBannersVisible', 'percentageVisible'])
 
   print("numBannersVisible")
   
   for line in results:
     browser = line[0].strip()
     numBannersVisible = line[1]
-    df = pd.concat([pd.DataFrame([[browser,numBannersVisible]], columns=df.columns), df], ignore_index=True)
+    percent = numBannersVisible/FOUR_BROWSERS_SAMPLE_SIZE * 100
+    df = pd.concat([pd.DataFrame([[browser,numBannersVisible, percent]], columns=df.columns), df], ignore_index=True)
 
-    print(f"{browser} has a total of {numBannersVisible} numBannersVisible in the subset of websites visited by every browser")
+    print(f"{browser} has a total of {numBannersVisible} numBannersVisible {percent}% in the subset of websites visited by every browser")
   
   # Sort the DataFrame by 'numBannersVisible' in descending order
   df = df.sort_values(by='numBannersVisible', ascending=False)
 
   # Create bar graph
-  plt.figure("numBannersVisible")
-  plt.bar(df['browser'], df['numBannersVisible'])
+  plt.figure("percentageVisible")
+  plt.bar(df['browser'], df['percentageVisible'])
   plt.xticks(rotation=45)  # Rotates x-axis labels for better visibility
   plt.xlabel('Browser')
-  plt.ylabel('Number of Banners Visible')
-  plt.title('Number of Banners Visible per Browser')
+  plt.ylabel('Percentage of Banners Visible')
+  plt.title('Percentage of Banners Visible per Browser')
   plt.tight_layout()
 
-  plt.savefig(path+'/numBannersVisible.png')  
+  plt.savefig(path+'/percentageVisible.png')  
   plt.close()
 
 def numBannersVisible3Browsers(cursor, path):
@@ -104,6 +107,7 @@ def bannersVisiblePercentageChange(cursor, path):
     browser_data = df[(df['browser'] == browser)]
     bannerChange = ((browser_data['numBannersVisible'].values[0] - googleChromeCookieValue) / googleChromeCookieValue) * 100
     data_list.append({'browser': browser, 'bannerChange': bannerChange})
+    print(f"{browser} shows {bannerChange} % of the google chrome banners")
 
   newdf = pd.DataFrame(data_list)
   
@@ -116,7 +120,7 @@ def bannersVisiblePercentageChange(cursor, path):
   plt.title('Percentage Change in Cookie Banner Visibility Compared to Google Chrome')  
   plt.tight_layout()
 
-  plt.savefig(path+'bannersVisiblePercentageChange.png')
+  plt.savefig(path+'/bannersVisiblePercentageChange.png')
   plt.close()
 
 def bannersVisiblePercentageChange3Browsers(cursor, path):
@@ -166,7 +170,7 @@ def bannersVisiblePercentageChange3Browsers(cursor, path):
 
 
 def main():
-  US = True
+  US = False
   if US:
     dbConnection = psycopg2.connect("dbname=crawlUS user=postgres password=I@mastrongpsswd")
     path = './US_bannerPlots'
@@ -177,7 +181,7 @@ def main():
 
   cursor = dbConnection.cursor()
 
-  numBannersVisible(cursor, path)
+  percentageBannersVisible(cursor, path)
   bannersVisiblePercentageChange(cursor, path)
   numBannersVisible3Browsers(cursor, path)
   bannersVisiblePercentageChange3Browsers(cursor, path)

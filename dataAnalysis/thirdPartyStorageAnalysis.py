@@ -3,81 +3,132 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-def getSubsetSize(cursor):
-  cursor.execute("select count(distinct(websiteurl)) from storagedata where visited_by_all_browsers2 = true")
-  results = cursor.fetchall()
-  return results[0][0]
 
-
-def thirdPartyTotalStorage_Subset(cursor):
-  cursor.execute("select browser, storagetype, count(*) from storagedata where visited_by_all_browsers2 = true and websiteurl <> frameorigin group by browser, storagetype")
+def thirdParty_total_percentage(cursor, path):
+  # STEP 1. GET THE COOKIE VALUES
+  cursor.execute("""
+  WITH LatestCrawlData AS (
+  SELECT
+    browser,
+    websiteurl,
+    MAX(crawlid) AS max_crawlid
+  FROM
+    storagedata
+  WHERE
+    visited_by_all_browsers = true
+  GROUP BY
+    browser,
+    websiteurl
+)
+SELECT
+  S.browser,
+  S.storagetype,
+  COUNT(*) AS NumStorage
+FROM
+  LatestCrawlData L
+INNER JOIN
+  storagedata S
+ON
+  L.browser = S.browser
+  AND L.websiteurl = S.websiteurl
+  AND L.max_crawlid = S.crawlid
+WHERE
+  S.websiteurl <> S.frameorigin 
+GROUP BY
+  S.browser,
+  S.storagetype
+""")
   results = cursor.fetchall()
+  browsers = []
   
   df = pd.DataFrame(columns=['browser','storagetype', 'totalNum'])
-  print("thirdPartyTotalStorage_Subset")
+  print("totCookies_Subset")
   
   for line in results:
     browser = line[0].strip()
+    if browser not in browsers:
+      browsers.append(browser)
     storagetype = line[1].strip()
     totalNum = line[2]
 
     print(f"{browser} has a total of {totalNum} {storagetype} in the subset")
     df = pd.concat([pd.DataFrame([[browser,storagetype,totalNum]], columns=df.columns), df], ignore_index=True)
 
-  # Pivot the dataframe to have browser as index, storagetype as columns, and totalNum as values
+
+
+  # STEP 2 GET THE LOCALSTORAGE VALUES
+  cursor.execute("""
+  SELECT browser,
+       storagetype,
+       SUM(localStorage_divided) AS totalLocalStorage
+FROM (
+    SELECT sd.browser,
+           sd.storagetype,
+           COUNT(*) / COALESCE(sq.numDuplicates, 1) AS localStorage_divided
+    FROM storagedata sd
+    LEFT JOIN (
+        SELECT browser,
+               websiteurl,
+               COUNT(DISTINCT crawlid) AS numDuplicates
+        FROM storagedata
+        WHERE crawlid IS NOT NULL
+        GROUP BY browser, websiteurl
+        HAVING COUNT(DISTINCT crawlid) > 1
+    ) sq
+    ON sd.browser = sq.browser AND sd.websiteurl = sq.websiteurl
+    WHERE 
+      sd.visited_by_all_browsers = TRUE 
+    AND 
+      sd.storagetype = 'localStorage'
+    AND
+      sd.websiteurl <> sd.frameorigin
+	GROUP BY sd.browser, sd.storagetype, sq.numDuplicates
+) subquery
+GROUP BY browser, storagetype;
+""")
+  results = cursor.fetchall()
+  
+  for line in results:
+    browser = line[0].strip()
+    storagetype = line[1].strip()
+    totalNum = int(line[2])
+
+    print(f"{browser} has a total of {totalNum} {storagetype} in the subset")
+    df = pd.concat([pd.DataFrame([[browser,storagetype,totalNum]], columns=df.columns), df], ignore_index=True)
+  
+  print(df)
+
+  # Pivot the DataFrame to have 'storagetype' as columns
   pivot_df = df.pivot(index='browser', columns='storagetype', values='totalNum')
 
   # Calculate the total storage for each browser
   pivot_df['Total'] = pivot_df.sum(axis=1)
   pivot_df = pivot_df.sort_values(by='Total', ascending=False)
 
-  # Calculate the total storage for each browser and the grand total
-  pivot_df['Total'] = pivot_df.sum(axis=1)
-  grand_total = pivot_df['Total'].sum()
-
-  # Sort the dataframe based on the grand total
-  pivot_df = pivot_df.sort_values(by='Total', ascending=False)
 
   # Plotting
-  plt.figure("thirdPartyTotalStorage_Subset")
+  plt.figure("thirdParty_totStorage")
   ax = pivot_df.drop(columns='Total').plot(kind='bar', stacked=True, colormap='tab20')  # Use a colormap for different colors
   plt.xlabel('Browser')
-  plt.ylabel('Total third-party totalStorage per Website')
-  plt.title('Total third-party totalStorage per Website by Browser')
+  plt.ylabel('Total third-party storage')
+  plt.title('Total third-party per Website by Browser')
   plt.xticks(rotation=45, ha="right")
-  plt.legend(title='Storage Type')
   
-  # Set a padding for the y-axis labels
-  plt.gca().yaxis.grid(True, linewidth=0.5)
-  plt.gca().yaxis.set_label_coords(-0.125, 0.5)
+  # Show the legend
+  plt.legend(title='Storage Type')
   
   plt.tight_layout()
 
-  plt.savefig('./thirdPartyStoragePlots/thirdPartyTotalStorage_Subset.png')
+  plt.savefig(path+'/totStorage_total.png')
   plt.close()
 
-
-
-def thirdPartyTotalStorage_Subset_Percentage(cursor):
-  cursor.execute("select browser, storagetype, count(*) from storagedata where visited_by_all_browsers2 = true and websiteurl <> frameorigin group by browser, storagetype")
-  results = cursor.fetchall()
-
-  df = pd.DataFrame(columns=['browser', 'storagetype', 'totalNum'])
-  print("thirdPartyTotalStorage_Subset_Percentage")
-
-  for line in results:
-      browser = line[0].strip()
-      storagetype = line[1].strip()
-      totalNum = line[2]
-
-      df = pd.concat([pd.DataFrame([[browser, storagetype, totalNum]], columns=df.columns), df], ignore_index=True)
 
   googleChromeCookieValue = (df[(df['browser'] == 'Google Chrome') & (df['storagetype'] == 'cookies')])['totalNum'].values[0]
   googleChromeLocalStorageValue = (df[(df['browser'] == 'Google Chrome') & (df['storagetype'] == 'localStorage')])['totalNum'].values[0]
   data_list = []
   
   # Calculate percentage change for each browser
-  for browser in ['Brave', 'Firefox', 'Ghostery']:
+  for browser in browsers:
     # Filter the data for the current browser
     browser_data = df[(df['browser'] == browser)]
 
@@ -91,50 +142,50 @@ def thirdPartyTotalStorage_Subset_Percentage(cursor):
 
     # Add the calculated values to 'newdf'
     data_list.append({'browser': browser, 'cookieChange': cookie_change, 'localStorageChange': local_storage_change})
+    print(f"{browser} has {cookie_change} % less cookies than google chrome  ")
 
   newdf = pd.DataFrame(data_list)
-  # print(newdf)
+  
   # Plotting
-  x = np.arange(3)
+  x = np.arange(len(newdf))
   bar_width = 0.35
 
-  plt.figure("thirdPartyTotalStorage_Subset_Percentage")
-  
+  plt.figure("thirdParty_Percentage")
+
   # Create the bars for 'cookieChange'
-  plt.bar(x, newdf['cookieChange'], width=bar_width, label='Cookie Change', color='blue', alpha=0.7)
+  plt.bar(x, newdf['cookieChange'], width=bar_width, label='Cookie Change', colormap='tab20', alpha=0.7)
 
   # Create the bars for 'localStorageChange' next to 'cookieChange'
-  plt.bar(x + bar_width, newdf['localStorageChange'], width=bar_width, label='LocalStorage Change', color='green', alpha=0.7)
+  plt.bar(x + bar_width, newdf['localStorageChange'], width=bar_width, label='LocalStorage Change', colormap='tab20', alpha=0.7)
+
 
   # Set x-axis labels
-  plt.xticks(x + bar_width / 2, newdf['browser'])
+  plt.xticks(x, newdf['browser'])
 
   # Add labels and title
   plt.xlabel('Browser')
   plt.xticks(rotation=45, ha="right")
   plt.ylabel('Percentage Change')
-  plt.title('Percentage Change in Third-Party Cookies and LocalStorage Compared to Google Chrome')
+  plt.title('Percentage Change in Third-Party Storage Compared to Google Chrome')
   plt.legend(title='Storage Type')
   plt.tight_layout()
-  plt.savefig('./thirdPartyStoragePlots/thirdPartyTotalStorage_Subset_Percentage.png')
+  plt.savefig(path + '/totStorage_Percentage.png')
   plt.close()
 
 
 def main():
-  US = True
+  US = False
   if US:
     dbConnection = psycopg2.connect("dbname=crawlUS user=postgres password=I@mastrongpsswd")
-    path = './US_bannerPlots'
+    path = './US_thirdPartyStoragePlots'
   
   else:
     dbConnection = psycopg2.connect("dbname=crawlUK user=postgres password=I@mastrongpsswd")
-    path = './bannerPlots'
+    path = './thirdPartyStoragePlots'
   
   cursor = dbConnection.cursor()
 
-  thirdPartyTotalStorage_Subset(cursor)
-  thirdPartyTotalStorage_Subset_Percentage(cursor)
-
+  thirdParty_total_percentage(cursor, path)
 
   cursor.close()
   dbConnection.close()
